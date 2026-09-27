@@ -259,7 +259,7 @@ OpenAI Voice 是用途明确的客户端目的地址数据；OpenAI 爬虫/代�
 | 项目 | 当前依据和默认处置 | 进入补充层所需依据 |
 |---|---|---|
 | `register.appattest.apple.com` | 官方 iOS 排障用；不额外纳入默认产品集合 | 对应 iOS 场景的依赖及分流必要性，排除仅诊断探针 |
-| `api.statsig.com`、`statsigapi.net`、`events.statsigapi.net`、`featuregates.org`、`prodregistryv2.org`、`featureassets.org` 及旧 `.statsig.com` | 当前 OpenAI 主清单未列；部分主机另有旧仓库维护者观察记录，连同旧副本/社区发现登记 pending | 当前官方明确列出，或对应产品自然会话的请求与功能证据；供应商域名文档本身不证明 ChatGPT 使用 |
+| `api.statsig.com`、`statsigapi.net`、`events.statsigapi.net`、`featuregates.org`、`prodregistryv2.org`、`featureassets.org` 及旧 `.statsig.com` | 当前 OpenAI 主清单未列；部分主机另有旧仓库维护者观察记录。`events.statsigapi.net`、`statsigapi.net`、`featureassets.org`、`prodregistryv2.org` 已登记 pending；其余三项仅为待审阅发现线索，不在当前17条 registry 中 | 当前官方明确列出，或对应产品自然会话的请求与功能证据；供应商域名文档本身不证明 ChatGPT 使用 |
 | `client-api.arkoselabs.com`、`openai-api.arkoselabs.com` | 旧仓库有；rc.1 和新审阅集合均未含，不能称 rc.1→新批次退出 | 当前认证链路的精确主机及功能证据；不扩整个 Arkose |
 | `cdn.growthbook.io` | 旧候选；当前 Claude Code 功能开关通过已覆盖的 `api.anthropic.com` 获取 | 对应产品当前使用此外部 CDN 的证据；不能把 GrowthBook 一概视为无用遥测 |
 | `cdn.usefathom.com` | 社区/旧规则候选 | 明确产品用途及保留必要性；仅观察到请求不足以证明功能必需 |

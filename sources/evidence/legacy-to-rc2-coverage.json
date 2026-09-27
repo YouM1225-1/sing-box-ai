@@ -2,7 +2,7 @@
   "schema": 1,
   "generated_at": "2026-09-27T18:27:34.475084+00:00",
   "comparison_scope": "Complete rule-language comparison of actual legacy SRS against pinned Sager SRS plus default supplements; selected_pending=[]; optional disabled. Exact rules covered by suffixes are retained semantically.",
-  "method": "Native sing-box 1.12.0 decompile, structural domain/suffix/identical-regex/CIDR containment, with native finite witness checks. Regex/suffix residual languages are recorded, not replaced by samples.",
+  "method": "Native sing-box 1.15.0-alpha.9 (132b38e9caaba1a1959354d518e54d2d08419afe) decompile, structural domain/suffix/identical-regex/CIDR containment, with native finite witness checks. Regex/suffix residual languages are recorded, not replaced by samples.",
   "runtime_acceptance": "not performed; this is local rule semantics, not a new client login, network availability, N100 deployment or formal batch integration result.",
   "consumer_routing": "Separate first-hit consumer audit required. Product-set membership alone does not determine actual outbound. Apple precedence is recorded below as an existing-consumer exception, not as a claim of zero change in every deployment.",
   "artifacts": {

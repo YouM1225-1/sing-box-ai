@@ -47,4 +47,3 @@ def query(port,host,qtype):
         value=str(ipaddress.ip_address(data[offset:offset+length])) if typ in (1,28) else data[offset:offset+length].hex()
         answers.append({'type':typ,'value':value});offset+=length
     return {'rcode':flags&15,'answers':answers,'answer_count':an}
-
