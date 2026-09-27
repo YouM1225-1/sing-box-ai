@@ -1,0 +1,389 @@
+{
+  "cases": [
+    {
+      "case": "01-seed-old",
+      "url": "/old.srs",
+      "cache_file": "shared-cache.db",
+      "initial_path": null,
+      "started": true,
+      "process_exit": 0,
+      "http_requests": [
+        {
+          "path": "/old.srs",
+          "status": 200,
+          "if_none_match": null
+        }
+      ],
+      "answers": [
+        {
+          "host": "old",
+          "rcode": 0,
+          "answers": [],
+          "answer_count": 0
+        },
+        {
+          "host": "new",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "wrong",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        }
+      ],
+      "cache_sha256": "af6530672845fd97beae7313450a19aca48580f1fdd05dcac3c750dade6a6c20"
+    },
+    {
+      "case": "02-same-url-offline",
+      "url": "/old.srs",
+      "cache_file": "shared-cache.db",
+      "initial_path": null,
+      "started": true,
+      "process_exit": 0,
+      "http_requests": [],
+      "answers": [
+        {
+          "host": "old",
+          "rcode": 0,
+          "answers": [],
+          "answer_count": 0
+        },
+        {
+          "host": "new",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "wrong",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        }
+      ],
+      "cache_sha256": "6666e9457dad8e91fe8d1601748f10cd0f76e78da8f2b2913d5fda25d6f747b2"
+    },
+    {
+      "case": "03-new-url-offline",
+      "url": "/new.srs",
+      "cache_file": "shared-cache.db",
+      "initial_path": null,
+      "started": false,
+      "process_exit": 1,
+      "http_requests": [
+        {
+          "path": "/new.srs",
+          "status": 503,
+          "if_none_match": null
+        }
+      ],
+      "answers": [],
+      "cache_sha256": "1280aba8d8d8bf8a1875af91bf5729c928d5eeb690f4eec979c0363aafc66cbe"
+    },
+    {
+      "case": "04-rollback-before-new-fetch",
+      "url": "/old.srs",
+      "cache_file": "shared-cache.db",
+      "initial_path": null,
+      "started": true,
+      "process_exit": 0,
+      "http_requests": [],
+      "answers": [
+        {
+          "host": "old",
+          "rcode": 0,
+          "answers": [],
+          "answer_count": 0
+        },
+        {
+          "host": "new",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "wrong",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        }
+      ],
+      "cache_sha256": "1a911b6c2224c9616b8c2a96843d02bac8b21af7a90f0b322e95e38c0d7a57b6"
+    },
+    {
+      "case": "05-new-url-success",
+      "url": "/new.srs",
+      "cache_file": "shared-cache.db",
+      "initial_path": null,
+      "started": true,
+      "process_exit": 0,
+      "http_requests": [
+        {
+          "path": "/new.srs",
+          "status": 200,
+          "if_none_match": null
+        }
+      ],
+      "answers": [
+        {
+          "host": "old",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "new",
+          "rcode": 0,
+          "answers": [],
+          "answer_count": 0
+        },
+        {
+          "host": "wrong",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        }
+      ],
+      "cache_sha256": "1fb2e7b4a78a9fc0253d4f7c892879ce14ca7c2874fc8ca607ee26c999822735"
+    },
+    {
+      "case": "06-rollback-after-new-fetch",
+      "url": "/old.srs",
+      "cache_file": "shared-cache.db",
+      "initial_path": null,
+      "started": false,
+      "process_exit": 1,
+      "http_requests": [
+        {
+          "path": "/old.srs",
+          "status": 503,
+          "if_none_match": null
+        }
+      ],
+      "answers": [],
+      "cache_sha256": "b0c9e578a3e32c6ae280b141b793aa01e27eebd0eb3bc0339ae9763e0e0f07a6"
+    },
+    {
+      "case": "07-initial-missing",
+      "url": "/new.srs",
+      "cache_file": "missing-cache.db",
+      "initial_path": "does-not-exist.srs",
+      "started": false,
+      "process_exit": 1,
+      "http_requests": [
+        {
+          "path": "/new.srs",
+          "status": 503,
+          "if_none_match": null
+        }
+      ],
+      "answers": [],
+      "cache_sha256": "e093ae4c4548304cd17415effa7ec4d0438f04e228c7aad133760871b8ffdcdd"
+    },
+    {
+      "case": "08-initial-invalid",
+      "url": "/new.srs",
+      "cache_file": "invalid-cache.db",
+      "initial_path": "invalid-startup.srs",
+      "started": false,
+      "process_exit": 1,
+      "http_requests": [
+        {
+          "path": "/new.srs",
+          "status": 503,
+          "if_none_match": null
+        }
+      ],
+      "answers": [],
+      "cache_sha256": "e093ae4c4548304cd17415effa7ec4d0438f04e228c7aad133760871b8ffdcdd"
+    },
+    {
+      "case": "09-initial-valid-wrong-content",
+      "url": "/new.srs",
+      "cache_file": "wrong-cache.db",
+      "initial_path": "wrong-startup.srs",
+      "started": true,
+      "process_exit": 0,
+      "http_requests": [
+        {
+          "path": "/new.srs",
+          "status": 503,
+          "if_none_match": null
+        }
+      ],
+      "answers": [
+        {
+          "host": "old",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "new",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "wrong",
+          "rcode": 0,
+          "answers": [],
+          "answer_count": 0
+        }
+      ],
+      "cache_sha256": "e093ae4c4548304cd17415effa7ec4d0438f04e228c7aad133760871b8ffdcdd"
+    },
+    {
+      "case": "10-initial-valid-correct",
+      "url": "/new.srs",
+      "cache_file": "correct-cache.db",
+      "initial_path": "new-startup.srs",
+      "started": true,
+      "process_exit": 0,
+      "http_requests": [
+        {
+          "path": "/new.srs",
+          "status": 503,
+          "if_none_match": null
+        }
+      ],
+      "answers": [
+        {
+          "host": "old",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "new",
+          "rcode": 0,
+          "answers": [],
+          "answer_count": 0
+        },
+        {
+          "host": "wrong",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        }
+      ],
+      "cache_sha256": "e093ae4c4548304cd17415effa7ec4d0438f04e228c7aad133760871b8ffdcdd"
+    },
+    {
+      "case": "11-rollback-with-old-initial",
+      "url": "/old.srs",
+      "cache_file": "shared-cache.db",
+      "initial_path": "old-startup.srs",
+      "started": true,
+      "process_exit": 0,
+      "http_requests": [
+        {
+          "path": "/old.srs",
+          "status": 503,
+          "if_none_match": null
+        }
+      ],
+      "answers": [
+        {
+          "host": "old",
+          "rcode": 0,
+          "answers": [],
+          "answer_count": 0
+        },
+        {
+          "host": "new",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        },
+        {
+          "host": "wrong",
+          "rcode": 0,
+          "answers": [
+            {
+              "type": 1,
+              "value": "192.0.2.55"
+            }
+          ],
+          "answer_count": 1
+        }
+      ],
+      "cache_sha256": "81acff1e7eed1bac9a09be2f713a86bef4f50e3d0d4296cdfd75b07f8fa66936"
+    }
+  ],
+  "assertions_passed": true,
+  "network": "All HTTP/DNS endpoints/listeners loopback. No N100 access.",
+  "limitations": [
+    "No production proxy boot dependency simulated; controlled HTTP503 represents fetch failure.",
+    "Cache tests use fresh local alpha.9-created caches, not N100 cache.",
+    "A syntactically valid wrong initial SRS is accepted: URL/expected-hash identity is not checked by runtime."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "openai-login-source",
+  "kind": "official-source-record",
+  "url": "https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt",
+  "retrieved_at": "2026-09-27T18:20:21+00:00",
+  "extraction_method": "Full retrieved response reviewed; only functional endpoint facts and locators are redistributed. Full response remains in local review cache.",
+  "original_response": {
+    "sha256": "f3044dcf33a8938083d8cacdafec886b4e7256f236598e1301bbd5c85162ee70",
+    "content_format": "web-tool-extracted-text",
+    "is_original_html": false,
+    "bytes": 9747
+  },
+  "page_updated_literal": "5 days ago",
+  "page_updated_absolute": null,
+  "full_page_redistributed": false,
+  "facts": [
+    {
+      "value": "chatgpt.com",
+      "locator": "L33",
+      "scope": "login-cookies-and-javascript"
+    },
+    {
+      "value": "openai.com",
+      "locator": "L33",
+      "scope": "login-cookies-and-javascript"
+    },
+    {
+      "value": "auth.openai.com",
+      "locator": "L33",
+      "scope": "login-cookies-and-javascript"
+    },
+    {
+      "value": "Cloudflare challenges",
+      "locator": "L38",
+      "scope": "managed-network-login-troubleshooting",
+      "specific_host_in_this_page": null
+    }
+  ],
+  "rights": "Domain names, addresses and endpoint facts are recorded for interoperability. This record does not relicense the original documentation or reproduce the full article."
+}

@@ -27,6 +27,29 @@ class ArtifactAdversaries(unittest.TestCase):
         item.update(sha256=sha(self.batch / "openai.srs"), bytes=(self.batch / "openai.srs").stat().st_size)
         write_json(path, manifest)
 
+    def test_manifest_cannot_forge_baseline_provenance_or_build_contract(self):
+        path = self.batch / "manifest.json"
+        original = json.loads(path.read_text())
+        mutations = {
+            "baseline/provenance": lambda m: m["baseline_inputs"]["openai"].update(sha256="0" * 64),
+            "provenance": lambda m: m["provenance"]["openai"].pop(),
+            "field counts": lambda m: m["field_counts"]["openai"].update(domain=999),
+            "harness dependencies": lambda m: m["harness_dependencies"].update(go_version="unverified"),
+            "pending selection": lambda m: m.update(selected_pending=["openai:domain:unknown.example.org"]),
+            "project version": lambda m: m.update(project_version="forged"),
+            "input provenance": lambda m: m["upstreams"].pop(),
+            "runtime integration": lambda m: m.update(validated_consumers=[{"result": "passed"}]),
+            "cannot claim runtime": lambda m: m.update(integration_evidence=[{"result": "passed"}]),
+        }
+        for message, mutate in mutations.items():
+            with self.subTest(message=message):
+                modified = json.loads(json.dumps(original))
+                mutate(modified)
+                write_json(path, modified)
+                with self.assertRaisesRegex(Invalid, message):
+                    validate(self.batch)
+        write_json(path, original)
+
     def test_plain_text_is_not_an_srs_even_with_matching_manifest_hash(self):
         (self.batch / "openai.srs").write_bytes(b"not a ruleset")
         self.forge_hash()

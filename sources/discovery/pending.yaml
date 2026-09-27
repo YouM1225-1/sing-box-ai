@@ -1,0 +1,474 @@
+schema: 1
+scope: Discovery only. No entry is selected by default; policy.selected_pending controls explicit candidate
+  selection. Historical inclusion and DNS resolution are not approval.
+entries:
+- id: openai:domain:client-api.arkoselabs.com
+  artifact: openai
+  value: client-api.arkoselabs.com
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:events.statsigapi.net
+  artifact: openai
+  value: events.statsigapi.net
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:featureassets.org
+  artifact: openai
+  value: featureassets.org
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:itunes.apple.com
+  artifact: openai
+  value: itunes.apple.com
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Historical inclusion is not current runtime-dependency evidence.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:o33249.ingest.us.sentry.io
+  artifact: openai
+  value: o33249.ingest.us.sentry.io
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:openai-api.arkoselabs.com
+  artifact: openai
+  value: openai-api.arkoselabs.com
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:openai-prod.azureedge.net
+  artifact: openai
+  value: openai-prod.azureedge.net
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:openaicom-api.azureedge.net
+  artifact: openai
+  value: openaicom-api.azureedge.net
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:prodregistryv2.org
+  artifact: openai
+  value: prodregistryv2.org
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:register.appattest.apple.com
+  artifact: openai
+  value: register.appattest.apple.com
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  - kind: official
+    reference: openai-network
+  reason: Official page mentions this URL in iOS diagnostics, not the main runtime allowlist.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:statsigapi.net
+  artifact: openai
+  value: statsigapi.net
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Neither fixed community baseline nor the current official main allowlist includes this exact
+    endpoint; lack of listing does not prove retirement.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:ct.sendgrid.net
+  artifact: openai
+  value: ct.sendgrid.net
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Current official wildcard retains subdomains only; root apex needs separate evidence.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:intercom.io
+  artifact: openai
+  value: intercom.io
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Current official wildcard retains subdomains only; root apex needs separate evidence.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: openai:domain:intercomcdn.com
+  artifact: openai
+  value: intercomcdn.com
+  type: domain
+  product:
+  - chatgpt-web
+  - chatgpt-clients
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-openai-srs
+  reason: Current official wildcard retains subdomains only; root apex needs separate evidence.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-openai-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - chatgpt-web
+    - chatgpt-clients
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: anthropic:domain:cdn.growthbook.io
+  artifact: anthropic
+  value: cdn.growthbook.io
+  type: domain
+  product:
+  - claude-web
+  - claude-desktop
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-anthropic-srs
+  reason: Feature-flag functionality alone does not prove this third-party hostname is a current dependency.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-anthropic-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - claude-web
+    - claude-desktop
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: anthropic:domain:cdn.usefathom.com
+  artifact: anthropic
+  value: cdn.usefathom.com
+  type: domain
+  product:
+  - claude-web
+  - claude-desktop
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-anthropic-srs
+  reason: Historical and community discovery only; no current approved runtime dependency.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-anthropic-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - claude-web
+    - claude-desktop
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null
+- id: anthropic:domain_suffix:modelcontextprotocol.io
+  artifact: anthropic
+  value: modelcontextprotocol.io
+  type: domain_suffix
+  product:
+  - claude-web
+  - claude-desktop
+  direction: destination
+  status: compatibility
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-current-anthropic-srs
+  reason: The protocol documentation domain is not a demonstrated mandatory client runtime endpoint.
+  review_status: pending
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-anthropic-1f6e61c.srs
+    observed_on: '2026-09-27'
+    product:
+    - claude-web
+    - claude-desktop
+    conclusion: Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime
+      approval.
+  first_seen: '2026-09-27'
+  last_verified: null
+  review_after: null

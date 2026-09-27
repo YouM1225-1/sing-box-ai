@@ -1,0 +1,39 @@
+version: 1
+updated: 2026-09-27
+entries:
+  - {value: anthropic.com, type: DOMAIN-SUFFIX, profile: cli-required, source: official-claude-docs}
+  - {value: claude.ai, type: DOMAIN-SUFFIX, profile: cli-required, source: official-claude-docs}
+  - {value: claude.com, type: DOMAIN-SUFFIX, profile: cli-required, source: official-claude-docs}
+  - {value: claude.app, type: DOMAIN-SUFFIX, profile: desktop-required, source: official-claude-desktop}
+  - {value: claudeusercontent.com, type: DOMAIN-SUFFIX, profile: desktop-required, source: official-claude-desktop}
+  - {value: claudemcpcontent.com, type: DOMAIN-SUFFIX, profile: desktop-required, source: official-claude-desktop}
+  - {value: frame.claudeusercontent.com, type: DOMAIN-SUFFIX, profile: cli-required, source: official-claude-docs}
+  - {value: livepreview.claude.ai, type: DOMAIN-SUFFIX, profile: desktop-required, source: official-claude-desktop}
+  - {value: livepreview.claude.app, type: DOMAIN-SUFFIX, profile: desktop-required, source: official-claude-desktop}
+  - {value: api.anthropic.com, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: mcp-proxy.anthropic.com, type: DOMAIN, profile: cli-required, source: official-claude-docs}
+  - {value: downloads.claude.ai, type: DOMAIN, profile: cli-required, source: official-claude-docs}
+  - {value: storage.googleapis.com, type: DOMAIN, profile: shared-dependency, source: official-claude-docs}
+  - {value: registry.npmjs.org, type: DOMAIN, profile: shared-dependency, source: official-claude-docs}
+  - {value: github.com, type: DOMAIN, profile: shared-dependency, source: official-claude-docs}
+  - {value: raw.githubusercontent.com, type: DOMAIN, profile: shared-dependency, source: official-claude-docs}
+  - {value: code.claude.com, type: DOMAIN, profile: cli-required, source: official-claude-docs}
+  - {value: platform.claude.com, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: bridge.claudeusercontent.com, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: a-api.anthropic.com, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: a-cdn.anthropic.com, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: s-cdn.anthropic.com, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: assets-proxy.anthropic.com, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: a.claude.ai, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: a-cdn.claude.ai, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: assets.claude.ai, type: DOMAIN, profile: desktop-required, source: official-claude-desktop}
+  - {value: formulae.brew.sh, type: DOMAIN, profile: conditional, source: official-claude-docs}
+  - {value: fonts.googleapis.com, type: DOMAIN, profile: optional, source: official-claude-desktop}
+  - {value: fonts.gstatic.com, type: DOMAIN, profile: optional, source: official-claude-desktop}
+  - {value: cdn.growthbook.io, type: DOMAIN, profile: compatibility, source: existing-repository}
+  - {value: challenges.cloudflare.com, type: DOMAIN, profile: compatibility, source: existing-repository}
+  - {value: cdn.usefathom.com, type: DOMAIN, profile: compatibility, source: existing-repository}
+  - {value: clau.de, type: DOMAIN-SUFFIX, profile: legacy-compatibility, source: existing-repository}
+  - {value: 160.79.104.0/23, type: IP-CIDR, profile: anthropic-inbound, source: official-anthropic-ip-docs}
+  - {value: 2607:6bc0::/48, type: IP-CIDR6, profile: anthropic-inbound, source: official-anthropic-ip-docs}
+  - {value: '^[a-z0-9-]+-review\\.googlesource\\.com$', type: DOMAIN-REGEX, profile: conditional, source: official-claude-code-docs}

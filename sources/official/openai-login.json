@@ -45,5 +45,13 @@
       "status": "required",
       "shared_dependency": false
     }
-  ]
+  ],
+  "raw_reference": "openai-login-source",
+  "raw_sha256": "84c9131a281143c959ff6bcbc768db1f9f57ec9c8b62bc4494f85d5faeeda168",
+  "locators": [
+    "L28-L40: login cookies, JavaScript and Cloudflare challenges"
+  ],
+  "last_reviewed_at": "2026-09-27T18:20:21+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "f3044dcf33a8938083d8cacdafec886b4e7256f236598e1301bbd5c85162ee70"
 }

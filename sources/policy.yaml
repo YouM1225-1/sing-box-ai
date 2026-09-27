@@ -15,8 +15,7 @@ enabled_optional: []
 review_as_of: '2026-09-27'
 approved_regex:
   ^[^.]+-review\.googlesource\.com$:
-    reason: 'Optional Gerrit host: one label ending in -review; does not match other
-      googlesource hosts.'
+    reason: 'Optional Gerrit host: one label ending in -review; does not match other googlesource hosts.'
     positive:
     - example-review.googlesource.com
     negative:
@@ -28,3 +27,8 @@ official_private_suffix_exceptions:
   claude.app: claude-desktop
   .claudeusercontent.com: claude-desktop
   .frame.claudeusercontent.com: claude-code
+selected_pending: []
+initial_confirmations:
+- reference: sources/evidence/claude-challenge-confirmation.json
+  sha256: b52f82e54f73960f65354e22bddd8915666dd3fd1a518c7c57f79b8fe5b660de
+  approved_on: '2026-09-27'

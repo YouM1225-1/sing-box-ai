@@ -396,5 +396,16 @@
       "status": "required",
       "shared_dependency": false
     }
-  ]
+  ],
+  "raw_reference": "openai-network-source",
+  "raw_sha256": "7fa4e4db95fee6f7f2fdd92ce4e525f742402fa5a830aa107e85784bd5f3d5ec",
+  "locators": [
+    "L14-L73: main allowlist (29 entries)",
+    "L74-L83: ChatGPT and Codex WebSocket requirements",
+    "L117-L119: Voice destinations and ports",
+    "L120-L136: iOS diagnostic App Attest URL only"
+  ],
+  "last_reviewed_at": "2026-09-27T18:20:21+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "8c0e7c8f5a777e3432cd524f09e5ece95c044bc5564e1dff1a74f5b3de7ebd48"
 }

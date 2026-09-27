@@ -229,5 +229,15 @@
       "status": "optional",
       "shared_dependency": true
     }
-  ]
+  ],
+  "raw_reference": "claude-code-source",
+  "raw_sha256": "83e3a0735cc70e2ffe605a35de5ccdc363a4823dcbb87015100f24bfa1d05c0b",
+  "locators": [
+    "Network access requirements: URL / Required for table",
+    "Network access requirements: optional Datadog and Gerrit restrictions",
+    "Desktop and claude.ai: optional fonts and artifact JavaScript hosts"
+  ],
+  "last_reviewed_at": "2026-09-27T18:16:24.685919+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "e5cc6eaacb03c08e11dbcc9b440cd19e8ea869858ddb0bbbf23df2799a172f64"
 }

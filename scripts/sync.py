@@ -4,49 +4,13 @@ import json
 from pathlib import Path
 import urllib.request
 
-from common import ROOT, archives, canonical, load, local_path, need, normalize, sha, write_json
-
-
-def parse_dlc(text):
-    result = []
-    for number, original in enumerate(text.splitlines(), 1):
-        line = original.split("#", 1)[0].strip()
-        if not line:
-            continue
-        parts = line.split()
-        token, attrs = parts[0], parts[1:]
-        need(all(a.startswith("@") and len(a) > 1 for a in attrs), f"Unknown DLC syntax at line {number}")
-        prefix, sep, value = token.partition(":")
-        if not sep:
-            prefix, value = "domain", token
-        need(prefix not in {"include"} and not token.startswith("&"), f"DLC include/affiliation not implemented: line {number}; archive closure and implement before use")
-        need(prefix in {"domain", "full", "regexp", "keyword"}, f"Unknown DLC prefix at line {number}")
-        typ = {"domain": "domain_suffix", "full": "domain", "regexp": "domain_regex", "keyword": "domain_keyword"}[prefix]
-        value = value if typ == "domain_keyword" else normalize(typ, value)
-        result.append({"type": typ, "value": value, "attributes": attrs, "line": number})
-    need(result, "Empty DLC input")
-    return result
-
-
-def covered(candidate, rows):
-    typ, value = candidate["type"], candidate["value"]
-    for row in rows:
-        if row["type"] == typ and row["value"] == value:
-            return True
-        if row["type"] == "domain_suffix" and typ in {"domain", "domain_suffix"}:
-            parent, child = row["value"], value.lstrip(".")
-            if parent.startswith("."):
-                if child.endswith(parent) or typ == "domain_suffix" and value == parent:
-                    return True
-            elif child == parent or child.endswith("." + parent):
-                return True
-    return False
+from common import ARTIFACTS, ROOT, archives, canonical, covered, discovery_entries, load, local_path, need, normalize, parse_dlc, sha, write_json
 
 
 def report(root=ROOT, previous=None):
     registry = archives(root)
-    selected, _, _ = canonical(root)
-    output = {"schema": 1, "discovery": [], "removed_upstream": [], "canonical": {}, "canonical_diff": {}, "upstream_hashes": {k: v["sha256"] for k, v in registry.items()}}
+    selected, policy, _ = canonical(root)
+    output = {"schema": 2, "discovery": [], "removed_upstream": [], "canonical": selected, "canonical_diff": {}, "baselines": policy["baseline_inputs"], "baseline_rules": {name: [r for r in rows if r["origin"] == "baseline"] for name, rows in selected.items()}, "supplements": {}, "baseline_diff": {}, "supplement_diff": {}, "upstream_hashes": {k: v["sha256"] for k, v in registry.items()}}
     for artifact in ("openai", "anthropic"):
         ref = "dlc-" + artifact
         for candidate in parse_dlc(local_path(root, registry[ref]["path"]).read_text()):
@@ -60,13 +24,15 @@ def report(root=ROOT, previous=None):
             output["discovery"].append({"artifact": "anthropic", "upstream": "legacy-anthropic", **candidate, "classification": "ALREADY_COVERED" if covered(candidate, selected["anthropic"]) else "ADD_CANDIDATE"})
     for artifact in ("openai", "anthropic", "anthropic-ip"):
         rows = load(root / f"sources/{artifact}.yaml")
-        output["canonical"][artifact] = rows
+        output["supplements"][artifact] = rows
         for row in rows:
             if row["status"] in {"optional", "feature-required"}:
                 output["discovery"].append({"artifact": artifact, "upstream": "official", "type": row["type"], "value": row["value"], "classification": "OPTIONAL_OFFICIAL" if row["status"] == "optional" else "FEATURE_REQUIRED"})
+    for row in discovery_entries(root):
+        output["discovery"].append({**row, "upstream": row["sources"][0]["reference"], "selected": row["id"] in policy.get("selected_pending", []), "classification": "ALREADY_COVERED" if covered(row, selected[row["artifact"]]) else "ADD_CANDIDATE"})
     if previous:
         old = load(previous)
-        need(old.get("schema") == 1 and "discovery" in old and "canonical" in old, "Invalid previous sync report")
+        need(old.get("schema") in (1, 2) and "discovery" in old and "canonical" in old, "Invalid previous sync report")
         key = lambda r: (r["artifact"], r["upstream"], r["type"], r["value"])
         current_keys = {key(r) for r in output["discovery"]}
         output["removed_upstream"] = [{**r, "classification": "REMOVED_UPSTREAM"} for r in old["discovery"] if key(r) not in current_keys]
@@ -75,6 +41,16 @@ def report(root=ROOT, previous=None):
             before = {identify(r): r for r in old["canonical"].get(artifact, [])}
             after = {identify(r): r for r in rows}
             output["canonical_diff"][artifact] = {"added": [after[k] for k in sorted(after.keys() - before.keys())], "removed": [before[k] for k in sorted(before.keys() - after.keys())], "changed": [{"before": before[k], "after": after[k]} for k in sorted(before.keys() & after.keys()) if before[k] != after[k]]}
+        for artifact in ("openai", "anthropic"):
+            identify = lambda r: (r["type"], r["value"], r["direction"])
+            before = {identify(r): r for r in old.get("baseline_rules", {}).get(artifact, [])}
+            after = {identify(r): r for r in output["baseline_rules"][artifact]}
+            output["baseline_diff"][artifact] = {"before_input": old.get("baselines", {}).get(artifact), "after_input": output["baselines"][artifact], "added": [after[k] for k in sorted(after.keys() - before.keys())], "removed": [before[k] for k in sorted(before.keys() - after.keys())], "changed": [{"before": before[k], "after": after[k]} for k in sorted(before.keys() & after.keys()) if before[k] != after[k]]}
+        for artifact in ARTIFACTS:
+            identify = lambda r: (r["type"], r["value"], r["direction"])
+            before = {identify(r): r for r in old.get("supplements", old["canonical"]).get(artifact, [])}
+            after = {identify(r): r for r in output["supplements"][artifact]}
+            output["supplement_diff"][artifact] = {"added": [after[k] for k in sorted(after.keys() - before.keys())], "removed": [before[k] for k in sorted(before.keys() - after.keys())], "changed": [{"before": before[k], "after": after[k]} for k in sorted(before.keys() & after.keys()) if before[k] != after[k]]}
         output["changed_upstream_hashes"] = {k: {"before": old.get("upstream_hashes", {}).get(k), "after": v} for k, v in output["upstream_hashes"].items() if old.get("upstream_hashes", {}).get(k) != v}
     return output
 
@@ -90,7 +66,7 @@ def main():
             path = local_path(ROOT, entry["path"])
             if path.exists():
                 continue
-            need(entry["kind"] != "official", "Structured facts must be restored from Git, not overwritten with HTML")
+            need(entry["kind"] not in {"official", "official-source-record"}, "Structured facts/source records must be restored from Git, not overwritten with HTML")
             need(entry["url"].startswith("https://"), "HTTPS required")
             with urllib.request.urlopen(entry["url"], timeout=30) as response:
                 content = response.read(2_000_001)

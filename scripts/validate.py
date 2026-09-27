@@ -12,7 +12,6 @@ import subprocess
 import tempfile
 
 from common import ARTIFACTS, OLD_IPS, ROOT, archives, canonical, compiler, date, input_files, load, local_path, need, run, semantic_key, sha, source_document, today, write_json
-from sync import parse_dlc
 
 
 def reference_match(rows, domain="", source="", destination=""):
@@ -53,6 +52,8 @@ def cases_for(selected):
                 for ip in (str(net.network_address), str(net.broadcast_address)):
                     add(value + ":src:" + ip, source=ip)
                     add(value + ":dst:" + ip, destination=ip)
+        for host in ("chatgpt-async-webps-prod-eastus-1.webpubsub.azure.com", "chatgpt-async-webps-prod-a.b-12.webpubsub.azure.com", "chatgpt-async-webps-prod-eastus-x.webpubsub.azure.com", "chatgpt-async-webps-prod-eastus-1.webpubsub.azure.com.evil.test"):
+            add("baseline-regex:" + host, domain=host)
         for host in ("auth.openai.com", "chatgpt.com", "ws.chatgpt.com", "claude.ai", "claude.app", "challenges.cloudflare.com", "www.challenges.cloudflare.com", "challenges.cloudflare.com.example.org", "cloudflare.com", "www.cloudflare.com", "example.cloudflare.com", "notopenai.com", "auth.openai.com.example.org", "notclaude.ai", "cdnjs.cloudflare.com", "unrelated.example.org"):
             add("regression:" + host, domain=host)
         for ip in OLD_IPS + ("160.79.104.10", "160.79.106.1", "160.79.112.1", "2607:6bc0::1", "2001:db8::1", "203.0.113.1"):
@@ -61,7 +62,7 @@ def cases_for(selected):
         for ip in OLD_IPS:
             add("phased-out:" + ip, destination=ip, expected=False)
             add("phased-out-src:" + ip, source=ip, expected=False)
-        if artifact != "anthropic-ip":
+        if artifact in {"openai", "anthropic"}:
             add("challenge-required", domain="challenges.cloudflare.com", expected=True)
         if artifact == "anthropic":
             add("inbound-only-not-outbound", destination="160.79.106.1", expected=False)
@@ -124,12 +125,21 @@ def release_gate(root, manifest):
 def validate(directory, go="go", for_release=False, root=ROOT):
     directory = Path(directory).resolve()
     manifest = load(directory / "manifest.json")
-    need(isinstance(manifest, dict) and manifest.get("schema") == 1, "Empty/unknown manifest")
+    need(isinstance(manifest, dict) and manifest.get("schema") == 2, "Empty/unknown manifest")
     need(manifest.get("build_mode") in {"candidate", "release"}, "Unknown manifest build_mode")
+    if manifest["build_mode"] == "candidate":
+        need(manifest.get("validated_consumers") == [] and manifest.get("integration_evidence") == [], "Candidate batches cannot claim runtime integration")
     need(manifest.get("inputs") == input_files(root), "Inputs changed since generation; rebuild the batch")
-    selected, policy, _ = canonical(root, manifest["build_mode"], date(manifest["review_as_of"]))
+    selected, policy, normalization = canonical(root, manifest["build_mode"], date(manifest["review_as_of"]))
     need(manifest.get("features") == sorted(policy["features"]) and manifest.get("enabled_optional") == sorted(policy["enabled_optional"]), "Manifest feature policy mismatch")
-    need(manifest.get("rule_shape") == "one-default" and manifest.get("source_format_version") == 2, "Manifest structure mismatch")
+    need(manifest.get("selected_pending") == sorted(policy.get("selected_pending", [])), "Manifest pending selection mismatch")
+    need(manifest.get("baseline_inputs") == policy["baseline_inputs"] and manifest.get("provenance") == selected, "Manifest baseline/provenance mismatch")
+    need(manifest.get("upstreams") == list(archives(root).values()) and manifest.get("normalization") == normalization, "Manifest input provenance mismatch")
+    need(manifest.get("project_version") == (root / "VERSION").read_text().strip(), "Manifest project version mismatch")
+    lock = load(root / "tools.lock.json")
+    need(manifest.get("harness_dependencies") == {"go_version": lock["go_version"], "sing_module": lock["sing_box"]["sing_module"]}, "Manifest harness dependencies mismatch")
+    need(manifest.get("field_counts") == {name: {k: len(v) for k, v in source_document(selected[name])["rules"][0].items()} for name in ARTIFACTS}, "Manifest field counts mismatch")
+    need(manifest.get("rule_shape") == "one-default" and manifest.get("source_format_version") == 2 and manifest.get("format_min_reader_version") == "1.10.0", "Manifest structure mismatch")
     binary, compiler_info = compiler(root)
     need(manifest.get("compiler") == compiler_info, "Compiler differs from manifest")
     artifacts = manifest.get("artifacts")
@@ -137,17 +147,6 @@ def validate(directory, go="go", for_release=False, root=ROOT):
     need({a.get("path") for a in artifacts} == {a + ".srs" for a in ARTIFACTS}, "Wrong/duplicate artifacts")
     with tempfile.TemporaryDirectory(prefix="sing-box-ai-validate-") as scratch:
         temp = Path(scratch)
-        registry = archives(root)
-        for name in ("openai", "anthropic"):
-            dlc_path = local_path(root, registry["dlc-" + name]["path"])
-            srs_path = local_path(root, registry["geosite-" + name]["path"])
-            decoded = temp / (name + ".upstream.json")
-            run([binary, "rule-set", "decompile", "--output", decoded, srs_path])
-            upstream = load(decoded)
-            need(upstream.get("version") in (1, 2), "Unreviewed upstream format version")
-            # Only the format marker changes; field/leading-dot semantics stay intact.
-            upstream["version"] = 2
-            need(semantic_key(upstream) == semantic_key(source_document(parse_dlc(dlc_path.read_text()))), "Pinned DLC and derived SRS disagree")
         for artifact in artifacts:
             name = Path(artifact["path"]).stem
             need(artifact.get("source_path") == name + ".json", "Unexpected source filename")
@@ -168,6 +167,12 @@ def validate(directory, go="go", for_release=False, root=ROOT):
             run([binary, "rule-set", "compile", "--output", rebuilt, recreate])
             need(rebuilt.read_bytes() == target.read_bytes(), "Clean rebuild differs")
         cases = cases_for(selected)
+        baseline_rows = {"baseline-" + name: [r for r in selected[name] if r["origin"] == "baseline"] for name in ("openai", "anthropic")}
+        for name, rows in baseline_rows.items():
+            artifact = name.removeprefix("baseline-")
+            shutil.copyfile(local_path(root, policy["baseline_inputs"][artifact]["path"]), temp / (name + ".srs"))
+            write_json(temp / (name + ".json"), source_document(rows))
+        cases += cases_for(baseline_rows)
         for i, (expression, tests) in enumerate(policy["approved_regex"].items()):
             filename = f"regex-{i}.json"
             write_json(temp / filename, {"version": 2, "rules": [{"domain_regex": [expression]}]})
@@ -187,7 +192,7 @@ def validate(directory, go="go", for_release=False, root=ROOT):
         run([binary, "check", "-c", temp / "check.json"])
         (directory / "matches.jsonl").write_text(result.stdout)
         write_json(directory / "cases.json", cases)
-        manifest["validation"] = {"level": "local-source-binary-and-isolated-check", "cases": len(cases), "failures": 0, "clean_rebuild_equal": True, "upstream_crosscheck": "DLC and two pinned SRS equivalent", "native_result_sha256": sha(directory / "matches.jsonl"), "test_harness": harness_info}
+        manifest["validation"] = {"level": "local-source-binary-and-isolated-check", "cases": len(cases), "failures": 0, "clean_rebuild_equal": True, "baseline_complete": True, "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent", "native_result_sha256": sha(directory / "matches.jsonl"), "test_harness": harness_info}
     if for_release:
         manifest["validated_consumers"] = release_gate(root, manifest)
     write_json(directory / "manifest.json", manifest)

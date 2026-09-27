@@ -1,0 +1,6434 @@
+{
+  "hosts": 27,
+  "native_cases": 837,
+  "native_failures": 0,
+  "requests": 162,
+  "processes": [
+    {
+      "batch": "old",
+      "pid": 91969,
+      "stopped": true
+    },
+    {
+      "batch": "rc1",
+      "pid": 91971,
+      "stopped": true
+    },
+    {
+      "batch": "candidate",
+      "pid": 91973,
+      "stopped": true
+    }
+  ],
+  "input_sha256": {
+    "build/n100-rule-comparison-20260927/geosite-netflix.json": "6196814900616522c9b66cef30df5ea64117ad7266ad87c006b49c926d4076ac",
+    "build/n100-rule-comparison-20260927/geosite-aws.json": "27f752fb2542fb604bae3ab1ad2f72f7c7d11574388b436319ff0d8eca5b9f6c",
+    "build/n100-rule-comparison-20260927/geosite-tencent.json": "d920d322935535329b50f5e0d0bdb156e383e105abd4be387c2db4026b3d0d80",
+    "build/n100-rule-comparison-20260927/geosite-apple.json": "aca250a49bf8e904fa89fc077841124b08fe8a445070ddcc00319b83fb100075",
+    "build/n100-rule-comparison-20260927/geosite-dji.json": "03ca9b872713cf4c47d9f84bc358569db9d24b132636094d71a1664f4f0b3637",
+    "build/n100-rule-comparison-20260927/geosite-adobe.json": "67515e0d1ae3dda2710b0d2bbce43166cefd3f020bcfdbadabba6f80109a83da",
+    "build/n100-rule-comparison-20260927/geosite-twitter.json": "a19c8766b246590849cab6c0a91b70636059d7ec78334ffb1f457b2bb6ef0511",
+    "build/n100-rule-comparison-20260927/geosite-douyin.json": "3e7b44bb2f82ba1f7076e15969e26e60c7eabd1f8411cb30b1203e87b1218cb6",
+    "build/n100-rule-comparison-20260927/geosite-github.json": "a5d120256502bec23543ccf872aafd6ce8a4c90f67fab8ef1c4c7adde6befa81",
+    "build/n100-rule-comparison-20260927/geosite-google.json": "fd509a9cb25c6311589c73288f3f278d682a8fe6b153ab0ec80579199f3c6017",
+    "build/n100-rule-comparison-20260927/geosite-cloudflare.json": "b74549db673d200c24cf10d6779def79a1711d4f11c0a3a19ae8c4458e47e5c2",
+    "build/n100-rule-comparison-20260927/geosite-apple@cn.json": "6b6c340b7108157e83343c6a15cbaba8d4d2c0c7c64810f93a32fdd32cff2a34",
+    "build/n100-rule-comparison-20260927/geosite-telegram.json": "04e3f36e253c2006dd91cbce3418985fe188e0c739a5a29f73e9942c1635e9ee",
+    "build/n100-rule-comparison-20260927/geosite-fastly.json": "04664943b07c702424422628338e6b3bddccde924fd971a5f3e959e851909abd",
+    "build/n100-rule-comparison-20260927/geosite-alibaba.json": "ef14cd0f7929c1b2732e831d869eed8bc6ef10b0c85405919fc95e86c7edebf1",
+    "build/n100-rule-comparison-20260927/geosite-cn.json": "8710abfbcfd1039d4de697437e859a6789834fbcc4a00762a0e519abeebef3db",
+    "build/n100-rule-comparison-20260927/geosite-tiktok.json": "9dc68600985d3192af83c53606244ea06fb8057c28ad48f8b6ffa87b80aa9bb8",
+    "build/n100-rule-comparison-20260927/geosite-bilibili.json": "72b87d1a8dd010406e5d0d25c2fa14d290a3be6dd18306303a725321666a099f",
+    "build/n100-rule-comparison-20260927/geosite-private.json": "c51f489ce26e1d26add2d248198dbc471ba11f7d013dc778251bb01a7a4083b4",
+    "build/n100-rule-comparison-20260927/geosite-aws-cn.json": "a5a72a820bc4c1397fd3b043b5a07e80ed0af005c22f748b51a99c8b25b6fb7b",
+    "build/n100-rule-comparison-20260927/geosite-xiaomi.json": "3d2c42a3f970a6f720596bf8bd4c02519aaceff91d4a5347130270c1b2935c95",
+    "build/n100-rule-comparison-20260927/geosite-meta.json": "649345ed28c78bbb082d0e57b334cca8270faef1e6de33bca8d1d610bca897f3",
+    "build/n100-rule-comparison-20260927/geosite-apple-tvplus.json": "805826b3aa30719ce2fa664142be4df98e57bb04cb1dc1f5a3c214fee7202e8c",
+    "build/n100-rule-comparison-20260927/geosite-youtube.json": "9006e3df6a123d152371b18ed37bd1bb48d092ee60c19a6bc86b6450c0acc15a",
+    "build/n100-rule-comparison-20260927/n100-geosite-ai.json": "af54747b4b5044f6141961765ca5124917db8c12a5e881ce2353fe2a18d39955",
+    "build/n100-rule-comparison-20260927/old-openai-singbox.json": "40e4a742df29014337ffc5c01935a7ec8c315b0858135e6358b2b9f143379dc6",
+    "build/n100-rule-comparison-20260927/old-anthropic-singbox.json": "90ed32df40af55429f2f8de5e8e768b15cda4d2e1d4ac4e7d316adf4ad334ca6",
+    "build/n100-rule-comparison-20260927/new-openai.json": "3c97287e7c582a752f00af09f40512cc508d720e9dbe9bb09e968d785de2e664",
+    "build/n100-rule-comparison-20260927/new-anthropic.json": "f6b157d1d790eedd44c5b3104d4a42c116bd0c6ec428f8137af006fad2dfcdad",
+    "build/final-review-20260928/research/prospective-openai.json": "d08434df6152141dfb724cf83cd86d8fdaee01282697d05b55778c007b94c1b6",
+    "build/final-review-20260928/research/prospective-anthropic.json": "c8490972ad2c3f32511475548357915ab7a6fef220135c90cde481873f1b19af"
+  },
+  "rows": [
+    {
+      "batch": "old",
+      "host": "client-api.arkoselabs.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "client-api.arkoselabs.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "client-api.arkoselabs.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "openai-api.arkoselabs.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-api.arkoselabs.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "openai-api.arkoselabs.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "events.statsigapi.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "events.statsigapi.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "events.statsigapi.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "statsigapi.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "statsigapi.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "statsigapi.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "featureassets.org",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "featureassets.org",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "featureassets.org",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "prodregistryv2.org",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "prodregistryv2.org",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "prodregistryv2.org",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "o33249.ingest.us.sentry.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "o33249.ingest.us.sentry.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "o33249.ingest.us.sentry.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "openai-prod.azureedge.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-prod.azureedge.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "openai-prod.azureedge.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "openaicom-api.azureedge.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openaicom-api.azureedge.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "openaicom-api.azureedge.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "itunes.apple.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "192.0.2.20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "itunes.apple.com",
+          "qtype": 1,
+          "server": "dns_direct",
+          "answer": "192.0.2.20"
+        }
+      ],
+      "matches": [
+        {
+          "index": 11,
+          "description": "rule_set=[geosite-tencent geosite-alibaba geosite-bilibili geosite-douyin geosite-apple@cn geosite-xiaomi geosite-dji] => route(dns_direct,timeout=3s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "itunes.apple.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "itunes.apple.com",
+          "qtype": 28,
+          "server": "dns_direct",
+          "answer": "2001:db8:ffff::20"
+        }
+      ],
+      "matches": [
+        {
+          "index": 11,
+          "description": "rule_set=[geosite-tencent geosite-alibaba geosite-bilibili geosite-douyin geosite-apple@cn geosite-xiaomi geosite-dji] => route(dns_direct,timeout=3s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "register.appattest.apple.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "register.appattest.apple.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 12,
+          "description": "rule_set=geosite-apple => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "register.appattest.apple.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "register.appattest.apple.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 12,
+          "description": "rule_set=geosite-apple => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "ct.sendgrid.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "ct.sendgrid.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "ct.sendgrid.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "intercom.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercom.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "intercom.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "intercomcdn.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercomcdn.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "intercomcdn.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.ct.sendgrid.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.ct.sendgrid.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.ct.sendgrid.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.intercom.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.intercom.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.intercom.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.intercomcdn.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.intercomcdn.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.intercomcdn.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "browser-intake-us5-datadoghq.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "browser-intake-us5-datadoghq.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "browser-intake-us5-datadoghq.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "http-intake.logs.us5.datadoghq.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "fonts.googleapis.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "fonts.googleapis.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "fonts.googleapis.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "fonts.gstatic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "fonts.gstatic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "fonts.gstatic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "cdn.growthbook.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.growthbook.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "cdn.growthbook.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "cdn.usefathom.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.usefathom.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "cdn.usefathom.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "modelcontextprotocol.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "modelcontextprotocol.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "modelcontextprotocol.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.modelcontextprotocol.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.modelcontextprotocol.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "probe.modelcontextprotocol.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "example-review.googlesource.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "example-review.googlesource.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "example-review.googlesource.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "a-review.googlesource.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "a-review.googlesource.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "old",
+      "host": "a-review.googlesource.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "client-api.arkoselabs.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "client-api.arkoselabs.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "client-api.arkoselabs.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "client-api.arkoselabs.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "openai-api.arkoselabs.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-api.arkoselabs.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "openai-api.arkoselabs.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-api.arkoselabs.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "events.statsigapi.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "events.statsigapi.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "events.statsigapi.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "events.statsigapi.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "statsigapi.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "statsigapi.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "statsigapi.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "statsigapi.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "featureassets.org",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "featureassets.org",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "featureassets.org",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "featureassets.org",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "prodregistryv2.org",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "prodregistryv2.org",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "prodregistryv2.org",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "prodregistryv2.org",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "o33249.ingest.us.sentry.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "o33249.ingest.us.sentry.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "o33249.ingest.us.sentry.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "o33249.ingest.us.sentry.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "openai-prod.azureedge.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-prod.azureedge.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "openai-prod.azureedge.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-prod.azureedge.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "openaicom-api.azureedge.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openaicom-api.azureedge.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "openaicom-api.azureedge.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openaicom-api.azureedge.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "itunes.apple.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "192.0.2.20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "itunes.apple.com",
+          "qtype": 1,
+          "server": "dns_direct",
+          "answer": "192.0.2.20"
+        }
+      ],
+      "matches": [
+        {
+          "index": 11,
+          "description": "rule_set=[geosite-tencent geosite-alibaba geosite-bilibili geosite-douyin geosite-apple@cn geosite-xiaomi geosite-dji] => route(dns_direct,timeout=3s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "itunes.apple.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "itunes.apple.com",
+          "qtype": 28,
+          "server": "dns_direct",
+          "answer": "2001:db8:ffff::20"
+        }
+      ],
+      "matches": [
+        {
+          "index": 11,
+          "description": "rule_set=[geosite-tencent geosite-alibaba geosite-bilibili geosite-douyin geosite-apple@cn geosite-xiaomi geosite-dji] => route(dns_direct,timeout=3s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "register.appattest.apple.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "register.appattest.apple.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 12,
+          "description": "rule_set=geosite-apple => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "register.appattest.apple.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "register.appattest.apple.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 12,
+          "description": "rule_set=geosite-apple => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "ct.sendgrid.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "ct.sendgrid.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "ct.sendgrid.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "ct.sendgrid.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "intercom.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercom.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "intercom.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercom.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "intercomcdn.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercomcdn.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "intercomcdn.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercomcdn.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.ct.sendgrid.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.ct.sendgrid.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.ct.sendgrid.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.intercom.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.intercom.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.intercom.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.intercomcdn.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.intercomcdn.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.intercomcdn.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "browser-intake-us5-datadoghq.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "browser-intake-us5-datadoghq.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "browser-intake-us5-datadoghq.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "browser-intake-us5-datadoghq.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "http-intake.logs.us5.datadoghq.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "http-intake.logs.us5.datadoghq.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "fonts.googleapis.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "fonts.googleapis.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "fonts.googleapis.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "fonts.gstatic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "fonts.gstatic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "fonts.gstatic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "cdn.growthbook.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.growthbook.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "cdn.growthbook.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.growthbook.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "cdn.usefathom.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.usefathom.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "cdn.usefathom.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.usefathom.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "modelcontextprotocol.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "modelcontextprotocol.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "modelcontextprotocol.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "modelcontextprotocol.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.modelcontextprotocol.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.modelcontextprotocol.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "probe.modelcontextprotocol.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.modelcontextprotocol.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "example-review.googlesource.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "example-review.googlesource.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "example-review.googlesource.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "a-review.googlesource.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "a-review.googlesource.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "rc1",
+      "host": "a-review.googlesource.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "client-api.arkoselabs.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "client-api.arkoselabs.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "client-api.arkoselabs.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "client-api.arkoselabs.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "openai-api.arkoselabs.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-api.arkoselabs.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "openai-api.arkoselabs.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-api.arkoselabs.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "events.statsigapi.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "events.statsigapi.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "events.statsigapi.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "events.statsigapi.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "statsigapi.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "statsigapi.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "statsigapi.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "statsigapi.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "featureassets.org",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "featureassets.org",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "featureassets.org",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "featureassets.org",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "prodregistryv2.org",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "prodregistryv2.org",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "prodregistryv2.org",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "prodregistryv2.org",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "o33249.ingest.us.sentry.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "o33249.ingest.us.sentry.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "o33249.ingest.us.sentry.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "o33249.ingest.us.sentry.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "openai-prod.azureedge.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-prod.azureedge.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "openai-prod.azureedge.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openai-prod.azureedge.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "openaicom-api.azureedge.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openaicom-api.azureedge.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "openaicom-api.azureedge.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "openaicom-api.azureedge.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "itunes.apple.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "192.0.2.20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "itunes.apple.com",
+          "qtype": 1,
+          "server": "dns_direct",
+          "answer": "192.0.2.20"
+        }
+      ],
+      "matches": [
+        {
+          "index": 11,
+          "description": "rule_set=[geosite-tencent geosite-alibaba geosite-bilibili geosite-douyin geosite-apple@cn geosite-xiaomi geosite-dji] => route(dns_direct,timeout=3s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "itunes.apple.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "itunes.apple.com",
+          "qtype": 28,
+          "server": "dns_direct",
+          "answer": "2001:db8:ffff::20"
+        }
+      ],
+      "matches": [
+        {
+          "index": 11,
+          "description": "rule_set=[geosite-tencent geosite-alibaba geosite-bilibili geosite-douyin geosite-apple@cn geosite-xiaomi geosite-dji] => route(dns_direct,timeout=3s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "register.appattest.apple.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "register.appattest.apple.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 12,
+          "description": "rule_set=geosite-apple => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "register.appattest.apple.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "register.appattest.apple.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 12,
+          "description": "rule_set=geosite-apple => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "ct.sendgrid.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "ct.sendgrid.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "ct.sendgrid.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "ct.sendgrid.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "intercom.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercom.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "intercom.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercom.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "intercomcdn.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercomcdn.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "intercomcdn.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "intercomcdn.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.ct.sendgrid.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.ct.sendgrid.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.ct.sendgrid.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.intercom.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.intercom.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.intercom.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.intercomcdn.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.intercomcdn.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.intercomcdn.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "browser-intake-us5-datadoghq.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "browser-intake-us5-datadoghq.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "browser-intake-us5-datadoghq.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "browser-intake-us5-datadoghq.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "http-intake.logs.us5.datadoghq.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "http-intake.logs.us5.datadoghq.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "fonts.googleapis.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "fonts.googleapis.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "fonts.googleapis.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "fonts.gstatic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "fonts.gstatic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "fonts.gstatic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "cdn.growthbook.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.growthbook.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "cdn.growthbook.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.growthbook.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "cdn.usefathom.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.usefathom.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "cdn.usefathom.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "cdn.usefathom.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "modelcontextprotocol.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "modelcontextprotocol.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "modelcontextprotocol.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "modelcontextprotocol.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.modelcontextprotocol.io",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.modelcontextprotocol.io",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "probe.modelcontextprotocol.io",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "probe.modelcontextprotocol.io",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "example-review.googlesource.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "example-review.googlesource.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "example-review.googlesource.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "a-review.googlesource.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "a-review.googlesource.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 14,
+          "description": "rule_set=[geosite-google geosite-youtube] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "batch": "candidate",
+      "host": "a-review.googlesource.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 13,
+          "description": "query_type=AAAA rule_set=geosite-google => predefined(NOERROR)"
+        }
+      ]
+    }
+  ],
+  "table": [
+    {
+      "host": "client-api.arkoselabs.com",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "openai-api.arkoselabs.com",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "events.statsigapi.net",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "statsigapi.net",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "featureassets.org",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "prodregistryv2.org",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "o33249.ingest.us.sentry.io",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "openai-prod.azureedge.net",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "openaicom-api.azureedge.net",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "itunes.apple.com",
+      "native_membership": {
+        "geosite-apple": true,
+        "geosite-apple@cn": true,
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 11,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 11,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 14,
+              "action": "route",
+              "outbound": "direct"
+            },
+            "ipv6": {
+              "index": 14,
+              "action": "route",
+              "outbound": "direct"
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 11,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 11,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 14,
+              "action": "route",
+              "outbound": "direct"
+            },
+            "ipv6": {
+              "index": 14,
+              "action": "route",
+              "outbound": "direct"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 11,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 11,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 14,
+              "action": "route",
+              "outbound": "direct"
+            },
+            "ipv6": {
+              "index": 14,
+              "action": "route",
+              "outbound": "direct"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "register.appattest.apple.com",
+      "native_membership": {
+        "geosite-apple": true,
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 12,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 12,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 15,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 15,
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 12,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 12,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 15,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 15,
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 12,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 12,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 15,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 15,
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "ct.sendgrid.net",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "intercom.io",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "intercomcdn.com",
+      "native_membership": {
+        "old-openai-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "probe.ct.sendgrid.net",
+      "native_membership": {
+        "old-openai-singbox": true,
+        "new-openai": true,
+        "candidate-openai": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "probe.intercom.io",
+      "native_membership": {
+        "old-openai-singbox": true,
+        "new-openai": true,
+        "candidate-openai": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "probe.intercomcdn.com",
+      "native_membership": {
+        "old-openai-singbox": true,
+        "new-openai": true,
+        "candidate-openai": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 21,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 20,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "browser-intake-us5-datadoghq.com",
+      "native_membership": {
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 23,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 22,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "native_membership": {
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 23,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 22,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "fonts.googleapis.com",
+      "native_membership": {
+        "geosite-google": true,
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "fonts.gstatic.com",
+      "native_membership": {
+        "geosite-google": true,
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "cdn.growthbook.io",
+      "native_membership": {
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 23,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 22,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "cdn.usefathom.com",
+      "native_membership": {
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 23,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 22,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "modelcontextprotocol.io",
+      "native_membership": {
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 23,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 22,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "probe.modelcontextprotocol.io",
+      "native_membership": {
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 16,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 15,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 23,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 22,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 19,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 19,
+              "answer_count": 1
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": "final",
+              "action": "route",
+              "outbound": "proxy"
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "example-review.googlesource.com",
+      "native_membership": {
+        "geosite-google": true,
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "host": "a-review.googlesource.com",
+      "native_membership": {
+        "geosite-google": true,
+        "old-anthropic-singbox": true
+      },
+      "batches": {
+        "old": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "rc1": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        },
+        "candidate": {
+          "dns": {
+            "A": {
+              "first_index": 14,
+              "answer_count": 1
+            },
+            "AAAA": {
+              "first_index": 13,
+              "answer_count": 0
+            }
+          },
+          "conditional_route": {
+            "ipv4": {
+              "index": 19,
+              "action": "route",
+              "outbound": "proxy"
+            },
+            "ipv6": {
+              "index": 18,
+              "action": "reject",
+              "outbound": null
+            }
+          }
+        }
+      }
+    }
+  ],
+  "conditions": [
+    "DNS measured on loopback with synthetic A/AAAA upstreams, original saved 22 DNS objects from N100 2026-09-28, cache disabled; not live N100.",
+    "candidate is pre-build source/SRS fixture; final build equality must be checked before treating as final content.",
+    "Route is conditional static inference from native rule-set membership, Rule mode, TCP443, usable domain metadata, no IP/ASN/private/protocol/earlier bypass. Not actual traffic or unknown destination-IP behavior.",
+    "Route snapshot is repository canonical including AWS additions; every host is checked for AWS membership explicitly.",
+    "Regex has two witnesses, not exhaustive enumeration of its language. Suffix has apex and one subdomain representative."
+  ]
+}

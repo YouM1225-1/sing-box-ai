@@ -1,0 +1,28 @@
+{
+  "binary_ref": "132b38e9caaba1a1959354d518e54d2d08419afe",
+  "legacy_commit": "1f6e61caa9f8c157771e2e48a9084ded3cb4caa2",
+  "legacy_repository": "https://github.com/YouM1225-1/anthropic-claude-surge-rules-set",
+  "fixtures": [
+    {
+      "file": "fixtures/old-openai.json",
+      "sha256": "40e4a742df29014337ffc5c01935a7ec8c315b0858135e6358b2b9f143379dc6",
+      "role": "legacy pinned old SRS decoded source"
+    },
+    {
+      "file": "fixtures/old-anthropic.json",
+      "sha256": "90ed32df40af55429f2f8de5e8e768b15cda4d2e1d4ac4e7d316adf4ad334ca6",
+      "role": "legacy pinned old SRS decoded source"
+    },
+    {
+      "file": "fixtures/fixture-openai.json",
+      "sha256": "ee5d662a695ba93be73b1f395d828cb7b79e3012d184db0ae2c7079f5f347eda",
+      "role": "review-only complete SagerNet SRS baseline plus supplement; not a release"
+    },
+    {
+      "file": "fixtures/fixture-anthropic.json",
+      "sha256": "8559537dba7d0f6e35d3467ad000852d75c7a7bdcbb663b9c6dbcfcfaf39dfd8",
+      "role": "review-only complete SagerNet SRS baseline plus supplement; not a release"
+    }
+  ],
+  "original_dns_rules_sha256": "b801448361a43f9120a750072e50dafacbb104cf333919372447cad29821ebf0"
+}

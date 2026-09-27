@@ -328,5 +328,11 @@
         "chatgpt-voice"
       ]
     }
-  ]
+  ],
+  "raw_reference": "voice-raw",
+  "raw_sha256": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a",
+  "locators": [
+    "prefixes[].ipv4Prefix: 23 Voice destination /32 ranges; creationTime is source publication time"
+  ],
+  "last_reviewed_at": "2026-09-27T18:16:24.753892+00:00"
 }

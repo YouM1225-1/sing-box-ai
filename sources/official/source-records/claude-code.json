@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "claude-code-source",
+  "kind": "official-source-record",
+  "url": "https://code.claude.com/docs/en/network-config.md",
+  "retrieved_at": "2026-09-27T18:16:24.685919+00:00",
+  "extraction_method": "Full retrieved response reviewed; only functional endpoint facts and locators are redistributed. Full response remains in local review cache.",
+  "original_response": {
+    "sha256": "e5cc6eaacb03c08e11dbcc9b440cd19e8ea869858ddb0bbbf23df2799a172f64",
+    "content_format": "https-raw-markdown",
+    "is_original_html": false,
+    "bytes": 40333
+  },
+  "page_updated_literal": null,
+  "page_updated_absolute": null,
+  "full_page_redistributed": false,
+  "facts": [
+    {
+      "value": "api.anthropic.com",
+      "locator": "line 213: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "claude.ai",
+      "locator": "line 214: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "claude.com",
+      "locator": "line 215: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "platform.claude.com",
+      "locator": "line 216: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "mcp-proxy.anthropic.com",
+      "locator": "line 217: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "downloads.claude.ai",
+      "locator": "line 218: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "storage.googleapis.com",
+      "locator": "line 219: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "storage.googleapis.com",
+      "locator": "line 220: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "registry.npmjs.org",
+      "locator": "line 221: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "bridge.claudeusercontent.com",
+      "locator": "line 222: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "*.frame.claudeusercontent.com",
+      "locator": "line 223: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "github.com",
+      "locator": "line 224: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "raw.githubusercontent.com",
+      "locator": "line 225: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "*-review.googlesource.com",
+      "locator": "line 226: Network access requirements table",
+      "scope": "optional"
+    },
+    {
+      "value": "http-intake.logs.us5.datadoghq.com",
+      "locator": "line 227: Network access requirements table",
+      "scope": "optional"
+    },
+    {
+      "value": "browser-intake-us5-datadoghq.com",
+      "locator": "line 228: Network access requirements table",
+      "scope": "optional"
+    },
+    {
+      "value": "formulae.brew.sh",
+      "locator": "line 229: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "code.claude.com",
+      "locator": "line 230: Network access requirements table",
+      "scope": "feature-dependent-network-requirement"
+    },
+    {
+      "value": "fonts.googleapis.com",
+      "locator": "line 258: Desktop and claude.ai",
+      "scope": "optional-font-with-fallback"
+    },
+    {
+      "value": "fonts.gstatic.com",
+      "locator": "line 258: Desktop and claude.ai",
+      "scope": "optional-font-with-fallback"
+    },
+    {
+      "value": "cdnjs.cloudflare.com",
+      "locator": "line 260: Desktop and claude.ai",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "cdn.jsdelivr.net",
+      "locator": "line 260: Desktop and claude.ai",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "cdn.tailwindcss.com",
+      "locator": "line 260: Desktop and claude.ai",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "code.jquery.com",
+      "locator": "line 260: Desktop and claude.ai",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "unpkg.com",
+      "locator": "line 260: Desktop and claude.ai",
+      "scope": "artifact-library-no-fallback"
+    }
+  ],
+  "rights": "Domain names, addresses and endpoint facts are recorded for interoperability. This record does not relicense the original documentation or reproduce the full article."
+}

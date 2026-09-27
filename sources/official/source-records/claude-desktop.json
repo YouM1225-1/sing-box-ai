@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "id": "claude-desktop-source",
+  "kind": "official-source-record",
+  "url": "https://code.claude.com/docs/en/desktop.md",
+  "retrieved_at": "2026-09-27T18:16:24.724569+00:00",
+  "extraction_method": "Full retrieved response reviewed; only functional endpoint facts and locators are redistributed. Full response remains in local review cache.",
+  "original_response": {
+    "sha256": "e98e10f3623f790fafcbdbf9e360905fb15ba2e752cb744fea385034bdd43eb0",
+    "content_format": "https-raw-markdown",
+    "is_original_html": false,
+    "bytes": 103674
+  },
+  "page_updated_literal": null,
+  "page_updated_absolute": null,
+  "full_page_redistributed": false,
+  "facts": [
+    {
+      "value": "anthropic.com",
+      "locator": "line 775: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.anthropic.com",
+      "locator": "line 776: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "claude.ai",
+      "locator": "line 777: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.claude.ai",
+      "locator": "line 778: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "claude.com",
+      "locator": "line 779: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.claude.com",
+      "locator": "line 780: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "claude.app",
+      "locator": "line 781: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.claude.app",
+      "locator": "line 782: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.claudeusercontent.com",
+      "locator": "line 783: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.claudemcpcontent.com",
+      "locator": "line 784: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "anthropic.com",
+      "locator": "line 794: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "api.anthropic.com",
+      "locator": "line 795: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "a-api.anthropic.com",
+      "locator": "line 796: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "a-cdn.anthropic.com",
+      "locator": "line 797: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "s-cdn.anthropic.com",
+      "locator": "line 798: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "assets-proxy.anthropic.com",
+      "locator": "line 799: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "claude.ai",
+      "locator": "line 800: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "a.claude.ai",
+      "locator": "line 801: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "a-cdn.claude.ai",
+      "locator": "line 802: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "assets.claude.ai",
+      "locator": "line 803: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "downloads.claude.ai",
+      "locator": "line 804: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.livepreview.claude.ai",
+      "locator": "line 805: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "claude.com",
+      "locator": "line 806: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "platform.claude.com",
+      "locator": "line 807: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.livepreview.claude.app",
+      "locator": "line 808: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.claudeusercontent.com",
+      "locator": "line 809: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "*.claudemcpcontent.com",
+      "locator": "line 810: Network access requirements domain block",
+      "scope": "desktop-network-host"
+    },
+    {
+      "value": "fonts.googleapis.com",
+      "locator": "line 817: Network access requirements",
+      "scope": "optional-font-with-fallback"
+    },
+    {
+      "value": "fonts.gstatic.com",
+      "locator": "line 817: Network access requirements",
+      "scope": "optional-font-with-fallback"
+    },
+    {
+      "value": "cdnjs.cloudflare.com",
+      "locator": "line 819: Network access requirements",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "cdn.jsdelivr.net",
+      "locator": "line 819: Network access requirements",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "cdn.tailwindcss.com",
+      "locator": "line 819: Network access requirements",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "code.jquery.com",
+      "locator": "line 819: Network access requirements",
+      "scope": "artifact-library-no-fallback"
+    },
+    {
+      "value": "unpkg.com",
+      "locator": "line 819: Network access requirements",
+      "scope": "artifact-library-no-fallback"
+    }
+  ],
+  "rights": "Domain names, addresses and endpoint facts are recorded for interoperability. This record does not relicense the original documentation or reproduce the full article."
+}

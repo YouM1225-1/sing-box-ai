@@ -189,5 +189,13 @@
       "status": "optional",
       "shared_dependency": true
     }
-  ]
+  ],
+  "raw_reference": "claude-desktop-source",
+  "raw_sha256": "abcc72d39c25a12bf679c86d7f19f5653b4a784ceabde6c0c4fce6121a291b39",
+  "locators": [
+    "Network access requirements: domain code blocks; optional fonts and required artifact JavaScript hosts"
+  ],
+  "last_reviewed_at": "2026-09-27T18:16:24.724569+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "e98e10f3623f790fafcbdbf9e360905fb15ba2e752cb744fea385034bdd43eb0"
 }

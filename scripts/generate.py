@@ -28,11 +28,15 @@ def build(output, mode="release", review_as_of=None, root=ROOT):
             artifacts.append({"path": target.name, "sha256": sha(target), "source_path": source.name, "source_sha256": sha(source), "bytes": target.stat().st_size, "binary_version": 2, "direction": "source" if name == "anthropic-ip" else "destination"})
         commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True)
         manifest = {
-            "schema": 1, "build_mode": mode, "project_version": (root / "VERSION").read_text().strip(),
+            "schema": 2, "build_mode": mode, "project_version": (root / "VERSION").read_text().strip(),
             "review_as_of": str(review_as_of or date(policy["review_as_of"])),
             "source_commit": commit.stdout.strip() if commit.returncode == 0 else None,
             "inputs": input_files(root), "upstreams": list(archives(root).values()), "compiler": compiler_info,
             "features": sorted(policy["features"]), "enabled_optional": sorted(policy["enabled_optional"]),
+            "selected_pending": sorted(policy.get("selected_pending", [])),
+            "baseline_inputs": policy["baseline_inputs"], "provenance": selected,
+            "field_counts": {name: {k: len(v) for k, v in source_document(selected[name])["rules"][0].items()} for name in ARTIFACTS},
+            "harness_dependencies": {"go_version": load(root / "tools.lock.json")["go_version"], "sing_module": load(root / "tools.lock.json")["sing_box"]["sing_module"]},
             "source_format_version": 2, "format_min_reader_version": "1.10.0", "rule_shape": "one-default",
             "normalization": normalization, "artifacts": artifacts,
             "validation": None, "validated_consumers": [], "integration_evidence": [],

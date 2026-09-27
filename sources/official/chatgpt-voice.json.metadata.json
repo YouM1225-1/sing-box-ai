@@ -1,0 +1,10 @@
+{
+  "url": "https://openai.com/chatgpt-voice.json",
+  "retrieved_at": "2026-09-27T18:16:24.753892+00:00",
+  "status": 200,
+  "sha256": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a",
+  "size": 895,
+  "method": "https-raw-response",
+  "content_format": "application/json",
+  "creation_time_is_retrieval_time": false
+}

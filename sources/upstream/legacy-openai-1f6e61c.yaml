@@ -1,0 +1,75 @@
+version: 1
+updated: 2026-09-27
+purpose: OpenAI and ChatGPT client destination rules for sing-box
+sources:
+  official_network_recommendations: https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps
+  official_enterprise_network_controls: https://help.openai.com/en/articles/20001323-corporate-network-controls-in-chatgpt-enterprise
+  official_ip_allowlisting_scope: https://help.openai.com/en/articles/12111596-ip-allowlisting-for-chatgpt
+  sing_box_source_format: https://sing-box.sagernet.org/configuration/rule-set/source-format/
+  community_cross_check: https://github.com/SagerNet/sing-geosite/blob/rule-set/geosite-openai.json
+notes:
+  - Wildcard entries from the official OpenAI allowlist are represented as domain_suffix.
+  - No static OpenAI service IPs are included; OpenAI documents dynamic service endpoints and the IP allowlisting page is for inbound workspace controls.
+  - The compatibility entries are narrow exact hosts or documented client transport suffixes; no domain_keyword rule is used.
+entries:
+  domain_suffix:
+    - {value: auth.openai.com, profile: official-required}
+    - {value: chatgpt.com, profile: official-required}
+    - {value: ct.sendgrid.net, profile: official-required}
+    - {value: intercom.io, profile: official-required}
+    - {value: intercomcdn.com, profile: official-required}
+    - {value: oaistatic.com, profile: official-required}
+    - {value: oaiusercontent.com, profile: official-required}
+    - {value: openai.com, profile: official-required}
+    - {value: oaistatsig.com, profile: official-required}
+    - {value: chat.com, profile: compatibility-observed}
+    - {value: chatgpt.livekit.cloud, profile: compatibility-observed}
+    - {value: crixet.com, profile: compatibility-observed}
+    - {value: host.livekit.cloud, profile: compatibility-observed}
+    - {value: sora.com, profile: compatibility-observed}
+    - {value: turn.livekit.cloud, profile: compatibility-observed}
+  domain:
+    - {value: android.chat.openai.com, profile: official-required}
+    - {value: auth0.openai.com, profile: official-required}
+    - {value: cdn.openaimerge.com, profile: official-required}
+    - {value: cdn.workos.com, profile: official-required}
+    - {value: challenges.cloudflare.com, profile: official-required}
+    - {value: chat.openai.com, profile: official-required}
+    - {value: desktop.chat.openai.com, profile: official-required}
+    - {value: forwarder.workos.com, profile: official-required}
+    - {value: humb.apple.com, profile: official-required}
+    - {value: images.workoscdn.com, profile: official-required}
+    - {value: ios.chat.openai.com, profile: official-required}
+    - {value: js.intercomcdn.com, profile: official-required}
+    - {value: js.stripe.com, profile: official-required}
+    - {value: o207216.ingest.sentry.io, profile: official-required}
+    - {value: o33249.ingest.sentry.io, profile: official-required}
+    - {value: rum.browser-intake-datadoghq.com, profile: official-required}
+    - {value: setup.auth.openai.com, profile: official-required}
+    - {value: setup.workos.com, profile: official-required}
+    - {value: tcr9i.chat.openai.com, profile: official-required}
+    - {value: workos.imgix.net, profile: official-required}
+    - {value: browser-intake-datadoghq.com, profile: compatibility-observed}
+    - {value: chat.openai.com.cdn.cloudflare.net, profile: compatibility-observed}
+    - {value: client-api.arkoselabs.com, profile: compatibility-observed}
+    - {value: events.statsigapi.net, profile: compatibility-observed}
+    - {value: featureassets.org, profile: compatibility-observed}
+    - {value: itunes.apple.com, profile: compatibility-observed}
+    - {value: o33249.ingest.us.sentry.io, profile: compatibility-observed}
+    - {value: openai-api.arkoselabs.com, profile: compatibility-observed}
+    - {value: openai-prod.azureedge.net, profile: compatibility-observed}
+    - {value: openai.qualtrics.com, profile: compatibility-observed}
+    - {value: openai.com.cdn.cloudflare.net, profile: compatibility-observed}
+    - {value: openaiapi-site.azureedge.net, profile: compatibility-observed}
+    - {value: openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net, profile: compatibility-observed}
+    - {value: openaicom-api.azureedge.net, profile: compatibility-observed}
+    - {value: openaicom.imgix.net, profile: compatibility-observed}
+    - {value: openaicomproductionae4b.blob.core.windows.net, profile: compatibility-observed}
+    - {value: openaiassets.blob.core.windows.net, profile: compatibility-observed}
+    - {value: prodregistryv2.org, profile: compatibility-observed}
+    - {value: production-openaicom-storage.azureedge.net, profile: compatibility-observed}
+    - {value: register.appattest.apple.com, profile: compatibility-observed}
+    - {value: statsigapi.net, profile: compatibility-observed}
+    - {value: ws.chatgpt.com, profile: compatibility-observed}
+  domain_regex:
+    - {value: '^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$', profile: compatibility-observed}

@@ -1,4 +1,4 @@
-- value: .auth.openai.com
+- value: .ct.sendgrid.net
   type: domain_suffix
   product: &id001
   - chatgpt-web
@@ -6,31 +6,11 @@
   - codex
   direction: destination
   status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: .chatgpt.com
-  type: domain_suffix
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: .ct.sendgrid.net
-  type: domain_suffix
-  product: *id001
-  direction: destination
-  status: required
   shared_dependency: true
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: .intercom.io
   type: domain_suffix
   product: *id001
@@ -40,7 +20,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: .intercomcdn.com
   type: domain_suffix
   product: *id001
@@ -50,67 +30,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
-- value: .oaistatic.com
-  type: domain_suffix
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: .oaiusercontent.com
-  type: domain_suffix
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: .openai.com
-  type: domain_suffix
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: .oaistatsig.com
-  type: domain_suffix
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: android.chat.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: auth0.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: cdn.openaimerge.com
   type: domain
   product: *id001
@@ -120,7 +40,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: cdn.workos.com
   type: domain
   product: *id001
@@ -130,7 +50,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: challenges.cloudflare.com
   type: domain
   product: *id001
@@ -140,27 +60,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
-- value: chat.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: desktop.chat.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: forwarder.workos.com
   type: domain
   product: *id001
@@ -170,7 +70,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: humb.apple.com
   type: domain
   product: *id001
@@ -180,7 +80,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: images.workoscdn.com
   type: domain
   product: *id001
@@ -190,27 +90,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
-- value: ios.chat.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
-- value: js.intercomcdn.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: true
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: js.stripe.com
   type: domain
   product: *id001
@@ -220,7 +100,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: o207216.ingest.sentry.io
   type: domain
   product: *id001
@@ -230,17 +110,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
-- value: o33249.ingest.sentry.io
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: true
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: rum.browser-intake-datadoghq.com
   type: domain
   product: *id001
@@ -250,17 +120,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
-- value: setup.auth.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: setup.workos.com
   type: domain
   product: *id001
@@ -270,17 +130,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
-- value: tcr9i.chat.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official network baseline
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: workos.imgix.net
   type: domain
   product: *id001
@@ -290,47 +140,7 @@
   sources:
   - kind: official
     reference: openai-network
-  reason: Official network baseline
-- value: auth.openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-login
-  reason: Official network baseline
-- value: chatgpt.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-login
-  reason: Official network baseline
-- value: openai.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-login
-  reason: Official network baseline
-- value: ws.chatgpt.com
-  type: domain
-  product: *id001
-  direction: destination
-  status: required
-  shared_dependency: false
-  sources:
-  - kind: official
-    reference: openai-network
-  reason: Official WebSocket endpoint
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: 102.37.57.54/32
   type: ip_cidr
   product:

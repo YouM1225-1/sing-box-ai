@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-09-27T18:28:51.209300+00:00",
+  "status": "source-input-review-complete; isolated candidate hashes and source JSON verified",
+  "baseline": {
+    "rule_set_commit": "e6a8117545c35a17c508e3f37a9a990571234428",
+    "dlc_commit": "bcea25493ed28c387660fe49ce1ceb242d2efca0",
+    "current_upstream_ref_checked": true,
+    "bytes_changed": false,
+    "source": "Pinned Sager geosite-openai.srs and geosite-anthropic.srs are authoritative build inputs; DLC remains an equality and annotation crosscheck."
+  },
+  "official_sources": {
+    "openai-network": {
+      "record": "sources/official/source-records/openai-network.json",
+      "retrieved_at": "2026-09-27T18:20:21+00:00",
+      "record_sha256": "7fa4e4db95fee6f7f2fdd92ce4e525f742402fa5a830aa107e85784bd5f3d5ec",
+      "original_response_sha256": "8c0e7c8f5a777e3432cd524f09e5ece95c044bc5564e1dff1a74f5b3de7ebd48"
+    },
+    "openai-login": {
+      "record": "sources/official/source-records/openai-login.json",
+      "retrieved_at": "2026-09-27T18:20:21+00:00",
+      "record_sha256": "84c9131a281143c959ff6bcbc768db1f9f57ec9c8b62bc4494f85d5faeeda168",
+      "original_response_sha256": "f3044dcf33a8938083d8cacdafec886b4e7256f236598e1301bbd5c85162ee70"
+    },
+    "claude-code": {
+      "record": "sources/official/source-records/claude-code.json",
+      "retrieved_at": "2026-09-27T18:16:24.685919+00:00",
+      "record_sha256": "83e3a0735cc70e2ffe605a35de5ccdc363a4823dcbb87015100f24bfa1d05c0b",
+      "original_response_sha256": "e5cc6eaacb03c08e11dbcc9b440cd19e8ea869858ddb0bbbf23df2799a172f64"
+    },
+    "claude-desktop": {
+      "record": "sources/official/source-records/claude-desktop.json",
+      "retrieved_at": "2026-09-27T18:16:24.724569+00:00",
+      "record_sha256": "abcc72d39c25a12bf679c86d7f19f5653b4a784ceabde6c0c4fce6121a291b39",
+      "original_response_sha256": "e98e10f3623f790fafcbdbf9e360905fb15ba2e752cb744fea385034bdd43eb0"
+    },
+    "anthropic-ip": {
+      "record": "sources/official/source-records/anthropic-ip.json",
+      "retrieved_at": "2026-09-27T18:16:24.731288+00:00",
+      "record_sha256": "0dbdc4d19cfd517a572477d31b195bc15050555e2602c6da394f6fa92c89d5de",
+      "original_response_sha256": "c3c62f43f063a10547c0102fc74a5398b7e396c65a3669cce2973a2a8c73f472"
+    }
+  },
+  "voice": {
+    "path": "sources/official/chatgpt-voice.json",
+    "sha256": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a",
+    "prefix_count": 23,
+    "retrieved_at": "2026-09-27T18:16:24.753892+00:00",
+    "bytes_changed": false
+  },
+  "counts": {
+    "openai_baseline_rules": 23,
+    "openai_default_supplements": 37,
+    "anthropic_baseline_rules": 8,
+    "anthropic_default_supplements": 14,
+    "anthropic_optional_supplements": 5,
+    "unselected_pending": 17
+  },
+  "official_evidence_boundaries": [
+    "OpenAI main allowlist contains 29 entries. ws.chatgpt.com / chatgpt.com WebSocket destinations are separate documented facts, covered by baseline suffixes.",
+    "Statsig public domains, two Arkose exact hosts, Sentry US and two legacy Azure exact hosts are not in the retrieved current main allowlist. This is not proof of deprecation or prohibition.",
+    "register.appattest.apple.com remains an official iOS diagnostic URL; this does not by itself establish a general product destination rule.",
+    "Claude operational Datadog hosts, Google Fonts and Gerrit are explicit official optional dependencies, retained as opt-in supplements.",
+    "Current Claude feature-flag functionality does not by itself identify cdn.growthbook.io as a runtime endpoint. GrowthBook and Fathom remain unselected discoveries.",
+    "Claude Challenge retains original maintainer approval and date 2026-09-27, anchored by immutable evidence SHA. This is not current-batch runtime validation.",
+    "Anthropic /23 and /48 are inbound service destinations. Outbound /21 retains its separate source-IP artifact role; no complete whole-client destination IP inventory is claimed."
+  ],
+  "migration": {
+    "evidence": "sources/evidence/legacy-to-rc2-coverage.json",
+    "old_actual_srs_commit": "1f6e61caa9f8c157771e2e48a9084ded3cb4caa2",
+    "native_old_witness_checks": 157,
+    "openai_exit": "11 original exact hosts plus 3 root apexes; descendants of the 3 narrowed wildcard domains remain covered.",
+    "anthropic_exit": "6 exact hosts, modelcontextprotocol.io apex and every subdomain, and the full old Gerrit regex language.",
+    "legacy_yaml_is_not_authority": "Actual Claude SRS also contains optional Datadog, artifact CDN and modelcontextprotocol.io entries absent from its same-commit YAML; use actual SRS for migration coverage.",
+    "consumer_policy": "Set exits and actual first-hit consumer routing changes are separate. Apple exceptions are not omitted from the set delta.",
+    "isolated_candidate_hashes_verified": true
+  },
+  "licensing": {
+    "dlc": "Fixed MIT LICENSE retained.",
+    "sager": "Fixed generator-repository GPL-3.0-or-later notice retained separately; no unsupported relicensing of generated SRS data.",
+    "official": "Full official page responses remain in the local review cache. Public source-records contain endpoint facts, original URLs, retrieval timestamps, source locators and hashes, not whole-page prose.",
+    "legacy": "Pinned user-owned historical repository inputs kept for migration proof. Root LICENSE returned 404; no inferred license assigned."
+  },
+  "remaining": [
+    "Final coherent batch rebuild after all sources, scripts and documents are fixed; current isolated candidate is not a published release.",
+    "Consumer first-hit local audit for all residual scopes; infinite regex/suffix languages need representative witnesses plus structural bounds.",
+    "Formal new-batch runtime integration remains pending; no N100 modifications or runtime certification were performed."
+  ],
+  "upstream_ref_checks": {
+    "sager-rule-set": {
+      "url": "https://api.github.com/repos/SagerNet/sing-geosite/git/ref/heads/rule-set",
+      "retrieved_at": "2026-09-27T18:16:24.123938+00:00",
+      "observed_commit": "e6a8117545c35a17c508e3f37a9a990571234428",
+      "response_sha256": "0b979796945fd84085aadc05603722f3b2fdb18b9c9b2693cf93de8e4d8aad64"
+    },
+    "dlc-master": {
+      "url": "https://api.github.com/repos/v2fly/domain-list-community/git/ref/heads/master",
+      "retrieved_at": "2026-09-27T18:16:24.124354+00:00",
+      "observed_commit": "bcea25493ed28c387660fe49ce1ceb242d2efca0",
+      "response_sha256": "da203dcc2fa51c3df66e58c7b721fdb4320cc95a9094fc07fc3187bfcf717871"
+    }
+  }
+}

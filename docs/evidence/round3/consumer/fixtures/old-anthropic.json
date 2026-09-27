@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "a-api.anthropic.com",
+        "a-cdn.anthropic.com",
+        "a-cdn.claude.ai",
+        "a.claude.ai",
+        "api.anthropic.com",
+        "assets-proxy.anthropic.com",
+        "assets.claude.ai",
+        "bridge.claudeusercontent.com",
+        "browser-intake-us5-datadoghq.com",
+        "cdn.growthbook.io",
+        "cdn.jsdelivr.net",
+        "cdn.tailwindcss.com",
+        "cdn.usefathom.com",
+        "cdnjs.cloudflare.com",
+        "challenges.cloudflare.com",
+        "code.claude.com",
+        "code.jquery.com",
+        "downloads.claude.ai",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "formulae.brew.sh",
+        "github.com",
+        "http-intake.logs.us5.datadoghq.com",
+        "mcp-proxy.anthropic.com",
+        "platform.claude.com",
+        "raw.githubusercontent.com",
+        "registry.npmjs.org",
+        "s-cdn.anthropic.com",
+        "storage.googleapis.com",
+        "unpkg.com"
+      ],
+      "domain_suffix": [
+        "anthropic.com",
+        "clau.de",
+        "claude.ai",
+        "claude.app",
+        "claude.com",
+        "claudemcpcontent.com",
+        "claudeusercontent.com",
+        "frame.claudeusercontent.com",
+        "livepreview.claude.ai",
+        "livepreview.claude.app",
+        "modelcontextprotocol.io"
+      ],
+      "domain_regex": "^[a-z0-9-]+-review\\.googlesource\\.com$",
+      "ip_cidr": [
+        "160.79.104.0/23",
+        "2607:6bc0::/48"
+      ]
+    }
+  ]
+}

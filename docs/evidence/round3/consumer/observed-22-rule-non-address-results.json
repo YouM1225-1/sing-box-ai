@@ -1,0 +1,2760 @@
+{
+  "requests": 126,
+  "rows": [
+    {
+      "variant": "old-srs",
+      "host": "auth.openai.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "auth.openai.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "auth.openai.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "auth.openai.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "auth.openai.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "auth.openai.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "auth.openai.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "api.anthropic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "api.anthropic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "api.anthropic.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "api.anthropic.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "api.anthropic.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "api.anthropic.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "api.anthropic.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "auth.openai.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "auth.openai.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "auth.openai.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "auth.openai.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "auth.openai.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "auth.openai.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "auth.openai.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "api.anthropic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "api.anthropic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "api.anthropic.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "api.anthropic.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "api.anthropic.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "api.anthropic.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "api.anthropic.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-srs",
+      "host": "unmatched.audit-review.net",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "auth.openai.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "auth.openai.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "auth.openai.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "auth.openai.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "auth.openai.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "auth.openai.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "auth.openai.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "api.anthropic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "api.anthropic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "api.anthropic.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "api.anthropic.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "api.anthropic.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "api.anthropic.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "api.anthropic.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "old-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "auth.openai.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "auth.openai.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "auth.openai.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "auth.openai.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "auth.openai.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "auth.openai.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "auth.openai.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "api.anthropic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "api.anthropic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 15,
+          "description": "query_type=AAAA rule_set=[geosite-anthropic geosite-openai geosite-ai] => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "api.anthropic.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "api.anthropic.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "api.anthropic.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "api.anthropic.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 16,
+          "description": "rule_set=[geosite-anthropic geosite-openai geosite-ai] => route(dns_proxy,timeout=4s)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "api.anthropic.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 16,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 64,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 15,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 5,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 19,
+          "description": "=> evaluate(dns_proxy,timeout=2s,client-subnet=114.114.114.0/24)"
+        },
+        {
+          "index": 21,
+          "description": "=> respond"
+        }
+      ]
+    },
+    {
+      "variant": "fixture-inline",
+      "host": "unmatched.audit-review.net",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [],
+      "matches": [
+        {
+          "index": 0,
+          "description": "query_type=HTTPS => predefined(NOERROR)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "auth.openai.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "auth.openai.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "auth.openai.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 16,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "auth.openai.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 64,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "auth.openai.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 15,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "auth.openai.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 5,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "auth.openai.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 65,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "api.anthropic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "api.anthropic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "api.anthropic.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 16,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "api.anthropic.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 64,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "api.anthropic.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 15,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "api.anthropic.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 5,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "api.anthropic.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 65,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "unmatched.audit-review.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "192.0.2.20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 1,
+          "server": "dns_direct",
+          "answer": "192.0.2.20"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "unmatched.audit-review.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 28,
+          "server": "dns_direct",
+          "answer": "2001:db8:ffff::20"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "unmatched.audit-review.net",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 16,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "unmatched.audit-review.net",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 64,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "unmatched.audit-review.net",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 15,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "unmatched.audit-review.net",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 5,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-old",
+      "host": "unmatched.audit-review.net",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 65,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "auth.openai.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "auth.openai.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "auth.openai.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 16,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "auth.openai.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 64,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "auth.openai.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 15,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "auth.openai.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 5,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "auth.openai.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "auth.openai.com",
+          "qtype": 65,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "api.anthropic.com",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "198.51.100.10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 1,
+          "server": "dns_proxy",
+          "answer": "198.51.100.10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "api.anthropic.com",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::10"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 28,
+          "server": "dns_proxy",
+          "answer": "2001:db8:ffff::10"
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "api.anthropic.com",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 16,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "api.anthropic.com",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 64,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "api.anthropic.com",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 15,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "api.anthropic.com",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 5,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "api.anthropic.com",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "api.anthropic.com",
+          "qtype": 65,
+          "server": "dns_proxy",
+          "answer": null
+        }
+      ],
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=[geosite-openai geosite-anthropic] => route(dns_proxy)"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "unmatched.audit-review.net",
+      "qtype": "A",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 1,
+          "value": "192.0.2.20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 1,
+          "server": "dns_direct",
+          "answer": "192.0.2.20"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "unmatched.audit-review.net",
+      "qtype": "AAAA",
+      "rcode": 0,
+      "answers": [
+        {
+          "type": 28,
+          "value": "2001:db8:ffff::20"
+        }
+      ],
+      "answer_count": 1,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 28,
+          "server": "dns_direct",
+          "answer": "2001:db8:ffff::20"
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "unmatched.audit-review.net",
+      "qtype": "TXT",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 16,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "unmatched.audit-review.net",
+      "qtype": "SVCB",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 64,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "unmatched.audit-review.net",
+      "qtype": "MX",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 15,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "unmatched.audit-review.net",
+      "qtype": "CNAME",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 5,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "variant": "legacy-fixture",
+      "host": "unmatched.audit-review.net",
+      "qtype": "HTTPS",
+      "rcode": 0,
+      "answers": [],
+      "answer_count": 0,
+      "events": [
+        {
+          "host": "unmatched.audit-review.net",
+          "qtype": 65,
+          "server": "dns_direct",
+          "answer": null
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "variant": "old-srs",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "variant": "fixture-srs",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "variant": "old-inline",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "variant": "fixture-inline",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "variant": "legacy-old",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "variant": "legacy-fixture",
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "processes": [
+    {
+      "variant": "old-srs",
+      "pid": 35844,
+      "exited": true
+    },
+    {
+      "variant": "fixture-srs",
+      "pid": 35846,
+      "exited": true
+    },
+    {
+      "variant": "old-inline",
+      "pid": 35849,
+      "exited": true
+    },
+    {
+      "variant": "fixture-inline",
+      "pid": 35851,
+      "exited": true
+    },
+    {
+      "variant": "legacy-old",
+      "pid": 35853,
+      "exited": true
+    },
+    {
+      "variant": "legacy-fixture",
+      "pid": 35855,
+      "exited": true
+    }
+  ],
+  "assertions_passed": true,
+  "legacy_warning": "Deprecated flag is set only in two isolated child processes to distinguish the old code path; no system/production environment changed.",
+  "conclusion": "Current 22-rule configuration takes modern path: TXT/SVCB/MX/CNAME hit product DNS rule16 despite IP-containing SRS. Skipping was observed only in explicitly constructed legacy control. Inline and SRS route-set forms match for this matrix."
+}

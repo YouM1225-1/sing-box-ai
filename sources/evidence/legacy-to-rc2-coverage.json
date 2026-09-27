@@ -1,0 +1,3346 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-27T18:27:34.475084+00:00",
+  "comparison_scope": "Complete rule-language comparison of actual legacy SRS against pinned Sager SRS plus default supplements; selected_pending=[]; optional disabled. Exact rules covered by suffixes are retained semantically.",
+  "method": "Native sing-box 1.12.0 decompile, structural domain/suffix/identical-regex/CIDR containment, with native finite witness checks. Regex/suffix residual languages are recorded, not replaced by samples.",
+  "runtime_acceptance": "not performed; this is local rule semantics, not a new client login, network availability, N100 deployment or formal batch integration result.",
+  "consumer_routing": "Separate first-hit consumer audit required. Product-set membership alone does not determine actual outbound. Apple precedence is recorded below as an existing-consumer exception, not as a claim of zero change in every deployment.",
+  "artifacts": {
+    "openai": {
+      "old": {
+        "path": "sources/upstream/legacy-openai-1f6e61c.srs",
+        "commit": "1f6e61caa9f8c157771e2e48a9084ded3cb4caa2",
+        "sha256": "2950265e955331400937f45d747976e9d1d539394a5e105990d93dd26da6b1d9",
+        "counts": {
+          "domain": 42,
+          "domain_suffix": 15,
+          "domain_regex": 1
+        }
+      },
+      "baseline": {
+        "path": "sources/upstream/geosite-openai.srs",
+        "commit": "e6a8117545c35a17c508e3f37a9a990571234428",
+        "sha256": "aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1",
+        "counts": {
+          "domain": 9,
+          "domain_suffix": 13,
+          "domain_regex": 1
+        }
+      },
+      "new": {
+        "kind": "locally built isolated candidate SRS; byte-identical to independently derived baseline-plus-supplement fixture",
+        "sha256": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+        "source_sha256": "d08434df6152141dfb724cf83cd86d8fdaee01282697d05b55778c007b94c1b6",
+        "supplement_path": "sources/openai.yaml",
+        "supplement_sha256": "a9179ce609c5031e9029245d8ccb2c09623ab993a87f7b3ff43ba3966574e727",
+        "counts": {
+          "domain": 20,
+          "domain_suffix": 16,
+          "domain_regex": 1,
+          "ip_cidr": 23
+        },
+        "artifact": "openai.srs",
+        "built_source_sha256": "42be8f7171905987be0303f1170352cb6c1f2d48e14ebfc1ca47bfd17fc493f7",
+        "final_release_batch": false,
+        "verification": "Native compiled SRS hash and complete source JSON equal the independent semantic comparison target."
+      },
+      "legacy_entry_coverage": [
+        {
+          "type": "domain",
+          "value": "android.chat.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "android.chat.openai.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "auth0.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "auth0.openai.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "browser-intake-datadoghq.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "browser-intake-datadoghq.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "browser-intake-datadoghq.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "cdn.openaimerge.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "cdn.openaimerge.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "cdn.openaimerge.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "cdn.workos.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "cdn.workos.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "cdn.workos.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "challenges.cloudflare.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "challenges.cloudflare.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "challenges.cloudflare.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "chat.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "chat.openai.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "chat.openai.com.cdn.cloudflare.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com.cdn.cloudflare.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "chat.openai.com.cdn.cloudflare.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "client-api.arkoselabs.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "client-api.arkoselabs.com"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "client-api.arkoselabs.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "desktop.chat.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "desktop.chat.openai.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "events.statsigapi.net",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "events.statsigapi.net"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "events.statsigapi.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "featureassets.org",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "featureassets.org"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "featureassets.org"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "forwarder.workos.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "forwarder.workos.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "forwarder.workos.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "humb.apple.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "humb.apple.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "humb.apple.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "images.workoscdn.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "images.workoscdn.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "images.workoscdn.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "ios.chat.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "ios.chat.openai.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "itunes.apple.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "itunes.apple.com"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Historical inclusion is not current runtime-dependency evidence.",
+          "native_witnesses": [
+            "itunes.apple.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "js.intercomcdn.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercomcdn.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "js.intercomcdn.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "js.stripe.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "js.stripe.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "js.stripe.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "o207216.ingest.sentry.io",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "o207216.ingest.sentry.io"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "o207216.ingest.sentry.io"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "o33249.ingest.sentry.io",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "o33249.ingest.sentry.io"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "o33249.ingest.sentry.io"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "o33249.ingest.us.sentry.io",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "o33249.ingest.us.sentry.io"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "o33249.ingest.us.sentry.io"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openai-api.arkoselabs.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "openai-api.arkoselabs.com"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "openai-api.arkoselabs.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openai-prod.azureedge.net",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "openai-prod.azureedge.net"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "openai-prod.azureedge.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openai.com.cdn.cloudflare.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com.cdn.cloudflare.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openai.com.cdn.cloudflare.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openai.qualtrics.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "openai.qualtrics.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openai.qualtrics.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openaiapi-site.azureedge.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "openaiapi-site.azureedge.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openaiapi-site.azureedge.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openaiassets.blob.core.windows.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "openaiassets.blob.core.windows.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openaiassets.blob.core.windows.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openaicom-api.azureedge.net",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "openaicom-api.azureedge.net"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "openaicom-api.azureedge.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openaicom.imgix.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "openaicom.imgix.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openaicom.imgix.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "openaicomproductionae4b.blob.core.windows.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "openaicomproductionae4b.blob.core.windows.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openaicomproductionae4b.blob.core.windows.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "prodregistryv2.org",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "prodregistryv2.org"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "prodregistryv2.org"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "production-openaicom-storage.azureedge.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "production-openaicom-storage.azureedge.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "production-openaicom-storage.azureedge.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "register.appattest.apple.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "register.appattest.apple.com"
+            }
+          ],
+          "disposition": "ios-diagnostic-pending",
+          "reason": "Official page mentions this URL in iOS diagnostics, not the main runtime allowlist.",
+          "native_witnesses": [
+            "register.appattest.apple.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "rum.browser-intake-datadoghq.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "rum.browser-intake-datadoghq.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "rum.browser-intake-datadoghq.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "setup.auth.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "setup.auth.openai.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "setup.workos.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "setup.workos.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "setup.workos.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "statsigapi.net",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "statsigapi.net"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "native_witnesses": [
+            "statsigapi.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "tcr9i.chat.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "tcr9i.chat.openai.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "workos.imgix.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "workos.imgix.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "workos.imgix.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "ws.chatgpt.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "chatgpt.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "ws.chatgpt.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "auth.openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "auth.openai.com",
+            "migration-witness.auth.openai.com",
+            "nested.migration-witness.auth.openai.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "chat.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "chat.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "chat.com",
+            "migration-witness.chat.com",
+            "nested.migration-witness.chat.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "chatgpt.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "chatgpt.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "chatgpt.com",
+            "migration-witness.chatgpt.com",
+            "nested.migration-witness.chatgpt.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "chatgpt.livekit.cloud",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "chatgpt.livekit.cloud"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "chatgpt.livekit.cloud",
+            "migration-witness.chatgpt.livekit.cloud",
+            "nested.migration-witness.chatgpt.livekit.cloud"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "crixet.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "crixet.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "crixet.com",
+            "migration-witness.crixet.com",
+            "nested.migration-witness.crixet.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "ct.sendgrid.net",
+          "result": "partially-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": ".ct.sendgrid.net"
+            }
+          ],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "ct.sendgrid.net"
+            }
+          ],
+          "disposition": "shared-apex-pending",
+          "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+          "native_witnesses": [
+            "ct.sendgrid.net",
+            "migration-witness.ct.sendgrid.net",
+            "nested.migration-witness.ct.sendgrid.net"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "host.livekit.cloud",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "host.livekit.cloud"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "host.livekit.cloud",
+            "migration-witness.host.livekit.cloud",
+            "nested.migration-witness.host.livekit.cloud"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io",
+          "result": "partially-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercom.io"
+            }
+          ],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "intercom.io"
+            }
+          ],
+          "disposition": "shared-apex-pending",
+          "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+          "native_witnesses": [
+            "intercom.io",
+            "migration-witness.intercom.io",
+            "nested.migration-witness.intercom.io"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "intercomcdn.com",
+          "result": "partially-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercomcdn.com"
+            }
+          ],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "intercomcdn.com"
+            }
+          ],
+          "disposition": "shared-apex-pending",
+          "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+          "native_witnesses": [
+            "intercomcdn.com",
+            "migration-witness.intercomcdn.com",
+            "nested.migration-witness.intercomcdn.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "oaistatic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "oaistatic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "oaistatic.com",
+            "migration-witness.oaistatic.com",
+            "nested.migration-witness.oaistatic.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "oaistatsig.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "oaistatsig.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "oaistatsig.com",
+            "migration-witness.oaistatsig.com",
+            "nested.migration-witness.oaistatsig.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "oaiusercontent.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "oaiusercontent.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "oaiusercontent.com",
+            "migration-witness.oaiusercontent.com",
+            "nested.migration-witness.oaiusercontent.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "openai.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "openai.com",
+            "migration-witness.openai.com",
+            "nested.migration-witness.openai.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "sora.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "sora.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "sora.com",
+            "migration-witness.sora.com",
+            "nested.migration-witness.sora.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "turn.livekit.cloud",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "turn.livekit.cloud"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "turn.livekit.cloud",
+            "migration-witness.turn.livekit.cloud",
+            "nested.migration-witness.turn.livekit.cloud"
+          ]
+        },
+        {
+          "type": "domain_regex",
+          "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_regex",
+              "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "chatgpt-async-webps-prod-eastus-1.webpubsub.azure.com"
+          ]
+        }
+      ],
+      "residual_scopes": [
+        {
+          "type": "domain",
+          "value": "client-api.arkoselabs.com",
+          "origin_type": "domain",
+          "origin_value": "client-api.arkoselabs.com",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "events.statsigapi.net",
+          "origin_type": "domain",
+          "origin_value": "events.statsigapi.net",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "featureassets.org",
+          "origin_type": "domain",
+          "origin_value": "featureassets.org",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "itunes.apple.com",
+          "origin_type": "domain",
+          "origin_value": "itunes.apple.com",
+          "disposition": "legacy-only-pending",
+          "reason": "Historical inclusion is not current runtime-dependency evidence.",
+          "consumer_policy_change": "Existing audited consumer Apple rule precedes AI product rules; set exit alone need not change its existing Apple outbound."
+        },
+        {
+          "type": "domain",
+          "value": "o33249.ingest.us.sentry.io",
+          "origin_type": "domain",
+          "origin_value": "o33249.ingest.us.sentry.io",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "openai-api.arkoselabs.com",
+          "origin_type": "domain",
+          "origin_value": "openai-api.arkoselabs.com",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "openai-prod.azureedge.net",
+          "origin_type": "domain",
+          "origin_value": "openai-prod.azureedge.net",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "openaicom-api.azureedge.net",
+          "origin_type": "domain",
+          "origin_value": "openaicom-api.azureedge.net",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "prodregistryv2.org",
+          "origin_type": "domain",
+          "origin_value": "prodregistryv2.org",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "register.appattest.apple.com",
+          "origin_type": "domain",
+          "origin_value": "register.appattest.apple.com",
+          "disposition": "ios-diagnostic-pending",
+          "reason": "Official page mentions this URL in iOS diagnostics, not the main runtime allowlist.",
+          "consumer_policy_change": "Existing audited consumer Apple rule precedes AI product rules; set exit alone need not change its existing Apple outbound."
+        },
+        {
+          "type": "domain",
+          "value": "statsigapi.net",
+          "origin_type": "domain",
+          "origin_value": "statsigapi.net",
+          "disposition": "legacy-only-pending",
+          "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "ct.sendgrid.net",
+          "origin_type": "domain_suffix",
+          "origin_value": "ct.sendgrid.net",
+          "disposition": "shared-apex-pending",
+          "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "intercom.io",
+          "origin_type": "domain_suffix",
+          "origin_value": "intercom.io",
+          "disposition": "shared-apex-pending",
+          "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "intercomcdn.com",
+          "origin_type": "domain_suffix",
+          "origin_value": "intercomcdn.com",
+          "disposition": "shared-apex-pending",
+          "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        }
+      ],
+      "new_entry_coverage": [
+        {
+          "type": "domain",
+          "value": "browser-intake-datadoghq.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "cdn.openaimerge.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "cdn.workos.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "challenges.cloudflare.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "forwarder.workos.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "humb.apple.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "images.workoscdn.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "js.stripe.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "o207216.ingest.sentry.io",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "o33249.ingest.sentry.io",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "openai.qualtrics.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "openaiapi-site.azureedge.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "openaiassets.blob.core.windows.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "openaicom.imgix.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "openaicomproductionae4b.blob.core.windows.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "production-openaicom-storage.azureedge.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "rum.browser-intake-datadoghq.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "setup.workos.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "workos.imgix.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": ".ct.sendgrid.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": ".intercom.io",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": ".intercomcdn.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "chat.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "chatgpt.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "chatgpt.livekit.cloud",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "chatgpt.site",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "domain_suffix",
+            "value": "chatgpt.site",
+            "exclude_old_exact_domains": [],
+            "language": "suffix language minus any explicitly listed old exact domains"
+          }
+        },
+        {
+          "type": "domain_suffix",
+          "value": "crixet.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "host.livekit.cloud",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "oaistatic.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "oaistatsig.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "oaiusercontent.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "openai.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "openai.com.cdn.cloudflare.net",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "domain_suffix",
+            "value": "openai.com.cdn.cloudflare.net",
+            "exclude_old_exact_domains": [
+              "chat.openai.com.cdn.cloudflare.net",
+              "openai.com.cdn.cloudflare.net"
+            ],
+            "language": "suffix language minus any explicitly listed old exact domains"
+          }
+        },
+        {
+          "type": "domain_suffix",
+          "value": "sora.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "turn.livekit.cloud",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_regex",
+          "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "ip_cidr",
+          "value": "102.37.57.54/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "102.37.57.54/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "13.71.25.29/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "13.71.25.29/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "135.220.40.201/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "135.220.40.201/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "172.203.39.49/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "172.203.39.49/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "172.207.173.200/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "172.207.173.200/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "172.214.226.198/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "172.214.226.198/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "191.233.251.27/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "191.233.251.27/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "20.162.96.163/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "20.162.96.163/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "20.168.48.117/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "20.168.48.117/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "20.184.36.134/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "20.184.36.134/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "20.203.144.245/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "20.203.144.245/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "20.74.221.21/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "20.74.221.21/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "4.151.200.38/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "4.151.200.38/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "4.155.146.196/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "4.155.146.196/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "4.197.172.116/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "4.197.172.116/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "4.217.235.100/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "4.217.235.100/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "4.245.198.13/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "4.245.198.13/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "40.118.236.137/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "40.118.236.137/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "51.4.112.173/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "51.4.112.173/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "52.143.181.161/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "52.143.181.161/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "68.155.152.41/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "68.155.152.41/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "72.146.20.246/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "72.146.20.246/32"
+          }
+        },
+        {
+          "type": "ip_cidr",
+          "value": "74.248.148.7/32",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "ip_cidr",
+            "value": "74.248.148.7/32"
+          }
+        }
+      ],
+      "witness_checks": [
+        {
+          "value": "android.chat.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "auth.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "auth0.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "browser-intake-datadoghq.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "cdn.openaimerge.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "cdn.workos.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "challenges.cloudflare.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "chat.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "chat.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "chat.openai.com.cdn.cloudflare.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "chatgpt-async-webps-prod-eastus-1.webpubsub.azure.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "chatgpt.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "chatgpt.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "client-api.arkoselabs.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "crixet.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "ct.sendgrid.net",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "desktop.chat.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "events.statsigapi.net",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "featureassets.org",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "forwarder.workos.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "host.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "humb.apple.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "images.workoscdn.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "intercom.io",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "intercomcdn.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "ios.chat.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "itunes.apple.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "js.intercomcdn.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "js.stripe.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.auth.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.chat.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.chatgpt.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.chatgpt.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.crixet.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.ct.sendgrid.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.host.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.intercom.io",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.intercomcdn.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.oaistatic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.oaistatsig.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.oaiusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.sora.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.turn.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.auth.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.chat.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.chatgpt.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.chatgpt.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.crixet.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.ct.sendgrid.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.host.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.intercom.io",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.intercomcdn.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.oaistatic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.oaistatsig.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.oaiusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.sora.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.turn.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "o207216.ingest.sentry.io",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "o33249.ingest.sentry.io",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "o33249.ingest.us.sentry.io",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "oaistatic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "oaistatsig.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "oaiusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openai-api.arkoselabs.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "openai-prod.azureedge.net",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openai.com.cdn.cloudflare.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openai.qualtrics.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openaiapi-site.azureedge.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openaiassets.blob.core.windows.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openaicom-api.azureedge.net",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "openaicom.imgix.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "openaicomproductionae4b.blob.core.windows.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "prodregistryv2.org",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "production-openaicom-storage.azureedge.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "register.appattest.apple.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "rum.browser-intake-datadoghq.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "setup.auth.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "setup.workos.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "sora.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "statsigapi.net",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "tcr9i.chat.openai.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "turn.livekit.cloud",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "workos.imgix.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "ws.chatgpt.com",
+          "legacy_match": true,
+          "new_match": true
+        }
+      ],
+      "residual_counts": {
+        "domain": 14,
+        "domain_suffix": 0,
+        "domain_regex": 0,
+        "ip_cidr": 0
+      }
+    },
+    "anthropic": {
+      "old": {
+        "path": "sources/upstream/legacy-anthropic-1f6e61c.srs",
+        "commit": "1f6e61caa9f8c157771e2e48a9084ded3cb4caa2",
+        "sha256": "8c353fe1aace43d9015d245c8fd10da6c08b691c578492625168d548fbb4d330",
+        "counts": {
+          "domain": 30,
+          "domain_suffix": 11,
+          "domain_regex": 1,
+          "ip_cidr": 2
+        }
+      },
+      "baseline": {
+        "path": "sources/upstream/geosite-anthropic.srs",
+        "commit": "e6a8117545c35a17c508e3f37a9a990571234428",
+        "sha256": "aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906",
+        "counts": {
+          "domain": 1,
+          "domain_suffix": 7
+        }
+      },
+      "new": {
+        "kind": "locally built isolated candidate SRS; byte-identical to independently derived baseline-plus-supplement fixture",
+        "sha256": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+        "source_sha256": "c8490972ad2c3f32511475548357915ab7a6fef220135c90cde481873f1b19af",
+        "supplement_path": "sources/anthropic.yaml",
+        "supplement_sha256": "9971093a8cc5e249effb147de3d05334daa81955afaf001cfe897d5be3a13f77",
+        "counts": {
+          "domain": 12,
+          "domain_suffix": 8,
+          "ip_cidr": 2
+        },
+        "artifact": "anthropic.srs",
+        "built_source_sha256": "9aab1b7ef84d017ce465bce839d237ca1a9f6c0046f55029c118f082a8a621a0",
+        "final_release_batch": false,
+        "verification": "Native compiled SRS hash and complete source JSON equal the independent semantic comparison target."
+      },
+      "legacy_entry_coverage": [
+        {
+          "type": "domain",
+          "value": "a-api.anthropic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "a-api.anthropic.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "a-cdn.anthropic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "a-cdn.anthropic.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "a-cdn.claude.ai",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "a-cdn.claude.ai"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "a.claude.ai",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "a.claude.ai"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "api.anthropic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "api.anthropic.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "assets-proxy.anthropic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "assets-proxy.anthropic.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "assets.claude.ai",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "assets.claude.ai"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "bridge.claudeusercontent.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claudeusercontent.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "bridge.claudeusercontent.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "browser-intake-us5-datadoghq.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "browser-intake-us5-datadoghq.com"
+            }
+          ],
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "native_witnesses": [
+            "browser-intake-us5-datadoghq.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "cdn.growthbook.io",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "cdn.growthbook.io"
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "Feature-flag functionality alone does not prove this third-party hostname is a current dependency.",
+          "native_witnesses": [
+            "cdn.growthbook.io"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "cdn.jsdelivr.net",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "cdn.jsdelivr.net"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "cdn.jsdelivr.net"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "cdn.tailwindcss.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "cdn.tailwindcss.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "cdn.tailwindcss.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "cdn.usefathom.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "cdn.usefathom.com"
+            }
+          ],
+          "disposition": "legacy-community-pending",
+          "reason": "Historical and community discovery only; no current approved runtime dependency.",
+          "native_witnesses": [
+            "cdn.usefathom.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "cdnjs.cloudflare.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "cdnjs.cloudflare.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "cdnjs.cloudflare.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "challenges.cloudflare.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "challenges.cloudflare.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "challenges.cloudflare.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "code.claude.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "code.claude.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "code.jquery.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "code.jquery.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "code.jquery.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "downloads.claude.ai",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "downloads.claude.ai"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "fonts.googleapis.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "fonts.googleapis.com"
+            }
+          ],
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "native_witnesses": [
+            "fonts.googleapis.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "fonts.gstatic.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "fonts.gstatic.com"
+            }
+          ],
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "native_witnesses": [
+            "fonts.gstatic.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "formulae.brew.sh",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "formulae.brew.sh"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "formulae.brew.sh"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "github.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "github.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "github.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "http-intake.logs.us5.datadoghq.com",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain",
+              "value": "http-intake.logs.us5.datadoghq.com"
+            }
+          ],
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "native_witnesses": [
+            "http-intake.logs.us5.datadoghq.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "mcp-proxy.anthropic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "mcp-proxy.anthropic.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "platform.claude.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "platform.claude.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "raw.githubusercontent.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "raw.githubusercontent.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "raw.githubusercontent.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "registry.npmjs.org",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "registry.npmjs.org"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "registry.npmjs.org"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "s-cdn.anthropic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "s-cdn.anthropic.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "storage.googleapis.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "storage.googleapis.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "storage.googleapis.com"
+          ]
+        },
+        {
+          "type": "domain",
+          "value": "unpkg.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain",
+              "value": "unpkg.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "unpkg.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "anthropic.com",
+            "migration-witness.anthropic.com",
+            "nested.migration-witness.anthropic.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "clau.de",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "clau.de"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "clau.de",
+            "migration-witness.clau.de",
+            "nested.migration-witness.clau.de"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "claude.ai",
+            "migration-witness.claude.ai",
+            "nested.migration-witness.claude.ai"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claude.app",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.app"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "claude.app",
+            "migration-witness.claude.app",
+            "nested.migration-witness.claude.app"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "claude.com",
+            "migration-witness.claude.com",
+            "nested.migration-witness.claude.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claudemcpcontent.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "claudemcpcontent.com",
+            "migration-witness.claudemcpcontent.com",
+            "nested.migration-witness.claudemcpcontent.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claudeusercontent.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "claudeusercontent.com",
+            "migration-witness.claudeusercontent.com",
+            "nested.migration-witness.claudeusercontent.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "frame.claudeusercontent.com",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claudeusercontent.com"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "frame.claudeusercontent.com",
+            "migration-witness.frame.claudeusercontent.com",
+            "nested.migration-witness.frame.claudeusercontent.com"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "livepreview.claude.ai",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "livepreview.claude.ai",
+            "migration-witness.livepreview.claude.ai",
+            "nested.migration-witness.livepreview.claude.ai"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "livepreview.claude.app",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.app"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "livepreview.claude.app",
+            "migration-witness.livepreview.claude.app",
+            "nested.migration-witness.livepreview.claude.app"
+          ]
+        },
+        {
+          "type": "domain_suffix",
+          "value": "modelcontextprotocol.io",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain_suffix",
+              "value": "modelcontextprotocol.io",
+              "language": "apex and every subdomain",
+              "representative_witnesses": [
+                "modelcontextprotocol.io",
+                "migration-witness.modelcontextprotocol.io",
+                "nested.migration-witness.modelcontextprotocol.io"
+              ]
+            }
+          ],
+          "disposition": "legacy-only-pending",
+          "reason": "The protocol documentation domain is not a demonstrated mandatory client runtime endpoint.",
+          "native_witnesses": [
+            "modelcontextprotocol.io",
+            "migration-witness.modelcontextprotocol.io",
+            "nested.migration-witness.modelcontextprotocol.io"
+          ]
+        },
+        {
+          "type": "domain_regex",
+          "value": "^[a-z0-9-]+-review\\.googlesource\\.com$",
+          "result": "exits-default-product-set",
+          "covered_by": [],
+          "remaining_uncovered_scope": [
+            {
+              "type": "domain_regex",
+              "value": "^[a-z0-9-]+-review\\.googlesource\\.com$",
+              "language": "all valid domain strings matched by this anchored RE2 expression",
+              "representative_witnesses": [
+                "example-review.googlesource.com",
+                "a-b-review.googlesource.com"
+              ]
+            }
+          ],
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "native_witnesses": [
+            "example-review.googlesource.com",
+            "a-b-review.googlesource.com"
+          ]
+        },
+        {
+          "type": "ip_cidr",
+          "value": "160.79.104.0/23",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "ip_cidr",
+              "value": "160.79.104.0/23"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "160.79.104.0",
+            "160.79.105.255"
+          ]
+        },
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/48",
+          "result": "fully-covered",
+          "covered_by": [
+            {
+              "type": "ip_cidr",
+              "value": "2607:6bc0::/48"
+            }
+          ],
+          "remaining_uncovered_scope": [],
+          "native_witnesses": [
+            "2607:6bc0::",
+            "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff"
+          ]
+        }
+      ],
+      "residual_scopes": [
+        {
+          "type": "domain",
+          "value": "browser-intake-us5-datadoghq.com",
+          "origin_type": "domain",
+          "origin_value": "browser-intake-us5-datadoghq.com",
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "cdn.growthbook.io",
+          "origin_type": "domain",
+          "origin_value": "cdn.growthbook.io",
+          "disposition": "legacy-only-pending",
+          "reason": "Feature-flag functionality alone does not prove this third-party hostname is a current dependency.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "cdn.usefathom.com",
+          "origin_type": "domain",
+          "origin_value": "cdn.usefathom.com",
+          "disposition": "legacy-community-pending",
+          "reason": "Historical and community discovery only; no current approved runtime dependency.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "fonts.googleapis.com",
+          "origin_type": "domain",
+          "origin_value": "fonts.googleapis.com",
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "fonts.gstatic.com",
+          "origin_type": "domain",
+          "origin_value": "fonts.gstatic.com",
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain",
+          "value": "http-intake.logs.us5.datadoghq.com",
+          "origin_type": "domain",
+          "origin_value": "http-intake.logs.us5.datadoghq.com",
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain_suffix",
+          "value": "modelcontextprotocol.io",
+          "language": "apex and every subdomain",
+          "representative_witnesses": [
+            "modelcontextprotocol.io",
+            "migration-witness.modelcontextprotocol.io",
+            "nested.migration-witness.modelcontextprotocol.io"
+          ],
+          "origin_type": "domain_suffix",
+          "origin_value": "modelcontextprotocol.io",
+          "disposition": "legacy-only-pending",
+          "reason": "The protocol documentation domain is not a demonstrated mandatory client runtime endpoint.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        },
+        {
+          "type": "domain_regex",
+          "value": "^[a-z0-9-]+-review\\.googlesource\\.com$",
+          "language": "all valid domain strings matched by this anchored RE2 expression",
+          "representative_witnesses": [
+            "example-review.googlesource.com",
+            "a-b-review.googlesource.com"
+          ],
+          "origin_type": "domain_regex",
+          "origin_value": "^[a-z0-9-]+-review\\.googlesource\\.com$",
+          "disposition": "official-optional-disabled",
+          "reason": "Kept as explicit optional supplement; disabled by the default feature policy.",
+          "consumer_policy_change": "requires separate first-hit evaluation"
+        }
+      ],
+      "new_entry_coverage": [
+        {
+          "type": "domain",
+          "value": "cdn.jsdelivr.net",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "cdn.tailwindcss.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "cdnjs.cloudflare.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "challenges.cloudflare.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "code.jquery.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "formulae.brew.sh",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "github.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "raw.githubusercontent.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "registry.npmjs.org",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "servd-anthropic-website.b-cdn.net",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "domain",
+            "value": "servd-anthropic-website.b-cdn.net"
+          }
+        },
+        {
+          "type": "domain",
+          "value": "storage.googleapis.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain",
+          "value": "unpkg.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "clau.de",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claude.app",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpclient.com",
+          "result": "expands-beyond-legacy",
+          "new_scope": {
+            "type": "domain_suffix",
+            "value": "claudemcpclient.com",
+            "exclude_old_exact_domains": [],
+            "language": "suffix language minus any explicitly listed old exact domains"
+          }
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "ip_cidr",
+          "value": "160.79.104.0/23",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        },
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/48",
+          "result": "already-covered-by-legacy",
+          "new_scope": null
+        }
+      ],
+      "witness_checks": [
+        {
+          "value": "160.79.104.0",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "160.79.105.255",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "2607:6bc0::",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "a-api.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "a-b-review.googlesource.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "a-cdn.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "a-cdn.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "a.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "api.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "assets-proxy.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "assets.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "bridge.claudeusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "browser-intake-us5-datadoghq.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "cdn.growthbook.io",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "cdn.jsdelivr.net",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "cdn.tailwindcss.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "cdn.usefathom.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "cdnjs.cloudflare.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "challenges.cloudflare.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "clau.de",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "claude.app",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "claude.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "claudemcpcontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "claudeusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "code.claude.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "code.jquery.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "downloads.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "example-review.googlesource.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "fonts.googleapis.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "fonts.gstatic.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "formulae.brew.sh",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "frame.claudeusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "github.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "http-intake.logs.us5.datadoghq.com",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "livepreview.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "livepreview.claude.app",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "mcp-proxy.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.clau.de",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.claude.app",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.claude.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.claudemcpcontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.claudeusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.frame.claudeusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.livepreview.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.livepreview.claude.app",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "migration-witness.modelcontextprotocol.io",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "modelcontextprotocol.io",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "nested.migration-witness.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.clau.de",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.claude.app",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.claude.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.claudemcpcontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.claudeusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.frame.claudeusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.livepreview.claude.ai",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.livepreview.claude.app",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "nested.migration-witness.modelcontextprotocol.io",
+          "legacy_match": true,
+          "new_match": false
+        },
+        {
+          "value": "platform.claude.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "raw.githubusercontent.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "registry.npmjs.org",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "s-cdn.anthropic.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "storage.googleapis.com",
+          "legacy_match": true,
+          "new_match": true
+        },
+        {
+          "value": "unpkg.com",
+          "legacy_match": true,
+          "new_match": true
+        }
+      ],
+      "residual_counts": {
+        "domain": 6,
+        "domain_suffix": 1,
+        "domain_regex": 1,
+        "ip_cidr": 0
+      }
+    }
+  }
+}

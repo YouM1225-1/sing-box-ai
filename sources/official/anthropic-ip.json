@@ -45,5 +45,14 @@
       "status": "required",
       "shared_dependency": false
     }
-  ]
+  ],
+  "raw_reference": "anthropic-ip-source",
+  "raw_sha256": "0dbdc4d19cfd517a572477d31b195bc15050555e2602c6da394f6fa92c89d5de",
+  "locators": [
+    "Inbound IP addresses: destination IPv4 /23 and IPv6 /48",
+    "Outbound IP addresses: source IPv4 /21; not destination /21"
+  ],
+  "last_reviewed_at": "2026-09-27T18:16:24.731288+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "c3c62f43f063a10547c0102fc74a5398b7e396c65a3669cce2973a2a8c73f472"
 }
