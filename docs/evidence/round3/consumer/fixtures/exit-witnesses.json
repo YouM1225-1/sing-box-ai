@@ -1,0 +1,439 @@
+{
+  "notice": "Witness-only projection of supporting domain rule sets, verified against original binary membership for these 27 hosts. Not a replacement for full production rule sets. Product rule sets retain full decoded content.",
+  "hosts": [
+    "client-api.arkoselabs.com",
+    "openai-api.arkoselabs.com",
+    "events.statsigapi.net",
+    "statsigapi.net",
+    "featureassets.org",
+    "prodregistryv2.org",
+    "o33249.ingest.us.sentry.io",
+    "openai-prod.azureedge.net",
+    "openaicom-api.azureedge.net",
+    "itunes.apple.com",
+    "register.appattest.apple.com",
+    "ct.sendgrid.net",
+    "intercom.io",
+    "intercomcdn.com",
+    "probe.ct.sendgrid.net",
+    "probe.intercom.io",
+    "probe.intercomcdn.com",
+    "browser-intake-us5-datadoghq.com",
+    "http-intake.logs.us5.datadoghq.com",
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "cdn.growthbook.io",
+    "cdn.usefathom.com",
+    "modelcontextprotocol.io",
+    "probe.modelcontextprotocol.io",
+    "example-review.googlesource.com",
+    "a-review.googlesource.com"
+  ],
+  "supporting_exact_domains": {
+    "geosite-apple": [
+      "itunes.apple.com",
+      "register.appattest.apple.com"
+    ],
+    "geosite-apple@cn": [
+      "itunes.apple.com"
+    ],
+    "geosite-google": [
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "example-review.googlesource.com",
+      "a-review.googlesource.com"
+    ],
+    "geosite-netflix": [],
+    "geosite-aws": [],
+    "geosite-tencent": [],
+    "geosite-dji": [],
+    "geosite-adobe": [],
+    "geosite-twitter": [],
+    "geosite-douyin": [],
+    "geosite-github": [],
+    "geosite-cloudflare": [],
+    "geosite-telegram": [],
+    "geosite-fastly": [],
+    "geosite-alibaba": [],
+    "geosite-cn": [],
+    "geosite-tiktok": [],
+    "geosite-bilibili": [],
+    "geosite-private": [],
+    "geosite-aws-cn": [],
+    "geosite-xiaomi": [],
+    "geosite-meta": [],
+    "geosite-apple-tvplus": [],
+    "geosite-youtube": [],
+    "n100-geosite-ai": []
+  },
+  "dns": {
+    "rules": [
+      {
+        "query_type": "HTTPS",
+        "action": "predefined"
+      },
+      {
+        "preferred_by": "hosts",
+        "server": "hosts",
+        "timeout": "1s"
+      },
+      {
+        "domain": "local",
+        "query_type": "SOA",
+        "action": "predefined"
+      },
+      {
+        "preferred_by": "dns_mdns",
+        "server": "dns_mdns",
+        "timeout": "2s",
+        "disable_optimistic_cache": true
+      },
+      {
+        "domain_suffix": [
+          "in-addr.arpa",
+          "ipv4only.arpa",
+          "ip6.arpa"
+        ],
+        "server": "dns_local"
+      },
+      {
+        "rule_set": "geosite-private",
+        "server": "dns_local"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct",
+        "timeout": "3s"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy",
+        "timeout": "4s"
+      },
+      {
+        "domain": [
+          "datav.aliyun.com",
+          "checkonline.home-assistant.io",
+          "version.home-assistant.io"
+        ],
+        "domain_suffix": [
+          "youdian.studio",
+          "mi.com",
+          "xiaomi.com",
+          "tapnow.media",
+          "tapnow.top",
+          "xiaomi.net",
+          "djivideos.com"
+        ],
+        "server": "dns_direct",
+        "timeout": "3s"
+      },
+      {
+        "rule_set": "geosite-apple-tvplus",
+        "server": "dns_proxy",
+        "timeout": "4s"
+      },
+      {
+        "domain_suffix": "push.apple.com",
+        "server": "dns_direct",
+        "timeout": "3s"
+      },
+      {
+        "rule_set": [
+          "geosite-tencent",
+          "geosite-alibaba",
+          "geosite-bilibili",
+          "geosite-douyin",
+          "geosite-apple@cn",
+          "geosite-xiaomi",
+          "geosite-dji"
+        ],
+        "server": "dns_direct",
+        "timeout": "3s"
+      },
+      {
+        "rule_set": "geosite-apple",
+        "server": "dns_proxy",
+        "timeout": "4s"
+      },
+      {
+        "rule_set": "geosite-google",
+        "query_type": "AAAA",
+        "action": "predefined"
+      },
+      {
+        "rule_set": [
+          "geosite-google",
+          "geosite-youtube"
+        ],
+        "server": "dns_proxy",
+        "timeout": "4s"
+      },
+      {
+        "rule_set": [
+          "geosite-anthropic",
+          "geosite-openai",
+          "geosite-ai"
+        ],
+        "query_type": "AAAA",
+        "action": "predefined"
+      },
+      {
+        "rule_set": [
+          "geosite-anthropic",
+          "geosite-openai",
+          "geosite-ai"
+        ],
+        "server": "dns_proxy",
+        "timeout": "4s"
+      },
+      {
+        "rule_set": [
+          "geosite-github",
+          "geosite-tiktok",
+          "geosite-twitter",
+          "geosite-meta",
+          "geosite-netflix",
+          "geosite-telegram",
+          "geosite-adobe",
+          "geosite-cloudflare",
+          "geosite-fastly"
+        ],
+        "server": "dns_proxy",
+        "timeout": "4s"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "server": "dns_direct",
+        "timeout": "2s"
+      },
+      {
+        "action": "evaluate",
+        "server": "dns_proxy",
+        "timeout": "2s",
+        "client_subnet": "114.114.114.0/24"
+      },
+      {
+        "match_response": true,
+        "rule_set": "geoip-cn",
+        "server": "dns_direct",
+        "timeout": "2s"
+      },
+      {
+        "match_response": true,
+        "action": "respond"
+      }
+    ],
+    "final": "dns_proxy"
+  },
+  "route_rules": [
+    {
+      "network": "icmp",
+      "preferred_by": "bridge",
+      "outbound": "bridge"
+    },
+    {
+      "type": "logical",
+      "mode": "and",
+      "rules": [
+        {
+          "network": "tcp"
+        },
+        {
+          "ip_is_private": true
+        },
+        {
+          "port": [
+            53
+          ],
+          "invert": true
+        }
+      ],
+      "action": "bypass"
+    },
+    {
+      "port": 853,
+      "action": "reject",
+      "no_drop": true
+    },
+    {
+      "action": "sniff",
+      "sniffer": [
+        "tls",
+        "quic",
+        "http",
+        "dns",
+        "ssh",
+        "bittorrent"
+      ],
+      "timeout": "80ms"
+    },
+    {
+      "type": "logical",
+      "mode": "or",
+      "rules": [
+        {
+          "protocol": "dns"
+        },
+        {
+          "port": 53
+        }
+      ],
+      "action": "hijack-dns"
+    },
+    {
+      "action": "route-options",
+      "udp_disable_domain_unmapping": true
+    },
+    {
+      "ip_is_private": true,
+      "outbound": "direct"
+    },
+    {
+      "clash_mode": "Direct",
+      "outbound": "direct"
+    },
+    {
+      "clash_mode": "Global",
+      "outbound": "proxy"
+    },
+    {
+      "protocol": [
+        "bittorrent",
+        "ssh"
+      ],
+      "outbound": "direct"
+    },
+    {
+      "domain": [
+        "datav.aliyun.com",
+        "checkonline.home-assistant.io",
+        "version.home-assistant.io"
+      ],
+      "domain_suffix": [
+        "youdian.studio",
+        "mi.com",
+        "xiaomi.com",
+        "tapnow.media",
+        "tapnow.top",
+        "xiaomi.net",
+        "djivideos.com"
+      ],
+      "outbound": "direct"
+    },
+    {
+      "rule_set": [
+        "geosite-private",
+        "geosite-tencent",
+        "geosite-bilibili",
+        "geosite-douyin",
+        "geosite-alibaba",
+        "geosite-aws-cn"
+      ],
+      "outbound": "direct"
+    },
+    {
+      "rule_set": "geosite-apple-tvplus",
+      "outbound": "proxy"
+    },
+    {
+      "domain_suffix": "push.apple.com",
+      "outbound": "direct"
+    },
+    {
+      "rule_set": "geosite-apple@cn",
+      "outbound": "direct"
+    },
+    {
+      "rule_set": "geosite-apple",
+      "outbound": "proxy"
+    },
+    {
+      "rule_set": [
+        "geosite-xiaomi",
+        "geosite-dji",
+        "geoip-apple",
+        "AS714",
+        "AS6185"
+      ],
+      "outbound": "direct"
+    },
+    {
+      "protocol": "quic",
+      "action": "reject",
+      "no_drop": true
+    },
+    {
+      "rule_set": "geosite-google",
+      "ip_version": 6,
+      "action": "reject",
+      "no_drop": true
+    },
+    {
+      "rule_set": [
+        "geosite-google",
+        "geosite-youtube"
+      ],
+      "outbound": "proxy"
+    },
+    {
+      "rule_set": "geosite-openai",
+      "ip_version": 6,
+      "action": "reject",
+      "no_drop": true
+    },
+    {
+      "rule_set": "geosite-openai",
+      "outbound": "proxy"
+    },
+    {
+      "rule_set": "geosite-anthropic",
+      "ip_version": 6,
+      "action": "reject",
+      "no_drop": true
+    },
+    {
+      "rule_set": "geosite-anthropic",
+      "outbound": "proxy"
+    },
+    {
+      "rule_set": "geosite-ai",
+      "ip_version": 6,
+      "action": "reject",
+      "no_drop": true
+    },
+    {
+      "rule_set": [
+        "geosite-ai",
+        "geosite-github",
+        "geosite-tiktok",
+        "geosite-telegram",
+        "geosite-twitter",
+        "geosite-meta",
+        "geosite-netflix",
+        "geosite-cloudflare",
+        "geosite-fastly",
+        "geosite-aws",
+        "geosite-adobe"
+      ],
+      "outbound": "proxy"
+    },
+    {
+      "rule_set": "geosite-cn",
+      "outbound": "direct"
+    },
+    {
+      "rule_set": [
+        "geoip-google",
+        "geoip-telegram",
+        "geoip-twitter",
+        "geoip-facebook",
+        "geoip-netflix",
+        "geoip-cloudflare",
+        "geoip-cloudfront",
+        "geoip-fastly"
+      ],
+      "outbound": "proxy"
+    }
+  ]
+}

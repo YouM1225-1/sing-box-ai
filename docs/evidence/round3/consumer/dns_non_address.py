@@ -11,7 +11,7 @@ def runtime_config(proxy,direct,port):
 QUERY={1:'A',28:'AAAA',16:'TXT',64:'SVCB',15:'MX',5:'CNAME',65:'HTTPS'}
 def main():
  rows=[];checks=[];processes=[]
- for file in FIX.glob('*.json'):
+ for file in [FIX/(name+'.json') for name in ['old-openai','old-anthropic','fixture-openai','fixture-anthropic']]:
   subprocess.run([BIN,'rule-set','compile','--output',OUT/(file.stem+'.srs'),file],capture_output=True,check=True)
  proxy=p.upstream('dns_proxy',{1:'198.51.100.10',28:'2001:db8:ffff::10'});direct=p.upstream('dns_direct',{1:'192.0.2.20',28:'2001:db8:ffff::20'})
  try:

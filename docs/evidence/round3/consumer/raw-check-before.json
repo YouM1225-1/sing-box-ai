@@ -1,0 +1,17 @@
+[
+  {
+    "name": "config.json",
+    "exit": 1,
+    "stderr": "\u001b[31mFATAL\u001b[0m[0000] initialize inbound[1]: initialize auto-redirect: invalid argument\n"
+  },
+  {
+    "name": "config-ios.json",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "name": "config-tv.json",
+    "exit": 0,
+    "stderr": ""
+  }
+]

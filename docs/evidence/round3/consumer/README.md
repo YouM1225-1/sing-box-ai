@@ -9,6 +9,7 @@
 ```bash
 python3 docs/evidence/round3/consumer/remote_startup.py --binary .tools/sing-box --output build/repro-round3-startup
 python3 docs/evidence/round3/consumer/dns_non_address.py --binary .tools/sing-box --output build/repro-round3-dns
+python3 docs/evidence/round3/consumer/exit_consumers.py --binary .tools/sing-box --output build/repro-round3-exits
 ```
 
 ## 结果与复现层级
@@ -25,3 +26,7 @@ python3 docs/evidence/round3/consumer/dns_non_address.py --binary .tools/sing-bo
 同 tag 改 remote URL 会使 URLHash 不同的旧缓存失效并要求启动抓取。成功拉新后缓存按 tag 覆盖，回旧 URL 不恢复旧缓存；HTTP503 时启动失败。initial_path 缺失/坏 SRS 无法兜底，但格式有效、内容错误的 SRS 被接受，运行时不核对预期发布摘要。
 
 当前配置的 query_type/evaluate/match_response 等条件禁用 legacy；非地址查询会走 modern 的 Match，并非旧 matchDNS 的 WithAddressLimit skip。固定源码：[模式判定](https://github.com/SagerNet/sing-box/blob/132b38e9caaba1a1959354d518e54d2d08419afe/dns/router.go#L1417)、[Exchange 分派](https://github.com/SagerNet/sing-box/blob/132b38e9caaba1a1959354d518e54d2d08419afe/dns/router.go#L1208)、[modern 规则遍历](https://github.com/SagerNet/sing-box/blob/132b38e9caaba1a1959354d518e54d2d08419afe/dns/router.go#L648)、[legacy skip](https://github.com/SagerNet/sing-box/blob/132b38e9caaba1a1959354d518e54d2d08419afe/dns/router.go#L296)、[remote 启动](https://github.com/SagerNet/sing-box/blob/132b38e9caaba1a1959354d518e54d2d08419afe/route/rule/rule_set_remote.go#L104)。
+
+`exit_consumers.py` 另提供 162 查询的最小可复现消费者见证：产品源完整保留，其他 geosite 缩减为原生验证的这 27 个域名 exact 投影（`fixtures/exit-witnesses.json`），GeoIP-CN 只保留不命中本测试合成响应的代表范围。它复现这些见证的顺序效果，不代表完整外部集合、无限正则或真实 IP 路由；原 837 native 断言只属于历史完整输入运行，不在投影重跑中重复声称。
+
+最终绑定：`config-sync-results.json` 记录正式本地制品目录 `artifacts/v0.1.0-rc.2`、输入提交 `f2ae5fbe1624499f50dd6772b6b6839804d2685a`。最终三个 source JSON/SRS 与 manual 批次逐字节相等；产品 source JSON 的规则对象与本审阅 fixture 相等，SRS 与独立 prospective 二进制逐字节相等。故历史候选消费者结果可绑定同一规则内容，不代表设备部署或 batch 登录验收。三端/iCloud 仅替换两个现有产品定义为 inline，完整 DNS/route.rules 不变；raw Darwin 检查前后平台边界见结果记录。

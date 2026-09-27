@@ -24,5 +24,22 @@
       "role": "review-only complete SagerNet SRS baseline plus supplement; not a release"
     }
   ],
-  "original_dns_rules_sha256": "b801448361a43f9120a750072e50dafacbb104cf333919372447cad29821ebf0"
+  "original_dns_rules_sha256": "b801448361a43f9120a750072e50dafacbb104cf333919372447cad29821ebf0",
+  "projection_replay": {
+    "requests": 162,
+    "table_equal_original": true,
+    "native_memberships_rechecked": false
+  },
+  "fixture_sha256": {
+    "fixtures/old-openai.json": "40e4a742df29014337ffc5c01935a7ec8c315b0858135e6358b2b9f143379dc6",
+    "fixtures/fixture-anthropic.json": "8559537dba7d0f6e35d3467ad000852d75c7a7bdcbb663b9c6dbcfcfaf39dfd8",
+    "fixtures/rc1-openai.json": "3c97287e7c582a752f00af09f40512cc508d720e9dbe9bb09e968d785de2e664",
+    "fixtures/old-anthropic.json": "90ed32df40af55429f2f8de5e8e768b15cda4d2e1d4ac4e7d316adf4ad334ca6",
+    "fixtures/fixture-openai.json": "ee5d662a695ba93be73b1f395d828cb7b79e3012d184db0ae2c7079f5f347eda",
+    "fixtures/exit-witnesses.json": "be23ae9b8c3e33262cca1bc9fba47610902b408a6c83853d91f2ed421a9008a0",
+    "fixtures/rc1-anthropic.json": "f6b157d1d790eedd44c5b3104d4a42c116bd0c6ec428f8137af006fad2dfcdad"
+  },
+  "final_artifact_source_commit": "f2ae5fbe1624499f50dd6772b6b6839804d2685a",
+  "review_fixture_rules_equal_final_artifacts": true,
+  "review_fixture_srs_equal_final_artifacts": true
 }

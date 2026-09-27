@@ -4,7 +4,7 @@ parser=argparse.ArgumentParser(description="Loopback-only alpha.9 remote startup
 parser.add_argument("--binary",type=pathlib.Path,required=True)
 parser.add_argument("--output",type=pathlib.Path,required=True)
 args=parser.parse_args();BIN=args.binary.resolve();OUT=args.output.resolve();OUT.mkdir(parents=True,exist_ok=False)
-assert "sing-box version 1.15.0-alpha.9" in subprocess.check_output([BIN,"version"],text=True)
+assert "Revision: 132b38e9caaba1a1959354d518e54d2d08419afe" in subprocess.check_output([BIN,"version"],text=True)
 responses={};requests=[]
 class Handler(http.server.BaseHTTPRequestHandler):
  def do_GET(self):

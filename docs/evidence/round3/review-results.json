@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "scope": "changed generator/source contracts and six consumer files only",
+  "source_commit": "f2ae5fbe1624499f50dd6772b6b6839804d2685a",
+  "independent_findings_fixed": [
+    "cross-document official source binding",
+    "release selected_pending bypass through required classification",
+    "candidate fabricated runtime claims"
+  ],
+  "original_counterexamples_rejected": true,
+  "consumer": {
+    "six_full_current_hashes_match_export": true,
+    "two_inline_rules_equal_final_source_objects": true,
+    "in_memory_reverse_replacement_recreates_all_six_before_hashes": true,
+    "dns_route_other_fields_unchanged": true,
+    "n100_install_hash_matches_canonical": true
+  },
+  "remaining_findings_in_reviewed_scope": [],
+  "limits": [
+    "no N100 access or production change",
+    "Linux raw N100 check not performed",
+    "no actual client session or final egress certification",
+    "finite witnesses do not prove every possible regex input"
+  ]
+}

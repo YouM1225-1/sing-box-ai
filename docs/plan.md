@@ -2,7 +2,7 @@
 
 > 文档修订：**1.16**；核验日期：2026-09-28（Asia/Shanghai）。
 > 主仓库：`YouM1225-1/sing-box-ai`；项目候选版本为 `0.1.0-rc.2`。
-> 状态：本轮正在按本方案实现直接 SRS 基线导入、手动构建并同步客户端配置；新批次实机验收与正式发布门槛独立保留。现有 `v0.1.0-rc.1` 是旧实现的预发布。
+> 状态：直接 SRS 基线导入与手动候选构建已完成，客户端配置按同批次规则同步；新批次实机验收与正式发布门槛独立保留。现有 `v0.1.0-rc.1` 是旧实现的预发布。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -409,14 +409,24 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 |---|---|
 | 第三轮附件、官方来源、精确源码核验 | 已完成；修正 legacy DNS 误用，并补齐旧 SRS 全量退出 |
 | 基线直接导入、补充来源、schema 2、确认续期 | 已实现；固定 SRS 为单源，DLC 为等价旁证；17 条 pending 默认未选 |
-| 新批次手动构建与回归 | 正在完成最终输入提交及两个干净候选批次，结果写入本节 |
-| 仓库三端与 iCloud 同步 | 按同批次完整源规则派生为 inline；不改变 DNS/路由顺序 |
+| 新批次手动构建与回归 | 完成：35 项回归无失败或跳过；1,954 原生用例零失败；两次独立构建的3 SRS与3 JSON字节一致 |
+| 仓库三端与 iCloud 同步 | 已完成：6份配置各只替换两个产品 rule_set 对象；完整 DNS、route.rules 及其顺序不变，身份例外保留，安装摘要联动 |
 | 新批次真实会话、出口、设备加载与持久化 | 尚未验收；Claude 历史批准保留，新批次资格独立判断 |
 | 正式 Release 发布 / N100 部署 | 本轮不执行；release-review 保持 pending，现网不变 |
 
+手动构建输入提交为 `f2ae5fbe1624499f50dd6772b6b6839804d2685a`。候选位于[版本目录](../artifacts/v0.1.0-rc.2/)，完整[manifest](../artifacts/v0.1.0-rc.2/manifest.json)包含48个输入摘要、源/二进制摘要及原生验证结果；[本轮构建记录](evidence/round3/build-results.json)确认独立重建与消费者 fixture 字节一致。单独调用发布门槛已按预期拒绝候选。
+
+| 制品 | 字节 / SHA-256 | 最终字段数量 |
+|---|---|---|
+| `openai.srs` | 730 / `7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07` | 20 exact、16 suffix、1 regex、23目的CIDR |
+| `anthropic.srs` | 332 / `1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2` | 12 exact、8 suffix、2目的CIDR |
+| `anthropic-ip.srs` | 36 / `9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c` | 1来源CIDR |
+
+消费者同步检查通过，三端内嵌内容与最终生成源 JSON 完整相等。iOS/TV 原始配置在 alpha.9 Darwin 检查通过；N100 原始 Linux 配置在 Darwin 修改前后均因 `initialize auto-redirect: invalid argument` 无法完成，未删除生产字段规避检查，也未在 N100 执行新配置 check。因此 N100 的原始 Linux 配置检查仍未完成。iCloud 本机文件同步不代表云端到达或设备加载。[同步结果与范围证据](evidence/round3/consumer/config-sync-results.json)保留摘要与平台判据。
+
 本轮隔离机制证据包括：126 次非地址 DNS 对照（84 modern、42 legacy）；11 个启动案例（7 成功、4 预期失败）及 21 次载入内容核对；完整退出的 162 次 DNS 查询与 837 次原生会员断言。最小可移植重现重复同一案例，不叠加声称更多覆盖。它们均不能证明真实公网出口、Voice UDP、TUN/nft、设备加载、登录或重启成功。
 
-N100 最近只读状态记录为 **2026-09-28 01:29:24 北京时间**：alpha.9 / `132b38e…`，服务 active/running，MainPID 1838，NRestarts 1；配置 SHA-256 `5b72a15cf889878670bc0e6a68976010bf6138c45f7f1e25107d78af6fa34414`。这是先前观察，非本轮新增现场验收；本輪未向 N100 写入或执行服务操作。系统安装仓库的 alpha.6 安装目标与完整验收基线不因此升级。脱敏记录保存在该仓库 `5.sing-box/references/evidence/n100-readonly-20260928.json`。
+N100 最近只读状态记录为 **2026-09-28 01:29:24 北京时间**：alpha.9 / `132b38e…`，服务 active/running，MainPID 1838，NRestarts 1；配置 SHA-256 `5b72a15cf889878670bc0e6a68976010bf6138c45f7f1e25107d78af6fa34414`。这是先前观察，非本轮新增现场验收；本轮未向 N100 写入或执行服务操作。系统安装仓库的 alpha.6 安装目标与完整验收基线不因此升级。脱敏记录保存在该仓库 `5.sing-box/references/evidence/n100-readonly-20260928.json`。
 
 候选源码、制品和公开证据以本仓库受版本控制的文件为准；当前来源复核见[来源摘要](../sources/evidence/source-review.json)。最小复现与结果见[消费者证据](evidence/round3/consumer/README.md)。本节仅登记当前结果和未完成层级，不以旧批次测试代签新批次。
 

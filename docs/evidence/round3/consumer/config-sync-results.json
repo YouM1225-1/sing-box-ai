@@ -1,0 +1,189 @@
+{
+  "source_directory": "build/manual-v0.1.0-rc.2",
+  "source_sha256": {
+    "openai": "42be8f7171905987be0303f1170352cb6c1f2d48e14ebfc1ca47bfd17fc493f7",
+    "anthropic": "9aab1b7ef84d017ce465bce839d237ca1a9f6c0046f55029c118f082a8a621a0"
+  },
+  "source_srs_sha256": {
+    "openai": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+    "anthropic": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2"
+  },
+  "records": [
+    {
+      "file": "config.json",
+      "before_sha256": "554a70be706f62169a7e7c4602f9a261b7b240a765e7243e8cd19f426957e1f2",
+      "after_sha256": "09dcd0c997d6f0f1dca75e6f573af51223cdffcdf3df4c798ccbf7fba142fdc4",
+      "bytes": 18448,
+      "bytes_increase": 3146,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "remote",
+          "to": "inline"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "remote",
+          "to": "inline"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_config_fields_unchanged": true
+    },
+    {
+      "file": "config-ios.json",
+      "before_sha256": "5332908276cd222cfbb9d2cce42d2fd2b90611d15611970da2df848139b28003",
+      "after_sha256": "7e690fd5d4e18b61d1fa2fca92f6b587218387c7ee766c74a3b26b1a5d4208d6",
+      "bytes": 16878,
+      "bytes_increase": 3146,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "remote",
+          "to": "inline"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "remote",
+          "to": "inline"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_config_fields_unchanged": true
+    },
+    {
+      "file": "config-tv.json",
+      "before_sha256": "28a08be2b68ace694ee92c16b712f0c30a6ce14fb90d175210055c293f2029a9",
+      "after_sha256": "99b71daf5fde46c5440d43e6c27b96102042fe845c37fce0bf3e3c0e6c14e5ca",
+      "bytes": 16202,
+      "bytes_increase": 3146,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "remote",
+          "to": "inline"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "remote",
+          "to": "inline"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_config_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config.json",
+      "before_sha256": "5332908276cd222cfbb9d2cce42d2fd2b90611d15611970da2df848139b28003",
+      "after_sha256": "7e690fd5d4e18b61d1fa2fca92f6b587218387c7ee766c74a3b26b1a5d4208d6",
+      "bytes": 16878,
+      "bytes_increase": 3146,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "remote",
+          "to": "inline"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "remote",
+          "to": "inline"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_config_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config-q.json",
+      "before_sha256": "3f5b4f9eff425f4c718a6efeea1a942f119faf63709f1737129b1783f86e2114",
+      "after_sha256": "d9f2d511a7e611f0eaa3ed7f3b674948e432ba44fee957968046d9afb910ee89",
+      "bytes": 16878,
+      "bytes_increase": 3146,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "remote",
+          "to": "inline"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "remote",
+          "to": "inline"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_config_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config-1.json",
+      "before_sha256": "caa04599898e22a0247c389344d5ccbe7e232a5f5646af8c8297b198cd2d624a",
+      "after_sha256": "e1694247401268ba2aa2e31173dcb533a4ba811f74499ae21b98821851fdbe17",
+      "bytes": 16057,
+      "bytes_increase": 3146,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "remote",
+          "to": "inline"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "remote",
+          "to": "inline"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_config_fields_unchanged": true
+    }
+  ],
+  "raw_darwin_checks_before_and_after_identical": true,
+  "raw_darwin_checks": [
+    {
+      "name": "config.json",
+      "exit": 1,
+      "stderr": "\u001b[31mFATAL\u001b[0m[0000] initialize inbound[1]: initialize auto-redirect: invalid argument\n"
+    },
+    {
+      "name": "config-ios.json",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "name": "config-tv.json",
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "production": "No N100 access, deployment, reload/restart or mode change. iCloud files updated locally; cloud delivery/device loading not verified.",
+  "source_matches_independent_prospective_fixture_json_objects": true,
+  "source_matches_independent_prospective_fixture_bytes": false,
+  "sync_check_with_source_exit": 0,
+  "shell_syntax_exit": 0,
+  "python_syntax_exit": 0,
+  "final_artifact_directory": "artifacts/v0.1.0-rc.2",
+  "final_source_commit": "f2ae5fbe1624499f50dd6772b6b6839804d2685a",
+  "final_manual_json_srs_bytes_equal": true,
+  "final_vs_review_product_rules_objects_equal": true,
+  "final_vs_independent_prospective_srs_bytes_equal": true,
+  "default_sync_check_exit": 0,
+  "git_diff_check_exit": 0,
+  "final_source_sync_check_exit": 0
+}
