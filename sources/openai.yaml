@@ -1,0 +1,632 @@
+- value: .auth.openai.com
+  type: domain_suffix
+  product: &id001
+  - chatgpt-web
+  - chatgpt-clients
+  - codex
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .chatgpt.com
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .ct.sendgrid.net
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .intercom.io
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .intercomcdn.com
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .oaistatic.com
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .oaiusercontent.com
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .openai.com
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: .oaistatsig.com
+  type: domain_suffix
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: android.chat.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: auth0.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: cdn.openaimerge.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: cdn.workos.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: challenges.cloudflare.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: chat.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: desktop.chat.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: forwarder.workos.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: humb.apple.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: images.workoscdn.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: ios.chat.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: js.intercomcdn.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: js.stripe.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: o207216.ingest.sentry.io
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: o33249.ingest.sentry.io
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: rum.browser-intake-datadoghq.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: setup.auth.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: setup.workos.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: tcr9i.chat.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: workos.imgix.net
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network baseline
+- value: auth.openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-login
+  reason: Official network baseline
+- value: chatgpt.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-login
+  reason: Official network baseline
+- value: openai.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-login
+  reason: Official network baseline
+- value: ws.chatgpt.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official WebSocket endpoint
+- value: 102.37.57.54/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 13.71.25.29/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 135.220.40.201/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 172.203.39.49/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 172.207.173.200/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 172.214.226.198/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 191.233.251.27/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 20.162.96.163/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 20.168.48.117/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 20.184.36.134/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 20.203.144.245/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 20.74.221.21/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 4.151.200.38/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 4.155.146.196/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 4.197.172.116/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 4.217.235.100/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 4.245.198.13/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 40.118.236.137/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 51.4.112.173/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 52.143.181.161/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 68.155.152.41/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 72.146.20.246/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice
+- value: 74.248.148.7/32
+  type: ip_cidr
+  product:
+  - chatgpt-voice
+  direction: destination
+  status: feature-required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: openai-voice
+  reason: Official ChatGPT Voice destination; IP rule applies to all ports
+  features:
+  - chatgpt-voice

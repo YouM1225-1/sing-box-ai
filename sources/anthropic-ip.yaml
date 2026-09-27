@@ -1,0 +1,11 @@
+- value: 160.79.104.0/21
+  type: source_ip_cidr
+  product:
+  - anthropic-service-egress
+  direction: source
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: anthropic-ip
+  reason: Official Anthropic outbound source range; not a client destination

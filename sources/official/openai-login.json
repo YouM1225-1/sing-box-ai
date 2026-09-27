@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "openai-login",
+  "url": "https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt",
+  "retrieved_at": "2026-09-27T14:42:15.034785+00:00",
+  "method": "Reviewed structured facts from official web page",
+  "page_updated": "5 days ago",
+  "facts": [
+    {
+      "artifact": "openai",
+      "value": "auth.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "chatgpt.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    }
+  ]
+}

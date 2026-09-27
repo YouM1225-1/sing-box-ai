@@ -1,0 +1,30 @@
+schema: 1
+features:
+- chatgpt-web
+- chatgpt-clients
+- codex
+- chatgpt-voice
+- claude-web
+- claude-api
+- claude-code
+- claude-desktop
+- claude-artifacts
+- claude-install
+- claude-plugins
+enabled_optional: []
+review_as_of: '2026-09-27'
+approved_regex:
+  ^[^.]+-review\.googlesource\.com$:
+    reason: 'Optional Gerrit host: one label ending in -review; does not match other
+      googlesource hosts.'
+    positive:
+    - example-review.googlesource.com
+    negative:
+    - googlesource.com
+    - example.googlesource.com
+    - a.b-review.googlesource.com
+    - example-review.googlesource.com.evil.test
+official_private_suffix_exceptions:
+  claude.app: claude-desktop
+  .claudeusercontent.com: claude-desktop
+  .frame.claudeusercontent.com: claude-code

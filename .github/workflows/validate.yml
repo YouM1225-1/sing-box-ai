@@ -1,0 +1,57 @@
+name: Validate rules
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version: '1.27.1'
+          cache-dependency-path: tests/harness/go.sum
+      - name: Prepare pinned dependencies
+        run: |
+          python -m pip install --require-hashes -r requirements.txt
+          python scripts/bootstrap.py
+          cd tests/harness
+          GOTOOLCHAIN=local go mod download
+      - name: Adversarial policy tests
+        run: python -m unittest discover -s tests -v
+      - name: Check current review dates
+        run: |
+          PYTHONPATH=scripts python - <<'PY'
+          from common import canonical, today
+          canonical(mode="release", as_of=today())
+          print("Compatibility review dates are current")
+          PY
+      - name: Discovery and isolated candidate
+        run: |
+          python scripts/sync.py
+          python scripts/generate.py --mode candidate --output build/candidate
+          python scripts/validate.py build/candidate
+          SINGBOX_TEST_BATCH=build/candidate python -m unittest discover -s tests -p test_artifacts.py -v
+      - name: Upload review evidence (not a release)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: candidate-${{ github.sha }}
+          path: |
+            build/candidate/
+            build/sync.json
+          retention-days: 14
+          if-no-files-found: error

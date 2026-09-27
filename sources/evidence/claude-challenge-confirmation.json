@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "kind": "user-confirmation",
+  "confirmed_by": "maintainer",
+  "observed_on": "2026-09-27",
+  "verified_on": "2026-09-27",
+  "result": "passed",
+  "rule": {
+    "type": "domain",
+    "value": "challenges.cloudflare.com"
+  },
+  "products": [
+    "claude-web",
+    "claude-desktop"
+  ],
+  "statement": "用户确认：Claude 的 Challenge 之前已验证；旧仓库更新日期就是验证日期。",
+  "conclusion": "Maintainer confirms the exact Claude Challenge compatibility rule was previously verified. No new live login test was performed during this repository initialization.",
+  "date_basis": {
+    "repository": "https://github.com/YouM1225-1/anthropic-claude-surge-rules-set",
+    "commit": "1f6e61caa9f8c157771e2e48a9084ded3cb4caa2",
+    "committed_at": "2026-09-27T09:55:30Z",
+    "local_time": "2026-09-27 17:55:30 Asia/Shanghai"
+  },
+  "environment": null,
+  "client_version": null,
+  "client_scope_note": "Exact client and version were not supplied; product labels describe the compatibility rule scope, not per-client certification."
+}

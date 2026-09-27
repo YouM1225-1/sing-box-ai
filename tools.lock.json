@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "sing_box": {
+    "version": "1.15.0-alpha.9",
+    "commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+    "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+    "platforms": {
+      "darwin-arm64": {
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.9/sing-box-1.15.0-alpha.9-darwin-arm64.tar.gz",
+        "archive_sha256": "adf1427dded53696526d90e39392461516709e5d9a7871523d80d4fe9024e871",
+        "binary_sha256": "fcb47f341e6660a35385ceeffc0cebb2daca3fed4d35c729b7d45f7b66555f9a"
+      },
+      "linux-amd64": {
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.9/sing-box-1.15.0-alpha.9-linux-amd64.tar.gz",
+        "archive_sha256": "8aede1f5935a856d939c61413677dc2e7e3eb0046efbc22b9a869229e6da279f",
+        "binary_sha256": "fa7785dbf7fa88f5fbb414e4a0aeebb8f51dc3130d74f909c7eed28787d337ec"
+      }
+    }
+  },
+  "go_version": "go1.27.1",
+  "pyyaml_version": "6.0.3"
+}

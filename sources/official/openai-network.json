@@ -1,0 +1,400 @@
+{
+  "schema": 1,
+  "id": "openai-network",
+  "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
+  "retrieved_at": "2026-09-27T14:42:15.034785+00:00",
+  "method": "Reviewed structured facts from official web page",
+  "page_updated": "last month",
+  "facts": [
+    {
+      "artifact": "openai",
+      "value": ".auth.openai.com",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": ".chatgpt.com",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": ".ct.sendgrid.net",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": ".intercom.io",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": ".intercomcdn.com",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": ".oaistatic.com",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": ".oaiusercontent.com",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": ".openai.com",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": ".oaistatsig.com",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "android.chat.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "auth0.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "cdn.openaimerge.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "cdn.workos.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "challenges.cloudflare.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "chat.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "desktop.chat.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "forwarder.workos.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "humb.apple.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "images.workoscdn.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "ios.chat.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "js.intercomcdn.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "js.stripe.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "o207216.ingest.sentry.io",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "o33249.ingest.sentry.io",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "rum.browser-intake-datadoghq.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "setup.auth.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "setup.workos.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "tcr9i.chat.openai.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "openai",
+      "value": "workos.imgix.net",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "openai",
+      "value": "ws.chatgpt.com",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    }
+  ]
+}

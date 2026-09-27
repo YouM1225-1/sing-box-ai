@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "id": "claude-desktop",
+  "url": "https://code.claude.com/docs/en/desktop#network-access-requirements",
+  "retrieved_at": "2026-09-27T14:42:15.034785+00:00",
+  "method": "Reviewed structured facts from official web page",
+  "page_updated": null,
+  "facts": [
+    {
+      "artifact": "anthropic",
+      "value": "anthropic.com",
+      "type": "domain_suffix",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "claude.ai",
+      "type": "domain_suffix",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "claude.com",
+      "type": "domain_suffix",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "claude.app",
+      "type": "domain_suffix",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": ".claudeusercontent.com",
+      "type": "domain_suffix",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": ".claudemcpcontent.com",
+      "type": "domain_suffix",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "cdnjs.cloudflare.com",
+      "type": "domain",
+      "product": [
+        "claude-desktop",
+        "claude-artifacts"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-artifacts"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "cdn.jsdelivr.net",
+      "type": "domain",
+      "product": [
+        "claude-desktop",
+        "claude-artifacts"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-artifacts"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "cdn.tailwindcss.com",
+      "type": "domain",
+      "product": [
+        "claude-desktop",
+        "claude-artifacts"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-artifacts"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "code.jquery.com",
+      "type": "domain",
+      "product": [
+        "claude-desktop",
+        "claude-artifacts"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-artifacts"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "unpkg.com",
+      "type": "domain",
+      "product": [
+        "claude-desktop",
+        "claude-artifacts"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-artifacts"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "fonts.googleapis.com",
+      "type": "domain",
+      "product": [
+        "claude-desktop",
+        "claude-artifacts"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "anthropic",
+      "value": "fonts.gstatic.com",
+      "type": "domain",
+      "product": [
+        "claude-desktop",
+        "claude-artifacts"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    }
+  ]
+}

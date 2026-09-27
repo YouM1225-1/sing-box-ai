@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "id": "claude-code",
+  "url": "https://code.claude.com/docs/en/network-config",
+  "retrieved_at": "2026-09-27T14:42:15.034785+00:00",
+  "method": "Reviewed structured facts from official web page",
+  "page_updated": null,
+  "facts": [
+    {
+      "artifact": "anthropic",
+      "value": "api.anthropic.com",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "claude.ai",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "claude.com",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "platform.claude.com",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "mcp-proxy.anthropic.com",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "downloads.claude.ai",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "bridge.claudeusercontent.com",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": ".frame.claudeusercontent.com",
+      "type": "domain_suffix",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": false,
+      "features": [
+        "claude-artifacts"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "github.com",
+      "type": "domain",
+      "product": [
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-plugins"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "raw.githubusercontent.com",
+      "type": "domain",
+      "product": [
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-plugins"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "registry.npmjs.org",
+      "type": "domain",
+      "product": [
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-plugins"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "storage.googleapis.com",
+      "type": "domain",
+      "product": [
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-plugins"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "formulae.brew.sh",
+      "type": "domain",
+      "product": [
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-install"
+      ]
+    },
+    {
+      "artifact": "anthropic",
+      "value": "http-intake.logs.us5.datadoghq.com",
+      "type": "domain",
+      "product": [
+        "claude-code"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "anthropic",
+      "value": "browser-intake-us5-datadoghq.com",
+      "type": "domain",
+      "product": [
+        "claude-code"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "anthropic",
+      "value": "^[^.]+-review\\.googlesource\\.com$",
+      "type": "domain_regex",
+      "product": [
+        "claude-code"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    }
+  ]
+}

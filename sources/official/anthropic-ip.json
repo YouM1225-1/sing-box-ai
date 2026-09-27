@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "anthropic-ip",
+  "url": "https://platform.claude.com/docs/en/api/ip-addresses",
+  "retrieved_at": "2026-09-27T14:42:15.034785+00:00",
+  "method": "Reviewed structured facts from official web page",
+  "page_updated": null,
+  "facts": [
+    {
+      "artifact": "anthropic",
+      "value": "160.79.104.0/23",
+      "type": "ip_cidr",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "2607:6bc0::/48",
+      "type": "ip_cidr",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic-ip",
+      "value": "160.79.104.0/21",
+      "type": "source_ip_cidr",
+      "product": [
+        "anthropic-service-egress"
+      ],
+      "direction": "source",
+      "status": "required",
+      "shared_dependency": false
+    }
+  ]
+}
