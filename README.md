@@ -2,7 +2,7 @@
 
 OpenAI / ChatGPT / Codex 与 Anthropic / Claude 的 sing-box 规则源、生成器及验证工具。
 
-项目版本 **0.1.0**，正式设计修订 **1.7**。仓库初始化阶段提供可复现的候选构建；当前尚无已批准的 `dist/` 发布批次。
+项目版本 **0.1.0**，正式设计修订 **1.8**。已手动发布 [v0.1.0-rc.1 预发布验收批次](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0-rc.1)；当前尚无已批准的 `dist/` 正式批次。
 
 Claude 的 `challenges.cloudflare.com` 精确兼容规则已按维护者确认批准，验证日期为 **2026-09-27**（旧仓库更新日期），下次复核日期为 **2026-10-27**。原客户端和环境未提供，记录不冒充本次现场测试：[确认依据](sources/evidence/claude-challenge-confirmation.json)。
 
@@ -56,6 +56,23 @@ SINGBOX_TEST_BATCH=build/candidate python -m unittest discover -s tests -p test_
 验证会检查整个归档哈希、官方基线完整性、元数据、单条 default 结构、反编译语义等价、源/二进制真实匹配、IP 来源方向、suffix 边界、已退役地址，以及第二次独立编译的字节一致性。隔离 `sing-box check` 不等于 N100 TUN、DNS 流量、实际出口或登录验收。
 
 GitHub Actions 在 push、PR、手动触发及每天 02:17 UTC 检查。Actions 使用固定 commit 和只读权限；只上传标明 candidate 的审核附件，不改写规则、`dist/`、客户端配置或自动提交。兼容项到期会使日期检查失败。
+
+## 手动预发布
+
+2026-09-27 发布的 `v0.1.0-rc.1` 指向构建输入提交 `83b0049c0ce6ec3957af40b4ebb282c55e505db3`，manifest 保持 `build_mode: candidate`。本次重新执行 22 项对抗性测试与 1,330 个匹配用例，全部通过；三个 SRS 与此前审核包字节一致。发布操作在本地完成；[此前 Actions 运行](https://github.com/YouM1225-1/sing-box-ai/actions/runs/36328568237) 因账号账单问题未启动，不记为 CI 通过。
+
+| 下载 | 内容 |
+|---|---|
+| [openai.srs](https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0-rc.1/openai.srs) | OpenAI 客户端目的规则 |
+| [anthropic.srs](https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0-rc.1/anthropic.srs) | Claude 客户端目的规则 |
+| [anthropic-ip.srs](https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0-rc.1/anthropic-ip.srs) | 服务请求来源 IP，不能加入客户端目的分流 |
+| [manifest.json](https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0-rc.1/manifest.json) | 输入、编译器、三个制品及验证结果的哈希 |
+| [完整验收包](https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0-rc.1/sing-box-ai-v0.1.0-rc.1.zip) | SRS、源 JSON、匹配结果、发现报告、测试日志及来源许可 |
+| [SHA256SUMS](https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0-rc.1/SHA256SUMS) | 上述五个附件的校验值 |
+
+下载全部附件到同一目录后执行 `shasum -a 256 -c SHA256SUMS`，五项均应为 `OK`。使用固定版本下载地址，同时核对 manifest 的 source commit 和制品 SHA256；tag 与 Release 附件不视作不可变存储。六个公开附件已回下载并逐一比对本地字节。
+
+预发布供受控的消费者集成验收，不写入 `dist/`，不将 `sources/release-review.json` 改为 approved。目标配置、实际出口、登录及功能验收仍待完成；本次未修改或部署 N100。临时验收使用独立配置并保留原配置与原 SRS；失败恢复原配置。满足下节全部门槛后另建正式批次，不将旧 candidate manifest 直接改名冒充正式结果。
 
 ## 更新与发布
 
@@ -124,5 +141,6 @@ PSL 的 private 段也包含 Claude 自有产品边界。`claude.app`、`.claude
 | 三份维护数据、固定官方与社区快照、用户验证记录 | 已建立 |
 | 生成器、分类器、验证器、哈希锁、CI | 已实现；本地及远端检查结果在交付时记录 |
 | 本地对抗性检查 | 19 个策略测试、3 个伪造/损坏制品反例通过；1,330 个真实 source/binary 用例零失败，重建一致，上游交叉核对通过 |
+| 手动预发布 | `v0.1.0-rc.1` 已发布；6 个公开附件回下载校验通过，未变更现场配置 |
 | 正式发布审阅与新批次消费者集成 | 待执行；具体门槛见 `sources/release-review.json` 与正式方案 |
 | `dist/` 正式批次与客户端接入 | 待上一步通过；N100 保留原路由位置 |
