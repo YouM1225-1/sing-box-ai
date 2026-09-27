@@ -3,9 +3,9 @@
 **主仓库：`YouM1225-1/sing-box-ai`**\
 **状态：v0.1.0-rc.1 已手动预发布；新批次消费者验收及正式发布待执行**\
 **日期：2026-09-27**\
-**文档修订：1.8**
+**文档修订：1.9**
 
-修订 1.8 记录 `sing-box-ai` 0.1.0 的手动预发布 `v0.1.0-rc.1`，提供可下载的候选制品与验证证据；正式发布与生产配置接入仍按验收门槛执行。维护者确认 Claude Challenge 已于旧仓库更新日 2026-09-27 验证，兼容项据此批准；不把这条历史验证改写为本次新制品的现场验收。N100 四条产品路由保留原位置。
+修订 1.9 移除仓库首页 README，并清空 Release 说明正文；`v0.1.0-rc.1` 标签、附件与验证记录保持不变。正式发布与生产配置接入仍按验收门槛执行。维护者确认 Claude Challenge 已于旧仓库更新日 2026-09-27 验证，兼容项据此批准；不把这条历史验证改写为本次新制品的现场验收。N100 四条产品路由保留原位置。
 
 本次已拉取 1.15 最新开发分支和最新已发布预览版源码，并取得最新可见 sing-geosite 两个 SRS 及其原始规则。精确版本、实测结果与证据入口见 §4.2、§17。所有“最新”均指 2026-09-27 本次查询时点，不是未来浮动依赖。仓库已由维护者创建；本阶段按用户指令先建立仓库，再处理客户端配置。
 
@@ -238,7 +238,7 @@ sing-box 的 `domain_suffix` 语义（SagerNet/sing `common/domain/matcher.go`�
 
 ```text
 sing-box-ai/
-├── README.md
+├── docs/plan.md             # 正式方案与当前执行计划
 ├── sources/
 │   ├── openai.yaml
 │   ├── anthropic.yaml
@@ -285,7 +285,7 @@ sing-box-ai/
 
 默认功能范围固定为 ChatGPT Web/客户端/Codex/Voice，以及 Claude Web/API/Code/Desktop、Artifact、官方文档所列安装与插件路径。关闭上述功能必须修改支持范围、semantic diff 和对应测试，不能把依赖悄悄标成 optional。默认 `enabled_optional: []`；有选择时固定排序写入 manifest，同一批次不发布多个同名不同内容制品。可选规则即使不单独纳入，若被某条有依据的必需 suffix 覆盖，仍可能命中；省略可选项不等于阻断它。
 
-所有条目要求 `value/type/product/direction/status/sources/reason/shared_dependency`（后者布尔值），功能依赖另有 `features`。`shared_dependency: true` 表示该 host 同时服务其他软件或网站（GitHub、npm、Google Storage、`challenges.cloudflare.com` 等），按域名分流会影响其他访问；README 必须列出全部 `shared_dependency` 条目。
+所有条目要求 `value/type/product/direction/status/sources/reason/shared_dependency`（后者布尔值），功能依赖另有 `features`。`shared_dependency: true` 表示该 host 同时服务其他软件或网站（GitHub、npm、Google Storage、`challenges.cloudflare.com` 等），按域名分流会影响其他访问；维护数据必须逐条标识共享依赖。
 
 `compatibility` 与 `compatibility-critical` 均遵循 §3 的全部字段、证据等级和日期判据，包括 `review_status`、`first_seen`。维护数据可保存待核验状态，正式构建不能接受该状态；完整待核验示例见 §12.1。
 
@@ -339,12 +339,22 @@ sing-box-ai/
     -   `OPTIONAL_OFFICIAL`（确为可选、默认不额外纳入）；`FEATURE_REQUIRED`（已声明功能必需，必须纳入）
 6.  不直接写 `dist/`。
 
-候选构建与正式构建必须分开。下列接口已在仓库实现；输出目录及运行前置条件见 README。候选构建与 release 模式生成都先写隔离目录，不直接改写 dist：
+候选构建与正式构建必须分开。运行端为 macOS arm64 或 Linux amd64，普通用户在仓库根目录执行；需要 Python 3.9+、Go 1.27.1。首次准备按锁定哈希安装 Python 依赖、取得官方编译器和 Go module 缓存；任一命令失败即停止后续步骤，先修复错误：
+
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install --require-hashes -r requirements.txt
+python scripts/bootstrap.py
+(cd tests/harness && GOTOOLCHAIN=local go mod download)
+```
+
+后续验证使用本地固定快照与 module 缓存，强制 `GOPROXY=off`、`GOTOOLCHAIN=local`。候选构建与 release 模式生成均写入新的隔离目录，不直接改写 dist；输出目录已存在时更换目录名，不覆盖旧批次：
 
 - **候选构建**：在当前正式规则基线（首次发布时为已核对的官方基线）上加入本次明确选定的候选及其依赖，生成三个候选制品供组合测试；允许兼容状态为 `pending` 或已到期，仍必须通过格式、方向、范围及来源检查。输出到独立临时目录，manifest 标明 `build_mode: candidate`，不得写 `dist/` 或触发正式发布。维护者授权后可手动上传为明确标识的 GitHub prerelease，用于临时验收；不改写 candidate 标记或正式审批状态。候选制品用于取得 §11.3、§12.1 的集成证据，验证未通过时保留问题与证据，不能把候选视为正式规则。
 - **正式构建**：固定 `review_as_of`，按 §3 先检查所有兼容项，再生成正式候选批次，manifest 标明 `build_mode: release`。任何 `pending`、到期或证据缺失项均阻断整批三个制品的发布。批准前的验收记录绑定候选规则输入、制品哈希与消费者配置；批准后若仅更改元数据，须确认正式 SRS 与受测候选 SRS 字节一致，否则重验受影响项。
 
-当前手动预发布为 [`v0.1.0-rc.1`](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0-rc.1)，固定构建输入提交 `83b0049c0ce6ec3957af40b4ebb282c55e505db3`。下载、SHA256 校验与恢复约定统一见 [README「手动预发布」](../README.md#手动预发布)。临时验收使用独立消费者配置，先保存原配置与原 SRS，再绑定候选哈希取得集成证据；失败恢复原配置。发布附件的存在不代表已授权在目标主机部署。
+当前手动预发布为 [`v0.1.0-rc.1`](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0-rc.1)，固定构建输入提交 `83b0049c0ce6ec3957af40b4ebb282c55e505db3`。六个发布附件包含三个 SRS、manifest、完整验收包及 SHA256SUMS；下载齐全到同一目录后执行 `shasum -a 256 -c SHA256SUMS`，五项均应为 `OK`。同时核对 manifest 的 source commit 与制品哈希，不将 tag 或 Release 附件视为不可变存储。临时验收使用独立消费者配置，先保存原配置与原 SRS，再绑定候选哈希取得集成证据；失败恢复原配置。发布附件的存在不代表已授权在目标主机部署。
 
 正式构建接口：
 
@@ -673,12 +683,12 @@ GitHub Actions 每天 02:17 UTC 检查复核到期情况，每次正式发布前
 
 ## 15.1 当前执行计划
 
-目标：项目 0.1.0、设计修订 1.8；当前可下载批次为预发布 `v0.1.0-rc.1`。实现与现场验收分别记状态。
+目标：项目 0.1.0、设计修订 1.9；当前可下载批次为预发布 `v0.1.0-rc.1`。实现与现场验收分别记状态。
 
 | 步骤 | 成功终点 | 当前状态 |
 |---|---|---|
 | 既有审计与 1.15 精确版本核验 | 16 项核验与历史证据可定位 | 已完成；历史验证见 §17，不作为新批次自动验收 |
-| 建立规则仓库 | 三份维护数据、官方/社区归档、锁文件、来源许可、构建与验证代码 | 已实现；版本及当前检查状态以 README 为准 |
+| 建立规则仓库 | 三份维护数据、官方/社区归档、锁文件、来源许可、构建与验证代码 | 已实现；版本及当前检查状态以本表为准 |
 | Claude Challenge 兼容批准 | 保留维护者确认及原验证日期 | 已批准；见 §12.1，复核截止 2026-10-27 |
 | 本地与 CI 验证 | 元数据反例、真实 SRS 匹配、来源方向及重建一致性通过 | 本地 22 项对抗性测试、1,330 个匹配用例通过；此前 CI 因账号账单问题未启动，不记为通过 |
 | 手动预发布 | 候选制品与证据可下载，公开附件字节与本地一致 | `v0.1.0-rc.1` 已发布，6 个附件回下载校验通过；manifest 保持 candidate |
