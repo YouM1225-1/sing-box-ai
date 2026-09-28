@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "verified_at": "2026-09-28T01:03:23.485323+00:00",
+  "release": {
+    "release_id": 397881272,
+    "tag": "v0.1.0",
+    "target_commit": "c48c415d88aede03907c231b122b65b860b386b0",
+    "assets": [
+      {
+        "id": 594137341,
+        "name": "SHA256SUMS",
+        "bytes": 409,
+        "sha256": "12f24ec81cc07d3daf8f3d83e5fb8eeca59779bd19310202ebc989b9022e594d",
+        "server_digest": "sha256:12f24ec81cc07d3daf8f3d83e5fb8eeca59779bd19310202ebc989b9022e594d",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/SHA256SUMS"
+      },
+      {
+        "id": 594137404,
+        "name": "anthropic-ip.srs",
+        "bytes": 36,
+        "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+        "server_digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/anthropic-ip.srs"
+      },
+      {
+        "id": 594137521,
+        "name": "anthropic.srs",
+        "bytes": 332,
+        "sha256": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+        "server_digest": "sha256:1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/anthropic.srs"
+      },
+      {
+        "id": 594137552,
+        "name": "manifest.json",
+        "bytes": 72110,
+        "sha256": "abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd",
+        "server_digest": "sha256:abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/manifest.json"
+      },
+      {
+        "id": 594137577,
+        "name": "openai.srs",
+        "bytes": 730,
+        "sha256": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+        "server_digest": "sha256:7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/openai.srs"
+      },
+      {
+        "id": 594137612,
+        "name": "sing-box-ai-v0.1.0.zip",
+        "bytes": 219210,
+        "sha256": "6c1be455b11f37cab59d1231043241a429e51b6080a873d15850923c5bc3cfbe",
+        "server_digest": "sha256:6c1be455b11f37cab59d1231043241a429e51b6080a873d15850923c5bc3cfbe",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/sing-box-ai-v0.1.0.zip"
+      }
+    ],
+    "published_at": "2026-09-28T01:02:50Z",
+    "html_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0",
+    "author": "YouM1225-1",
+    "draft": false,
+    "prerelease": false,
+    "body_empty": true,
+    "is_latest": true
+  },
+  "latest_api": {
+    "status": 200,
+    "url": "https://api.github.com/repos/YouM1225-1/sing-box-ai/releases/latest",
+    "tag": "v0.1.0",
+    "release_id": 397881272
+  },
+  "public_download_results": [
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/SHA256SUMS",
+      "status": 200,
+      "bytes": 409,
+      "sha256": "12f24ec81cc07d3daf8f3d83e5fb8eeca59779bd19310202ebc989b9022e594d",
+      "expected_sha256": "12f24ec81cc07d3daf8f3d83e5fb8eeca59779bd19310202ebc989b9022e594d",
+      "release_asset": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/SHA256SUMS"
+    },
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic-ip.srs",
+      "status": 200,
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "expected_sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "release_asset": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/anthropic-ip.srs"
+    },
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs",
+      "status": 200,
+      "bytes": 332,
+      "sha256": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+      "expected_sha256": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+      "release_asset": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/anthropic.srs"
+    },
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/manifest.json",
+      "status": 200,
+      "bytes": 72110,
+      "sha256": "abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd",
+      "expected_sha256": "abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd",
+      "release_asset": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/manifest.json"
+    },
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs",
+      "status": 200,
+      "bytes": 730,
+      "sha256": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+      "expected_sha256": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+      "release_asset": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/openai.srs"
+    },
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/sing-box-ai-v0.1.0.zip",
+      "status": 200,
+      "bytes": 219210,
+      "sha256": "6c1be455b11f37cab59d1231043241a429e51b6080a873d15850923c5bc3cfbe",
+      "expected_sha256": "6c1be455b11f37cab59d1231043241a429e51b6080a873d15850923c5bc3cfbe",
+      "release_asset": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.0/sing-box-ai-v0.1.0.zip"
+    }
+  ],
+  "n100_access": false,
+  "consumer_deployment_status": "pending",
+  "release_asset_urls": "Refreshed from published release API after draft became v0.1.0."
+}

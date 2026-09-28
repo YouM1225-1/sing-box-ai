@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.18**；核验日期：2026-09-28（Asia/Shanghai）。
+> 文档修订：**1.19**；核验日期：2026-09-28（Asia/Shanghai）。
 > 主仓库：`YouM1225-1/sing-box-ai`；项目发行版本为 `0.1.0`，规则字节以受审 rc.2 为比较基准。
-> 状态：仓库及 iCloud 已使用 Release Latest 固定下载地址；发布前核验两个地址均404，仓库只有旧的 rc.1 预发布。用户已授权手动构建并上传正式制品，`v0.1.0` 已完成两次 release 模式构建、原生验证与静态发布门槛；待 GitHub 上传及下载核验。消费者实机验收与部署保持待完成。
+> 状态：仓库及 iCloud 已使用 Release Latest 固定下载地址；发布前核验两个地址均404，仓库只有旧的 rc.1 预发布。`v0.1.0` 已于2026-09-28完成两次 release 模式构建、原生验证、静态发布门槛及手动发布；六个公开资产均返回200且摘要正确，两条配置地址已可下载。消费者实机验收与部署保持待完成。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -289,7 +289,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 
 当前 canonical 单源为系统安装仓库的 `5.sing-box/1.配置文件/config.json` 及配置契约。N100 实机仍引用旧仓库远程规则，本轮不部署。仓库 canonical 的 AWS/AWS-CN 等既有修改保留，不从现场回灌，也不把旧审核整份配置覆盖当前文件。
 
-**仓库三端及 iCloud 的两个产品集合统一使用 `type: remote`、`format: binary`，通过 Latest 固定入口加载正式 Release 的同名 SRS。** 当前两个入口返回404，不能当作已可下载的生产配置。 不在客户端配置维护内嵌域名/IP 列表。既有 tag 和定义索引 2 / 3 保留，不新增目的 IP 文件、tag 或路由规则。两个定义为：
+**仓库三端及 iCloud 的两个产品集合统一使用 `type: remote`、`format: binary`，通过 Latest 固定入口加载正式 Release 的同名 SRS。** 发布前两个入口曾返回404；当前已验证200且摘要一致，但不能据此宣称设备已加载或生产验收通过。 不在客户端配置维护内嵌域名/IP 列表。既有 tag 和定义索引 2 / 3 保留，不新增目的 IP 文件、tag 或路由规则。两个定义为：
 
 ```json
 [
@@ -310,7 +310,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 
 下载继续继承现有 `route.default_http_client: "proxy-http"`。`proxy-http` 是 HTTP client tag，不是出站 tag，不能将它写为 `download_detour`。保持现有 HTTP client、代理、DNS、缓存配置和其他规则来源；`geosite-ai` 不变。恢复原生远程拉取/缓存/周期检查机制，省略默认的 `update_interval`。两个配置 URL 保持不变；以后发布并设为 Latest 的正式 Release 必须同时提供同名 `openai.srs`、`anthropic.srs`，以及可核验的批次 manifest。客户端在后续远程更新时可取得新版，不需要为每个版本修改 URL，也不保证发布后即时更新。两个规则集各自下载/缓存，不构成跨文件原子更新；需要严格固定整批版本的验收或恢复任务仍应另行使用已核对的具体版本地址。
 
-配置改动仅为两个下载地址；新 `0.1.0` 制品须经 release 模式重建并与批准摘要一致。补充清单与混合域名/IP 结构不变。[Latest HTTP 核验](evidence/latest-srs/http-results.json)保留发布前404及仅存在rc.1预发布的事实；后续发布成功须重新下载验明，不能用候选构建摘要替代网络结果。
+配置改动仅为两个下载地址；新 `0.1.0` 制品须经 release 模式重建并与批准摘要一致。补充清单与混合域名/IP 结构不变。[Latest HTTP 核验](evidence/latest-srs/http-results.json)保留发布前404及仅存在rc.1预发布的事实；随后[发布后下载核验](evidence/latest-srs/publication-results.json)确认 `v0.1.0` 已为 Latest，六个资产200且与本机摘要一致；不能将此结果推定为设备已加载。
 
 **route.rules 与 dns.rules 的对象、内容和顺序均保留。** 四条产品路由继续位于 Google/YouTube 后、通用 `geosite-ai` 前：
 
@@ -430,8 +430,10 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | 新批次手动构建与回归 | `0.1.0`完成：44项回归通过、无跳过；两次 release 模式构建各1,954原生用例零失败，发布门槛通过；两批3 SRS与3 JSON逐字节一致且与rc.2相同 |
 | 仓库三端与 iCloud 同步 | 修订1.18将6份配置的两个 remote binary SRS URL改为Release Latest固定入口；完整 DNS、route.rules 及其顺序不变，身份例外保留，安装摘要联动；结果见下方记录 |
 | 新批次真实会话、出口、设备加载与持久化 | 尚未验收；Claude 历史批准保留，新批次资格独立判断 |
-| 正式 Release 发布 | release 模式双重建及门槛检查已通过；待上传及 Latest 下载验证 |
+| 正式 Release 发布 | `v0.1.0` 已手动发布并设为 Latest，三个SRS、manifest、校验和及压缩包均200且摘要一致；正文为空、旧预发布保留 |
 | N100 实机部署 | 本轮不执行、不连接实机；运行验收保持 pending |
+
+[GitHub 正式发行 v0.1.0](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0)发布于 `2026-09-28T01:02:50Z`；发布标签固定提交 `c48c415d88aede03907c231b122b65b860b386b0`。发布者为 `YouM1225-1`，Release 正文为空；[发布与公开下载证据](evidence/latest-srs/publication-results.json)记录该时点的 Latest 身份及全部六资产摘要。
 
 正式 `0.1.0` 的输入提交为 `08b74c8254be78c7fd23522b51e8753f62b9686e`；[正式批次](../artifacts/v0.1.0/)与[manifest](../artifacts/v0.1.0/manifest.json)绑定51项构建输入。当前 manifest SHA-256 为 `abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd`。两次 release 构建及原生验证见[构建结果](evidence/latest-srs/build-results.json)，发布元数据反例见[独立复审](evidence/latest-srs/review-results.json)。三个规则字节未变，因此下表同时适用于该候选对照与正式制品；只有发布批准、项目版本及输入元数据改变。
 
