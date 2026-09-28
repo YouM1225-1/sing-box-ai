@@ -1,0 +1,119 @@
+{
+  "assets": [
+    {
+      "bytes": 409,
+      "id": 595436173,
+      "name": "SHA256SUMS",
+      "sha256": "4796e1043d89255cde9b61133be704f943b07a256ee0c1d5acc8e8718ee026fe",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.1/SHA256SUMS"
+    },
+    {
+      "bytes": 36,
+      "id": 595436221,
+      "name": "anthropic-ip.srs",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.1/anthropic-ip.srs"
+    },
+    {
+      "bytes": 353,
+      "id": 595436257,
+      "name": "anthropic.srs",
+      "sha256": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.1/anthropic.srs"
+    },
+    {
+      "bytes": 80357,
+      "id": 595436300,
+      "name": "manifest.json",
+      "sha256": "2d5e0164c5f53fc0581145f5bcd75cbfe032506148236c61e85edd3cc653ba6a",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.1/manifest.json"
+    },
+    {
+      "bytes": 775,
+      "id": 595436342,
+      "name": "openai.srs",
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.1/openai.srs"
+    },
+    {
+      "bytes": 1050065,
+      "id": 595436394,
+      "name": "sing-box-ai-v0.1.1.zip",
+      "sha256": "cee39bde43876e2dfeffe47a69eeda07f737b4e08fac819cba754d85e9d78042",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.1/sing-box-ai-v0.1.1.zip"
+    }
+  ],
+  "author": "YouM1225-1",
+  "body": "",
+  "deployment_status": "pending",
+  "draft": false,
+  "evidence": [
+    {
+      "path": "build-results.json",
+      "sha256": "0b81202ed99206cd111b8b3f77a49d24143251b664214eb56f2f11976c2f651e"
+    },
+    {
+      "path": "fixed-downloads.json",
+      "sha256": "57b6636e024666c083d6071ba19daab3d69b69b680b65402a69f47efccbdd270"
+    },
+    {
+      "path": "latest-downloads.json",
+      "sha256": "b5e830258d89dffb81f7c705fb1e9bd2022d26575087a9c71cb110d9d8672d7d"
+    },
+    {
+      "path": "preservation.json",
+      "sha256": "e669ea40572c23270ab3d37f7aba53fbd791ce378c68f00a28ebd451067426cf"
+    },
+    {
+      "path": "remote-probe.py",
+      "sha256": "26e09515c939ff82f4fcf85d47f369fedf78824437d41dd93e10518152ae0a80"
+    },
+    {
+      "path": "remote-results.json",
+      "sha256": "570d8a32e50ece5e7729566f05afbdb7f1a5d36acc80a86f3be29a587e22f95f"
+    },
+    {
+      "path": "unit-tests.log",
+      "sha256": "d8d0a7574be8aee140ec2f8726fa99cca531ad78d7b4ff3134bd593a0180d4aa"
+    }
+  ],
+  "github_actions": {
+    "annotation": "The job was not started because your account is locked due to a billing issue.",
+    "ci_pass_claimed": false,
+    "head_sha": "5e367fb4a02fd9d5a383f2723f7ffd8fa882026d",
+    "jobs_started": false,
+    "local_manual_build_used": true,
+    "run_ids": [
+      36426166910,
+      36426163646
+    ]
+  },
+  "integration_evidence": [],
+  "latest": true,
+  "latest_verified_at": "2026-09-28T13:09:27.997727+00:00",
+  "limitations": [
+    "No N100 access, config changes, restart/reload or system network changes.",
+    "Latest subscribers may automatically update independently; no current N100 loaded-byte claim.",
+    "Cold start is local Mac with loopback test destinations; authenticated product functionality and production TUN/egress not verified.",
+    "Release ZIP is the tagged artifact commit; later publication evidence and current plan are on main."
+  ],
+  "method": "Manual local pinned-toolchain builds and REST upload; no Actions-produced artifact used",
+  "observed_at": "2026-09-28T13:11:35.078574+00:00",
+  "prerelease": false,
+  "project_version": "0.1.1",
+  "published_at": "2026-09-28T13:06:56Z",
+  "release_id": 398259220,
+  "result": "passed",
+  "schema": 1,
+  "scope": "manual-static-artifact-publication",
+  "sequence": [
+    "draft full upload and GitHub asset digests verified",
+    "published formal but non-Latest; fixed public downloads and native empty-cache load verified",
+    "set Latest; three SRS and manifest downloaded and hashes verified"
+  ],
+  "source_commit": "bba3c7c927b4a4bd4a365ca79184e25758c354f3",
+  "tag": "v0.1.1",
+  "tag_commit": "5e367fb4a02fd9d5a383f2723f7ffd8fa882026d",
+  "url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.1",
+  "validated_consumers": []
+}

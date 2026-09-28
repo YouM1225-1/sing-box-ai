@@ -1,0 +1,33 @@
+{
+  "unchanged": [
+    "dist/anthropic-ip.srs",
+    "artifacts/v0.1.0/anthropic.json",
+    "artifacts/v0.1.0/openai.json",
+    "artifacts/v0.1.0/anthropic-ip.json",
+    "artifacts/v0.1.0/openai.srs",
+    "artifacts/v0.1.0/anthropic-ip.srs",
+    "artifacts/v0.1.0/cases.json",
+    "artifacts/v0.1.0/manifest.json",
+    "artifacts/v0.1.0/matches.jsonl",
+    "artifacts/v0.1.0/anthropic.srs",
+    "artifacts/v0.1.0/SHA256SUMS",
+    "artifacts/v0.1.0-rc.2/anthropic.json",
+    "artifacts/v0.1.0-rc.2/openai.json",
+    "artifacts/v0.1.0-rc.2/anthropic-ip.json",
+    "artifacts/v0.1.0-rc.2/openai.srs",
+    "artifacts/v0.1.0-rc.2/anthropic-ip.srs",
+    "artifacts/v0.1.0-rc.2/cases.json",
+    "artifacts/v0.1.0-rc.2/manifest.json",
+    "artifacts/v0.1.0-rc.2/matches.jsonl",
+    "artifacts/v0.1.0-rc.2/anthropic.srs",
+    "/Users/yeminjie/Developer/系统安装/5.sing-box/1.配置文件/config_VPS.json",
+    "/Users/yeminjie/Developer/系统安装/5.sing-box/1.配置文件/config.json",
+    "/Users/yeminjie/Developer/系统安装/5.sing-box/1.配置文件/config-tv.json",
+    "/Users/yeminjie/Developer/系统安装/5.sing-box/1.配置文件/config-ios.json"
+  ],
+  "expected_changed": [
+    "dist/openai.srs",
+    "dist/anthropic.srs"
+  ],
+  "n100_accessed": false
+}

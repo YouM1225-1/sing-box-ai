@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.21**；核验日期：2026-09-28（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；正式构建版本 `0.1.1`，`dist/` 已更新；GitHub 发布进度见 §7。
-> 当前任务：提交受审输入、手动重建、核验后上传 GitHub 正式 Release 并更新 Latest；不访问或操作 N100。
+> 文档修订：**1.22**；核验日期：2026-09-28（Asia/Shanghai）。
+> 主仓库：`YouM1225-1/sing-box-ai`；当前正式发行、Latest 与 `dist/` 均为 `v0.1.1`；发布证据见 §7。
+> 当前状态：受审输入已提交，手动重建、GitHub 正式发布与下载核验完成；未访问或操作 N100，运行验收仍为 pending。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -434,7 +434,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### 7.1 已验收输入与正式发布计划
+### 7.1 正式发布结果与执行计划
 
 已验收候选为 `0.1.1-rc.1`，本轮以同一规则输入晋升正式 `0.1.1`，固定 `0.1.0` 作为对照。已核对的差异只有 OpenAI exact 20→24、Anthropic exact 12→14；后缀、正则、Voice 目的地址、Anthropic 目的及来源网段全部不变。
 
@@ -443,8 +443,8 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | 1 来源、规则、policy、文档与版本 | 已完成：四个 Codex 安装 exact，启用已有两字体 optional；17 pending 不选，所有既有来源输入保持 |
 | 2 本地候选构建与隔离验收 | 已完成本地范围：46项回归、两批各2,038项原生验证、395请求实际消费者；四场景临时安装、npm离线安装与字体资源链通过。边界见下方 |
 | 3 正式输入提交与 release 构建 | 已完成；提交绑定、两次各2,038项原生检查、46项回归；三个SRS及源JSON与候选逐字节一致 |
-| 4 手动上传与固定URL验收 | 待执行；draft完整上传并核验摘要，以非Latest公开，再验证真实固定URL及本机空缓存/default HTTP client加载 |
-| 5 Latest与交付 | 待执行；步骤4通过后更新Latest并下载比对。在线消费者运行验收保持pending，不操作N100 |
+| 4 手动上传与固定URL验收 | 已完成；6资产draft上传摘要一致，非Latest公开后6固定URL全部200；真实alpha.9空缓存/default HTTP client加载两产品，3个正负例通过并完成清理 |
+| 5 Latest与交付 | 已完成静态发布；Latest为v0.1.1，三个SRS及manifest下载200且摘要一致。在线消费者运行验收保持pending，未操作N100 |
 
 本地结果已归档：[验收汇总](evidence/durability-0.1.1-rc.1/local-results.json)、[证据与复现入口](evidence/durability-0.1.1-rc.1/README.md)、[候选 manifest](../artifacts/v0.1.1-rc.1/manifest.json)、[校验和](../artifacts/v0.1.1-rc.1/SHA256SUMS)。该候选构建时工作树未提交，候选manifest 的 `source_commit` 是基础提交，`inputs` 是当时源码身份；其历史记录不改写为正式提交绑定。
 
@@ -472,7 +472,11 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 rc.1 本地验收阶段起初缺Go模块缓存，补取锁定依赖时的一次HTTP/2错误通过HTTP/1.1取得同版本解决；没有改go.mod/go.sum或放宽校验，最终两批原生校验离线通过。正式dist、旧批次及仓库客户端配置26份指纹全部不变。candidate和伪改release两种发布尝试均被校验器拒绝；没有实际上传调用。最终候选manifest的消费者与部署声明保持空/pending，独立证据只记录本地隔离层级。
 
+[正式发行 v0.1.1](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.1) 于 `2026-09-28T13:06:56Z` 手动发布；标签提交 `5e367fb`，发布者 `YouM1225-1`，正文为空。6个资产完整上传、固定版本公开下载及本机空缓存加载通过后设为Latest，再核验三个SRS与manifest的Latest下载。详见[发布汇总](evidence/release-v0.1.1/publication-results.json)与[证据入口](evidence/release-v0.1.1/README.md)。发布包固定于标签提交；后验发布记录及当前文档位于main。
+
 正式重建证据见[0.1.1 构建结果](evidence/release-v0.1.1/build-results.json)与[正式 manifest](../artifacts/v0.1.1/manifest.json)。正式源码提交 `bba3c7c927b4a4bd4a365ca79184e25758c354f3` 绑定全部构建输入；该批已通过 `--for-release`，消费者与部署身份仍为空/pending。
+
+本次推送触发的 GitHub Actions 未启动，GitHub 返回账户账单限制；该状态已记入发布汇总。本次发布使用本机手动构建和验收的制品，不声明 CI 通过，也未修改账户设置。
 
 ### 7.2 `v0.1.0` 正式对照与恢复依据
 

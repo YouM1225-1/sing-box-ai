@@ -1,0 +1,45 @@
+{
+  "observed_at": "2026-09-28T13:09:31.662484+00:00",
+  "release_id": 398259220,
+  "latest_tag": "v0.1.1",
+  "scope": "public-latest-downloads",
+  "rows": [
+    {
+      "name": "anthropic-ip.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic-ip.srs",
+      "http_status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "passed": true
+    },
+    {
+      "name": "anthropic.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs",
+      "http_status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 353,
+      "sha256": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b",
+      "passed": true
+    },
+    {
+      "name": "manifest.json",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/manifest.json",
+      "http_status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 80357,
+      "sha256": "2d5e0164c5f53fc0581145f5bcd75cbfe032506148236c61e85edd3cc653ba6a",
+      "passed": true
+    },
+    {
+      "name": "openai.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs",
+      "http_status": 200,
+      "final_host": "release-assets.githubusercontent.com",
+      "bytes": 775,
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
