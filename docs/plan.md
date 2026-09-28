@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.16**；核验日期：2026-09-28（Asia/Shanghai）。
+> 文档修订：**1.17**；核验日期：2026-09-28（Asia/Shanghai）。
 > 主仓库：`YouM1225-1/sing-box-ai`；项目候选版本为 `0.1.0-rc.2`。
-> 状态：直接 SRS 基线导入与手动候选构建已完成，客户端配置按同批次规则同步；新批次实机验收与正式发布门槛独立保留。现有 `v0.1.0-rc.1` 是旧实现的预发布。
+> 状态：直接 SRS 基线导入与手动候选构建已完成，仓库及 iCloud 统一通过 remote binary SRS 加载同批次规则；新批次实机验收与正式发布门槛独立保留。现有 `v0.1.0-rc.1` 是旧实现的预发布。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -285,21 +285,34 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 <a id="consumer"></a>
 ## 5. N100 接入与实际分流
 
-### 5.1 保留位置，使用同批次内嵌规则
+### 5.1 保留位置，使用远程 SRS
 
 当前 canonical 单源为系统安装仓库的 `5.sing-box/1.配置文件/config.json` 及配置契约。N100 实机仍引用旧仓库远程规则，本轮不部署。仓库 canonical 的 AWS/AWS-CN 等既有修改保留，不从现场回灌，也不把旧审核整份配置覆盖当前文件。
 
-**本次仓库与 iCloud 接入选择 `type: inline`**：仅将既有 `geosite-openai`、`geosite-anthropic` 两个规则集对象改为内嵌同批次生成源 JSON 的完整 `rules`；这与本批次 SRS 具有相同单 default 结构和匹配语义。不手工另维护一份域名列表，不新增 tag、IP 制品或规则位置。最终校验同时比较三端/iCloud 内嵌内容与构建输入、源 JSON、SRS 反编译语义。
+**仓库三端及 iCloud 的两个产品集合统一使用 `type: remote`、`format: binary`，直接加载已构建的 SRS。** 不在客户端配置维护内嵌域名/IP 列表。既有 tag 和定义索引 2 / 3 保留，不新增目的 IP 文件、tag 或路由规则。两个定义为：
 
-选择理由是跨平台启动可用性：alpha.9 的远程规则缓存按 tag 保存且记录 URLHash。更换固定 commit URL 时，带有不同 URLHash 的旧缓存不会被加载；如果没有可读的 `initial_path`，会在启动时执行首次抓取，失败可使服务启动失败。旧缓存条目是否带 URLHash 不能仅凭运行时间推定，需要实际证据。`initial_path` 可以提供本地初始字节，但路径不存在或内容错误仍会失败，且运行时不按项目发布 SHA 自动校验该文件。
+```json
+[
+  {
+    "tag": "geosite-openai",
+    "type": "remote",
+    "format": "binary",
+    "url": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs"
+  },
+  {
+    "tag": "geosite-anthropic",
+    "type": "remote",
+    "format": "binary",
+    "url": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs"
+  }
+]
+```
 
-Linux 的本地种子文件方案只有在文件已经按批次分发、权限与摘要核对后才成立；本轮禁止向 N100 分发文件。iOS/TV 配置导入也不能保证一个 Linux 路径或 iCloud 同目录路径能被 App 沙盒读取。因此不将未验证的 `initial_path` 加进三端公共配置。原生 inline 规则无需这两份规则的启动下载，适合本轮只修改仓库/iCloud的约束；它不解决其他既有 remote 集合的冷启动依赖。
+下载继续继承现有 `route.default_http_client: "proxy-http"`。`proxy-http` 是 HTTP client tag，不是出站 tag，不能将它写为 `download_detour`。保持现有 HTTP client、代理、DNS、缓存配置和其他规则来源；`geosite-ai` 不变。恢复原生远程拉取/缓存/周期检查机制，省略默认的 `update_interval`。URL 固定在已核验提交，所以周期检查不会自动升级到另一个规则批次；采用新批次时须审阅制品并同步两个 URL、检查器与派生配置。
 
-代价：这两个产品集合不会自行远程更新；每次采用新规则批次须重新派生并同步配置，设备还需实际加载。固定 commit URL 本来也需要逐批改配置，inline 增加的是受控内容体积，换取明确启动输入。若未来明确要求后台更新，应另行验收各平台本地种子、冷启动、URLHash、缓存与恢复；不能简单换成 mutable main/latest 掩盖加载的是哪一批。
+三个 SRS 的内容与 `0.1.0-rc.2` 构建完全相同。[恢复引用时的 HTTP 下载与摘要核对](evidence/restore-srs/download-results.json)确认两个产品文件与本地及 manifest 一致；这只证明本机 HTTP 取得的字节，不代替目标下载链验收。本次只恢复加载方式，不修改补充清单、混合域名/IP 结构、生成器或候选 manifest，不把原生 DNS 测试的 inline 对照当成生产配置要求。
 
-其他远程集合继续继承实际 `proxy-http` 下载链及其现有来源；`geosite-ai` 不变。**route.rules 与 dns.rules 的对象、内容和顺序均保留**，原 DNS 前移建议不属于接入步骤。
-
-四条产品路由继续位于 Google/YouTube 后、通用 `geosite-ai` 前，实际对象如下：
+**route.rules 与 dns.rules 的对象、内容和顺序均保留。** 四条产品路由继续位于 Google/YouTube 后、通用 `geosite-ai` 前：
 
 ```json
 [
@@ -310,9 +323,11 @@ Linux 的本地种子文件方案只有在文件已经按批次分发、权限�
 ]
 ```
 
-保留现有 QUIC 规则，不加 AI 专用 QUIC reject。SRS 或 inline 都只是集合；AAAA 空应答/IPv6 reject 来自消费者规则，受模式、更早命中及内核旁路影响，不代表所有 LAN 请求均由产品规则接管。
+保留现有 QUIC 规则。SRS 只是集合；AAAA 空应答/IPv6 reject 来自消费者规则，受模式、更早命中及内核旁路影响，不代表所有 LAN 请求均由产品规则接管。
 
-以后若授权 N100 部署，须以新鲜现场为基准核对受授权差异，不能顺带部署尚未批准的其他 canonical 修改。远程方案回退旧 URL 不保证能恢复旧缓存：新成功抓取可能已经覆盖同 tag 缓存。恢复必须使用已核对的原有效规则内容及配置，不能只假定旧 URL 对应字节仍在 cache.db。本次仅更新文件，不执行这些现场操作。
+**远程启动风险作为部署前置条件保留，不通过改用 inline 消除。** alpha.9 对同 tag 的缓存记录 URLHash；更换 URL 可能使旧缓存不被加载，首次抓取失败可能使启动失败。有效 `initial_path` 能提供种子，但各平台须先实际分发并验证路径、权限、内容与摘要；本轮不向 N100 分发种子，也不添加未经验证的跨平台路径。HTTP 下载和本地配置语法通过不等于目标设备的代理下载链、空缓存启动已经通过。
+
+后续部署前须在授权环境验证实际下载链与文件 SHA、原始配置检查、无旧缓存时的启动及适用的恢复路径；失败不切换生产配置或重启现网。恢复需有可用的原配置及原 SRS 字节，不能仅假定改回旧 URL 就会恢复缓存，因为同 tag 成功下载的新内容可能已覆盖旧内容。以后授权 N100 部署时，仅合入本次获准差异，不能顺带部署其他 canonical 修改。
 
 ### 5.2 共有依赖与首次命中
 
@@ -410,7 +425,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | 第三轮附件、官方来源、精确源码核验 | 已完成；修正 legacy DNS 误用，并补齐旧 SRS 全量退出 |
 | 基线直接导入、补充来源、schema 2、确认续期 | 已实现；固定 SRS 为单源，DLC 为等价旁证；17 条 pending 默认未选 |
 | 新批次手动构建与回归 | 完成：35 项回归无失败或跳过；1,954 原生用例零失败；两次独立构建的3 SRS与3 JSON字节一致 |
-| 仓库三端与 iCloud 同步 | 已完成：6份配置各只替换两个产品 rule_set 对象；完整 DNS、route.rules 及其顺序不变，身份例外保留，安装摘要联动 |
+| 仓库三端与 iCloud 同步 | 修订1.17恢复6份配置的两个 remote binary SRS 对象；完整 DNS、route.rules 及其顺序不变，身份例外保留，安装摘要联动；结果见下方记录 |
 | 新批次真实会话、出口、设备加载与持久化 | 尚未验收；Claude 历史批准保留，新批次资格独立判断 |
 | 正式 Release 发布 / N100 部署 | 本轮不执行；release-review 保持 pending，现网不变 |
 
@@ -422,7 +437,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | `anthropic.srs` | 332 / `1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2` | 12 exact、8 suffix、2目的CIDR |
 | `anthropic-ip.srs` | 36 / `9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c` | 1来源CIDR |
 
-消费者同步检查通过，三端内嵌内容与最终生成源 JSON 完整相等。iOS/TV 原始配置在 alpha.9 Darwin 检查通过；N100 原始 Linux 配置在 Darwin 修改前后均因 `initialize auto-redirect: invalid argument` 无法完成，未删除生产字段规避检查，也未在 N100 执行新配置 check。因此 N100 的原始 Linux 配置检查仍未完成。iCloud 本机文件同步不代表云端到达或设备加载。[同步结果与范围证据](evidence/round3/consumer/config-sync-results.json)保留摘要与平台判据。
+修订1.17恢复远程 SRS 后，消费者同步检查核对三端/iCloud的精确类型、格式、固定 URL、定义位置及现有 HTTP client 继承；不再用配置内嵌内容摘要代替 SRS 引用。iOS/TV 原始配置在 alpha.9 Darwin 检查通过；N100 原始 Linux 配置在 Darwin 修改前后均因 `initialize auto-redirect: invalid argument` 无法完成，未删除生产字段规避检查，也未在 N100 执行新配置 check。因此 N100 的原始 Linux 配置检查仍未完成。iCloud 本机文件同步不代表云端到达或设备加载。本次[恢复 SRS 的同步结果](evidence/restore-srs/consumer-results.json)记录最新配置摘要与平台判据；此前 round3 的 inline 同步记录只作历史证据，不能据此判断现行配置。
 
 本轮隔离机制证据包括：126 次非地址 DNS 对照（84 modern、42 legacy）；11 个启动案例（7 成功、4 预期失败）及 21 次载入内容核对；完整退出的 162 次 DNS 查询与 837 次原生会员断言。最小可移植重现重复同一案例，不叠加声称更多覆盖。它们均不能证明真实公网出口、Voice UDP、TUN/nft、设备加载、登录或重启成功。
 

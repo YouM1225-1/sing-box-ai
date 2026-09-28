@@ -1,0 +1,267 @@
+{
+  "commit": "4ede9b14f8ae800a44095e499a4afd3702525021",
+  "srs_base_url": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/",
+  "records": [
+    {
+      "file": "config.json",
+      "before_sha256": "09dcd0c997d6f0f1dca75e6f573af51223cdffcdf3df4c798ccbf7fba142fdc4",
+      "after_sha256": "b60067b504c8dffa832a4c434179aa45569a435b3d9b4f03ae34591e76d5971d",
+      "before_bytes": 18448,
+      "after_bytes": 15406,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_fields_unchanged": true
+    },
+    {
+      "file": "config-ios.json",
+      "before_sha256": "7e690fd5d4e18b61d1fa2fca92f6b587218387c7ee766c74a3b26b1a5d4208d6",
+      "after_sha256": "054dc19aa73523c2400fa00d67a9d2f06e0cec9a56125a2fb33ebc3cc57535f1",
+      "before_bytes": 16878,
+      "after_bytes": 13836,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_fields_unchanged": true
+    },
+    {
+      "file": "config-tv.json",
+      "before_sha256": "99b71daf5fde46c5440d43e6c27b96102042fe845c37fce0bf3e3c0e6c14e5ca",
+      "after_sha256": "3c29ffc79b815e514e8989ad022214d3b394596281165f1b96a4d115d3b1cc98",
+      "before_bytes": 16202,
+      "after_bytes": 13160,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config.json",
+      "before_sha256": "7e690fd5d4e18b61d1fa2fca92f6b587218387c7ee766c74a3b26b1a5d4208d6",
+      "after_sha256": "054dc19aa73523c2400fa00d67a9d2f06e0cec9a56125a2fb33ebc3cc57535f1",
+      "before_bytes": 16878,
+      "after_bytes": 13836,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config-q.json",
+      "before_sha256": "d9f2d511a7e611f0eaa3ed7f3b674948e432ba44fee957968046d9afb910ee89",
+      "after_sha256": "04e342acff6ffc8a796ad9b2db98be84e404039a7a666ddae33abc60b0c78ab6",
+      "before_bytes": 16878,
+      "after_bytes": 13836,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config-1.json",
+      "before_sha256": "e1694247401268ba2aa2e31173dcb533a4ba811f74499ae21b98821851fdbe17",
+      "after_sha256": "f43941d3687897ec6712c417ab11cbedef24badebe7771cf790b434508a743ed",
+      "before_bytes": 16057,
+      "after_bytes": 13015,
+      "changed_objects": [
+        {
+          "index": 2,
+          "tag": "geosite-openai",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        },
+        {
+          "index": 3,
+          "tag": "geosite-anthropic",
+          "from": "inline",
+          "to": "remote",
+          "format": "binary"
+        }
+      ],
+      "dns_unchanged": true,
+      "route_rules_unchanged": true,
+      "all_other_fields_unchanged": true
+    }
+  ],
+  "raw_darwin_checks_before": [
+    {
+      "file": "config.json",
+      "exit": 1,
+      "stderr": "\u001b[31mFATAL\u001b[0m[0000] initialize inbound[1]: initialize auto-redirect: invalid argument\n"
+    },
+    {
+      "file": "config-ios.json",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "file": "config-tv.json",
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "raw_darwin_checks_after": [
+    {
+      "file": "config.json",
+      "exit": 1,
+      "stderr": "\u001b[31mFATAL\u001b[0m[0000] initialize inbound[1]: initialize auto-redirect: invalid argument\n"
+    },
+    {
+      "file": "config-ios.json",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "file": "config-tv.json",
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "download_chain": {
+    "route.default_http_client": "proxy-http",
+    "http_client.detour": "proxy",
+    "download_detour": "absent; HTTP-client tag is not an outbound tag"
+  },
+  "artifact_sha256": {
+    "openai": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+    "anthropic": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2"
+  },
+  "limitations": [
+    "No N100 access/config change/reload/restart/mode change.",
+    "Raw Darwin check does not validate production startup download/HTTP/route or iOS/TV actual core.",
+    "iCloud changed locally; cloud delivery and device loading not verified."
+  ],
+  "serialization": "UTF-8 json.dumps(ensure_ascii=False,indent=2) plus newline. Before raw bytes exactly match this serialization.",
+  "checks": [
+    {
+      "name": "default-sync",
+      "command": [
+        "python3",
+        "5.sing-box/tests/check-config-sync.py"
+      ],
+      "exit": 0,
+      "stdout": "config.json: DNS 22, route 28, rule-set 16/39 OK\nconfig-ios.json: DNS 20, route 29, rule-set 16/39 OK\nconfig-tv.json: DNS 20, route 27, rule-set 16/39 OK\nicloud/config.json: DNS 20, route 29, rule-set 16/39 OK\nicloud/config-q.json: DNS 20, route 29, rule-set 16/39 OK\nicloud/config-1.json: DNS 20, route 28, rule-set 16/39 OK\n7 JSON files, installer hashes, common blocks, references, TV/iCloud derivation and credential identities: PASS\n",
+      "stderr": ""
+    },
+    {
+      "name": "installer-shell-syntax",
+      "command": [
+        "bash",
+        "-n",
+        "5.sing-box/3.优化脚本/1.网络服务器/install.sh"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "checker-python-syntax",
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "5.sing-box/tests/check-config-sync.py"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "git-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "graft": "Parent runs build/check once after all parallel final edits.",
+  "independent_review": {
+    "six_current_hashes_match": true,
+    "reverse_only_two_objects_matches_all_before_hashes": true,
+    "before_hashes_match_previous_inline_after_hashes": true,
+    "all_39_tags_remote": true,
+    "checker_urls_format_indices_and_http_client_chain_match": true,
+    "installer_digest_matches": true,
+    "no_unresolved_findings_in_changed_scope": true
+  }
+}

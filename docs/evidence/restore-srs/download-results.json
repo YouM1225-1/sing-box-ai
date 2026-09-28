@@ -1,0 +1,23 @@
+{
+  "scope": "Mac HTTP read only; not target proxy chain or cold start acceptance",
+  "verified_at": "2026-09-28T00:21:23.492146+00:00",
+  "artifact_commit": "4ede9b14f8ae800a44095e499a4afd3702525021",
+  "project_version": "0.1.0-rc.2",
+  "rules_and_manifest_changed": false,
+  "downloads": [
+    {
+      "path": "artifacts/v0.1.0-rc.2/openai.srs",
+      "url": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs",
+      "bytes": 730,
+      "sha256": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+      "manifest_and_local_equal": true
+    },
+    {
+      "path": "artifacts/v0.1.0-rc.2/anthropic.srs",
+      "url": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs",
+      "bytes": 332,
+      "sha256": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+      "manifest_and_local_equal": true
+    }
+  ]
+}
