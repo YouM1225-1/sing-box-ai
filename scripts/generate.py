@@ -1,4 +1,4 @@
-"""Compile one isolated batch. Never writes dist/; validation publishes it later."""
+"""Compile an isolated batch for validation and later manual publication."""
 import argparse
 import os
 from pathlib import Path
@@ -39,7 +39,8 @@ def build(output, mode="release", review_as_of=None, root=ROOT):
             "harness_dependencies": {"go_version": load(root / "tools.lock.json")["go_version"], "sing_module": load(root / "tools.lock.json")["sing_box"]["sing_module"]},
             "source_format_version": 2, "format_min_reader_version": "1.10.0", "rule_shape": "one-default",
             "normalization": normalization, "artifacts": artifacts,
-            "validation": None, "validated_consumers": [], "integration_evidence": [],
+            "validation": None, "publication_approval": None, "deployment_status": "pending",
+            "validated_consumers": [], "integration_evidence": [],
         }
         write_json(stage / "manifest.json", manifest)
         os.rename(stage, output)

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "reviewed_on": "2026-09-28",
+  "project_version": "0.1.0",
+  "artifacts": {
+    "openai.srs": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+    "anthropic.srs": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "unresolved_conflicts": [],
+  "reviewer": "Codex local static review under current maintainer publication instruction",
+  "comparison": {
+    "from_project_version": "0.1.0-rc.2",
+    "from_source_commit": "f2ae5fbe1624499f50dd6772b6b6839804d2685a",
+    "to_project_version": "0.1.0",
+    "expected_semantic_change": false,
+    "artifacts": {
+      "openai.srs": {
+        "before_sha256": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+        "approved_after_sha256": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+        "requirement": "release rebuild must be byte-identical"
+      },
+      "anthropic.srs": {
+        "before_sha256": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+        "approved_after_sha256": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+        "requirement": "release rebuild must be byte-identical"
+      },
+      "anthropic-ip.srs": {
+        "before_sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+        "approved_after_sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+        "requirement": "release rebuild must be byte-identical"
+      }
+    },
+    "scope": "仅版本与发布资格元数据、校验器分层变化；规则输入、补充范围及编译器不变。旧仓库迁移清单不冒称为上次GitHub Release基准。"
+  },
+  "conclusion": "批准在release-mode重建、提交输入一致性与原生校验全部通过后发布这三个指定摘要。完整Sager基线、OpenAI及Claude Challenge保留；23个OpenAI目的地址和Claude /23、/48目的地址保留；独立/21严格为来源方向；17条pending未选、optional未开启。当前消费者验收及N100部署仍为pending；本审阅不证明公网会话可用或避免一切Challenge。",
+  "evidence": [
+    {
+      "path": "sources/evidence/legacy-to-rc2-coverage.json",
+      "sha256": "79347e97171b4bc7932dd7fd5673e665f5f51f8d378a649d7ee5db6c65e58215"
+    },
+    {
+      "path": "sources/evidence/source-review.json",
+      "sha256": "43af8ad9c4c038351c9e259ea6246a6cbfb9674f2f24c5f1a0a04e38abe72413"
+    },
+    {
+      "path": "docs/evidence/round3/build-results.json",
+      "sha256": "b215a69a446a47a0671433051e6e1ec1777dc54be2135c3caa6a4a69f7bf0020"
+    },
+    {
+      "path": "artifacts/v0.1.0-rc.2/manifest.json",
+      "sha256": "0282588dfdc52d34df688b25f670297fbacc117ce269d7a307f00777c26cc6c2"
+    }
+  ]
+}

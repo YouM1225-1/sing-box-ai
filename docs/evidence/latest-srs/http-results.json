@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-09-28T00:39:33.941181+00:00",
+  "scope": "read-only HTTP availability; no release mutation or target host access",
+  "results": [
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs",
+      "status": 404,
+      "resolved_url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
+    },
+    {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs",
+      "status": 404,
+      "resolved_url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
+    },
+    {
+      "url": "https://api.github.com/repos/YouM1225-1/sing-box-ai/releases/latest",
+      "status": 404,
+      "resolved_url": "https://api.github.com/repos/YouM1225-1/sing-box-ai/releases/latest"
+    },
+    {
+      "url": "https://api.github.com/repos/YouM1225-1/sing-box-ai/releases",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/YouM1225-1/sing-box-ai/releases",
+      "bytes": 10766,
+      "releases": [
+        {
+          "tag": "v0.1.0-rc.1",
+          "draft": false,
+          "prerelease": true,
+          "assets": [
+            "anthropic-ip.srs",
+            "anthropic.srs",
+            "manifest.json",
+            "openai.srs",
+            "SHA256SUMS",
+            "sing-box-ai-v0.1.0-rc.1.zip"
+          ]
+        }
+      ]
+    }
+  ]
+}

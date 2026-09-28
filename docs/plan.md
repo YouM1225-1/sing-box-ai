@@ -1,14 +1,14 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.17**；核验日期：2026-09-28（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；项目候选版本为 `0.1.0-rc.2`。
-> 状态：直接 SRS 基线导入与手动候选构建已完成，仓库及 iCloud 统一通过 remote binary SRS 加载同批次规则；新批次实机验收与正式发布门槛独立保留。现有 `v0.1.0-rc.1` 是旧实现的预发布。
+> 文档修订：**1.18**；核验日期：2026-09-28（Asia/Shanghai）。
+> 主仓库：`YouM1225-1/sing-box-ai`；项目发行版本为 `0.1.0`，规则字节以受审 rc.2 为比较基准。
+> 状态：仓库及 iCloud 已使用 Release Latest 固定下载地址；发布前核验两个地址均404，仓库只有旧的 rc.1 预发布。用户已授权手动构建并上传正式制品，当前准备 `v0.1.0`；消费者实机验收与部署保持待完成。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
 完成终点：固定输入、补充证据、生成器、校验器、manifest 和测试契约一致；生成并审阅同批次三个候选制品；仅对经过该批次验收的环境声明可用。规则集合完整性、消费者分流正确性和真实业务成功分别验收。
 
-本轮授权包含规则仓库重构与 GitHub 同步、手动构建候选制品、仓库三端及 iCloud 派生配置修改和改动审计；不包含 N100 实机部署。禁止修改 N100 配置、重启/重载、切换模式/出站、关闭现有连接、清理缓存或改动防火墙与路由。保留四条产品路由原位置，也保留现有 DNS 顺序。仓库首页 README、Release 正文及发布身份的既有约定不变；候选构建不能标记为已完成正式发布验收。
+本轮授权包含规则仓库重构与 GitHub 同步、手动构建并发布静态 SRS 制品、仓库三端及 iCloud 派生配置修改和改动审计；不包含 N100 实机部署。禁止修改 N100 配置、重启/重载、切换模式/出站、关闭现有连接、清理缓存或改动防火墙与路由。保留四条产品路由原位置，也保留现有 DNS 顺序。仓库首页 README、Release 正文及发布身份的既有约定不变；静态制品发布不代表消费者运行验收或 N100 部署完成。
 
 阅读入口：[规则职责](#scope) → [固定输入与语义](#inputs) → [完整补充清单](#supplements) → [N100 配置与影响](#consumer) → [构建发布契约](#build) → [执行计划](#execution)。
 
@@ -58,7 +58,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅用于通过正式发布门槛的发行；本轮手动候选交付在 `artifacts/v0.1.0-rc.2/`，沿用相同三个文件名，不写入正式 dist，也不创建新 Release。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前目标为 `v0.1.0`。`artifacts/v0.1.0-rc.2/` 保留其受摘要绑定的候选对照证据，不冒充 GitHub 已有 Release。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品只用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
@@ -285,11 +285,11 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 <a id="consumer"></a>
 ## 5. N100 接入与实际分流
 
-### 5.1 保留位置，使用远程 SRS
+### 5.1 保留位置，使用 Release Latest SRS
 
 当前 canonical 单源为系统安装仓库的 `5.sing-box/1.配置文件/config.json` 及配置契约。N100 实机仍引用旧仓库远程规则，本轮不部署。仓库 canonical 的 AWS/AWS-CN 等既有修改保留，不从现场回灌，也不把旧审核整份配置覆盖当前文件。
 
-**仓库三端及 iCloud 的两个产品集合统一使用 `type: remote`、`format: binary`，直接加载已构建的 SRS。** 不在客户端配置维护内嵌域名/IP 列表。既有 tag 和定义索引 2 / 3 保留，不新增目的 IP 文件、tag 或路由规则。两个定义为：
+**仓库三端及 iCloud 的两个产品集合统一使用 `type: remote`、`format: binary`，通过 Latest 固定入口加载正式 Release 的同名 SRS。** 当前两个入口返回404，不能当作已可下载的生产配置。 不在客户端配置维护内嵌域名/IP 列表。既有 tag 和定义索引 2 / 3 保留，不新增目的 IP 文件、tag 或路由规则。两个定义为：
 
 ```json
 [
@@ -297,20 +297,20 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
     "tag": "geosite-openai",
     "type": "remote",
     "format": "binary",
-    "url": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs"
+    "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
   },
   {
     "tag": "geosite-anthropic",
     "type": "remote",
     "format": "binary",
-    "url": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs"
+    "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
   }
 ]
 ```
 
-下载继续继承现有 `route.default_http_client: "proxy-http"`。`proxy-http` 是 HTTP client tag，不是出站 tag，不能将它写为 `download_detour`。保持现有 HTTP client、代理、DNS、缓存配置和其他规则来源；`geosite-ai` 不变。恢复原生远程拉取/缓存/周期检查机制，省略默认的 `update_interval`。URL 固定在已核验提交，所以周期检查不会自动升级到另一个规则批次；采用新批次时须审阅制品并同步两个 URL、检查器与派生配置。
+下载继续继承现有 `route.default_http_client: "proxy-http"`。`proxy-http` 是 HTTP client tag，不是出站 tag，不能将它写为 `download_detour`。保持现有 HTTP client、代理、DNS、缓存配置和其他规则来源；`geosite-ai` 不变。恢复原生远程拉取/缓存/周期检查机制，省略默认的 `update_interval`。两个配置 URL 保持不变；以后发布并设为 Latest 的正式 Release 必须同时提供同名 `openai.srs`、`anthropic.srs`，以及可核验的批次 manifest。客户端在后续远程更新时可取得新版，不需要为每个版本修改 URL，也不保证发布后即时更新。两个规则集各自下载/缓存，不构成跨文件原子更新；需要严格固定整批版本的验收或恢复任务仍应另行使用已核对的具体版本地址。
 
-三个 SRS 的内容与 `0.1.0-rc.2` 构建完全相同。[恢复引用时的 HTTP 下载与摘要核对](evidence/restore-srs/download-results.json)确认两个产品文件与本地及 manifest 一致；这只证明本机 HTTP 取得的字节，不代替目标下载链验收。本次只恢复加载方式，不修改补充清单、混合域名/IP 结构、生成器或候选 manifest，不把原生 DNS 测试的 inline 对照当成生产配置要求。
+配置改动仅为两个下载地址；新 `0.1.0` 制品须经 release 模式重建并与批准摘要一致。补充清单与混合域名/IP 结构不变。[Latest HTTP 核验](evidence/latest-srs/http-results.json)保留发布前404及仅存在rc.1预发布的事实；后续发布成功须重新下载验明，不能用候选构建摘要替代网络结果。
 
 **route.rules 与 dns.rules 的对象、内容和顺序均保留。** 四条产品路由继续位于 Google/YouTube 后、通用 `geosite-ai` 前：
 
@@ -380,7 +380,7 @@ Direct / Global 模式有更早规则，仍可能越过产品限制。路由表�
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。新候选版本为 `0.1.0-rc.2`；设计修订号不冒充软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前项目发行版本为 `0.1.0`；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -409,13 +409,16 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 ### 6.4 发布门槛与失败处理
 
-既有 `release-review.json` 保持 pending，直到新批次具备真实且绑定摘要的审阅材料。现有 release gate 不只检查该状态，还检查 release 模式、当前复核日期、输入提交/哈希、semantic diff、三个制品摘要和集成证据。仅把 pending 改 approved 不足以放行；规则历史批准不等于发布批准。
+发布资格分为两层，不能相互代签：
 
-门槛包含基线直接输入和完整性核对。所有源、结构、范围、重建及消费者检查通过，semantic diff 被审阅，无 unresolved official conflict，才可发布。集成记录列明平台/版本/环境/方法/地址族/消费者配置摘要/实际出口和结果，并绑定本批次 SRS。声明支持的 OpenAI 登录、Claude 登录、Challenge、稳定出口、DNS、Voice、Artifacts、插件、启动、重启、消费者组合均须有适用证据；未验收功能不能标 passed 或写进 validated_consumers。
+- **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
+- **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-无真实会话条件时停留候选；不为通过门槛强迫用户反复验证。N100 的重启持久化本轮禁止测试，保留为后续维护窗口事项，不能写成失败或通过。审阅记录只是可追溯资料，不是证据真实性的密码学证明，维护者仍需核验内容。
+本次用户明确要求“检查github 是否构建最新的release 如果没有 手动构建后上传”，随后要求“先不动N100实机”。[发布授权](../sources/evidence/release-v0.1.0-authorization.json)与[静态语义审阅](../sources/evidence/release-v0.1.0-review.json)按该范围登记；不以修改 approved 字段替代实际校验，不虚构登录或重启证据。Claude 历史兼容批准只支持对应规则保留，不等于消费者验收。
 
-源提交准备、两个干净构建、隔离回归和批次验收依次完成，再把三个 SRS 与 manifest 放入同一发布提交。首次接入须先确认原有效配置及旧 SRS 可恢复、当前配置漂移已登记、目标版本检查通过。本轮授权手动构建及仓库同步；正式 Release 发布与设备部署仍需完成相应验收及对应授权。失败保留原运行输入，不清空 cache.db、不盲重载、不覆盖上一批准批次。关键域遗漏、实际路径泄漏、非预期出口变化或功能回退都停止候选推进；本地隔离失败可修复后重测，不能触及现网。
+源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入 `artifacts/v0.1.0/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再发布并设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。定时 CI 只发现/校验候选，不自动发布。
+
+首次部署前另行确认实际下载链、目标原配置 check、无旧缓存启动、可用原配置及旧 SRS 恢复路径。本次不访问或操作 N100，也不以文件上传触发目标服务。失败不清空 cache.db、不盲重载、不覆盖上一批准批次。运行验收出现遗漏、实际路径泄漏、非预期出口变化或功能回退时停止该环境部署；本地隔离检查可修复后重测。审阅记录提供可追溯性，不能从记录本身证明其观测真实性。
 
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
@@ -425,11 +428,12 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | 第三轮附件、官方来源、精确源码核验 | 已完成；修正 legacy DNS 误用，并补齐旧 SRS 全量退出 |
 | 基线直接导入、补充来源、schema 2、确认续期 | 已实现；固定 SRS 为单源，DLC 为等价旁证；17 条 pending 默认未选 |
 | 新批次手动构建与回归 | 完成：35 项回归无失败或跳过；1,954 原生用例零失败；两次独立构建的3 SRS与3 JSON字节一致 |
-| 仓库三端与 iCloud 同步 | 修订1.17恢复6份配置的两个 remote binary SRS 对象；完整 DNS、route.rules 及其顺序不变，身份例外保留，安装摘要联动；结果见下方记录 |
+| 仓库三端与 iCloud 同步 | 修订1.18将6份配置的两个 remote binary SRS URL改为Release Latest固定入口；完整 DNS、route.rules 及其顺序不变，身份例外保留，安装摘要联动；结果见下方记录 |
 | 新批次真实会话、出口、设备加载与持久化 | 尚未验收；Claude 历史批准保留，新批次资格独立判断 |
-| 正式 Release 发布 / N100 部署 | 本轮不执行；release-review 保持 pending，现网不变 |
+| 正式 Release 发布 | 已授权静态制品发布；等待 release 模式双重建、门槛检查、上传及下载验证 |
+| N100 实机部署 | 本轮不执行、不连接实机；运行验收保持 pending |
 
-手动构建输入提交为 `f2ae5fbe1624499f50dd6772b6b6839804d2685a`。候选位于[版本目录](../artifacts/v0.1.0-rc.2/)，完整[manifest](../artifacts/v0.1.0-rc.2/manifest.json)包含48个输入摘要、源/二进制摘要及原生验证结果；[本轮构建记录](evidence/round3/build-results.json)确认独立重建与消费者 fixture 字节一致。单独调用发布门槛已按预期拒绝候选。
+此前 rc.2 候选输入提交为 `f2ae5fbe1624499f50dd6772b6b6839804d2685a`。候选位于[版本目录](../artifacts/v0.1.0-rc.2/)，完整[manifest](../artifacts/v0.1.0-rc.2/manifest.json)包含48个输入摘要、源/二进制摘要及原生验证结果；[本轮构建记录](evidence/round3/build-results.json)确认独立重建与消费者 fixture 字节一致。单独调用发布门槛已按预期拒绝候选。
 
 | 制品 | 字节 / SHA-256 | 最终字段数量 |
 |---|---|---|
@@ -437,7 +441,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | `anthropic.srs` | 332 / `1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2` | 12 exact、8 suffix、2目的CIDR |
 | `anthropic-ip.srs` | 36 / `9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c` | 1来源CIDR |
 
-修订1.17恢复远程 SRS 后，消费者同步检查核对三端/iCloud的精确类型、格式、固定 URL、定义位置及现有 HTTP client 继承；不再用配置内嵌内容摘要代替 SRS 引用。iOS/TV 原始配置在 alpha.9 Darwin 检查通过；N100 原始 Linux 配置在 Darwin 修改前后均因 `initialize auto-redirect: invalid argument` 无法完成，未删除生产字段规避检查，也未在 N100 执行新配置 check。因此 N100 的原始 Linux 配置检查仍未完成。iCloud 本机文件同步不代表云端到达或设备加载。本次[恢复 SRS 的同步结果](evidence/restore-srs/consumer-results.json)记录最新配置摘要与平台判据；此前 round3 的 inline 同步记录只作历史证据，不能据此判断现行配置。
+修订1.18的同步检查核对三端/iCloud的精确类型、格式、Latest URL、定义位置及现有 HTTP client 继承；配置一致不代表远程文件可下载。iOS/TV 原始配置在 alpha.9 Darwin 检查通过；N100 原始 Linux 配置在 Darwin 修改前后均因 `initialize auto-redirect: invalid argument` 无法完成，未删除生产字段规避检查，也未在 N100 执行新配置 check。因此 N100 的原始 Linux 配置检查仍未完成。iCloud 本机文件同步不代表云端到达或设备加载。本次[Latest 地址同步结果](evidence/latest-srs/consumer-results.json)记录最新配置摘要与受控差异；原始配置的 Darwin 检查为此前同一结构的结果，本次只改URL，没有重复执行或冒称新的运行态检查。此前 restore-srs 与 round3 的记录保留历史身份，不能据此判断现行下载入口。
 
 本轮隔离机制证据包括：126 次非地址 DNS 对照（84 modern、42 legacy）；11 个启动案例（7 成功、4 预期失败）及 21 次载入内容核对；完整退出的 162 次 DNS 查询与 837 次原生会员断言。最小可移植重现重复同一案例，不叠加声称更多覆盖。它们均不能证明真实公网出口、Voice UDP、TUN/nft、设备加载、登录或重启成功。
 

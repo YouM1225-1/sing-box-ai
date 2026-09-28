@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "kind": "operator-authorization",
+  "scope": "artifact-publication",
+  "authorized_on": "2026-09-28",
+  "project_version": "0.1.0",
+  "artifacts": {
+    "openai.srs": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+    "anthropic.srs": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "instruction": "检查github 是否构建最新的release 如果没有 手动构建后上传",
+  "deployment_authorized": false,
+  "limitations": [
+    "先不动N100实机：不连接、不写配置、不重启或重载服务。",
+    "本授权仅用于GitHub静态SRS制品发布；不证明任何消费者真实会话、出口、设备加载或重启验收通过。",
+    "Release正文为空；保留既有Release；发布身份YouM1225-1。"
+  ]
+}

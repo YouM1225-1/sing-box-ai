@@ -1,7 +1,21 @@
 {
-  "schema": 1,
-  "status": "pending",
-  "reason": "Claude Challenge compatibility approved from maintainer confirmation; batch-bound new consumer integration and semantic diff review are not yet recorded.",
-  "semantic_diff_review": null,
+  "schema": 2,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.0",
+  "artifacts": {
+    "openai.srs": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+    "anthropic.srs": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "operator_authorization": {
+    "path": "sources/evidence/release-v0.1.0-authorization.json",
+    "sha256": "c656658d0dcf8b5802c240cef93ce75a7e5fab5a0b137e376e4db8f18b1ba33f"
+  },
+  "semantic_diff_review": {
+    "path": "sources/evidence/release-v0.1.0-review.json",
+    "sha256": "f00e73f2661f99c9793d485c7726296560cfb5273b6252faf60a68b33c16f315"
+  },
+  "deployment_status": "pending",
   "integration_evidence": []
 }

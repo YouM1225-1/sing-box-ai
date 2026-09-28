@@ -1,0 +1,207 @@
+{
+  "date": "2026-09-28",
+  "url_mode": "GitHub releases/latest/download mutable asset URLs",
+  "records": [
+    {
+      "file": "config.json",
+      "before_sha256": "b60067b504c8dffa832a4c434179aa45569a435b3d9b4f03ae34591e76d5971d",
+      "after_sha256": "b0f73c9f883a17c8af71a19407158f3ccb0d27f36ec5b56cc9bdf7aaa4a06cce",
+      "before_bytes": 15406,
+      "after_bytes": 15300,
+      "changes": [
+        {
+          "path": "route.rule_set.2.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
+        },
+        {
+          "path": "route.rule_set.3.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
+        }
+      ],
+      "only_two_urls_changed": true,
+      "dns_route_identity_http_client_and_other_fields_unchanged": true
+    },
+    {
+      "file": "config-ios.json",
+      "before_sha256": "054dc19aa73523c2400fa00d67a9d2f06e0cec9a56125a2fb33ebc3cc57535f1",
+      "after_sha256": "f8fabcbe7f1620d9f4c870af20f19aaecbc466de1e8fe3a4f69d14f30a6b6fc3",
+      "before_bytes": 13836,
+      "after_bytes": 13730,
+      "changes": [
+        {
+          "path": "route.rule_set.2.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
+        },
+        {
+          "path": "route.rule_set.3.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
+        }
+      ],
+      "only_two_urls_changed": true,
+      "dns_route_identity_http_client_and_other_fields_unchanged": true
+    },
+    {
+      "file": "config-tv.json",
+      "before_sha256": "3c29ffc79b815e514e8989ad022214d3b394596281165f1b96a4d115d3b1cc98",
+      "after_sha256": "de70bde9e45333fc3f797f46a0d38da4f0c01bce35fdc812703df569384976f8",
+      "before_bytes": 13160,
+      "after_bytes": 13054,
+      "changes": [
+        {
+          "path": "route.rule_set.2.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
+        },
+        {
+          "path": "route.rule_set.3.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
+        }
+      ],
+      "only_two_urls_changed": true,
+      "dns_route_identity_http_client_and_other_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config.json",
+      "before_sha256": "054dc19aa73523c2400fa00d67a9d2f06e0cec9a56125a2fb33ebc3cc57535f1",
+      "after_sha256": "f8fabcbe7f1620d9f4c870af20f19aaecbc466de1e8fe3a4f69d14f30a6b6fc3",
+      "before_bytes": 13836,
+      "after_bytes": 13730,
+      "changes": [
+        {
+          "path": "route.rule_set.2.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
+        },
+        {
+          "path": "route.rule_set.3.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
+        }
+      ],
+      "only_two_urls_changed": true,
+      "dns_route_identity_http_client_and_other_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config-q.json",
+      "before_sha256": "04e342acff6ffc8a796ad9b2db98be84e404039a7a666ddae33abc60b0c78ab6",
+      "after_sha256": "00cd3323d61232db999dcadf0292559eb23307eede04a3bb24beea0f346ecf43",
+      "before_bytes": 13836,
+      "after_bytes": 13730,
+      "changes": [
+        {
+          "path": "route.rule_set.2.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
+        },
+        {
+          "path": "route.rule_set.3.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
+        }
+      ],
+      "only_two_urls_changed": true,
+      "dns_route_identity_http_client_and_other_fields_unchanged": true
+    },
+    {
+      "file": "icloud/config-1.json",
+      "before_sha256": "f43941d3687897ec6712c417ab11cbedef24badebe7771cf790b434508a743ed",
+      "after_sha256": "51800b17e53c9ab4eeaf3ab4a7189be0e629b5e1347c8190daa82099af92aa56",
+      "before_bytes": 13015,
+      "after_bytes": 12909,
+      "changes": [
+        {
+          "path": "route.rule_set.2.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/openai.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs"
+        },
+        {
+          "path": "route.rule_set.3.url",
+          "old": "https://raw.githubusercontent.com/YouM1225-1/sing-box-ai/4ede9b14f8ae800a44095e499a4afd3702525021/artifacts/v0.1.0-rc.2/anthropic.srs",
+          "new": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs"
+        }
+      ],
+      "only_two_urls_changed": true,
+      "dns_route_identity_http_client_and_other_fields_unchanged": true
+    }
+  ],
+  "download_chain_unchanged": "route.default_http_client=proxy-http; HTTP client detour=proxy",
+  "serialization": "UTF-8 json.dumps ensure_ascii=False, indent=2 plus newline; before bytes exactly matched this representation.",
+  "http_availability": {
+    "observed_at": "2026-09-28T00:39:33Z",
+    "observer": "parent agent read-only HTTP verification",
+    "evidence": "docs/evidence/latest-srs/http-results.json",
+    "openai_url_status": 404,
+    "anthropic_url_status": 404,
+    "releases_latest_api_status": 404,
+    "release_list_api_status": 200,
+    "only_release": {
+      "tag": "v0.1.0-rc.1",
+      "draft": false,
+      "prerelease": true
+    },
+    "ready_for_download": false
+  },
+  "limits": [
+    "Only local repository/iCloud files were changed. No Release publication, candidate manifest/source modification, N100 access, service/mode changes.",
+    "This URL-only update does not repeat same-platform raw config checks or unchanged DNS/SRS tests.",
+    "latest may change with future formal releases; no immediate update or atomic two-file upgrade is promised.",
+    "rc.2 remains a candidate audit baseline, not a guarantee of future runtime content."
+  ],
+  "checks": [
+    {
+      "name": "default-sync",
+      "command": [
+        "python3",
+        "5.sing-box/tests/check-config-sync.py"
+      ],
+      "exit": 0,
+      "stdout": "config.json: DNS 22, route 28, rule-set 16/39 OK\nconfig-ios.json: DNS 20, route 29, rule-set 16/39 OK\nconfig-tv.json: DNS 20, route 27, rule-set 16/39 OK\nicloud/config.json: DNS 20, route 29, rule-set 16/39 OK\nicloud/config-q.json: DNS 20, route 29, rule-set 16/39 OK\nicloud/config-1.json: DNS 20, route 28, rule-set 16/39 OK\n7 JSON files, installer hashes, common blocks, references, TV/iCloud derivation and credential identities: PASS\n",
+      "stderr": ""
+    },
+    {
+      "name": "installer-shell-syntax",
+      "command": [
+        "bash",
+        "-n",
+        "5.sing-box/3.优化脚本/1.网络服务器/install.sh"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "checker-python-syntax",
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "5.sing-box/tests/check-config-sync.py"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "git-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "independent_inverse_url_verification": {
+    "result": "passed",
+    "files": 6,
+    "method": "Inverse replacement of exactly the two URLs restores each recorded pre-change SHA-256; current bytes match recorded post-change SHA-256."
+  },
+  "scope": "Local URL synchronization snapshot before separately authorized GitHub publication; no N100 access."
+}

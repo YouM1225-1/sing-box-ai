@@ -292,9 +292,10 @@ class PolicyTests(unittest.TestCase):
         with self.assertRaisesRegex(Invalid, "Candidate batches"):
             release_gate(self.root, {"build_mode": "candidate"})
 
-    def test_previous_validation_is_not_new_batch_integration(self):
+    def test_legacy_runtime_review_does_not_authorize_publication(self):
+        write_json(self.root / "sources/release-review.json", {"schema": 1, "status": "approved", "integration_evidence": [{"result": "passed"}]})
         with patch("validate.today", return_value=dt.date(2026, 9, 27)):
-            with self.assertRaisesRegex(Invalid, "still pending"):
+            with self.assertRaisesRegex(Invalid, "wrong scope"):
                 release_gate(self.root, {"build_mode": "release"})
 
 

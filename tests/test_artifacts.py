@@ -6,6 +6,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import Invalid, sha, write_json
@@ -40,6 +41,7 @@ class ArtifactAdversaries(unittest.TestCase):
             "input provenance": lambda m: m["upstreams"].pop(),
             "runtime integration": lambda m: m.update(validated_consumers=[{"result": "passed"}]),
             "cannot claim runtime": lambda m: m.update(integration_evidence=[{"result": "passed"}]),
+            "deployment approval": lambda m: m.update(deployment_status="approved"),
         }
         for message, mutate in mutations.items():
             with self.subTest(message=message):
@@ -49,6 +51,24 @@ class ArtifactAdversaries(unittest.TestCase):
                 with self.assertRaisesRegex(Invalid, message):
                     validate(self.batch)
         write_json(path, original)
+
+    def test_candidate_cannot_claim_publication_approval(self):
+        path = self.batch / "manifest.json"
+        manifest = json.loads(path.read_text())
+        manifest.update(build_mode="candidate", publication_approval={"scope": "artifact-publication"})
+        write_json(path, manifest)
+        with self.assertRaisesRegex(Invalid, "Candidate batches cannot claim publication"):
+            validate(self.batch)
+
+    def test_plain_validation_rechecks_existing_publication_claim(self):
+        path = self.batch / "manifest.json"
+        manifest = json.loads(path.read_text())
+        manifest.update(build_mode="release", publication_approval={"scope": "artifact-publication", "level": "forged"})
+        write_json(path, manifest)
+        with patch("validate.release_gate", return_value={"scope": "artifact-publication", "level": "artifact-only"}) as gate:
+            with self.assertRaisesRegex(Invalid, "Manifest publication approval mismatch"):
+                validate(self.batch)
+        gate.assert_called_once()
 
     def test_plain_text_is_not_an_srs_even_with_matching_manifest_hash(self):
         (self.batch / "openai.srs").write_bytes(b"not a ruleset")

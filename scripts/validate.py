@@ -90,20 +90,57 @@ def harness(root, directory, go):
 
 
 def release_gate(root, manifest):
+    """Approve publication of these bytes, without claiming consumer acceptance."""
     need(manifest["build_mode"] == "release", "Candidate batches cannot be released")
     canonical(root, "release", today())
     review = load(root / "sources/release-review.json")
-    need(review.get("status") == "approved", "Release review/integration evidence is still pending")
-    semantic_review = review.get("semantic_diff_review")
-    need(isinstance(semantic_review, dict) and semantic_review.get("path") and semantic_review.get("sha256"), "Missing semantic diff review")
-    semantic_path = local_path(root, semantic_review["path"])
-    need(sha(semantic_path) == semantic_review["sha256"], "Semantic review record hash mismatch")
+    need(review.get("schema") == 2 and review.get("scope") == "artifact-publication" and review.get("status") == "approved", "Artifact publication review is still pending or has the wrong scope")
+    need(manifest.get("validated_consumers") == [] and manifest.get("integration_evidence") == [] and manifest.get("deployment_status") == "pending", "Artifact publication cannot claim runtime integration or deployment approval")
+    need(review.get("integration_evidence") == [] and review.get("deployment_status") == "pending", "Artifact review cannot claim runtime integration or deployment approval")
+    version = (root / "VERSION").read_text().strip()
+    need(manifest.get("project_version") == review.get("project_version") == version, "Publication project version mismatch")
     artifact_hashes = {a["path"]: a["sha256"] for a in manifest["artifacts"]}
+    need(len(manifest["artifacts"]) == 3 and set(artifact_hashes) == {name + ".srs" for name in ARTIFACTS}, "Publication requires all three artifacts")
     need(review.get("artifacts") == artifact_hashes, "Review is for a different artifact batch")
+    records = {}
+    bindings = dict(manifest["inputs"])
+    for field in ("operator_authorization", "semantic_diff_review"):
+        reference = review.get(field)
+        need(isinstance(reference, dict) and reference.get("path") and reference.get("sha256"), f"Missing {field}")
+        path = local_path(root, reference["path"])
+        need(path.is_file() and sha(path) == reference["sha256"], f"{field} record hash mismatch")
+        records[field] = load(path)
+        bindings[reference["path"]] = reference["sha256"]
+    authorization = records["operator_authorization"]
+    need(authorization.get("schema") == 1 and authorization.get("kind") == "operator-authorization" and authorization.get("scope") == "artifact-publication", "Wrong operator authorization kind/scope")
+    need(authorization.get("project_version") == version and authorization.get("artifacts") == artifact_hashes, "Operator authorization is for a different version/artifact batch")
+    need(date(authorization.get("authorized_on")) <= today(), "Future operator authorization")
+    need(isinstance(authorization.get("instruction"), str) and authorization["instruction"].strip() and authorization.get("deployment_authorized") is False and isinstance(authorization.get("limitations"), list) and authorization["limitations"] and all(isinstance(value, str) and value.strip() for value in authorization["limitations"]), "Operator authorization lacks instruction or deployment limits")
+    semantic = records["semantic_diff_review"]
+    need(semantic.get("schema") == 1 and semantic.get("kind") == "semantic-diff-review" and semantic.get("scope") == "artifact-publication" and semantic.get("status") == "approved", "Semantic review is not an artifact publication approval")
+    need(semantic.get("project_version") == version and semantic.get("artifacts") == artifact_hashes, "Semantic review is for a different version/artifact batch")
+    need(date(semantic.get("reviewed_on")) <= today(), "Future semantic review")
+    need(semantic.get("unresolved_conflicts") == [] and isinstance(semantic.get("conclusion"), str) and semantic["conclusion"].strip(), "Semantic review has unresolved conflicts or no conclusion")
+    evidence = semantic.get("evidence")
+    need(isinstance(evidence, list) and evidence, "Semantic review lacks evidence")
+    for reference in evidence:
+        need(isinstance(reference, dict) and reference.get("path") and reference.get("sha256"), "Invalid semantic evidence reference")
+        path = local_path(root, reference["path"])
+        need(path.is_file() and sha(path) == reference["sha256"], "Semantic evidence hash mismatch")
+        bindings[reference["path"]] = reference["sha256"]
     need(manifest.get("source_commit") and re.fullmatch(r"[0-9a-f]{40}", manifest["source_commit"]), "Release must identify a source commit")
-    for relative, expected_hash in manifest["inputs"].items():
+    for relative, expected_hash in bindings.items():
         committed = subprocess.run(["git", "show", f"{manifest['source_commit']}:{relative}"], cwd=root, capture_output=True)
         need(committed.returncode == 0 and hashlib.sha256(committed.stdout).hexdigest() == expected_hash, f"Input is not bound to the recorded source commit: {relative}")
+    return {"scope": "artifact-publication", "level": "artifact-only", "project_version": version, "artifacts": artifact_hashes, "authorized_on": authorization["authorized_on"], "operator_authorization": review["operator_authorization"], "semantic_diff_review": review["semantic_diff_review"], "deployment_status": "pending"}
+
+
+def consumer_integration_gate(root, manifest, review):
+    """Separate acceptance gate; an operator publication instruction is not proof."""
+    release_gate(root, manifest)
+    need(review.get("scope") == "consumer-integration" and review.get("status") == "approved", "Consumer integration approval is still pending")
+    artifact_hashes = {a["path"]: a["sha256"] for a in manifest["artifacts"]}
+    need(review.get("artifacts") == artifact_hashes, "Consumer review is for a different artifact batch")
     required = {"openai-login", "claude-login", "challenge", "stable-egress", "dns-routing", "voice", "artifacts", "plugins", "startup", "restart", "consumer-composition"}
     proofs = review.get("integration_evidence")
     need(isinstance(proofs, list) and proofs, "No consumer integration evidence")
@@ -127,8 +164,9 @@ def validate(directory, go="go", for_release=False, root=ROOT):
     manifest = load(directory / "manifest.json")
     need(isinstance(manifest, dict) and manifest.get("schema") == 2, "Empty/unknown manifest")
     need(manifest.get("build_mode") in {"candidate", "release"}, "Unknown manifest build_mode")
+    need(manifest.get("validated_consumers") == [] and manifest.get("integration_evidence") == [] and manifest.get("deployment_status") == "pending", "Artifact batches cannot claim runtime integration or deployment approval")
     if manifest["build_mode"] == "candidate":
-        need(manifest.get("validated_consumers") == [] and manifest.get("integration_evidence") == [], "Candidate batches cannot claim runtime integration")
+        need(manifest.get("publication_approval") is None, "Candidate batches cannot claim publication approval")
     need(manifest.get("inputs") == input_files(root), "Inputs changed since generation; rebuild the batch")
     selected, policy, normalization = canonical(root, manifest["build_mode"], date(manifest["review_as_of"]))
     need(manifest.get("features") == sorted(policy["features"]) and manifest.get("enabled_optional") == sorted(policy["enabled_optional"]), "Manifest feature policy mismatch")
@@ -145,6 +183,8 @@ def validate(directory, go="go", for_release=False, root=ROOT):
     artifacts = manifest.get("artifacts")
     need(isinstance(artifacts, list) and len(artifacts) == 3, "Expected three artifacts")
     need({a.get("path") for a in artifacts} == {a + ".srs" for a in ARTIFACTS}, "Wrong/duplicate artifacts")
+    if manifest.get("publication_approval") is not None:
+        need(manifest["publication_approval"] == release_gate(root, manifest), "Manifest publication approval mismatch")
     with tempfile.TemporaryDirectory(prefix="sing-box-ai-validate-") as scratch:
         temp = Path(scratch)
         for artifact in artifacts:
@@ -194,7 +234,9 @@ def validate(directory, go="go", for_release=False, root=ROOT):
         write_json(directory / "cases.json", cases)
         manifest["validation"] = {"level": "local-source-binary-and-isolated-check", "cases": len(cases), "failures": 0, "clean_rebuild_equal": True, "baseline_complete": True, "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent", "native_result_sha256": sha(directory / "matches.jsonl"), "test_harness": harness_info}
     if for_release:
-        manifest["validated_consumers"] = release_gate(root, manifest)
+        approval = release_gate(root, manifest)
+        need(manifest.get("publication_approval") in (None, approval), "Manifest publication approval mismatch")
+        manifest["publication_approval"] = approval
     write_json(directory / "manifest.json", manifest)
     return manifest
 
@@ -203,10 +245,10 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("directory", nargs="?", type=Path, default=ROOT / "build/release")
     p.add_argument("--go", default="go")
-    p.add_argument("--for-release", action="store_true", help="Check real UTC date and batch-bound integration evidence")
+    p.add_argument("--for-release", action="store_true", help="Check current UTC policy, committed inputs and batch-bound artifact publication approval")
     a = p.parse_args()
     manifest = validate(a.directory, a.go, a.for_release)
-    print(json.dumps({"mode": manifest["build_mode"], "cases": manifest["validation"]["cases"], "failures": 0, "release_gate_checked": a.for_release}))
+    print(json.dumps({"mode": manifest["build_mode"], "cases": manifest["validation"]["cases"], "failures": 0, "release_gate_checked": a.for_release or manifest.get("publication_approval") is not None}))
 
 
 if __name__ == "__main__":
