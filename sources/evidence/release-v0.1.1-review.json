@@ -1,0 +1,62 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "comparison": {
+    "accepted_candidate": "0.1.1-rc.1",
+    "added_openai_exact": [
+      "api.github.com",
+      "github.com",
+      "registry.npmjs.org",
+      "release-assets.githubusercontent.com"
+    ],
+    "baseline": "v0.1.0",
+    "formal_rebuild_requirement": "All three SRS and source JSON must be byte-identical to accepted candidate",
+    "selected_existing_anthropic_optional": [
+      "fonts.googleapis.com",
+      "fonts.gstatic.com"
+    ],
+    "unchanged": [
+      "complete SagerNet baseline",
+      "suffix and regex",
+      "all destination and source CIDRs",
+      "17 pending unselected",
+      "other 3 optional unselected",
+      "Claude Challenge approval",
+      "consumer config and rule order"
+    ]
+  },
+  "conclusion": "批准仅在release模式两次独立重建、提交输入绑定、原生校验及静态发布门槛通过后发布这三个固定摘要。复用相同字节的46项回归、两批各2038原生检查、395隔离消费者请求证据。api.github.com和release-assets.githubusercontent.com继承产品AAAA空应答与IPv6拒绝；github.com及npm提前命中OpenAI，字体仍先命中Google，均为已审阅的共享主机影响。Latest可自动被现网拉取；该事实不等于操作N100或完成其运行验收。消费者声明维持空/pending。",
+  "evidence": [
+    {
+      "path": "artifacts/v0.1.0/manifest.json",
+      "sha256": "abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd"
+    },
+    {
+      "path": "artifacts/v0.1.1-rc.1/manifest.json",
+      "sha256": "cf3dac4294f222b3250e33ecd2e51bf593b412fa77c983699f40ce496539b267"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.1-rc.1/semantic-delta.json",
+      "sha256": "042583eda94c3a209dab26f6efdc5293fb8c03c01f689effcf8c86a10b6acefe"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.1-rc.1/local-results.json",
+      "sha256": "9e3cd235e600f9c66e9b8fadd4ab5c51eea3c9fcfe84adc369c5236a7e970493"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.1-rc.1/consumer/results.json",
+      "sha256": "9b5f82426bf279aa09b8e5e4e6284b3a01504c1fa426942460137d41609056f9"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.1",
+  "reviewed_on": "2026-09-28",
+  "reviewer": "Codex primary review and independent read-only adversarial review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

@@ -1,0 +1,9 @@
+==> Installing Codex CLI
+==> Detected platform: macOS (Apple Silicon)
+==> Resolved version: 0.158.0
+==> Downloading Codex CLI
+==> Installing standalone package to /Users/yeminjie/Developer/sing-box-ai/build/durability-0.1.1-rc.1/function-probes/installer-asset-failure/state/packages/standalone/releases/0.158.0-aarch64-apple-darwin
+==> /Users/yeminjie/Developer/sing-box-ai/build/durability-0.1.1-rc.1/function-probes/installer-asset-failure/bin is already on PATH
+==> Current terminal: codex
+==> Future terminals: open a new terminal and run: codex
+Codex CLI 0.158.0 installed successfully.

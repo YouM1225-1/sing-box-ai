@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "codex-release",
+  "url": "https://api.github.com/repos/openai/codex/releases/tags/rust-v0.158.0",
+  "retrieved_at": "2026-09-28T12:27:55.871065+00:00",
+  "method": "Reviewed Codex installation endpoint facts; feature-required is this project policy for the explicitly enabled codex-install feature.",
+  "page_updated": null,
+  "raw_reference": "codex-release-source",
+  "raw_sha256": "771caede85890faba96bc20e9a78e189c443fd51864e6c54c5e7b92cb7fad22d",
+  "locators": [
+    "GitHub REST release 397962047: $.assets[?(@.id==594554175)].browser_download_url; source-record $.observations.release_asset.chain[0:2]"
+  ],
+  "last_reviewed_at": "2026-09-28T12:30:31.927227+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "f78d7aa50ca8c189b84c874cc9c7b08b8d43e2dc54e5f47eecf491a41e816874",
+  "scope": "Codex documented npm and GitHub installation/fallback distribution paths; not ChatGPT login requirements",
+  "facts": [
+    {
+      "artifact": "openai",
+      "value": "release-assets.githubusercontent.com",
+      "type": "domain",
+      "product": [
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "codex-install"
+      ]
+    }
+  ]
+}

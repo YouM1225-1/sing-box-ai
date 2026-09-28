@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "codex-npm",
+  "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0",
+  "retrieved_at": "2026-09-28T12:27:58.371192+00:00",
+  "method": "Reviewed Codex installation endpoint facts; feature-required is this project policy for the explicitly enabled codex-install feature.",
+  "page_updated": null,
+  "raw_reference": "codex-npm-source",
+  "raw_sha256": "8c1c0a9600064f5295e3a6d9f3d9b5f45fdfd40eb2ca78cad52eb67a0f4fd119",
+  "locators": [
+    "Official openai/codex README.md at 44fe510ce3ee61c8ef623adcbf89b901c73ddd61: L41-L42 (npm install -g @openai/codex); npm @openai/codex@0.158.0 $.repository.url, $.dist.tarball and $.optionalDependencies; source-record $.observations.npm_platforms[*].dist.tarball"
+  ],
+  "last_reviewed_at": "2026-09-28T12:30:31.927227+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "9cb0b7f299f048420f3ecb9f8c5c095b52bb29faef599972c247963f251ec45c",
+  "scope": "Codex documented npm and GitHub installation/fallback distribution paths; not ChatGPT login requirements",
+  "facts": [
+    {
+      "artifact": "openai",
+      "value": "registry.npmjs.org",
+      "type": "domain",
+      "product": [
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "codex-install"
+      ]
+    }
+  ]
+}

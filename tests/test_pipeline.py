@@ -39,7 +39,8 @@ class PolicyTests(unittest.TestCase):
         self.assertEqual(challenge["review_status"], "approved")
         self.assertEqual(len([r for r in selected["openai"] if r["type"] == "ip_cidr"]), 23)
         self.assertTrue(len(cases_for(selected)) > 500)
-        self.assertEqual(policy["enabled_optional"], [])
+        self.assertEqual(set(policy["enabled_optional"]), {"fonts.googleapis.com", "fonts.gstatic.com"})
+        self.assertIn("codex-install", policy["features"])
 
     def change_policy(self, **changes):
         path = self.root / "sources/policy.yaml"
@@ -55,7 +56,11 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(registry, allow_unicode=True, sort_keys=False))
 
     def test_complete_baseline_and_attributes_survive_optional_off(self):
+        self.change_policy(enabled_optional=[])
         selected, policy, _ = canonical(self.root)
+        self.assertEqual(policy["enabled_optional"], [])
+        for host in ("fonts.googleapis.com", "fonts.gstatic.com"):
+            self.assertFalse(covered({"type": "domain", "value": host}, selected["anthropic"]))
         registry = archives(self.root)
         for name in ("openai", "anthropic"):
             original = self.root / (name + "-upstream.json")
@@ -75,6 +80,26 @@ class PolicyTests(unittest.TestCase):
         self.assertTrue(covered({"type": "domain", "value": "oaistatic.com"}, openai))
         self.assertEqual(source_document(openai)["version"], 2)
         self.assertEqual(len(source_document(openai)["rules"]), 1)
+
+    def test_selected_feature_delta_from_published_010(self):
+        selected, policy, _ = canonical(self.root)
+        additions = {
+            "openai": {"github.com", "api.github.com", "release-assets.githubusercontent.com", "registry.npmjs.org"},
+            "anthropic": {"fonts.googleapis.com", "fonts.gstatic.com"},
+            "anthropic-ip": set(),
+        }
+        for artifact, hosts in additions.items():
+            expected = load(ROOT / "artifacts/v0.1.0" / (artifact + ".json"))
+            if hosts:
+                expected["rules"][0]["domain"] = sorted(set(expected["rules"][0]["domain"]) | hosts)
+            self.assertEqual(semantic_key(source_document(selected[artifact])), semantic_key(expected), artifact)
+        self.assertEqual(policy["selected_pending"], [])
+
+    def test_codex_install_feature_cannot_be_silently_disabled(self):
+        policy = load(self.root / "sources/policy.yaml")
+        self.change_policy(features=[f for f in policy["features"] if f != "codex-install"])
+        with self.assertRaisesRegex(Invalid, "Feature dependency not enabled"):
+            canonical(self.root)
 
     def test_changed_srs_is_read_even_when_hash_is_updated(self):
         registry = archives(self.root)

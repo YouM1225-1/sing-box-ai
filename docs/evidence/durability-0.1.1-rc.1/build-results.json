@@ -1,0 +1,84 @@
+[
+  {
+    "step": "generate",
+    "command": [
+      "python3",
+      "scripts/generate.py",
+      "--mode",
+      "candidate",
+      "--output",
+      "/Users/yeminjie/Developer/sing-box-ai/build/durability-0.1.1-rc.1/candidate"
+    ],
+    "started_at": "2026-09-28T12:40:08.230969+00:00",
+    "exit": 0,
+    "log": "generate.log"
+  },
+  {
+    "step": "validate",
+    "command": [
+      "python3",
+      "scripts/validate.py",
+      "/Users/yeminjie/Developer/sing-box-ai/build/durability-0.1.1-rc.1/candidate",
+      "--go",
+      "/Users/yeminjie/Developer/sing-box-ai/.tools/go1.27.1-restored/go/bin/go"
+    ],
+    "started_at": "2026-09-28T12:40:08.734716+00:00",
+    "exit": 1,
+    "log": "validate-initial-cache-missing.log"
+  },
+  {
+    "step": "validate",
+    "command": [
+      "python3",
+      "scripts/validate.py",
+      "/Users/yeminjie/Developer/sing-box-ai/build/durability-0.1.1-rc.1/candidate",
+      "--go",
+      "/Users/yeminjie/Developer/sing-box-ai/.tools/go1.27.1-restored/go/bin/go"
+    ],
+    "started_at": "2026-09-28T12:43:21.060001+00:00",
+    "exit": 0,
+    "log": "validate.log"
+  },
+  {
+    "step": "unit-tests",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "started_at": "2026-09-28T12:43:24.817202+00:00",
+    "exit": 0,
+    "log": "unit-tests.log"
+  },
+  {
+    "step": "generate-rebuild",
+    "command": [
+      "python3",
+      "scripts/generate.py",
+      "--mode",
+      "candidate",
+      "--output",
+      "/Users/yeminjie/Developer/sing-box-ai/build/durability-0.1.1-rc.1/candidate-rebuild"
+    ],
+    "started_at": "2026-09-28T12:43:52.907310+00:00",
+    "exit": 0,
+    "log": "generate-rebuild.log"
+  },
+  {
+    "step": "validate-rebuild",
+    "command": [
+      "python3",
+      "scripts/validate.py",
+      "/Users/yeminjie/Developer/sing-box-ai/build/durability-0.1.1-rc.1/candidate-rebuild",
+      "--go",
+      "/Users/yeminjie/Developer/sing-box-ai/.tools/go1.27.1-restored/go/bin/go"
+    ],
+    "started_at": "2026-09-28T12:43:53.397260+00:00",
+    "exit": 0,
+    "log": "validate-rebuild.log"
+  }
+]

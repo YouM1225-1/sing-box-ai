@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "codex-install-source",
+  "kind": "official-source-record",
+  "url": "https://raw.githubusercontent.com/openai/codex/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/scripts/install/install.sh",
+  "retrieved_at": "2026-09-28T12:27:54.166380+00:00",
+  "extraction_method": "Reviewed fixed official source/distribution metadata; record endpoint locators and read-only observations without executing downloaded code.",
+  "original_response": {
+    "sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6",
+    "content_format": "https-raw-shell-source",
+    "is_original_html": false,
+    "bytes": 34564
+  },
+  "page_updated_literal": null,
+  "page_updated_absolute": null,
+  "full_page_redistributed": false,
+  "rights": "Only interoperable endpoint facts, source locators and read-only response observations are redistributed. This record does not relicense or reproduce the full upstream document or package.",
+  "facts": [
+    {
+      "value": "github.com",
+      "locator": "scripts/install/install.sh:L322",
+      "scope": "Codex GitHub release asset fallback URL",
+      "evidence_kind": "literal-in-pinned-official-source"
+    },
+    {
+      "value": "api.github.com",
+      "locator": "scripts/install/install.sh:L335,L364,L371",
+      "scope": "Codex version metadata API URL and fetch",
+      "evidence_kind": "literal-in-pinned-official-source"
+    }
+  ],
+  "source_commit": "44fe510ce3ee61c8ef623adcbf89b901c73ddd61",
+  "limitations": [
+    "Exact hostname routing affects all requests to that shared hostname, not only Codex paths or packages.",
+    "This is endpoint provenance and read-only HTTP evidence, not a completed installation, updater or consumer-session acceptance test.",
+    "These endpoints cover the declared GitHub fallback path; they are not claimed to be the only Codex distribution service."
+  ]
+}

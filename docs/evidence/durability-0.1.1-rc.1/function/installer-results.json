@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "observed_at": "2026-09-28T12:32:33.622505+00:00",
+  "completed": true,
+  "scope": "Reviewed upstream main installer logic with exactly two root-isolation edits; loopback HTTP fixtures serve one actual integrity-verified ARM64 public release archive.",
+  "source_commit": "44fe510ce3ee61c8ef623adcbf89b901c73ddd61",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "archive": {
+    "path": "codex-package-aarch64-apple-darwin.tar.gz",
+    "bytes": 129212289,
+    "sha256": "09f2a9fde318fbcd384f15b4850c1b90930678f4805647b6bded196ccf32f590",
+    "github_digest_matches": true,
+    "manifest_digest_matches": true
+  },
+  "archive_member_count": 52,
+  "cases": [
+    {
+      "case": "default",
+      "exit": 0,
+      "stdout_path": "installer-default/stdout.txt",
+      "stderr_path": "installer-default/stderr.txt",
+      "upstream_script_sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6",
+      "instrumented_script_sha256": "7698426aaa815419f2252b063f72b4d1d5c7f67747e723bc6b283d51487a5161",
+      "only_source_edits": [
+        "CODEX_HOME_DIR redirected to case/state",
+        "mktemp output constrained to case/scratch"
+      ],
+      "installed_version": "codex-cli 0.158.0",
+      "installed_version_exit": 0,
+      "requests": [
+        {
+          "case": "default",
+          "original_host": "releases.openai.com",
+          "original_path": "/codex/releases/0.158.0/release.json",
+          "status": 200,
+          "body_sha256": "f17ceff1f5d058ddc8aedb33afe4e55912cf0c8032639aba0d5e7707e2c8f50e"
+        },
+        {
+          "case": "default",
+          "original_host": "releases.openai.com",
+          "original_path": "/codex/releases/0.158.0/codex-package_SHA256SUMS",
+          "status": 200,
+          "body_sha256": "372f97579654ead4b6ed968afde6ea662348e70d4e03939b6f68e37101a58354"
+        },
+        {
+          "case": "default",
+          "original_host": "releases.openai.com",
+          "original_path": "/codex/releases/0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 200,
+          "body_sha256": "09f2a9fde318fbcd384f15b4850c1b90930678f4805647b6bded196ccf32f590"
+        }
+      ],
+      "installation_root": "installer-default",
+      "user_home_or_codex_home_reassigned": false,
+      "shell_profile_write_avoided_by_bin_already_on_child_path": true,
+      "assertions_passed": true,
+      "temporary_install_removed": true
+    },
+    {
+      "case": "explicit-github",
+      "exit": 0,
+      "stdout_path": "installer-explicit-github/stdout.txt",
+      "stderr_path": "installer-explicit-github/stderr.txt",
+      "upstream_script_sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6",
+      "instrumented_script_sha256": "c9e57ec1b8bb17cc588f3870e98d9b9e6bae8848196b3e5d3d5814b68577078c",
+      "only_source_edits": [
+        "CODEX_HOME_DIR redirected to case/state",
+        "mktemp output constrained to case/scratch"
+      ],
+      "installed_version": "codex-cli 0.158.0",
+      "installed_version_exit": 0,
+      "requests": [
+        {
+          "case": "explicit-github",
+          "original_host": "api.github.com",
+          "original_path": "/repos/openai/codex/releases/tags/rust-v0.158.0",
+          "status": 200,
+          "body_sha256": "5a68667ee71adce0e0b127ce819e7d85d2abdbca4f0a5e7cee6ba980a8dfbc37"
+        },
+        {
+          "case": "explicit-github",
+          "original_host": "github.com",
+          "original_path": "/openai/codex/releases/download/rust-v0.158.0/codex-package_SHA256SUMS",
+          "status": 302
+        },
+        {
+          "case": "explicit-github",
+          "original_host": "release-assets.githubusercontent.com",
+          "original_path": "/controlled-fixture/codex-package_SHA256SUMS",
+          "status": 200,
+          "body_sha256": "372f97579654ead4b6ed968afde6ea662348e70d4e03939b6f68e37101a58354"
+        },
+        {
+          "case": "explicit-github",
+          "original_host": "github.com",
+          "original_path": "/openai/codex/releases/download/rust-v0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 302
+        },
+        {
+          "case": "explicit-github",
+          "original_host": "release-assets.githubusercontent.com",
+          "original_path": "/controlled-fixture/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 200,
+          "body_sha256": "09f2a9fde318fbcd384f15b4850c1b90930678f4805647b6bded196ccf32f590"
+        }
+      ],
+      "installation_root": "installer-explicit-github",
+      "user_home_or_codex_home_reassigned": false,
+      "shell_profile_write_avoided_by_bin_already_on_child_path": true,
+      "assertions_passed": true,
+      "temporary_install_removed": true
+    },
+    {
+      "case": "metadata-failure",
+      "exit": 0,
+      "stdout_path": "installer-metadata-failure/stdout.txt",
+      "stderr_path": "installer-metadata-failure/stderr.txt",
+      "upstream_script_sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6",
+      "instrumented_script_sha256": "19bd8ef1f7bf8a7d06eafa0103acd2b67af8ddd99a2515ebcf849cf31b091f90",
+      "only_source_edits": [
+        "CODEX_HOME_DIR redirected to case/state",
+        "mktemp output constrained to case/scratch"
+      ],
+      "installed_version": "codex-cli 0.158.0",
+      "installed_version_exit": 0,
+      "requests": [
+        {
+          "case": "metadata-failure",
+          "original_host": "releases.openai.com",
+          "original_path": "/codex/releases/0.158.0/release.json",
+          "status": 503
+        },
+        {
+          "case": "metadata-failure",
+          "original_host": "api.github.com",
+          "original_path": "/repos/openai/codex/releases/tags/rust-v0.158.0",
+          "status": 200,
+          "body_sha256": "5a68667ee71adce0e0b127ce819e7d85d2abdbca4f0a5e7cee6ba980a8dfbc37"
+        },
+        {
+          "case": "metadata-failure",
+          "original_host": "github.com",
+          "original_path": "/openai/codex/releases/download/rust-v0.158.0/codex-package_SHA256SUMS",
+          "status": 302
+        },
+        {
+          "case": "metadata-failure",
+          "original_host": "release-assets.githubusercontent.com",
+          "original_path": "/controlled-fixture/codex-package_SHA256SUMS",
+          "status": 200,
+          "body_sha256": "372f97579654ead4b6ed968afde6ea662348e70d4e03939b6f68e37101a58354"
+        },
+        {
+          "case": "metadata-failure",
+          "original_host": "github.com",
+          "original_path": "/openai/codex/releases/download/rust-v0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 302
+        },
+        {
+          "case": "metadata-failure",
+          "original_host": "release-assets.githubusercontent.com",
+          "original_path": "/controlled-fixture/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 200,
+          "body_sha256": "09f2a9fde318fbcd384f15b4850c1b90930678f4805647b6bded196ccf32f590"
+        }
+      ],
+      "installation_root": "installer-metadata-failure",
+      "user_home_or_codex_home_reassigned": false,
+      "shell_profile_write_avoided_by_bin_already_on_child_path": true,
+      "assertions_passed": true,
+      "temporary_install_removed": true
+    },
+    {
+      "case": "asset-failure",
+      "exit": 0,
+      "stdout_path": "installer-asset-failure/stdout.txt",
+      "stderr_path": "installer-asset-failure/stderr.txt",
+      "upstream_script_sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6",
+      "instrumented_script_sha256": "08609545cb39142ed86a0f89b0279b50e84ce1cf4b54f81b231d1c072a8577f8",
+      "only_source_edits": [
+        "CODEX_HOME_DIR redirected to case/state",
+        "mktemp output constrained to case/scratch"
+      ],
+      "installed_version": "codex-cli 0.158.0",
+      "installed_version_exit": 0,
+      "requests": [
+        {
+          "case": "asset-failure",
+          "original_host": "releases.openai.com",
+          "original_path": "/codex/releases/0.158.0/release.json",
+          "status": 200,
+          "body_sha256": "f17ceff1f5d058ddc8aedb33afe4e55912cf0c8032639aba0d5e7707e2c8f50e"
+        },
+        {
+          "case": "asset-failure",
+          "original_host": "releases.openai.com",
+          "original_path": "/codex/releases/0.158.0/codex-package_SHA256SUMS",
+          "status": 503
+        },
+        {
+          "case": "asset-failure",
+          "original_host": "github.com",
+          "original_path": "/openai/codex/releases/download/rust-v0.158.0/codex-package_SHA256SUMS",
+          "status": 302
+        },
+        {
+          "case": "asset-failure",
+          "original_host": "release-assets.githubusercontent.com",
+          "original_path": "/controlled-fixture/codex-package_SHA256SUMS",
+          "status": 200,
+          "body_sha256": "372f97579654ead4b6ed968afde6ea662348e70d4e03939b6f68e37101a58354"
+        },
+        {
+          "case": "asset-failure",
+          "original_host": "releases.openai.com",
+          "original_path": "/codex/releases/0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 503
+        },
+        {
+          "case": "asset-failure",
+          "original_host": "github.com",
+          "original_path": "/openai/codex/releases/download/rust-v0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 302
+        },
+        {
+          "case": "asset-failure",
+          "original_host": "release-assets.githubusercontent.com",
+          "original_path": "/controlled-fixture/codex-package-aarch64-apple-darwin.tar.gz",
+          "status": 200,
+          "body_sha256": "09f2a9fde318fbcd384f15b4850c1b90930678f4805647b6bded196ccf32f590"
+        }
+      ],
+      "installation_root": "installer-asset-failure",
+      "user_home_or_codex_home_reassigned": false,
+      "shell_profile_write_avoided_by_bin_already_on_child_path": true,
+      "assertions_passed": true,
+      "temporary_install_removed": true
+    }
+  ],
+  "limitations": [
+    "Transport errors and GitHub redirects in installer cases are controlled HTTP fixtures, not induced public service failures.",
+    "No official installed Codex or user shell profile modified.",
+    "Online resource chain evidence is separate in network-results.json.",
+    "No candidate SRS routing assurance comes from these installer fixtures.",
+    "npm CLI install and authenticated Codex usage not performed."
+  ]
+}

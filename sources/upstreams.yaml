@@ -248,3 +248,62 @@ archives:
   method: https-raw-response
   license_note: Root LICENSE path at the fixed commit returned HTTP 404 on 2026-09-27; this user-owned
     historical input is not assigned an inferred license.
+- id: codex-install
+  kind: official
+  path: sources/official/codex-install.json
+  url: https://raw.githubusercontent.com/openai/codex/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/scripts/install/install.sh
+  sha256: 49d8fa276aed4c88516c7227157b321a8c15065e6ce9c05acb0360ebff864720
+  retrieved_at: '2026-09-28T12:27:54.166380+00:00'
+  method: reviewed-structured-facts
+  last_reviewed_at: '2026-09-28T12:30:31.927227+00:00'
+  raw_reference: codex-install-source
+  commit: 44fe510ce3ee61c8ef623adcbf89b901c73ddd61
+- id: codex-install-source
+  kind: official-source-record
+  path: sources/official/source-records/codex-install.json
+  url: https://raw.githubusercontent.com/openai/codex/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/scripts/install/install.sh
+  sha256: d9cdbd686cc3a35e2a4eecfbb750a4b73851abdeab31291f307d8b64682ef9fa
+  retrieved_at: '2026-09-28T12:27:54.166380+00:00'
+  method: Reviewed fixed official source/distribution metadata; record endpoint locators and read-only
+    observations without executing downloaded code.
+  format: functional-endpoint-facts-json
+  original_response_sha256: 150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6
+  commit: 44fe510ce3ee61c8ef623adcbf89b901c73ddd61
+- id: codex-release
+  kind: official
+  path: sources/official/codex-release.json
+  url: https://api.github.com/repos/openai/codex/releases/tags/rust-v0.158.0
+  sha256: 6e94eb25a3c1a72a5ccdaa6bb2bb957bf3507c1d22185908850c521f34fc0810
+  retrieved_at: '2026-09-28T12:27:55.871065+00:00'
+  method: reviewed-structured-facts
+  last_reviewed_at: '2026-09-28T12:30:31.927227+00:00'
+  raw_reference: codex-release-source
+- id: codex-release-source
+  kind: official-source-record
+  path: sources/official/source-records/codex-release.json
+  url: https://api.github.com/repos/openai/codex/releases/tags/rust-v0.158.0
+  sha256: 771caede85890faba96bc20e9a78e189c443fd51864e6c54c5e7b92cb7fad22d
+  retrieved_at: '2026-09-28T12:27:55.871065+00:00'
+  method: Reviewed fixed official source/distribution metadata; record endpoint locators and read-only
+    observations without executing downloaded code.
+  format: functional-endpoint-facts-json
+  original_response_sha256: f78d7aa50ca8c189b84c874cc9c7b08b8d43e2dc54e5f47eecf491a41e816874
+- id: codex-npm
+  kind: official
+  path: sources/official/codex-npm.json
+  url: https://registry.npmjs.org/@openai%2Fcodex/0.158.0
+  sha256: 3e7038f8c5eade33be2e80a4f0000aa36a27297d30095b277e4711aaf11bce9b
+  retrieved_at: '2026-09-28T12:27:58.371192+00:00'
+  method: reviewed-structured-facts
+  last_reviewed_at: '2026-09-28T12:30:31.927227+00:00'
+  raw_reference: codex-npm-source
+- id: codex-npm-source
+  kind: official-source-record
+  path: sources/official/source-records/codex-npm.json
+  url: https://registry.npmjs.org/@openai%2Fcodex/0.158.0
+  sha256: 8c1c0a9600064f5295e3a6d9f3d9b5f45fdfd40eb2ca78cad52eb67a0f4fd119
+  retrieved_at: '2026-09-28T12:27:58.371192+00:00'
+  method: Reviewed fixed official source/distribution metadata; record endpoint locators and read-only
+    observations without executing downloaded code.
+  format: functional-endpoint-facts-json
+  original_response_sha256: 9cb0b7f299f048420f3ecb9f8c5c095b52bb29faef599972c247963f251ec45c

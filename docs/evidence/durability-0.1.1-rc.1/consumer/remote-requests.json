@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/openai.srs",
+    "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  {
+    "path": "/anthropic.srs",
+    "sha256": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b"
+  }
+]

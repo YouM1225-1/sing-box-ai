@@ -1,0 +1,2 @@
+curl: (22) The requested URL returned error: 503
+WARNING: releases.openai.com is unavailable; falling back to GitHub Releases.

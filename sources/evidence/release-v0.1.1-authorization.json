@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "authorized_on": "2026-09-28",
+  "deployment_authorized": false,
+  "instruction": "构建并发布 `0.1.1` 需要手动构建后上传github",
+  "kind": "operator-authorization",
+  "limitations": [
+    "仅授权手动构建、提交相应来源与制品、推送并发布GitHub正式v0.1.1；不访问或操作N100，不改配置，不重启/重载或改变系统网络。",
+    "Release正文为空，发布身份YouM1225-1，保留旧Release。先完整上传并以非Latest发布核验固定URL，再设Latest；运行中的Latest订阅者可能自动更新。",
+    "批准制品必须与已验收0.1.1-rc.1的三个SRS逐字节一致。静态发布不等于真实消费者、出口、登录及重启验收。"
+  ],
+  "project_version": "0.1.1",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "tag": "geosite-ai",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-!cn.srs",
+    "sha256": "6ff6db2adadbabd60fa49e1497c8e44cf02fe5ed122266d3af2d7d5fd27d2fcc",
+    "bytes": 1995
+  },
+  {
+    "tag": "geosite-youtube",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youtube.srs",
+    "sha256": "8817814137ae7174f378ad9b2dd67222cdb281017b0bb4117df6b9be46f1761e",
+    "bytes": 1286
+  },
+  {
+    "tag": "geosite-google",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google.srs",
+    "sha256": "952d89c656fdb147d4f5d04541dd942b33dcce0dae906a8416e24cbc1161402a",
+    "bytes": 7752
+  },
+  {
+    "tag": "geosite-github",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-github.srs",
+    "sha256": "283a3ab91220ddcefd2aa1ac7174d4147f50e02f8cb9838db1f94e0e103a7449",
+    "bytes": 786
+  },
+  {
+    "tag": "geosite-apple",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple.srs",
+    "sha256": "9418454daa0f7f9935576ecf4270110621253382cbde6cd2b7bd96011f3b4463",
+    "bytes": 17230
+  },
+  {
+    "tag": "geosite-apple@cn",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple@cn.srs",
+    "sha256": "682b0e0fe96628e32c943386e048b4b3f15c95d54949c455045725baa8497159",
+    "bytes": 2320
+  },
+  {
+    "tag": "geosite-apple-tvplus",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple-tvplus.srs",
+    "sha256": "7f1aa6fb50cc2ad26a4d8fb611ac5ddea2fb90c527fdcc17bfdffb7a947efdaa",
+    "bytes": 135
+  },
+  {
+    "tag": "geosite-telegram",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs",
+    "sha256": "924584651fb89cc9b8bc1d88836b922f6631bcc57997e85bd670efee7be406fe",
+    "bytes": 265
+  },
+  {
+    "tag": "geosite-tiktok",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tiktok.srs",
+    "sha256": "3fd69c4047a0908a9d2b7940d91c60e86b88d56f7153e452432a68d8faa5a309",
+    "bytes": 510
+  },
+  {
+    "tag": "geosite-netflix",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs",
+    "sha256": "e663d33cdce888830c0095e28bb88141d5c0980b5715912f3779a5074b36a19d",
+    "bytes": 363
+  },
+  {
+    "tag": "geosite-meta",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-meta.srs",
+    "sha256": "b8f1afce34965a60143ae0e9624dfbe20cea3260fda33f00a084a086f22438ef",
+    "bytes": 4865
+  },
+  {
+    "tag": "geosite-twitter",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-twitter.srs",
+    "sha256": "0abf51b02cddba87f797d556ed7d3902d543b2bdd458e6aaa8afd29a252e53c5",
+    "bytes": 315
+  },
+  {
+    "tag": "geosite-cloudflare",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cloudflare.srs",
+    "sha256": "5fa87d2b2ded9b7cd42ba40ae720d739616ff1ebe65804337ac47fb097f9f047",
+    "bytes": 970
+  },
+  {
+    "tag": "geosite-aws",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-aws.srs",
+    "sha256": "15d07d05945df3c95f2cf41f8f9e8ce0706c1c712f821f319faeb43f496f4837",
+    "bytes": 998
+  },
+  {
+    "tag": "geosite-aws-cn",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-aws-cn.srs",
+    "sha256": "a16b515305fb1f77574643c7bc6983728230744f5ed16cbb98005bb6aa59e15e",
+    "bytes": 426
+  },
+  {
+    "tag": "geosite-adobe",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adobe.srs",
+    "sha256": "c1d89441308c4848a1e17a8ce1d5e3ee894d75f2c2e53b483de8eb29687b07c2",
+    "bytes": 1333
+  },
+  {
+    "tag": "geosite-dji",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-dji.srs",
+    "sha256": "bbc5e53f1d4b701420d17538b595da7cbba7c66a99d857adced732d74cc35c44",
+    "bytes": 145
+  },
+  {
+    "tag": "geosite-private",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-private.srs",
+    "sha256": "260491243e0266e5ba543f509ca7f13b07d6f4c2c26ade3f675ddea1661f3213",
+    "bytes": 754
+  },
+  {
+    "tag": "geosite-bilibili",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-bilibili.srs",
+    "sha256": "2d17689834b324a22f04ada158c4f98a4184c171a047283e6cb8dcf694e29f86",
+    "bytes": 507
+  },
+  {
+    "tag": "geosite-tencent",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tencent.srs",
+    "sha256": "60b99717799fdee5f4780b9abcbbb8d73b9efd4880c77213f5f9a4a7c75fa6d1",
+    "bytes": 5232
+  },
+  {
+    "tag": "geosite-alibaba",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-alibaba.srs",
+    "sha256": "40620beeeac148a7ad82488f86cb4396f0be0006ae7ccb8a64deb6f830924188",
+    "bytes": 3754
+  },
+  {
+    "tag": "geosite-fastly",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-fastly.srs",
+    "sha256": "39494e65eb7102a9763bd8f0282a13f5950096ebd3c78d89ec16c22f70430db1",
+    "bytes": 135
+  },
+  {
+    "tag": "geosite-douyin",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-douyin.srs",
+    "sha256": "f227d8ccdab524c3ede31db3144bbb0b7850b7154cca6ce0c1f43f03849f1093",
+    "bytes": 699
+  },
+  {
+    "tag": "geosite-xiaomi",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-xiaomi.srs",
+    "sha256": "2f7f505f521e00ed8c17f98fd0deead233713128d17b114839236c5c80a98c01",
+    "bytes": 707
+  },
+  {
+    "tag": "geoip-google",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/google.srs",
+    "sha256": "daffad7fd51544cdf819116a6e8e87465e0c94c128ab137c9cd47364ade364a9",
+    "bytes": 8269
+  },
+  {
+    "tag": "geoip-apple",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs",
+    "sha256": "03d4dc02c3ba2e387566e992b3017b94a7f445f02da4b2e6e648aae41150a535",
+    "bytes": 111
+  },
+  {
+    "tag": "AS714",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/asn/AS714.srs",
+    "sha256": "a994dc9e0fd730fa981c336dc55ea1836398ee9ccb2bb2a35c9d21a37d9e1780",
+    "bytes": 377
+  },
+  {
+    "tag": "AS6185",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/asn/AS6185.srs",
+    "sha256": "901b150a65e593e2b82752836adce81fb8de9a03d8d22f6a42b1742f8d816bd0",
+    "bytes": 301
+  },
+  {
+    "tag": "geoip-telegram",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/telegram.srs",
+    "sha256": "124b6decbcd871517927c15857b26c6898fe614cb2ef5e711d83835e9c700c2b",
+    "bytes": 127
+  },
+  {
+    "tag": "geoip-netflix",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/netflix.srs",
+    "sha256": "c993b811c993938e532bc81b4bff918ce56af4af42a9fda8fbfa6aa815460990",
+    "bytes": 363
+  },
+  {
+    "tag": "geoip-facebook",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/facebook.srs",
+    "sha256": "e4499fb61f32728e46fa36859acc4f9861364e49856c7e1c87fc06f0e85587d3",
+    "bytes": 526
+  },
+  {
+    "tag": "geoip-twitter",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/twitter.srs",
+    "sha256": "6ce01a18f68e18e9cd009cfb087b43f5f5890292c614e1fcbac43ed33a0f0adf",
+    "bytes": 201
+  },
+  {
+    "tag": "geoip-cloudflare",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/cloudflare.srs",
+    "sha256": "7563d0db9f387c3741737626cd4df1a9f84b4efe1219f708251b45c4d81b4b9f",
+    "bytes": 4021
+  },
+  {
+    "tag": "geosite-cn",
+    "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs",
+    "sha256": "807357cf6f5cf46d91cfc19b69102fe791671b4cc2bb39d579a0b38a6094cec1",
+    "bytes": 442086
+  },
+  {
+    "tag": "geoip-cn",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/cn.srs",
+    "sha256": "188b9029a171c38cf5a9bac66e1382b805487af9dc108ae9f316f7570560970b",
+    "bytes": 36370
+  },
+  {
+    "tag": "geoip-cloudfront",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/cloudfront.srs",
+    "sha256": "d782668c20e3e0c82b30e00a586273b59c2229c7438478c8b3bafb2974aef986",
+    "bytes": 1007
+  },
+  {
+    "tag": "geoip-fastly",
+    "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/srs/fastly.srs",
+    "sha256": "f705698238eb30a75c8541bde8139e3e9f655f560ac4f1b51b18a26c1b857823",
+    "bytes": 571
+  }
+]

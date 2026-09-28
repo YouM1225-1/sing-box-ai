@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "codex-install",
+  "url": "https://raw.githubusercontent.com/openai/codex/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/scripts/install/install.sh",
+  "retrieved_at": "2026-09-28T12:27:54.166380+00:00",
+  "method": "Reviewed Codex installation endpoint facts; feature-required is this project policy for the explicitly enabled codex-install feature.",
+  "page_updated": null,
+  "raw_reference": "codex-install-source",
+  "raw_sha256": "d9cdbd686cc3a35e2a4eecfbb750a4b73851abdeab31291f307d8b64682ef9fa",
+  "locators": [
+    "scripts/install/install.sh at 44fe510ce3ee61c8ef623adcbf89b901c73ddd61: L318-L335 (release_url_for_asset and release_metadata_url); L360-L371 (GitHub metadata fetch)"
+  ],
+  "last_reviewed_at": "2026-09-28T12:30:31.927227+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6",
+  "scope": "Codex documented npm and GitHub installation/fallback distribution paths; not ChatGPT login requirements",
+  "facts": [
+    {
+      "artifact": "openai",
+      "value": "github.com",
+      "type": "domain",
+      "product": [
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "codex-install"
+      ]
+    },
+    {
+      "artifact": "openai",
+      "value": "api.github.com",
+      "type": "domain",
+      "product": [
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "codex-install"
+      ]
+    }
+  ]
+}

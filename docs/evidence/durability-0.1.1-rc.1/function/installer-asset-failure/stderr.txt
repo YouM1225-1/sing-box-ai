@@ -1,0 +1,4 @@
+curl: (22) The requested URL returned error: 503
+WARNING: Could not download or verify https://releases.openai.com/codex/releases/0.158.0/codex-package_SHA256SUMS; retrying from GitHub Releases.
+curl: (22) The requested URL returned error: 503
+WARNING: Could not download or verify https://releases.openai.com/codex/releases/0.158.0/codex-package-aarch64-apple-darwin.tar.gz; retrying from GitHub Releases.

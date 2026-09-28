@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "observed_at": "2026-09-28T12:35:10.944824+00:00",
+  "result": "passed",
+  "node": {
+    "path": "/Users/yeminjie/.local/share/pnpm/bin/node",
+    "version": "v24.21.0",
+    "arch": "arm64",
+    "platform": "darwin"
+  },
+  "public_tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-arm64.tgz",
+  "final_url": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-arm64.tgz",
+  "integrity_checks": [
+    {
+      "archive": "npm-codex.tgz",
+      "bytes": 4902,
+      "sha256": "0f20acf17c7985b76510bf7915cf7729fbe2ff52f14b07a827843d63bc36b81b",
+      "integrity": "sha512-GBhcKpQmVLsCtEP5mUf6WFye6QQgTKotwsXrYPM0GFmEsoOSahik6hkf2FHabX9kZBl0Y0/PQowLu7uYMKT8dg==",
+      "npm_shasum_verified": true
+    },
+    {
+      "archive": "npm-codex-arm64.tgz",
+      "bytes": 133524491,
+      "sha256": "7849f8aa87c3956823cef082d83b538980a0ced6e468cca4f39c1cf606ea8dae",
+      "integrity": "sha512-0OKSjlWY1j4Ld1fT87QttNw3Y2SthcXi4GcrWSHjleZg1n86eG3+shJl4Pv+siUmsBJhWlNmm6rRO4Yv8ZyQLg==",
+      "npm_shasum_verified": true
+    }
+  ],
+  "packages": [
+    {
+      "directory": "npm-install-test/node_modules/@openai/codex",
+      "name": "@openai/codex",
+      "version": "0.158.0",
+      "members": 3,
+      "scripts": {}
+    },
+    {
+      "directory": "npm-install-test/node_modules/@openai/codex-darwin-arm64",
+      "name": "@openai/codex",
+      "version": "0.158.0-darwin-arm64",
+      "members": 44,
+      "scripts": {}
+    }
+  ],
+  "command": [
+    "node",
+    "npm-install-test/node_modules/@openai/codex/bin/codex.js",
+    "--version"
+  ],
+  "exit": 0,
+  "stdout": "codex-cli 0.158.0",
+  "stderr_path": "npm-wrapper-stderr.txt",
+  "npm_cli_install_executed": false,
+  "installation_method": "Original npm tarballs extracted to temporary node_modules using declared platform alias; actual unmodified npm JS wrapper resolves and executes the genuine ARM64 binary.",
+  "credentials_sent": false,
+  "n100_accessed": false,
+  "global_installation_changed": false,
+  "limitations": [
+    "This is an actual wrapper/platform payload execution, not an npm CLI installation test or proof of npm resolver/proxy configuration.",
+    "No authenticated session or product API calls.",
+    "Public downloads used existing Mac network, not candidate SRS routing."
+  ],
+  "temporary_install_removed": true
+}

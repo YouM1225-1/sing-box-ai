@@ -440,3 +440,57 @@
   reason: Official ChatGPT Voice destination; IP rule applies to all ports
   features:
   - chatgpt-voice
+- value: github.com
+  type: domain
+  product:
+  - codex
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: codex-install
+  reason: Pinned official Codex installer GitHub release fallback URL; exact shared host, not path-specific
+  features:
+  - codex-install
+- value: api.github.com
+  type: domain
+  product:
+  - codex
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: codex-install
+  reason: Pinned official Codex installer release metadata API; exact shared host, not repository-specific
+  features:
+  - codex-install
+- value: release-assets.githubusercontent.com
+  type: domain
+  product:
+  - codex
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: codex-release
+  reason: Observed HEAD redirect for an official Codex release asset; exact shared delivery host, not
+    a guarantee of all future redirects
+  features:
+  - codex-install
+- value: registry.npmjs.org
+  type: domain
+  product:
+  - codex
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: codex-npm
+  reason: Official Codex npm installation package and six platform package tarballs; exact default registry
+    host, not package-specific
+  features:
+  - codex-install

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "codex-release-source",
+  "kind": "official-source-record",
+  "url": "https://api.github.com/repos/openai/codex/releases/tags/rust-v0.158.0",
+  "retrieved_at": "2026-09-28T12:27:55.871065+00:00",
+  "extraction_method": "Reviewed fixed official source/distribution metadata; record endpoint locators and read-only observations without executing downloaded code.",
+  "original_response": {
+    "sha256": "f78d7aa50ca8c189b84c874cc9c7b08b8d43e2dc54e5f47eecf491a41e816874",
+    "content_format": "https-github-release-json",
+    "is_original_html": false,
+    "bytes": 316567
+  },
+  "page_updated_literal": null,
+  "page_updated_absolute": null,
+  "full_page_redistributed": false,
+  "rights": "Only interoperable endpoint facts, source locators and read-only response observations are redistributed. This record does not relicense or reproduce the full upstream document or package.",
+  "facts": [
+    {
+      "value": "release-assets.githubusercontent.com",
+      "locator": "$.observations.release_asset.chain[0].location_without_query and chain[1].hostname/status; input asset from GitHub release $.assets[?(@.id==594554175)]",
+      "scope": "Official Codex release asset delivery hostname observed via HEAD",
+      "evidence_kind": "observed-redirect-from-official-distribution"
+    }
+  ],
+  "observations": {
+    "retrieved_at": "2026-09-28T12:28:34.630544+00:00",
+    "method": "HEAD only; no package body downloaded or installer executed",
+    "release_asset": {
+      "release_tag": "rust-v0.158.0",
+      "release_id": 397962047,
+      "asset_id": 594554175,
+      "asset_name": "codex-aarch64-apple-darwin.tar.gz",
+      "declared_size": 95135097,
+      "declared_digest": "sha256:341c4a08f9ce1935b3007376dc2a3d50a0a89112930e9a474ae61367218f6e8a",
+      "chain": [
+        {
+          "url_without_query": "https://github.com/openai/codex/releases/download/rust-v0.158.0/codex-aarch64-apple-darwin.tar.gz",
+          "status": 302,
+          "hostname": "github.com",
+          "content_type": "text/html; charset=utf-8",
+          "content_length": "0",
+          "headers_sha256": "a7acdbafee256a52fc896c275017a3669d33a93761eb5dd0c4500f9afd07421a",
+          "location_without_query": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/06b7afc5-008e-4d4f-9c11-cc7859271b91"
+        },
+        {
+          "url_without_query": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/06b7afc5-008e-4d4f-9c11-cc7859271b91",
+          "status": 200,
+          "hostname": "release-assets.githubusercontent.com",
+          "content_type": "application/octet-stream",
+          "content_length": "95135097",
+          "headers_sha256": "6c023a4f86cad91b3769d9d673fe11fc87121e7503077a5adb72cbf4e0ddc4b9"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Exact hostname routing affects all requests to that shared hostname, not only Codex paths or packages.",
+    "This is endpoint provenance and read-only HTTP evidence, not a completed installation, updater or consumer-session acceptance test.",
+    "One concrete rust-v0.158.0 macOS ARM64 release asset was sampled. This is not an exhaustive cross-platform, regional or future redirect guarantee.",
+    "Signed redirect query parameters were neither redistributed nor retained in this source record. Header digests identify the received headers; package bytes were not downloaded and their digest was not independently verified."
+  ]
+}

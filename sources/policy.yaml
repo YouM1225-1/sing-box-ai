@@ -3,6 +3,7 @@ features:
 - chatgpt-web
 - chatgpt-clients
 - codex
+- codex-install
 - chatgpt-voice
 - claude-web
 - claude-api
@@ -11,7 +12,9 @@ features:
 - claude-artifacts
 - claude-install
 - claude-plugins
-enabled_optional: []
+enabled_optional:
+- fonts.googleapis.com
+- fonts.gstatic.com
 review_as_of: '2026-09-28'
 approved_regex:
   ^[^.]+-review\.googlesource\.com$:

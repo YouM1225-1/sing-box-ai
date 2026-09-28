@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "id": "codex-npm-source",
+  "kind": "official-source-record",
+  "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0",
+  "retrieved_at": "2026-09-28T12:27:58.371192+00:00",
+  "extraction_method": "Reviewed fixed official source/distribution metadata; record endpoint locators and read-only observations without executing downloaded code.",
+  "original_response": {
+    "sha256": "9cb0b7f299f048420f3ecb9f8c5c095b52bb29faef599972c247963f251ec45c",
+    "content_format": "https-npm-version-metadata-json",
+    "is_original_html": false,
+    "bytes": 3521
+  },
+  "page_updated_literal": null,
+  "page_updated_absolute": null,
+  "full_page_redistributed": false,
+  "rights": "Only interoperable endpoint facts, source locators and read-only response observations are redistributed. This record does not relicense or reproduce the full upstream document or package.",
+  "facts": [
+    {
+      "value": "registry.npmjs.org",
+      "locator": "$.package.dist.tarball; $.package.optionalDependencies; $.observations.npm_platforms[*].dist.tarball and HEAD chains; supporting_sources[0] README.md:L41-L42",
+      "scope": "Officially documented Codex npm package registry and platform tarballs",
+      "evidence_kind": "official-install-documentation-plus-publisher-distribution-metadata"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/openai/codex/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/README.md",
+      "commit": "44fe510ce3ee61c8ef623adcbf89b901c73ddd61",
+      "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+      "bytes": 3334,
+      "retrieved_at": "2026-09-28T12:27:54.755992+00:00",
+      "content_format": "https-raw-markdown",
+      "locators": [
+        "README.md:L41-L42"
+      ],
+      "fact": "Official installation command: npm install -g @openai/codex"
+    }
+  ],
+  "package": {
+    "name": "@openai/codex",
+    "version": "0.158.0",
+    "repository": {
+      "url": "git+https://github.com/openai/codex.git",
+      "type": "git",
+      "directory": "codex-cli"
+    },
+    "optionalDependencies": {
+      "@openai/codex-linux-x64": "npm:@openai/codex@0.158.0-linux-x64",
+      "@openai/codex-win32-x64": "npm:@openai/codex@0.158.0-win32-x64",
+      "@openai/codex-darwin-x64": "npm:@openai/codex@0.158.0-darwin-x64",
+      "@openai/codex-linux-arm64": "npm:@openai/codex@0.158.0-linux-arm64",
+      "@openai/codex-win32-arm64": "npm:@openai/codex@0.158.0-win32-arm64",
+      "@openai/codex-darwin-arm64": "npm:@openai/codex@0.158.0-darwin-arm64"
+    },
+    "dist": {
+      "tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0.tgz",
+      "integrity": "sha512-GBhcKpQmVLsCtEP5mUf6WFye6QQgTKotwsXrYPM0GFmEsoOSahik6hkf2FHabX9kZBl0Y0/PQowLu7uYMKT8dg==",
+      "shasum": "494b272acab9e14efd7e2fc9e61ed1e04046fb6c"
+    }
+  },
+  "observations": {
+    "retrieved_at": "2026-09-28T12:28:34.630544+00:00",
+    "method": "HEAD only; no package body downloaded or installer executed",
+    "npm_root_tarball": {
+      "version": "0.158.0",
+      "chain": [
+        {
+          "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0.tgz",
+          "status": 200,
+          "hostname": "registry.npmjs.org",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "headers_sha256": "ea4fc094c08f7b936fabe26a3ac20d7541cf2a2aaf245da94872830e90d5d2e1"
+        }
+      ]
+    },
+    "npm_platforms": [
+      {
+        "version": "0.158.0-linux-x64",
+        "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0-linux-x64",
+        "sha256": "58866e26098d5bbded1e6cfdbd5f9b7a1d24c6dd9dca0acfeae7caa317f40873",
+        "bytes": 3373,
+        "name": "@openai/codex",
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-linux-x64.tgz",
+          "integrity": "sha512-mY12GZPM8TuOWVGxCyNV2NSA8t1uIupm9Nhu9VeQVEvvxBKN08U8bLH+vn7oISUHZPC8bwhROIbo/ZUxqV6XMg==",
+          "shasum": "acb0b1f56d5580d6c9266fe1c00caed32dedacb9"
+        },
+        "chain": [
+          {
+            "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-linux-x64.tgz",
+            "status": 200,
+            "hostname": "registry.npmjs.org",
+            "content_type": "application/octet-stream",
+            "content_length": null,
+            "headers_sha256": "8e35dfbf9bd18f5d504c389644a30ea115bdc8267fa40a00cf2cc73518bcc500"
+          }
+        ]
+      },
+      {
+        "version": "0.158.0-win32-x64",
+        "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0-win32-x64",
+        "sha256": "20f4bacb667d3d6c8589aac57fb894f770644d5e1b019d9c17dc122d2a7ab948",
+        "bytes": 3374,
+        "name": "@openai/codex",
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-win32-x64.tgz",
+          "integrity": "sha512-IaUmY11Zdqa/Zok6kE0Z5375pXtClKRbS8P1Gh2C73Aq65CaGn9N8gT6BXGC3+XD6yamAIiEQW5xM842UCCGow==",
+          "shasum": "db03b76be7c00637fa79628db1e22bc3c0b99f6e"
+        },
+        "chain": [
+          {
+            "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-win32-x64.tgz",
+            "status": 200,
+            "hostname": "registry.npmjs.org",
+            "content_type": "application/octet-stream",
+            "content_length": null,
+            "headers_sha256": "eaa81d8631eeed17550fcb408f0a123154e6578d5b6fe740b626ba2cf3880a35"
+          }
+        ]
+      },
+      {
+        "version": "0.158.0-darwin-x64",
+        "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0-darwin-x64",
+        "sha256": "d4a4ee264bd3cef0ac39d6d4b0640379a5baed8f32846fd78b369c356941588b",
+        "bytes": 3381,
+        "name": "@openai/codex",
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-x64.tgz",
+          "integrity": "sha512-FrX1o3APrL7F6QkO8z08Rq8lJitH2sNI7pkebA02eYA103hDs3fyy9d32zeLLQJUeAhmZA4pV9xJR4m7cVyNpQ==",
+          "shasum": "6990a84a47e8326e1ccfd76bb563c2fe61803f17"
+        },
+        "chain": [
+          {
+            "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-x64.tgz",
+            "status": 200,
+            "hostname": "registry.npmjs.org",
+            "content_type": "application/octet-stream",
+            "content_length": null,
+            "headers_sha256": "0fb762c2a8c2a2595be36caf88f267816073b9f16325105f49a5b666f89e55ac"
+          }
+        ]
+      },
+      {
+        "version": "0.158.0-linux-arm64",
+        "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0-linux-arm64",
+        "sha256": "2d7b52a8cb4e60cc8cfcbfdeec955981f1a0bc1f147d09925953fcfb969a7892",
+        "bytes": 3388,
+        "name": "@openai/codex",
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-linux-arm64.tgz",
+          "integrity": "sha512-T9AgGcoU7HNsxJ4prT/R9YvztyEmz9kWP/VlT2cbCop4PVwiqfG9YMJtLo4j2ScewvSaTl4sQFwla+fwGpoRZg==",
+          "shasum": "a3304ae061904cfd6fbda3ede84606c28a3b33ef"
+        },
+        "chain": [
+          {
+            "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-linux-arm64.tgz",
+            "status": 200,
+            "hostname": "registry.npmjs.org",
+            "content_type": "application/octet-stream",
+            "content_length": null,
+            "headers_sha256": "3c3b977437e1f8f7c78cfc16318a564dcdaf681e68bfab6d57bdf5ecb3c4264a"
+          }
+        ]
+      },
+      {
+        "version": "0.158.0-win32-arm64",
+        "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0-win32-arm64",
+        "sha256": "13c115a1570ad945222088f0e12c2e8aef8db34a56c18595401744bed3fdc2ca",
+        "bytes": 3387,
+        "name": "@openai/codex",
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-win32-arm64.tgz",
+          "integrity": "sha512-Jw1u0q0+5PG97jPkINxE3UCFtsYBN8Af+IjjM0zlCO675Sv5lNsXU2K9aIaXwVeQIKw8q2lbPAR4SEkq2rSOoA==",
+          "shasum": "67147e83c6bf988930098600e3ebb343ffd33643"
+        },
+        "chain": [
+          {
+            "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-win32-arm64.tgz",
+            "status": 200,
+            "hostname": "registry.npmjs.org",
+            "content_type": "application/octet-stream",
+            "content_length": null,
+            "headers_sha256": "d2929bad5d45152e699905ddf889c8b06c5288cf5c925bd6e089f14dc901512e"
+          }
+        ]
+      },
+      {
+        "version": "0.158.0-darwin-arm64",
+        "url": "https://registry.npmjs.org/@openai%2Fcodex/0.158.0-darwin-arm64",
+        "sha256": "f16f37fcdedb82c481a79ff681d3b92c48f4a070d3b6fa1474961bbef20fb932",
+        "bytes": 3396,
+        "name": "@openai/codex",
+        "dist": {
+          "tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-arm64.tgz",
+          "integrity": "sha512-0OKSjlWY1j4Ld1fT87QttNw3Y2SthcXi4GcrWSHjleZg1n86eG3+shJl4Pv+siUmsBJhWlNmm6rRO4Yv8ZyQLg==",
+          "shasum": "254f3898a6fe67bcb70b6612b0a1b5794e21de57"
+        },
+        "chain": [
+          {
+            "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-arm64.tgz",
+            "status": 200,
+            "hostname": "registry.npmjs.org",
+            "content_type": "application/octet-stream",
+            "content_length": null,
+            "headers_sha256": "eb0d36bc4f1f15b32a6654f3d51ae04474569093af92933e0b749ea60ef4db63"
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Exact hostname routing affects all requests to that shared hostname, not only Codex paths or packages.",
+    "This is endpoint provenance and read-only HTTP evidence, not a completed installation, updater or consumer-session acceptance test.",
+    "Registry host is derived from the documented package distribution metadata, not presented as a literal hostname in the OpenAI network allowlist.",
+    "All six platform package metadata objects and tarball HEAD responses were checked. Package bodies, signatures, attestations and installer execution were not verified.",
+    "Custom npm registries and arbitrary third-party dependencies are outside this declared default-registry scope."
+  ]
+}

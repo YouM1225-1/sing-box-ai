@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "observed_at": "2026-09-28T12:45:29.173133+00:00",
+  "project_version": "0.1.1-rc.1",
+  "scope": "local-candidate-steps-1-and-2",
+  "result": "passed",
+  "source_commit_base": "c47c79b34bc2255ce3ec655d3e8df441d41c5642",
+  "inputs_committed": false,
+  "manifest": "../../../artifacts/v0.1.1-rc.1/manifest.json",
+  "manifest_sha256": "cf3dac4294f222b3250e33ecd2e51bf593b412fa77c983699f40ce496539b267",
+  "artifacts": [
+    {
+      "binary_version": 2,
+      "bytes": 775,
+      "direction": "destination",
+      "path": "openai.srs",
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "source_path": "openai.json",
+      "source_sha256": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 353,
+      "direction": "destination",
+      "path": "anthropic.srs",
+      "sha256": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b",
+      "source_path": "anthropic.json",
+      "source_sha256": "75929ddc21f1a37d10740d604a556a342036504ed0e7eb5c6362d467b60d99ba"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 36,
+      "direction": "source",
+      "path": "anthropic-ip.srs",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "source_path": "anthropic-ip.json",
+      "source_sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5"
+    }
+  ],
+  "field_counts": {
+    "anthropic": {
+      "domain": 14,
+      "domain_suffix": 8,
+      "ip_cidr": 2
+    },
+    "anthropic-ip": {
+      "source_ip_cidr": 1
+    },
+    "openai": {
+      "domain": 24,
+      "domain_regex": 1,
+      "domain_suffix": 16,
+      "ip_cidr": 23
+    }
+  },
+  "native_validation": {
+    "baseline_complete": true,
+    "cases": 2038,
+    "clean_rebuild_equal": true,
+    "failures": 0,
+    "level": "local-source-binary-and-isolated-check",
+    "native_result_sha256": "01495121cc9966e43fa9eaa6da8cbd6c1397f6f28985ec3a26bd77522ba4949b",
+    "test_harness": {
+      "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+      "go_version": "go1.27.1",
+      "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+      "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+      "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+    },
+    "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+  },
+  "independent_builds": 2,
+  "three_srs_and_three_json_equal": true,
+  "unit_tests": {
+    "tests": 46,
+    "failures": 0,
+    "skipped": 0,
+    "log": "unit-tests.log"
+  },
+  "consumers": {
+    "requests": 395,
+    "dns": 254,
+    "route": 141,
+    "counts": {
+      "independent-": 109,
+      "original-order-": 240,
+      "openai-": 24,
+      "anthropic-": 12,
+      "response-ip-": 6,
+      "cold-remote-": 4
+    },
+    "processes_exited": 20,
+    "listeners_closed": 11,
+    "config_sha256": "b0f73c9f883a17c8af71a19407158f3ccb0d27f36ec5b56cc9bdf7aaa4a06cce",
+    "results": "consumer/results.json",
+    "results_sha256": "9b5f82426bf279aa09b8e5e4e6284b3a01504c1fa426942460137d41609056f9",
+    "script": "../../../tests/consumer_durability.py",
+    "script_sha256": "3cc2d7f24705c6fc46a9d452a610ee310d40182f9763065d5b9dd3c3a6b6d72c",
+    "candidate_byte_binding": {
+      "openai": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "anthropic": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b"
+    },
+    "limitations": [
+      "Local observer transports replace production outbounds; direct/proxy labels test routing selection, not Internet connectivity.",
+      "IPv6 uses real ::1 ingress and synthetic public destination metadata; no public IPv6 business connection is claimed.",
+      "Original DNS rules and route rules 1..27 are unchanged and in original order. ICMP-only route slot 0 becomes ICMP reject to avoid a real bridge; ICMP is not tested.",
+      "hosts and dns_mdns use empty hosts transports so preferred_by is false for the public witnesses; local hosts/mDNS discovery is outside scope.",
+      "Controlled HTTP cold-start fixture has no production proxy credentials or GitHub bootstrap. Actual candidate URL follows upload in step 3.",
+      "No N100 access, config write, reload, restart, TUN, system DNS, routes, or firewall changes."
+    ],
+    "fixture_dependency": {
+      "path": "../round3/consumer/loopback_dns.py",
+      "sha256": "26f4d23115940ea6710c1a13990b47a7917cf6e1aa1a0e28ecd386dda713933a",
+      "unchanged_from_base_commit": true
+    }
+  },
+  "functions": {
+    "installer_cases": 4,
+    "macos_arm64_version": "codex-cli 0.158.0",
+    "npm_offline_install": true,
+    "font_css_and_resource_get_200": true,
+    "records": [
+      "function/network-results.json",
+      "function/installer-results.json",
+      "function/npm-results.json",
+      "function/npm-cli-results.json"
+    ],
+    "limitations": [
+      "Existing Mac network for public resource chains, not candidate SRS end-to-end Internet routing.",
+      "Installer failures/redirects controlled on loopback; two install-root assignments instrumented.",
+      "npm CLI used verified local tarballs offline; no arbitrary user registry/settings verification.",
+      "No login, authenticated Artifact rendering, other platform installation, N100 or public IPv6 verification."
+    ]
+  },
+  "publication_refusals": {
+    "candidate": "Candidate batches cannot be released",
+    "candidate_mislabeled_release": "Publication project version mismatch"
+  },
+  "formal_dist_and_previous_artifacts_unchanged": true,
+  "repository_client_configs_unchanged": true,
+  "fingerprinted_unchanged_files": 26,
+  "environment_repair": "Initial native validation lacked cached Go modules. Fetched only pinned go.mod/go.sum dependencies into ignored .tools/gomodcache; one proxy HTTP/2 error resolved with HTTP/1.1. Both final validators ran offline with fixed modules; locks unchanged.",
+  "not_executed": [
+    "commit",
+    "push",
+    "candidate upload",
+    "Latest change",
+    "N100 access",
+    "N100 config write",
+    "service restart/reload",
+    "system DNS/routes/firewall changes"
+  ],
+  "remaining": [
+    "Non-Latest upload and real candidate-URL cold start (step 3).",
+    "Committed-input release build and new batch publication approval.",
+    "Production consumers, TUN, ICMP bridge/mDNS, public IPv6 and authenticated product sessions."
+  ]
+}

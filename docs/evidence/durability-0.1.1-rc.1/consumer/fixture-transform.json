@@ -1,0 +1,117 @@
+{
+  "changed_objects_values_omitted": [
+    {
+      "op": "add",
+      "path": "/dns/disable_cache"
+    },
+    {
+      "op": "remove",
+      "path": "/dns/optimistic"
+    },
+    {
+      "op": "replace",
+      "path": "/dns/servers"
+    },
+    {
+      "op": "remove",
+      "path": "/dns/strategy"
+    },
+    {
+      "op": "remove",
+      "path": "/dns/timeout"
+    },
+    {
+      "op": "remove",
+      "path": "/experimental"
+    },
+    {
+      "op": "remove",
+      "path": "/http_clients"
+    },
+    {
+      "op": "replace",
+      "path": "/inbounds"
+    },
+    {
+      "op": "replace",
+      "path": "/log/level"
+    },
+    {
+      "op": "add",
+      "path": "/log/timestamp"
+    },
+    {
+      "op": "replace",
+      "path": "/outbounds"
+    },
+    {
+      "op": "remove",
+      "path": "/route/auto_detect_interface"
+    },
+    {
+      "op": "replace",
+      "path": "/route/default_domain_resolver"
+    },
+    {
+      "op": "remove",
+      "path": "/route/default_http_client"
+    },
+    {
+      "op": "replace",
+      "path": "/route/rule_set"
+    },
+    {
+      "op": "replace",
+      "path": "/route/rules"
+    },
+    {
+      "op": "remove",
+      "path": "/services"
+    }
+  ],
+  "dns_rules_byte_value_equal": true,
+  "route_rules_1_onward_value_equal": true,
+  "route_slot_0": {
+    "before": {
+      "network": "icmp",
+      "preferred_by": "bridge",
+      "outbound": "bridge"
+    },
+    "after": {
+      "network": "icmp",
+      "action": "reject",
+      "no_drop": true
+    }
+  },
+  "outbound_tag_mapping": [
+    {
+      "tag": "direct",
+      "fixture_type": "socks",
+      "fixture_address": "127.0.0.1",
+      "fixture_port": 59772
+    },
+    {
+      "tag": "proxy",
+      "fixture_type": "socks",
+      "fixture_address": "127.0.0.1",
+      "fixture_port": 59773
+    },
+    {
+      "tag": "bridge",
+      "fixture_type": "socks",
+      "fixture_address": "127.0.0.1",
+      "fixture_port": 59774
+    }
+  ],
+  "hosts_and_mdns": "empty hosts resolvers; no preferred match for public test witnesses",
+  "external_rule_sets": "Complete binaries in fixtures, bound by external-inputs.json; no witness projection.",
+  "unchanged_dns_final": "dns_proxy",
+  "unchanged_route_final": "proxy",
+  "excluded": [
+    "ICMP bridge",
+    "mDNS discovery",
+    "TUN",
+    "production outbound transport",
+    "public IPv6 connectivity"
+  ]
+}

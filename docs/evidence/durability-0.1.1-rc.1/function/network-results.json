@@ -1,0 +1,300 @@
+{
+  "schema": 1,
+  "observed_at": "2026-09-28T12:30:32.331603+00:00",
+  "scope": "Public resource metadata, redirect host chains, one real Codex ARM64 standalone archive, npm wrapper package and font resource; current Mac network, not a candidate sing-box consumer test.",
+  "credentials_sent": false,
+  "n100_accessed": false,
+  "records": [
+    {
+      "label": "releases-metadata",
+      "started_at": "2026-09-28T12:30:26.653772+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://releases.openai.com/codex/releases/0.158.0/release.json",
+          "host": "releases.openai.com",
+          "status": 200,
+          "content-type": "application/json",
+          "content-length": "52514"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 52514,
+      "sha256": "f17ceff1f5d058ddc8aedb33afe4e55912cf0c8032639aba0d5e7707e2c8f50e",
+      "saved_as": "releases-openai-release.json"
+    },
+    {
+      "label": "npm-metadata",
+      "started_at": "2026-09-28T12:30:26.657811+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://registry.npmjs.org/@openai%2fcodex/0.158.0",
+          "host": "registry.npmjs.org",
+          "status": 200,
+          "content-type": "application/json",
+          "content-length": "3521"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 3521,
+      "sha256": "9cb0b7f299f048420f3ecb9f8c5c095b52bb29faef599972c247963f251ec45c",
+      "saved_as": "npm-codex.json"
+    },
+    {
+      "label": "npm-arm64-metadata",
+      "started_at": "2026-09-28T12:30:26.659738+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://registry.npmjs.org/@openai%2fcodex/0.158.0-darwin-arm64",
+          "host": "registry.npmjs.org",
+          "status": 200,
+          "content-type": "application/json",
+          "content-length": "3396"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 3396,
+      "sha256": "f16f37fcdedb82c481a79ff681d3b92c48f4a070d3b6fa1474961bbef20fb932",
+      "saved_as": "npm-arm64.json"
+    },
+    {
+      "label": "github-metadata",
+      "started_at": "2026-09-28T12:30:26.654032+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://api.github.com/repos/openai/codex/releases/tags/rust-v0.158.0",
+          "host": "api.github.com",
+          "status": 200,
+          "content-type": "application/json; charset=utf-8"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 316567,
+      "sha256": "5a68667ee71adce0e0b127ce819e7d85d2abdbca4f0a5e7cee6ba980a8dfbc37",
+      "saved_as": "github-release.json"
+    },
+    {
+      "label": "font-css",
+      "started_at": "2026-09-28T12:30:27.249420+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://fonts.googleapis.com/css2",
+          "host": "fonts.googleapis.com",
+          "status": 200,
+          "content-type": "text/css; charset=utf-8"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 234,
+      "sha256": "7d5907b8e5c1401f22f5dec932c4298578ca99240ba2119b404d4e4b42e4aa30",
+      "saved_as": "font.css"
+    },
+    {
+      "label": "default-asset-chain",
+      "started_at": "2026-09-28T12:30:27.159478+00:00",
+      "method": "HEAD",
+      "chain": [
+        {
+          "url_without_query": "https://releases.openai.com/codex/releases/0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "host": "releases.openai.com",
+          "status": 200,
+          "content-type": "application/x-tar",
+          "content-length": "129212289"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "default-checksums",
+      "started_at": "2026-09-28T12:30:27.421837+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://releases.openai.com/codex/releases/0.158.0/codex-package_SHA256SUMS",
+          "host": "releases.openai.com",
+          "status": 200,
+          "content-length": "1631"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 1631,
+      "sha256": "372f97579654ead4b6ed968afde6ea662348e70d4e03939b6f68e37101a58354",
+      "saved_as": "codex-package_SHA256SUMS"
+    },
+    {
+      "label": "github-asset-chain",
+      "started_at": "2026-09-28T12:30:27.237877+00:00",
+      "method": "HEAD",
+      "chain": [
+        {
+          "url_without_query": "https://github.com/openai/codex/releases/download/rust-v0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "host": "github.com",
+          "status": 302,
+          "content-type": "text/html; charset=utf-8",
+          "content-length": "0"
+        },
+        {
+          "url_without_query": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/a361aad1-b503-4797-a494-d42243bf381e",
+          "host": "release-assets.githubusercontent.com",
+          "status": 200,
+          "content-type": "application/octet-stream",
+          "content-length": "129212289"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "github-checksums",
+      "started_at": "2026-09-28T12:30:27.772273+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://github.com/openai/codex/releases/download/rust-v0.158.0/codex-package_SHA256SUMS",
+          "host": "github.com",
+          "status": 302,
+          "content-type": "text/html; charset=utf-8",
+          "content-length": "0"
+        },
+        {
+          "url_without_query": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/366a9655-8e92-4124-9255-a73f0c04a530",
+          "host": "release-assets.githubusercontent.com",
+          "status": 200,
+          "content-type": "application/octet-stream",
+          "content-length": "1631"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 1631,
+      "sha256": "372f97579654ead4b6ed968afde6ea662348e70d4e03939b6f68e37101a58354",
+      "saved_as": "github-codex-package_SHA256SUMS"
+    },
+    {
+      "label": "actual-default-arm64-archive",
+      "started_at": "2026-09-28T12:30:28.985288+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://releases.openai.com/codex/releases/0.158.0/codex-package-aarch64-apple-darwin.tar.gz",
+          "host": "releases.openai.com",
+          "status": 200,
+          "content-type": "application/x-tar",
+          "content-length": "129212289"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 129212289,
+      "sha256": "09f2a9fde318fbcd384f15b4850c1b90930678f4805647b6bded196ccf32f590",
+      "saved_as": "codex-package-aarch64-apple-darwin.tar.gz"
+    },
+    {
+      "label": "npm-wrapper-tarball",
+      "started_at": "2026-09-28T12:30:30.897052+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0.tgz",
+          "host": "registry.npmjs.org",
+          "status": 200,
+          "content-type": "application/octet-stream",
+          "content-length": "4902"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 4902,
+      "sha256": "0f20acf17c7985b76510bf7915cf7729fbe2ff52f14b07a827843d63bc36b81b",
+      "saved_as": "npm-codex.tgz"
+    },
+    {
+      "label": "npm-arm64-tarball-chain",
+      "started_at": "2026-09-28T12:30:31.364809+00:00",
+      "method": "HEAD",
+      "chain": [
+        {
+          "url_without_query": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-arm64.tgz",
+          "host": "registry.npmjs.org",
+          "status": 200,
+          "content-type": "application/octet-stream"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "font-resource",
+      "started_at": "2026-09-28T12:30:31.830555+00:00",
+      "method": "GET",
+      "chain": [
+        {
+          "url_without_query": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+          "host": "fonts.gstatic.com",
+          "status": 200,
+          "content-type": "font/ttf",
+          "content-length": "123720"
+        }
+      ],
+      "ok": true,
+      "received_bytes": 123720,
+      "sha256": "dece7c71bbe61710787f0839c722c65e87355dd2eb4a823e6b5488121ff81e4b",
+      "saved_as": "font-resource.bin"
+    }
+  ],
+  "installer_source": {
+    "commit": "44fe510ce3ee61c8ef623adcbf89b901c73ddd61",
+    "sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6"
+  },
+  "archive": {
+    "path": "codex-package-aarch64-apple-darwin.tar.gz",
+    "bytes": 129212289,
+    "sha256": "09f2a9fde318fbcd384f15b4850c1b90930678f4805647b6bded196ccf32f590",
+    "github_digest_matches": true,
+    "manifest_digest_matches": true
+  },
+  "npm": {
+    "wrapper_version": "0.158.0",
+    "wrapper_integrity_verified": true,
+    "arm64_alias": "npm:@openai/codex@0.158.0-darwin-arm64",
+    "arm64_version": "0.158.0-darwin-arm64",
+    "arm64_tarball": "https://registry.npmjs.org/@openai/codex/-/codex-0.158.0-darwin-arm64.tgz",
+    "arm64_integrity": "sha512-0OKSjlWY1j4Ld1fT87QttNw3Y2SthcXi4GcrWSHjleZg1n86eG3+shJl4Pv+siUmsBJhWlNmm6rRO4Yv8ZyQLg==",
+    "arm64_tarball_body_downloaded": false,
+    "package_inspection": {
+      "files": [
+        "package/bin/codex.js",
+        "package/package.json",
+        "package/README.md"
+      ],
+      "name": "@openai/codex",
+      "version": "0.158.0",
+      "scripts": {},
+      "arm64_alias": "npm:@openai/codex@0.158.0-darwin-arm64",
+      "wrapper_sha256": "61b0194f3bb6534439c8d26a3ed57d0805f84b884588b761795323eeb92fcf70"
+    }
+  },
+  "fonts": {
+    "css_status": 200,
+    "resource_status": 200,
+    "resource_bytes": 123720,
+    "css_font_url_count": 1,
+    "rendering_tested": false
+  },
+  "limitations": [
+    "Only macOS ARM64 standalone payload downloaded and integrity checked.",
+    "npm platform tarball HEAD only; its payload integrity/installed npm execution not tested.",
+    "No authenticated product session or actual Artifact browser rendering.",
+    "Redirect query strings and response Cookie headers intentionally not recorded.",
+    "Online chains use existing Mac networking, not the candidate SRS routing fixture."
+  ],
+  "followup_evidence": {
+    "npm_actual_payload": "npm-results.json",
+    "npm_offline_cli_install": "npm-cli-results.json"
+  }
+}
