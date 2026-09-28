@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "kind": "independent-artifact-publication-code-review",
+  "scope": "artifact-publication",
+  "reviewed_at": "2026-09-28T00:59:04+00:00",
+  "project_version": "0.1.0",
+  "reviewed_source_commit": "08b74c8254be78c7fd23522b51e8753f62b9686e",
+  "reviewed_code": [
+    {
+      "path": "scripts/common.py",
+      "sha256": "b1970a56c6009d3f649689d953d631942916c5c2d16c2d686e90dc11edc18e51"
+    },
+    {
+      "path": "scripts/generate.py",
+      "sha256": "e0a95f51aa410aa3ee6f01feca30f37907687ab521faffb56323819de40a819c"
+    },
+    {
+      "path": "scripts/validate.py",
+      "sha256": "8a89cc7af7baa36ba892cdc8a38a565a4048658b31d06ab38b0d6100bb5333c5"
+    },
+    {
+      "path": "tests/test_artifacts.py",
+      "sha256": "2dbed50faac8bf6e320008ef111566274a6fec49581be74a01f992ad0a1d682d"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "516e1c11343e736e5f31bb3201d60411e9002ec297fbaf552577d45e1bdb8e9e"
+    },
+    {
+      "path": "tests/test_publication.py",
+      "sha256": "7b1ae2fa28a22014809b251d414cad549b07a869c6bfc90dc9c85c21dd832ab1"
+    }
+  ],
+  "record_and_evidence_hash_checks": [
+    {
+      "path": "sources/evidence/release-v0.1.0-authorization.json",
+      "sha256": "c656658d0dcf8b5802c240cef93ce75a7e5fab5a0b137e376e4db8f18b1ba33f",
+      "actual_sha256": "c656658d0dcf8b5802c240cef93ce75a7e5fab5a0b137e376e4db8f18b1ba33f",
+      "result": "passed"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.0-review.json",
+      "sha256": "f00e73f2661f99c9793d485c7726296560cfb5273b6252faf60a68b33c16f315",
+      "actual_sha256": "f00e73f2661f99c9793d485c7726296560cfb5273b6252faf60a68b33c16f315",
+      "result": "passed"
+    },
+    {
+      "path": "sources/evidence/legacy-to-rc2-coverage.json",
+      "sha256": "79347e97171b4bc7932dd7fd5673e665f5f51f8d378a649d7ee5db6c65e58215",
+      "actual_sha256": "79347e97171b4bc7932dd7fd5673e665f5f51f8d378a649d7ee5db6c65e58215",
+      "result": "passed"
+    },
+    {
+      "path": "sources/evidence/source-review.json",
+      "sha256": "43af8ad9c4c038351c9e259ea6246a6cbfb9674f2f24c5f1a0a04e38abe72413",
+      "actual_sha256": "43af8ad9c4c038351c9e259ea6246a6cbfb9674f2f24c5f1a0a04e38abe72413",
+      "result": "passed"
+    },
+    {
+      "path": "docs/evidence/round3/build-results.json",
+      "sha256": "b215a69a446a47a0671433051e6e1ec1777dc54be2135c3caa6a4a69f7bf0020",
+      "actual_sha256": "b215a69a446a47a0671433051e6e1ec1777dc54be2135c3caa6a4a69f7bf0020",
+      "result": "passed"
+    },
+    {
+      "path": "artifacts/v0.1.0-rc.2/manifest.json",
+      "sha256": "0282588dfdc52d34df688b25f670297fbacc117ce269d7a307f00777c26cc6c2",
+      "actual_sha256": "0282588dfdc52d34df688b25f670297fbacc117ce269d7a307f00777c26cc6c2",
+      "result": "passed"
+    }
+  ],
+  "rc2_real_artifacts_equal_approved_release_artifacts": {
+    "result": "passed",
+    "artifacts": {
+      "openai.srs": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+      "anthropic.srs": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+      "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+    }
+  },
+  "in_memory_rejection_checks": {
+    "method": "Actual records were read and deep-copied; selected documents were substituted only in validate.load. The canonical call was skipped only for these seven policy branch tests; actual current-date canonical validation ran separately through release_gate. No fixture was written to the repository. These are branch checks, not consumer or publication acceptance.",
+    "cases": [
+      {
+        "case": "missing authorization",
+        "result": "rejected",
+        "message": "Missing operator_authorization"
+      },
+      {
+        "case": "authorization wrong hash",
+        "result": "rejected",
+        "message": "operator_authorization record hash mismatch"
+      },
+      {
+        "case": "semantic missing evidence",
+        "result": "rejected",
+        "message": "Semantic review lacks evidence"
+      },
+      {
+        "case": "semantic unresolved conflicts",
+        "result": "rejected",
+        "message": "Semantic review has unresolved conflicts or no conclusion"
+      },
+      {
+        "case": "publication authorization claims deployment",
+        "result": "rejected",
+        "message": "Operator authorization lacks instruction or deployment limits"
+      },
+      {
+        "case": "fake consumer acceptance",
+        "result": "rejected",
+        "message": "Artifact publication cannot claim runtime integration or deployment approval"
+      },
+      {
+        "case": "fake deployment acceptance",
+        "result": "rejected",
+        "message": "Artifact publication cannot claim runtime integration or deployment approval"
+      }
+    ]
+  },
+  "source_commit_binding_checks": [
+    {
+      "phase": "before source freeze",
+      "result": "expected-rejection",
+      "message": "Input is not bound to the recorded source commit: VERSION",
+      "interpretation": "Observed during this review before the parent committed publication inputs. This was the required refusal, not a final release failure."
+    },
+    {
+      "phase": "after source freeze",
+      "result": "passed",
+      "source_commit": "08b74c8254be78c7fd23522b51e8753f62b9686e",
+      "scope": "artifact-publication",
+      "level": "artifact-only",
+      "interpretation": "The real current-date canonical and authorization/source-commit gate passed after input commit. This direct gate check does not replace full validation of the forthcoming release batch."
+    }
+  ],
+  "closed_finding": {
+    "priority": "P2",
+    "description": "Ordinary validation could preserve an already populated unverified release publication_approval. The fix recomputes the artifact gate and requires exact equality before native validation; candidates still reject any publication_approval.",
+    "verification": {
+      "case": "ordinary validation rechecks existing publication approval",
+      "result": "rejected",
+      "message": "Manifest publication approval mismatch",
+      "release_gate_call_count": 1,
+      "method": "Manifest supplied in memory; gate mocked to an approved artifact-only result to isolate exact metadata comparison. Rejection occurred before native validation or output writes."
+    }
+  },
+  "open_findings": [],
+  "conclusion": "The reviewed implementation separates byte-specific artifact publication authorization from consumer runtime acceptance. No unresolved substantive code/record finding remains within this review scope. Final release builds, native matching/rebuild checks and GitHub asset verification remain the parent agent responsibility.",
+  "validated_consumers": [],
+  "integration_evidence": [],
+  "deployment_status": "pending",
+  "limitations": [
+    "This review did not access N100, alter consumer configuration, log in to services, exercise Voice, restart or reload any service.",
+    "This review did not rerun the complete native matching suite or prove the forthcoming final release build.",
+    "Authorization and semantic records are maintainer assertions anchored to files and hashes; schema checks do not authenticate human intent or turn text into runtime proof."
+  ]
+}

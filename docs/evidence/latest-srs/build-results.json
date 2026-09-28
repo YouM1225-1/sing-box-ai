@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "checked_at": "2026-09-28T00:59:06.850727+00:00",
+  "project_version": "0.1.0",
+  "source_commit": "08b74c8254be78c7fd23522b51e8753f62b9686e",
+  "method": "Two separate clean local release-mode generation directories, each validated --for-release using fixed sing-box and Go; source/binary bytes compared across both and rc.2.",
+  "unit_tests": {
+    "tests": 44,
+    "failures": 0,
+    "skipped": 0,
+    "log": "unit-tests.log"
+  },
+  "native_validation_per_build": {
+    "baseline_complete": true,
+    "cases": 1954,
+    "clean_rebuild_equal": true,
+    "failures": 0,
+    "level": "local-source-binary-and-isolated-check",
+    "native_result_sha256": "777a570bdcdd078fb40427aa6a89e2e16333b1d424d1e8daefb3758cdea8f21c",
+    "test_harness": {
+      "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+      "go_version": "go1.27.1",
+      "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+      "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+      "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+    },
+    "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+  },
+  "two_clean_builds_equal": true,
+  "six_source_and_srs_files_equal_rc2": true,
+  "publication_scope": "artifact-only",
+  "validated_consumers": [],
+  "integration_evidence": [],
+  "deployment_status": "pending",
+  "n100_access": false,
+  "go_archive": {
+    "filename": "go1.27.1.darwin-arm64.tar.gz",
+    "os": "darwin",
+    "arch": "arm64",
+    "version": "go1.27.1",
+    "sha256": "ee215d57e0ec269c60cc9ceca68e6bda321ba9ee5afe24f4b0988703c2d87d12",
+    "size": 68100347,
+    "kind": "archive"
+  },
+  "manifest_sha256": "abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd",
+  "artifact_sha256": {
+    "openai.srs": "7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07",
+    "anthropic.srs": "1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  }
+}
