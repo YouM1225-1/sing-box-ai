@@ -1,7 +1,7 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.21**；核验日期：2026-09-28（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；目标正式版本 `0.1.1`；本轮按已批准候选手动构建和发布，执行状态见 §7。
+> 主仓库：`YouM1225-1/sing-box-ai`；正式构建版本 `0.1.1`，`dist/` 已更新；GitHub 发布进度见 §7。
 > 当前任务：提交受审输入、手动重建、核验后上传 GitHub 正式 Release 并更新 Latest；不访问或操作 N100。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
@@ -58,7 +58,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；本轮通过全部门槛后更新为 `v0.1.1`。`artifacts/v0.1.1-rc.1/` 保留本地候选及其原始验收身份。`artifacts/v0.1.0-rc.2/` 保留其受摘要绑定的候选对照证据，不冒充 GitHub 已有 Release。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；已通过静态发布门槛并更新为 `v0.1.1`。`artifacts/v0.1.1-rc.1/` 保留本地候选及其原始验收身份。`artifacts/v0.1.0-rc.2/` 保留其受摘要绑定的候选对照证据，不冒充 GitHub 已有 Release。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品只用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
@@ -442,7 +442,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 |---|---|
 | 1 来源、规则、policy、文档与版本 | 已完成：四个 Codex 安装 exact，启用已有两字体 optional；17 pending 不选，所有既有来源输入保持 |
 | 2 本地候选构建与隔离验收 | 已完成本地范围：46项回归、两批各2,038项原生验证、395请求实际消费者；四场景临时安装、npm离线安装与字体资源链通过。边界见下方 |
-| 3 正式输入提交与 release 构建 | 进行中；提交绑定、两次独立release重建与静态门槛；要求与候选三个SRS及源JSON字节一致 |
+| 3 正式输入提交与 release 构建 | 已完成；提交绑定、两次各2,038项原生检查、46项回归；三个SRS及源JSON与候选逐字节一致 |
 | 4 手动上传与固定URL验收 | 待执行；draft完整上传并核验摘要，以非Latest公开，再验证真实固定URL及本机空缓存/default HTTP client加载 |
 | 5 Latest与交付 | 待执行；步骤4通过后更新Latest并下载比对。在线消费者运行验收保持pending，不操作N100 |
 
@@ -472,9 +472,11 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 rc.1 本地验收阶段起初缺Go模块缓存，补取锁定依赖时的一次HTTP/2错误通过HTTP/1.1取得同版本解决；没有改go.mod/go.sum或放宽校验，最终两批原生校验离线通过。正式dist、旧批次及仓库客户端配置26份指纹全部不变。candidate和伪改release两种发布尝试均被校验器拒绝；没有实际上传调用。最终候选manifest的消费者与部署声明保持空/pending，独立证据只记录本地隔离层级。
 
+正式重建证据见[0.1.1 构建结果](evidence/release-v0.1.1/build-results.json)与[正式 manifest](../artifacts/v0.1.1/manifest.json)。正式源码提交 `bba3c7c927b4a4bd4a365ca79184e25758c354f3` 绑定全部构建输入；该批已通过 `--for-release`，消费者与部署身份仍为空/pending。
+
 ### 7.2 `v0.1.0` 正式对照与恢复依据
 
-[正式发行 v0.1.0](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0)于 `2026-09-28T01:02:50Z` 发布，标签 `c48c415d88aede03907c231b122b65b860b386b0`。输入提交 `08b74c8254be78c7fd23522b51e8753f62b9686e`；[固定正式批次](../artifacts/v0.1.0/manifest.json)、[公开下载证据](evidence/latest-srs/publication-results.json)及[构建结果](evidence/latest-srs/build-results.json)保留原样。旧固定批次与旧Release保留，供对照及恢复；当前 `dist/` 在 `0.1.1` 门槛通过后更新。
+[正式发行 v0.1.0](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0)于 `2026-09-28T01:02:50Z` 发布，标签 `c48c415d88aede03907c231b122b65b860b386b0`。输入提交 `08b74c8254be78c7fd23522b51e8753f62b9686e`；[固定正式批次](../artifacts/v0.1.0/manifest.json)、[公开下载证据](evidence/latest-srs/publication-results.json)及[构建结果](evidence/latest-srs/build-results.json)保留原样。旧固定批次与旧Release保留，供对照及恢复；当前 `dist/` 已在 `0.1.1` 门槛通过后更新。
 
 | 制品 | 字节 / SHA-256 | 字段数量 |
 |---|---|---|

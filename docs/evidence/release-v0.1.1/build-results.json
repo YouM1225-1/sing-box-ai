@@ -1,0 +1,62 @@
+{
+  "accepted_candidate": "artifacts/v0.1.1-rc.1",
+  "accepted_candidate_byte_identical": true,
+  "artifacts": [
+    {
+      "binary_version": 2,
+      "bytes": 775,
+      "direction": "destination",
+      "path": "openai.srs",
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "source_path": "openai.json",
+      "source_sha256": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 353,
+      "direction": "destination",
+      "path": "anthropic.srs",
+      "sha256": "864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b",
+      "source_path": "anthropic.json",
+      "source_sha256": "75929ddc21f1a37d10740d604a556a342036504ed0e7eb5c6362d467b60d99ba"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 36,
+      "direction": "source",
+      "path": "anthropic-ip.srs",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "source_path": "anthropic-ip.json",
+      "source_sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5"
+    }
+  ],
+  "built_at": "2026-09-28T13:05:09.775619+00:00",
+  "deployment_status": "pending",
+  "failures": 0,
+  "independent_release_builds": 2,
+  "integration_evidence": [],
+  "limitations": [
+    "Remote GitHub verification follows upload; not yet claimed.",
+    "No N100 access, config write, restart/reload or system network changes."
+  ],
+  "manifest_sha256": "2d5e0164c5f53fc0581145f5bcd75cbfe032506148236c61e85edd3cc653ba6a",
+  "native_cases_each": 2038,
+  "project_version": "0.1.1",
+  "rebuild_manifest_sha256": "2d5e0164c5f53fc0581145f5bcd75cbfe032506148236c61e85edd3cc653ba6a",
+  "release_gate_checked_each": true,
+  "reused_isolated_evidence": {
+    "path": "../durability-0.1.1-rc.1/local-results.json",
+    "sha256": "9e3cd235e600f9c66e9b8fadd4ab5c51eea3c9fcfe84adc369c5236a7e970493"
+  },
+  "schema": 1,
+  "scope": "manual-artifact-publication",
+  "source_commit": "bba3c7c927b4a4bd4a365ca79184e25758c354f3",
+  "three_srs_and_three_source_json_equal": true,
+  "unit_tests": {
+    "failures": 0,
+    "log_sha256": "d8d0a7574be8aee140ec2f8726fa99cca531ad78d7b4ff3134bd593a0180d4aa",
+    "skipped": 0,
+    "tests": 46
+  },
+  "validated_consumers": []
+}
