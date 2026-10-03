@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.24**；核验日期：2026-10-03（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；当前公开正式发行和 Latest 为 `v0.1.1`；本地 `dist/` 与 `artifacts/v0.1.2/` 已归档通过静态门槛的 `v0.1.2`，尚未上传；发布证据见 §7。
-> 当前状态：用户已授权正式发布 `0.1.2`；输入已提交，两次正式重建及发布门禁通过，三份 SRS 和三份源 JSON 与已验收 `0.1.2-rc.1` 逐字节一致。上传、固定 URL 与 Latest 验收待执行，见 §7.1；未访问或操作 N100。
+> 文档修订：**1.25**；核验日期：2026-10-03（Asia/Shanghai）。
+> 主仓库：`YouM1225-1/sing-box-ai`；当前正式发行、Latest、`dist/` 与 `artifacts/v0.1.2/` 均为 `v0.1.2`；发布证据见 §7。
+> 当前状态：`v0.1.2` 手动正式发布完成，固定 URL、Latest 下载及本机空缓存加载均通过；两次正式构建与已验收候选逐字节一致。旧 Release 保留，未访问或操作 N100，消费者与部署身份仍为空/pending。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -60,7 +60,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；本地已更新为通过门槛、待上传的 `v0.1.2`，对应完整批次在 `artifacts/v0.1.2/`。各旧正式批次与 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份，不把本地批次冒充 GitHub 已公开 Release。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前为已正式发布并完成下载核验的 `v0.1.2`，对应完整批次在 `artifacts/v0.1.2/`。各旧正式批次与 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品只用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
@@ -393,7 +393,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式目标为 `0.1.2`，已验收候选为 `0.1.2-rc.1`，公开正式发行仍为 `0.1.1`；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式发行与 Latest 为 `0.1.2`，其受验收候选为 `0.1.2-rc.1`；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -440,15 +440,17 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 ### 7.1 `0.1.2` 正式发布执行计划
 
-正式输入已提交为 `d965fa091f4c57961cf5a172968840175d90d2a8`，继承 main `ed69b36617f7afa0c1244e724c4a4d54f303587c` 对 workflow 的删除。[正式构建结果](evidence/release-v0.1.2/build-results.json)与[正式 manifest](../artifacts/v0.1.2/manifest.json)绑定该输入提交。已验收候选、完整基线差异、独立复核、截图九项覆盖和 560 请求记录见[候选证据与复现入口](evidence/durability-0.1.2-rc.1/README.md)；同字节证据不冒称 GitHub 发布已经完成。
+[正式发行 v0.1.2](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.2) 于 `2026-10-03T14:06:35Z` 公开，Release ID 为 `402537457`，标签提交为 `79bc9a084cc095f4a5879843e27d6f9d9cd8f37f`。固定版本下载、Latest 下载、本机空缓存加载和旧 Release 保持检查全部通过；详见[发布结果](evidence/release-v0.1.2/publication-results.json)及[证据索引](evidence/release-v0.1.2/README.md)。
+
+正式输入已提交为 `d965fa091f4c57961cf5a172968840175d90d2a8`，继承 main `ed69b36617f7afa0c1244e724c4a4d54f303587c` 对 workflow 的删除。[正式构建结果](evidence/release-v0.1.2/build-results.json)与[正式 manifest](../artifacts/v0.1.2/manifest.json)绑定该输入提交。已验收候选、完整基线差异、独立复核、截图九项覆盖和 560 请求记录见[候选证据与复现入口](evidence/durability-0.1.2-rc.1/README.md)；正式 GitHub 发布结果另由实际上传、下载与空缓存验收记录证明。
 
 | 步骤 | 终点 / 当前状态 |
 |---|---|
 | 1 正式输入审阅与提交 | 已完成：本轮授权、语义结论、11 份发布绑定证据和 `VERSION=0.1.2` 已提交并逐项核验 SHA；候选原身份与已删除 workflow 保留 |
 | 2 两次正式重建与门禁 | 已完成：两份 release 各 2,066 项原生验证零失败且 `--for-release` 通过；三 SRS、三 JSON 两批及相对候选逐字节一致，当前 UTC 日期门禁通过。同一已提交输入生成的等字节 candidate fixture 完整 46 项回归通过、无跳过 |
-| 3 正式制品归档及推送 | 本地归档已完成：`artifacts/v0.1.2/`、`dist/` 和构建证据已更新，旧批次保留；制品提交、推送、标签及发布包待执行 |
-| 4 draft 上传与非 Latest 验收 | 待执行：上传六个固定资产并核验 SHA，以非 Latest 正式发行公开；固定 URL 全部实际下载及本机空缓存加载通过 |
-| 5 Latest 与交付 | 待执行：设置 v0.1.2 为 Latest，重新下载三 SRS 与 manifest 并核验摘要；记录静态发布结果，消费者及部署身份仍为空/pending |
+| 3 正式制品归档及推送 | 已完成：`artifacts/v0.1.2/`、`dist/` 与构建证据已归档，旧批次保留；正式标签提交 `79bc9a084cc095f4a5879843e27d6f9d9cd8f37f`，main/tag 已推送，发布包已上传 |
+| 4 draft 上传与非 Latest 验收 | 已完成：资产上传并核验，以非 Latest 正式发行公开；固定 URL 实际下载核验及本机空缓存加载均通过 |
+| 5 Latest 与交付 | 已完成：v0.1.2 为 Latest，三 SRS 与 manifest 的 Latest 实际下载及摘要核验通过；旧 Release 未改变，消费者及部署身份仍为空/pending |
 
 任一步骤失败先停在对应验收点；不把未运行步骤标为完成，不覆盖旧批准批次试错。设置 Latest 可能使在线订阅者自动更新，但本轮不访问或写入目标主机。
 

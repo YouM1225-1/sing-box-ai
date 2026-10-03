@@ -1,0 +1,13 @@
+{
+  "phase": "7.1 step 4 draft upload",
+  "timestamp": "2026-10-03T14:04:36.398381+00:00",
+  "command": "python3 github_release.py upload --directory assets --output release-upload.json",
+  "exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/pl/bpv2s_ks1mz24cd8ks4gblbr0000gn/T/sing-box-ai-release.Q1w2HU/github_release.py\", line 90, in <module>\n    main()\n  File \"/private/var/folders/pl/bpv2s_ks1mz24cd8ks4gblbr0000gn/T/sing-box-ai-release.Q1w2HU/github_release.py\", line 65, in main\n    assert release and release[\"draft\"] and not release[\"assets\"]\nAssertionError\n",
+  "cause": "Tag lookup returned 404 for the new draft; GET by known release ID returned the correct draft with zero assets.",
+  "fix": "Use the draft creation response ID; assert version and target commit before mutations.",
+  "fix_syntax_check_passed": true,
+  "remote_assets_uploaded": 0,
+  "latest": "v0.1.1",
+  "waiting_for_user_resume": true
+}

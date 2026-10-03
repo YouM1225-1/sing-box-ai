@@ -1,0 +1,61 @@
++0800 2026-10-03 22:07:15 [37mDEBUG[0m router: updating rule-set anthropic from URL: https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.2/anthropic.srs
++0800 2026-10-03 22:07:15 [37mDEBUG[0m router: updating rule-set openai from URL: https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.2/openai.srs
++0800 2026-10-03 22:07:15 [37mDEBUG[0m dns: lookup domain github.com
++0800 2026-10-03 22:07:15 [37mDEBUG[0m dns: exchanged github.com NOERROR 1
++0800 2026-10-03 22:07:15 [37mDEBUG[0m dns: exchanged A github.com. 1 IN A 20.29.134.23
++0800 2026-10-03 22:07:15 [37mDEBUG[0m dns: exchanged github.com NOERROR 0
++0800 2026-10-03 22:07:15 [37mDEBUG[0m dns: lookup succeed for github.com: 20.29.134.23
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: lookup domain release-assets.githubusercontent.com
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: exchanged release-assets.githubusercontent.com NOERROR 0
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: exchanged release-assets.githubusercontent.com NOERROR 706
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 706 IN A 185.199.109.133
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 706 IN A 185.199.110.133
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 706 IN A 185.199.108.133
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 706 IN A 185.199.111.133
++0800 2026-10-03 22:07:16 [37mDEBUG[0m dns: lookup succeed for release-assets.githubusercontent.com: 185.199.109.133 185.199.110.133 185.199.108.133 185.199.111.133
++0800 2026-10-03 22:07:16 [36mINFO[0m router: updated rule-set openai
++0800 2026-10-03 22:07:16 [36mINFO[0m router: updated rule-set anthropic
++0800 2026-10-03 22:07:16 [36mINFO[0m inbound/socks[audit-socks]: tcp server started at 127.0.0.1:60110
++0800 2026-10-03 22:07:16 [36mINFO[0m network: updated default interface en1, index 15
++0800 2026-10-03 22:07:16 [36mINFO[0m network: updated network environment: gateway [192.168.3.2 fe80::360a:68ff:fe24:507d], gateway_mac [34:0a:68:24:50:7d 34:0a:68:24:50:7d]
++0800 2026-10-03 22:07:16 [36mINFO[0m sing-box started (0.99s)
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;50m3603680290[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60115
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;50m3603680290[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.github.com:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;50m3603680290[0m 0ms] router: match[0] rule_set=openai => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;50m3603680290[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;222m1074718432[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60116
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;222m1074718432[0m 0ms] inbound/socks[audit-socks]: inbound connection to fonts.googleapis.com:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;222m1074718432[0m 0ms] router: match[1] rule_set=anthropic => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;222m1074718432[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;86m3184819782[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60117
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;86m3184819782[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.dev:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;86m3184819782[0m 0ms] router: match[1] rule_set=anthropic => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;86m3184819782[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;51m2916600867[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60118
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;51m2916600867[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.dev:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;51m2916600867[0m 0ms] router: match[1] rule_set=anthropic => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;51m2916600867[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;194m80854962[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60119
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;194m80854962[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claude.dev:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;194m80854962[0m 0ms] router: match[1] rule_set=anthropic => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;194m80854962[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;35m3986675219[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60120
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;35m3986675219[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaude.dev:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;35m3986675219[0m 0ms] router: match[2] => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;35m3986675219[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;38m4196730093[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60121
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;38m4196730093[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.dev.invalid:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;38m4196730093[0m 0ms] router: match[2] => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;38m4196730093[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;222m129266144[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60123
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;222m129266144[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.dev.invalid:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;222m129266144[0m 0ms] router: match[2] => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;222m129266144[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;156m2166359115[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60124
++0800 2026-10-03 22:07:16 [36mINFO[0m [[38;5;156m2166359115[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude-dev.invalid:443
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;156m2166359115[0m 0ms] router: match[2] => reject
++0800 2026-10-03 22:07:16 [37mDEBUG[0m [[38;5;156m2166359115[0m 0ms] router: connection closed: rejected
++0800 2026-10-03 22:07:17 [36mINFO[0m [[38;5;208m651426240[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:60125
++0800 2026-10-03 22:07:17 [36mINFO[0m [[38;5;208m651426240[0m 0ms] inbound/socks[audit-socks]: inbound connection to unmatched.audit-review.invalid:443
++0800 2026-10-03 22:07:17 [37mDEBUG[0m [[38;5;208m651426240[0m 0ms] router: match[2] => reject
++0800 2026-10-03 22:07:17 [37mDEBUG[0m [[38;5;208m651426240[0m 0ms] router: connection closed: rejected
