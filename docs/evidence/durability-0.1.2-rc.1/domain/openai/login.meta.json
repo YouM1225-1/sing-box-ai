@@ -1,0 +1,13 @@
+{
+  "url": "https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt",
+  "retrieved_at": "2026-10-03T13:24:13.499277+00:00",
+  "curl_exit": 0,
+  "response": [
+    "403",
+    "https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt",
+    "text/html; charset=UTF-8"
+  ],
+  "stderr": "",
+  "bytes": 9850,
+  "sha256": "e8744f55327cfb3579c4f49735218f0fdd995b20274966b5592e3719e49e7fbd"
+}

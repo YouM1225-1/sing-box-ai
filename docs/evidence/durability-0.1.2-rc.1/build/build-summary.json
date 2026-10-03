@@ -1,0 +1,85 @@
+{
+  "utc_completed_at": "2026-10-03T13:35:07.647175+00:00",
+  "project_version": "0.1.2-rc.1",
+  "source_commit": "9f33df7464d134cb347301ca1fbafde0e1f5fc8a",
+  "source_inputs_uncommitted": true,
+  "build_mode": "candidate",
+  "publication_approval": null,
+  "deployment_status": "pending",
+  "validation": [
+    {
+      "batch": "candidate-1",
+      "baseline_complete": true,
+      "cases": 2066,
+      "clean_rebuild_equal": true,
+      "failures": 0,
+      "level": "local-source-binary-and-isolated-check",
+      "native_result_sha256": "7bee17b975613f7ac998c5d70a9928c539c098ca01b7fbb30c71cbb08f8ab4a6",
+      "test_harness": {
+        "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+        "go_version": "go1.27.1",
+        "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+        "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+        "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+      },
+      "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+    },
+    {
+      "batch": "candidate-2",
+      "baseline_complete": true,
+      "cases": 2066,
+      "clean_rebuild_equal": true,
+      "failures": 0,
+      "level": "local-source-binary-and-isolated-check",
+      "native_result_sha256": "7bee17b975613f7ac998c5d70a9928c539c098ca01b7fbb30c71cbb08f8ab4a6",
+      "test_harness": {
+        "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+        "go_version": "go1.27.1",
+        "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+        "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+        "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+      },
+      "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+    }
+  ],
+  "unit_tests": {
+    "count": 46,
+    "seconds": 28.333,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "current_utc_gate": {
+    "utc_date": "2026-10-03",
+    "passed": true,
+    "policy_review_as_of": "2026-10-03",
+    "selected_pending": [],
+    "compatibility": [
+      {
+        "value": "challenges.cloudflare.com",
+        "status": "compatibility-critical",
+        "review_status": "approved",
+        "last_verified": "2026-09-27",
+        "review_after": "2026-10-27"
+      }
+    ]
+  },
+  "byte_comparison": "byte-comparison.json",
+  "sync_before": "sync-before.json",
+  "sync_after": "sync-after.json",
+  "publication_gate": "publication-gate-rejected.json",
+  "changed_tracked_files": [
+    "VERSION",
+    "docs/plan.md",
+    "sources/policy.yaml",
+    "sources/upstream/dlc-anthropic.txt",
+    "sources/upstream/geosite-anthropic.srs",
+    "sources/upstreams.yaml",
+    "tests/test_pipeline.py"
+  ],
+  "new_test_file": "tests/claude_dev_consumer.py",
+  "original_repo_clean": true,
+  "dist_and_release_records_unchanged": true,
+  "published": false,
+  "deployed": false
+}

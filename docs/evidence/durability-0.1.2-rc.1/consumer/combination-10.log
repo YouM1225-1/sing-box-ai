@@ -1,0 +1,372 @@
+[36mINFO[0m[0000] inbound/socks[audit-socks]: tcp server started at 127.0.0.1:59071
+[36mINFO[0m[0000] inbound/direct[audit-dns]: udp server started at 127.0.0.1:60497
+[36mINFO[0m[0000] inbound/direct[audit-tls4]: tcp server started at 127.0.0.1:59072
+[36mINFO[0m[0000] inbound/direct[audit-tls6]: tcp server started at [::1]:59073
+[36mINFO[0m[0000] network: updated default interface en1, index 15
+[36mINFO[0m[0000] network: updated network environment: gateway [192.168.3.2 fe80::360a:68ff:fe24:507d], gateway_mac [34:0a:68:24:50:7d 34:0a:68:24:50:7d]
+[37mDEBUG[0m[0000] reference: dns/udp[dns_local] is unreferenced, closing idle connections
+[36mINFO[0m[0000] sing-box started (0.00s)
+[36mINFO[0m[0000] [[38;5;130m1157354610[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:61207
+[36mINFO[0m[0000] [[38;5;130m1157354610[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;130m1157354610[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;130m1157354610[0m 0ms] dns: exchange claude.dev. IN A
+[37mDEBUG[0m[0000] [[38;5;130m1157354610[0m 0ms] dns: exchanged claude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;130m1157354610[0m 0ms] dns: exchanged A claude.dev. 60 IN A 198.51.100.10
+[36mINFO[0m[0000] [[38;5;43m2366807579[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:60863
+[36mINFO[0m[0000] [[38;5;43m2366807579[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;43m2366807579[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;43m2366807579[0m 0ms] dns: exchange claude.dev. IN AAAA
+[37mDEBUG[0m[0000] [[38;5;43m2366807579[0m 0ms] dns: exchanged claude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;43m2366807579[0m 0ms] dns: exchanged AAAA claude.dev. 60 IN AAAA 2001:db8::10
+[36mINFO[0m[0000] [[38;5;228m1527190787[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:63160
+[36mINFO[0m[0000] [[38;5;228m1527190787[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;228m1527190787[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;228m1527190787[0m 0ms] dns: exchange claude.dev. IN TXT
+[37mDEBUG[0m[0000] [[38;5;228m1527190787[0m 0ms] dns: exchanged claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;68m1427481652[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:53055
+[36mINFO[0m[0000] [[38;5;68m1427481652[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;68m1427481652[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;68m1427481652[0m 0ms] dns: exchange claude.dev. IN MX
+[37mDEBUG[0m[0000] [[38;5;68m1427481652[0m 0ms] dns: exchanged claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;32m1341788688[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:57329
+[36mINFO[0m[0000] [[38;5;32m1341788688[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;32m1341788688[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;32m1341788688[0m 0ms] dns: exchange claude.dev. IN SVCB
+[37mDEBUG[0m[0000] [[38;5;32m1341788688[0m 0ms] dns: exchanged claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;230m3039010006[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:54367
+[36mINFO[0m[0000] [[38;5;230m3039010006[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;230m3039010006[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;230m3039010006[0m 0ms] dns: exchange claude.dev. IN CNAME
+[37mDEBUG[0m[0000] [[38;5;230m3039010006[0m 0ms] dns: exchanged claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;33m3420803345[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:58993
+[36mINFO[0m[0000] [[38;5;33m3420803345[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;33m3420803345[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;33m3420803345[0m 0ms] dns: exchange claude.dev. IN HTTPS
+[37mDEBUG[0m[0000] [[38;5;33m3420803345[0m 0ms] dns: match[0] query_type=HTTPS => predefined(NOERROR)
+[36mINFO[0m[0000] [[38;5;50m2604296953[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:59250
+[36mINFO[0m[0000] [[38;5;50m2604296953[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.dev:443
+[37mDEBUG[0m[0000] [[38;5;50m2604296953[0m 0ms] router: match[1] => sniff(tls,80ms)
+[36mINFO[0m[0000] [[38;5;50m2604296953[0m 82ms] outbound/socks[direct]: outbound connection to claude.dev:443
+[36mINFO[0m[0000] [[38;5;183m1246708903[0m 0ms] inbound/direct[audit-tls4]: inbound connection from 127.0.0.1:59252
+[36mINFO[0m[0000] [[38;5;183m1246708903[0m 0ms] inbound/direct[audit-tls4]: inbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;183m1246708903[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;183m1246708903[0m 5ms] router: sniffed protocol: tls, domain: claude.dev
+[36mINFO[0m[0000] [[38;5;183m1246708903[0m 5ms] outbound/socks[direct]: outbound connection to 198.51.100.200:443
+[36mINFO[0m[0000] [[38;5;84m19430980[0m 0ms] inbound/direct[audit-tls6]: inbound connection from [::1]:59254
+[36mINFO[0m[0000] [[38;5;84m19430980[0m 0ms] inbound/direct[audit-tls6]: inbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0000] [[38;5;84m19430980[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;84m19430980[0m 5ms] router: sniffed protocol: tls, domain: claude.dev
+[36mINFO[0m[0000] [[38;5;84m19430980[0m 5ms] outbound/socks[direct]: outbound connection to [2001:db8:ffff::200]:443
+[36mINFO[0m[0000] [[38;5;152m1911600008[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:55562
+[36mINFO[0m[0000] [[38;5;152m1911600008[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;152m1911600008[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;152m1911600008[0m 0ms] dns: exchange a.claude.dev. IN A
+[37mDEBUG[0m[0000] [[38;5;152m1911600008[0m 0ms] dns: exchanged a.claude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;152m1911600008[0m 0ms] dns: exchanged A a.claude.dev. 60 IN A 198.51.100.10
+[36mINFO[0m[0000] [[38;5;230m1647587032[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:58804
+[36mINFO[0m[0000] [[38;5;230m1647587032[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;230m1647587032[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;230m1647587032[0m 0ms] dns: exchange a.claude.dev. IN AAAA
+[37mDEBUG[0m[0000] [[38;5;230m1647587032[0m 0ms] dns: exchanged a.claude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;230m1647587032[0m 0ms] dns: exchanged AAAA a.claude.dev. 60 IN AAAA 2001:db8::10
+[36mINFO[0m[0000] [[38;5;189m2457374893[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:63186
+[36mINFO[0m[0000] [[38;5;189m2457374893[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;189m2457374893[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;189m2457374893[0m 0ms] dns: exchange a.claude.dev. IN TXT
+[37mDEBUG[0m[0000] [[38;5;189m2457374893[0m 0ms] dns: exchanged a.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;159m65077320[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:59055
+[36mINFO[0m[0000] [[38;5;159m65077320[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;159m65077320[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;159m65077320[0m 0ms] dns: exchange a.claude.dev. IN MX
+[37mDEBUG[0m[0000] [[38;5;159m65077320[0m 1ms] dns: exchanged a.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;43m1288329243[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:52399
+[36mINFO[0m[0000] [[38;5;43m1288329243[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;43m1288329243[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;43m1288329243[0m 0ms] dns: exchange a.claude.dev. IN SVCB
+[37mDEBUG[0m[0000] [[38;5;43m1288329243[0m 0ms] dns: exchanged a.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;211m148621507[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:54388
+[36mINFO[0m[0000] [[38;5;211m148621507[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;211m148621507[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;211m148621507[0m 0ms] dns: exchange a.claude.dev. IN CNAME
+[37mDEBUG[0m[0000] [[38;5;211m148621507[0m 0ms] dns: exchanged a.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;51m3189063860[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:50246
+[36mINFO[0m[0000] [[38;5;51m3189063860[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;51m3189063860[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;51m3189063860[0m 0ms] dns: exchange a.claude.dev. IN HTTPS
+[37mDEBUG[0m[0000] [[38;5;51m3189063860[0m 0ms] dns: match[0] query_type=HTTPS => predefined(NOERROR)
+[36mINFO[0m[0000] [[38;5;180m2117659812[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:59256
+[36mINFO[0m[0000] [[38;5;180m2117659812[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.dev:443
+[37mDEBUG[0m[0000] [[38;5;180m2117659812[0m 0ms] router: match[1] => sniff(tls,80ms)
+[36mINFO[0m[0000] [[38;5;180m2117659812[0m 81ms] outbound/socks[direct]: outbound connection to a.claude.dev:443
+[37mDEBUG[0m[0000] [[38;5;180m2117659812[0m 82ms] connection: connection download finished
+[36mINFO[0m[0000] [[38;5;191m307570472[0m 0ms] inbound/direct[audit-tls4]: inbound connection from 127.0.0.1:59258
+[36mINFO[0m[0000] [[38;5;191m307570472[0m 0ms] inbound/direct[audit-tls4]: inbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;191m307570472[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;191m307570472[0m 6ms] router: sniffed protocol: tls, domain: a.claude.dev
+[36mINFO[0m[0000] [[38;5;191m307570472[0m 6ms] outbound/socks[direct]: outbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;191m307570472[0m 8ms] connection: connection download finished
+[36mINFO[0m[0000] [[38;5;223m3798327007[0m 0ms] inbound/direct[audit-tls6]: inbound connection from [::1]:59260
+[36mINFO[0m[0000] [[38;5;223m3798327007[0m 0ms] inbound/direct[audit-tls6]: inbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0000] [[38;5;223m3798327007[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;223m3798327007[0m 5ms] router: sniffed protocol: tls, domain: a.claude.dev
+[36mINFO[0m[0000] [[38;5;223m3798327007[0m 5ms] outbound/socks[direct]: outbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0000] [[38;5;223m3798327007[0m 6ms] connection: connection download finished
+[36mINFO[0m[0000] [[38;5;47m2773801462[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:61447
+[36mINFO[0m[0000] [[38;5;47m2773801462[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;47m2773801462[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;47m2773801462[0m 0ms] dns: exchange a.b.claude.dev. IN A
+[37mDEBUG[0m[0000] [[38;5;47m2773801462[0m 0ms] dns: exchanged a.b.claude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;47m2773801462[0m 0ms] dns: exchanged A a.b.claude.dev. 60 IN A 198.51.100.10
+[36mINFO[0m[0000] [[38;5;203m2653395643[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:58835
+[36mINFO[0m[0000] [[38;5;203m2653395643[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;203m2653395643[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;203m2653395643[0m 0ms] dns: exchange a.b.claude.dev. IN AAAA
+[37mDEBUG[0m[0000] [[38;5;203m2653395643[0m 0ms] dns: exchanged a.b.claude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;203m2653395643[0m 0ms] dns: exchanged AAAA a.b.claude.dev. 60 IN AAAA 2001:db8::10
+[36mINFO[0m[0000] [[38;5;121m253428329[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:55480
+[36mINFO[0m[0000] [[38;5;121m253428329[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;121m253428329[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;121m253428329[0m 0ms] dns: exchange a.b.claude.dev. IN TXT
+[37mDEBUG[0m[0000] [[38;5;121m253428329[0m 0ms] dns: exchanged a.b.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;211m2835844803[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:57479
+[36mINFO[0m[0000] [[38;5;211m2835844803[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;211m2835844803[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;211m2835844803[0m 0ms] dns: exchange a.b.claude.dev. IN MX
+[37mDEBUG[0m[0000] [[38;5;211m2835844803[0m 0ms] dns: exchanged a.b.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;118m2323213926[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:64490
+[36mINFO[0m[0000] [[38;5;118m2323213926[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;118m2323213926[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;118m2323213926[0m 0ms] dns: exchange a.b.claude.dev. IN SVCB
+[37mDEBUG[0m[0000] [[38;5;118m2323213926[0m 0ms] dns: exchanged a.b.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;36m838250004[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:58139
+[36mINFO[0m[0000] [[38;5;36m838250004[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;36m838250004[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;36m838250004[0m 0ms] dns: exchange a.b.claude.dev. IN CNAME
+[37mDEBUG[0m[0000] [[38;5;36m838250004[0m 0ms] dns: exchanged a.b.claude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;156m2853075531[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:49206
+[36mINFO[0m[0000] [[38;5;156m2853075531[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;156m2853075531[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;156m2853075531[0m 0ms] dns: exchange a.b.claude.dev. IN HTTPS
+[37mDEBUG[0m[0000] [[38;5;156m2853075531[0m 0ms] dns: match[0] query_type=HTTPS => predefined(NOERROR)
+[36mINFO[0m[0000] [[38;5;87m827538832[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:59262
+[36mINFO[0m[0000] [[38;5;87m827538832[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claude.dev:443
+[37mDEBUG[0m[0000] [[38;5;87m827538832[0m 0ms] router: match[1] => sniff(tls,80ms)
+[36mINFO[0m[0000] [[38;5;87m827538832[0m 82ms] outbound/socks[direct]: outbound connection to a.b.claude.dev:443
+[37mDEBUG[0m[0000] [[38;5;87m827538832[0m 84ms] connection: connection download finished
+[36mINFO[0m[0000] [[38;5;184m3485593256[0m 0ms] inbound/direct[audit-tls4]: inbound connection from 127.0.0.1:59264
+[36mINFO[0m[0000] [[38;5;184m3485593256[0m 0ms] inbound/direct[audit-tls4]: inbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;184m3485593256[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;184m3485593256[0m 7ms] router: sniffed protocol: tls, domain: a.b.claude.dev
+[36mINFO[0m[0000] [[38;5;184m3485593256[0m 7ms] outbound/socks[direct]: outbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;184m3485593256[0m 8ms] connection: connection download finished
+[36mINFO[0m[0000] [[38;5;199m2835542967[0m 0ms] inbound/direct[audit-tls6]: inbound connection from [::1]:59266
+[36mINFO[0m[0000] [[38;5;199m2835542967[0m 0ms] inbound/direct[audit-tls6]: inbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0000] [[38;5;199m2835542967[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;199m2835542967[0m 5ms] router: sniffed protocol: tls, domain: a.b.claude.dev
+[36mINFO[0m[0000] [[38;5;199m2835542967[0m 6ms] outbound/socks[direct]: outbound connection to [2001:db8:ffff::200]:443
+[36mINFO[0m[0000] [[38;5;155m1232792715[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:51094
+[36mINFO[0m[0000] [[38;5;155m1232792715[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;155m1232792715[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;155m1232792715[0m 0ms] dns: exchange notclaude.dev. IN A
+[37mDEBUG[0m[0000] [[38;5;155m1232792715[0m 0ms] dns: exchanged notclaude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;155m1232792715[0m 0ms] dns: exchanged A notclaude.dev. 60 IN A 198.51.100.10
+[36mINFO[0m[0000] [[38;5;42m1217237786[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:50464
+[36mINFO[0m[0000] [[38;5;42m1217237786[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;42m1217237786[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;42m1217237786[0m 0ms] dns: exchange notclaude.dev. IN AAAA
+[37mDEBUG[0m[0000] [[38;5;42m1217237786[0m 0ms] dns: exchanged notclaude.dev NOERROR 60
+[36mINFO[0m[0000] [[38;5;42m1217237786[0m 0ms] dns: exchanged AAAA notclaude.dev. 60 IN AAAA 2001:db8::10
+[36mINFO[0m[0000] [[38;5;37m3026341141[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:58166
+[36mINFO[0m[0000] [[38;5;37m3026341141[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;37m3026341141[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;37m3026341141[0m 0ms] dns: exchange notclaude.dev. IN TXT
+[37mDEBUG[0m[0000] [[38;5;37m3026341141[0m 0ms] dns: exchanged notclaude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;222m2072456142[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:61652
+[36mINFO[0m[0000] [[38;5;222m2072456142[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;222m2072456142[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;222m2072456142[0m 0ms] dns: exchange notclaude.dev. IN MX
+[37mDEBUG[0m[0000] [[38;5;222m2072456142[0m 0ms] dns: exchanged notclaude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;223m3530276063[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:62376
+[36mINFO[0m[0000] [[38;5;223m3530276063[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;223m3530276063[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;223m3530276063[0m 0ms] dns: exchange notclaude.dev. IN SVCB
+[37mDEBUG[0m[0000] [[38;5;223m3530276063[0m 0ms] dns: exchanged notclaude.dev NOERROR 0
+[36mINFO[0m[0000] [[38;5;106m962029146[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:57652
+[36mINFO[0m[0000] [[38;5;106m962029146[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;106m962029146[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;106m962029146[0m 0ms] dns: exchange notclaude.dev. IN CNAME
+[37mDEBUG[0m[0000] [[38;5;106m962029146[0m 0ms] dns: exchanged notclaude.dev NOERROR 0
+[37mDEBUG[0m[0000] [[38;5;203m2653395643[0m 229ms] dns: exchange notclaude.dev. IN HTTPS
+[37mDEBUG[0m[0000] [[38;5;203m2653395643[0m 229ms] dns: match[0] query_type=HTTPS => predefined(NOERROR)
+[36mINFO[0m[0000] [[38;5;131m2959933043[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:59268
+[36mINFO[0m[0000] [[38;5;131m2959933043[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaude.dev:443
+[37mDEBUG[0m[0000] [[38;5;131m2959933043[0m 0ms] router: match[1] => sniff(tls,80ms)
+[36mINFO[0m[0000] [[38;5;131m2959933043[0m 82ms] outbound/socks[direct]: outbound connection to notclaude.dev:443
+[36mINFO[0m[0000] [[38;5;117m1969767781[0m 0ms] inbound/direct[audit-tls4]: inbound connection from 127.0.0.1:59270
+[36mINFO[0m[0000] [[38;5;117m1969767781[0m 0ms] inbound/direct[audit-tls4]: inbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;117m1969767781[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;117m1969767781[0m 6ms] router: sniffed protocol: tls, domain: notclaude.dev
+[36mINFO[0m[0000] [[38;5;117m1969767781[0m 7ms] outbound/socks[direct]: outbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;117m1969767781[0m 8ms] connection: connection download finished
+[36mINFO[0m[0000] [[38;5;139m2002914171[0m 0ms] inbound/direct[audit-tls6]: inbound connection from [::1]:59272
+[36mINFO[0m[0000] [[38;5;139m2002914171[0m 0ms] inbound/direct[audit-tls6]: inbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0000] [[38;5;139m2002914171[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;139m2002914171[0m 5ms] router: sniffed protocol: tls, domain: notclaude.dev
+[36mINFO[0m[0000] [[38;5;139m2002914171[0m 5ms] outbound/socks[direct]: outbound connection to [2001:db8:ffff::200]:443
+[36mINFO[0m[0000] [[38;5;195m3217460147[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:55546
+[36mINFO[0m[0000] [[38;5;195m3217460147[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;195m3217460147[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;195m3217460147[0m 0ms] dns: exchange claude.dev.invalid. IN A
+[37mDEBUG[0m[0000] [[38;5;195m3217460147[0m 0ms] dns: exchanged claude.dev.invalid NOERROR 60
+[36mINFO[0m[0000] [[38;5;195m3217460147[0m 0ms] dns: exchanged A claude.dev.invalid. 60 IN A 198.51.100.10
+[36mINFO[0m[0000] [[38;5;130m2545301874[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:61222
+[36mINFO[0m[0000] [[38;5;130m2545301874[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;130m2545301874[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;130m2545301874[0m 0ms] dns: exchange claude.dev.invalid. IN AAAA
+[37mDEBUG[0m[0000] [[38;5;130m2545301874[0m 1ms] dns: exchanged claude.dev.invalid NOERROR 60
+[36mINFO[0m[0000] [[38;5;130m2545301874[0m 2ms] dns: exchanged AAAA claude.dev.invalid. 60 IN AAAA 2001:db8::10
+[36mINFO[0m[0000] [[38;5;156m1383835467[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:51347
+[36mINFO[0m[0000] [[38;5;156m1383835467[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;156m1383835467[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;156m1383835467[0m 0ms] dns: exchange claude.dev.invalid. IN TXT
+[37mDEBUG[0m[0000] [[38;5;156m1383835467[0m 0ms] dns: exchanged claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;149m172675973[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:61907
+[36mINFO[0m[0000] [[38;5;149m172675973[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;149m172675973[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;149m172675973[0m 0ms] dns: exchange claude.dev.invalid. IN MX
+[37mDEBUG[0m[0000] [[38;5;149m172675973[0m 0ms] dns: exchanged claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;147m2915246723[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:59335
+[36mINFO[0m[0000] [[38;5;147m2915246723[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;147m2915246723[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;147m2915246723[0m 0ms] dns: exchange claude.dev.invalid. IN SVCB
+[37mDEBUG[0m[0000] [[38;5;147m2915246723[0m 0ms] dns: exchanged claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;156m1500216651[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:54817
+[36mINFO[0m[0000] [[38;5;156m1500216651[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;156m1500216651[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;156m1500216651[0m 0ms] dns: exchange claude.dev.invalid. IN CNAME
+[37mDEBUG[0m[0000] [[38;5;156m1500216651[0m 0ms] dns: exchanged claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;221m3580988621[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:58605
+[36mINFO[0m[0000] [[38;5;221m3580988621[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;221m3580988621[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;221m3580988621[0m 0ms] dns: exchange claude.dev.invalid. IN HTTPS
+[37mDEBUG[0m[0000] [[38;5;221m3580988621[0m 0ms] dns: match[0] query_type=HTTPS => predefined(NOERROR)
+[36mINFO[0m[0000] [[38;5;86m3986896710[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:59274
+[36mINFO[0m[0000] [[38;5;86m3986896710[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.dev.invalid:443
+[37mDEBUG[0m[0000] [[38;5;86m3986896710[0m 0ms] router: match[1] => sniff(tls,80ms)
+[36mINFO[0m[0000] [[38;5;86m3986896710[0m 82ms] outbound/socks[direct]: outbound connection to claude.dev.invalid:443
+[36mINFO[0m[0000] [[38;5;34m790431977[0m 0ms] inbound/direct[audit-tls4]: inbound connection from 127.0.0.1:59276
+[36mINFO[0m[0000] [[38;5;34m790431977[0m 0ms] inbound/direct[audit-tls4]: inbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;34m790431977[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;34m790431977[0m 7ms] router: sniffed protocol: tls, domain: claude.dev.invalid
+[36mINFO[0m[0000] [[38;5;34m790431977[0m 7ms] outbound/socks[direct]: outbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0000] [[38;5;34m790431977[0m 8ms] connection: connection download finished
+[36mINFO[0m[0000] [[38;5;34m2682561810[0m 0ms] inbound/direct[audit-tls6]: inbound connection from [::1]:59278
+[36mINFO[0m[0000] [[38;5;34m2682561810[0m 0ms] inbound/direct[audit-tls6]: inbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0000] [[38;5;34m2682561810[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0000] [[38;5;34m2682561810[0m 5ms] router: sniffed protocol: tls, domain: claude.dev.invalid
+[36mINFO[0m[0000] [[38;5;34m2682561810[0m 5ms] outbound/socks[direct]: outbound connection to [2001:db8:ffff::200]:443
+[36mINFO[0m[0000] [[38;5;187m2910783020[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:55234
+[36mINFO[0m[0000] [[38;5;187m2910783020[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;187m2910783020[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;187m2910783020[0m 0ms] dns: exchange a.claude.dev.invalid. IN A
+[37mDEBUG[0m[0000] [[38;5;187m2910783020[0m 0ms] dns: exchanged a.claude.dev.invalid NOERROR 60
+[36mINFO[0m[0000] [[38;5;187m2910783020[0m 0ms] dns: exchanged A a.claude.dev.invalid. 60 IN A 198.51.100.10
+[36mINFO[0m[0000] [[38;5;174m3365996446[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:57799
+[36mINFO[0m[0000] [[38;5;174m3365996446[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;174m3365996446[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;174m3365996446[0m 0ms] dns: exchange a.claude.dev.invalid. IN AAAA
+[37mDEBUG[0m[0000] [[38;5;174m3365996446[0m 0ms] dns: exchanged a.claude.dev.invalid NOERROR 60
+[36mINFO[0m[0000] [[38;5;174m3365996446[0m 0ms] dns: exchanged AAAA a.claude.dev.invalid. 60 IN AAAA 2001:db8::10
+[36mINFO[0m[0000] [[38;5;105m1368898649[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:57569
+[36mINFO[0m[0000] [[38;5;105m1368898649[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;105m1368898649[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;105m1368898649[0m 0ms] dns: exchange a.claude.dev.invalid. IN TXT
+[37mDEBUG[0m[0000] [[38;5;105m1368898649[0m 0ms] dns: exchanged a.claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;149m4219474821[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:56006
+[36mINFO[0m[0000] [[38;5;149m4219474821[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;149m4219474821[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;149m4219474821[0m 0ms] dns: exchange a.claude.dev.invalid. IN MX
+[37mDEBUG[0m[0000] [[38;5;149m4219474821[0m 0ms] dns: exchanged a.claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;142m4113042046[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:58284
+[36mINFO[0m[0000] [[38;5;142m4113042046[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;142m4113042046[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;142m4113042046[0m 0ms] dns: exchange a.claude.dev.invalid. IN SVCB
+[37mDEBUG[0m[0000] [[38;5;142m4113042046[0m 0ms] dns: exchanged a.claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;192m1471875367[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:53403
+[36mINFO[0m[0000] [[38;5;192m1471875367[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;192m1471875367[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;192m1471875367[0m 0ms] dns: exchange a.claude.dev.invalid. IN CNAME
+[37mDEBUG[0m[0000] [[38;5;192m1471875367[0m 1ms] dns: exchanged a.claude.dev.invalid NOERROR 0
+[36mINFO[0m[0000] [[38;5;28m3435860963[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:59314
+[36mINFO[0m[0000] [[38;5;28m3435860963[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0000] [[38;5;28m3435860963[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0000] [[38;5;28m3435860963[0m 0ms] dns: exchange a.claude.dev.invalid. IN HTTPS
+[37mDEBUG[0m[0000] [[38;5;28m3435860963[0m 0ms] dns: match[0] query_type=HTTPS => predefined(NOERROR)
+[36mINFO[0m[0000] [[38;5;228m3052852739[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:59280
+[36mINFO[0m[0000] [[38;5;228m3052852739[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.dev.invalid:443
+[37mDEBUG[0m[0000] [[38;5;228m3052852739[0m 0ms] router: match[1] => sniff(tls,80ms)
+[36mINFO[0m[0001] [[38;5;228m3052852739[0m 82ms] outbound/socks[direct]: outbound connection to a.claude.dev.invalid:443
+[37mDEBUG[0m[0001] [[38;5;228m3052852739[0m 84ms] connection: connection download finished
+[36mINFO[0m[0001] [[38;5;190m1092555049[0m 0ms] inbound/direct[audit-tls4]: inbound connection from 127.0.0.1:59282
+[36mINFO[0m[0001] [[38;5;190m1092555049[0m 0ms] inbound/direct[audit-tls4]: inbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0001] [[38;5;190m1092555049[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0001] [[38;5;190m1092555049[0m 6ms] router: sniffed protocol: tls, domain: a.claude.dev.invalid
+[36mINFO[0m[0001] [[38;5;190m1092555049[0m 6ms] outbound/socks[direct]: outbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0001] [[38;5;190m1092555049[0m 7ms] connection: connection download finished
+[36mINFO[0m[0001] [[38;5;76m2483075644[0m 0ms] inbound/direct[audit-tls6]: inbound connection from [::1]:59284
+[36mINFO[0m[0001] [[38;5;76m2483075644[0m 0ms] inbound/direct[audit-tls6]: inbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0001] [[38;5;76m2483075644[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0001] [[38;5;76m2483075644[0m 5ms] router: sniffed protocol: tls, domain: a.claude.dev.invalid
+[36mINFO[0m[0001] [[38;5;76m2483075644[0m 5ms] outbound/socks[direct]: outbound connection to [2001:db8:ffff::200]:443
+[36mINFO[0m[0001] [[38;5;144m3069625472[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:57103
+[36mINFO[0m[0001] [[38;5;144m3069625472[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0001] [[38;5;144m3069625472[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0001] [[38;5;144m3069625472[0m 0ms] dns: exchange claude-dev.invalid. IN A
+[37mDEBUG[0m[0001] [[38;5;144m3069625472[0m 0ms] dns: exchanged claude-dev.invalid NOERROR 60
+[36mINFO[0m[0001] [[38;5;144m3069625472[0m 0ms] dns: exchanged A claude-dev.invalid. 60 IN A 198.51.100.10
+[36mINFO[0m[0001] [[38;5;213m2047044037[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:62510
+[36mINFO[0m[0001] [[38;5;213m2047044037[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0001] [[38;5;213m2047044037[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0001] [[38;5;213m2047044037[0m 0ms] dns: exchange claude-dev.invalid. IN AAAA
+[37mDEBUG[0m[0001] [[38;5;213m2047044037[0m 0ms] dns: exchanged claude-dev.invalid NOERROR 60
+[36mINFO[0m[0001] [[38;5;213m2047044037[0m 0ms] dns: exchanged AAAA claude-dev.invalid. 60 IN AAAA 2001:db8::10
+[36mINFO[0m[0001] [[38;5;138m239148154[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:57564
+[36mINFO[0m[0001] [[38;5;138m239148154[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0001] [[38;5;138m239148154[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0001] [[38;5;138m239148154[0m 0ms] dns: exchange claude-dev.invalid. IN TXT
+[37mDEBUG[0m[0001] [[38;5;138m239148154[0m 0ms] dns: exchanged claude-dev.invalid NOERROR 0
+[36mINFO[0m[0001] [[38;5;192m3133198256[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:60164
+[36mINFO[0m[0001] [[38;5;192m3133198256[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0001] [[38;5;192m3133198256[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0001] [[38;5;192m3133198256[0m 0ms] dns: exchange claude-dev.invalid. IN MX
+[37mDEBUG[0m[0001] [[38;5;192m3133198256[0m 1ms] dns: exchanged claude-dev.invalid NOERROR 0
+[36mINFO[0m[0001] [[38;5;223m1309155039[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:53723
+[36mINFO[0m[0001] [[38;5;223m1309155039[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0001] [[38;5;223m1309155039[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0001] [[38;5;223m1309155039[0m 0ms] dns: exchange claude-dev.invalid. IN SVCB
+[37mDEBUG[0m[0001] [[38;5;223m1309155039[0m 0ms] dns: exchanged claude-dev.invalid NOERROR 0
+[36mINFO[0m[0001] [[38;5;34m1932009193[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:64892
+[36mINFO[0m[0001] [[38;5;34m1932009193[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0001] [[38;5;34m1932009193[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0001] [[38;5;34m1932009193[0m 0ms] dns: exchange claude-dev.invalid. IN CNAME
+[37mDEBUG[0m[0001] [[38;5;34m1932009193[0m 1ms] dns: exchanged claude-dev.invalid NOERROR 0
+[36mINFO[0m[0001] [[38;5;118m973850214[0m 0ms] inbound/direct[audit-dns]: inbound packet connection from 127.0.0.1:64344
+[36mINFO[0m[0001] [[38;5;118m973850214[0m 0ms] inbound/direct[audit-dns]: inbound packet connection to 127.0.0.1:53
+[37mDEBUG[0m[0001] [[38;5;118m973850214[0m 0ms] router: match[0] port=53 => hijack-dns
+[37mDEBUG[0m[0001] [[38;5;118m973850214[0m 0ms] dns: exchange claude-dev.invalid. IN HTTPS
+[37mDEBUG[0m[0001] [[38;5;118m973850214[0m 0ms] dns: match[0] query_type=HTTPS => predefined(NOERROR)
+[36mINFO[0m[0001] [[38;5;43m3773632754[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:59286
+[36mINFO[0m[0001] [[38;5;43m3773632754[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude-dev.invalid:443
+[37mDEBUG[0m[0001] [[38;5;43m3773632754[0m 0ms] router: match[1] => sniff(tls,80ms)
+[36mINFO[0m[0001] [[38;5;43m3773632754[0m 82ms] outbound/socks[direct]: outbound connection to claude-dev.invalid:443
+[36mINFO[0m[0001] [[38;5;220m2452865996[0m 0ms] inbound/direct[audit-tls4]: inbound connection from 127.0.0.1:59288
+[36mINFO[0m[0001] [[38;5;220m2452865996[0m 0ms] inbound/direct[audit-tls4]: inbound connection to 198.51.100.200:443
+[37mDEBUG[0m[0001] [[38;5;220m2452865996[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0001] [[38;5;220m2452865996[0m 7ms] router: sniffed protocol: tls, domain: claude-dev.invalid
+[36mINFO[0m[0001] [[38;5;220m2452865996[0m 7ms] outbound/socks[direct]: outbound connection to 198.51.100.200:443
+[36mINFO[0m[0001] [[38;5;51m720633524[0m 0ms] inbound/direct[audit-tls6]: inbound connection from [::1]:59290
+[36mINFO[0m[0001] [[38;5;51m720633524[0m 0ms] inbound/direct[audit-tls6]: inbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0001] [[38;5;51m720633524[0m 0ms] router: match[1] => sniff(tls,80ms)
+[37mDEBUG[0m[0001] [[38;5;51m720633524[0m 5ms] router: sniffed protocol: tls, domain: claude-dev.invalid
+[36mINFO[0m[0001] [[38;5;51m720633524[0m 5ms] outbound/socks[direct]: outbound connection to [2001:db8:ffff::200]:443
+[37mDEBUG[0m[0001] [[38;5;51m720633524[0m 6ms] connection: connection download finished

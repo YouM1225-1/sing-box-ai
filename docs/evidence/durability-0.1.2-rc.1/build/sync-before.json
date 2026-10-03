@@ -1,0 +1,5137 @@
+{
+  "baseline_diff": {},
+  "baseline_rules": {
+    "anthropic": [
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 10,
+            "reference": "dlc-anthropic",
+            "type": "domain",
+            "value": "servd-anthropic-website.b-cdn.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain",
+        "value": "servd-anthropic-website.b-cdn.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 1,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "anthropic.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "anthropic.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 2,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "clau.de"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "clau.de"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 3,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claude.ai"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claude.ai"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 4,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claude.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claude.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 5,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claudemcpclient.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claudemcpclient.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 6,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claudemcpcontent.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claudemcpcontent.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 7,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claudeusercontent.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claudeusercontent.com"
+      }
+    ],
+    "anthropic-ip": [],
+    "openai": [
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [
+              "@ads"
+            ],
+            "line": 23,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "browser-intake-datadoghq.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "browser-intake-datadoghq.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [
+              "@ads"
+            ],
+            "line": 24,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "o33249.ingest.sentry.io"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "o33249.ingest.sentry.io"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [
+              "@ads"
+            ],
+            "line": 25,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openai.qualtrics.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openai.qualtrics.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 14,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaiapi-site.azureedge.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaiapi-site.azureedge.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 15,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaiassets.blob.core.windows.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaiassets.blob.core.windows.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 16,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 17,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaicom.imgix.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaicom.imgix.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 18,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaicomproductionae4b.blob.core.windows.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaicomproductionae4b.blob.core.windows.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 19,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "production-openaicom-storage.azureedge.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "production-openaicom-storage.azureedge.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 20,
+            "reference": "dlc-openai",
+            "type": "domain_regex",
+            "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_regex",
+        "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 2,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chat.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chat.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 3,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chatgpt.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chatgpt.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 28,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chatgpt.livekit.cloud"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chatgpt.livekit.cloud"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 4,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chatgpt.site"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chatgpt.site"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 5,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "crixet.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "crixet.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 29,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "host.livekit.cloud"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "host.livekit.cloud"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 6,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "oaistatic.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "oaistatic.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 7,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "oaistatsig.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "oaistatsig.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 8,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "oaiusercontent.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "oaiusercontent.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 9,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "openai.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "openai.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 13,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "openai.com.cdn.cloudflare.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "openai.com.cdn.cloudflare.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 10,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "sora.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "sora.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 30,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "turn.livekit.cloud"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "turn.livekit.cloud"
+      }
+    ]
+  },
+  "baselines": {
+    "anthropic": {
+      "crosscheck": {
+        "equivalent": true,
+        "path": "sources/upstream/dlc-anthropic.txt",
+        "ref": "bcea25493ed28c387660fe49ce1ceb242d2efca0",
+        "sha256": "3d0e231009271bad865131381da71b489b18ca699f38afe3a0ebef00011f1b88"
+      },
+      "input_binary_version": 1,
+      "path": "sources/upstream/geosite-anthropic.srs",
+      "ref": "e6a8117545c35a17c508e3f37a9a990571234428",
+      "repo": "SagerNet/sing-geosite",
+      "semantic_sha256": "d91d5873bb3c3b2e29b0b7d87140b0e2f41378119aa3da86911b5b74d7fc0164",
+      "sha256": "aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906"
+    },
+    "openai": {
+      "crosscheck": {
+        "equivalent": true,
+        "path": "sources/upstream/dlc-openai.txt",
+        "ref": "bcea25493ed28c387660fe49ce1ceb242d2efca0",
+        "sha256": "19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6"
+      },
+      "input_binary_version": 1,
+      "path": "sources/upstream/geosite-openai.srs",
+      "ref": "e6a8117545c35a17c508e3f37a9a990571234428",
+      "repo": "SagerNet/sing-geosite",
+      "semantic_sha256": "cbe88497d631f929e93b0a5045d8d563ff7e4f99d7f7d16f1d94902c728935a0",
+      "sha256": "aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1"
+    }
+  },
+  "canonical": {
+    "anthropic": [
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 10,
+            "reference": "dlc-anthropic",
+            "type": "domain",
+            "value": "servd-anthropic-website.b-cdn.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain",
+        "value": "servd-anthropic-website.b-cdn.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 1,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "anthropic.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "anthropic.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 2,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "clau.de"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "clau.de"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 3,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claude.ai"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claude.ai"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 4,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claude.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claude.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 5,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claudemcpclient.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claudemcpclient.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 6,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claudemcpcontent.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claudemcpcontent.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 7,
+            "reference": "dlc-anthropic",
+            "type": "domain_suffix",
+            "value": "claudeusercontent.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-anthropic"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "claudeusercontent.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "claude-web",
+          "claude-api",
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": "claude.app"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "github.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "raw.githubusercontent.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "registry.npmjs.org"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "storage.googleapis.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-install"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "formulae.brew.sh"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "cdnjs.cloudflare.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "cdn.jsdelivr.net"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "cdn.tailwindcss.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "code.jquery.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "origin": "supplement",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "unpkg.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Optional fonts: fallback typefaces available",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "optional",
+        "type": "domain",
+        "value": "fonts.googleapis.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Optional fonts: fallback typefaces available",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "optional",
+        "type": "domain",
+        "value": "fonts.gstatic.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "claude-web",
+          "claude-api",
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official Anthropic inbound destination",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "anthropic-ip"
+          }
+        ],
+        "status": "required",
+        "type": "ip_cidr",
+        "value": "160.79.104.0/23"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "claude-web",
+          "claude-api",
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official Anthropic inbound destination",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "anthropic-ip"
+          }
+        ],
+        "status": "required",
+        "type": "ip_cidr",
+        "value": "2607:6bc0::/48"
+      },
+      {
+        "direction": "destination",
+        "evidence": [
+          {
+            "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+            "kind": "repository-history",
+            "observed_on": "2026-09-27",
+            "product": [
+              "claude-web",
+              "claude-desktop"
+            ],
+            "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+          },
+          {
+            "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+            "kind": "user-confirmation",
+            "observed_on": "2026-09-27",
+            "product": [
+              "claude-web",
+              "claude-desktop"
+            ],
+            "reference": "sources/evidence/claude-challenge-confirmation.json"
+          }
+        ],
+        "first_seen": "2026-09-27",
+        "last_verified": "2026-09-27",
+        "origin": "supplement",
+        "product": [
+          "claude-web",
+          "claude-desktop"
+        ],
+        "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+        "review_after": "2026-10-27",
+        "review_status": "approved",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "repository-history",
+            "reference": "legacy-anthropic"
+          }
+        ],
+        "status": "compatibility-critical",
+        "type": "domain",
+        "value": "challenges.cloudflare.com"
+      }
+    ],
+    "anthropic-ip": [
+      {
+        "direction": "source",
+        "origin": "supplement",
+        "product": [
+          "anthropic-service-egress"
+        ],
+        "reason": "Official Anthropic outbound source range; not a client destination",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "anthropic-ip"
+          }
+        ],
+        "status": "required",
+        "type": "source_ip_cidr",
+        "value": "160.79.104.0/21"
+      }
+    ],
+    "openai": [
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [
+              "@ads"
+            ],
+            "line": 23,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "browser-intake-datadoghq.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "browser-intake-datadoghq.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [
+              "@ads"
+            ],
+            "line": 24,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "o33249.ingest.sentry.io"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "o33249.ingest.sentry.io"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [
+              "@ads"
+            ],
+            "line": 25,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openai.qualtrics.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openai.qualtrics.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 14,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaiapi-site.azureedge.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaiapi-site.azureedge.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 15,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaiassets.blob.core.windows.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaiassets.blob.core.windows.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 16,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 17,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaicom.imgix.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaicom.imgix.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 18,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "openaicomproductionae4b.blob.core.windows.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "openaicomproductionae4b.blob.core.windows.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 19,
+            "reference": "dlc-openai",
+            "type": "domain",
+            "value": "production-openaicom-storage.azureedge.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain",
+        "value": "production-openaicom-storage.azureedge.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 20,
+            "reference": "dlc-openai",
+            "type": "domain_regex",
+            "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_regex",
+        "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 2,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chat.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chat.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 3,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chatgpt.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chatgpt.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 28,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chatgpt.livekit.cloud"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chatgpt.livekit.cloud"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 4,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "chatgpt.site"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "chatgpt.site"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 5,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "crixet.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "crixet.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 29,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "host.livekit.cloud"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "host.livekit.cloud"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 6,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "oaistatic.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "oaistatic.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 7,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "oaistatsig.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "oaistatsig.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 8,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "oaiusercontent.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "oaiusercontent.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 9,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "openai.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "openai.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 13,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "openai.com.cdn.cloudflare.net"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "openai.com.cdn.cloudflare.net"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 10,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "sora.com"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "sora.com"
+      },
+      {
+        "direction": "destination",
+        "dlc_provenance": [
+          {
+            "attributes": [],
+            "line": 30,
+            "reference": "dlc-openai",
+            "type": "domain_suffix",
+            "value": "turn.livekit.cloud"
+          }
+        ],
+        "origin": "baseline",
+        "sources": [
+          {
+            "kind": "srs-baseline",
+            "reference": "geosite-openai"
+          }
+        ],
+        "type": "domain_suffix",
+        "value": "turn.livekit.cloud"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": ".ct.sendgrid.net"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": ".intercom.io"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": ".intercomcdn.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "cdn.openaimerge.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "cdn.workos.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "challenges.cloudflare.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "forwarder.workos.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "humb.apple.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "images.workoscdn.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "js.stripe.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "o207216.ingest.sentry.io"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "rum.browser-intake-datadoghq.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "setup.workos.com"
+      },
+      {
+        "direction": "destination",
+        "origin": "supplement",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "workos.imgix.net"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "102.37.57.54/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "13.71.25.29/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "135.220.40.201/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "172.203.39.49/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "172.207.173.200/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "172.214.226.198/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "191.233.251.27/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.162.96.163/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.168.48.117/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.184.36.134/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.203.144.245/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.74.221.21/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.151.200.38/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.155.146.196/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.197.172.116/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.217.235.100/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.245.198.13/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "40.118.236.137/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "51.4.112.173/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "52.143.181.161/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "68.155.152.41/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "72.146.20.246/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "origin": "supplement",
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "74.248.148.7/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "origin": "supplement",
+        "product": [
+          "codex"
+        ],
+        "reason": "Pinned official Codex installer GitHub release fallback URL; exact shared host, not path-specific",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-install"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "github.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "origin": "supplement",
+        "product": [
+          "codex"
+        ],
+        "reason": "Pinned official Codex installer release metadata API; exact shared host, not repository-specific",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-install"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "api.github.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "origin": "supplement",
+        "product": [
+          "codex"
+        ],
+        "reason": "Observed HEAD redirect for an official Codex release asset; exact shared delivery host, not a guarantee of all future redirects",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-release"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "release-assets.githubusercontent.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "origin": "supplement",
+        "product": [
+          "codex"
+        ],
+        "reason": "Official Codex npm installation package and six platform package tarballs; exact default registry host, not package-specific",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-npm"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "registry.npmjs.org"
+      }
+    ]
+  },
+  "canonical_diff": {},
+  "discovery": [
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 2,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "chat.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 3,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "chatgpt.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 4,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "chatgpt.site"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 5,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "crixet.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 6,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "oaistatic.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 7,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "oaistatsig.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 8,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "oaiusercontent.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 9,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "openai.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 10,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "sora.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 13,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "openai.com.cdn.cloudflare.net"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 14,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "openaiapi-site.azureedge.net"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 15,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "openaiassets.blob.core.windows.net"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 16,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 17,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "openaicom.imgix.net"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 18,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "openaicomproductionae4b.blob.core.windows.net"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 19,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "production-openaicom-storage.azureedge.net"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 20,
+      "type": "domain_regex",
+      "upstream": "dlc-openai",
+      "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [
+        "@ads"
+      ],
+      "classification": "ALREADY_COVERED",
+      "line": 23,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "browser-intake-datadoghq.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [
+        "@ads"
+      ],
+      "classification": "ALREADY_COVERED",
+      "line": 24,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "o33249.ingest.sentry.io"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [
+        "@ads"
+      ],
+      "classification": "ALREADY_COVERED",
+      "line": 25,
+      "type": "domain",
+      "upstream": "dlc-openai",
+      "value": "openai.qualtrics.com"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 28,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "chatgpt.livekit.cloud"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 29,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "host.livekit.cloud"
+    },
+    {
+      "artifact": "openai",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 30,
+      "type": "domain_suffix",
+      "upstream": "dlc-openai",
+      "value": "turn.livekit.cloud"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 1,
+      "type": "domain_suffix",
+      "upstream": "dlc-anthropic",
+      "value": "anthropic.com"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 2,
+      "type": "domain_suffix",
+      "upstream": "dlc-anthropic",
+      "value": "clau.de"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 3,
+      "type": "domain_suffix",
+      "upstream": "dlc-anthropic",
+      "value": "claude.ai"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 4,
+      "type": "domain_suffix",
+      "upstream": "dlc-anthropic",
+      "value": "claude.com"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 5,
+      "type": "domain_suffix",
+      "upstream": "dlc-anthropic",
+      "value": "claudemcpclient.com"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 6,
+      "type": "domain_suffix",
+      "upstream": "dlc-anthropic",
+      "value": "claudemcpcontent.com"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 7,
+      "type": "domain_suffix",
+      "upstream": "dlc-anthropic",
+      "value": "claudeusercontent.com"
+    },
+    {
+      "artifact": "anthropic",
+      "attributes": [],
+      "classification": "ALREADY_COVERED",
+      "line": 10,
+      "type": "domain",
+      "upstream": "dlc-anthropic",
+      "value": "servd-anthropic-website.b-cdn.net"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "ADD_CANDIDATE",
+      "type": "domain",
+      "upstream": "legacy-anthropic",
+      "value": "cdn.growthbook.io"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "ALREADY_COVERED",
+      "type": "domain",
+      "upstream": "legacy-anthropic",
+      "value": "challenges.cloudflare.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "ADD_CANDIDATE",
+      "type": "domain",
+      "upstream": "legacy-anthropic",
+      "value": "cdn.usefathom.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "ALREADY_COVERED",
+      "type": "domain_suffix",
+      "upstream": "legacy-anthropic",
+      "value": "clau.de"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "102.37.57.54/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "13.71.25.29/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "135.220.40.201/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "172.203.39.49/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "172.207.173.200/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "172.214.226.198/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "191.233.251.27/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "20.162.96.163/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "20.168.48.117/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "20.184.36.134/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "20.203.144.245/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "20.74.221.21/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "4.151.200.38/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "4.155.146.196/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "4.197.172.116/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "4.217.235.100/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "4.245.198.13/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "40.118.236.137/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "51.4.112.173/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "52.143.181.161/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "68.155.152.41/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "72.146.20.246/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "ip_cidr",
+      "upstream": "official",
+      "value": "74.248.148.7/32"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "github.com"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "api.github.com"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "release-assets.githubusercontent.com"
+    },
+    {
+      "artifact": "openai",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "registry.npmjs.org"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "github.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "raw.githubusercontent.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "registry.npmjs.org"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "storage.googleapis.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "formulae.brew.sh"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "cdnjs.cloudflare.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "cdn.jsdelivr.net"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "cdn.tailwindcss.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "code.jquery.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "FEATURE_REQUIRED",
+      "type": "domain",
+      "upstream": "official",
+      "value": "unpkg.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "OPTIONAL_OFFICIAL",
+      "type": "domain",
+      "upstream": "official",
+      "value": "http-intake.logs.us5.datadoghq.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "OPTIONAL_OFFICIAL",
+      "type": "domain",
+      "upstream": "official",
+      "value": "browser-intake-us5-datadoghq.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "OPTIONAL_OFFICIAL",
+      "type": "domain",
+      "upstream": "official",
+      "value": "fonts.googleapis.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "OPTIONAL_OFFICIAL",
+      "type": "domain",
+      "upstream": "official",
+      "value": "fonts.gstatic.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "OPTIONAL_OFFICIAL",
+      "type": "domain_regex",
+      "upstream": "official",
+      "value": "^[^.]+-review\\.googlesource\\.com$"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:client-api.arkoselabs.com",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "client-api.arkoselabs.com"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:events.statsigapi.net",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "events.statsigapi.net"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:featureassets.org",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "featureassets.org"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:itunes.apple.com",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Historical inclusion is not current runtime-dependency evidence.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "itunes.apple.com"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:o33249.ingest.us.sentry.io",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "o33249.ingest.us.sentry.io"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:openai-api.arkoselabs.com",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "openai-api.arkoselabs.com"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:openai-prod.azureedge.net",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "openai-prod.azureedge.net"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:openaicom-api.azureedge.net",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "openaicom-api.azureedge.net"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:prodregistryv2.org",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "prodregistryv2.org"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:register.appattest.apple.com",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Official page mentions this URL in iOS diagnostics, not the main runtime allowlist.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        },
+        {
+          "kind": "official",
+          "reference": "openai-network"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "register.appattest.apple.com"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:statsigapi.net",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "statsigapi.net"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:ct.sendgrid.net",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "ct.sendgrid.net"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:intercom.io",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "intercom.io"
+    },
+    {
+      "artifact": "openai",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "openai:domain:intercomcdn.com",
+      "last_verified": null,
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "reason": "Current official wildcard retains subdomains only; root apex needs separate evidence.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-openai-srs",
+      "value": "intercomcdn.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "anthropic:domain:cdn.growthbook.io",
+      "last_verified": null,
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "Feature-flag functionality alone does not prove this third-party hostname is a current dependency.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-anthropic-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-anthropic-srs",
+      "value": "cdn.growthbook.io"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "anthropic:domain:cdn.usefathom.com",
+      "last_verified": null,
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "Historical and community discovery only; no current approved runtime dependency.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-anthropic-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain",
+      "upstream": "legacy-current-anthropic-srs",
+      "value": "cdn.usefathom.com"
+    },
+    {
+      "artifact": "anthropic",
+      "classification": "ADD_CANDIDATE",
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval.",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-1f6e61c.srs"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "id": "anthropic:domain_suffix:modelcontextprotocol.io",
+      "last_verified": null,
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "The protocol documentation domain is not a demonstrated mandatory client runtime endpoint.",
+      "review_after": null,
+      "review_status": "pending",
+      "selected": false,
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-anthropic-srs"
+        }
+      ],
+      "status": "compatibility",
+      "type": "domain_suffix",
+      "upstream": "legacy-current-anthropic-srs",
+      "value": "modelcontextprotocol.io"
+    }
+  ],
+  "removed_upstream": [],
+  "schema": 2,
+  "supplement_diff": {},
+  "supplements": {
+    "anthropic": [
+      {
+        "direction": "destination",
+        "product": [
+          "claude-web",
+          "claude-api",
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": "claude.app"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "github.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "raw.githubusercontent.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "registry.npmjs.org"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-plugins"
+        ],
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "storage.googleapis.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-install"
+        ],
+        "product": [
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official install/plugin/release-note dependency",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "formulae.brew.sh"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "cdnjs.cloudflare.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "cdn.jsdelivr.net"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "cdn.tailwindcss.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "code.jquery.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "claude-artifacts"
+        ],
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Artifact library has no fallback when blocked",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "unpkg.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "claude-code"
+        ],
+        "reason": "Optional operational telemetry/error reporting",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "optional",
+        "type": "domain",
+        "value": "http-intake.logs.us5.datadoghq.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "claude-code"
+        ],
+        "reason": "Optional operational telemetry/error reporting",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "optional",
+        "type": "domain",
+        "value": "browser-intake-us5-datadoghq.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Optional fonts: fallback typefaces available",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "optional",
+        "type": "domain",
+        "value": "fonts.googleapis.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "claude-desktop",
+          "claude-artifacts"
+        ],
+        "reason": "Optional fonts: fallback typefaces available",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-desktop"
+          }
+        ],
+        "status": "optional",
+        "type": "domain",
+        "value": "fonts.gstatic.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "claude-code"
+        ],
+        "reason": "Optional Gerrit discovery; single-label wildcard",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "claude-code"
+          }
+        ],
+        "status": "optional",
+        "type": "domain_regex",
+        "value": "^[^.]+-review\\.googlesource\\.com$"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "claude-web",
+          "claude-api",
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official Anthropic inbound destination",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "anthropic-ip"
+          }
+        ],
+        "status": "required",
+        "type": "ip_cidr",
+        "value": "160.79.104.0/23"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "claude-web",
+          "claude-api",
+          "claude-code",
+          "claude-desktop"
+        ],
+        "reason": "Official Anthropic inbound destination",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "anthropic-ip"
+          }
+        ],
+        "status": "required",
+        "type": "ip_cidr",
+        "value": "2607:6bc0::/48"
+      },
+      {
+        "direction": "destination",
+        "evidence": [
+          {
+            "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+            "kind": "repository-history",
+            "observed_on": "2026-09-27",
+            "product": [
+              "claude-web",
+              "claude-desktop"
+            ],
+            "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+          },
+          {
+            "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+            "kind": "user-confirmation",
+            "observed_on": "2026-09-27",
+            "product": [
+              "claude-web",
+              "claude-desktop"
+            ],
+            "reference": "sources/evidence/claude-challenge-confirmation.json"
+          }
+        ],
+        "first_seen": "2026-09-27",
+        "last_verified": "2026-09-27",
+        "product": [
+          "claude-web",
+          "claude-desktop"
+        ],
+        "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+        "review_after": "2026-10-27",
+        "review_status": "approved",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "repository-history",
+            "reference": "legacy-anthropic"
+          }
+        ],
+        "status": "compatibility-critical",
+        "type": "domain",
+        "value": "challenges.cloudflare.com"
+      }
+    ],
+    "anthropic-ip": [
+      {
+        "direction": "source",
+        "product": [
+          "anthropic-service-egress"
+        ],
+        "reason": "Official Anthropic outbound source range; not a client destination",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "anthropic-ip"
+          }
+        ],
+        "status": "required",
+        "type": "source_ip_cidr",
+        "value": "160.79.104.0/21"
+      }
+    ],
+    "openai": [
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": ".ct.sendgrid.net"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": ".intercom.io"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain_suffix",
+        "value": ".intercomcdn.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "cdn.openaimerge.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "cdn.workos.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "challenges.cloudflare.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "forwarder.workos.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "humb.apple.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "images.workoscdn.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "js.stripe.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "o207216.ingest.sentry.io"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "rum.browser-intake-datadoghq.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "setup.workos.com"
+      },
+      {
+        "direction": "destination",
+        "product": [
+          "chatgpt-web",
+          "chatgpt-clients",
+          "codex"
+        ],
+        "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-network"
+          }
+        ],
+        "status": "required",
+        "type": "domain",
+        "value": "workos.imgix.net"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "102.37.57.54/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "13.71.25.29/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "135.220.40.201/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "172.203.39.49/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "172.207.173.200/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "172.214.226.198/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "191.233.251.27/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.162.96.163/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.168.48.117/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.184.36.134/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.203.144.245/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "20.74.221.21/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.151.200.38/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.155.146.196/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.197.172.116/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.217.235.100/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "4.245.198.13/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "40.118.236.137/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "51.4.112.173/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "52.143.181.161/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "68.155.152.41/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "72.146.20.246/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "chatgpt-voice"
+        ],
+        "product": [
+          "chatgpt-voice"
+        ],
+        "reason": "Official ChatGPT Voice destination; IP rule applies to all ports",
+        "shared_dependency": false,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "openai-voice"
+          }
+        ],
+        "status": "feature-required",
+        "type": "ip_cidr",
+        "value": "74.248.148.7/32"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "product": [
+          "codex"
+        ],
+        "reason": "Pinned official Codex installer GitHub release fallback URL; exact shared host, not path-specific",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-install"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "github.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "product": [
+          "codex"
+        ],
+        "reason": "Pinned official Codex installer release metadata API; exact shared host, not repository-specific",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-install"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "api.github.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "product": [
+          "codex"
+        ],
+        "reason": "Observed HEAD redirect for an official Codex release asset; exact shared delivery host, not a guarantee of all future redirects",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-release"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "release-assets.githubusercontent.com"
+      },
+      {
+        "direction": "destination",
+        "features": [
+          "codex-install"
+        ],
+        "product": [
+          "codex"
+        ],
+        "reason": "Official Codex npm installation package and six platform package tarballs; exact default registry host, not package-specific",
+        "shared_dependency": true,
+        "sources": [
+          {
+            "kind": "official",
+            "reference": "codex-npm"
+          }
+        ],
+        "status": "feature-required",
+        "type": "domain",
+        "value": "registry.npmjs.org"
+      }
+    ]
+  },
+  "upstream_hashes": {
+    "anthropic-ip": "7c1b50c6abc374f60cd60e5178eb9f1dbeedfe4889aebdf0ac6260f0a455ba7b",
+    "anthropic-ip-source": "0dbdc4d19cfd517a572477d31b195bc15050555e2602c6da394f6fa92c89d5de",
+    "claude-code": "a3576c339ac151a72c3f12c394857a6a06b11693ae6447b317a098d8452f5ca4",
+    "claude-code-source": "83e3a0735cc70e2ffe605a35de5ccdc363a4823dcbb87015100f24bfa1d05c0b",
+    "claude-desktop": "38eefb4841242513b9118815d0f7bd385f22eb2b580b7a74f6082abe8af488a3",
+    "claude-desktop-source": "abcc72d39c25a12bf679c86d7f19f5653b4a784ceabde6c0c4fce6121a291b39",
+    "codex-install": "49d8fa276aed4c88516c7227157b321a8c15065e6ce9c05acb0360ebff864720",
+    "codex-install-source": "d9cdbd686cc3a35e2a4eecfbb750a4b73851abdeab31291f307d8b64682ef9fa",
+    "codex-npm": "3e7038f8c5eade33be2e80a4f0000aa36a27297d30095b277e4711aaf11bce9b",
+    "codex-npm-source": "8c1c0a9600064f5295e3a6d9f3d9b5f45fdfd40eb2ca78cad52eb67a0f4fd119",
+    "codex-release": "6e94eb25a3c1a72a5ccdaa6bb2bb957bf3507c1d22185908850c521f34fc0810",
+    "codex-release-source": "771caede85890faba96bc20e9a78e189c443fd51864e6c54c5e7b92cb7fad22d",
+    "dlc-anthropic": "3d0e231009271bad865131381da71b489b18ca699f38afe3a0ebef00011f1b88",
+    "dlc-license": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2",
+    "dlc-openai": "19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6",
+    "geosite-anthropic": "aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906",
+    "geosite-license": "2f02b7486bcfa90d115c71a20437f3906b6fd5bef81c5dc0efd341399e89d0fd",
+    "geosite-openai": "aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1",
+    "legacy-anthropic": "56bb3988ba6677d268eb33609cbb27bf19ceca7c542749a5c9cb141d6c1aae8b",
+    "legacy-current-anthropic-srs": "8c353fe1aace43d9015d245c8fd10da6c08b691c578492625168d548fbb4d330",
+    "legacy-current-anthropic-yaml": "5a89ef20ff213186f598e3fd2104d7d1253e90af295aba14df829b4861caa431",
+    "legacy-current-openai-srs": "2950265e955331400937f45d747976e9d1d539394a5e105990d93dd26da6b1d9",
+    "legacy-current-openai-yaml": "76871e8b13dfa304f6e67d56956ef2b6a19079e115711bacc11fb61a0b9c70ad",
+    "openai-login": "78e7417105d6aa04f5aa94d93c6de2fcc7b93ff9138275436c56700508333c33",
+    "openai-login-source": "84c9131a281143c959ff6bcbc768db1f9f57ec9c8b62bc4494f85d5faeeda168",
+    "openai-network": "eccfd234bd95e482a90186d3caf1d865e39e974c74883012da3ffec107574bac",
+    "openai-network-source": "7fa4e4db95fee6f7f2fdd92ce4e525f742402fa5a830aa107e85784bd5f3d5ec",
+    "openai-voice": "2b082776a385e61646530b39d681535e0a9d380b42b6ee411e447c087967e606",
+    "psl": "257b298daca42f6d8ec964e238c2a55518e14f09d3117917ec8acee6f188503e",
+    "voice-raw": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a"
+  }
+}

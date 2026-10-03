@@ -1,0 +1,13 @@
+{
+  "url": "https://raw.githubusercontent.com/openai/codex/a956835d020762cb2b570053af06f643a11c0ecc/README.md",
+  "retrieved_at": "2026-10-03T13:25:06.661090+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://raw.githubusercontent.com/openai/codex/a956835d020762cb2b570053af06f643a11c0ecc/README.md",
+    "text/plain; charset=utf-8"
+  ],
+  "stderr": "",
+  "bytes": 3334,
+  "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7"
+}

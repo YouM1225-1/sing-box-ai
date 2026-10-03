@@ -1,0 +1,88 @@
+{
+  "comparisons": [
+    {
+      "file": "openai.json",
+      "bytes": 2175,
+      "sha256": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f",
+      "independent_build_equal": true,
+      "equals_v0_1_1": true
+    },
+    {
+      "file": "openai.srs",
+      "bytes": 775,
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "independent_build_equal": true,
+      "equals_v0_1_1": true
+    },
+    {
+      "file": "anthropic.json",
+      "bytes": 847,
+      "sha256": "84fc55f1820e7eefc7b3255b801c36295bfdaa193622fa471e8b463c61ba9d7b",
+      "independent_build_equal": true,
+      "equals_v0_1_1": false
+    },
+    {
+      "file": "anthropic.srs",
+      "bytes": 361,
+      "sha256": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
+      "independent_build_equal": true,
+      "equals_v0_1_1": false
+    },
+    {
+      "file": "anthropic-ip.json",
+      "bytes": 109,
+      "sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5",
+      "independent_build_equal": true,
+      "equals_v0_1_1": true
+    },
+    {
+      "file": "anthropic-ip.srs",
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "independent_build_equal": true,
+      "equals_v0_1_1": true
+    }
+  ],
+  "semantic_diff_from_v0_1_1": {
+    "openai": {
+      "domain": {
+        "added": [],
+        "removed": []
+      },
+      "domain_regex": {
+        "added": [],
+        "removed": []
+      },
+      "domain_suffix": {
+        "added": [],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [],
+        "removed": []
+      }
+    },
+    "anthropic": {
+      "domain": {
+        "added": [],
+        "removed": []
+      },
+      "domain_suffix": {
+        "added": [
+          "claude.dev"
+        ],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {
+      "source_ip_cidr": {
+        "added": [],
+        "removed": []
+      }
+    }
+  }
+}

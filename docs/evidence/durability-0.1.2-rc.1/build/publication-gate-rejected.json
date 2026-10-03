@@ -1,0 +1,6 @@
+{
+  "expected_rejection": "Candidate batches cannot be released",
+  "passed": true,
+  "build_mode": "candidate",
+  "publication_approval": null
+}

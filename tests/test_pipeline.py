@@ -92,6 +92,8 @@ class PolicyTests(unittest.TestCase):
             expected = load(ROOT / "artifacts/v0.1.0" / (artifact + ".json"))
             if hosts:
                 expected["rules"][0]["domain"] = sorted(set(expected["rules"][0]["domain"]) | hosts)
+            if artifact == "anthropic":
+                expected["rules"][0]["domain_suffix"] = sorted(set(expected["rules"][0]["domain_suffix"]) | {"claude.dev"})
             self.assertEqual(semantic_key(source_document(selected[artifact])), semantic_key(expected), artifact)
         self.assertEqual(policy["selected_pending"], [])
 

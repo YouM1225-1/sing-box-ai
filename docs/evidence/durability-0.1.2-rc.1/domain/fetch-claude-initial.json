@@ -1,0 +1,52 @@
+[
+  {
+    "name": "claude-code.md",
+    "url": "https://code.claude.com/docs/en/network-config.md",
+    "status": "200\nhttps://code.claude.com/docs/en/network-config.md",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 30658,
+    "sha256": "9f3792fc623b347b6cd594d30cd027f45defc69a96d5927302fa982111a8b982",
+    "time": "2026-10-03T13:23:10.255930+00:00"
+  },
+  {
+    "name": "claude-desktop.md",
+    "url": "https://code.claude.com/docs/en/desktop.md",
+    "status": "200\nhttps://code.claude.com/docs/en/desktop.md",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 85748,
+    "sha256": "f6966ea40231ec6be0bfbadafede013b04f7cdcb1bd9165419a2df5f0d44e9c6",
+    "time": "2026-10-03T13:23:10.263559+00:00"
+  },
+  {
+    "name": "anthropic-ip.md",
+    "url": "https://platform.claude.com/docs/en/api/ip-addresses.md",
+    "status": "200\nhttps://platform.claude.com/docs/en/api/ip-addresses.md",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 1462,
+    "sha256": "c3c62f43f063a10547c0102fc74a5398b7e396c65a3669cce2973a2a8c73f472",
+    "time": "2026-10-03T13:23:10.252596+00:00"
+  },
+  {
+    "name": "geosite-repo.json",
+    "url": "https://api.github.com/repos/SagerNet/sing-geosite",
+    "status": "200\nhttps://api.github.com/repos/SagerNet/sing-geosite",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 6924,
+    "sha256": "bc218525ed753e3c3237c84f24320f748865113bd86b682b692b93cc29d13736",
+    "time": "2026-10-03T13:23:10.253284+00:00"
+  },
+  {
+    "name": "dlc-repo.json",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community",
+    "status": "200\nhttps://api.github.com/repos/v2fly/domain-list-community",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 7243,
+    "sha256": "2d7878cdc54f5f1b29f5862358a68f3a5bbe31fffa5466d5067fe973ce17675a",
+    "time": "2026-10-03T13:23:10.263424+00:00"
+  }
+]

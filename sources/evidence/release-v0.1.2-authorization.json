@@ -1,0 +1,22 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "authorized_on": "2026-10-03",
+  "deployment_authorized": false,
+  "instruction": "发布",
+  "instruction_context": "用户在已交付并验收 0.1.2-rc.1、本轮已确认截图九项覆盖及唯一新增 claude.dev 后，明确要求发布；本记录将该授权绑定到上述候选三份 SRS 的指定摘要。",
+  "kind": "operator-authorization",
+  "limitations": [
+    "允许为正式 v0.1.2 提交及推送相应来源、证据与制品，手动构建、上传并发布；不得访问或写入 N100 或其他目标主机，不改客户端配置、不重启或重载服务。",
+    "保持旧 Release；先以 draft 完整上传并核验，再以非 Latest 正式发布，固定 URL 下载及本机空缓存加载通过后设置 Latest。Release 正文为空，发布身份沿用 YouM1225-1。",
+    "正式三份 SRS 及源 JSON 必须与已验收 0.1.2-rc.1 逐字节一致；正式输入须提交绑定，并通过两次干净重建、原生校验、回归及 --for-release 门禁。",
+    "更新 Latest 后订阅者可能自动取回新规则；静态发布授权不等于目标设备、真实登录、公网出口或重启持久化验收，消费者声明及部署状态保持空/pending。",
+    "保留 main 上 ed69b36617f7afa0c1244e724c4a4d54f303587c 对 Validate rules workflow 的删除；本轮不恢复定时或推送 CI。"
+  ],
+  "project_version": "0.1.2",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

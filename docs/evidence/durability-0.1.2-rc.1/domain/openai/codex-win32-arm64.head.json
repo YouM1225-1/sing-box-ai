@@ -1,0 +1,18 @@
+{
+  "retrieved_at": "2026-10-03T13:25:39.694739+00:00",
+  "method": "HEAD only; no package body downloaded",
+  "chain": [
+    {
+      "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-win32-arm64.tgz",
+      "hostname": "registry.npmjs.org",
+      "status_lines": [
+        "HTTP/2 200 "
+      ],
+      "curl_exit": 0,
+      "header_sha256": "014afb4b39281ae7793f41ce0dfb23a5c158a3916058154b17f4f174d24d0dd0",
+      "content_type": "application/octet-stream",
+      "content_length": null,
+      "stderr": ""
+    }
+  ]
+}

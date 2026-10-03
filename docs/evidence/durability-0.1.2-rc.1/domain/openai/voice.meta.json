@@ -1,0 +1,13 @@
+{
+  "url": "https://openai.com/chatgpt-voice.json",
+  "retrieved_at": "2026-10-03T13:24:13.690321+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://openai.com/chatgpt-voice.json",
+    "application/octet-stream"
+  ],
+  "stderr": "",
+  "bytes": 895,
+  "sha256": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a"
+}

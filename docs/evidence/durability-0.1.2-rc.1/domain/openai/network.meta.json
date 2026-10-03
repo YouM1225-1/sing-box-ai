@@ -1,0 +1,13 @@
+{
+  "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
+  "retrieved_at": "2026-10-03T13:24:13.493502+00:00",
+  "curl_exit": 0,
+  "response": [
+    "403",
+    "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
+    "text/html; charset=UTF-8"
+  ],
+  "stderr": "",
+  "bytes": 9983,
+  "sha256": "7bcd9ab5b13307f63a55d2c860d785b3280a240cae07b377b6c39e307887ea94"
+}

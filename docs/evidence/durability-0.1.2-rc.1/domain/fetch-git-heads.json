@@ -1,0 +1,32 @@
+[
+  {
+    "name": "geosite-branches.json",
+    "url": "https://api.github.com/repos/SagerNet/sing-geosite/branches",
+    "status": "200\nhttps://api.github.com/repos/SagerNet/sing-geosite/branches",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 1309,
+    "sha256": "c9ef2a61417c9bf4fa1dd0be94f55444365e0b53bd9f252befd488ddef690164",
+    "time": "2026-10-03T13:23:55.862716+00:00"
+  },
+  {
+    "name": "dlc-head.json",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/commits/master",
+    "status": "200\nhttps://api.github.com/repos/v2fly/domain-list-community/commits/master",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 5837,
+    "sha256": "adbe3a397c56efff4c101fa622ad097e1e34f1b5cd92f47acd96b0561f2ac42b",
+    "time": "2026-10-03T13:23:55.863251+00:00"
+  },
+  {
+    "name": "geosite-head.json",
+    "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits/rule-set",
+    "status": "200\nhttps://api.github.com/repos/SagerNet/sing-geosite/commits/rule-set",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 187720,
+    "sha256": "7691df1b3612df90f2d3e7f36d45e53b1551ee137640efedb8fd5b60532c33f5",
+    "time": "2026-10-03T13:23:55.917358+00:00"
+  }
+]

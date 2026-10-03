@@ -1,0 +1,396 @@
+diff --git a/VERSION b/VERSION
+index 17e51c3..c99d2fb 100644
+--- a/VERSION
++++ b/VERSION
+@@ -1 +1 @@
+-0.1.1
++0.1.2-rc.1
+diff --git a/docs/plan.md b/docs/plan.md
+index 903a470..b8871c1 100644
+--- a/docs/plan.md
++++ b/docs/plan.md
+@@ -1,14 +1,14 @@
+ # sing-box-ai 正式方案
+ 
+-> 文档修订：**1.22**；核验日期：2026-09-28（Asia/Shanghai）。
++> 文档修订：**1.23**；核验日期：2026-10-03（Asia/Shanghai）。
+ > 主仓库：`YouM1225-1/sing-box-ai`；当前正式发行、Latest 与 `dist/` 均为 `v0.1.1`；发布证据见 §7。
+-> 当前状态：受审输入已提交，手动重建、GitHub 正式发布与下载核验完成；未访问或操作 N100，运行验收仍为 pending。
++> 当前状态：本地候选 `0.1.2-rc.1` 采用新社区基线，Anthropic 仅新增 root suffix `claude.dev`；输入尚未提交，构建与验证状态见 §7.1。正式发行、Latest 和 `dist/` 仍为 `v0.1.1`；未访问或操作 N100。
+ 
+ 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
+ 
+ 完成终点：固定输入、补充证据、生成器、校验器、manifest 和测试契约一致；构建并审阅同批次三个制品，按授权发布静态发行；仅对经过该批次运行验收的环境声明可用。规则集合完整性、消费者分流正确性和真实业务成功分别验收。
+ 
+-本次新增授权为手动构建并发布 `0.1.1`；范围为已验收的四个 OpenAI Codex 安装 exact 和两个 Anthropic 字体 optional。保留产品路由及 DNS 原位置，现有配置与 iCloud 不改；不访问或修改 N100，不重启/重载，不改系统 DNS、路由或防火墙。新发布授权与语义审阅单独绑定 `0.1.1` 的指定摘要，旧批准不沿用。更新 Latest 后在线订阅者可能自动下载新规则，这不代表 N100 已接受或完成运行验收。
++本次授权范围为检查域名更新并手动构建本地候选 `0.1.2-rc.1`；仅继承上游新基线中的 `claude.dev` root suffix。保留产品路由及 DNS 原位置，现有配置与 iCloud 不改；不访问或修改 N100，不重启/重载，不改系统 DNS、路由或防火墙。本候选不提交、推送、发布或更新 Latest；既有 `0.1.1` 发布批准不沿用。候选 `publication_approval=null`、`validated_consumers=[]`、`integration_evidence=[]`、`deployment_status=pending`，本地隔离结果不等于生产或真实业务验收。
+ 
+ 阅读入口：[规则职责](#scope) → [固定输入与语义](#inputs) → [完整补充清单](#supplements) → [N100 配置与影响](#consumer) → [构建发布契约](#build) → [执行计划](#execution)。
+ 
+@@ -34,8 +34,8 @@
+ 
+ | 对象 | 固定版本或内容 |
+ |---|---|
+-| SagerNet/sing-geosite 产品基线 | `e6a8117545c35a17c508e3f37a9a990571234428`；同一提交的两份 SRS |
+-| DLC 溯源文本 | `bcea25493ed28c387660fe49ce1ceb242d2efca0`；`data/openai`、`data/anthropic` |
++| SagerNet/sing-geosite 产品基线 | `53e0e99be15953f1865c4f3f4cffe8c8f8543dff`；2026-10-03 固定的同一提交两份 SRS |
++| DLC 溯源文本 | `2c892a618f4e23c549d28edd0f3f75407521b1aa`；2026-10-03 固定的 `data/openai`、`data/anthropic` |
+ | 实测运行时/编译器 | sing-box `v1.15.0-alpha.9`，`132b38e9caaba1a1959354d518e54d2d08419afe` |
+ | 对应 sing 依赖 | `v0.9.6-0.20260922013359-4ca3bebe0b8e` |
+ | 2026-09-28 查询所得 testing | `710d7c715b10cf9fc158b1ab7fd7198754962c59`；仅关键源码静态比对，未构建运行 |
+@@ -48,11 +48,13 @@
+ | 输入 | 字节数 / SHA-256 |
+ |---|---|
+ | `geosite-openai.srs` | 451 / `aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1` |
+-| `geosite-anthropic.srs` | 167 / `aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906` |
++| `geosite-anthropic.srs` | 182 / `4c58ec54eed852bddc07d434d42b1b97c4c22ebc52aa3b393221b607c3d56f6f` |
+ | OpenAI Voice JSON | `8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a` |
+ | alpha.9 Darwin arm64 编译器 | `fcb47f341e6660a35385ceeffc0cebb2daca3fed4d35c729b7d45f7b66555f9a` |
+ 
+-两份原始 SRS 均为 binary v1，alpha.9 原生反编译成功：OpenAI 为 9 exact、13 root suffix、1 regex；Anthropic 为 1 exact、7 root suffix；均无 IP。反编译结果与固定 DLC 文本逐字段等价核对。v1 不是损坏或必须换源的理由。`domain:x` 与 `domain_suffix:.x` 可等价表示为 `domain_suffix:x`；这种形态变化不代表丢失规则。
++两份原始 SRS 均为 binary v1，alpha.9 原生反编译成功：OpenAI 为 9 exact、13 root suffix、1 regex；Anthropic 为 1 exact、8 root suffix；均无 IP。反编译结果与固定 DLC 文本逐字段等价核对。v1 不是损坏或必须换源的理由。`domain:x` 与 `domain_suffix:.x` 可等价表示为 `domain_suffix:x`；这种形态变化不代表丢失规则。
++
++2026-10-03 上游复核只发现 Anthropic root suffix `claude.dev` 新增，覆盖 apex 与各级子域；OpenAI 基线字节未变，其他域名、正则和 IP 语义未变。该条来自社区完整产品基线及 DLC 旁证，不改标为 Anthropic 官方网络要求，也不新增手写补充。固定原件、SHA、URL、UTC 取得时刻和许可证登记见 [upstreams](../sources/upstreams.yaml)；新增行见 [DLC Anthropic](../sources/upstream/dlc-anthropic.txt)。
+ 
+ 原始 SRS 字节、许可证及溯源材料须归档。`rule-set` 分支可能重建；完整 Git SHA 不保证对象永久可取。联网更新发现新对象后先固定、归档和审阅，离线构建仅用登记输入，禁止依赖浮动分支、`latest` 或未登记缓存。
+ 
+@@ -122,7 +124,7 @@ setup.workos.com
+ workos.imgix.net
+ ```
+ 
+-**4 个 Codex 安装 exact**（本版新增；`feature-required`、`features: [codex-install]`、共享依赖）：
++**4 个 Codex 安装 exact**（`0.1.1` 新增；`feature-required`、`features: [codex-install]`、共享依赖）：
+ 
+ ```text
+ github.com
+@@ -391,7 +393,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
+ 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
+ 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
+ 
+-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前目标正式版本为 `0.1.1`；设计修订号不冒充 sing-box 软件升级。
++上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前本地候选版本为 `0.1.2-rc.1`，正式发行仍为 `0.1.1`；设计修订号不冒充 sing-box 软件升级。
+ 
+ ### 6.2 快照与可复现要求
+ 
+@@ -434,7 +436,30 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
+ <a id="execution"></a>
+ ## 7. 当前执行计划与验证层级
+ 
+-### 7.1 正式发布结果与执行计划
++### 7.1 `0.1.2-rc.1` 本地候选与执行计划
++
++本候选基于 `9f33df7464d134cb347301ca1fbafde0e1f5fc8a` 的未提交工作树；`source_commit` 只标识基础提交，实际输入身份由 manifest 的 `inputs` 全部哈希给出。它不是正式提交绑定，不具备发布批准。正式 `dist/`、`artifacts/v0.1.1/`、既有批准记录和 GitHub Release 保留原样。
++
++| 步骤 | 终点 / 当前状态 |
++|---|---|
++| 1 固定新基线 | 已完成：同一 SagerNet 提交的两份 SRS、同一 DLC 提交的两份旁证与两份许可证；逐项核验原始 SHA。Anthropic 只新增 `claude.dev` root suffix；补充 YAML、功能选择、17 pending 和 IP 不变 |
++| 2 原版本复现 | 已完成本地范围：`v0.1.1` 两次 candidate 各 2,038 项原生验证零失败、46 项回归无跳过；三 SRS、三 JSON 两批及正式归档逐字节一致 |
++| 3 新候选构建 | 已完成：原生 sync 保留完整对照；两次 candidate 各 2,066 项原生验证零失败，46 项回归通过、无跳过；相对 `v0.1.1` 仅 Anthropic root suffix 新增 `claude.dev`，两批三 SRS、三 JSON 逐字节一致。原生发布门禁明确拒绝 candidate |
++| 4 新增域名隔离消费者 | 已完成本地范围：主任务执行 560 个合成请求（392 DNS、168 route），覆盖 apex、子域和近似域、域名/SNI、IPv4/IPv6、旧新组合与受控 remote 冷启动；8 个 sing-box 进程均退出 0，12 个监听均关闭，空缓存 HTTP 下载 1 次且 SHA 匹配。未读取真实配置、未接入生产 |
++| 4a 用户截图的 9 项覆盖 | 已完成实际解编核对：8 个 root suffix `anthropic.com`、`clau.de`、`claude.ai`、`claude.com`、`claude.dev`、`claudemcpclient.com`、`claudemcpcontent.com`、`claudeusercontent.com`，以及 exact `servd-anthropic-website.b-cdn.net` 均在新候选中；旧 `v0.1.1` 仅缺 `claude.dev` |
++| 5 交付与停止点 | 本地候选及输入差异交付；不提交、不推送、不发布。真实登录、公网出口、目标设备和重启持久化均未验收 |
++
++当前 UTC 日期门禁按 `2026-10-03` 复验；历史 Challenge 的 `last_verified=2026-09-27`、`review_after=2026-10-27` 不续期、不改写。候选保留空消费者声明与 `pending` 部署状态。工具沿用 `tools.lock.json` 的 sing-box `1.15.0-alpha.9`、Go `1.27.1` 和哈希锁定 PyYAML `6.0.3`；本地 Python 为 `3.9.6`，并非 CI 的 `3.12`。
++
++| `0.1.2-rc.1` SRS | 字节数 | SHA-256 |
++|---|---:|---|
++| `openai.srs` | 775 | `a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f` |
++| `anthropic.srs` | 361 | `c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80` |
++| `anthropic-ip.srs` | 36 | `9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c` |
++
++OpenAI 与 Anthropic 来源制品及对应 JSON 与 `v0.1.1` 逐字节一致。新增 root suffix 的测试包含 apex、两级子域、大写、近似域及错误父域；受控消费者结果只证明固定版本在合成环境中的选择和拒绝。真实登录、账户、Challenge、公网出口、TUN、生产 DNS 与目标设备重启持久化未验收；既往 `0.1.1` 的业务或安装证据不自动授予新批次这些结论。
++
++### 7.2 `v0.1.1` 历史正式发布结果
+ 
+ 已验收候选为 `0.1.1-rc.1`，本轮以同一规则输入晋升正式 `0.1.1`，固定 `0.1.0` 作为对照。已核对的差异只有 OpenAI exact 20→24、Anthropic exact 12→14；后缀、正则、Voice 目的地址、Anthropic 目的及来源网段全部不变。
+ 
+@@ -478,7 +503,7 @@ rc.1 本地验收阶段起初缺Go模块缓存，补取锁定依赖时的一次H
+ 
+ 本次推送触发的 GitHub Actions 未启动，GitHub 返回账户账单限制；该状态已记入发布汇总。本次发布使用本机手动构建和验收的制品，不声明 CI 通过，也未修改账户设置。
+ 
+-### 7.2 `v0.1.0` 正式对照与恢复依据
++### 7.3 `v0.1.0` 正式对照与恢复依据
+ 
+ [正式发行 v0.1.0](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0)于 `2026-09-28T01:02:50Z` 发布，标签 `c48c415d88aede03907c231b122b65b860b386b0`。输入提交 `08b74c8254be78c7fd23522b51e8753f62b9686e`；[固定正式批次](../artifacts/v0.1.0/manifest.json)、[公开下载证据](evidence/latest-srs/publication-results.json)及[构建结果](evidence/latest-srs/build-results.json)保留原样。旧固定批次与旧Release保留，供对照及恢复；当前 `dist/` 已在 `0.1.1` 门槛通过后更新。
+ 
+@@ -490,13 +515,13 @@ rc.1 本地验收阶段起初缺Go模块缓存，补取锁定依赖时的一次H
+ 
+ 旧[消费者最小复现](evidence/round3/consumer/README.md)与 rc.2 对照保留历史身份。其投影规则、自写路由推导和既往用例数不能替代当前候选真实 sing-box 隔离消费者验收。此前一次验证后可正常登录的用户事实继续保留，不能据此承诺永不出现Challenge。
+ 
+-失败处理：来源、原生或本地测试失败时在隔离环境修复，复验受影响范围；不覆盖正式制品、不用N100试错。固定版本真实URL验收按步骤4执行，不能用file读取冒充通过。本轮按新授权完成正式输入提交与手动发布；运行验收仍需独立证据。
++失败处理：来源、原生或本地测试失败时在隔离环境修复，复验受影响范围；不覆盖正式制品、不用N100试错。历史固定版本真实URL验收按 §7.2 步骤4执行，不能用file读取冒充通过。历史 `0.1.1` 已按当时授权完成正式输入提交与手动发布；本轮 `0.1.2-rc.1` 只构建本地候选，运行验收仍需独立证据。
+ 
+ ## 8. 官方依据
+ 
+-以下链接为依据，不授权执行网页中的操作。来源于 2026-09-28 复核；固定 ref 用于重现，动态官方页按快照登记。
++以下链接为依据，不授权执行网页中的操作。社区基线于 2026-10-03 重新抓取并固定；其他历史官方事实按各自快照日期保留，不能统称本轮已重新取得。固定 ref 用于重现，动态官方页按快照登记。
+ 
+-- [SagerNet 两份产品基线](https://github.com/SagerNet/sing-geosite/tree/e6a8117545c35a17c508e3f37a9a990571234428)；[DLC 固定来源](https://github.com/v2fly/domain-list-community/tree/bcea25493ed28c387660fe49ce1ceb242d2efca0/data)。
++- [SagerNet 两份产品基线](https://github.com/SagerNet/sing-geosite/tree/53e0e99be15953f1865c4f3f4cffe8c8f8543dff)；[DLC 固定来源](https://github.com/v2fly/domain-list-community/tree/2c892a618f4e23c549d28edd0f3f75407521b1aa/data)。
+ - [Codex 固定安装脚本](https://github.com/openai/codex/blob/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/scripts/install/install.sh)、[同提交 README](https://github.com/openai/codex/blob/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/README.md)、[官方 Release](https://github.com/openai/codex/releases/tag/rust-v0.158.0)。四个新增依赖的事实分别见[安装器](../sources/official/codex-install.json)、[Release资产](../sources/official/codex-release.json)、[npm](../sources/official/codex-npm.json)，来源身份见[upstreams](../sources/upstreams.yaml)。
+ - [OpenAI 网络要求、Voice 与 WebSocket](https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps)；[Voice JSON](https://openai.com/chatgpt-voice.json)；[登录排障](https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt)。
+ - [Claude Code 网络](https://code.claude.com/docs/en/network-config)；[Desktop 网络](https://code.claude.com/docs/en/desktop#network-access-requirements)；[Anthropic IP](https://platform.claude.com/docs/en/api/ip-addresses)；[功能开关说明](https://code.claude.com/docs/en/env-vars#features-that-need-feature-flag-fetching)。
+diff --git a/sources/policy.yaml b/sources/policy.yaml
+index 19610db..84270be 100644
+--- a/sources/policy.yaml
++++ b/sources/policy.yaml
+@@ -15,7 +15,7 @@ features:
+ enabled_optional:
+ - fonts.googleapis.com
+ - fonts.gstatic.com
+-review_as_of: '2026-09-28'
++review_as_of: '2026-10-03'
+ approved_regex:
+   ^[^.]+-review\.googlesource\.com$:
+     reason: 'Optional Gerrit host: one label ending in -review; does not match other googlesource hosts.'
+diff --git a/sources/upstream/dlc-anthropic.txt b/sources/upstream/dlc-anthropic.txt
+index f1d250c..c8e7ad7 100644
+--- a/sources/upstream/dlc-anthropic.txt
++++ b/sources/upstream/dlc-anthropic.txt
+@@ -2,6 +2,7 @@ anthropic.com
+ clau.de
+ claude.ai
+ claude.com
++claude.dev
+ claudemcpclient.com
+ claudemcpcontent.com
+ claudeusercontent.com
+diff --git a/sources/upstream/geosite-anthropic.srs b/sources/upstream/geosite-anthropic.srs
+index ba25f004a7b1f8dc994773ce362e9b3b13451204..9c5c263bff3aacf84a18df2fea2e2da010f83719 100644
+GIT binary patch
+literal 182
+zcmV;n07?H-Qd0qV+9b-sO~X(O08l3t5(mE2MdCp?;{jaTQh(+AM9Ftqpo4HkMqPp(
+zn1>$v&ToJb4#zim1ppX7ZZN{{0iKR8nctb2UzvBJ_e{Fv4<%*ZFMmWt&o|_4usZjv
+z@?wT4O~Vk8RjfDjsM=J8*Dwk6g=?R<$mZToj%SetrF2}yuoYRiUU(L(X!E`owK#>E
+kap<RWOyVpkUJJ@va4FllH=gvm+5QiY00030{|zQZO~vF@@&Et;
+
+literal 167
+zcmV;Y09gN1Qd0qV+7!SsPQ@?`08qDLU?6ws!dRc7BO@T0-L)+>RhmR;0vv&}1ob$a
+zhp+zz7-3v~o?rri0iItLm>wU9=#7Y8-!Gz%-sx`d{TGJbul<j{%^y`c8KT5yh^%5Y
+zhUPV@aBe0T68kzkDIvraH<5&{Vit=|a;bcXd9>p^omyL)nsL*wz-^Ymf)cz#$qth%
+VTa7&HXR-4iZUF!Q|Nn_YJcAZrOW*(i
+
+diff --git a/sources/upstreams.yaml b/sources/upstreams.yaml
+index 6285d1c..630691e 100644
+--- a/sources/upstreams.yaml
++++ b/sources/upstreams.yaml
+@@ -57,59 +57,59 @@ archives:
+ - id: dlc-openai
+   kind: dlc
+   path: sources/upstream/dlc-openai.txt
+-  url: https://raw.githubusercontent.com/v2fly/domain-list-community/bcea25493ed28c387660fe49ce1ceb242d2efca0/data/openai
+-  commit: bcea25493ed28c387660fe49ce1ceb242d2efca0
++  url: https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/openai
++  commit: 2c892a618f4e23c549d28edd0f3f75407521b1aa
+   sha256: 19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6
+-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+-  method: imported-pinned-audit-archive; observed 2026-09-27
++  retrieved_at: '2026-10-03T13:24:20.245731+00:00'
++  method: https-raw-response
+   artifact: openai
+   role: crosscheck
+-  last_verified_at: '2026-09-27T18:20:53.167408+00:00'
++  last_verified_at: '2026-10-03T13:24:20.245731+00:00'
+   license_reference: dlc-license
+ - id: dlc-anthropic
+   kind: dlc
+   path: sources/upstream/dlc-anthropic.txt
+-  url: https://raw.githubusercontent.com/v2fly/domain-list-community/bcea25493ed28c387660fe49ce1ceb242d2efca0/data/anthropic
+-  commit: bcea25493ed28c387660fe49ce1ceb242d2efca0
+-  sha256: 3d0e231009271bad865131381da71b489b18ca699f38afe3a0ebef00011f1b88
+-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+-  method: imported-pinned-audit-archive; observed 2026-09-27
++  url: https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/anthropic
++  commit: 2c892a618f4e23c549d28edd0f3f75407521b1aa
++  sha256: bf48dc1b342bbfd06f2a93ee8ce180fc424d9c041dafd2d182ffb3f4186698b4
++  retrieved_at: '2026-10-03T13:24:20.243242+00:00'
++  method: https-raw-response
+   artifact: anthropic
+   role: crosscheck
+-  last_verified_at: '2026-09-27T18:20:53.151756+00:00'
++  last_verified_at: '2026-10-03T13:24:20.243242+00:00'
+   license_reference: dlc-license
+ - id: dlc-license
+   kind: license
+   path: sources/upstream/dlc-LICENSE
+-  url: https://raw.githubusercontent.com/v2fly/domain-list-community/bcea25493ed28c387660fe49ce1ceb242d2efca0/LICENSE
+-  commit: bcea25493ed28c387660fe49ce1ceb242d2efca0
++  url: https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/LICENSE
++  commit: 2c892a618f4e23c549d28edd0f3f75407521b1aa
+   sha256: b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2
+-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+-  method: https
++  retrieved_at: '2026-10-03T13:24:20.403526+00:00'
++  method: https-raw-response
+ - id: geosite-openai
+   kind: srs-baseline
+   path: sources/upstream/geosite-openai.srs
+-  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/e6a8117545c35a17c508e3f37a9a990571234428/geosite-openai.srs
+-  commit: e6a8117545c35a17c508e3f37a9a990571234428
++  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-openai.srs
++  commit: 53e0e99be15953f1865c4f3f4cffe8c8f8543dff
+   sha256: aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1
+-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+-  method: imported-pinned-audit-archive; observed 2026-09-27
++  retrieved_at: '2026-10-03T13:24:20.241207+00:00'
++  method: https-raw-response
+   artifact: openai
+   role: baseline
+-  last_verified_at: '2026-09-27T18:20:53.167795+00:00'
++  last_verified_at: '2026-10-03T13:24:20.241207+00:00'
+   license_reference: geosite-license
+   data_license_reference: dlc-license
+ - id: geosite-anthropic
+   kind: srs-baseline
+   path: sources/upstream/geosite-anthropic.srs
+-  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/e6a8117545c35a17c508e3f37a9a990571234428/geosite-anthropic.srs
+-  commit: e6a8117545c35a17c508e3f37a9a990571234428
+-  sha256: aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906
+-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+-  method: imported-pinned-audit-archive; observed 2026-09-27
++  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-anthropic.srs
++  commit: 53e0e99be15953f1865c4f3f4cffe8c8f8543dff
++  sha256: 4c58ec54eed852bddc07d434d42b1b97c4c22ebc52aa3b393221b607c3d56f6f
++  retrieved_at: '2026-10-03T13:24:20.270535+00:00'
++  method: https-raw-response
+   artifact: anthropic
+   role: baseline
+-  last_verified_at: '2026-09-27T18:20:53.155650+00:00'
++  last_verified_at: '2026-10-03T13:24:20.270535+00:00'
+   license_reference: geosite-license
+   data_license_reference: dlc-license
+ - id: legacy-anthropic
+@@ -196,8 +196,8 @@ archives:
+   url: https://raw.githubusercontent.com/SagerNet/sing-geosite/dd64ae0ebf2ee69166c0510042b3e96c085f27df/LICENSE
+   commit: dd64ae0ebf2ee69166c0510042b3e96c085f27df
+   sha256: 2f02b7486bcfa90d115c71a20437f3906b6fd5bef81c5dc0efd341399e89d0fd
+-  retrieved_at: '2026-09-27T18:20:53.157117+00:00'
+-  method: https
++  retrieved_at: '2026-10-03T13:24:20.256372+00:00'
++  method: https-raw-response
+   license: GPL-3.0-or-later
+   scope: SagerNet generator repository; preserve separately from DLC rule-data MIT license
+ - id: legacy-current-openai-srs
+diff --git a/tests/test_pipeline.py b/tests/test_pipeline.py
+index ba81ed6..5af80e5 100644
+--- a/tests/test_pipeline.py
++++ b/tests/test_pipeline.py
+@@ -92,6 +92,8 @@ class PolicyTests(unittest.TestCase):
+             expected = load(ROOT / "artifacts/v0.1.0" / (artifact + ".json"))
+             if hosts:
+                 expected["rules"][0]["domain"] = sorted(set(expected["rules"][0]["domain"]) | hosts)
++            if artifact == "anthropic":
++                expected["rules"][0]["domain_suffix"] = sorted(set(expected["rules"][0]["domain_suffix"]) | {"claude.dev"})
+             self.assertEqual(semantic_key(source_document(selected[artifact])), semantic_key(expected), artifact)
+         self.assertEqual(policy["selected_pending"], [])
+ 
+diff --git a/tests/claude_dev_consumer.py b/tests/claude_dev_consumer.py
+new file mode 100644
+index 0000000..a3293d8
+--- /dev/null
++++ b/tests/claude_dev_consumer.py
+@@ -0,0 +1,104 @@
++"""验证 claude.dev 新增后缀的真实隔离消费者行为；仅监听回环地址。"""
++import argparse
++import hashlib
++import http.server
++import json
++from pathlib import Path
++import socket
++import sys
++
++from consumer_durability import Harness, QTYPES, ROOT, serve, sha, write
++
++sys.path.insert(0, str(ROOT / "scripts"))
++from common import compiler
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("--candidate", type=Path, required=True)
++    parser.add_argument("--baseline", type=Path, default=ROOT / "artifacts/v0.1.1")
++    parser.add_argument("--output", type=Path, required=True)
++    args = parser.parse_args()
++    binary, identity = compiler()
++    args.binary = str(binary)
++    harness = Harness(args)
++    positives = ["claude.dev", "a.claude.dev", "a.b.claude.dev"]
++    negatives = ["notclaude.dev", "claude.dev.invalid", "a.claude.dev.invalid", "claude-dev.invalid"]
++    body = (args.candidate / "anthropic.srs").read_bytes()
++    requests = []
++    cleanup = []
++    passed = False
++    server = None
++
++    def probe(label, cfg, selected):
++        with harness.running(label, cfg) as log:
++            for host in positives + negatives:
++                matched = selected and host in positives
++                for qt in QTYPES:
++                    suppressed = qt == 65 or matched and qt == 28
++                    resolver = None if suppressed else "dns_proxy" if matched else "dns_direct"
++                    harness.dns(label, log, host, qt, resolver)
++                for family in [None, 4, 6]:
++                    expected = "reject" if matched and family == 6 else "proxy" if matched else "direct"
++                    harness.route(label, log, host, expected, family)
++
++    class Handler(http.server.BaseHTTPRequestHandler):
++        def do_GET(self):
++            assert self.path == "/anthropic.srs", self.path
++            requests.append({"path": self.path, "sha256": hashlib.sha256(body).hexdigest()})
++            self.send_response(200)
++            self.end_headers()
++            self.wfile.write(body)
++
++        def log_message(self, *_):
++            pass
++
++    try:
++        probe("old-anthropic", harness.product("anthropic", args.baseline), False)
++        probe("new-anthropic", harness.product("anthropic", args.candidate), True)
++        probe("openai-negative", harness.product("openai", args.candidate), False)
++        # 两产品的新旧组合；保留 OpenAI 在 Anthropic 前的产品顺序。
++        for oa_new, an_new in [(False, False), (True, False), (False, True), (True, True)]:
++            cfg = harness.product("anthropic", args.candidate if an_new else args.baseline)
++            oa = harness.product("openai", args.candidate if oa_new else args.baseline)
++            cfg["route"]["rule_set"] = oa["route"]["rule_set"] + cfg["route"]["rule_set"]
++            cfg["route"]["rules"][2:2] = oa["route"]["rules"][2:]
++            cfg["dns"]["rules"][1:1] = oa["dns"]["rules"][1:]
++            probe("combination-" + str(int(oa_new)) + str(int(an_new)), cfg, an_new)
++        server = serve(http.server.ThreadingHTTPServer(("127.0.0.1", 0), Handler))
++        cfg = harness.product("anthropic", args.candidate)
++        cfg["http_clients"] = [{"tag": "bootstrap-http"}]
++        cfg["route"]["default_http_client"] = "bootstrap-http"
++        cfg["route"]["rule_set"] = [{"type": "remote", "tag": "geosite-anthropic", "format": "binary", "url": "http://127.0.0.1:" + str(server.server_address[1]) + "/anthropic.srs"}]
++        cache = args.output / "cold.db"
++        assert not cache.exists()
++        cfg["experimental"] = {"cache_file": {"enabled": True, "path": str(cache.resolve())}}
++        probe("cold-remote-anthropic", cfg, True)
++        assert cache.exists() and len(requests) == 1, requests
++        passed = True
++    finally:
++        if server:
++            server.shutdown()
++            server.server_close()
++        harness.close()
++        tcp = [(k, "::1" if k == "tls6" else "127.0.0.1", p) for k, p in harness.ports.items() if k != "dns"]
++        tcp += [(s.tag, "127.0.0.1", s.server_address[1]) for s in harness.observers]
++        if server:
++            tcp.append(("http-fixture", "127.0.0.1", server.server_address[1]))
++        for name, address, number in tcp:
++            with socket.socket(socket.AF_INET6 if address == "::1" else socket.AF_INET, socket.SOCK_STREAM) as sock:
++                sock.settimeout(.2)
++                cleanup.append({"listener": name, "closed": sock.connect_ex((address, number)) != 0})
++        for name, number in [("dns-inbound", harness.ports["dns"])] + [(s.tag, s.server_address[1]) for s in harness.dns_servers]:
++            with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
++                sock.bind(("127.0.0.1", number))
++                cleanup.append({"listener": name, "closed": True})
++        passed = passed and all(x["closed"] for x in cleanup) and all(x["exited"] for x in harness.processes)
++        report = {"passed": passed, "compiler": identity, "script_sha256": sha(Path(__file__)), "baseline": {p: sha(args.baseline / (p + ".srs")) for p in ["openai", "anthropic"]}, "candidate": {p: sha(args.candidate / (p + ".srs")) for p in ["openai", "anthropic"]}, "requests": len(harness.rows), "rows": harness.rows, "processes": harness.processes, "cleanup": cleanup, "remote_downloads": requests, "limitations": ["仅隔离产品规则及其组合，未验证完整生产配置顺序。", "仅回环观察器、受控DNS与IPv6元数据，不证明公网出口或账户功能。", "未改系统网络、未连接N100、未发布新规则。"]}
++        write(args.output / "results.json", report)
++    assert passed, "消费者断言或清理失败"
++    print(json.dumps({"passed": passed, "requests": len(harness.rows), "processes": len(harness.processes), "listeners_closed": len(cleanup)}))
++
++
++if __name__ == "__main__":
++    main()

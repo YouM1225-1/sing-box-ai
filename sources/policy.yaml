@@ -15,7 +15,7 @@ features:
 enabled_optional:
 - fonts.googleapis.com
 - fonts.gstatic.com
-review_as_of: '2026-09-28'
+review_as_of: '2026-10-03'
 approved_regex:
   ^[^.]+-review\.googlesource\.com$:
     reason: 'Optional Gerrit host: one label ending in -review; does not match other googlesource hosts.'

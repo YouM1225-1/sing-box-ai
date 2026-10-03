@@ -1,0 +1,20 @@
+{
+  "domain": {
+    "added": [],
+    "removed": []
+  },
+  "domain_suffix": {
+    "added": [
+      "claude.dev"
+    ],
+    "removed": []
+  },
+  "domain_regex": {
+    "added": [],
+    "removed": []
+  },
+  "ip_cidr": {
+    "added": [],
+    "removed": []
+  }
+}

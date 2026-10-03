@@ -1,0 +1,393 @@
+{
+  "reviewed_at": "2026-10-03T13:25:40Z",
+  "new_domains": [],
+  "removed_domains": [],
+  "status": "No demonstrated hostname changes within successfully retrieved sources; OpenAI help network/login pages could not be verified because both returned HTTP 403.",
+  "voice": {
+    "byte_identical": true,
+    "count": 23,
+    "sha256": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a",
+    "added_prefixes": [],
+    "removed_prefixes": []
+  },
+  "codex": {
+    "release_tag": "rust-v0.160.0",
+    "release_commit": "a956835d020762cb2b570053af06f643a11c0ecc",
+    "npm_version": "0.160.0",
+    "install_release_and_main_match_prior_source_sha256": true,
+    "readme_matches_prior_sha256": true,
+    "verified_covered_domains": [
+      "github.com",
+      "api.github.com",
+      "release-assets.githubusercontent.com",
+      "registry.npmjs.org"
+    ],
+    "head_packages": 8,
+    "limitations": [
+      "Release asset sampled for macOS ARM64 only.",
+      "Six npm platform packages plus root package checked using metadata and HEAD only.",
+      "No binaries downloaded or executed.",
+      "Version metadata changes from 0.158.0 to 0.160.0 do not by themselves require hostname changes."
+    ]
+  },
+  "unverified": [
+    "openai-network main allowlist and websocket requirements",
+    "openai-login cookies/JavaScript domains"
+  ],
+  "http_sources": {
+    "codex-linux-arm64": {
+      "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-linux-arm64",
+      "retrieved_at": "2026-10-03T13:25:06.883826+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-linux-arm64",
+        "application/json"
+      ],
+      "stderr": "",
+      "bytes": 3383,
+      "sha256": "df14fb0cf85c5e01a93d482b970ee81b37da862fb8c97548fdf3dfbe711bbdd6"
+    },
+    "codex-readme-release": {
+      "url": "https://raw.githubusercontent.com/openai/codex/a956835d020762cb2b570053af06f643a11c0ecc/README.md",
+      "retrieved_at": "2026-10-03T13:25:06.661090+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://raw.githubusercontent.com/openai/codex/a956835d020762cb2b570053af06f643a11c0ecc/README.md",
+        "text/plain; charset=utf-8"
+      ],
+      "stderr": "",
+      "bytes": 3334,
+      "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7"
+    },
+    "codex-darwin-arm64": {
+      "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-darwin-arm64",
+      "retrieved_at": "2026-10-03T13:25:07.219005+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-darwin-arm64",
+        "application/json"
+      ],
+      "stderr": "",
+      "bytes": 3391,
+      "sha256": "8a26cc1831292167171ee673a65c43bab128f4b1f110572b98ea21f804963653"
+    },
+    "codex-win32-x64": {
+      "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-win32-x64",
+      "retrieved_at": "2026-10-03T13:25:06.909641+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-win32-x64",
+        "application/json"
+      ],
+      "stderr": "",
+      "bytes": 3368,
+      "sha256": "4f0029035cbe3fbbd9887820643665f1f519a02b022389c4713a073b2b5ab7c0"
+    },
+    "codex-linux-x64": {
+      "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-linux-x64",
+      "retrieved_at": "2026-10-03T13:25:06.883772+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-linux-x64",
+        "application/json"
+      ],
+      "stderr": "",
+      "bytes": 3367,
+      "sha256": "d55bb954b4533360a7303d092ed11f4354a79333ef314a1519aa440f4e520703"
+    },
+    "codex-install-release": {
+      "url": "https://raw.githubusercontent.com/openai/codex/a956835d020762cb2b570053af06f643a11c0ecc/scripts/install/install.sh",
+      "retrieved_at": "2026-10-03T13:25:06.713868+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://raw.githubusercontent.com/openai/codex/a956835d020762cb2b570053af06f643a11c0ecc/scripts/install/install.sh",
+        "text/plain; charset=utf-8"
+      ],
+      "stderr": "",
+      "bytes": 34564,
+      "sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6"
+    },
+    "codex-install-main": {
+      "url": "https://raw.githubusercontent.com/openai/codex/b741e480e203f037ca726bc2a76d99a8e8668e66/scripts/install/install.sh",
+      "retrieved_at": "2026-10-03T13:25:06.666061+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://raw.githubusercontent.com/openai/codex/b741e480e203f037ca726bc2a76d99a8e8668e66/scripts/install/install.sh",
+        "text/plain; charset=utf-8"
+      ],
+      "stderr": "",
+      "bytes": 34564,
+      "sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6"
+    },
+    "codex-darwin-x64": {
+      "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-darwin-x64",
+      "retrieved_at": "2026-10-03T13:25:06.935853+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-darwin-x64",
+        "application/json"
+      ],
+      "stderr": "",
+      "bytes": 3376,
+      "sha256": "9bb24240884a48ae637c46a06fbbec2d01373da03a59b75fd340f42c899c37e1"
+    },
+    "codex-main": {
+      "url": "https://api.github.com/repos/openai/codex/commits/main",
+      "retrieved_at": "2026-10-03T13:24:13.700342+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://api.github.com/repos/openai/codex/commits/main",
+        "application/json; charset=utf-8"
+      ],
+      "stderr": "",
+      "bytes": 21401,
+      "sha256": "dee38f6b4d80402e9c0e3d47490756e62cae8c62376bbd9627ddb3e494f4d977"
+    },
+    "codex-win32-arm64": {
+      "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-win32-arm64",
+      "retrieved_at": "2026-10-03T13:25:06.869851+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-win32-arm64",
+        "application/json"
+      ],
+      "stderr": "",
+      "bytes": 3383,
+      "sha256": "85d50029f41eb8294d4dc74e9ab16c53bc2b8ff8568e13aa6b546b7f856949e9"
+    },
+    "network": {
+      "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
+      "retrieved_at": "2026-10-03T13:24:13.493502+00:00",
+      "curl_exit": 0,
+      "response": [
+        "403",
+        "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
+        "text/html; charset=UTF-8"
+      ],
+      "stderr": "",
+      "bytes": 9983,
+      "sha256": "7bcd9ab5b13307f63a55d2c860d785b3280a240cae07b377b6c39e307887ea94"
+    },
+    "codex-npm-latest": {
+      "url": "https://registry.npmjs.org/@openai%2Fcodex/latest",
+      "retrieved_at": "2026-10-03T13:24:13.704268+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://registry.npmjs.org/@openai%2Fcodex/latest",
+        "application/json"
+      ],
+      "stderr": "",
+      "bytes": 3517,
+      "sha256": "d61a592473442230ebfa5cc32976967bd023c6ed1243871c38cedcbed26f0733"
+    },
+    "login": {
+      "url": "https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt",
+      "retrieved_at": "2026-10-03T13:24:13.499277+00:00",
+      "curl_exit": 0,
+      "response": [
+        "403",
+        "https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt",
+        "text/html; charset=UTF-8"
+      ],
+      "stderr": "",
+      "bytes": 9850,
+      "sha256": "e8744f55327cfb3579c4f49735218f0fdd995b20274966b5592e3719e49e7fbd"
+    },
+    "codex-latest": {
+      "url": "https://api.github.com/repos/openai/codex/releases/latest",
+      "retrieved_at": "2026-10-03T13:24:13.544563+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://api.github.com/repos/openai/codex/releases/latest",
+        "application/json; charset=utf-8"
+      ],
+      "stderr": "",
+      "bytes": 305909,
+      "sha256": "26899cad0d6ef8926e5cd4444e04983c0acc4e5c111a220c86741cc4e88299d5"
+    },
+    "voice": {
+      "url": "https://openai.com/chatgpt-voice.json",
+      "retrieved_at": "2026-10-03T13:24:13.690321+00:00",
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://openai.com/chatgpt-voice.json",
+        "application/octet-stream"
+      ],
+      "stderr": "",
+      "bytes": 895,
+      "sha256": "8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a"
+    }
+  },
+  "head_evidence": {
+    "codex-win32-arm64": {
+      "retrieved_at": "2026-10-03T13:25:39.694739+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-win32-arm64.tgz",
+          "hostname": "registry.npmjs.org",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "014afb4b39281ae7793f41ce0dfb23a5c158a3916058154b17f4f174d24d0dd0",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "stderr": ""
+        }
+      ]
+    },
+    "codex-release-asset": {
+      "retrieved_at": "2026-10-03T13:25:40.089111+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-aarch64-apple-darwin.tar.gz",
+          "hostname": "github.com",
+          "status_lines": [
+            "HTTP/2 302 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "8b9fd62227c3d4f73a3b21759ed7daffa03d2e6cd60bd358bd8a8930f496e509",
+          "content_type": "text/html; charset=utf-8",
+          "content_length": "0",
+          "stderr": "",
+          "location_without_query": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/b605bc46-d75e-40b4-87c7-b2cf9d5aad52"
+        },
+        {
+          "url": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/b605bc46-d75e-40b4-87c7-b2cf9d5aad52",
+          "hostname": "release-assets.githubusercontent.com",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "f1b6c687c0a3fd2ddea8f14d61bf6e239be709a98d31cc41433fc2ee03a75ad4",
+          "content_type": "application/octet-stream",
+          "content_length": "95893648",
+          "stderr": ""
+        }
+      ]
+    },
+    "codex-darwin-x64": {
+      "retrieved_at": "2026-10-03T13:25:39.691056+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-darwin-x64.tgz",
+          "hostname": "registry.npmjs.org",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "c5befc39df1fc175ba5729ab5a51d45d16fd5cd26a9cede2bb4a3317355892f6",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "stderr": ""
+        }
+      ]
+    },
+    "codex-npm-latest": {
+      "retrieved_at": "2026-10-03T13:25:39.690846+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0.tgz",
+          "hostname": "registry.npmjs.org",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "147fc393afbd1f051a327b4f19216497dd28ddd77549ed6009c6e965c1df4090",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "stderr": ""
+        }
+      ]
+    },
+    "codex-linux-arm64": {
+      "retrieved_at": "2026-10-03T13:25:39.694910+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-linux-arm64.tgz",
+          "hostname": "registry.npmjs.org",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "34ef5d7fe22652218e35b7070cc4ea693df17f46500dace79c1cc8489b557450",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "stderr": ""
+        }
+      ]
+    },
+    "codex-win32-x64": {
+      "retrieved_at": "2026-10-03T13:25:39.688418+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-win32-x64.tgz",
+          "hostname": "registry.npmjs.org",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "05038ceefc899c3961daf4e7b121299b711cf0712b05cef457c7572e12ea80d4",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "stderr": ""
+        }
+      ]
+    },
+    "codex-darwin-arm64": {
+      "retrieved_at": "2026-10-03T13:25:39.689859+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-darwin-arm64.tgz",
+          "hostname": "registry.npmjs.org",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "abf3aada2d75afde1e453261e89a405d06560f5ff2658444676b5d3301853983",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "stderr": ""
+        }
+      ]
+    },
+    "codex-linux-x64": {
+      "retrieved_at": "2026-10-03T13:25:39.694001+00:00",
+      "method": "HEAD only; no package body downloaded",
+      "chain": [
+        {
+          "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-linux-x64.tgz",
+          "hostname": "registry.npmjs.org",
+          "status_lines": [
+            "HTTP/2 200 "
+          ],
+          "curl_exit": 0,
+          "header_sha256": "e29ad516ba93b5c92e24224423499e7327e23cd819e1054f32783addbcd80026",
+          "content_type": "application/octet-stream",
+          "content_length": null,
+          "stderr": ""
+        }
+      ]
+    }
+  }
+}

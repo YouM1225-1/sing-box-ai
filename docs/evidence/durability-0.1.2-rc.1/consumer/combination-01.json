@@ -1,0 +1,173 @@
+{
+  "log": {
+    "level": "debug",
+    "timestamp": false
+  },
+  "dns": {
+    "disable_cache": true,
+    "servers": [
+      {
+        "type": "udp",
+        "tag": "dns_proxy",
+        "server": "127.0.0.1",
+        "server_port": 56572
+      },
+      {
+        "type": "udp",
+        "tag": "dns_direct",
+        "server": "127.0.0.1",
+        "server_port": 53805
+      },
+      {
+        "type": "udp",
+        "tag": "dns_local",
+        "server": "127.0.0.1",
+        "server_port": 53754
+      },
+      {
+        "type": "hosts",
+        "tag": "hosts",
+        "path": []
+      },
+      {
+        "type": "hosts",
+        "tag": "dns_mdns",
+        "path": []
+      }
+    ],
+    "rules": [
+      {
+        "query_type": "HTTPS",
+        "action": "predefined"
+      },
+      {
+        "rule_set": "geosite-openai",
+        "query_type": "AAAA",
+        "action": "predefined"
+      },
+      {
+        "rule_set": "geosite-openai",
+        "server": "dns_proxy"
+      },
+      {
+        "rule_set": "geosite-anthropic",
+        "query_type": "AAAA",
+        "action": "predefined"
+      },
+      {
+        "rule_set": "geosite-anthropic",
+        "server": "dns_proxy"
+      }
+    ],
+    "final": "dns_direct"
+  },
+  "inbounds": [
+    {
+      "type": "socks",
+      "tag": "audit-socks",
+      "listen": "127.0.0.1",
+      "listen_port": 59071
+    },
+    {
+      "type": "direct",
+      "tag": "audit-dns",
+      "listen": "127.0.0.1",
+      "listen_port": 60497,
+      "network": "udp",
+      "override_address": "127.0.0.1",
+      "override_port": 53
+    },
+    {
+      "type": "direct",
+      "tag": "audit-tls4",
+      "listen": "127.0.0.1",
+      "listen_port": 59072,
+      "network": "tcp",
+      "override_address": "198.51.100.200",
+      "override_port": 443
+    },
+    {
+      "type": "direct",
+      "tag": "audit-tls6",
+      "listen": "::1",
+      "listen_port": 59073,
+      "network": "tcp",
+      "override_address": "2001:db8:ffff::200",
+      "override_port": 443
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "socks",
+      "tag": "direct",
+      "server": "127.0.0.1",
+      "server_port": 59068,
+      "version": "5"
+    },
+    {
+      "type": "socks",
+      "tag": "proxy",
+      "server": "127.0.0.1",
+      "server_port": 59069,
+      "version": "5"
+    },
+    {
+      "type": "socks",
+      "tag": "bridge",
+      "server": "127.0.0.1",
+      "server_port": 59070,
+      "version": "5"
+    }
+  ],
+  "route": {
+    "final": "direct",
+    "default_domain_resolver": "dns_direct",
+    "rules": [
+      {
+        "port": 53,
+        "action": "hijack-dns"
+      },
+      {
+        "action": "sniff",
+        "sniffer": [
+          "tls"
+        ],
+        "timeout": "80ms"
+      },
+      {
+        "rule_set": "geosite-openai",
+        "ip_version": 6,
+        "action": "reject",
+        "no_drop": true
+      },
+      {
+        "rule_set": "geosite-openai",
+        "outbound": "proxy"
+      },
+      {
+        "rule_set": "geosite-anthropic",
+        "ip_version": 6,
+        "action": "reject",
+        "no_drop": true
+      },
+      {
+        "rule_set": "geosite-anthropic",
+        "outbound": "proxy"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "local",
+        "tag": "geosite-openai",
+        "format": "binary",
+        "path": "/private/var/folders/pl/bpv2s_ks1mz24cd8ks4gblbr0000gn/T/sing-box-ai-review.j4se7O/repo/artifacts/v0.1.1/openai.srs"
+      },
+      {
+        "type": "local",
+        "tag": "geosite-anthropic",
+        "format": "binary",
+        "path": "/private/var/folders/pl/bpv2s_ks1mz24cd8ks4gblbr0000gn/T/sing-box-ai-review.j4se7O/candidate-evidence/candidate-1/anthropic.srs"
+      }
+    ]
+  }
+}

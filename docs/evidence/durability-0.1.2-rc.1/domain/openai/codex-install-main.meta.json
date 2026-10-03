@@ -1,0 +1,13 @@
+{
+  "url": "https://raw.githubusercontent.com/openai/codex/b741e480e203f037ca726bc2a76d99a8e8668e66/scripts/install/install.sh",
+  "retrieved_at": "2026-10-03T13:25:06.666061+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://raw.githubusercontent.com/openai/codex/b741e480e203f037ca726bc2a76d99a8e8668e66/scripts/install/install.sh",
+    "text/plain; charset=utf-8"
+  ],
+  "stderr": "",
+  "bytes": 34564,
+  "sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6"
+}

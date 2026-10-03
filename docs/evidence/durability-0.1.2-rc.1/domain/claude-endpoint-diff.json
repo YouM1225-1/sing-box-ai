@@ -1,0 +1,62 @@
+{
+  "claude-code": {
+    "new_count": 17,
+    "old_count": 17,
+    "added": [],
+    "removed": [],
+    "current_values": [
+      "*-review.googlesource.com",
+      "*.frame.claudeusercontent.com",
+      "api.anthropic.com",
+      "bridge.claudeusercontent.com",
+      "browser-intake-us5-datadoghq.com",
+      "claude.ai",
+      "claude.com",
+      "code.claude.com",
+      "downloads.claude.ai",
+      "formulae.brew.sh",
+      "github.com",
+      "http-intake.logs.us5.datadoghq.com",
+      "mcp-proxy.anthropic.com",
+      "platform.claude.com",
+      "raw.githubusercontent.com",
+      "registry.npmjs.org",
+      "storage.googleapis.com"
+    ],
+    "third_party_library_or_font_missing_from_current": []
+  },
+  "claude-desktop": {
+    "new_count": 22,
+    "old_count": 22,
+    "added": [],
+    "removed": [],
+    "current_values": [
+      "*.anthropic.com",
+      "*.claude.ai",
+      "*.claude.app",
+      "*.claude.com",
+      "*.claudemcpcontent.com",
+      "*.claudeusercontent.com",
+      "*.livepreview.claude.ai",
+      "*.livepreview.claude.app",
+      "a-api.anthropic.com",
+      "a-cdn.anthropic.com",
+      "a-cdn.claude.ai",
+      "a.claude.ai",
+      "anthropic.com",
+      "api.anthropic.com",
+      "assets-proxy.anthropic.com",
+      "assets.claude.ai",
+      "claude.ai",
+      "claude.app",
+      "claude.com",
+      "downloads.claude.ai",
+      "platform.claude.com",
+      "s-cdn.anthropic.com"
+    ],
+    "third_party_library_or_font_missing_from_current": []
+  },
+  "anthropic_ip": {
+    "bytes_unchanged": true
+  }
+}

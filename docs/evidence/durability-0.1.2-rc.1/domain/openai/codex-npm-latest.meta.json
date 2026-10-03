@@ -1,0 +1,13 @@
+{
+  "url": "https://registry.npmjs.org/@openai%2Fcodex/latest",
+  "retrieved_at": "2026-10-03T13:24:13.704268+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://registry.npmjs.org/@openai%2Fcodex/latest",
+    "application/json"
+  ],
+  "stderr": "",
+  "bytes": 3517,
+  "sha256": "d61a592473442230ebfa5cc32976967bd023c6ed1243871c38cedcbed26f0733"
+}

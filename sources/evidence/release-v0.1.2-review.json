@@ -1,0 +1,77 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "comparison": {
+    "accepted_candidate": "0.1.2-rc.1",
+    "added_anthropic_domain_suffix": [
+      "claude.dev"
+    ],
+    "baseline": "v0.1.1",
+    "formal_rebuild_requirement": "三个 SRS 与三个源 JSON 均须和已验收候选逐字节一致",
+    "origin": "SagerNet/sing-geosite 完整社区 SRS 基线，DLC 同字段旁证；不标为 Anthropic 官方网络要求",
+    "unchanged": [
+      "OpenAI 全部输出字节",
+      "Anthropic 来源 IP 制品全部字节",
+      "其他域名、正则及全部目的和来源 CIDR",
+      "所有补充 YAML 与功能/optional 选择",
+      "17 pending 仍未选择",
+      "Claude Challenge 原批准和复核期限",
+      "客户端配置、产品规则位置及系统网络"
+    ]
+  },
+  "conclusion": "批准在正式输入提交绑定、release 模式两次独立重建、原生验证及静态发布门槛全部通过后发布这三个指定摘要。候选已通过两批各 2066 项原生检查、46 项回归和 560 个隔离消费者请求；截图九项均有覆盖。相对 v0.1.1 唯一规则增量为 claude.dev root suffix，包含 apex 与任意层子域，近似域不匹配。在受控产品消费者中，新命中继承产品 AAAA 空应答和 IPv6 拒绝，IPv4/域名走产品代理；这些是固定合成环境观察，不能直接冒称生产首次命中或公网成功。正式 SRS 与候选相同时复用该字节绑定证据；历史候选 manifest 的未提交输入身份不改写为正式提交。Latest 订阅者可能自动取回新规则，消费者声明维持空/pending。",
+  "evidence": [
+    {
+      "path": "artifacts/v0.1.1/manifest.json",
+      "sha256": "2d5e0164c5f53fc0581145f5bcd75cbfe032506148236c61e85edd3cc653ba6a"
+    },
+    {
+      "path": "artifacts/v0.1.2-rc.1/manifest.json",
+      "sha256": "644ac59be65eda8b15b4b203dfde8a511ca139965c2f80f889d39d6fd00251c5"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/domain/geosite-semantic-diff.json",
+      "sha256": "811acfd8a1ba967f653dc9815fd8bace66a265d6a9202509549933eb6a17911a"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/domain/candidate-independent/review.json",
+      "sha256": "00089f6c0b1e9ad3750424f102456ce37ed2ea09464e102e2d1ad29c3b2d3d95"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/consumer/results.json",
+      "sha256": "774949b0c79e8834e50487e99562c38a3567befd06ecd26f2b31cbf6f0c5c8fc"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/build/byte-comparison.json",
+      "sha256": "3efa713ded31e3a294d50b337c868c81354ebaa34f27f6c96f52e6c6da4bc965"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/build/build-summary.json",
+      "sha256": "036a7d857a13aa587a4e12f11bd99fb81bb805f0462b6146ebefed3a768087dd"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/screenshot-domain-coverage.json",
+      "sha256": "faba47c2f0767a036a46c443111b9998c7c37cda64bdb3f4e3a75fb9761ce7dc"
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/domain/openai/review-result.json",
+      "sha256": "f68620bae50973a5e3654b72467c71e488472983d4e008c7893d1e336f72dcb3"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "limitations": [
+    "2026-10-03 OpenAI 网络要求主页面与登录排障页面均返回 HTTP 403，未取得最新正文；仅能确认成功抓取来源未展示域名变化，不宣称 OpenAI 官方清单已全面核实。",
+    "Voice JSON 字节和 23 个地址不变；Codex 固定安装器、README、Release 和 npm 元数据/HEAD 核查未发现新增主机，不能代替本轮实际安装或任意平台运行验收。",
+    "560 个请求全部使用合成回环配置；未验证真实登录、账户、Challenge、公网出口、生产 DNS、TUN、目标设备启动或重启持久化。"
+  ],
+  "project_version": "0.1.2",
+  "reviewed_on": "2026-10-03",
+  "reviewer": "Codex 主任务审阅及候选独立只读复核，原始证据按摘要绑定",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

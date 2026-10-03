@@ -1,0 +1,31 @@
+{
+  "retrieved_at": "2026-10-03T13:25:40.089111+00:00",
+  "method": "HEAD only; no package body downloaded",
+  "chain": [
+    {
+      "url": "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-aarch64-apple-darwin.tar.gz",
+      "hostname": "github.com",
+      "status_lines": [
+        "HTTP/2 302 "
+      ],
+      "curl_exit": 0,
+      "header_sha256": "8b9fd62227c3d4f73a3b21759ed7daffa03d2e6cd60bd358bd8a8930f496e509",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": "0",
+      "stderr": "",
+      "location_without_query": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/b605bc46-d75e-40b4-87c7-b2cf9d5aad52"
+    },
+    {
+      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/965415649/b605bc46-d75e-40b4-87c7-b2cf9d5aad52",
+      "hostname": "release-assets.githubusercontent.com",
+      "status_lines": [
+        "HTTP/2 200 "
+      ],
+      "curl_exit": 0,
+      "header_sha256": "f1b6c687c0a3fd2ddea8f14d61bf6e239be709a98d31cc41433fc2ee03a75ad4",
+      "content_type": "application/octet-stream",
+      "content_length": "95893648",
+      "stderr": ""
+    }
+  ]
+}

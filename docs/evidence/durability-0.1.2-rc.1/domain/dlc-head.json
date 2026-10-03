@@ -1,0 +1,101 @@
+{
+  "sha": "2c892a618f4e23c549d28edd0f3f75407521b1aa",
+  "node_id": "C_kwDOELqAodoAKDJjODkyYTYxOGY0ZTIzYzU0OWQyOGVkZDBmM2Y3NTQwNzUyMWIxYWE",
+  "commit": {
+    "author": {
+      "name": "Loyalsoldier",
+      "email": "10487845+Loyalsoldier@users.noreply.github.com",
+      "date": "2026-10-02T05:00:05Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-10-02T05:00:05Z"
+    },
+    "message": "Add claude.dev to anthropic (#4114)",
+    "tree": {
+      "sha": "604a8a45b773220228ec5fcbf9c23d1779625287",
+      "url": "https://api.github.com/repos/v2fly/domain-list-community/git/trees/604a8a45b773220228ec5fcbf9c23d1779625287"
+    },
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/git/commits/2c892a618f4e23c549d28edd0f3f75407521b1aa",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqvzpVCRC1aQ7uu5UhlAAAqnYQAC6dYUPUwyNnGKEVkt0kACL6\n7yBIxSI9F2MfGxAXryZ9fEMrPPKuM/CwvTy/8KGp4vdjFOZXmUh/owvXSh3AzeS7\n9+7HDLjzfSjTF2fUnF9DdP2xO8/EIKbOaci/e3RvzxNe5hP2nzh89t/qPV+PjGxI\nkqzBTKBSNJHk4nk/P2sEXtj4lWnlj6pc58JDFqs5QngtS9Az1fCOvsnLwdriIRkA\nq/aBJz032ZEnrgeNJ3NzkpBH5qtuT4lYIuhNJnAxWYoe7Nk6jAmUYW2DIGJKOOTc\n17am9xDuXvuq2L9WFu86TujVG/saTKz2+xmV74buRf8dqFTZ6Sgb6BW2LNQY27R3\ndxPZVulruK1cTf0me6E0PgijOygipTZLOX+NJRbo9sVlEgV51M+wZ1D7R4gYO5h2\nhB13HZBYXba9nU+VqbLDlj38u/Eu1YJqsNkiA8Jb8Xc/CpXOEM8qQztpZKgl/DOq\n8WonuLRqzcJ7z2zueSh7PTbfwfrLC53UIv1Cr4Iswb2+YvbzftWvq+2BqfQ6w95/\niiIZ83qiVD8uj+WRlTZC481fF3yL+flDBGcilhtXV08UTKLQ00Gi/ThMPZMb5/tj\nKKovKE0GXrk+7lgA/b6P/ZK4Yk0Sl024ghbYG+MNUBdOT6VRkILhE59U3dSW6KBn\nY4X7V+O2MZPs6rR6+G5m\n=0GBX\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 604a8a45b773220228ec5fcbf9c23d1779625287\nparent 2d71342eea1720da57261b55663c9d55619e9b1c\nauthor Loyalsoldier <10487845+Loyalsoldier@users.noreply.github.com> 1790917205 +0800\ncommitter GitHub <noreply@github.com> 1790917205 +0800\n\nAdd claude.dev to anthropic (#4114)",
+      "verified_at": "2026-10-02T05:00:06Z"
+    }
+  },
+  "url": "https://api.github.com/repos/v2fly/domain-list-community/commits/2c892a618f4e23c549d28edd0f3f75407521b1aa",
+  "html_url": "https://github.com/v2fly/domain-list-community/commit/2c892a618f4e23c549d28edd0f3f75407521b1aa",
+  "comments_url": "https://api.github.com/repos/v2fly/domain-list-community/commits/2c892a618f4e23c549d28edd0f3f75407521b1aa/comments",
+  "author": {
+    "login": "Loyalsoldier",
+    "id": 10487845,
+    "node_id": "MDQ6VXNlcjEwNDg3ODQ1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10487845?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Loyalsoldier",
+    "html_url": "https://github.com/Loyalsoldier",
+    "followers_url": "https://api.github.com/users/Loyalsoldier/followers",
+    "following_url": "https://api.github.com/users/Loyalsoldier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Loyalsoldier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Loyalsoldier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Loyalsoldier/subscriptions",
+    "organizations_url": "https://api.github.com/users/Loyalsoldier/orgs",
+    "repos_url": "https://api.github.com/users/Loyalsoldier/repos",
+    "events_url": "https://api.github.com/users/Loyalsoldier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Loyalsoldier/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2d71342eea1720da57261b55663c9d55619e9b1c",
+      "url": "https://api.github.com/repos/v2fly/domain-list-community/commits/2d71342eea1720da57261b55663c9d55619e9b1c",
+      "html_url": "https://github.com/v2fly/domain-list-community/commit/2d71342eea1720da57261b55663c9d55619e9b1c"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c8e7ad7aa5bfa65b587e01911842eb4307e75256",
+      "filename": "data/anthropic",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/v2fly/domain-list-community/blob/2c892a618f4e23c549d28edd0f3f75407521b1aa/data%2Fanthropic",
+      "raw_url": "https://github.com/v2fly/domain-list-community/raw/2c892a618f4e23c549d28edd0f3f75407521b1aa/data%2Fanthropic",
+      "contents_url": "https://api.github.com/repos/v2fly/domain-list-community/contents/data%2Fanthropic?ref=2c892a618f4e23c549d28edd0f3f75407521b1aa",
+      "patch": "@@ -2,6 +2,7 @@ anthropic.com\n clau.de\n claude.ai\n claude.com\n+claude.dev\n claudemcpclient.com\n claudemcpcontent.com\n claudeusercontent.com"
+    }
+  ]
+}

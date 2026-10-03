@@ -1,0 +1,32 @@
+{
+  "published-v0.1.1": {
+    "suffixes": {
+      "anthropic.com": true,
+      "clau.de": true,
+      "claude.ai": true,
+      "claude.com": true,
+      "claude.dev": false,
+      "claudemcpclient.com": true,
+      "claudemcpcontent.com": true,
+      "claudeusercontent.com": true
+    },
+    "exact": {
+      "servd-anthropic-website.b-cdn.net": true
+    }
+  },
+  "candidate-0.1.2-rc.1": {
+    "suffixes": {
+      "anthropic.com": true,
+      "clau.de": true,
+      "claude.ai": true,
+      "claude.com": true,
+      "claude.dev": true,
+      "claudemcpclient.com": true,
+      "claudemcpcontent.com": true,
+      "claudeusercontent.com": true
+    },
+    "exact": {
+      "servd-anthropic-website.b-cdn.net": true
+    }
+  }
+}

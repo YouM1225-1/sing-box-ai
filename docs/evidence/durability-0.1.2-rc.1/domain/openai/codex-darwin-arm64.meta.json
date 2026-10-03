@@ -1,0 +1,13 @@
+{
+  "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-darwin-arm64",
+  "retrieved_at": "2026-10-03T13:25:07.219005+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-darwin-arm64",
+    "application/json"
+  ],
+  "stderr": "",
+  "bytes": 3391,
+  "sha256": "8a26cc1831292167171ee673a65c43bab128f4b1f110572b98ea21f804963653"
+}

@@ -1,0 +1,13 @@
+{
+  "url": "https://api.github.com/repos/openai/codex/commits/main",
+  "retrieved_at": "2026-10-03T13:24:13.700342+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://api.github.com/repos/openai/codex/commits/main",
+    "application/json; charset=utf-8"
+  ],
+  "stderr": "",
+  "bytes": 21401,
+  "sha256": "dee38f6b4d80402e9c0e3d47490756e62cae8c62376bbd9627ddb3e494f4d977"
+}

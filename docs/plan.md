@@ -1,14 +1,14 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.22**；核验日期：2026-09-28（Asia/Shanghai）。
+> 文档修订：**1.24**；核验日期：2026-10-03（Asia/Shanghai）。
 > 主仓库：`YouM1225-1/sing-box-ai`；当前正式发行、Latest 与 `dist/` 均为 `v0.1.1`；发布证据见 §7。
-> 当前状态：受审输入已提交，手动重建、GitHub 正式发布与下载核验完成；未访问或操作 N100，运行验收仍为 pending。
+> 当前状态：用户已授权正式发布 `0.1.2`，三份目标 SRS 绑定已验收 `0.1.2-rc.1`；正式输入待提交，构建与发布待执行，见 §7.1。正式发行、Latest 和 `dist/` 仍为 `v0.1.1`；未访问或操作 N100。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
 完成终点：固定输入、补充证据、生成器、校验器、manifest 和测试契约一致；构建并审阅同批次三个制品，按授权发布静态发行；仅对经过该批次运行验收的环境声明可用。规则集合完整性、消费者分流正确性和真实业务成功分别验收。
 
-本次新增授权为手动构建并发布 `0.1.1`；范围为已验收的四个 OpenAI Codex 安装 exact 和两个 Anthropic 字体 optional。保留产品路由及 DNS 原位置，现有配置与 iCloud 不改；不访问或修改 N100，不重启/重载，不改系统 DNS、路由或防火墙。新发布授权与语义审阅单独绑定 `0.1.1` 的指定摘要，旧批准不沿用。更新 Latest 后在线订阅者可能自动下载新规则，这不代表 N100 已接受或完成运行验收。
+用户在验收 `0.1.2-rc.1` 后于 2026-10-03 明确要求“发布”。本次授权为手动构建、提交及推送相应输入和制品、发布正式 `0.1.2`，先非 Latest 验收固定下载和本机空缓存加载，再设为 Latest。目标规则只新增社区基线中的 `claude.dev` root suffix，三份 SRS 必须与候选逐字节一致。保留产品路由及 DNS 原位置，现有配置与 iCloud 不改；不访问或修改 N100，不重启/重载，不改系统 DNS、路由或防火墙。新批准单独绑定 `0.1.2`，不沿用旧版批准。历史候选 `publication_approval=null` 保持原样；正式静态发布后也继续保持 `validated_consumers=[]`、`integration_evidence=[]`、`deployment_status=pending`。
 
 阅读入口：[规则职责](#scope) → [固定输入与语义](#inputs) → [完整补充清单](#supplements) → [N100 配置与影响](#consumer) → [构建发布契约](#build) → [执行计划](#execution)。
 
@@ -34,8 +34,8 @@
 
 | 对象 | 固定版本或内容 |
 |---|---|
-| SagerNet/sing-geosite 产品基线 | `e6a8117545c35a17c508e3f37a9a990571234428`；同一提交的两份 SRS |
-| DLC 溯源文本 | `bcea25493ed28c387660fe49ce1ceb242d2efca0`；`data/openai`、`data/anthropic` |
+| SagerNet/sing-geosite 产品基线 | `53e0e99be15953f1865c4f3f4cffe8c8f8543dff`；2026-10-03 固定的同一提交两份 SRS |
+| DLC 溯源文本 | `2c892a618f4e23c549d28edd0f3f75407521b1aa`；2026-10-03 固定的 `data/openai`、`data/anthropic` |
 | 实测运行时/编译器 | sing-box `v1.15.0-alpha.9`，`132b38e9caaba1a1959354d518e54d2d08419afe` |
 | 对应 sing 依赖 | `v0.9.6-0.20260922013359-4ca3bebe0b8e` |
 | 2026-09-28 查询所得 testing | `710d7c715b10cf9fc158b1ab7fd7198754962c59`；仅关键源码静态比对，未构建运行 |
@@ -48,11 +48,13 @@
 | 输入 | 字节数 / SHA-256 |
 |---|---|
 | `geosite-openai.srs` | 451 / `aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1` |
-| `geosite-anthropic.srs` | 167 / `aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906` |
+| `geosite-anthropic.srs` | 182 / `4c58ec54eed852bddc07d434d42b1b97c4c22ebc52aa3b393221b607c3d56f6f` |
 | OpenAI Voice JSON | `8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a` |
 | alpha.9 Darwin arm64 编译器 | `fcb47f341e6660a35385ceeffc0cebb2daca3fed4d35c729b7d45f7b66555f9a` |
 
-两份原始 SRS 均为 binary v1，alpha.9 原生反编译成功：OpenAI 为 9 exact、13 root suffix、1 regex；Anthropic 为 1 exact、7 root suffix；均无 IP。反编译结果与固定 DLC 文本逐字段等价核对。v1 不是损坏或必须换源的理由。`domain:x` 与 `domain_suffix:.x` 可等价表示为 `domain_suffix:x`；这种形态变化不代表丢失规则。
+两份原始 SRS 均为 binary v1，alpha.9 原生反编译成功：OpenAI 为 9 exact、13 root suffix、1 regex；Anthropic 为 1 exact、8 root suffix；均无 IP。反编译结果与固定 DLC 文本逐字段等价核对。v1 不是损坏或必须换源的理由。`domain:x` 与 `domain_suffix:.x` 可等价表示为 `domain_suffix:x`；这种形态变化不代表丢失规则。
+
+2026-10-03 上游复核只发现 Anthropic root suffix `claude.dev` 新增，覆盖 apex 与各级子域；OpenAI 基线字节未变，其他域名、正则和 IP 语义未变。该条来自社区完整产品基线及 DLC 旁证，不改标为 Anthropic 官方网络要求，也不新增手写补充。固定原件、SHA、URL、UTC 取得时刻和许可证登记见 [upstreams](../sources/upstreams.yaml)；新增行见 [DLC Anthropic](../sources/upstream/dlc-anthropic.txt)。
 
 原始 SRS 字节、许可证及溯源材料须归档。`rule-set` 分支可能重建；完整 Git SHA 不保证对象永久可取。联网更新发现新对象后先固定、归档和审阅，离线构建仅用登记输入，禁止依赖浮动分支、`latest` 或未登记缓存。
 
@@ -122,7 +124,7 @@ setup.workos.com
 workos.imgix.net
 ```
 
-**4 个 Codex 安装 exact**（本版新增；`feature-required`、`features: [codex-install]`、共享依赖）：
+**4 个 Codex 安装 exact**（`0.1.1` 新增；`feature-required`、`features: [codex-install]`、共享依赖）：
 
 ```text
 github.com
@@ -163,7 +165,7 @@ registry.npmjs.org
 74.248.148.7/32
 ```
 
-官方 Voice 首选 UDP 3478，受限时回落 TCP 443；本规则的 `ip_cidr` 本身不限端口，属于目的分流，不是端口防火墙。每次来源同步及候选构建前检查 Voice 字节、`creationTime` 和地址集合变化，变化必须进入 semantic diff。读取失败或解析得到空表时停止更新，不能以旧内容冒充新抓取结果；固定历史输入仍可离线重建。现有定时 CI 只做发现与候选校验，不自动采纳来源、提交配置或发布；本轮交付制品由本机手动构建。
+官方 Voice 首选 UDP 3478，受限时回落 TCP 443；本规则的 `ip_cidr` 本身不限端口，属于目的分流，不是端口防火墙。每次来源同步及候选构建前检查 Voice 字节、`creationTime` 和地址集合变化，变化必须进入 semantic diff。读取失败或解析得到空表时停止更新，不能以旧内容冒充新抓取结果；固定历史输入仍可离线重建。`Validate rules` workflow 已在 main 提交 `ed69b36617f7afa0c1244e724c4a4d54f303587c` 删除，当前无该定时或推送校验流程；本轮保留此删除，由本机手动构建与验证。
 
 固定官方事实清单为 **29 项：9 个通配域、20 个 exact**；2026-09-28 后续正文请求曾 HTTP 403，不能称本候选重新取得最新动态清单。上述 3+11 补充与完整基线联合覆盖它们；`js.intercomcdn.com` 已由补充 `.intercomcdn.com` 覆盖。`auth.openai.com`、`chatgpt.com`、`openai.com`、`ws.chatgpt.com` 也在基线内。官方注明 ChatGPT WebSocket 为 `wss://ws.chatgpt.com`、Codex 为 `wss://chatgpt.com/`，消费者还需允许 TCP443 升级及持续连接；匹配成功不证明长连接成功。
 
@@ -391,7 +393,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前目标正式版本为 `0.1.1`；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式目标为 `0.1.2`，已验收候选为 `0.1.2-rc.1`，公开正式发行仍为 `0.1.1`；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -425,16 +427,53 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-当前[发布授权](../sources/evidence/release-v0.1.1-authorization.json)与[静态语义审阅](../sources/evidence/release-v0.1.1-review.json)只批准 `0.1.1` 的三个指定摘要；`release-review.json` 绑定这批记录。旧 `0.1.0` 记录及候选 `publication_approval=null` 保留历史身份。
+当前[发布授权](../sources/evidence/release-v0.1.2-authorization.json)与[静态语义审阅](../sources/evidence/release-v0.1.2-review.json)只批准 `0.1.2` 的三个指定摘要；`release-review.json` 绑定这批记录。旧 `0.1.0`、`0.1.1` 批准及各候选 `publication_approval=null` 保留历史身份。OpenAI 网络及登录页面本轮 HTTP 403 的未核实范围列入审阅局限，不称官方域名清单已全面更新核对。
 
-源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。定时 CI 只发现/校验候选，不自动发布。
+源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 
 首次部署前另行确认实际下载链、目标原配置 check、无旧缓存启动、可用原配置及旧 SRS 恢复路径。当前消费者使用 Latest remote URL，发布新 Latest 可能被运行中的服务自动取回，不需要改配置或重启。后续必须区分非 Latest 候选与正式发布；草稿/非 Latest 上传完整资产后核对，再改变入口，测试新旧资产异步组合。Latest 回退也不保证已更新消费者立即回退。本次已授权 GitHub 静态发布；不访问或操作 N100。失败不清空 cache.db、不盲重载、不覆盖上一批准批次。运行验收出现遗漏、实际路径泄漏、非预期出口变化或功能回退时停止该环境部署；本地隔离检查可修复后重测。审阅记录提供可追溯性，不能从记录本身证明其观测真实性。
 
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### 7.1 正式发布结果与执行计划
+### 7.1 `0.1.2` 正式发布执行计划
+
+当前基于 main `ed69b36617f7afa0c1244e724c4a4d54f303587c` 准备正式输入，该提交对 workflow 的删除保留。已验收候选、完整基线差异、独立复核、截图九项覆盖和 560 请求记录见[候选证据与复现入口](evidence/durability-0.1.2-rc.1/README.md)；它们只证明该候选字节，不冒称正式发布已经完成。
+
+| 步骤 | 终点 / 当前状态 |
+|---|---|
+| 1 正式输入审阅与提交 | 待执行：审阅本轮授权、语义结论、证据 SHA 与 `VERSION=0.1.2`，提交全部绑定输入和证据；保留候选原身份与已删除 workflow |
+| 2 两次正式重建与门禁 | 待执行：从已提交输入独立生成两份 release，执行原生 validate `--for-release` 和 46 项回归；三 SRS、三 JSON 必须两批及相对候选逐字节一致，当前 UTC 日期门禁通过 |
+| 3 正式制品归档及推送 | 待执行：归档 `artifacts/v0.1.2/`、更新 `dist/` 与本执行计划，保留旧版本；提交及推送，建立与制品和来源一致的标签/发布包 |
+| 4 draft 上传与非 Latest 验收 | 待执行：上传六个固定资产并核验 SHA，以非 Latest 正式发行公开；固定 URL 全部实际下载及本机空缓存加载通过 |
+| 5 Latest 与交付 | 待执行：设置 v0.1.2 为 Latest，重新下载三 SRS 与 manifest 并核验摘要；记录静态发布结果，消费者及部署身份仍为空/pending |
+
+任一步骤失败先停在对应验收点；不把未运行步骤标为完成，不覆盖旧批准批次试错。设置 Latest 可能使在线订阅者自动更新，但本轮不访问或写入目标主机。
+
+### 7.2 `0.1.2-rc.1` 历史候选与已完成验收
+
+本候选基于 `9f33df7464d134cb347301ca1fbafde0e1f5fc8a` 的未提交工作树；`source_commit` 只标识基础提交，实际输入身份由 manifest 的 `inputs` 全部哈希给出。它不是正式提交绑定，不具备发布批准。正式 `dist/`、`artifacts/v0.1.1/`、既有批准记录和 GitHub Release 保留原样。
+
+| 步骤 | 终点 / 当前状态 |
+|---|---|
+| 1 固定新基线 | 已完成：同一 SagerNet 提交的两份 SRS、同一 DLC 提交的两份旁证与两份许可证；逐项核验原始 SHA。Anthropic 只新增 `claude.dev` root suffix；补充 YAML、功能选择、17 pending 和 IP 不变 |
+| 2 原版本复现 | 已完成本地范围：`v0.1.1` 两次 candidate 各 2,038 项原生验证零失败、46 项回归无跳过；三 SRS、三 JSON 两批及正式归档逐字节一致 |
+| 3 新候选构建 | 已完成：原生 sync 保留完整对照；两次 candidate 各 2,066 项原生验证零失败，46 项回归通过、无跳过；相对 `v0.1.1` 仅 Anthropic root suffix 新增 `claude.dev`，两批三 SRS、三 JSON 逐字节一致。原生发布门禁明确拒绝 candidate |
+| 4 新增域名隔离消费者 | 已完成本地范围：主任务执行 560 个合成请求（392 DNS、168 route），覆盖 apex、子域和近似域、域名/SNI、IPv4/IPv6、旧新组合与受控 remote 冷启动；8 个 sing-box 进程均退出 0，12 个监听均关闭，空缓存 HTTP 下载 1 次且 SHA 匹配。未读取真实配置、未接入生产 |
+| 4a 用户截图的 9 项覆盖 | 已完成实际解编核对：8 个 root suffix `anthropic.com`、`clau.de`、`claude.ai`、`claude.com`、`claude.dev`、`claudemcpclient.com`、`claudemcpcontent.com`、`claudeusercontent.com`，以及 exact `servd-anthropic-website.b-cdn.net` 均在新候选中；旧 `v0.1.1` 仅缺 `claude.dev` |
+| 5 候选阶段交付 | 已交付本地候选及输入差异；该阶段未提交、推送或发布。后续用户已授权 §7.1 的正式发布；候选自身仍不具备发布身份。真实登录、公网出口、目标设备和重启持久化均未验收 |
+
+当前 UTC 日期门禁按 `2026-10-03` 复验；历史 Challenge 的 `last_verified=2026-09-27`、`review_after=2026-10-27` 不续期、不改写。候选保留空消费者声明与 `pending` 部署状态。工具沿用 `tools.lock.json` 的 sing-box `1.15.0-alpha.9`、Go `1.27.1` 和哈希锁定 PyYAML `6.0.3`；本地 Python 为 `3.9.6`，并非 CI 的 `3.12`。
+
+| `0.1.2-rc.1` SRS | 字节数 | SHA-256 |
+|---|---:|---|
+| `openai.srs` | 775 | `a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f` |
+| `anthropic.srs` | 361 | `c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80` |
+| `anthropic-ip.srs` | 36 | `9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c` |
+
+OpenAI 与 Anthropic 来源制品及对应 JSON 与 `v0.1.1` 逐字节一致。新增 root suffix 的测试包含 apex、两级子域、大写、近似域及错误父域；受控消费者结果只证明固定版本在合成环境中的选择和拒绝。真实登录、账户、Challenge、公网出口、TUN、生产 DNS 与目标设备重启持久化未验收；既往 `0.1.1` 的业务或安装证据不自动授予新批次这些结论。
+
+### 7.3 `v0.1.1` 历史正式发布结果
 
 已验收候选为 `0.1.1-rc.1`，本轮以同一规则输入晋升正式 `0.1.1`，固定 `0.1.0` 作为对照。已核对的差异只有 OpenAI exact 20→24、Anthropic exact 12→14；后缀、正则、Voice 目的地址、Anthropic 目的及来源网段全部不变。
 
@@ -478,7 +517,7 @@ rc.1 本地验收阶段起初缺Go模块缓存，补取锁定依赖时的一次H
 
 本次推送触发的 GitHub Actions 未启动，GitHub 返回账户账单限制；该状态已记入发布汇总。本次发布使用本机手动构建和验收的制品，不声明 CI 通过，也未修改账户设置。
 
-### 7.2 `v0.1.0` 正式对照与恢复依据
+### 7.4 `v0.1.0` 正式对照与恢复依据
 
 [正式发行 v0.1.0](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.0)于 `2026-09-28T01:02:50Z` 发布，标签 `c48c415d88aede03907c231b122b65b860b386b0`。输入提交 `08b74c8254be78c7fd23522b51e8753f62b9686e`；[固定正式批次](../artifacts/v0.1.0/manifest.json)、[公开下载证据](evidence/latest-srs/publication-results.json)及[构建结果](evidence/latest-srs/build-results.json)保留原样。旧固定批次与旧Release保留，供对照及恢复；当前 `dist/` 已在 `0.1.1` 门槛通过后更新。
 
@@ -490,13 +529,13 @@ rc.1 本地验收阶段起初缺Go模块缓存，补取锁定依赖时的一次H
 
 旧[消费者最小复现](evidence/round3/consumer/README.md)与 rc.2 对照保留历史身份。其投影规则、自写路由推导和既往用例数不能替代当前候选真实 sing-box 隔离消费者验收。此前一次验证后可正常登录的用户事实继续保留，不能据此承诺永不出现Challenge。
 
-失败处理：来源、原生或本地测试失败时在隔离环境修复，复验受影响范围；不覆盖正式制品、不用N100试错。固定版本真实URL验收按步骤4执行，不能用file读取冒充通过。本轮按新授权完成正式输入提交与手动发布；运行验收仍需独立证据。
+失败处理：来源、原生或本地测试失败时在隔离环境修复，复验受影响范围；不覆盖正式制品、不用N100试错。历史固定版本真实URL验收见 §7.3 步骤4，不能用file读取冒充通过。历史 `0.1.1` 已按当时授权完成正式输入提交与手动发布；本轮正式 `0.1.2` 按 §7.1 逐项执行，运行验收仍需独立证据。
 
 ## 8. 官方依据
 
-以下链接为依据，不授权执行网页中的操作。来源于 2026-09-28 复核；固定 ref 用于重现，动态官方页按快照登记。
+以下链接为依据，不授权执行网页中的操作。社区基线于 2026-10-03 重新抓取并固定；其他历史官方事实按各自快照日期保留，不能统称本轮已重新取得。固定 ref 用于重现，动态官方页按快照登记。
 
-- [SagerNet 两份产品基线](https://github.com/SagerNet/sing-geosite/tree/e6a8117545c35a17c508e3f37a9a990571234428)；[DLC 固定来源](https://github.com/v2fly/domain-list-community/tree/bcea25493ed28c387660fe49ce1ceb242d2efca0/data)。
+- [SagerNet 两份产品基线](https://github.com/SagerNet/sing-geosite/tree/53e0e99be15953f1865c4f3f4cffe8c8f8543dff)；[DLC 固定来源](https://github.com/v2fly/domain-list-community/tree/2c892a618f4e23c549d28edd0f3f75407521b1aa/data)。
 - [Codex 固定安装脚本](https://github.com/openai/codex/blob/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/scripts/install/install.sh)、[同提交 README](https://github.com/openai/codex/blob/44fe510ce3ee61c8ef623adcbf89b901c73ddd61/README.md)、[官方 Release](https://github.com/openai/codex/releases/tag/rust-v0.158.0)。四个新增依赖的事实分别见[安装器](../sources/official/codex-install.json)、[Release资产](../sources/official/codex-release.json)、[npm](../sources/official/codex-npm.json)，来源身份见[upstreams](../sources/upstreams.yaml)。
 - [OpenAI 网络要求、Voice 与 WebSocket](https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps)；[Voice JSON](https://openai.com/chatgpt-voice.json)；[登录排障](https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt)。
 - [Claude Code 网络](https://code.claude.com/docs/en/network-config)；[Desktop 网络](https://code.claude.com/docs/en/desktop#network-access-requirements)；[Anthropic IP](https://platform.claude.com/docs/en/api/ip-addresses)；[功能开关说明](https://code.claude.com/docs/en/env-vars#features-that-need-feature-flag-fetching)。

@@ -1,0 +1,13 @@
+{
+  "url": "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-win32-arm64",
+  "retrieved_at": "2026-10-03T13:25:06.869851+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://registry.npmjs.org/@openai%2Fcodex/0.160.0-win32-arm64",
+    "application/json"
+  ],
+  "stderr": "",
+  "bytes": 3383,
+  "sha256": "85d50029f41eb8294d4dc74e9ab16c53bc2b8ff8568e13aa6b546b7f856949e9"
+}

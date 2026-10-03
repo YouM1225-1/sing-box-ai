@@ -1,0 +1,68 @@
+[
+  {
+    "name": "geosite-openai.srs",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-openai.srs",
+    "status": "200\nhttps://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-openai.srs",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 451,
+    "sha256": "aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1",
+    "old_sha256": "aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1",
+    "time": "2026-10-03T13:24:20.241207+00:00"
+  },
+  {
+    "name": "geosite-anthropic.srs",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-anthropic.srs",
+    "status": "200\nhttps://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-anthropic.srs",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 182,
+    "sha256": "4c58ec54eed852bddc07d434d42b1b97c4c22ebc52aa3b393221b607c3d56f6f",
+    "old_sha256": "aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906",
+    "time": "2026-10-03T13:24:20.270535+00:00"
+  },
+  {
+    "name": "dlc-openai.txt",
+    "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/openai",
+    "status": "200\nhttps://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/openai",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 679,
+    "sha256": "19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6",
+    "old_sha256": "19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6",
+    "time": "2026-10-03T13:24:20.245731+00:00"
+  },
+  {
+    "name": "dlc-anthropic.txt",
+    "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/anthropic",
+    "status": "200\nhttps://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/anthropic",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 163,
+    "sha256": "bf48dc1b342bbfd06f2a93ee8ce180fc424d9c041dafd2d182ffb3f4186698b4",
+    "old_sha256": "3d0e231009271bad865131381da71b489b18ca699f38afe3a0ebef00011f1b88",
+    "time": "2026-10-03T13:24:20.243242+00:00"
+  },
+  {
+    "name": "geosite-LICENSE",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/dd64ae0ebf2ee69166c0510042b3e96c085f27df/LICENSE",
+    "status": "200\nhttps://raw.githubusercontent.com/SagerNet/sing-geosite/dd64ae0ebf2ee69166c0510042b3e96c085f27df/LICENSE",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 674,
+    "sha256": "2f02b7486bcfa90d115c71a20437f3906b6fd5bef81c5dc0efd341399e89d0fd",
+    "old_sha256": "2f02b7486bcfa90d115c71a20437f3906b6fd5bef81c5dc0efd341399e89d0fd",
+    "time": "2026-10-03T13:24:20.256372+00:00"
+  },
+  {
+    "name": "dlc-LICENSE",
+    "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/LICENSE",
+    "status": "200\nhttps://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/LICENSE",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 1067,
+    "sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2",
+    "old_sha256": "b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2",
+    "time": "2026-10-03T13:24:20.403526+00:00"
+  }
+]

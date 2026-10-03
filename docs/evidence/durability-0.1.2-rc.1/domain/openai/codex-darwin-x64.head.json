@@ -1,0 +1,18 @@
+{
+  "retrieved_at": "2026-10-03T13:25:39.691056+00:00",
+  "method": "HEAD only; no package body downloaded",
+  "chain": [
+    {
+      "url": "https://registry.npmjs.org/@openai/codex/-/codex-0.160.0-darwin-x64.tgz",
+      "hostname": "registry.npmjs.org",
+      "status_lines": [
+        "HTTP/2 200 "
+      ],
+      "curl_exit": 0,
+      "header_sha256": "c5befc39df1fc175ba5729ab5a51d45d16fd5cd26a9cede2bb4a3317355892f6",
+      "content_type": "application/octet-stream",
+      "content_length": null,
+      "stderr": ""
+    }
+  ]
+}

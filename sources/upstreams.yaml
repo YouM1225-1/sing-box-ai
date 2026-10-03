@@ -57,59 +57,59 @@ archives:
 - id: dlc-openai
   kind: dlc
   path: sources/upstream/dlc-openai.txt
-  url: https://raw.githubusercontent.com/v2fly/domain-list-community/bcea25493ed28c387660fe49ce1ceb242d2efca0/data/openai
-  commit: bcea25493ed28c387660fe49ce1ceb242d2efca0
+  url: https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/openai
+  commit: 2c892a618f4e23c549d28edd0f3f75407521b1aa
   sha256: 19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
-  method: imported-pinned-audit-archive; observed 2026-09-27
+  retrieved_at: '2026-10-03T13:24:20.245731+00:00'
+  method: https-raw-response
   artifact: openai
   role: crosscheck
-  last_verified_at: '2026-09-27T18:20:53.167408+00:00'
+  last_verified_at: '2026-10-03T13:24:20.245731+00:00'
   license_reference: dlc-license
 - id: dlc-anthropic
   kind: dlc
   path: sources/upstream/dlc-anthropic.txt
-  url: https://raw.githubusercontent.com/v2fly/domain-list-community/bcea25493ed28c387660fe49ce1ceb242d2efca0/data/anthropic
-  commit: bcea25493ed28c387660fe49ce1ceb242d2efca0
-  sha256: 3d0e231009271bad865131381da71b489b18ca699f38afe3a0ebef00011f1b88
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
-  method: imported-pinned-audit-archive; observed 2026-09-27
+  url: https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/data/anthropic
+  commit: 2c892a618f4e23c549d28edd0f3f75407521b1aa
+  sha256: bf48dc1b342bbfd06f2a93ee8ce180fc424d9c041dafd2d182ffb3f4186698b4
+  retrieved_at: '2026-10-03T13:24:20.243242+00:00'
+  method: https-raw-response
   artifact: anthropic
   role: crosscheck
-  last_verified_at: '2026-09-27T18:20:53.151756+00:00'
+  last_verified_at: '2026-10-03T13:24:20.243242+00:00'
   license_reference: dlc-license
 - id: dlc-license
   kind: license
   path: sources/upstream/dlc-LICENSE
-  url: https://raw.githubusercontent.com/v2fly/domain-list-community/bcea25493ed28c387660fe49ce1ceb242d2efca0/LICENSE
-  commit: bcea25493ed28c387660fe49ce1ceb242d2efca0
+  url: https://raw.githubusercontent.com/v2fly/domain-list-community/2c892a618f4e23c549d28edd0f3f75407521b1aa/LICENSE
+  commit: 2c892a618f4e23c549d28edd0f3f75407521b1aa
   sha256: b9d84a22870d3f21c91a4c6e410c9cc51d00902f5233ad0c84011479244bf7d2
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
-  method: https
+  retrieved_at: '2026-10-03T13:24:20.403526+00:00'
+  method: https-raw-response
 - id: geosite-openai
   kind: srs-baseline
   path: sources/upstream/geosite-openai.srs
-  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/e6a8117545c35a17c508e3f37a9a990571234428/geosite-openai.srs
-  commit: e6a8117545c35a17c508e3f37a9a990571234428
+  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-openai.srs
+  commit: 53e0e99be15953f1865c4f3f4cffe8c8f8543dff
   sha256: aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
-  method: imported-pinned-audit-archive; observed 2026-09-27
+  retrieved_at: '2026-10-03T13:24:20.241207+00:00'
+  method: https-raw-response
   artifact: openai
   role: baseline
-  last_verified_at: '2026-09-27T18:20:53.167795+00:00'
+  last_verified_at: '2026-10-03T13:24:20.241207+00:00'
   license_reference: geosite-license
   data_license_reference: dlc-license
 - id: geosite-anthropic
   kind: srs-baseline
   path: sources/upstream/geosite-anthropic.srs
-  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/e6a8117545c35a17c508e3f37a9a990571234428/geosite-anthropic.srs
-  commit: e6a8117545c35a17c508e3f37a9a990571234428
-  sha256: aaca1f727c8ca51690d2c81358b9541c8f6c356d5c9a45b2b7da23658a70d906
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
-  method: imported-pinned-audit-archive; observed 2026-09-27
+  url: https://raw.githubusercontent.com/SagerNet/sing-geosite/53e0e99be15953f1865c4f3f4cffe8c8f8543dff/geosite-anthropic.srs
+  commit: 53e0e99be15953f1865c4f3f4cffe8c8f8543dff
+  sha256: 4c58ec54eed852bddc07d434d42b1b97c4c22ebc52aa3b393221b607c3d56f6f
+  retrieved_at: '2026-10-03T13:24:20.270535+00:00'
+  method: https-raw-response
   artifact: anthropic
   role: baseline
-  last_verified_at: '2026-09-27T18:20:53.155650+00:00'
+  last_verified_at: '2026-10-03T13:24:20.270535+00:00'
   license_reference: geosite-license
   data_license_reference: dlc-license
 - id: legacy-anthropic
@@ -196,8 +196,8 @@ archives:
   url: https://raw.githubusercontent.com/SagerNet/sing-geosite/dd64ae0ebf2ee69166c0510042b3e96c085f27df/LICENSE
   commit: dd64ae0ebf2ee69166c0510042b3e96c085f27df
   sha256: 2f02b7486bcfa90d115c71a20437f3906b6fd5bef81c5dc0efd341399e89d0fd
-  retrieved_at: '2026-09-27T18:20:53.157117+00:00'
-  method: https
+  retrieved_at: '2026-10-03T13:24:20.256372+00:00'
+  method: https-raw-response
   license: GPL-3.0-or-later
   scope: SagerNet generator repository; preserve separately from DLC rule-data MIT license
 - id: legacy-current-openai-srs

@@ -1,0 +1,13 @@
+{
+  "url": "https://api.github.com/repos/openai/codex/releases/latest",
+  "retrieved_at": "2026-10-03T13:24:13.544563+00:00",
+  "curl_exit": 0,
+  "response": [
+    "200",
+    "https://api.github.com/repos/openai/codex/releases/latest",
+    "application/json; charset=utf-8"
+  ],
+  "stderr": "",
+  "bytes": 305909,
+  "sha256": "26899cad0d6ef8926e5cd4444e04983c0acc4e5c111a220c86741cc4e88299d5"
+}

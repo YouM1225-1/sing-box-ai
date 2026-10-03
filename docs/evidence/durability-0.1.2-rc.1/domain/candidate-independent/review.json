@@ -1,0 +1,128 @@
+{
+  "manifest_identity": {
+    "build_mode": "candidate",
+    "deployment_status": "pending",
+    "integration_evidence": [],
+    "project_version": "0.1.2-rc.1",
+    "publication_approval": null,
+    "review_as_of": "2026-10-03",
+    "source_commit": "9f33df7464d134cb347301ca1fbafde0e1f5fc8a",
+    "validated_consumers": [],
+    "validation": {
+      "baseline_complete": true,
+      "cases": 2066,
+      "clean_rebuild_equal": true,
+      "failures": 0,
+      "level": "local-source-binary-and-isolated-check",
+      "native_result_sha256": "7bee17b975613f7ac998c5d70a9928c539c098ca01b7fbb30c71cbb08f8ab4a6",
+      "test_harness": {
+        "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+        "go_version": "go1.27.1",
+        "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+        "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+        "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+      },
+      "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+    }
+  },
+  "input_count": 61,
+  "input_mismatches": [],
+  "artifacts": {
+    "openai": {
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "bytes": 775,
+      "bytes_unchanged": true,
+      "native_decompiled_matches_source": true
+    },
+    "anthropic": {
+      "sha256": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
+      "bytes": 361,
+      "bytes_unchanged": false,
+      "native_decompiled_matches_source": true
+    },
+    "anthropic-ip": {
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "bytes": 36,
+      "bytes_unchanged": true,
+      "native_decompiled_matches_source": true
+    }
+  },
+  "semantic_diff": {
+    "openai": {
+      "domain": {
+        "added": [],
+        "removed": []
+      },
+      "domain_regex": {
+        "added": [],
+        "removed": []
+      },
+      "domain_suffix": {
+        "added": [],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [],
+        "removed": []
+      }
+    },
+    "anthropic": {
+      "domain": {
+        "added": [],
+        "removed": []
+      },
+      "domain_suffix": {
+        "added": [
+          "claude.dev"
+        ],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {
+      "source_ip_cidr": {
+        "added": [],
+        "removed": []
+      }
+    }
+  },
+  "source_commit_input_mismatches": [
+    "VERSION",
+    "sources/policy.yaml",
+    "sources/upstream/dlc-anthropic.txt",
+    "sources/upstream/geosite-anthropic.srs",
+    "sources/upstreams.yaml",
+    "tests/claude_dev_consumer.py",
+    "tests/test_pipeline.py"
+  ],
+  "decompile_normalization": [
+    "scalar/list equivalent",
+    "list sorting",
+    "IP host to /32 or /128 network"
+  ],
+  "consumer": {
+    "passed": true,
+    "request_count": 560,
+    "kinds": {
+      "dns": 392,
+      "route": 168
+    },
+    "cases": {
+      "old-anthropic": 70,
+      "new-anthropic": 70,
+      "openai-negative": 70,
+      "combination-00": 70,
+      "combination-10": 70,
+      "combination-01": 70,
+      "combination-11": 70,
+      "cold-remote-anthropic": 70
+    },
+    "processes_exited": 8,
+    "listeners_closed": 12,
+    "remote_downloads": 1,
+    "hash_bindings_match": true
+  }
+}

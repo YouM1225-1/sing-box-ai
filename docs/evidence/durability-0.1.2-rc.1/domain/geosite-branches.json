@@ -1,0 +1,42 @@
+[
+  {
+    "name": "dependabot/go_modules/google.golang.org/protobuf-1.33.0",
+    "commit": {
+      "sha": "aaeb98604be821fb96e233bc61952d471b4b2cbb",
+      "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits/aaeb98604be821fb96e233bc61952d471b4b2cbb"
+    },
+    "protected": false
+  },
+  {
+    "name": "main",
+    "commit": {
+      "sha": "dd64ae0ebf2ee69166c0510042b3e96c085f27df",
+      "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits/dd64ae0ebf2ee69166c0510042b3e96c085f27df"
+    },
+    "protected": false
+  },
+  {
+    "name": "release",
+    "commit": {
+      "sha": "e4ec59013bba7a8bd92cb2dd933fca5eb87ee3bd",
+      "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits/e4ec59013bba7a8bd92cb2dd933fca5eb87ee3bd"
+    },
+    "protected": false
+  },
+  {
+    "name": "rule-set",
+    "commit": {
+      "sha": "53e0e99be15953f1865c4f3f4cffe8c8f8543dff",
+      "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits/53e0e99be15953f1865c4f3f4cffe8c8f8543dff"
+    },
+    "protected": false
+  },
+  {
+    "name": "rule-set-unstable",
+    "commit": {
+      "sha": "08cd5f48bfccc07fbc00808089eda47c74780a75",
+      "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits/08cd5f48bfccc07fbc00808089eda47c74780a75"
+    },
+    "protected": false
+  }
+]
