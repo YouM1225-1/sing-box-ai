@@ -1,0 +1,8 @@
+{
+  "source_commit": "d965fa091f4c57961cf5a172968840175d90d2a8",
+  "base_commit": "ed69b36617f7afa0c1244e724c4a4d54f303587c",
+  "committed_binding_count": 11,
+  "source_diff_whitespace_check": "passed",
+  "excluded_evidence": "docs/evidence/durability-0.1.2-rc.1/build/source.patch",
+  "reason": "Preserve raw unified diff context blank lines; not executable source."
+}

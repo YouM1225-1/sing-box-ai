@@ -1,0 +1,108 @@
+{
+  "reviewed_at": "2026-10-03T13:51:14.500531+00:00",
+  "passed": true,
+  "scope": "发布前授权、语义审阅及候选证据绑定，只读审阅；非正式制品重建或线上发布验收",
+  "version": "0.1.2",
+  "operator_instruction": "发布",
+  "authorization_scope": "artifact-publication",
+  "deployment_authorized": false,
+  "expected_formal_srs": {
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+    "anthropic.srs": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "binding_count": 11,
+  "bindings": [
+    {
+      "path": "sources/evidence/release-v0.1.2-authorization.json",
+      "sha256": "91d937e0cfae4d05deb547e50b977f0c978a4a55e42af6df0667be528e37541e",
+      "matches": true
+    },
+    {
+      "path": "sources/evidence/release-v0.1.2-review.json",
+      "sha256": "cbc9071a342796bf1ced89c6f55c0f5a65778c59430e3b484c4416f40c54d375",
+      "matches": true
+    },
+    {
+      "path": "artifacts/v0.1.1/manifest.json",
+      "sha256": "2d5e0164c5f53fc0581145f5bcd75cbfe032506148236c61e85edd3cc653ba6a",
+      "matches": true
+    },
+    {
+      "path": "artifacts/v0.1.2-rc.1/manifest.json",
+      "sha256": "644ac59be65eda8b15b4b203dfde8a511ca139965c2f80f889d39d6fd00251c5",
+      "matches": true
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/domain/geosite-semantic-diff.json",
+      "sha256": "811acfd8a1ba967f653dc9815fd8bace66a265d6a9202509549933eb6a17911a",
+      "matches": true
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/domain/candidate-independent/review.json",
+      "sha256": "00089f6c0b1e9ad3750424f102456ce37ed2ea09464e102e2d1ad29c3b2d3d95",
+      "matches": true
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/consumer/results.json",
+      "sha256": "774949b0c79e8834e50487e99562c38a3567befd06ecd26f2b31cbf6f0c5c8fc",
+      "matches": true
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/build/byte-comparison.json",
+      "sha256": "3efa713ded31e3a294d50b337c868c81354ebaa34f27f6c96f52e6c6da4bc965",
+      "matches": true
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/build/build-summary.json",
+      "sha256": "036a7d857a13aa587a4e12f11bd99fb81bb805f0462b6146ebefed3a768087dd",
+      "matches": true
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/screenshot-domain-coverage.json",
+      "sha256": "faba47c2f0767a036a46c443111b9998c7c37cda64bdb3f4e3a75fb9761ce7dc",
+      "matches": true
+    },
+    {
+      "path": "docs/evidence/durability-0.1.2-rc.1/domain/openai/review-result.json",
+      "sha256": "f68620bae50973a5e3654b72467c71e488472983d4e008c7893d1e336f72dcb3",
+      "matches": true
+    }
+  ],
+  "candidate_identity_preserved": {
+    "version": "0.1.2-rc.1",
+    "build_mode": "candidate",
+    "source_commit": "9f33df7464d134cb347301ca1fbafde0e1f5fc8a",
+    "publication_approval": null,
+    "deployment_status": "pending"
+  },
+  "candidate_diff_from_v0_1_1": {
+    "openai": "无变化",
+    "anthropic": "仅新增 domain_suffix claude.dev",
+    "anthropic-ip": "无变化"
+  },
+  "consumer": {
+    "requests": 560,
+    "kinds": {
+      "dns": 392,
+      "route": 168
+    },
+    "processes_exited": 8,
+    "listeners_closed": 12,
+    "candidate_srs_binding_matches": true
+  },
+  "openai_403_boundary_preserved": true,
+  "old_approval_records_dist_and_v0_1_1_unchanged": true,
+  "ci_workflow_deletion_preserved": true,
+  "blocking_findings": [],
+  "remaining_gates": [
+    "逐项暂存并提交所有批准、审阅和绑定证据；受ignore影响的build证据须实际入提交",
+    "正式release模式按已提交输入构建两次，复核三SRS和三个源JSON与候选字节相同",
+    "原生验证、回归及--for-release门禁全部通过",
+    "draft完整上传核验→non-Latest公开→固定URL及本机真实冷加载通过→Latest"
+  ],
+  "limitations": [
+    "本次未执行提交、推送、构建、上传、发布或目标设备操作",
+    "此时正式制品尚待构建；本结论确认批准的预期摘要与已验收候选一致，不提前声称正式构建通过"
+  ]
+}

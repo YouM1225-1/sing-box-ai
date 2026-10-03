@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.24**；核验日期：2026-10-03（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；当前正式发行、Latest 与 `dist/` 均为 `v0.1.1`；发布证据见 §7。
-> 当前状态：用户已授权正式发布 `0.1.2`，三份目标 SRS 绑定已验收 `0.1.2-rc.1`；正式输入待提交，构建与发布待执行，见 §7.1。正式发行、Latest 和 `dist/` 仍为 `v0.1.1`；未访问或操作 N100。
+> 主仓库：`YouM1225-1/sing-box-ai`；当前公开正式发行和 Latest 为 `v0.1.1`；本地 `dist/` 与 `artifacts/v0.1.2/` 已归档通过静态门槛的 `v0.1.2`，尚未上传；发布证据见 §7。
+> 当前状态：用户已授权正式发布 `0.1.2`；输入已提交，两次正式重建及发布门禁通过，三份 SRS 和三份源 JSON 与已验收 `0.1.2-rc.1` 逐字节一致。上传、固定 URL 与 Latest 验收待执行，见 §7.1；未访问或操作 N100。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -60,7 +60,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；已通过静态发布门槛并更新为 `v0.1.1`。`artifacts/v0.1.1-rc.1/` 保留本地候选及其原始验收身份。`artifacts/v0.1.0-rc.2/` 保留其受摘要绑定的候选对照证据，不冒充 GitHub 已有 Release。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；本地已更新为通过门槛、待上传的 `v0.1.2`，对应完整批次在 `artifacts/v0.1.2/`。各旧正式批次与 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份，不把本地批次冒充 GitHub 已公开 Release。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品只用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
@@ -418,6 +418,8 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | 重建 | 两次干净构建一致，完整 manifest 可追溯；同输入得到不同字节时停止发布 |
 | 目标消费者 | 实际加载字节、原始配置 check、接管路径、实际出口、登录/长连接及已声明功能、适用的启动与重启持久化 |
 
+正式批次各自以 release 模式执行 `validate.py --for-release`。`tests/test_artifacts.py` 的对抗回归明确要求 candidate fixture：从同一已提交输入额外生成并验证候选，将 `SINGBOX_TEST_BATCH` 指向该目录后运行完整 46 项；三个 SRS 与三个 JSON 必须和正式批次逐字节一致。不要以已获批准的 release fixture 代替：篡改摘要会先触发发布批准门禁，导致二进制结构反例的预期错误消息不匹配。此调用区分不修改任何校验器、断言或正式批准。
+
 `rule-set match -f binary` 仅给目的 IP 或域名赋值，不设置 Source；命中信息在 stderr，未命中通常也退出 0。先查执行错误，再判定匹配输出。来源方向必须用固定模块 harness 的 Source/Destination 独立输入测试，每例新建或正确重置 metadata。
 
 ### 6.4 发布门槛与失败处理
@@ -438,21 +440,23 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 ### 7.1 `0.1.2` 正式发布执行计划
 
-当前基于 main `ed69b36617f7afa0c1244e724c4a4d54f303587c` 准备正式输入，该提交对 workflow 的删除保留。已验收候选、完整基线差异、独立复核、截图九项覆盖和 560 请求记录见[候选证据与复现入口](evidence/durability-0.1.2-rc.1/README.md)；它们只证明该候选字节，不冒称正式发布已经完成。
+正式输入已提交为 `d965fa091f4c57961cf5a172968840175d90d2a8`，继承 main `ed69b36617f7afa0c1244e724c4a4d54f303587c` 对 workflow 的删除。[正式构建结果](evidence/release-v0.1.2/build-results.json)与[正式 manifest](../artifacts/v0.1.2/manifest.json)绑定该输入提交。已验收候选、完整基线差异、独立复核、截图九项覆盖和 560 请求记录见[候选证据与复现入口](evidence/durability-0.1.2-rc.1/README.md)；同字节证据不冒称 GitHub 发布已经完成。
 
 | 步骤 | 终点 / 当前状态 |
 |---|---|
-| 1 正式输入审阅与提交 | 待执行：审阅本轮授权、语义结论、证据 SHA 与 `VERSION=0.1.2`，提交全部绑定输入和证据；保留候选原身份与已删除 workflow |
-| 2 两次正式重建与门禁 | 待执行：从已提交输入独立生成两份 release，执行原生 validate `--for-release` 和 46 项回归；三 SRS、三 JSON 必须两批及相对候选逐字节一致，当前 UTC 日期门禁通过 |
-| 3 正式制品归档及推送 | 待执行：归档 `artifacts/v0.1.2/`、更新 `dist/` 与本执行计划，保留旧版本；提交及推送，建立与制品和来源一致的标签/发布包 |
+| 1 正式输入审阅与提交 | 已完成：本轮授权、语义结论、11 份发布绑定证据和 `VERSION=0.1.2` 已提交并逐项核验 SHA；候选原身份与已删除 workflow 保留 |
+| 2 两次正式重建与门禁 | 已完成：两份 release 各 2,066 项原生验证零失败且 `--for-release` 通过；三 SRS、三 JSON 两批及相对候选逐字节一致，当前 UTC 日期门禁通过。同一已提交输入生成的等字节 candidate fixture 完整 46 项回归通过、无跳过 |
+| 3 正式制品归档及推送 | 本地归档已完成：`artifacts/v0.1.2/`、`dist/` 和构建证据已更新，旧批次保留；制品提交、推送、标签及发布包待执行 |
 | 4 draft 上传与非 Latest 验收 | 待执行：上传六个固定资产并核验 SHA，以非 Latest 正式发行公开；固定 URL 全部实际下载及本机空缓存加载通过 |
 | 5 Latest 与交付 | 待执行：设置 v0.1.2 为 Latest，重新下载三 SRS 与 manifest 并核验摘要；记录静态发布结果，消费者及部署身份仍为空/pending |
 
 任一步骤失败先停在对应验收点；不把未运行步骤标为完成，不覆盖旧批准批次试错。设置 Latest 可能使在线订阅者自动更新，但本轮不访问或写入目标主机。
 
+本轮首次把已批准 release 作为对抗回归 fixture，三项篡改制品测试被更前的批准摘要门禁拒绝，预期错误消息不匹配；[完整首次日志](evidence/release-v0.1.2/unit-tests-release-fixture.log)保留。按测试入口要求，以相同已提交输入生成并验证等字节 candidate 后，[完整 46 项回归](evidence/release-v0.1.2/unit-tests.log)通过。该修正只调整本机隔离测试调用，`sources/`、`scripts/`、`tests/`、`VERSION` 及正式门禁均未改动。
+
 ### 7.2 `0.1.2-rc.1` 历史候选与已完成验收
 
-本候选基于 `9f33df7464d134cb347301ca1fbafde0e1f5fc8a` 的未提交工作树；`source_commit` 只标识基础提交，实际输入身份由 manifest 的 `inputs` 全部哈希给出。它不是正式提交绑定，不具备发布批准。正式 `dist/`、`artifacts/v0.1.1/`、既有批准记录和 GitHub Release 保留原样。
+本候选基于 `9f33df7464d134cb347301ca1fbafde0e1f5fc8a` 的未提交工作树；`source_commit` 只标识基础提交，实际输入身份由 manifest 的 `inputs` 全部哈希给出。它不是正式提交绑定，不具备发布批准。候选阶段未改变当时的 `dist/`；`artifacts/v0.1.1/`、既有批准记录和旧 GitHub Release 继续保留原样。
 
 | 步骤 | 终点 / 当前状态 |
 |---|---|

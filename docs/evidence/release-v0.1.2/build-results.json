@@ -1,0 +1,72 @@
+{
+  "accepted_candidate": "artifacts/v0.1.2-rc.1",
+  "accepted_candidate_byte_identical": true,
+  "artifacts": [
+    {
+      "binary_version": 2,
+      "bytes": 775,
+      "direction": "destination",
+      "path": "openai.srs",
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "source_path": "openai.json",
+      "source_sha256": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 361,
+      "direction": "destination",
+      "path": "anthropic.srs",
+      "sha256": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
+      "source_path": "anthropic.json",
+      "source_sha256": "84fc55f1820e7eefc7b3255b801c36295bfdaa193622fa471e8b463c61ba9d7b"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 36,
+      "direction": "source",
+      "path": "anthropic-ip.srs",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "source_path": "anthropic-ip.json",
+      "source_sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5"
+    }
+  ],
+  "built_at": "2026-10-03T13:56:49.238839+00:00",
+  "deployment_status": "pending",
+  "failures": 0,
+  "independent_release_builds": 2,
+  "integration_evidence": [],
+  "limitations": [
+    "GitHub 上传、固定 URL、线上资产空缓存加载和 Latest 验收待执行。",
+    "未访问或写入 N100，不修改客户端配置、系统网络，不重启或重载服务。"
+  ],
+  "manifest_sha256": "0c001b3e1d0fdca3c2313c31614ce7f6fda71337c062251feefe078e027901cf",
+  "native_cases_each": 2066,
+  "project_version": "0.1.2",
+  "rebuild_manifest_sha256": "0c001b3e1d0fdca3c2313c31614ce7f6fda71337c062251feefe078e027901cf",
+  "release_gate_checked_each": true,
+  "reused_isolated_evidence": {
+    "path": "../durability-0.1.2-rc.1/consumer/results.json",
+    "sha256": "774949b0c79e8834e50487e99562c38a3567befd06ecd26f2b31cbf6f0c5c8fc"
+  },
+  "schema": 1,
+  "scope": "manual-artifact-publication",
+  "source_commit": "d965fa091f4c57961cf5a172968840175d90d2a8",
+  "three_srs_and_three_source_json_equal": true,
+  "unit_test_fixture": {
+    "correction": "test_artifacts.py 明确要求 candidate fixture。首次误用已批准 release，三项篡改制品测试被更前的批准摘要门禁拒绝，导致预期消息不匹配。改用同一已提交输入原生生成并验证的 candidate 后，完整 46 项通过；没有修改源码、断言或正式发布门禁。",
+    "initial_release_fixture_failures": 3,
+    "initial_release_fixture_log": "unit-tests-release-fixture.log",
+    "mode": "candidate",
+    "native_cases": 2066,
+    "same_committed_inputs": true,
+    "three_srs_and_three_json_equal_to_release": true
+  },
+  "unit_tests": {
+    "failures": 0,
+    "log_sha256": "a70bea3cdeec5b585bca29d1b9e34cc5fff9d66d256aa8a5d17c9e1c3a547dc7",
+    "seconds": 28.243,
+    "skipped": 0,
+    "tests": 46
+  },
+  "validated_consumers": []
+}

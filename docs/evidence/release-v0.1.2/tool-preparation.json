@@ -1,0 +1,20 @@
+{
+  "prepared_at": "2026-10-03T13:43:52.929677+00:00",
+  "python": "3.9.6",
+  "pyyaml": "6.0.3",
+  "go": "go version go1.27.1 darwin/arm64",
+  "sing_box_version": "1.15.0-alpha.9",
+  "sing_box_sha256": "fcb47f341e6660a35385ceeffc0cebb2daca3fed4d35c729b7d45f7b66555f9a",
+  "go_archive_verification": "go-toolchain.json",
+  "dependency_hashes": {
+    "tools.lock.json": "562468c764b101712d30c2226064d8b987c26c8641982699776781a258632597",
+    "requirements.txt": "d0945965181cd332b903c63e407b0c906eac3a0a3c552c34d46e4061a3408db7",
+    "tests/harness/go.mod": "d8e54e6bc7b8a6214b644d83c0fb92ba2669d9976e374e1c413b33ec981f558e",
+    "tests/harness/go.sum": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b"
+  },
+  "pip_require_hashes": true,
+  "go_mod_verify": "all modules verified",
+  "env_script": "/private/var/folders/pl/bpv2s_ks1mz24cd8ks4gblbr0000gn/T/sing-box-ai-release.Q1w2HU/tool-cache/env.sh",
+  "cache_settings_log": "go-cache-environment.log",
+  "built_artifacts": false
+}
