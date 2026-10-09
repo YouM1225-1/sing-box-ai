@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "project_version": "0.1.3",
+  "release_id": 407579868,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.3",
+  "latest_api_confirmed": true,
+  "published_at": "2026-10-09T06:12:46Z",
+  "publisher": "YouM1225-1",
+  "source_commit": "e8e65920c84efaf99d9b631712f461694926db60",
+  "tag_commit": "181b9e0c298488f3c1655fda18f6a6eae6fc84d1",
+  "tag": "v0.1.3",
+  "draft": false,
+  "prerelease": false,
+  "assets": [
+    {
+      "name": "anthropic-ip.srs",
+      "id": 624078866,
+      "bytes": 36,
+      "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.3/anthropic-ip.srs"
+    },
+    {
+      "name": "anthropic.srs",
+      "id": 624078898,
+      "bytes": 462,
+      "digest": "sha256:a34483911551a44160e394555d2a62a199e423d16e7ae544da7a0ef1dc57946e",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.3/anthropic.srs"
+    },
+    {
+      "name": "manifest.json",
+      "id": 624078935,
+      "bytes": 86698,
+      "digest": "sha256:0144dfff385663f75115b3d545b6da566d39bb22c6a050702fbcf28c101ee24e",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.3/manifest.json"
+    },
+    {
+      "name": "openai.srs",
+      "id": 624078960,
+      "bytes": 775,
+      "digest": "sha256:a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.3/openai.srs"
+    },
+    {
+      "name": "SHA256SUMS",
+      "id": 624078846,
+      "bytes": 409,
+      "digest": "sha256:a5edba4f16b079849d542ca4ceb5727f52dd2683717e9dfeb2c96eaed6236131",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.3/SHA256SUMS"
+    },
+    {
+      "name": "sing-box-ai-v0.1.3.zip",
+      "id": 624078991,
+      "bytes": 1466266,
+      "digest": "sha256:31d5a1b6d4c9b962d6be6fccff0630ebe54daefc5b0250ee28f15460f6da7a3f",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.3/sing-box-ai-v0.1.3.zip"
+    }
+  ],
+  "asset_count": 6,
+  "fixed_downloads_verified": 6,
+  "latest_downloads_verified": 6,
+  "remote_empty_cache": {
+    "passed": true,
+    "native_downloaded_sets": 3,
+    "route_assertions": 27,
+    "all_cache_bytes_match": true,
+    "process_exited": true,
+    "listener_closed": true
+  },
+  "old_releases_preserved": [
+    {
+      "tag": "v0.1.2",
+      "release_id": 402537457,
+      "metadata_and_asset_identities_unchanged": true
+    },
+    {
+      "tag": "v0.1.1",
+      "release_id": 398259220,
+      "metadata_and_asset_identities_unchanged": true
+    },
+    {
+      "tag": "v0.1.0",
+      "release_id": 397881272,
+      "metadata_and_asset_identities_unchanged": true
+    },
+    {
+      "tag": "v0.1.0-rc.1",
+      "release_id": 397700515,
+      "metadata_and_asset_identities_unchanged": true
+    }
+  ],
+  "scope": "Artifact publication and isolated local public-URL cold loading; no production configuration changes or real Claude account traffic.",
+  "packaging": "Git archive of the immutable release tag plus three SRS, release manifest and distribution SHA256SUMS. Tag snapshot documents capture the pre-upload stage; main contains final publication receipts."
+}
