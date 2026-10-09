@@ -307,3 +307,23 @@ archives:
     observations without executing downloaded code.
   format: functional-endpoint-facts-json
   original_response_sha256: 9cb0b7f299f048420f3ecb9f8c5c095b52bb29faef599972c247963f251ec45c
+- id: claude-support
+  kind: official
+  path: sources/official/claude-support.json
+  url: https://support.claude.com/en/
+  sha256: 9b95b25d7192e7be877855109ad74cff06231e612fd360895c06d94f942c4b7e
+  retrieved_at: '2026-10-09T04:35:26.425156+00:00'
+  method: reviewed-first-party-support-resource-facts
+  last_reviewed_at: '2026-10-09T04:35:27.238604+00:00'
+  raw_reference: claude-support-source
+- id: claude-support-source
+  kind: official-source-record
+  path: sources/official/source-records/claude-support.json
+  url: https://support.claude.com/en/
+  sha256: cfc00081e19dd567c8b50b161ddc249eea70fcdeb03e5435be91f6a61eea91ff
+  retrieved_at: '2026-10-09T04:35:26.425156+00:00'
+  method: Inspected first-party Claude support HTML resource attributes and embedded
+    messenger configuration, then followed its widget loader. Only endpoint facts
+    and locators are redistributed; raw bodies remain in the local review cache.
+  format: functional-endpoint-facts-json
+  original_response_sha256: 3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2

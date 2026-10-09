@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 255, in <module>
+    main()
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 250, in main
+    manifest = validate(a.directory, a.go, a.for_release)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 225, in validate
+    native, harness_info = harness(root, temp, go)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 83, in harness
+    modules = run([go, "list", "-m", "github.com/sagernet/sing-box", "github.com/sagernet/sing"], cwd=cwd, env=env).stdout.splitlines()
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/common.py", line 451, in run
+    completed = subprocess.run([str(a) for a in args], capture_output=True, text=True, **kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '.tools/go1.27.1-restored/go/bin/go'

@@ -12,10 +12,18 @@ features:
 - claude-artifacts
 - claude-install
 - claude-plugins
+- claude-support
 enabled_optional:
 - fonts.googleapis.com
 - fonts.gstatic.com
-review_as_of: '2026-10-03'
+- http-intake.logs.us5.datadoghq.com
+- browser-intake-us5-datadoghq.com
+- api-iam.intercom.io
+- widget.intercom.io
+- js.intercomcdn.com
+- downloads.intercomcdn.com
+- static.intercomassets.com
+review_as_of: '2026-10-09'
 approved_regex:
   ^[^.]+-review\.googlesource\.com$:
     reason: 'Optional Gerrit host: one label ending in -review; does not match other googlesource hosts.'

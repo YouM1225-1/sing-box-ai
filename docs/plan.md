@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.25**；核验日期：2026-10-03（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；当前正式发行、Latest、`dist/` 与 `artifacts/v0.1.2/` 均为 `v0.1.2`；发布证据见 §7。
-> 当前状态：`v0.1.2` 手动正式发布完成，固定 URL、Latest 下载及本机空缓存加载均通过；两次正式构建与已验收候选逐字节一致。旧 Release 保留，未访问或操作 N100，消费者与部署身份仍为空/pending。
+> 文档修订：**1.26**；规则补充核验日期：2026-10-09（Asia/Shanghai）。
+> 主仓库：`YouM1225-1/sing-box-ai`；工作树输入与新候选为 `v0.1.3-rc.1`；既有正式发行及本地 `dist/` 仍为 `v0.1.2`。本轮未重新查询远端 Latest；2026-10-03 的发布证据见 §7。
+> 当前工作：依据用户选择的“核验用途后补齐”，新增启用 2 个 Datadog 与 5 个帮助中心/客服精确主机；详见[补齐报告](claude-rule-supplement-2026-10-09.md)。新批次为本地 candidate，发布批准为空，消费者与部署身份仍为空/pending。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -23,7 +23,7 @@
 
 产品 YAML 只维护补充层。不得抄写或筛选上游列表再声称完整继承。SRS 是实际构建输入，DLC 文本保留属性与行级来源并作等价旁证；不一致即停止批次，不改用文本替代 SRS。上游已有的 apex、后缀、正则、共享依赖和遥测分类均继承；社区归类不改标为官方逐项认可。若新基线含不支持结构或不可接受范围，停止采用整批新基线，保留上一受审版本，不静默裁剪。
 
-默认设计范围包含 ChatGPT 网页/客户端、Codex 运行及选定 `codex-install` 安装路径、Voice，以及 Claude Web/API/Code/Desktop、Artifacts（含所选 Google Fonts）和官方所列安装/插件依赖。此范围是规则设计目标，不是所有平台都已验收的声明。第三方登录、支付跳转、用户 MCP、任意插件和外部网页不能由有限产品集合穷举；Realtime SIP 电话接入不属于本次默认范围；另选 Bedrock、Vertex 等 provider 时，须建立对应环境的独立需求，不加入整个云厂商后缀。
+默认设计范围包含 ChatGPT 网页/客户端、Codex 运行及选定 `codex-install` 安装路径、Voice，以及 Claude Web/API/Code/Desktop、Artifacts（含所选 Google Fonts）和官方所列安装/插件依赖。`0.1.3-rc.1` 另选择 Claude Code 的两个可选遥测主机，以及 `claude-support` 帮助中心/客服的五个可选精确主机。此范围是规则设计目标，不是所有平台都已验收的声明。第三方登录、支付跳转、用户 MCP、任意插件和外部网页不能由有限产品集合穷举；Realtime SIP 电话接入不属于本次默认范围；另选 Bedrock、Vertex 等 provider 时，须建立对应环境的独立需求，不加入整个云厂商后缀。
 
 `anthropic-ip.srs` 不接入 N100 当前客户端路由或 Hysteria2 入站白名单，也不代替应用鉴权。两个目的集合及该来源集合都不得通过 `rule_set_ip_cidr_match_source` 改写用途。
 
@@ -94,7 +94,7 @@ alpha.9 存在新旧两条 DNS 路径。`defaultRuleDisablesLegacyDNSMode` 把 `
 <a id="supplements"></a>
 ## 3. 完整补充清单
 
-本节列出的都是相对 §2 固定基线的缺口，不是相对旧仓库或 rc.1 的新增差异。已有范围不会重复维护一套人工基础列表。`0.1.1` 的 `enabled_optional` 只包含 `fonts.googleapis.com`、`fonts.gstatic.com`；五个 optional 的源身份不变。该开关不删基线已有项，17 条 pending 仍全部未选。
+本节列出的都是相对 §2 固定基线的缺口，不是相对旧仓库或 rc.1 的新增差异。已有范围不会重复维护一套人工基础列表。`0.1.1` 与 `0.1.2` 的 `enabled_optional` 只包含两个字体主机；`0.1.3-rc.1` 增加两个 Datadog 及五个客服主机，合计选中 9 个 optional exact。原有五个 optional 的源身份保留，另有五个客服 optional 源项；Gerrit regex 仍未选。该开关不删基线已有项，17 条 pending 仍全部未选。
 
 ### 3.1 OpenAI
 
@@ -196,14 +196,21 @@ formulae.brew.sh
 
 前五项为 Artifact 库 CDN；官方未提供库回退，不能和可回退字体一并省略。其余按安装、更新、插件及 Homebrew 路径记录 `features`。这些是共享基础设施，按域名分流会影响其他软件的相同请求；exact `github.com` 不覆盖 `api.github.com` 等子域。
 
-**2 个已选 optional exact**（源身份仍 optional）：
+**9 个已选 optional exact**（`0.1.3-rc.1`；源身份仍 optional）：
 
 ```text
 fonts.googleapis.com
 fonts.gstatic.com
+http-intake.logs.us5.datadoghq.com
+browser-intake-us5-datadoghq.com
+api-iam.intercom.io
+widget.intercom.io
+js.intercomcdn.com
+downloads.intercomcdn.com
+static.intercomassets.com
 ```
 
-两项一起选择，为既定 Desktop/Artifacts 字体功能提供产品集合覆盖。先前 CSS/实际字体资源经 Google 规则可达，不是已证实的当前字体故障；现在主动减少对通用 Google 集合的依赖。其余两个 Datadog 主机和 Gerrit regex 保持 optional 且未选，不删除完整基线已有的统计/遥测条目。
+前两项继续为 Desktop/Artifacts 字体功能提供覆盖。两个 Datadog 主机经 2026-10-09 官方网络文档复核后启用，仅对应可选遥测/错误报告；不会更改客户端遥测开关。五个客服主机来自官方帮助页的资源标签、messenger 配置及其链接的 widget loader，产品范围限定为 `claude-support`；optional 是仓库的功能选择，不能称为聊天/API 必需项或实际客服请求验收。来源与边界见[本轮证据](../sources/evidence/claude-rule-review-2026-10-09.json)和[客服来源记录](../sources/official/source-records/claude-support.json)。Gerrit regex 仍未选，不删除完整基线已有的统计/遥测条目。
 
 **1 个已经批准的历史兼容 exact**：
 

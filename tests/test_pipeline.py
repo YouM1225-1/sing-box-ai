@@ -17,6 +17,14 @@ from sync import parse_dlc, report
 from validate import cases_for, release_gate
 
 
+CLAUDE_OPTIONAL_HOSTS = {
+    "fonts.googleapis.com", "fonts.gstatic.com",
+    "http-intake.logs.us5.datadoghq.com", "browser-intake-us5-datadoghq.com",
+    "api-iam.intercom.io", "widget.intercom.io", "js.intercomcdn.com",
+    "downloads.intercomcdn.com", "static.intercomassets.com",
+}
+
+
 class PolicyTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -39,8 +47,9 @@ class PolicyTests(unittest.TestCase):
         self.assertEqual(challenge["review_status"], "approved")
         self.assertEqual(len([r for r in selected["openai"] if r["type"] == "ip_cidr"]), 23)
         self.assertTrue(len(cases_for(selected)) > 500)
-        self.assertEqual(set(policy["enabled_optional"]), {"fonts.googleapis.com", "fonts.gstatic.com"})
+        self.assertEqual(set(policy["enabled_optional"]), CLAUDE_OPTIONAL_HOSTS)
         self.assertIn("codex-install", policy["features"])
+        self.assertIn("claude-support", policy["features"])
 
     def change_policy(self, **changes):
         path = self.root / "sources/policy.yaml"
@@ -59,7 +68,7 @@ class PolicyTests(unittest.TestCase):
         self.change_policy(enabled_optional=[])
         selected, policy, _ = canonical(self.root)
         self.assertEqual(policy["enabled_optional"], [])
-        for host in ("fonts.googleapis.com", "fonts.gstatic.com"):
+        for host in CLAUDE_OPTIONAL_HOSTS:
             self.assertFalse(covered({"type": "domain", "value": host}, selected["anthropic"]))
         registry = archives(self.root)
         for name in ("openai", "anthropic"):
@@ -85,7 +94,7 @@ class PolicyTests(unittest.TestCase):
         selected, policy, _ = canonical(self.root)
         additions = {
             "openai": {"github.com", "api.github.com", "release-assets.githubusercontent.com", "registry.npmjs.org"},
-            "anthropic": {"fonts.googleapis.com", "fonts.gstatic.com"},
+            "anthropic": CLAUDE_OPTIONAL_HOSTS,
             "anthropic-ip": set(),
         }
         for artifact, hosts in additions.items():
@@ -96,6 +105,22 @@ class PolicyTests(unittest.TestCase):
                 expected["rules"][0]["domain_suffix"] = sorted(set(expected["rules"][0]["domain_suffix"]) | {"claude.dev"})
             self.assertEqual(semantic_key(source_document(selected[artifact])), semantic_key(expected), artifact)
         self.assertEqual(policy["selected_pending"], [])
+
+    def test_shared_optionals_keep_exact_scope(self):
+        selected, _, _ = canonical(self.root)
+        rules = selected["anthropic"]
+        for host in CLAUDE_OPTIONAL_HOSTS:
+            self.assertTrue(covered({"type": "domain", "value": host}, rules))
+            for other in ("sub." + host, host + ".evil.test"):
+                self.assertFalse(covered({"type": "domain", "value": other}, rules))
+        for host in ("datadoghq.com", "logs.us5.datadoghq.com", "other.logs.us5.datadoghq.com", "datadog.example.org", "sift.example.org"):
+            self.assertFalse(covered({"type": "domain", "value": host}, rules))
+        for domain in ("intercom.io", "intercomcdn.com", "intercomassets.com"):
+            for host in (domain, "unrelated." + domain):
+                self.assertFalse(covered({"type": "domain", "value": host}, rules))
+        self.assertFalse(covered({"type": "ip_cidr", "value": "160.79.104.0/21"}, rules))
+        self.assertFalse(covered({"type": "ip_cidr", "value": "2607:6bc0::/32"}, rules))
+        self.assertTrue(covered({"type": "source_ip_cidr", "value": "160.79.104.0/21"}, selected["anthropic-ip"]))
 
     def test_codex_install_feature_cannot_be_silently_disabled(self):
         policy = load(self.root / "sources/policy.yaml")

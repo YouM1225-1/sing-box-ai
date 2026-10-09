@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "claude-support",
+  "url": "https://support.claude.com/en/",
+  "retrieved_at": "2026-10-09T04:35:26.425156+00:00",
+  "method": "Reviewed first-party help-center HTML and its linked messenger loader; optional classification is a repository scope choice, not a claim of mandatory Claude chat/API dependency.",
+  "page_updated": null,
+  "facts": [
+    {
+      "artifact": "anthropic",
+      "value": "api-iam.intercom.io",
+      "type": "domain",
+      "product": [
+        "claude-support"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "anthropic",
+      "value": "widget.intercom.io",
+      "type": "domain",
+      "product": [
+        "claude-support"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "anthropic",
+      "value": "downloads.intercomcdn.com",
+      "type": "domain",
+      "product": [
+        "claude-support"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "anthropic",
+      "value": "static.intercomassets.com",
+      "type": "domain",
+      "product": [
+        "claude-support"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    },
+    {
+      "artifact": "anthropic",
+      "value": "js.intercomcdn.com",
+      "type": "domain",
+      "product": [
+        "claude-support"
+      ],
+      "direction": "destination",
+      "status": "optional",
+      "shared_dependency": true
+    }
+  ],
+  "raw_reference": "claude-support-source",
+  "raw_sha256": "cfc00081e19dd567c8b50b161ddc249eea70fcdeb03e5435be91f6a61eea91ff",
+  "locators": [
+    "script#__NEXT_DATA__ JSON $.props.pageProps.app.apiBase",
+    "script#__NEXT_DATA__ JSON $.props.pageProps.app.messengerUrl",
+    "img[src^=\"https://downloads.intercomcdn.com/\"]",
+    "script[src^=\"https://static.intercomassets.com/\"], link[href^=\"https://static.intercomassets.com/\"]",
+    "JavaScript variable d=\"https://js.intercomcdn.com/\"; used as prefix when constructing dynamically injected script src"
+  ],
+  "last_reviewed_at": "2026-10-09T04:35:27.238604+00:00",
+  "page_updated_absolute": null,
+  "original_response_sha256": "3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2"
+}

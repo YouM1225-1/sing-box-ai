@@ -1,0 +1,45 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "api-iam.intercom.io",
+        "browser-intake-us5-datadoghq.com",
+        "cdn.jsdelivr.net",
+        "cdn.tailwindcss.com",
+        "cdnjs.cloudflare.com",
+        "challenges.cloudflare.com",
+        "code.jquery.com",
+        "downloads.intercomcdn.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "formulae.brew.sh",
+        "github.com",
+        "http-intake.logs.us5.datadoghq.com",
+        "js.intercomcdn.com",
+        "raw.githubusercontent.com",
+        "registry.npmjs.org",
+        "servd-anthropic-website.b-cdn.net",
+        "static.intercomassets.com",
+        "storage.googleapis.com",
+        "unpkg.com",
+        "widget.intercom.io"
+      ],
+      "domain_suffix": [
+        "anthropic.com",
+        "clau.de",
+        "claude.ai",
+        "claude.app",
+        "claude.com",
+        "claude.dev",
+        "claudemcpclient.com",
+        "claudemcpcontent.com",
+        "claudeusercontent.com"
+      ],
+      "ip_cidr": [
+        "160.79.104.0/23",
+        "2607:6bc0::/48"
+      ]
+    }
+  ],
+  "version": 2
+}

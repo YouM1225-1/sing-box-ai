@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "candidate": "v0.1.3-rc.1",
+  "baseline": "v0.1.2",
+  "build_mode": "candidate",
+  "scope": "local source, SRS and isolated runtime loading; no real-client deployment or publication",
+  "added_exact_domains": [
+    "api-iam.intercom.io",
+    "browser-intake-us5-datadoghq.com",
+    "downloads.intercomcdn.com",
+    "http-intake.logs.us5.datadoghq.com",
+    "js.intercomcdn.com",
+    "static.intercomassets.com",
+    "widget.intercom.io"
+  ],
+  "removed_exact_domains": [],
+  "suffixes_regex_and_ip_unchanged": true,
+  "openai_and_anthropic_ip_byte_identical_to_v012": true,
+  "dist_byte_identical_to_v012": true,
+  "manifest_inputs_match_worktree": true,
+  "native_validation": {
+    "baseline_complete": true,
+    "cases": 2164,
+    "clean_rebuild_equal": true,
+    "failures": 0,
+    "level": "local-source-binary-and-isolated-check",
+    "native_result_sha256": "5d73c4c923b7f80abb405f499940179ed4cc78b1dabbe9e049c5d57b4925df2a",
+    "test_harness": {
+      "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+      "go_version": "go1.27.1",
+      "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+      "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+      "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+    },
+    "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+  },
+  "unit_tests": {
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "log": "unit-tests.log"
+  },
+  "independent_review": {
+    "result": "no actionable findings",
+    "scope": "source classification, provenance hashes, exact host boundaries and tests",
+    "runtime_claim": false
+  },
+  "artifacts": [
+    {
+      "binary_version": 2,
+      "bytes": 775,
+      "direction": "destination",
+      "path": "openai.srs",
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "source_path": "openai.json",
+      "source_sha256": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 462,
+      "direction": "destination",
+      "path": "anthropic.srs",
+      "sha256": "a34483911551a44160e394555d2a62a199e423d16e7ae544da7a0ef1dc57946e",
+      "source_path": "anthropic.json",
+      "source_sha256": "29310163e51c4aaae33d8b1f08a10a5eb04f199710f144bd20b97ed64ef0f9bb"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 36,
+      "direction": "source",
+      "path": "anthropic-ip.srs",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "source_path": "anthropic-ip.json",
+      "source_sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5"
+    }
+  ],
+  "tool_invocation_notes": [
+    "Initial relative Go executable failed after validator changed its working directory.",
+    "Default module cache was unavailable with offline GOPROXY; rerun used the existing repository module cache and absolute pinned Go executable.",
+    "No dependency versions, hashes or validators were changed."
+  ]
+}

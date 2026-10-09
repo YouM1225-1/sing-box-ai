@@ -174,6 +174,61 @@
   - kind: official
     reference: claude-code
   reason: Optional operational telemetry/error reporting
+- value: api-iam.intercom.io
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center messenger API configured by the official support page
+- value: widget.intercom.io
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center messenger loader linked by the official support page
+- value: js.intercomcdn.com
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional messenger scripts loaded by the official help-center widget dependency
+- value: downloads.intercomcdn.com
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center logo and category images observed in official HTML
+- value: static.intercomassets.com
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center JavaScript and CSS observed in official HTML
 - value: fonts.googleapis.com
   type: domain
   product:

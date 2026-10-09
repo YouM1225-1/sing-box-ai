@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 255, in <module>
+    main()
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 250, in main
+    manifest = validate(a.directory, a.go, a.for_release)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 225, in validate
+    native, harness_info = harness(root, temp, go)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 83, in harness
+    modules = run([go, "list", "-m", "github.com/sagernet/sing-box", "github.com/sagernet/sing"], cwd=cwd, env=env).stdout.splitlines()
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/common.py", line 452, in run
+    need(completed.returncode == 0, f"Command failed: {args[0]}\n{completed.stderr[-4000:]}")
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/common.py", line 31, in need
+    raise Invalid(message)
+common.Invalid: Command failed: /Users/yeminjie/Developer/sing-box-ai/.tools/go1.27.1-restored/go/bin/go
+go: module lookup disabled by GOPROXY=off
+go: module lookup disabled by GOPROXY=off

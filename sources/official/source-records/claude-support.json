@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "claude-support-source",
+  "kind": "official-source-record",
+  "url": "https://support.claude.com/en/",
+  "retrieved_at": "2026-10-09T04:35:26.425156+00:00",
+  "extraction_method": "Inspected first-party Claude support HTML resource attributes and embedded messenger configuration, then followed its widget loader. Only endpoint facts and locators are redistributed; raw bodies remain in the local review cache.",
+  "original_response": {
+    "sha256": "3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2",
+    "content_format": "https-html",
+    "is_original_html": true,
+    "bytes": 201613,
+    "http_status": 200,
+    "final_url": "https://support.claude.com/en/"
+  },
+  "supporting_responses": [
+    {
+      "url": "https://widget.intercom.io/widget/lupk8zyo",
+      "final_url": "https://widget.intercom.io/widget/lupk8zyo",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-09T04:35:27.238604+00:00",
+      "response_content_encoding": "gzip",
+      "response_content_type": "application/javascript; charset=UTF-8",
+      "transport_bytes": 1946,
+      "transport_sha256": "c5b9ae0c05af979e9b498d4e176bbc15e60dcda66a9440fa5028e19ba915990e",
+      "saved_bytes": 4235,
+      "saved_sha256": "470f1a8726f62be881da6ea3f5e1c757d99c91e7f278a7cf33361a99f91ef9af",
+      "saved_representation": "HTTP body after gzip content decoding when applicable; no further normalization",
+      "artifact": "widget.js"
+    }
+  ],
+  "page_updated_literal": null,
+  "page_updated_absolute": null,
+  "full_page_redistributed": false,
+  "facts": [
+    {
+      "value": "api-iam.intercom.io",
+      "locator": "script#__NEXT_DATA__ JSON $.props.pageProps.app.apiBase",
+      "source_url": "https://support.claude.com/en/",
+      "scope": "Optional Claude help-center resources or messenger configuration; not a chat/API requirement",
+      "evidence_kind": "static-html-reference",
+      "source_sha256": "3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2"
+    },
+    {
+      "value": "widget.intercom.io",
+      "locator": "script#__NEXT_DATA__ JSON $.props.pageProps.app.messengerUrl",
+      "source_url": "https://support.claude.com/en/",
+      "scope": "Optional Claude help-center resources or messenger configuration; not a chat/API requirement",
+      "evidence_kind": "static-html-reference",
+      "source_sha256": "3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2"
+    },
+    {
+      "value": "downloads.intercomcdn.com",
+      "locator": "img[src^=\"https://downloads.intercomcdn.com/\"]",
+      "source_url": "https://support.claude.com/en/",
+      "scope": "Optional Claude help-center resources or messenger configuration; not a chat/API requirement",
+      "evidence_kind": "static-html-reference",
+      "source_sha256": "3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2"
+    },
+    {
+      "value": "static.intercomassets.com",
+      "locator": "script[src^=\"https://static.intercomassets.com/\"], link[href^=\"https://static.intercomassets.com/\"]",
+      "source_url": "https://support.claude.com/en/",
+      "scope": "Optional Claude help-center resources or messenger configuration; not a chat/API requirement",
+      "evidence_kind": "static-html-reference",
+      "source_sha256": "3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2"
+    },
+    {
+      "value": "js.intercomcdn.com",
+      "locator": "JavaScript variable d=\"https://js.intercomcdn.com/\"; used as prefix when constructing dynamically injected script src",
+      "source_url": "https://widget.intercom.io/widget/lupk8zyo",
+      "scope": "Optional Claude help-center resources or messenger configuration; not a chat/API requirement",
+      "evidence_kind": "linked-widget-loader",
+      "source_sha256": "470f1a8726f62be881da6ea3f5e1c757d99c91e7f278a7cf33361a99f91ef9af"
+    }
+  ],
+  "boundary": "Static public-page and script evidence, not authenticated runtime traffic, login success, or proof that every host is contacted in every session. Optional is the repository selection policy for support functionality.",
+  "rights": "Endpoint facts and locators recorded for interoperability; full third-party page and script bodies are not redistributed."
+}
