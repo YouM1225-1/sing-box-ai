@@ -1,0 +1,606 @@
+{
+  "schema": 1,
+  "version": "0.1.4",
+  "timestamp_utc": "2026-10-09T07:08:25.284542+00:00",
+  "method": "Native sing-box alpha.9 with fixed GitHub release URLs, empty initial cache, default HTTP client and no download_detour; all test business destinations rejected on loopback SOCKS.",
+  "boundary": "Actual HTTPS fetch via existing Mac network. No N100, TUN, system DNS/routes/firewall or production configuration/service changes. Does not prove production startup or authenticated product functionality.",
+  "script_sha256": "8001aa3416f7f361945109468104fcfae2a6ccbe04cd1f6e963c00a0e62deabd",
+  "binary_sha256": "fcb47f341e6660a35385ceeffc0cebb2daca3fed4d35c729b7d45f7b66555f9a",
+  "binary_version": "sing-box version 1.15.0-alpha.9\n\nEnvironment: go1.26.8 darwin/arm64\nTags: with_gvisor,with_quic,with_dhcp,with_wireguard,with_utls,with_acme,with_clash_api,with_tailscale,with_ccm,with_ocm,with_cloudflared,with_naive_outbound,with_usbip,with_openvpn,with_openconnect,badlinkname,tfogo_checklinkname0\nRevision: 132b38e9caaba1a1959354d518e54d2d08419afe\nCGO: enabled\n",
+  "assets": {
+    "anthropic": {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.4/anthropic.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 473,
+      "sha256": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035",
+      "cache_contains_complete_expected_srs": true,
+      "native_update_logged": true
+    },
+    "openai": {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.4/openai.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 775,
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "cache_contains_complete_expected_srs": true,
+      "native_update_logged": true
+    },
+    "anthropic-ip": {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.4/anthropic-ip.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "cache_contains_complete_expected_srs": true,
+      "native_update_logged": true
+    }
+  },
+  "requests": [
+    {
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "browser-intake-us5-datadoghq.com",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "api-iam.intercom.io",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "widget.intercom.io",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "js.intercomcdn.com",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "downloads.intercomcdn.com",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "static.intercomassets.com",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "api.github.com",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "fonts.googleapis.com",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.dev",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claude.dev",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claude.dev",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaude.dev",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.dev.invalid",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claude.dev.invalid",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude-dev.invalid",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unmatched.audit-review.invalid",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "datadog.audit-review.invalid",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "sift.audit-review.invalid",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unrelated.datadoghq.com",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unrelated.intercom.io",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unrelated.intercomcdn.com",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unrelated.intercomassets.com",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.browser-intake-us5-datadoghq.com",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.http-intake.logs.us5.datadoghq.com",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.js.intercomcdn.com",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.static.intercomassets.com",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "2607:6bc0:11::",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:12::",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0::",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:1::",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "160.79.104.0",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.105.255",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.106.0",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.111.255",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    }
+  ],
+  "passed": true,
+  "config_check": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "native_started": true,
+  "process": {
+    "pid": 14104,
+    "exited": true,
+    "exit": 0
+  },
+  "listener": {
+    "host": "127.0.0.1",
+    "port": 56577,
+    "closed": true
+  },
+  "config_sha256": "102a9492add2cd3f5c35412b46cccc65b867c263be9f99c309d5bb9db94b08be",
+  "runtime_log_sha256": "3832865881d66a632690639faf71d3d656fb18241daed744fdf06b411354ec57",
+  "cache_sha256": "408425df7d4702d0af891c9efcd778204264fa17dea7d6a64762aa3e4a618d50"
+}

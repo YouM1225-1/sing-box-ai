@@ -1,0 +1,89 @@
+{
+  "log": {
+    "level": "debug",
+    "disabled": false,
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "local",
+        "tag": "bootstrap-dns"
+      }
+    ],
+    "final": "bootstrap-dns"
+  },
+  "inbounds": [
+    {
+      "type": "socks",
+      "tag": "audit-socks",
+      "listen": "127.0.0.1",
+      "listen_port": 56577
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "unused-direct"
+    }
+  ],
+  "http_clients": [
+    {
+      "tag": "bootstrap-http"
+    }
+  ],
+  "route": {
+    "default_http_client": "bootstrap-http",
+    "default_domain_resolver": "bootstrap-dns",
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "anthropic",
+        "format": "binary",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.4/anthropic.srs",
+        "update_interval": "24h"
+      },
+      {
+        "type": "remote",
+        "tag": "openai",
+        "format": "binary",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.4/openai.srs",
+        "update_interval": "24h"
+      },
+      {
+        "type": "remote",
+        "tag": "anthropic-ip",
+        "format": "binary",
+        "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.4/anthropic-ip.srs",
+        "update_interval": "24h"
+      }
+    ],
+    "rules": [
+      {
+        "rule_set": "anthropic",
+        "action": "reject",
+        "no_drop": true
+      },
+      {
+        "rule_set": "openai",
+        "action": "reject",
+        "no_drop": true
+      },
+      {
+        "rule_set": "anthropic-ip",
+        "action": "reject",
+        "no_drop": true
+      },
+      {
+        "action": "reject",
+        "no_drop": true
+      }
+    ]
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "/Users/yeminjie/Developer/sing-box-ai/build/release-v0.1.4-remote/cold-cache.db"
+    }
+  }
+}

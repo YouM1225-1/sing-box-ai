@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "project_version": "0.1.4",
+  "verified_at_utc": "2026-10-09T07:09:20.044289+00:00",
+  "release_id": 407627047,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.4",
+  "latest_api_confirmed": true,
+  "published_at": "2026-10-09T07:08:21Z",
+  "publisher": "YouM1225-1",
+  "source_commit": "6a9e17531f7892da6dfd42b241f0d2a0df8a5591",
+  "tag_commit": "e3e32c2fae4cb8edd5b14962c0c55a85afac3b71",
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/SHA256SUMS",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 409,
+      "sha256": "12e2ab6893345720f8197f78f51b61e7a36b5eb411e8520feb4b5706bd858cb1",
+      "matches_local": true
+    },
+    {
+      "name": "anthropic-ip.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic-ip.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "matches_local": true
+    },
+    {
+      "name": "anthropic.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 473,
+      "sha256": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035",
+      "matches_local": true
+    },
+    {
+      "name": "manifest.json",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/manifest.json",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 91041,
+      "sha256": "9fc20006459be3a26a4fd77933014bce83436655b458c4c9d3e14efadf36e298",
+      "matches_local": true
+    },
+    {
+      "name": "openai.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 775,
+      "sha256": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "matches_local": true
+    },
+    {
+      "name": "sing-box-ai-v0.1.4.zip",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/sing-box-ai-v0.1.4.zip",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 1561932,
+      "sha256": "e1bff50eb45b65af71f0c11c924295c011cce8a8bcd7cd5e5226611cd7a27ae7",
+      "matches_local": true
+    }
+  ],
+  "fixed_downloads_verified": 6,
+  "latest_downloads_verified": 6,
+  "empty_cache_route_cases": 39,
+  "empty_cache_rulesets": 3,
+  "preserved_prior_releases": [
+    {
+      "tag_name": "v0.1.3",
+      "release_id": 407579868,
+      "metadata_and_assets_unchanged": true
+    },
+    {
+      "tag_name": "v0.1.2",
+      "release_id": 402537457,
+      "metadata_and_assets_unchanged": true
+    },
+    {
+      "tag_name": "v0.1.1",
+      "release_id": 398259220,
+      "metadata_and_assets_unchanged": true
+    },
+    {
+      "tag_name": "v0.1.0",
+      "release_id": 397881272,
+      "metadata_and_assets_unchanged": true
+    },
+    {
+      "tag_name": "v0.1.0-rc.1",
+      "release_id": 397700515,
+      "metadata_and_assets_unchanged": true
+    }
+  ],
+  "production_configuration_changed": false,
+  "authenticated_claude_usage_tested": false,
+  "coverage": "All three AS399358 prefixes in the archived RIS snapshot, not a guarantee of all present/future Claude services."
+}
