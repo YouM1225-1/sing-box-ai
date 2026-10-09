@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "project_version": "0.1.4",
+  "source_commit": "6a9e17531f7892da6dfd42b241f0d2a0df8a5591",
+  "comparison": {
+    "anthropic-ip.json": {
+      "release": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5",
+      "independent": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5",
+      "expected": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5"
+    },
+    "anthropic-ip.srs": {
+      "release": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "independent": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "expected": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+    },
+    "anthropic.json": {
+      "release": "f6851a67f42e0b2fdec3c7cd3fa79d7a80ca1370d13c33bc8e61a4f534a34b1b",
+      "independent": "f6851a67f42e0b2fdec3c7cd3fa79d7a80ca1370d13c33bc8e61a4f534a34b1b",
+      "expected": "f6851a67f42e0b2fdec3c7cd3fa79d7a80ca1370d13c33bc8e61a4f534a34b1b"
+    },
+    "anthropic.srs": {
+      "release": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035",
+      "independent": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035",
+      "expected": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035"
+    },
+    "openai.json": {
+      "release": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f",
+      "independent": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f",
+      "expected": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f"
+    },
+    "openai.srs": {
+      "release": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "independent": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f",
+      "expected": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+    }
+  },
+  "two_release_manifests_identical": true,
+  "release_validation": [
+    {
+      "baseline_complete": true,
+      "cases": 2252,
+      "clean_rebuild_equal": true,
+      "failures": 0,
+      "level": "local-source-binary-and-isolated-check",
+      "native_result_sha256": "a9f2afe13190083d87694b3dd83682113e8882775bbcb2a7988ed1698e15c9ab",
+      "test_harness": {
+        "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+        "go_version": "go1.27.1",
+        "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+        "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+        "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+      },
+      "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+    },
+    {
+      "baseline_complete": true,
+      "cases": 2252,
+      "clean_rebuild_equal": true,
+      "failures": 0,
+      "level": "local-source-binary-and-isolated-check",
+      "native_result_sha256": "a9f2afe13190083d87694b3dd83682113e8882775bbcb2a7988ed1698e15c9ab",
+      "test_harness": {
+        "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+        "go_version": "go1.27.1",
+        "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+        "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+        "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+      },
+      "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+    }
+  ],
+  "publication_gate_passed": true,
+  "unit_tests": {
+    "tests": 56,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifact_publication_only": true,
+  "input_commit_binding_verified": true,
+  "dist_copied_from_release": true
+}

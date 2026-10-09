@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.29**；正式发布核验日期：2026-10-09（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；正式输入、`artifacts/v0.1.3/`、`dist/`、GitHub 正式 Release 与 Latest 均为 `v0.1.3`，与受验收 `v0.1.3-rc.1` 六个输出逐字节一致。
-> 当前状态：459/459 项隔离 VPS 消费者证据复核通过，两次正式构建各 2,164 项原生检查、47 项回归、固定及 Latest 各 6 资产下载、本机空缓存 27 项路由断言全部通过；详见[本轮发布证据](evidence/release-v0.1.3/README.md)。发布批准仅针对静态制品，消费者与部署身份仍为空/pending。
+> 主仓库：`YouM1225-1/sing-box-ai`；当前正式输入、`artifacts/v0.1.4/`、`dist/` 为 `v0.1.4`，新增经用户授权的 `2607:6bc0:11::/48`；GitHub Latest 暂为 v0.1.3，正在发布新版本。
+> 当前状态：两次正式构建各 2,252 项原生检查、56 项回归全部通过；详见[本轮发布证据](evidence/release-v0.1.4/README.md)。发布批准仅针对静态制品，消费者与部署身份仍为空/pending；v0.1.3 的 VPS 验收不代表新增网段业务验证。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -60,7 +60,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.3`，对应完整批次在 `artifacts/v0.1.3/`，发布与下载结果见本轮发布证据。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.4`，对应完整批次在 `artifacts/v0.1.4/`，发布与下载结果见本轮发布证据。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品只用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 

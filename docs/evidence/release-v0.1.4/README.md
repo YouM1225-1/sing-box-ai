@@ -23,4 +23,7 @@
 
 ## 当前状态
 
-源规则、原始证据和测试正在准备，正式构建、发布及下载回执尚待完成。此前 v0.1.3 的 VPS 消费者验收不冒用为本次新网段的生产或业务验证。新 manifest 继续保持消费者为空、部署 pending。
+源输入已提交为 `6a9e17531f7892da6dfd42b241f0d2a0df8a5591`。两次正式构建均通过 **2,252 项原生断言**，六个输出和 manifest 完全一致，**56 项回归测试通过**；发布门禁通过。正式批次已写入 artifacts/v0.1.4，dist 已同步；GitHub 发布及下载回执尚待完成。此前 v0.1.3 的 VPS 消费者验收不冒用为本次新网段的生产或业务验证。新 manifest 继续保持消费者为空、部署 pending。
+
+- [两次构建记录](build-results.json) · [完整测试日志](unit-tests.log)。
+- [语义差异](semantic-diff.json) · [正式 manifest](../../../artifacts/v0.1.4/manifest.json)。
