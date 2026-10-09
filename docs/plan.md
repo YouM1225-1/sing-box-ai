@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.26**；规则补充核验日期：2026-10-09（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；工作树输入与新候选为 `v0.1.3-rc.1`；既有正式发行及本地 `dist/` 仍为 `v0.1.2`。本轮未重新查询远端 Latest；2026-10-03 的发布证据见 §7。
-> 当前工作：依据用户选择的“核验用途后补齐”，新增启用 2 个 Datadog 与 5 个帮助中心/客服精确主机；详见[补齐报告](claude-rule-supplement-2026-10-09.md)。新批次为本地 candidate，发布批准为空，消费者与部署身份仍为空/pending。
+> 文档修订：**1.27**；正式构建核验日期：2026-10-09（Asia/Shanghai）。
+> 主仓库：`YouM1225-1/sing-box-ai`；正式输入、`artifacts/v0.1.3/` 与本地 `dist/` 已准备为 `v0.1.3`，与受验收 `v0.1.3-rc.1` 六个输出逐字节一致；远端发布流程进行中。
+> 当前工作：用户提供 459/459 项通过的隔离 VPS 消费者证据，并授权提交、push 和发布 Latest。两次正式构建各 2,164 项原生检查及 47 项回归通过；详见[本轮发布证据](evidence/release-v0.1.3/README.md)。发布批准仅针对静态制品，消费者与部署身份仍为空/pending。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -60,7 +60,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前为已正式发布并完成下载核验的 `v0.1.2`，对应完整批次在 `artifacts/v0.1.2/`。各旧正式批次与 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.3`，对应完整批次在 `artifacts/v0.1.3/`，发布与下载结果见本轮发布证据。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品只用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
@@ -400,7 +400,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式发行与 Latest 为 `0.1.2`，其受验收候选为 `0.1.2-rc.1`；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前本地正式批次为 `0.1.3`，其受验收候选为 `0.1.3-rc.1`；远端 Latest 身份以发布证据为准；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -425,7 +425,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 | 重建 | 两次干净构建一致，完整 manifest 可追溯；同输入得到不同字节时停止发布 |
 | 目标消费者 | 实际加载字节、原始配置 check、接管路径、实际出口、登录/长连接及已声明功能、适用的启动与重启持久化 |
 
-正式批次各自以 release 模式执行 `validate.py --for-release`。`tests/test_artifacts.py` 的对抗回归明确要求 candidate fixture：从同一已提交输入额外生成并验证候选，将 `SINGBOX_TEST_BATCH` 指向该目录后运行完整 46 项；三个 SRS 与三个 JSON 必须和正式批次逐字节一致。不要以已获批准的 release fixture 代替：篡改摘要会先触发发布批准门禁，导致二进制结构反例的预期错误消息不匹配。此调用区分不修改任何校验器、断言或正式批准。
+正式批次各自以 release 模式执行 `validate.py --for-release`。`tests/test_artifacts.py` 的对抗回归明确要求 candidate fixture：从同一已提交输入额外生成并验证候选，将 `SINGBOX_TEST_BATCH` 指向该目录后运行完整回归（`0.1.3` 为 47 项）；三个 SRS 与三个 JSON 必须和正式批次逐字节一致。不要以已获批准的 release fixture 代替：篡改摘要会先触发发布批准门禁，导致二进制结构反例的预期错误消息不匹配。此调用区分不修改任何校验器、断言或正式批准。
 
 `rule-set match -f binary` 仅给目的 IP 或域名赋值，不设置 Source；命中信息在 stderr，未命中通常也退出 0。先查执行错误，再判定匹配输出。来源方向必须用固定模块 harness 的 Source/Destination 独立输入测试，每例新建或正确重置 metadata。
 
@@ -436,7 +436,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-当前[发布授权](../sources/evidence/release-v0.1.2-authorization.json)与[静态语义审阅](../sources/evidence/release-v0.1.2-review.json)只批准 `0.1.2` 的三个指定摘要；`release-review.json` 绑定这批记录。旧 `0.1.0`、`0.1.1` 批准及各候选 `publication_approval=null` 保留历史身份。OpenAI 网络及登录页面本轮 HTTP 403 的未核实范围列入审阅局限，不称官方域名清单已全面更新核对。
+`v0.1.2` 的历史[发布授权](../sources/evidence/release-v0.1.2-authorization.json)与[静态语义审阅](../sources/evidence/release-v0.1.2-review.json)只批准 `0.1.2` 的三个指定摘要。当前 `release-review.json` 改为绑定 `0.1.3` 的新授权与新审阅；两个版本的独立批准均保留。旧 `0.1.0`、`0.1.1` 批准及各候选 `publication_approval=null` 保留历史身份。OpenAI 网络及登录页面本轮 HTTP 403 的未核实范围列入审阅局限，不称官方域名清单已全面更新核对。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 
