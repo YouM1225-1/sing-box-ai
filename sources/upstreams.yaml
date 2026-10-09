@@ -327,3 +327,35 @@ archives:
     and locators are redistributed; raw bodies remain in the local review cache.
   format: functional-endpoint-facts-json
   original_response_sha256: 3ea41d6879982111f8b48e5cb843798e65bc19f2c13d3bcbac12064820e249e2
+- id: as399358-rdap
+  url: https://rdap.arin.net/registry/autnum/399358
+  path: sources/network/as399358-rdap-2026-10-09.json
+  sha256: dbe50c856a1919dd145ae59ffb1b50cdc0d860aff7e3c6c0310cb73feb520e6d
+  retrieved_at: '2026-10-09T06:59:22.015232+00:00'
+  kind: network-registry
+  method: https-raw-json; network ownership/announcement only, not service-purpose
+    certification
+- id: anthropic-ipv6-rdap
+  url: 'https://rdap.arin.net/registry/ip/2607:6bc0::'
+  path: sources/network/anthropic-ipv6-rdap-2026-10-09.json
+  sha256: 96e9bf5e66061f8cabd7d69036c9492bfe7e534f22445200cf1b455e15c24ffd
+  retrieved_at: '2026-10-09T06:59:22.011731+00:00'
+  kind: network-registry
+  method: https-raw-json; network ownership/announcement only, not service-purpose
+    certification
+- id: as399358-announced-prefixes
+  url: https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358
+  path: sources/network/as399358-announced-prefixes-2026-10-09.json
+  sha256: 9ced841ff83e394b7a3a93d07a65b21d43dd2e0efb8ab38511742002d8614c0b
+  retrieved_at: '2026-10-09T06:59:22.481988+00:00'
+  kind: routing-observation
+  method: https-raw-json; network ownership/announcement only, not service-purpose
+    certification
+- id: as399358-routing-status
+  url: https://stat.ripe.net/data/routing-status/data.json?resource=AS399358
+  path: sources/network/as399358-routing-status-2026-10-09.json
+  sha256: dbf419de7cb642eb41181bc4dc2606fdec0172ff7083e9db569aae58e00b265a
+  retrieved_at: '2026-10-09T06:59:23.073798+00:00'
+  kind: routing-observation
+  method: https-raw-json; network ownership/announcement only, not service-purpose
+    certification

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "project_version": "0.1.4",
+  "baseline": "v0.1.3",
+  "comparison": {
+    "anthropic": {
+      "ip_cidr": {
+        "added": [
+          "2607:6bc0:11::/48"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {},
+    "openai": {}
+  },
+  "artifact_hashes": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "all_archived_announcements_covered": true,
+  "archived_announcements": [
+    "160.79.104.0/23",
+    "2607:6bc0:11::/48",
+    "2607:6bc0::/48"
+  ],
+  "snapshot_latest_time": "2026-10-09T00:00:00",
+  "unrelated_artifacts_byte_identical": true,
+  "purpose": "Independent expected bytes generated from v0.1.3 plus only the explicitly authorized /48; canonical builds must reproduce these bytes.",
+  "limitations": [
+    "Observation coverage only; not a guarantee of all future routes or authenticated product functionality."
+  ]
+}

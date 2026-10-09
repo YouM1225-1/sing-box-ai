@@ -30,8 +30,8 @@ class PublicationTests(unittest.TestCase):
         self.artifacts = {a["path"]: a["sha256"] for a in candidate["artifacts"]}
         evidence_path = "sources/evidence/publication-unit-proof.json"
         write_json(self.root / evidence_path, {"purpose": "synthetic unit fixture, not real validation"})
-        self.authorization = {"schema": 1, "kind": "operator-authorization", "scope": "artifact-publication", "authorized_on": "2026-09-28", "project_version": self.version, "artifacts": self.artifacts, "instruction": "Synthetic unit fixture; no publication authorized", "deployment_authorized": False, "limitations": ["Synthetic fixture only; no N100 actions or consumer acceptance"]}
-        self.semantic = {"schema": 1, "kind": "semantic-diff-review", "scope": "artifact-publication", "status": "approved", "reviewed_on": "2026-09-28", "project_version": self.version, "artifacts": self.artifacts, "unresolved_conflicts": [], "conclusion": "Synthetic fixture, not a review of a real publication", "evidence": [{"path": evidence_path, "sha256": sha(self.root / evidence_path)}]}
+        self.authorization = {"schema": 1, "kind": "operator-authorization", "scope": "artifact-publication", "authorized_on": "2026-10-09", "project_version": self.version, "artifacts": self.artifacts, "instruction": "Synthetic unit fixture; no publication authorized", "deployment_authorized": False, "limitations": ["Synthetic fixture only; no N100 actions or consumer acceptance"]}
+        self.semantic = {"schema": 1, "kind": "semantic-diff-review", "scope": "artifact-publication", "status": "approved", "reviewed_on": "2026-10-09", "project_version": self.version, "artifacts": self.artifacts, "unresolved_conflicts": [], "conclusion": "Synthetic fixture, not a review of a real publication", "evidence": [{"path": evidence_path, "sha256": sha(self.root / evidence_path)}]}
         self.review = {"schema": 2, "scope": "artifact-publication", "status": "approved", "project_version": self.version, "artifacts": self.artifacts, "deployment_status": "pending", "integration_evidence": []}
         self.record("operator_authorization", self.authorization)
         self.record("semantic_diff_review", self.semantic)
@@ -39,8 +39,8 @@ class PublicationTests(unittest.TestCase):
         run(["git", "init", "-q"], cwd=self.root)
         run(["git", "add", "VERSION", "tools.lock.json", "requirements.txt", "sources", "scripts", "tests"], cwd=self.root)
         run(["git", "-c", "core.hooksPath=/dev/null", "-c", "user.name=Unit fixture", "-c", "user.email=fixture@example.invalid", "-c", "commit.gpgsign=false", "commit", "--no-verify", "-qm", "Synthetic test inputs"], cwd=self.root)
-        self.manifest = {"build_mode": "release", "project_version": self.version, "artifacts": candidate["artifacts"], "source_commit": run(["git", "rev-parse", "HEAD"], cwd=self.root).stdout.strip(), "inputs": input_files(self.root), "validated_consumers": [], "integration_evidence": [], "deployment_status": "pending", "enabled_optional": [], "review_as_of": "2026-09-27"}
-        self.clock = patch("validate.today", return_value=dt.date(2026, 9, 28))
+        self.manifest = {"build_mode": "release", "project_version": self.version, "artifacts": candidate["artifacts"], "source_commit": run(["git", "rev-parse", "HEAD"], cwd=self.root).stdout.strip(), "inputs": input_files(self.root), "validated_consumers": [], "integration_evidence": [], "deployment_status": "pending", "enabled_optional": [], "review_as_of": "2026-10-09"}
+        self.clock = patch("validate.today", return_value=dt.date(2026, 10, 9))
         self.clock.start()
         self.addCleanup(self.clock.stop)
 
@@ -68,14 +68,14 @@ class PublicationTests(unittest.TestCase):
                     release_gate(self.root, self.manifest)
 
     def test_operator_instruction_cannot_authorize_other_bytes_or_runtime(self):
-        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"project_version": "different"}, {"artifacts": {}}, {"authorized_on": "2026-09-29"}, {"instruction": " "}, {"deployment_authorized": True}, {"deployment_authorized": 0}, {"limitations": []}):
+        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"project_version": "different"}, {"artifacts": {}}, {"authorized_on": "2026-10-10"}, {"instruction": " "}, {"deployment_authorized": True}, {"deployment_authorized": 0}, {"limitations": []}):
             with self.subTest(changes=changes):
                 self.record("operator_authorization", {**self.authorization, **changes})
                 with self.assertRaisesRegex(Invalid, "authorization"):
                     release_gate(self.root, self.manifest)
 
     def test_semantic_record_is_a_batch_review_not_just_a_hashed_file(self):
-        for changes in ({"kind": "operator-authorization"}, {"scope": "consumer-integration"}, {"status": "pending"}, {"project_version": "different"}, {"artifacts": {}}, {"reviewed_on": "2026-09-29"}, {"unresolved_conflicts": ["unresolved"]}, {"conclusion": " "}, {"evidence": []}):
+        for changes in ({"kind": "operator-authorization"}, {"scope": "consumer-integration"}, {"status": "pending"}, {"project_version": "different"}, {"artifacts": {}}, {"reviewed_on": "2026-10-10"}, {"unresolved_conflicts": ["unresolved"]}, {"conclusion": " "}, {"evidence": []}):
             with self.subTest(changes=changes):
                 self.record("semantic_diff_review", {**self.semantic, **changes})
                 with self.assertRaisesRegex(Invalid, "[Ss]emantic"):
@@ -101,10 +101,10 @@ class PublicationTests(unittest.TestCase):
         with self.assertRaisesRegex(Invalid, "Consumer integration approval"):
             consumer_integration_gate(self.root, self.manifest, self.review)
         coverage = ["openai-login", "claude-login", "challenge", "stable-egress", "dns-routing", "voice", "artifacts", "plugins", "startup", "restart", "consumer-composition"]
-        proof = {"result": "passed", "artifacts": self.artifacts, "coverage": coverage, "platform": "synthetic fixture", "version": "fixture", "environment": "synthetic fixture", "method": "unit fixture, not actual runtime", "address_families": ["IPv4"], "actual_egress": "synthetic", "consumer_config_sha256": "0" * 64, "verified_on": "2026-09-28"}
+        proof = {"result": "passed", "artifacts": self.artifacts, "coverage": coverage, "platform": "synthetic fixture", "version": "fixture", "environment": "synthetic fixture", "method": "unit fixture, not actual runtime", "address_families": ["IPv4"], "actual_egress": "synthetic", "consumer_config_sha256": "0" * 64, "verified_on": "2026-10-09"}
         path = self.root / "runtime-unit-fixture.json"
         review = {"scope": "consumer-integration", "status": "approved", "artifacts": self.artifacts}
-        for changes in ({"coverage": [c for c in coverage if c != "restart"]}, {"actual_egress": None}, {"consumer_config_sha256": "invalid"}, {"artifacts": {}}, {"verified_on": "2026-09-29"}, {}):
+        for changes in ({"coverage": [c for c in coverage if c != "restart"]}, {"actual_egress": None}, {"consumer_config_sha256": "invalid"}, {"artifacts": {}}, {"verified_on": "2026-10-10"}, {}):
             with self.subTest(changes=changes):
                 write_json(path, {**proof, **changes})
                 review["integration_evidence"] = [{"path": path.name, "sha256": sha(path)}]

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "kind": "user-confirmation",
+  "scope": "network-coverage",
+  "confirmed_by": "maintainer",
+  "observed_on": "2026-10-09",
+  "verified_on": "2026-10-09",
+  "result": "passed",
+  "artifact": "anthropic",
+  "direction": "destination",
+  "rule": {
+    "type": "ip_cidr",
+    "value": "2607:6bc0:11::/48"
+  },
+  "products": [
+    "claude-network-coverage"
+  ],
+  "statement": "用户在获知 AS399358 额外公告 2607:6bc0:11::/48、尚无官方服务用途证明后明确要求：“也加入 确保完全覆盖 避免遗漏”。批准把该确切前缀加入默认目的网络覆盖。",
+  "conclusion": "Approve the exact AS399358 announced IPv6 /48 for destination network coverage. Passed denotes acceptance of the requested scope and archived network evidence, not authenticated Claude functionality or product endpoint necessity.",
+  "service_usage_verified": false,
+  "consumer_validation": false,
+  "network_evidence": {
+    "asn_registry": "as399358-rdap",
+    "allocation_registry": "anthropic-ipv6-rdap",
+    "announced_prefixes": "as399358-announced-prefixes"
+  },
+  "limitations": [
+    "Coverage equals the three prefixes in the archived RIS observation; future or unobserved routes are not guaranteed.",
+    "No whole IPv6 /32 or destination IPv4 /21 expansion; no live ASN database matching.",
+    "Not an official Anthropic service requirement. No deployment or real-account validation implied."
+  ]
+}

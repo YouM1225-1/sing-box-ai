@@ -1,0 +1,111 @@
+{
+  "endAutnum" : 399358,
+  "entities" : [ {
+    "entities" : [ {
+      "events" : [ {
+        "eventAction" : "last changed",
+        "eventDate" : "2026-08-18T02:54:11-04:00"
+      }, {
+        "eventAction" : "registration",
+        "eventDate" : "2023-07-31T16:45:12-04:00"
+      } ],
+      "handle" : "ANTHR5-ARIN",
+      "links" : [ {
+        "href" : "https://rdap.arin.net/registry/entity/ANTHR5-ARIN",
+        "rel" : "self",
+        "type" : "application/rdap+json",
+        "value" : "https://rdap.arin.net/registry/autnum/399358"
+      }, {
+        "href" : "https://whois.arin.net/rest/poc/ANTHR5-ARIN",
+        "rel" : "alternate",
+        "type" : "application/xml",
+        "value" : "https://rdap.arin.net/registry/autnum/399358"
+      } ],
+      "objectClassName" : "entity",
+      "port43" : "whois.arin.net",
+      "roles" : [ "administrative", "routing", "dns", "abuse", "noc", "technical" ],
+      "status" : [ "validated" ],
+      "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "adr", {
+        "label" : "548 Market St.\nPMB 90375\nSan Francisco\nCA\n94104-5401\nUnited States"
+      }, "text", [ "", "", "", "", "", "", "" ] ], [ "fn", { }, "text", "Anthropic" ], [ "org", { }, "text", "Anthropic, PBC" ], [ "kind", { }, "text", "group" ], [ "email", { }, "text", "arin@anthropic.com" ], [ "tel", {
+        "type" : [ "work", "voice" ]
+      }, "text", "+1-415-236-0599" ] ] ]
+    } ],
+    "events" : [ {
+      "eventAction" : "last changed",
+      "eventDate" : "2023-08-22T17:10:25-04:00"
+    }, {
+      "eventAction" : "registration",
+      "eventDate" : "2023-07-31T16:51:11-04:00"
+    } ],
+    "handle" : "AP-2440",
+    "links" : [ {
+      "href" : "https://rdap.arin.net/registry/entity/AP-2440",
+      "rel" : "self",
+      "type" : "application/rdap+json",
+      "value" : "https://rdap.arin.net/registry/autnum/399358"
+    }, {
+      "href" : "https://whois.arin.net/rest/org/AP-2440",
+      "rel" : "alternate",
+      "type" : "application/xml",
+      "value" : "https://rdap.arin.net/registry/autnum/399358"
+    } ],
+    "objectClassName" : "entity",
+    "port43" : "whois.arin.net",
+    "roles" : [ "registrant" ],
+    "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Anthropic, PBC" ], [ "adr", {
+      "label" : "548 Market St.\nPMB 90375\nSan Francisco\nCA\n94104-5401\nUnited States"
+    }, "text", [ "", "", "", "", "", "", "" ] ], [ "kind", { }, "text", "org" ] ] ]
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2024-01-08T18:14:26-05:00"
+  }, {
+    "eventAction" : "registration",
+    "eventDate" : "2023-09-20T08:12:18-04:00"
+  } ],
+  "handle" : "AS399358",
+  "links" : [ {
+    "href" : "https://rdap.arin.net/registry/autnum/399358",
+    "rel" : "self",
+    "type" : "application/rdap+json",
+    "value" : "https://rdap.arin.net/registry/autnum/399358"
+  }, {
+    "href" : "https://whois.arin.net/rest/asn/AS399358",
+    "rel" : "alternate",
+    "type" : "application/xml",
+    "value" : "https://rdap.arin.net/registry/autnum/399358"
+  } ],
+  "name" : "ANTHROPIC",
+  "notices" : [ {
+    "description" : [ "By using the ARIN RDAP/Whois service, you are agreeing to the RDAP/Whois Terms of Use" ],
+    "links" : [ {
+      "href" : "https://www.arin.net/resources/registry/whois/tou/",
+      "rel" : "terms-of-service",
+      "type" : "text/html",
+      "value" : "https://rdap.arin.net/registry/autnum/399358"
+    } ],
+    "title" : "Terms of Service"
+  }, {
+    "description" : [ "If you see inaccuracies in the results, please visit: " ],
+    "links" : [ {
+      "href" : "https://www.arin.net/resources/registry/whois/inaccuracy_reporting/",
+      "rel" : "inaccuracy-report",
+      "type" : "text/html",
+      "value" : "https://rdap.arin.net/registry/autnum/399358"
+    } ],
+    "title" : "Whois Inaccuracy Reporting"
+  }, {
+    "description" : [ "Copyright 1997-2026, American Registry for Internet Numbers, Ltd." ],
+    "title" : "Copyright Notice"
+  } ],
+  "objectClassName" : "autnum",
+  "port43" : "whois.arin.net",
+  "rdapConformance" : [ "nro_rdap_profile_0", "rdap_level_0", "nro_rdap_profile_asn_flat_0" ],
+  "remarks" : [ {
+    "description" : [ "-----BEGIN CERTIFICATE-----MIIDazCCAlOgAwIBAgIUedBMpr820vIdbr3tW6OebilaqF0wDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yMzExMjgxNzIzMTJaFw0yNDExMjcxNzIzMTJaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC6k4zpTvIxIgMM38dg6ctRJxHMgsbfsxci0b2EiQ8reT1eMmr+Pj+G4tVmAUaw/0Ic8FhEkiGVikwWKGwen4+eeUl2CWd/SKOjyDI43CXVGrHW7AqBi2SdVWsQUMPVb9Iy63DzYlMtgF467zWrb2iA1pA2BmjEE/E3C4vydxgDVXUEbt5upGqwrmplSEAmWkuev06xotpNdb2yxG1u+6RESz2y6CCQD9dbDDxk6jlU/gylflaRGZXIJ8S63Coch+S4I7cBVdEHVhsVdwJJHR7XbbDbsm9iCx7gF3hV5Dp3325o0ujNnFDOXQCmiZscxd46VZHozcA5HIMIHGD2QbJ1AgMBAAGjUzBRMB0GA1UdDgQWBBSEH+03y964OAbnRXgSDL7orVU6lTAfBgNVHSMEGDAWgBSEH+03y964OAbnRXgSDL7orVU6lTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQA+shFLBI6AlcEOie7oSYcU8DFlmZ2/GHkgkwrskEH6jKNfqID0W5MJY2FnyRNiGUjXfTNobjuzb5l4Cwg0zU0/0CswrUjorJpe8VXXM0emraADDbqYlkJRzeAbN/UWD8TFr84hFXPslyN3dZZ30LSxgwgquIgidOUHtNKcAj1YSxSc5t+drnbt/Zhc700E3zxU+GLxiR2Gyx6SRcXq2E4DZzaEt0v0Zx8lxEhtR0+f0omkQ+I4/O+R2cvZCjS3RqE0Z5WilWZFXDlvRmGmcIpPH+KGscVDaTCQ596/pSbvgIAXp6tXXFSFwX/qC7Py57pAbWsf7c0wgBONWLASx4bW-----END CERTIFICATE-----" ],
+    "title" : "Registration Comments"
+  } ],
+  "startAutnum" : 399358,
+  "status" : [ "active" ]
+}

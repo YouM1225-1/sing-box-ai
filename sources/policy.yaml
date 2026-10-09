@@ -43,3 +43,6 @@ initial_confirmations:
 - reference: sources/evidence/claude-challenge-confirmation.json
   sha256: b52f82e54f73960f65354e22bddd8915666dd3fd1a518c7c57f79b8fe5b660de
   approved_on: '2026-09-27'
+- reference: sources/evidence/anthropic-network-coverage-2026-10-09.json
+  sha256: 703ffedfa0b9d3128c26da15d254e54a2beaf10595a7da41e5b2d5ff2cb13b4d
+  approved_on: '2026-10-09'

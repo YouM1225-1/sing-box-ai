@@ -1,6 +1,6 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.28**；正式发布核验日期：2026-10-09（Asia/Shanghai）。
+> 文档修订：**1.29**；正式发布核验日期：2026-10-09（Asia/Shanghai）。
 > 主仓库：`YouM1225-1/sing-box-ai`；正式输入、`artifacts/v0.1.3/`、`dist/`、GitHub 正式 Release 与 Latest 均为 `v0.1.3`，与受验收 `v0.1.3-rc.1` 六个输出逐字节一致。
 > 当前状态：459/459 项隔离 VPS 消费者证据复核通过，两次正式构建各 2,164 项原生检查、47 项回归、固定及 Latest 各 6 资产下载、本机空缓存 27 项路由断言全部通过；详见[本轮发布证据](evidence/release-v0.1.3/README.md)。发布批准仅针对静态制品，消费者与部署身份仍为空/pending。
 
@@ -18,7 +18,7 @@
 | 制品 | 唯一职责 | 生成关系 |
 |---|---|---|
 | `dist/openai.srs` | OpenAI / ChatGPT / Codex 客户端目的规则 | 完整 `geosite-openai.srs` ∪ 缺失域名及官方 Voice 目的地址 |
-| `dist/anthropic.srs` | Claude / Anthropic 客户端目的规则 | 完整 `geosite-anthropic.srs` ∪ 缺失域名及官方 inbound 目的地址 |
+| `dist/anthropic.srs` | Claude / Anthropic 客户端目的规则 | 完整 `geosite-anthropic.srs` ∪ 缺失域名、官方 inbound 目的地址及经授权的精确公告前缀 |
 | `dist/anthropic-ip.srs` | Anthropic 服务出站请求的来源识别 | 独立官方 `source_ip_cidr: 160.79.104.0/21` |
 
 产品 YAML 只维护补充层。不得抄写或筛选上游列表再声称完整继承。SRS 是实际构建输入，DLC 文本保留属性与行级来源并作等价旁证；不一致即停止批次，不改用文本替代 SRS。上游已有的 apex、后缀、正则、共享依赖和遥测分类均继承；社区归类不改标为官方逐项认可。若新基线含不支持结构或不可接受范围，停止采用整批新基线，保留上一受审版本，不静默裁剪。
@@ -231,6 +231,8 @@ challenges.cloudflare.com
 
 IPv6 目的前缀保留在集合中；N100 产品路由的 IPv6 reject 是消费者策略，两者职责不同。
 
+**1 段用户授权的网络覆盖补充（v0.1.4）**：`2607:6bc0:11::/48`。2026-10-09 用户在了解用途证据边界后要求纳入；ARIN 注册所有权和 RIPE RIS 同日快照证明其属于 AS399358 并有路由公告。按 `compatibility` / `claude-network-coverage` 收录，精确授权与原始证据摘要绑定，30 天复审；不标成官方服务必需项。加上现有两段，覆盖该次 RIS 观测中的全部三个公告前缀，不能承诺未来或不可见路由全覆盖。见[本轮发布记录](evidence/release-v0.1.4/README.md)。
+
 ### 3.3 独立 Anthropic 来源地址
 
 `anthropic-ip.srs` 只有以下来源规则：
@@ -266,7 +268,7 @@ OpenAI 基线 regex 原样继承：
 
 ### 3.5 是否增加独立 IP 规则集
 
-**结论：保留官方目的 IP 补充，但本次不增加第四、第五个目的 IP 制品。** 当前 `openai.srs` 已并入 23 个 Voice `/32`，`anthropic.srs` 已并入官方目的 `/23` 与 `/48`。它们和域名同属目的组 OR：没有域名元数据时，只要实际目的 IP 命中前缀，集合仍能命中；仍受消费者更早规则与内核旁路影响。
+**结论：保留官方目的 IP 补充，但本次不增加第四、第五个目的 IP 制品。** 当前 `openai.srs` 已并入 23 个 Voice `/32`，`anthropic.srs` 已并入官方目的 `/23` 与 `/48`；v0.1.4 另补经用户授权的 `2607:6bc0:11::/48` 网络覆盖。它们和域名同属目的组 OR：没有域名元数据时，只要实际目的 IP 命中前缀，集合仍能命中；仍受消费者更早规则与内核旁路影响。
 
 | 选择 | 覆盖与代价 | 决策 |
 |---|---|---|

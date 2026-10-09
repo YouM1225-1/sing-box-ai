@@ -284,6 +284,40 @@ def review_entry(entry, mode, as_of, root):
         need(state == "approved" and last is not None and as_of < after, f"Unapproved/expired compatibility: {entry['value']}")
 
 
+def reviewed_network(entry, artifact, registry, root):
+    """Permit an explicitly approved, observed Anthropic /48, not service validation."""
+    need(artifact == "anthropic" and entry["type"] == "ip_cidr" and entry["direction"] == "destination" and entry["status"] == "compatibility", "Network coverage exception is destination Anthropic compatibility only")
+    network = ipaddress.ip_network(entry["value"])
+    need(network.version == 6 and network.prefixlen == 48, "Network coverage exception requires an exact IPv6 /48")
+    proofs = [load(local_path(root, e["reference"])) for e in entry["evidence"] if e["kind"] == "user-confirmation" and e["observed_on"] == entry["last_verified"]]
+    need(len(proofs) == 1, "Network coverage requires one current pinned user confirmation")
+    proof = proofs[0]
+    need(proof.get("scope") == "network-coverage" and proof.get("artifact") == artifact and proof.get("direction") == entry["direction"] and proof.get("rule") == {"type": entry["type"], "value": entry["value"]}, "Network confirmation scope/rule mismatch")
+    need(proof.get("service_usage_verified") is False and proof.get("consumer_validation") is False, "Network coverage must not claim service or consumer validation")
+    references = proof.get("network_evidence", {})
+    expected = {
+        "asn_registry": ("network-registry", "https://rdap.arin.net/registry/autnum/399358"),
+        "allocation_registry": ("network-registry", "https://rdap.arin.net/registry/ip/2607:6bc0::"),
+        "announced_prefixes": ("routing-observation", "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358"),
+    }
+    need(isinstance(references, dict) and set(references) == set(expected), "Network coverage lacks primary registry/routing references")
+    snapshots = {}
+    for role, (kind, url) in expected.items():
+        item = registry.get(references[role], {})
+        need(item.get("kind") == kind and item.get("url") == url and {"kind": kind, "reference": references[role]} in entry["sources"], "Network coverage primary source mismatch")
+        snapshots[role] = load(local_path(root, item["path"]))
+    asn, allocation, routing = (snapshots[key] for key in expected)
+    need(asn.get("startAutnum") == asn.get("endAutnum") == 399358 and asn.get("name") == "ANTHROPIC", "Network coverage ASN ownership mismatch")
+    for record in (asn, allocation):
+        need(any(e.get("handle") == "AP-2440" and "registrant" in e.get("roles", []) for e in record.get("entities", [])), "Network coverage registrant mismatch")
+    need(allocation.get("ipVersion") == "v6" and allocation.get("name") == "ANTHROPIC-V6" and allocation.get("startAddress") == "2607:6bc0::" and allocation.get("endAddress") == "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff" and network.subnet_of(ipaddress.ip_network("2607:6bc0::/32")), "Network coverage allocation mismatch")
+    data = routing.get("data", {})
+    observed = date(entry["last_verified"])
+    need(routing.get("status") == "ok" and routing.get("data_call_name") == "announced-prefixes" and data.get("resource") == "399358" and date(data.get("latest_time", "")[:10]) == observed, "Network routing snapshot ASN/date mismatch")
+    need(any(row.get("prefix") == str(network) and any(date(t.get("starttime", "")[:10]) <= observed <= date(t.get("endtime", "")[:10]) for t in row.get("timelines", [])) for row in data.get("prefixes", [])), "Network coverage prefix was not announced on the approval date")
+    return True
+
+
 def canonical(root=ROOT, mode="candidate", as_of=None):
     need(mode in {"candidate", "release"}, "Unknown build mode")
     policy = load(root / "sources/policy.yaml")
@@ -369,7 +403,7 @@ def canonical(root=ROOT, mode="candidate", as_of=None):
                 need(any(f["status"] == status and set(entry["product"]) <= set(f["product"]) and f["shared_dependency"] == entry["shared_dependency"] and set(f.get("features", [])) == set(entry.get("features", [])) for f in official_matches), f"No matching official fact: {value}")
             else:
                 review_entry(entry, mode if include else "candidate", as_of, root)
-                need(typ in {"domain", "domain_regex"} or typ == "domain_suffix" and entry["review_status"] == "pending", "Non-official CIDR/suffix expansion requires a reviewed official fact")
+                need(typ in {"domain", "domain_regex"} or typ == "domain_suffix" and entry["review_status"] == "pending" or typ == "ip_cidr" and reviewed_network(entry, artifact, registry, root), "Non-official CIDR/suffix expansion requires a reviewed official fact or exact network approval")
             if status == "feature-required":
                 need(entry.get("features") and set(entry["features"]) <= set(policy["features"]), "Feature dependency not enabled")
             if status == "optional":

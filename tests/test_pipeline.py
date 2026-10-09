@@ -14,7 +14,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, Invalid, archives, canonical, covered, date, discovery_entries, load, normalize, public_suffix, review_entry, run, semantic_key, sha, source_document, write_json
 from sync import parse_dlc, report
-from validate import cases_for, release_gate
+from validate import cases_for, reference_match, release_gate
 
 
 CLAUDE_OPTIONAL_HOSTS = {
@@ -42,7 +42,7 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(rows, allow_unicode=True, sort_keys=False))
 
     def test_baseline_and_user_confirmation(self):
-        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 9, 27))
+        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 10, 9))
         challenge = next(r for r in selected["anthropic"] if r["value"] == "challenges.cloudflare.com")
         self.assertEqual(challenge["review_status"], "approved")
         self.assertEqual(len([r for r in selected["openai"] if r["type"] == "ip_cidr"]), 23)
@@ -103,8 +103,24 @@ class PolicyTests(unittest.TestCase):
                 expected["rules"][0]["domain"] = sorted(set(expected["rules"][0]["domain"]) | hosts)
             if artifact == "anthropic":
                 expected["rules"][0]["domain_suffix"] = sorted(set(expected["rules"][0]["domain_suffix"]) | {"claude.dev"})
+                expected["rules"][0]["ip_cidr"] = sorted(set(expected["rules"][0]["ip_cidr"]) | {"2607:6bc0:11::/48"})
             self.assertEqual(semantic_key(source_document(selected[artifact])), semantic_key(expected), artifact)
         self.assertEqual(policy["selected_pending"], [])
+
+    def test_announced_ipv6_is_destination_only_and_keeps_exact_scope(self):
+        selected, _, _ = canonical(self.root)
+        self.assertEqual({r["value"] for r in selected["anthropic"] if r["type"] == "ip_cidr"}, {
+            "160.79.104.0/23", "2607:6bc0::/48", "2607:6bc0:11::/48",
+        })
+        for artifact, rows in selected.items():
+            for ip in ("2607:6bc0:11::", "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff"):
+                with self.subTest(artifact=artifact, ip=ip):
+                    self.assertEqual(reference_match(rows, destination=ip), artifact == "anthropic")
+                    self.assertFalse(reference_match(rows, source=ip))
+            for ip in ("2607:6bc0:10:ffff:ffff:ffff:ffff:ffff", "2607:6bc0:12::"):
+                with self.subTest(artifact=artifact, ip=ip):
+                    self.assertFalse(reference_match(rows, destination=ip))
+                    self.assertFalse(reference_match(rows, source=ip))
 
     def test_shared_optionals_keep_exact_scope(self):
         selected, _, _ = canonical(self.root)
@@ -162,13 +178,13 @@ class PolicyTests(unittest.TestCase):
         pending = discovery_entries(self.root)
         self.assertTrue(pending)
         candidate = next(r for r in pending if r["value"] == "cdn.growthbook.io")
-        selected, _, _ = canonical(self.root, "release", dt.date(2026, 9, 27))
+        selected, _, _ = canonical(self.root, "release", dt.date(2026, 10, 9))
         self.assertFalse(covered(candidate, selected[candidate["artifact"]]))
         self.change_policy(selected_pending=[candidate["id"]])
-        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 9, 27))
+        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 10, 9))
         self.assertTrue(covered(candidate, selected[candidate["artifact"]]))
         with self.assertRaisesRegex(Invalid, "Selected pending candidates"):
-            canonical(self.root, "release", dt.date(2026, 9, 27))
+            canonical(self.root, "release", dt.date(2026, 10, 9))
         self.change_policy(selected_pending=["anthropic:domain:unregistered.example.org"])
         with self.assertRaisesRegex(Invalid, "Invalid pending selection"):
             canonical(self.root)
@@ -346,7 +362,7 @@ class PolicyTests(unittest.TestCase):
 
     def test_legacy_runtime_review_does_not_authorize_publication(self):
         write_json(self.root / "sources/release-review.json", {"schema": 1, "status": "approved", "integration_evidence": [{"result": "passed"}]})
-        with patch("validate.today", return_value=dt.date(2026, 9, 27)):
+        with patch("validate.today", return_value=dt.date(2026, 10, 9)):
             with self.assertRaisesRegex(Invalid, "wrong scope"):
                 release_gate(self.root, {"build_mode": "release"})
 

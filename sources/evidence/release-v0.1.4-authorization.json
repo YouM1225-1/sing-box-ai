@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "kind": "operator-authorization",
+  "scope": "artifact-publication",
+  "project_version": "0.1.4",
+  "authorized_on": "2026-10-09",
+  "instruction": "也加入 确保完全覆盖 避免遗漏",
+  "instruction_context": "用户此前明确要求补全、提交和push并发布最新版本；本轮针对已说明的额外公告前缀2607:6bc0:11::/48继续要求加入。沿用已授权交付流程，发布新版本而非覆盖旧版本。",
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "deployment_authorized": false,
+  "limitations": [
+    "Only add the exact 2607:6bc0:11::/48 destination prefix for network coverage; preserve other rule semantics.",
+    "Perform committed-input binding, independent release builds, regression/native checks, fixed-download and empty-cache checks before Latest.",
+    "No remote production changes, login tests, or claims that prior VPS evidence covers this added prefix.",
+    "Preserve prior tags/releases and keep artifact manifests runtime identities empty/pending."
+  ]
+}

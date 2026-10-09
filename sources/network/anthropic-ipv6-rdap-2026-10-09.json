@@ -1,0 +1,119 @@
+{
+  "arin_originas0_originautnums" : [ ],
+  "cidr0_cidrs" : [ {
+    "v6prefix" : "2607:6BC0::",
+    "length" : 32
+  } ],
+  "endAddress" : "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+  "entities" : [ {
+    "entities" : [ {
+      "events" : [ {
+        "eventAction" : "last changed",
+        "eventDate" : "2026-08-18T02:54:11-04:00"
+      }, {
+        "eventAction" : "registration",
+        "eventDate" : "2023-07-31T16:45:12-04:00"
+      } ],
+      "handle" : "ANTHR5-ARIN",
+      "links" : [ {
+        "href" : "https://rdap.arin.net/registry/entity/ANTHR5-ARIN",
+        "rel" : "self",
+        "type" : "application/rdap+json",
+        "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+      }, {
+        "href" : "https://whois.arin.net/rest/poc/ANTHR5-ARIN",
+        "rel" : "alternate",
+        "type" : "application/xml",
+        "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+      } ],
+      "objectClassName" : "entity",
+      "port43" : "whois.arin.net",
+      "roles" : [ "administrative", "routing", "dns", "abuse", "noc", "technical" ],
+      "status" : [ "validated" ],
+      "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "adr", {
+        "label" : "548 Market St.\nPMB 90375\nSan Francisco\nCA\n94104-5401\nUnited States"
+      }, "text", [ "", "", "", "", "", "", "" ] ], [ "fn", { }, "text", "Anthropic" ], [ "org", { }, "text", "Anthropic, PBC" ], [ "kind", { }, "text", "group" ], [ "email", { }, "text", "arin@anthropic.com" ], [ "tel", {
+        "type" : [ "work", "voice" ]
+      }, "text", "+1-415-236-0599" ] ] ]
+    } ],
+    "events" : [ {
+      "eventAction" : "last changed",
+      "eventDate" : "2023-08-22T17:10:25-04:00"
+    }, {
+      "eventAction" : "registration",
+      "eventDate" : "2023-07-31T16:51:11-04:00"
+    } ],
+    "handle" : "AP-2440",
+    "links" : [ {
+      "href" : "https://rdap.arin.net/registry/entity/AP-2440",
+      "rel" : "self",
+      "type" : "application/rdap+json",
+      "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+    }, {
+      "href" : "https://whois.arin.net/rest/org/AP-2440",
+      "rel" : "alternate",
+      "type" : "application/xml",
+      "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+    } ],
+    "objectClassName" : "entity",
+    "port43" : "whois.arin.net",
+    "roles" : [ "registrant" ],
+    "vcardArray" : [ "vcard", [ [ "version", { }, "text", "4.0" ], [ "fn", { }, "text", "Anthropic, PBC" ], [ "adr", {
+      "label" : "548 Market St.\nPMB 90375\nSan Francisco\nCA\n94104-5401\nUnited States"
+    }, "text", [ "", "", "", "", "", "", "" ] ], [ "kind", { }, "text", "org" ] ] ]
+  } ],
+  "events" : [ {
+    "eventAction" : "last changed",
+    "eventDate" : "2026-01-08T17:43:35-05:00"
+  }, {
+    "eventAction" : "registration",
+    "eventDate" : "2023-09-14T18:25:37-04:00"
+  } ],
+  "handle" : "NET6-2607-6BC0-1",
+  "ipVersion" : "v6",
+  "links" : [ {
+    "href" : "https://rdap.arin.net/registry/ip/2607:6bc0::",
+    "rel" : "self",
+    "type" : "application/rdap+json",
+    "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+  }, {
+    "href" : "https://whois.arin.net/rest/net/NET6-2607-6BC0-1",
+    "rel" : "alternate",
+    "type" : "application/xml",
+    "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+  } ],
+  "name" : "ANTHROPIC-V6",
+  "notices" : [ {
+    "description" : [ "By using the ARIN RDAP/Whois service, you are agreeing to the RDAP/Whois Terms of Use" ],
+    "links" : [ {
+      "href" : "https://www.arin.net/resources/registry/whois/tou/",
+      "rel" : "terms-of-service",
+      "type" : "text/html",
+      "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+    } ],
+    "title" : "Terms of Service"
+  }, {
+    "description" : [ "If you see inaccuracies in the results, please visit: " ],
+    "links" : [ {
+      "href" : "https://www.arin.net/resources/registry/whois/inaccuracy_reporting/",
+      "rel" : "inaccuracy-report",
+      "type" : "text/html",
+      "value" : "https://rdap.arin.net/registry/ip/2607:6bc0::"
+    } ],
+    "title" : "Whois Inaccuracy Reporting"
+  }, {
+    "description" : [ "Copyright 1997-2026, American Registry for Internet Numbers, Ltd." ],
+    "title" : "Copyright Notice"
+  } ],
+  "objectClassName" : "ip network",
+  "parentHandle" : "NET6-2600-1",
+  "port43" : "whois.arin.net",
+  "rdapConformance" : [ "nro_rdap_profile_0", "rdap_level_0", "cidr0", "arin_originas0" ],
+  "remarks" : [ {
+    "description" : [ "-----BEGIN CERTIFICATE-----MIIDsTCCApmgAwIBAgIURXzapM/L/yMDxtYNo/XNj1PYCQUwDQYJKoZIhvcNAQELBQAwaDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xFzAVBgNVBAoMDkFudGhyb3BpYywgUEJDMRMwEQYDVQQDDApieW9pcC1wcm92MB4XDTI2MDEwODIyNDE1M1oXDTI3MDEwODIyNDE1M1owaDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xFzAVBgNVBAoMDkFudGhyb3BpYywgUEJDMRMwEQYDVQQDDApieW9pcC1wcm92MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApeIucskIU4aF/a1F5jb3Unq5XI3uZJvt3lLH58qovGyYObWzOdcF4hSrLYLC1MU4UY5Tk63xmlnCy1KMXoyW1ejeQ2LBbMS0TsQGM2a4aW5pSfjumMh7THJJ3PCYuRKKccCvCse0/NBofzSFSWCePAxzWjo8Ix7QNoeY3Zq+Mu20pCRGdorVpKzIgBM5Bp+N4JE39y1pNk7LB6EcC4xswIWvFeNepYVWPgQq0m9zknc0lZQ6TjJZ0tOCfsQMtoxxkDQz7c1QIJA6ScaojJ3T9AQmJnFLDbKOPzs1ioczGKBE3FfwKzsJPvTJ5JYDt8YZxjKqPTb99+ZHe5dudi4NNQIDAQABo1MwUTAdBgNVHQ4EFgQU12rlqg0pp12TK8DOhgXrOpJKiJEwHwYDVR0jBBgwFoAU12rlqg0pp12TK8DOhgXrOpJKiJEwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAopt5Z6RIwpVMdRX+DLlmX1J8pgDncayFNpENXfFABGPbtuudXOFSFyCUxRCgSXQJFUQzMcwmWIpswC3uEtN7YY0zJYQNwKpWNpkoEJSSUzcNvWKPSXpHAD3Q9lcyO2QMK0r9Fatzjw2LWerLV3wvAcCp2//oYJX4otYvdmO6D5Syyg5tUnRX5J7qlyC5ufXUcTjX56NcVHDL2W03hv8biN2Yp6bpQcR2AHYIypczLQyjFWliZWsV/t37qKBcE2LbT16uHlM0z9r2c7WkT+CYaWylu23fYXhBCLX+iOyL1hFc/oO+6FImaoqGI+29QmNBfZb4NIcWbl9N8zqt4KkXDA==-----END CERTIFICATE-----" ],
+    "title" : "Registration Comments"
+  } ],
+  "startAddress" : "2607:6bc0::",
+  "status" : [ "active" ],
+  "type" : "DIRECT ALLOCATION"
+}

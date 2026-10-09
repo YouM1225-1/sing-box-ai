@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.4",
+  "reviewed_on": "2026-10-09",
+  "reviewer": "Codex primary semantic review; independent native-boundary and provenance gate review",
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "comparison": {
+    "anthropic": {
+      "ip_cidr": {
+        "added": [
+          "2607:6bc0:11::/48"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {},
+    "openai": {}
+  },
+  "conclusion": "Approve only these exact artifact bytes after canonical source/provenance validation, two matching release builds, native boundary/isolation tests and full regressions. Exact announced network coverage is explicitly requested; no official service-purpose certification or runtime acceptance is claimed.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.4/semantic-diff.json",
+      "sha256": "f2572b3fd0ed2bdf2dd5e7debdd6d2f4ace63dc1078ef0e2ab97a68b936f4e6f"
+    },
+    {
+      "path": "sources/evidence/anthropic-network-coverage-2026-10-09.json",
+      "sha256": "703ffedfa0b9d3128c26da15d254e54a2beaf10595a7da41e5b2d5ff2cb13b4d"
+    },
+    {
+      "path": "artifacts/v0.1.3/manifest.json",
+      "sha256": "0144dfff385663f75115b3d545b6da566d39bb22c6a050702fbcf28c101ee24e"
+    },
+    {
+      "path": "sources/network/anthropic-ipv6-rdap-2026-10-09.json",
+      "sha256": "96e9bf5e66061f8cabd7d69036c9492bfe7e534f22445200cf1b455e15c24ffd"
+    },
+    {
+      "path": "sources/network/as399358-announced-prefixes-2026-10-09.json",
+      "sha256": "9ced841ff83e394b7a3a93d07a65b21d43dd2e0efb8ab38511742002d8614c0b"
+    },
+    {
+      "path": "sources/network/as399358-rdap-2026-10-09.json",
+      "sha256": "dbe50c856a1919dd145ae59ffb1b50cdc0d860aff7e3c6c0310cb73feb520e6d"
+    },
+    {
+      "path": "sources/network/as399358-routing-status-2026-10-09.json",
+      "sha256": "dbf419de7cb642eb41181bc4dc2606fdec0172ff7083e9db569aae58e00b265a"
+    }
+  ],
+  "unresolved_conflicts": [],
+  "limitations": [
+    "Network ownership and RIS announcement do not attest endpoint necessity.",
+    "Public fixed/latest downloads and empty-cache loading are post-publication checks recorded separately."
+  ]
+}

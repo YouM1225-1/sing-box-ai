@@ -62,6 +62,12 @@ def cases_for(selected):
         for ip in OLD_IPS:
             add("phased-out:" + ip, destination=ip, expected=False)
             add("phased-out-src:" + ip, source=ip, expected=False)
+        for ip in ("2607:6bc0:11::", "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff"):
+            add("announced-ipv6:dst:" + ip, destination=ip, expected=artifact == "anthropic")
+            add("announced-ipv6:src:" + ip, source=ip, expected=False)
+        for ip in ("2607:6bc0:10:ffff:ffff:ffff:ffff:ffff", "2607:6bc0:12::"):
+            add("adjacent-ipv6:dst:" + ip, destination=ip, expected=False)
+            add("adjacent-ipv6:src:" + ip, source=ip, expected=False)
         if artifact in {"openai", "anthropic"}:
             add("challenge-required", domain="challenges.cloudflare.com", expected=True)
         if artifact == "anthropic":
