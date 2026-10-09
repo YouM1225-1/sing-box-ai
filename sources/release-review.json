@@ -1,21 +1,21 @@
 {
-  "artifacts": {
-    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
-    "anthropic.srs": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
-    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
-  },
-  "deployment_status": "pending",
-  "integration_evidence": [],
-  "operator_authorization": {
-    "path": "sources/evidence/release-v0.1.2-authorization.json",
-    "sha256": "91d937e0cfae4d05deb547e50b977f0c978a4a55e42af6df0667be528e37541e"
-  },
-  "project_version": "0.1.2",
   "schema": 2,
   "scope": "artifact-publication",
-  "semantic_diff_review": {
-    "path": "sources/evidence/release-v0.1.2-review.json",
-    "sha256": "cbc9071a342796bf1ced89c6f55c0f5a65778c59430e3b484c4416f40c54d375"
+  "status": "approved",
+  "project_version": "0.1.3",
+  "artifacts": {
+    "anthropic.srs": "a34483911551a44160e394555d2a62a199e423d16e7ae544da7a0ef1dc57946e",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
   },
-  "status": "approved"
+  "operator_authorization": {
+    "path": "sources/evidence/release-v0.1.3-authorization.json",
+    "sha256": "c709a1e6ab2f06f2994d4d05c388092a5a72933271ee01c78512b32dec6299a7"
+  },
+  "semantic_diff_review": {
+    "path": "sources/evidence/release-v0.1.3-review.json",
+    "sha256": "0210db80dcc1a93f88ea91619b342776e1808d3d6de8f7e81511828c578a7e09"
+  },
+  "integration_evidence": [],
+  "deployment_status": "pending"
 }

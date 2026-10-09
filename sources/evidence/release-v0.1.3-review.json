@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.3",
+  "reviewed_on": "2026-10-09",
+  "reviewer": "Codex primary review with independent ZIP integrity and consumer-result review",
+  "artifacts": {
+    "anthropic.srs": "a34483911551a44160e394555d2a62a199e423d16e7ae544da7a0ef1dc57946e",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "comparison": {
+    "baseline": "v0.1.2",
+    "accepted_candidate": "v0.1.3-rc.1",
+    "added_anthropic_exact_domains": [
+      "api-iam.intercom.io",
+      "browser-intake-us5-datadoghq.com",
+      "downloads.intercomcdn.com",
+      "http-intake.logs.us5.datadoghq.com",
+      "js.intercomcdn.com",
+      "static.intercomassets.com",
+      "widget.intercom.io"
+    ],
+    "removed_domains": [],
+    "unchanged": [
+      "All OpenAI JSON/SRS bytes",
+      "All Anthropic source-IP JSON/SRS bytes",
+      "All domain suffixes, regexes and source/destination IP ranges",
+      "All pending entries remain unselected"
+    ],
+    "formal_rebuild_requirement": "All three SRS and three source JSON files must be byte-identical to the tested candidate."
+  },
+  "conclusion": "Approve artifact-only publication of these exact bytes after committed-input binding, two independent release builds, native validation, regression tests, and release gate. Candidate has 2164 passing native cases, 47 regression tests and supplied 459/459 isolated VPS consumer observations. Additional Auth0/Ghost/Fathom/CDN endpoint probes do not prove new product dependencies; do not expand rules beyond the tested seven exact hosts.",
+  "evidence": [
+    {
+      "path": "artifacts/v0.1.2/manifest.json",
+      "sha256": "0c001b3e1d0fdca3c2313c31614ce7f6fda71337c062251feefe078e027901cf"
+    },
+    {
+      "path": "artifacts/v0.1.3-rc.1/manifest.json",
+      "sha256": "799a8172745ae4d8963c285decb56ba16c9b003519a901bc30607d66432a6d0b"
+    },
+    {
+      "path": "sources/evidence/claude-rule-review-2026-10-09.json",
+      "sha256": "c80eca83677c404b3bbb6875fa4eef14024a0aa87a5948fc79b76a9f86be0a91"
+    },
+    {
+      "path": "docs/evidence/claude-rule-review-2026-10-09/results.json",
+      "sha256": "704a4d4098683923716b9b3767f28b3a3c1c03cfac6c6a2c32f1a636b0d83831"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.3/consumer-review.json",
+      "sha256": "fd3b9cb0fcf298084afbe1aa727b76857d05129a927585857b00049d8dfd5da0"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.3/consumer-observations.json",
+      "sha256": "117f3cf89e47e581f73ab2febe20de15b274504c11ae2da00bc8826471cf0f6c"
+    }
+  ],
+  "unresolved_conflicts": [],
+  "limitations": [
+    "VPS consumer evidence uses synthetic reference policy and loopback observers, not complete production rule ordering or real Claude authentication/public proxy traffic.",
+    "Private attachment bodies and production metadata are not publicly redistributed; original ZIP and raw-results SHA bind the sanitized projection.",
+    "Remote fixed and Latest downloads plus local empty-cache loading are post-publication checks and will be recorded separately."
+  ]
+}

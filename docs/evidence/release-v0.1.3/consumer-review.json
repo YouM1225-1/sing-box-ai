@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "reviewed_on": "2026-10-09",
+  "kind": "user-supplied-isolated-consumer-evidence-review",
+  "source_attachment": {
+    "name": "DMIT-Claude-consumer-final-evidence-20261009.zip",
+    "sha256": "975db95115a338313dfbede7ae84d94a277c3b276b25d59d886f358a458b6405",
+    "bytes": 120702,
+    "top_level_sha256sums_entries_verified": 64,
+    "nested_script_manifests": "Each original/executed manifest has 4 present files verified; 7 referenced input README/SRS files per manifest are not included in this delivery and were not independently rehashed from this ZIP."
+  },
+  "input_snapshot": "9e87e389374d8265a204c3e65a31da203aef0647",
+  "rules": {
+    "stable": {
+      "anthropic.srs": "c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80",
+      "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+    },
+    "candidate": {
+      "anthropic.srs": "a34483911551a44160e394555d2a62a199e423d16e7ae544da7a0ef1dc57946e",
+      "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+    }
+  },
+  "candidate_matches_repository": true,
+  "raw_results_sha256": "20d4c6e502c5b09937e1bd84a1e46a02caa37dd910bcca13f283458b0fe80aaf",
+  "machine_summary_sha256": "77d8f0201f7c2a89004803f608e85ee51400ad7a93d2983f57e27db7f5edbb87",
+  "runtime": {
+    "version": "1.15.0-alpha.9",
+    "revision": "132b38e9caaba1a1959354d518e54d2d08419afe",
+    "platform": "linux/amd64",
+    "binary_sha256": "fa7785dbf7fa88f5fbb414e4a0aeebb8f51dc3130d74f909c7eed28787d337ec",
+    "executed_driver_sha256": "38ccb48537163367b8926e5166a29a8b0a26f7fb13ffd7a8207ff5029ce8a381"
+  },
+  "probes": {
+    "total": 459,
+    "passed": 459,
+    "dns": 240,
+    "route": 219,
+    "failures": 0
+  },
+  "groups": [
+    {
+      "group": "stable-domain-dns-route-ip",
+      "passed": true,
+      "rows": 153
+    },
+    {
+      "group": "candidate-domain-dns-route-ip",
+      "passed": true,
+      "rows": 153
+    },
+    {
+      "group": "reference-and-priority-controls",
+      "passed": true,
+      "rows": 28
+    },
+    {
+      "group": "source-versus-destination-consumer",
+      "passed": true,
+      "rows": 13
+    },
+    {
+      "group": "cross-product-ordering",
+      "passed": true,
+      "rows": 96
+    },
+    {
+      "group": "remote-cold-local-download",
+      "passed": true,
+      "rows": 16
+    }
+  ],
+  "configuration_checks": {
+    "total": 13,
+    "accepted": 12,
+    "expected_missing_reference_rejection": 1
+  },
+  "cleanup": {
+    "services_exited": 12,
+    "listeners_closed": 12,
+    "remaining_owned_processes": 0,
+    "errors": 0
+  },
+  "production_observation": "Uploaded before/after and monitoring records report unchanged production service/configuration/listener invariants; this chat did not access the VPS or independently inspect production.",
+  "independent_review": "Recounted groups/rows and crosschecked resolver events, DNS response fields, outbound markers, upstream DNS counts and expected rule indices against each row: no discrepancies.",
+  "added_exact_domains": [
+    "api-iam.intercom.io",
+    "browser-intake-us5-datadoghq.com",
+    "downloads.intercomcdn.com",
+    "http-intake.logs.us5.datadoghq.com",
+    "js.intercomcdn.com",
+    "static.intercomassets.com",
+    "widget.intercom.io"
+  ],
+  "new_domains_beyond_candidate": [],
+  "domain_decision": "Publish the seven already-added exact hosts whose candidate bytes were tested; the extra public endpoint probes do not establish more Claude client dependencies.",
+  "excluded_observations": {
+    "anthropic.com.cdn.cloudflare.net": "Resolves inside existing destination ranges, but root TLS failed; no new direct-host dependency established.",
+    "anthropic.auth0.com": "Root redirect but OIDC/JWKS unknown-host responses; no current Claude dependency established.",
+    "anthropic-com.ghost.io": "Domain-error response; no current Claude dependency established.",
+    "cdn.usefathom.com": "Script HTTP 200 confirms supplier endpoint availability, not Claude use."
+  },
+  "public_observations": {
+    "path": "docs/evidence/release-v0.1.3/consumer-observations.json",
+    "sha256": "117f3cf89e47e581f73ab2febe20de15b274504c11ae2da00bc8826471cf0f6c"
+  },
+  "limitations": [
+    "A consumer pass requires an actual official sing-box service; all DNS servers, outbounds, and HTTP fixtures are loopback observers.",
+    "The proxy/direct/bridge labels identify selected policy only, not real direct/proxy connectivity.",
+    "TLS tests send an actual ClientHello for sniffing, then receive a fixture marker; no TLS handshake or Claude session is completed.",
+    "IPv6 tests use ::1 ingress and controlled IPv6 destination metadata, not public IPv6 connectivity.",
+    "Policy reproduced from pinned tests/consumer_durability.py: global HTTPS suppression, product AAAA suppression, product IPv6 rejection, matched product proxy selection.",
+    "This is an isolated reference consumer, not the user production configuration or complete original rule ordering.",
+    "Positive Anthropic source-CIDR service ingress cannot be generated from loopback-only sockets without changing addressing or injecting metadata; it remains a matcher-only result from the prior suite.",
+    "No public URL availability, account operation, proxy exit, system DNS, TUN, firewall, route, production configuration, deployment, or publication was tested or changed."
+  ],
+  "publication_identity": "Artifact-only publication review; release manifests keep validated_consumers/integration_evidence empty and deployment_status pending."
+}
