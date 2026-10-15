@@ -14,8 +14,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ("openai", "anthropic", "anthropic-ip")
-TYPES = {"domain", "domain_suffix", "domain_regex", "ip_cidr", "source_ip_cidr"}
-STATUSES = {"required", "feature-required", "optional", "compatibility", "compatibility-critical"}
+TYPES = {"domain", "domain_suffix", "domain_keyword", "domain_regex", "ip_cidr", "source_ip_cidr"}
+STATUSES = {"required", "feature-required", "optional", "compatibility", "compatibility-critical", "user-requested"}
 COMMON_FIELDS = {"value", "type", "product", "direction", "status", "shared_dependency", "sources", "reason", "features"}
 REVIEW_FIELDS = {"review_status", "evidence", "first_seen", "last_verified", "review_after"}
 FORBIDDEN = {"amazonaws.com", "api.aws", "cloudflare.com", "cloudflare.net", "azure.com", "azureedge.net", "windows.net", "googleapis.com", "githubusercontent.com", "blob.core.windows.net", "webpubsub.azure.com", "googlesource.com", "imgix.net", "livekit.cloud", "b-cdn.net"}
@@ -76,6 +76,9 @@ def today():
 
 def normalize(typ, value):
     need(isinstance(value, str) and value and value == value.strip(), "Empty or whitespace-padded value")
+    if typ == "domain_keyword":
+        need(re.fullmatch(r"[A-Za-z0-9-]+", value), "Invalid literal domain keyword")
+        return value.lower()
     if typ in {"ip_cidr", "source_ip_cidr"}:
         try:
             net = ipaddress.ip_network(value, strict=False)
@@ -149,10 +152,12 @@ def parse_dlc(text):
 
 
 def covered(candidate, rows):
-    """Only exact, suffix and CIDR containment; never guess regex containment."""
+    """Exact, suffix, literal keyword and CIDR containment; no regex inference."""
     typ, value = candidate["type"], candidate["value"]
     for row in rows:
         if row["type"] == typ and row["value"] == value:
+            return True
+        if row["type"] == "domain_keyword" and typ in {"domain", "domain_suffix", "domain_keyword"} and row["value"] in value:
             return True
         if row["type"] == "domain_suffix" and typ in {"domain", "domain_suffix"}:
             parent, child = row["value"], value.lstrip(".")
@@ -226,6 +231,7 @@ def baseline_inputs(root, registry):
             key = semantic_key(document)
             rule = document["rules"][0]
             need("source_ip_cidr" not in rule, "Product baseline must have destination direction")
+            need("domain_keyword" not in rule, "Baseline keyword expansion requires an explicit user instruction")
             dlc = parse_dlc(local_path(root, sidecar["path"]).read_text())
             need(key == semantic_key(source_document(dlc)), "Pinned DLC and SRS baseline disagree")
             baseline = []
@@ -318,6 +324,22 @@ def reviewed_network(entry, artifact, registry, root):
     return True
 
 
+def requested_coverage(entry, artifact, registry, root, as_of):
+    """Honor an explicit scope expansion without claiming service validation."""
+    need(artifact == "anthropic" and entry["direction"] == "destination" and entry["product"] == ["claude-website-coverage"], "Requested coverage scope mismatch")
+    need(not (set(entry) & REVIEW_FIELDS) and not entry.get("features"), "Requested coverage is not a compatibility/runtime review")
+    need(len(entry["sources"]) == 1 and entry["sources"][0]["kind"] == "user-instruction", "Requested coverage needs one pinned user instruction")
+    item = registry[entry["sources"][0]["reference"]]
+    proof = load(local_path(root, item["path"]))
+    need(proof.get("schema") == 1 and proof.get("kind") == "user-instruction" and proof.get("scope") == "website-coverage", "Invalid coverage instruction")
+    need(proof.get("confirmed_by") == "maintainer" and proof.get("statement") and date(proof.get("approved_on")) <= as_of, "Missing/future coverage instruction")
+    need(proof.get("artifact") == artifact and proof.get("direction") == entry["direction"] and proof.get("products") == entry["product"] and proof.get("excluded") == ["ntp"], "Coverage instruction scope mismatch")
+    need(proof.get("service_usage_verified") is False and proof.get("consumer_validation") is False, "Coverage instruction must not claim service or consumer validation")
+    need(proof.get("website_url") == item["url"], "Coverage instruction website mismatch")
+    need({"type": entry["type"], "value": entry["value"]} in proof.get("rules", []), "Rule is not in the pinned coverage instruction")
+    need(entry["shared_dependency"] == (entry["type"] != "ip_cidr"), "Requested coverage shared dependency mismatch")
+
+
 def canonical(root=ROOT, mode="candidate", as_of=None):
     need(mode in {"candidate", "release"}, "Unknown build mode")
     policy = load(root / "sources/policy.yaml")
@@ -374,6 +396,7 @@ def canonical(root=ROOT, mode="candidate", as_of=None):
             need(set(entry) <= COMMON_FIELDS | REVIEW_FIELDS, "Unknown canonical field")
             typ, status = entry["type"], entry["status"]
             need(typ in TYPES and status in STATUSES, "Unknown type/status")
+            need(typ != "domain_keyword" or status == "user-requested", "Keyword expansion needs an explicit user instruction")
             direction = "source" if artifact == "anthropic-ip" else "destination"
             need(entry["direction"] == direction, f"Wrong direction: {artifact}")
             need((typ == "source_ip_cidr") == (artifact == "anthropic-ip"), "Source/destination type mismatch")
@@ -401,6 +424,8 @@ def canonical(root=ROOT, mode="candidate", as_of=None):
                     official_matches += [f for f in facts[ref] if f["artifact"] == artifact and f["type"] == typ and normalize(typ, f["value"]) == value and f["direction"] == direction]
             if status in {"required", "feature-required", "optional"}:
                 need(any(f["status"] == status and set(entry["product"]) <= set(f["product"]) and f["shared_dependency"] == entry["shared_dependency"] and set(f.get("features", [])) == set(entry.get("features", [])) for f in official_matches), f"No matching official fact: {value}")
+            elif status == "user-requested":
+                requested_coverage(entry, artifact, registry, root, as_of)
             else:
                 review_entry(entry, mode if include else "candidate", as_of, root)
                 need(typ in {"domain", "domain_regex"} or typ == "domain_suffix" and entry["review_status"] == "pending" or typ == "ip_cidr" and reviewed_network(entry, artifact, registry, root), "Non-official CIDR/suffix expansion requires a reviewed official fact or exact network approval")
@@ -463,6 +488,8 @@ def semantic_key(document):
     dots = {s for s in dots if not any(s != parent and s.endswith(parent) for parent in dots)}
     exact = {s for s in exact if not any(s.endswith(parent) for parent in dots)}
     key = {"domain": sorted(exact), "domain_suffix": sorted(dots), "domain_regex": sorted(fields.get("domain_regex", set()))}
+    if fields.get("domain_keyword"):
+        key["domain_keyword"] = sorted(fields["domain_keyword"])
     for typ in ("ip_cidr", "source_ip_cidr"):
         nets = [ipaddress.ip_network(s) for s in fields.get(typ, set())]
         key[typ] = [str(n) for family in (4, 6) for n in ipaddress.collapse_addresses(n for n in nets if n.version == family)]

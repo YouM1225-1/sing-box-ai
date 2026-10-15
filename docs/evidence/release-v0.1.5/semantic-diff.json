@@ -1,0 +1,67 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "basis": "Candidate coverage results and independent review; wider suffix/keyword/CIDR rules subsume removed duplicate expressions.",
+  "cidr_requirements_covered": 2,
+  "diff": {
+    "anthropic": {
+      "domain": {
+        "added": [
+          "cdn.usefathom.com"
+        ],
+        "removed": [
+          "api-iam.intercom.io",
+          "browser-intake-us5-datadoghq.com",
+          "downloads.intercomcdn.com",
+          "http-intake.logs.us5.datadoghq.com",
+          "js.intercomcdn.com",
+          "servd-anthropic-website.b-cdn.net",
+          "widget.intercom.io"
+        ]
+      },
+      "domain_keyword": {
+        "added": [
+          "datadog",
+          "sentry",
+          "sift"
+        ],
+        "removed": []
+      },
+      "domain_suffix": {
+        "added": [
+          "anthropic-com.ghost.io",
+          "anthropic.auth0.com",
+          "anthropic.com.cdn.cloudflare.net",
+          "intercom.io",
+          "intercomcdn.com",
+          "servd-anthropic-website.b-cdn.net",
+          "statsigapi.net"
+        ],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [
+          "160.79.104.0/21",
+          "2607:6bc0::/32"
+        ],
+        "removed": [
+          "160.79.104.0/23",
+          "2607:6bc0:11::/48",
+          "2607:6bc0::/48"
+        ]
+      }
+    },
+    "anthropic-ip": {},
+    "openai": {}
+  },
+  "domain_keyword_requirements_covered": 20,
+  "from": "0.1.4",
+  "ntp_added": false,
+  "openai_and_source_ip_byte_identical": true,
+  "removed_entries_still_covered": true,
+  "schema": 1,
+  "to": "0.1.5"
+}

@@ -52,7 +52,7 @@ class NetworkReviewTests(unittest.TestCase):
         item["sha256"] = sha(path)
         self.save("sources/upstreams.yaml", registry)
 
-    def validate(self, as_of=dt.date(2026, 10, 9)):
+    def validate(self, as_of=dt.date(2026, 10, 15)):
         return canonical(self.root, "release", as_of)
 
     def test_exact_network_approval_and_expiry(self):

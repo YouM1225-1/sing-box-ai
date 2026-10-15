@@ -344,3 +344,171 @@
   first_seen: '2026-10-09'
   last_verified: '2026-10-09'
   review_after: '2026-11-08'
+- type: domain_suffix
+  value: anthropic.com.cdn.cloudflare.net
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: anthropic.auth0.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: anthropic-com.ghost.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: servd-anthropic-website.b-cdn.net
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: sentry.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: statsigapi.net
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: intercom.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: intercomcdn.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain
+  value: cdn.usefathom.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_keyword
+  value: datadog
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_keyword
+  value: sentry
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_keyword
+  value: sift
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: ip_cidr
+  value: 160.79.104.0/21
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: false
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: ip_cidr
+  value: 2607:6bc0::/32
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: false
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement

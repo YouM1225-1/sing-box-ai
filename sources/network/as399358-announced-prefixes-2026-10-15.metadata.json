@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "kind": "routing-observation-metadata",
+  "resource": "AS399358",
+  "fetched_on": "2026-10-15",
+  "observed_at_utc": "2026-10-15T08:00:00Z",
+  "main_snapshot": {
+    "path": "as399358-announced-prefixes-2026-10-15.json",
+    "url": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358",
+    "sha256": "eed4e70d0e7fc2585bafe5755538de18c474f9b044a9b09bb32b1a7ff11ace3c",
+    "min_peers_seeing": 10,
+    "query_starttime_utc": "2026-10-01T08:00:00Z",
+    "query_endtime_utc": "2026-10-15T08:00:00Z"
+  },
+  "current_prefixes": [
+    "160.79.104.0/23",
+    "2607:6bc0::/48",
+    "2607:6bc0:11::/48"
+  ],
+  "current_prefix_count": {
+    "ipv4": 1,
+    "ipv6": 2
+  },
+  "comparison_prefixes": [
+    "160.79.104.0/21",
+    "2607:6bc0::/32"
+  ],
+  "all_current_prefixes_contained_in_comparison_prefixes": true,
+  "routing_status_matches_current_prefix_counts": true,
+  "low_visibility_check_adds_prefixes": false,
+  "supporting_raw_responses": [
+    {
+      "url": "https://stat.ripe.net/data/routing-status/data.json?resource=AS399358&timestamp=2026-10-15T08%3A00%3A00",
+      "sha256": "ecdd853616c68b8fd04a80a5ad4f63ec6270a508348c79db649b984a53b8686f",
+      "raw_json": "{\"messages\":[[\"info\",\"Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing).\"]],\"see_also\":[],\"version\":\"3.4\",\"data_call_name\":\"routing-status\",\"data_call_status\":\"supported\",\"cached\":false,\"query_id\":\"20261015120411-a1c25739-0cc8-497d-aec6-b286484d081f\",\"process_time\":1869,\"server_id\":\"app199\",\"build_version\":\"v0.11.23-2026.10.12\",\"pipeline\":\"1460464\",\"status\":\"ok\",\"status_code\":200,\"time\":\"2026-10-15T12:04:13.693556\",\"data\":{\"first_seen\":{\"prefix\":\"192.96.137.0/24\",\"origin\":\"399358\",\"time\":\"2021-05-20T08:00:00\"},\"last_seen\":{\"prefix\":\"2607:6bc0:11::/48\",\"origin\":\"399358\",\"time\":\"2026-10-15T08:00:00\"},\"visibility\":{\"v4\":{\"ris_peers_seeing\":326,\"total_ris_peers\":326},\"v6\":{\"ris_peers_seeing\":316,\"total_ris_peers\":316}},\"announced_space\":{\"v4\":{\"prefixes\":1,\"ips\":512},\"v6\":{\"prefixes\":2,\"48s\":2}},\"observed_neighbours\":2,\"resource\":\"399358\",\"query_time\":\"2026-10-15T08:00:00\"}}"
+    },
+    {
+      "url": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358&starttime=2026-10-14T08%3A00%3A00&endtime=2026-10-15T08%3A00%3A00&min_peers_seeing=1",
+      "sha256": "645da31a634ea81877f7b6729a456b68cd9c654ddcdc9917235e0d0d973b9679",
+      "raw_json": "{\"messages\":[],\"see_also\":[],\"version\":\"1.2\",\"data_call_name\":\"announced-prefixes\",\"data_call_status\":\"supported\",\"cached\":false,\"query_id\":\"20261015120411-8cde7bd2-d6d6-4428-a571-9b6d4100dc91\",\"process_time\":85,\"server_id\":\"app193\",\"build_version\":\"v0.11.23-2026.10.12\",\"pipeline\":\"1460464\",\"status\":\"ok\",\"status_code\":200,\"time\":\"2026-10-15T12:04:11.909727\",\"data\":{\"prefixes\":[{\"prefix\":\"2607:6bc0:11::/48\",\"timelines\":[{\"starttime\":\"2026-10-14T08:00:00\",\"endtime\":\"2026-10-15T08:00:00\"}]},{\"prefix\":\"160.79.104.0/23\",\"timelines\":[{\"starttime\":\"2026-10-14T08:00:00\",\"endtime\":\"2026-10-15T08:00:00\"}]},{\"prefix\":\"2607:6bc0::/48\",\"timelines\":[{\"starttime\":\"2026-10-14T08:00:00\",\"endtime\":\"2026-10-15T08:00:00\"}]}],\"query_starttime\":\"2026-10-14T08:00:00\",\"query_endtime\":\"2026-10-15T08:00:00\",\"resource\":\"399358\",\"latest_time\":\"2026-10-15T08:00:00\",\"earliest_time\":\"2000-08-01T00:00:00\"}}"
+    }
+  ],
+  "documentation": [
+    "https://stat.ripe.net/docs/data-api/api-endpoints/announced-prefixes",
+    "https://stat.ripe.net/docs/data-api/api-endpoints/routing-status"
+  ],
+  "limitations": [
+    "This is a time-bounded RIPE RIS routing observation, not proof of every globally announced route or Anthropic service usage.",
+    "routing-status first_seen.prefix is historical (192.96.137.0/24 first seen in 2021) and is not a currently announced prefix.",
+    "Static CIDR rules covering these prefixes do not guarantee coverage of future AS399358 routing changes.",
+    "The comparison /21 and /32 contain address space beyond the currently observed /23 and two /48 announcements."
+  ]
+}

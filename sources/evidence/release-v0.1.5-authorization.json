@@ -1,0 +1,21 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "authorized_on": "2026-10-15",
+  "deployment_authorized": false,
+  "instruction": "发布上线",
+  "instruction_context": "用户已要求完整补齐 Net.Coffee 网站除 NTP 外的域名和 IP，候选 v0.1.5-rc.1 已构建验证；现明确要求正式发布上线。提交、推送并发布新 v0.1.5，固定下载和原生空缓存核验后更新 Latest。",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Publish this validated ruleset batch through the existing GitHub Release/Latest distribution channel.",
+    "Bind committed inputs, build twice in release mode, preserve candidate SRS bytes, validate native matching and regressions.",
+    "Check fixed downloads and native empty-cache loading before updating Latest; preserve prior releases and tags.",
+    "This publication does not request direct remote-device configuration changes or restarts and does not attest live-client or authenticated product usage."
+  ],
+  "project_version": "0.1.5",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

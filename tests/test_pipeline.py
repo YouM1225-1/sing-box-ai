@@ -42,7 +42,7 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(rows, allow_unicode=True, sort_keys=False))
 
     def test_baseline_and_user_confirmation(self):
-        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 10, 9))
+        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 10, 15))
         challenge = next(r for r in selected["anthropic"] if r["value"] == "challenges.cloudflare.com")
         self.assertEqual(challenge["review_status"], "approved")
         self.assertEqual(len([r for r in selected["openai"] if r["type"] == "ip_cidr"]), 23)
@@ -68,8 +68,11 @@ class PolicyTests(unittest.TestCase):
         self.change_policy(enabled_optional=[])
         selected, policy, _ = canonical(self.root)
         self.assertEqual(policy["enabled_optional"], [])
+        prior_rules = [r for r in selected["anthropic"] if r.get("status") != "user-requested"]
         for host in CLAUDE_OPTIONAL_HOSTS:
-            self.assertFalse(covered({"type": "domain", "value": host}, selected["anthropic"]))
+            self.assertFalse(covered({"type": "domain", "value": host}, prior_rules))
+        # Website coverage is explicitly requested and independent of optional hosts.
+        self.assertTrue(covered({"type": "domain", "value": "widget.intercom.io"}, selected["anthropic"]))
         registry = archives(self.root)
         for name in ("openai", "anthropic"):
             original = self.root / (name + "-upstream.json")
@@ -104,11 +107,13 @@ class PolicyTests(unittest.TestCase):
             if artifact == "anthropic":
                 expected["rules"][0]["domain_suffix"] = sorted(set(expected["rules"][0]["domain_suffix"]) | {"claude.dev"})
                 expected["rules"][0]["ip_cidr"] = sorted(set(expected["rules"][0]["ip_cidr"]) | {"2607:6bc0:11::/48"})
-            self.assertEqual(semantic_key(source_document(selected[artifact])), semantic_key(expected), artifact)
+            prior_rows = [r for r in selected[artifact] if r.get("status") != "user-requested"]
+            self.assertEqual(semantic_key(source_document(prior_rows)), semantic_key(expected), artifact)
         self.assertEqual(policy["selected_pending"], [])
 
     def test_announced_ipv6_is_destination_only_and_keeps_exact_scope(self):
         selected, _, _ = canonical(self.root)
+        selected = {name: [r for r in rows if r.get("status") != "user-requested"] for name, rows in selected.items()}
         self.assertEqual({r["value"] for r in selected["anthropic"] if r["type"] == "ip_cidr"}, {
             "160.79.104.0/23", "2607:6bc0::/48", "2607:6bc0:11::/48",
         })
@@ -124,7 +129,7 @@ class PolicyTests(unittest.TestCase):
 
     def test_shared_optionals_keep_exact_scope(self):
         selected, _, _ = canonical(self.root)
-        rules = selected["anthropic"]
+        rules = [r for r in selected["anthropic"] if r.get("status") != "user-requested"]
         for host in CLAUDE_OPTIONAL_HOSTS:
             self.assertTrue(covered({"type": "domain", "value": host}, rules))
             for other in ("sub." + host, host + ".evil.test"):
@@ -178,13 +183,13 @@ class PolicyTests(unittest.TestCase):
         pending = discovery_entries(self.root)
         self.assertTrue(pending)
         candidate = next(r for r in pending if r["value"] == "cdn.growthbook.io")
-        selected, _, _ = canonical(self.root, "release", dt.date(2026, 10, 9))
+        selected, _, _ = canonical(self.root, "release", dt.date(2026, 10, 15))
         self.assertFalse(covered(candidate, selected[candidate["artifact"]]))
         self.change_policy(selected_pending=[candidate["id"]])
-        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 10, 9))
+        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 10, 15))
         self.assertTrue(covered(candidate, selected[candidate["artifact"]]))
         with self.assertRaisesRegex(Invalid, "Selected pending candidates"):
-            canonical(self.root, "release", dt.date(2026, 10, 9))
+            canonical(self.root, "release", dt.date(2026, 10, 15))
         self.change_policy(selected_pending=["anthropic:domain:unregistered.example.org"])
         with self.assertRaisesRegex(Invalid, "Invalid pending selection"):
             canonical(self.root)
@@ -198,7 +203,7 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(pending, allow_unicode=True, sort_keys=False))
         self.change_policy(selected_pending=[row["id"]])
         with self.assertRaisesRegex(Invalid, "Selected pending candidates"):
-            canonical(self.root, "release", dt.date(2026, 9, 27))
+            canonical(self.root, "release", dt.date(2026, 10, 15))
 
     def test_redating_original_user_confirmation_cannot_renew_it(self):
         row = next(r for r in load(self.root / "sources/anthropic.yaml") if r["value"] == "challenges.cloudflare.com")
@@ -246,7 +251,7 @@ class PolicyTests(unittest.TestCase):
             canonical(self.root)
 
     def test_unknown_type_and_status(self):
-        for key, value in (("type", "domain_keyword"), ("status", "trusted"), ("direction", "both")):
+        for key, value in (("type", "unknown_domain_type"), ("status", "trusted"), ("direction", "both")):
             with self.subTest(key=key):
                 path = self.root / "sources/openai.yaml"
                 saved = path.read_text()
@@ -362,7 +367,7 @@ class PolicyTests(unittest.TestCase):
 
     def test_legacy_runtime_review_does_not_authorize_publication(self):
         write_json(self.root / "sources/release-review.json", {"schema": 1, "status": "approved", "integration_evidence": [{"result": "passed"}]})
-        with patch("validate.today", return_value=dt.date(2026, 10, 9)):
+        with patch("validate.today", return_value=dt.date(2026, 10, 15)):
             with self.assertRaisesRegex(Invalid, "wrong scope"):
                 release_gate(self.root, {"build_mode": "release"})
 
@@ -388,7 +393,7 @@ class FormatTests(unittest.TestCase):
         wildcard = {"version": 2, "rules": [{"domain_suffix": [".example.com"]}]}
         self.assertEqual(semantic_key(root), semantic_key(expanded))
         self.assertNotEqual(semantic_key(root), semantic_key(wildcard))
-        for rule in ({}, {"invert": True, "domain": "example.com"}, {"type": "logical", "rules": []}, {"domain_keyword": ["openai"]}):
+        for rule in ({}, {"invert": True, "domain": "example.com"}, {"type": "logical", "rules": []}, {"unknown_domain_type": ["openai"]}):
             with self.assertRaises(Invalid):
                 semantic_key({"version": 2, "rules": [rule]})
 
@@ -431,7 +436,7 @@ class FormatTests(unittest.TestCase):
         result = report()
         found = {r["value"]: r["classification"] for r in result["discovery"] if r["upstream"] == "legacy-anthropic"}
         self.assertEqual(found["cdn.growthbook.io"], "ADD_CANDIDATE")
-        self.assertEqual(found["cdn.usefathom.com"], "ADD_CANDIDATE")
+        self.assertEqual(found["cdn.usefathom.com"], "ALREADY_COVERED")
         self.assertEqual(found["challenges.cloudflare.com"], "ALREADY_COVERED")
 
 

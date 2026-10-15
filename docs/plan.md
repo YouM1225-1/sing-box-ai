@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.29**；正式发布核验日期：2026-10-09（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；当前正式输入、`artifacts/v0.1.4/`、`dist/` 为 `v0.1.4`，新增经用户授权的 `2607:6bc0:11::/48`；GitHub 正式 Release 与 Latest 已为 `v0.1.4`。
-> 当前状态：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言全部通过；详见[本轮发布证据](evidence/release-v0.1.4/README.md)。发布批准仅针对静态制品，消费者与部署身份仍为空/pending；v0.1.3 的 VPS 验收不代表新增网段业务验证。
+> 文档修订：**1.30**；工作树更新日期：2026-10-15（Asia/Shanghai）。
+> 主仓库：`YouM1225-1/sing-box-ai`；当前工作树已晋升 `v0.1.5` 正式发布准备，语义与已验收的 `v0.1.5-rc.1` 一致；按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。`dist/` 与既有正式批次仍为 `v0.1.4`，将在正式构建与门槛通过后更新；本轮尚未发布或修改客户端。
+> 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作新候选验证。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
@@ -62,7 +62,7 @@
 
 `dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.4`，对应完整批次在 `artifacts/v0.1.4/`，发布与下载结果见本轮发布证据。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
 
-三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品只用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
+三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品使用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；`v0.1.5-rc.1` 对明确用户指令新增 `domain_keyword`。来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
 | 写法 | apex `example.com` | 一层/多层子域 | `notexample.com` |
 |---|---:|---:|---:|
@@ -244,7 +244,7 @@ IPv6 目的前缀保留在集合中；N100 产品路由的 IPv6 reject 是消费
 }
 ```
 
-不得改为客户端目的 `/21`。以下官方已 phased-out 地址，清空其他域名条件后作为三个制品的来源/目的负例：
+此来源制品不得改为客户端目的 `/21`。`v0.1.5-rc.1` 另外按用户指令向 Claude 目的集合加入 `/21`，来源事实及来源制品仍保持独立；该扩大范围不改标为官方入口。以下官方已 phased-out 地址，清空其他域名条件后作为三个制品的来源/目的负例：
 
 ```text
 34.162.46.92/32
@@ -303,9 +303,9 @@ OpenAI Voice 是用途明确的客户端目的地址数据；OpenAI 爬虫/代�
 | Claude 两个 Datadog 主机、Gerrit regex | 官方可选，保持未选 | 显式选择功能/可选项，固定 manifest 并验收；不因此删基线已覆盖内容 |
 | Stripe 其他支付主机、Google/Apple/Microsoft IdP、任意插件/MCP | 未完成对应真实链路验收；不等于已证明业务缺陷，也不等于无其他路由 | 具体使用场景的依赖、首次命中、会话与出口证据，优先 exact；可达不单独决定是否收录，需明确该选定功能是否承担独立产品覆盖责任 |
 
-Issue、社区规则及一次抓包用于发现，不直接批准。已对照 blackmatrix7 的 OpenAI/Claude 文件；其 Statsig、Arkose、Fathom 可作候选，不整体并入共享后缀、关键词或 ASN。人工补充禁止 `domain_keyword`、公共后缀、整个云/CDN 父域、默认路由 CIDR、瞬时 DNS 地址和错误方向。官方明确列出的共享通配范围须逐项登记，不类推扩张。
+Issue、社区规则及一次抓包用于发现，不直接批准。已对照 blackmatrix7 的 OpenAI/Claude 文件；一般候选不整体并入共享后缀、关键词或 ASN。公共后缀、整个云/CDN 父域、默认路由 CIDR、瞬时 DNS 地址和错误方向仍禁止。`domain_keyword` 与额外宽范围只能走下述明确用户指令入口；固定上游基线不得借此自动引入关键词。官方明确列出的共享通配范围须逐项登记，不类推扩张。
 
-补充类别为 `required`、`feature-required`、`optional`、`compatibility`、`compatibility-critical`。前两类必须覆盖已声明功能；optional 仅按 policy 的原始规范值显式选中；当前选择两条字体。兼容候选状态仅 `pending/approved`，维护 `value/type/product/direction/status/sources/reason/shared_dependency`，功能依赖另列 `features`；兼容项另列 `evidence/first_seen/last_verified/review_after/review_status`。
+补充类别为 `required`、`feature-required`、`optional`、`compatibility`、`compatibility-critical`，另有 `user-requested`。前两类必须覆盖已声明功能；optional 按 policy 显式选中，当前包括两条字体、两个遥测及五个客服主机。用户要求的较宽范围独立生效，关闭某个 optional 精确项不保证其主机不再被较宽规则覆盖。兼容候选状态仅 `pending/approved`，维护 `value/type/product/direction/status/sources/reason/shared_dependency`，功能依赖另列 `features`；兼容项另列 `evidence/first_seen/last_verified/review_after/review_status`。
 
 兼容批准接受有定位信息的真实运行证据；明确维护者确认仅可按固定首次批准锚点用于首次批准。运行证据需日期、环境、版本、方法及结果；确认记录原话、规则、产品、日期来源及已知限制。纯历史收录或一次请求观察不能自动批准。日期为带引号的 UTC `YYYY-MM-DD`；从未验证的 pending 两个复核日期为 null。保留的 approved 满足：
 
@@ -316,6 +316,14 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 首次确认锚点在 policy 中固定原 evidence 路径、SHA 和批准日。该条目的首次窗口保留；后续 last_verified 前移必须有新 runtime-validation，包含环境、客户端版本、方法、结果、实际观测及验证日期，不能改原确认日期或新写一份简短陈述续期。元数据验证不能证明证据真实性，维护者仍须审阅。
 
 30 天是项目维护窗口；到期 UTC 当日 00:00 阻断新发布，不能只顺延日期。条目删除/替换须绑定审阅理由及受影响测试；关键兼容项还需替代覆盖或移除后的核心流程证据。不能通过删除、降级或跨产品套用批准消除门槛；旧运行批次不因日历变化自动删除。
+
+### 4.1 明确用户要求的网站覆盖
+
+2026-10-15 用户要求“除了ntp外 添加其他域名和ip 保证覆盖完整”。本次新增 14 条 `user-requested` 补充，覆盖网页各格式的并集，包括纯列表的后缀含义、`datadog`／`sentry`／`sift` 关键词，以及目的 `160.79.104.0/21`、`2607:6bc0::/32`。已有核心后缀完整继承，不加 NTP。
+
+指令原文及准确规则清单保存在[覆盖指令](../sources/evidence/net-coffee-coverage-request-2026-10-15.json)，由 upstream registry 固定 SHA-256。校验限制为 Anthropic 目的集合、`claude-website-coverage` 产品及已列 type/value，拒绝跨产品套用、来源方向转换、虚构运行验证、未授权关键词和默认路由。这是持久配置选择，不借用或续期旧的兼容验证证据；旧官方和精确网络验证继续运行。
+
+本轮查询的 AS399358 公告前缀均包含于这两个较大目的范围，记录在[观测元数据](../sources/network/as399358-announced-prefixes-2026-10-15.metadata.json)。静态 SRS 不声称提供动态 ASN 数据库或覆盖未来公告变化。生成器可去掉被后缀、关键词或较大网段完整包含的重复项；原来源与用途记录保留在 manifest。
 
 <a id="consumer"></a>
 ## 5. N100 接入与实际分流
@@ -420,7 +428,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 |---|---|
 | 输入与结构 | 真实解析 SRS；哈希/版本/字段/方向正确；基线完整，补充可追溯；拒绝空制品、未知字段、错误方向及超范围数据 |
 | 域名边界 | exact、点后缀、root suffix 的 apex/一层/多层/近似域/错误父域；原始 regex 语言与反例；不以宽匹配追求用例数 |
-| IP 方向 | `/23` 内目的命中，`/21` 内而 `/23` 外目的不命中；对应来源命中独立来源制品；两个地址族与五个 phased-out 负例 |
+| IP 方向 | 新候选的完整 `/21` 与 `/32` 目的范围及相邻地址边界；对应来源仅命中独立来源制品；原官方窄范围独立保留测试；两个地址族与五个 phased-out 负例 |
 | 组合语义 | source/二进制一致；最终单 default 与外层条件的组合；目的域名+目的 IP、来源与目的、元数据重置；不以独立 OR 等价代替消费者测试 |
 | DNS | 真实目标版本的查询/响应阶段，Rule/Direct/Global，旧/新首次命中、resolver、A/AAAA；合成测试与真实 DNS 分开 |
 | 元数据反例 | pending/缺字段/未来日期/到期前后/超过窗口/跨产品证据/旧 review_as_of；历史重建可以通过但当前发布仍拒绝过期 |

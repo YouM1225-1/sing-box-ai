@@ -1,0 +1,22 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "checks": [
+    "20 domain/keyword requirements and 2 CIDRs covered",
+    "Current observed AS399358 prefixes covered; NTP samples absent",
+    "OpenAI and source-IP JSON/SRS unchanged from v0.1.4",
+    "Keyword normalization, containment/deduplication and native witnesses reviewed",
+    "User instruction and hash bound without claiming official service requirement or runtime acceptance",
+    "2636 native cases passed; 64 regressions passed, no skips"
+  ],
+  "conclusion": "Approve these exact candidate SRS bytes as the semantic content of v0.1.5. Formal release must bind committed inputs and preserve all three hashes. No consumer deployment acceptance is claimed.",
+  "reviewed_on": "2026-10-15",
+  "reviewer": "Codex independent release_review agent",
+  "schema": 1,
+  "scope": "artifact-semantic-review",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

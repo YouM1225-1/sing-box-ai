@@ -23,6 +23,8 @@ def reference_match(rows, domain="", source="", destination=""):
             return True
         if typ == "domain_suffix" and domain and (domain.endswith(value if value.startswith(".") else "." + value) or not value.startswith(".") and domain == value):
             return True
+        if typ == "domain_keyword" and domain and value in domain:
+            return True
         if typ == "domain_regex" and domain and re.search(value, domain):
             return True
         if typ in {"ip_cidr", "source_ip_cidr"}:
@@ -47,6 +49,11 @@ def cases_for(selected):
                     add(host, domain=host)
                 add(root + ":upper", domain=root.upper())
                 add(root + ":fqdn", fqdn=root)
+            if typ == "domain_keyword":
+                for host in (value + ".example.org", "before" + value + "after.example.org", "example.org." + value):
+                    add("keyword:" + host, domain=host)
+                add("keyword-upper:" + value, domain=value.upper() + ".EXAMPLE.ORG")
+                add("keyword-fqdn:" + value, fqdn="before" + value + "after.example.org")
             if typ in {"ip_cidr", "source_ip_cidr"}:
                 net = ipaddress.ip_network(value)
                 for ip in (str(net.network_address), str(net.broadcast_address)):
@@ -66,13 +73,37 @@ def cases_for(selected):
             add("announced-ipv6:dst:" + ip, destination=ip, expected=artifact == "anthropic")
             add("announced-ipv6:src:" + ip, source=ip, expected=False)
         for ip in ("2607:6bc0:10:ffff:ffff:ffff:ffff:ffff", "2607:6bc0:12::"):
-            add("adjacent-ipv6:dst:" + ip, destination=ip, expected=False)
+            add("adjacent-ipv6:dst:" + ip, destination=ip, expected=artifact == "anthropic")
             add("adjacent-ipv6:src:" + ip, source=ip, expected=False)
         if artifact in {"openai", "anthropic"}:
             add("challenge-required", domain="challenges.cloudflare.com", expected=True)
         if artifact == "anthropic":
-            add("inbound-only-not-outbound", destination="160.79.106.1", expected=False)
             add("artifact-library", domain="cdnjs.cloudflare.com", expected=True)
+            # Fixed website witnesses are independent of the selected rows/oracle.
+            # Include suffix scope from the page's plain-domain variant as well.
+            for suffix in ("anthropic.com", "claude.ai", "claude.com", "clau.de", "claudemcpclient.com", "claudemcpcontent.com", "claudeusercontent.com", "servd-anthropic-website.b-cdn.net", "anthropic.com.cdn.cloudflare.net", "anthropic.auth0.com", "anthropic-com.ghost.io", "sentry.io", "statsigapi.net", "intercom.io", "intercomcdn.com"):
+                for host in (suffix, "probe." + suffix):
+                    add("website-suffix:" + host, domain=host, expected=True)
+                if suffix != "sentry.io":
+                    for host in ("not" + suffix, suffix + ".invalid"):
+                        add("website-boundary:" + host, domain=host, expected=False)
+            for host in ("browser-intake-us5-datadoghq.com", "cdn.usefathom.com", "cdn.anthropic.com", "mcp.anthropic.com", "console.anthropic.com", "workbench.anthropic.com", "api.anthropic.com"):
+                add("website-exact:" + host, domain=host, expected=True)
+            for word in ("datadog", "sentry", "sift"):
+                for host in (word + ".example.org", "before" + word + "after.example.org", "example.org." + word):
+                    add("website-keyword:" + host, domain=host, expected=True)
+                add("website-keyword-upper:" + word, domain=word.upper() + ".EXAMPLE.ORG", expected=True)
+                add("website-keyword-fqdn:" + word, fqdn="before" + word + "after.example.org", expected=True)
+            for host in ("datado.example.org", "sen-try.example.org", "si-ft.example.org", "probe.cdn.usefathom.com", "cdn.usefathom.com.invalid"):
+                add("website-negative:" + host, domain=host, expected=False)
+            for ip in ("160.79.104.0", "160.79.106.1", "160.79.111.255", "2607:6bc0::", "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff"):
+                add("website-network:dst:" + ip, destination=ip, expected=True)
+                add("website-network:src:" + ip, source=ip, expected=False)
+            for ip in ("160.79.103.255", "160.79.112.0", "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff", "2607:6bc1::"):
+                add("website-network-outside:dst:" + ip, destination=ip, expected=False)
+                add("website-network-outside:src:" + ip, source=ip, expected=False)
+            for host in ("pool.ntp.org", "time.google.com", "time.apple.com", "time.cloudflare.com"):
+                add("excluded-ntp:" + host, domain=host, expected=False)
         if artifact == "anthropic-ip":
             add("source-only", source="160.79.106.1", expected=True)
             add("source-not-destination", destination="160.79.106.1", expected=False)

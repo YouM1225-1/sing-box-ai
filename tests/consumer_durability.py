@@ -273,7 +273,7 @@ class Harness:
                 # Real IP destinations; observer prevents network egress.
                 ips = [("23.79.201.0", "direct"), ("198.51.100.1", "direct")]
                 if product == "anthropic":
-                    ips += [("160.79.104.0", "proxy"), ("160.79.105.255", "proxy"), ("160.79.106.0", "direct"), ("2607:6bc0::1", "reject"), ("2607:6bc1::1", "direct")]
+                    ips += [("160.79.103.255", "direct"), ("160.79.104.0", "proxy"), ("160.79.106.0", "proxy"), ("160.79.111.255", "proxy"), ("160.79.112.0", "direct"), ("2607:6bc0::1", "reject"), ("2607:6bc0:ffff::1", "reject"), ("2607:6bc1::1", "direct")]
                 else:
                     source = self.out / "openai-decompiled.json"
                     subprocess.run([self.args.binary, "rule-set", "decompile", "--output", str(source), str(self.args.candidate / "openai.srs")], check=True, capture_output=True)

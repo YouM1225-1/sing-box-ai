@@ -359,3 +359,20 @@ archives:
   kind: routing-observation
   method: https-raw-json; network ownership/announcement only, not service-purpose
     certification
+- id: net-coffee-coverage-request
+  kind: user-instruction
+  path: sources/evidence/net-coffee-coverage-request-2026-10-15.json
+  url: https://ip.net.coffee/claude/site.html
+  sha256: 11f67585c1cff814995a96f6324aac84f71d8a5a095243034f3ec284237d01ca
+  observed_on: '2026-10-15'
+  method: direct-user-instruction; reviewed domain/IP list, not verified service usage
+- id: as399358-website-coverage-observation
+  kind: routing-observation
+  path: sources/network/as399358-announced-prefixes-2026-10-15.json
+  url: https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358
+  sha256: eed4e70d0e7fc2585bafe5755538de18c474f9b044a9b09bb32b1a7ff11ace3c
+  metadata_path: sources/network/as399358-announced-prefixes-2026-10-15.metadata.json
+  metadata_sha256: 0914df4dba368d41207f19fe70c8c06dbf3d5a664a47b6d18be8c9c767c8777b
+  observed_on: '2026-10-15'
+  method: current RIS observation; all observed prefixes contained in requested /21
+    and /32; not a future ASN guarantee

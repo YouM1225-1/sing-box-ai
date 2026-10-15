@@ -1,0 +1,106 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "comparison": {
+    "anthropic": {
+      "domain": {
+        "added": [
+          "cdn.usefathom.com"
+        ],
+        "removed": [
+          "api-iam.intercom.io",
+          "browser-intake-us5-datadoghq.com",
+          "downloads.intercomcdn.com",
+          "http-intake.logs.us5.datadoghq.com",
+          "js.intercomcdn.com",
+          "servd-anthropic-website.b-cdn.net",
+          "widget.intercom.io"
+        ]
+      },
+      "domain_keyword": {
+        "added": [
+          "datadog",
+          "sentry",
+          "sift"
+        ],
+        "removed": []
+      },
+      "domain_suffix": {
+        "added": [
+          "anthropic-com.ghost.io",
+          "anthropic.auth0.com",
+          "anthropic.com.cdn.cloudflare.net",
+          "intercom.io",
+          "intercomcdn.com",
+          "servd-anthropic-website.b-cdn.net",
+          "statsigapi.net"
+        ],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [
+          "160.79.104.0/21",
+          "2607:6bc0::/32"
+        ],
+        "removed": [
+          "160.79.104.0/23",
+          "2607:6bc0:11::/48",
+          "2607:6bc0::/48"
+        ]
+      }
+    },
+    "anthropic-ip": {},
+    "openai": {}
+  },
+  "conclusion": "Approve exactly the validated candidate SRS bytes for v0.1.5. The complete website domain/keyword/CIDR union is covered with NTP excluded. Broad matching is explicitly requested, not reclassified as official necessity. Source-IP direction and the other products are preserved. Formal release requires committed-input binding and release-mode verification.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.5/semantic-diff.json",
+      "sha256": "1d2b7237c1a297f5048574e17e55d6e8877da03c8e1f20b410c23664c5a0e3cc"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.5/independent-review.json",
+      "sha256": "43f4a9f237a14821a20df2ea6886216db0732a99b6865616541f76a84299560e"
+    },
+    {
+      "path": "docs/evidence/net-coffee-coverage-2026-10-15/results.json",
+      "sha256": "21335d93ba47050c83a16f2fb2dba26266d61db21ba14fbb5e3107ef5e363ab1"
+    },
+    {
+      "path": "docs/evidence/net-coffee-coverage-2026-10-15/unit-tests.log",
+      "sha256": "c4be9ab38a1fe3fe8098feabeea57940ffaff7830edb0ab804854cf82c91fae4"
+    },
+    {
+      "path": "artifacts/v0.1.5-rc.1/manifest.json",
+      "sha256": "474dc08fc7878313176e91f2beb70642c2d62eb3139ac5785254894061ee9ca5"
+    },
+    {
+      "path": "sources/evidence/net-coffee-coverage-request-2026-10-15.json",
+      "sha256": "11f67585c1cff814995a96f6324aac84f71d8a5a095243034f3ec284237d01ca"
+    },
+    {
+      "path": "sources/network/as399358-announced-prefixes-2026-10-15.json",
+      "sha256": "eed4e70d0e7fc2585bafe5755538de18c474f9b044a9b09bb32b1a7ff11ace3c"
+    },
+    {
+      "path": "sources/network/as399358-announced-prefixes-2026-10-15.metadata.json",
+      "sha256": "0914df4dba368d41207f19fe70c8c06dbf3d5a664a47b6d18be8c9c767c8777b"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "limitations": [
+    "Static coverage and current ASN observation only; not a future endpoint/ASN guarantee.",
+    "Public fixed/latest downloads and empty-cache checks are recorded after publication.",
+    "No live production configuration or authenticated business acceptance is claimed."
+  ],
+  "project_version": "0.1.5",
+  "reviewed_on": "2026-10-15",
+  "reviewer": "Codex primary review plus independent release_review agent",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

@@ -1,0 +1,78 @@
+{
+  "approved_on": "2026-10-15",
+  "artifact": "anthropic",
+  "confirmed_by": "maintainer",
+  "consumer_validation": false,
+  "direction": "destination",
+  "excluded": [
+    "ntp"
+  ],
+  "interpretation": "Cover the union of the referenced page formats, including literal keywords, root-plus-subdomain scopes in its plain domain list, and destination IPv4 /21 and IPv6 /32. Existing official and exact network evidence keeps its separate meaning. This instruction is not a publication or runtime-validation record.",
+  "kind": "user-instruction",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "rules": [
+    {
+      "type": "domain_suffix",
+      "value": "anthropic.com.cdn.cloudflare.net"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "anthropic.auth0.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "anthropic-com.ghost.io"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "servd-anthropic-website.b-cdn.net"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "sentry.io"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "statsigapi.net"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "intercom.io"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "intercomcdn.com"
+    },
+    {
+      "type": "domain",
+      "value": "cdn.usefathom.com"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "datadog"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "sentry"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "sift"
+    },
+    {
+      "type": "ip_cidr",
+      "value": "160.79.104.0/21"
+    },
+    {
+      "type": "ip_cidr",
+      "value": "2607:6bc0::/32"
+    }
+  ],
+  "schema": 1,
+  "scope": "website-coverage",
+  "service_usage_verified": false,
+  "statement": "除了ntp外 添加其他域名和ip 保证覆盖完整",
+  "website_url": "https://ip.net.coffee/claude/site.html"
+}

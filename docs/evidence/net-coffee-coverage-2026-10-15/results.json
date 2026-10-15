@@ -1,0 +1,315 @@
+{
+  "artifacts": {
+    "anthropic-ip.json": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.json": "121a1b9774ccd3af32f1c3a78a8a103af9e253a613de2436850be7b575f4340b",
+    "anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "cases.json": "b9ec6779ae9c3baf48d902ab02d683c64bff1c939215c3c9bcdab5f2d32d7c2f",
+    "manifest.json": "474dc08fc7878313176e91f2beb70642c2d62eb3139ac5785254894061ee9ca5",
+    "matches.jsonl": "cddaad703432d268d4a6110c14e4dab2b7725bf7bcac335ceee3992f0c6088c4",
+    "openai.json": "8f1efe104bb5dd78fc1af9cf94e2ba2b6a7984667f4e9d6686d73c5e6dcd9c5f",
+    "openai.srs": "a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+  },
+  "asn_observed_at_utc": "2026-10-15T08:00:00Z",
+  "basis": "Union of webpage formats, with plain-list suffix scopes retained; NTP excluded",
+  "current_asn_prefixes": [
+    {
+      "covered": true,
+      "prefix": "160.79.104.0/23"
+    },
+    {
+      "covered": true,
+      "prefix": "2607:6bc0::/48"
+    },
+    {
+      "covered": true,
+      "prefix": "2607:6bc0:11::/48"
+    }
+  ],
+  "date": "2026-10-15",
+  "destination_cidr_covered": 2,
+  "destination_cidr_requirements": 2,
+  "domain_keyword_covered": 20,
+  "domain_keyword_requirements": 20,
+  "field_counts": {
+    "domain": 15,
+    "domain_keyword": 3,
+    "domain_suffix": 16,
+    "ip_cidr": 2
+  },
+  "input_hashes_match": true,
+  "native_validation": {
+    "baseline_complete": true,
+    "cases": 2636,
+    "clean_rebuild_equal": true,
+    "failures": 0,
+    "level": "local-source-binary-and-isolated-check",
+    "native_result_sha256": "cddaad703432d268d4a6110c14e4dab2b7725bf7bcac335ceee3992f0c6088c4",
+    "test_harness": {
+      "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+      "go_version": "go1.27.1",
+      "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+      "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+      "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+    },
+    "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+  },
+  "openai_and_source_ip_unchanged": true,
+  "rebuild_identical": true,
+  "requirements": [
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "anthropic.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "claude.ai"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "claude.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "clau.de"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "clau.de"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpclient.com"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "claudemcpclient.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "claudemcpcontent.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "claudeusercontent.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "servd-anthropic-website.b-cdn.net"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "servd-anthropic-website.b-cdn.net"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com.cdn.cloudflare.net"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "anthropic.com.cdn.cloudflare.net"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.auth0.com"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "anthropic.auth0.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic-com.ghost.io"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "anthropic-com.ghost.io"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "sentry.io"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "statsigapi.net"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "statsigapi.net"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "intercom.io"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_suffix",
+          "value": "intercomcdn.com"
+        }
+      ],
+      "type": "domain_suffix",
+      "value": "intercomcdn.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "type": "domain",
+      "value": "browser-intake-us5-datadoghq.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain",
+          "value": "cdn.usefathom.com"
+        }
+      ],
+      "type": "domain",
+      "value": "cdn.usefathom.com"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "type": "domain_keyword",
+      "value": "datadog"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "type": "domain_keyword",
+      "value": "sentry"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "domain_keyword",
+          "value": "sift"
+        }
+      ],
+      "type": "domain_keyword",
+      "value": "sift"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "ip_cidr",
+          "value": "160.79.104.0/21"
+        }
+      ],
+      "type": "ip_cidr",
+      "value": "160.79.104.0/21"
+    },
+    {
+      "covered": true,
+      "covered_by": [
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32"
+        }
+      ],
+      "type": "ip_cidr",
+      "value": "2607:6bc0::/32"
+    }
+  ],
+  "schema": 1,
+  "scope": "Local source/binary coverage and isolated constructor check. No live client, remote release or future ASN claim.",
+  "unit_tests": {
+    "errors": 0,
+    "exit": 0,
+    "failures": 0,
+    "log": "unit-tests.log",
+    "ran": 64,
+    "skipped": 0
+  },
+  "version": "0.1.5-rc.1",
+  "website": "https://ip.net.coffee/claude/site.html"
+}
