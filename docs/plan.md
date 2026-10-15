@@ -1,7 +1,7 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.30**；工作树更新日期：2026-10-15（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；当前工作树已晋升 `v0.1.5` 正式发布准备，语义与已验收的 `v0.1.5-rc.1` 一致；按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。`dist/` 与既有正式批次仍为 `v0.1.4`，将在正式构建与门槛通过后更新；本轮尚未发布或修改客户端。
+> 主仓库：`YouM1225-1/sing-box-ai`；当前工作树已晋升 `v0.1.5` 正式发布准备，语义与已验收的 `v0.1.5-rc.1` 一致；按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。`dist/` 已更新为通过正式门槛的 `v0.1.5`；两次正式构建各 2,636 项原生检查、64 项回归通过，待上传及公开下载验收，见[发布记录](evidence/release-v0.1.5/README.md)。
 > 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作新候选验证。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
@@ -60,7 +60,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.4`，对应完整批次在 `artifacts/v0.1.4/`，发布与下载结果见本轮发布证据。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.5`，对应完整批次在 `artifacts/v0.1.5/`，发布与下载结果见[本轮发布证据](evidence/release-v0.1.5/README.md)。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品使用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；`v0.1.5-rc.1` 对明确用户指令新增 `domain_keyword`。来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
