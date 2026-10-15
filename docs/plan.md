@@ -1,14 +1,14 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.30**；工作树更新日期：2026-10-15（Asia/Shanghai）。
-> 主仓库：`YouM1225-1/sing-box-ai`；当前工作树已晋升 `v0.1.5` 正式发布准备，语义与已验收的 `v0.1.5-rc.1` 一致；按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。`dist/` 已更新为通过正式门槛的 `v0.1.5`；两次正式构建各 2,636 项原生检查、64 项回归通过，待上传及公开下载验收，见[发布记录](evidence/release-v0.1.5/README.md)。
-> 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作新候选验证。
+> 文档修订：**1.31**；工作树更新日期：2026-10-15（Asia/Shanghai）。
+> 主仓库：`YouM1225-1/sing-box-ai`；当前已发布 `v0.1.5` 并设为 Latest，语义与已验收的 `v0.1.5-rc.1` 一致；按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。`dist/` 已更新为通过正式门槛的 `v0.1.5`；两次正式构建各 2,636 项原生检查、64 项回归、固定及 Latest 各 6 个资产下载和 152 项空缓存断言全部通过，见[发布记录](evidence/release-v0.1.5/README.md)。
+> 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作本版验证。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
 
 完成终点：固定输入、补充证据、生成器、校验器、manifest 和测试契约一致；构建并审阅同批次三个制品，按授权发布静态发行；仅对经过该批次运行验收的环境声明可用。规则集合完整性、消费者分流正确性和真实业务成功分别验收。
 
-用户在验收 `0.1.2-rc.1` 后于 2026-10-03 明确要求“发布”。本次授权为手动构建、提交及推送相应输入和制品、发布正式 `0.1.2`，先非 Latest 验收固定下载和本机空缓存加载，再设为 Latest。目标规则只新增社区基线中的 `claude.dev` root suffix，三份 SRS 必须与候选逐字节一致。保留产品路由及 DNS 原位置，现有配置与 iCloud 不改；不访问或修改 N100，不重启/重载，不改系统 DNS、路由或防火墙。新批准单独绑定 `0.1.2`，不沿用旧版批准。历史候选 `publication_approval=null` 保持原样；正式静态发布后也继续保持 `validated_consumers=[]`、`integration_evidence=[]`、`deployment_status=pending`。
+历史授权（v0.1.2）：用户在验收 `0.1.2-rc.1` 后于 2026-10-03 明确要求“发布”。该次授权为手动构建、提交及推送相应输入和制品、发布正式 `0.1.2`，先非 Latest 验收固定下载和本机空缓存加载，再设为 Latest。目标规则只新增社区基线中的 `claude.dev` root suffix，三份 SRS 必须与候选逐字节一致。保留产品路由及 DNS 原位置，现有配置与 iCloud 不改；不访问或修改 N100，不重启/重载，不改系统 DNS、路由或防火墙。新批准单独绑定 `0.1.2`，不沿用旧版批准。历史候选 `publication_approval=null` 保持原样；正式静态发布后也继续保持 `validated_consumers=[]`、`integration_evidence=[]`、`deployment_status=pending`。
 
 阅读入口：[规则职责](#scope) → [固定输入与语义](#inputs) → [完整补充清单](#supplements) → [N100 配置与影响](#consumer) → [构建发布契约](#build) → [执行计划](#execution)。
 
@@ -268,7 +268,7 @@ OpenAI 基线 regex 原样继承：
 
 ### 3.5 是否增加独立 IP 规则集
 
-**结论：保留官方目的 IP 补充，但本次不增加第四、第五个目的 IP 制品。** 当前 `openai.srs` 已并入 23 个 Voice `/32`，`anthropic.srs` 已并入官方目的 `/23` 与 `/48`；v0.1.4 另补经用户授权的 `2607:6bc0:11::/48` 网络覆盖。它们和域名同属目的组 OR：没有域名元数据时，只要实际目的 IP 命中前缀，集合仍能命中；仍受消费者更早规则与内核旁路影响。
+**结论：保留官方目的 IP 补充，但本次不增加第四、第五个目的 IP 制品。** 当前 `openai.srs` 已并入 23 个 Voice `/32`，`anthropic.srs` 已并入官方目的 `/23` 与 `/48`；v0.1.4 另补经用户授权的 `2607:6bc0:11::/48` 网络覆盖；v0.1.5 按用户网页清单要求将目的范围扩为 `/21`、`/32`，包含前述子集。它们和域名同属目的组 OR：没有域名元数据时，只要实际目的 IP 命中前缀，集合仍能命中；仍受消费者更早规则与内核旁路影响。
 
 | 选择 | 覆盖与代价 | 决策 |
 |---|---|---|
@@ -410,7 +410,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前本地正式批次为 `0.1.3`，其受验收候选为 `0.1.3-rc.1`；远端 Latest 身份以发布证据为准；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前本地正式批次为 `0.1.5`，其受验收候选为 `0.1.5-rc.1`；远端 Latest 身份以发布证据为准；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 

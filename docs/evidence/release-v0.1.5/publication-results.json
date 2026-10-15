@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "timestamp_utc": "2026-10-15T12:31:50.690373+00:00",
+  "version": "0.1.5",
+  "status": "published-and-latest",
+  "release_id": 413782827,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.5",
+  "published_at": "2026-10-15T12:26:52Z",
+  "publisher": "YouM1225-1",
+  "body": "empty per repository publication contract",
+  "source_commit": "66f228557a5ee0e82d34a1be25331d7eccd3bf89",
+  "tag_commit": "cd48e23e39ac01371bf7e376a791e687fcf418ec",
+  "release_asset_count": 6,
+  "fixed_downloads_passed": 6,
+  "latest_downloads_passed": 6,
+  "native_cases_each_formal_build": 2636,
+  "formal_builds": 2,
+  "byte_reproducible": true,
+  "regression_tests": {
+    "passed": 64,
+    "failed": 0,
+    "skipped": 0
+  },
+  "cold_cache": {
+    "passed": true,
+    "primary_requests": 146,
+    "source_direction_requests": 6,
+    "process_exit": 0,
+    "listeners_closed": true
+  },
+  "historical_releases_preserved": 6,
+  "website_coverage": {
+    "domain_or_keyword_requirements": 20,
+    "destination_cidrs": [
+      "160.79.104.0/21",
+      "2607:6bc0::/32"
+    ],
+    "ntp_added": false
+  },
+  "validated_consumers": [],
+  "integration_evidence": [],
+  "deployment_status": "pending",
+  "note": "Static release and isolated native download/routing probes only; no production device update or logged-in business test claimed. Final receipts are committed on main without moving the version tag.",
+  "evidence": {
+    "builds": "build-results.json",
+    "regression": "unit-tests.log",
+    "fixed_downloads": "fixed-downloads.json",
+    "latest_downloads": "latest-downloads.json",
+    "native_cold_cache": "remote/results.json",
+    "historical_releases": "historical-releases-verification.json",
+    "api_latest": "release-final-status.json"
+  }
+}
