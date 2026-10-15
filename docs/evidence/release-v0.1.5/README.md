@@ -1,6 +1,6 @@
 # v0.1.5 发布结果与完整覆盖清单
 
-**已发布 [v0.1.5](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.5)，并设为 [Latest](https://github.com/YouM1225-1/sing-box-ai/releases/latest)。** 原订阅 URL 保持有效，客户端下次刷新规则时可取得新版。
+**已发布 [v0.1.5](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.5)，并设为 [Latest](https://github.com/YouM1225-1/sing-box-ai/releases/latest)。** 原 Latest 订阅 URL 保持有效，使用该入口的客户端下次刷新规则时可取得新版。
 
 按你的要求，已完整覆盖 [Net.Coffee 网页](https://ip.net.coffee/claude/site.html)本次核对时各配置格式的并集：**20 项域名／关键词要求、2 个目的 CIDR；排除 NTP**。OpenAI 和 Anthropic 来源规则与上一版字节一致。
 
