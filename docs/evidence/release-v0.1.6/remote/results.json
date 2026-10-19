@@ -1,0 +1,2548 @@
+{
+  "schema": 1,
+  "version": "0.1.6",
+  "timestamp_utc": "2026-10-19T05:57:31.281822+00:00",
+  "method": "Native sing-box alpha.9 with fixed GitHub release URLs, empty initial cache, default HTTP client and no download_detour; all test business destinations rejected on loopback SOCKS.",
+  "boundary": "Actual HTTPS fetch via existing Mac network. No N100, TUN, system DNS/routes/firewall or production configuration/service changes. Does not prove production startup or authenticated product functionality.",
+  "script_sha256": "5dde4fb48e2db580fe2ed30b22f10ecf51e6f42f8c8394dd5c6b57780395dfaf",
+  "binary_sha256": "fcb47f341e6660a35385ceeffc0cebb2daca3fed4d35c729b7d45f7b66555f9a",
+  "binary_version": "sing-box version 1.15.0-alpha.9\n\nEnvironment: go1.26.8 darwin/arm64\nTags: with_gvisor,with_quic,with_dhcp,with_wireguard,with_utls,with_acme,with_clash_api,with_tailscale,with_ccm,with_ocm,with_cloudflared,with_naive_outbound,with_usbip,with_openvpn,with_openconnect,badlinkname,tfogo_checklinkname0\nRevision: 132b38e9caaba1a1959354d518e54d2d08419afe\nCGO: enabled\n",
+  "assets": {
+    "anthropic": {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.6/anthropic.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 488,
+      "sha256": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+      "cache_contains_complete_expected_srs": true,
+      "native_update_logged": true
+    },
+    "openai": {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.6/openai.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 800,
+      "sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+      "cache_contains_complete_expected_srs": true,
+      "native_update_logged": true
+    },
+    "anthropic-ip": {
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.6/anthropic-ip.srs",
+      "http_status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "cache_contains_complete_expected_srs": true,
+      "native_update_logged": true
+    }
+  },
+  "requests": [
+    {
+      "host": "anthropic-com.ghost.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.anthropic-com.ghost.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.anthropic-com.ghost.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "anthropic.auth0.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.anthropic.auth0.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.anthropic.auth0.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "anthropic.com.cdn.cloudflare.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.anthropic.com.cdn.cloudflare.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.anthropic.com.cdn.cloudflare.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "clau.de",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.clau.de",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.clau.de",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.ai",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claude.ai",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claude.ai",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.app",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claude.app",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claude.app",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claude.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claude.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.dev",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claude.dev",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claude.dev",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claudemcpclient.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claudemcpclient.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claudemcpclient.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claudemcpcontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claudemcpcontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claudemcpcontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claudeusercontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.claudeusercontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.claudeusercontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "intercom.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.intercom.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.intercom.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "intercomcdn.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.intercomcdn.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.intercomcdn.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "servd-anthropic-website.b-cdn.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.servd-anthropic-website.b-cdn.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.servd-anthropic-website.b-cdn.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "statsigapi.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.statsigapi.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.statsigapi.net",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notanthropic-com.ghost.io",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "anthropic-com.ghost.io.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notanthropic.auth0.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "anthropic.auth0.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notanthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "anthropic.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notanthropic.com.cdn.cloudflare.net",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "anthropic.com.cdn.cloudflare.net.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclau.de",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "clau.de.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaude.ai",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.ai.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaude.app",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.app.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaude.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaude.dev",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude.dev.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaudemcpclient.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claudemcpclient.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaudemcpcontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claudemcpcontent.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notclaudeusercontent.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claudeusercontent.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notintercom.io",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "intercom.io.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notintercomcdn.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "intercomcdn.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notservd-anthropic-website.b-cdn.net",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "servd-anthropic-website.b-cdn.net.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notstatsigapi.net",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "statsigapi.net.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "datadog-probe.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "probe-datadog-probe.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "probe-datadog.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "sentry-probe.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "probe-sentry-probe.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "probe-sentry.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "sift-probe.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "probe-sift-probe.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "probe-sift.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "http-intake.logs.us5.datadoghq.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "browser-intake-us5-datadoghq.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "api-iam.intercom.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "widget.intercom.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "js.intercomcdn.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "downloads.intercomcdn.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "static.intercomassets.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "cdn.usefathom.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "fonts.googleapis.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "fonts.gstatic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "sentry.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.sentry.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.sentry.io",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unrelated.datadoghq.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.browser-intake-us5-datadoghq.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.http-intake.logs.us5.datadoghq.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "cdn.anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "api.anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "mcp.anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "console.anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "workbench.anthropic.com",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "api.github.com",
+      "inbound": "audit-socks",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "inbound=audit-socks rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "chatgpt.com",
+      "inbound": "audit-socks",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "inbound=audit-socks rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "api.openai.com",
+      "inbound": "audit-socks",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "inbound=audit-socks rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unmatched.audit-review.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "claude-dev.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "unrelated.intercomassets.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.static.intercomassets.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.cdn.usefathom.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notcdn.usefathom.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "cdn.usefathom.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "data-dog.audit-review.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "sen-try.audit-review.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "si-ft.audit-review.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "time.apple.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "time.windows.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "pool.ntp.org",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "0.pool.ntp.org",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "time.google.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "time.cloudflare.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "ntp.aliyun.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "ntp.org",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "160.79.104.0",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.105.255",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.106.0",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.111.255",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.103.255",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.112.0",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "2607:6bc0::",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:1::",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:11::",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:12::",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+      "inbound": "audit-socks",
+      "expected_index": 0,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 0,
+          "description": "inbound=audit-socks rule_set=anthropic => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc1::",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "frontend-apps-multi-region.workos.com",
+      "inbound": "audit-socks",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "inbound=audit-socks rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "cdn.platform.openai.com",
+      "inbound": "audit-socks",
+      "expected_index": 1,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 1,
+          "description": "inbound=audit-socks rule_set=openai => reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "workos.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.frontend-apps-multi-region.workos.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.frontend-apps-multi-region.workos.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notfrontend-apps-multi-region.workos.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "frontend-apps-multi-region.workos.com.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "frontend-apps-multi-region-workos.com",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "openai.org",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "www.openai.org",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "a.b.openai.org",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "notopenai.org",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    },
+    {
+      "host": "openai.org.invalid",
+      "inbound": "audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 3
+    }
+  ],
+  "source_direction_requests": [
+    {
+      "host": "160.79.104.0",
+      "inbound": "source-audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.111.255",
+      "inbound": "source-audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.103.255",
+      "inbound": "source-audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "160.79.112.0",
+      "inbound": "source-audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 1
+    },
+    {
+      "host": "2607:6bc0::",
+      "inbound": "source-audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    },
+    {
+      "host": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+      "inbound": "source-audit-socks",
+      "expected_index": 3,
+      "inbound_host_logged": true,
+      "matches": [
+        {
+          "index": 3,
+          "description": "=> reject"
+        }
+      ],
+      "connected": false,
+      "reply": 1,
+      "socks_atyp": 4
+    }
+  ],
+  "passed": true,
+  "config_check": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "native_started": true,
+  "primary_request_count": 159,
+  "source_direction_request_count": 6,
+  "process": {
+    "pid": 93354,
+    "exited": true,
+    "exit": 0
+  },
+  "listeners": [
+    {
+      "inbound": "audit-socks",
+      "host": "127.0.0.1",
+      "port": 55132,
+      "closed": true
+    },
+    {
+      "inbound": "source-audit-socks",
+      "host": "127.0.0.1",
+      "port": 55133,
+      "closed": true
+    }
+  ],
+  "config_sha256": "70fed0dffa2487bf4528323f2d2ec06233d2337cc6c4eecd10f8b787eabd23b1",
+  "runtime_log_sha256": "4adcd2785f110d39b5cfa2d775510123c2487868f178bcbfde82c630d823e8f0",
+  "cache_sha256": "2c229f4c6118405ec64d1a088b96fa079ec84009c94ec05656158cdec12d5fe1"
+}

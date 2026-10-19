@@ -1,0 +1,55 @@
+{
+  "timestamp_utc": "2026-10-19T05:58:00.435484+00:00",
+  "passed": true,
+  "releases": [
+    {
+      "tag": "v0.1.5",
+      "id": 413782827,
+      "metadata_unchanged": true,
+      "assets_unchanged": true,
+      "asset_count": 6
+    },
+    {
+      "tag": "v0.1.4",
+      "id": 407627047,
+      "metadata_unchanged": true,
+      "assets_unchanged": true,
+      "asset_count": 6
+    },
+    {
+      "tag": "v0.1.3",
+      "id": 407579868,
+      "metadata_unchanged": true,
+      "assets_unchanged": true,
+      "asset_count": 6
+    },
+    {
+      "tag": "v0.1.2",
+      "id": 402537457,
+      "metadata_unchanged": true,
+      "assets_unchanged": true,
+      "asset_count": 6
+    },
+    {
+      "tag": "v0.1.1",
+      "id": 398259220,
+      "metadata_unchanged": true,
+      "assets_unchanged": true,
+      "asset_count": 6
+    },
+    {
+      "tag": "v0.1.0",
+      "id": 397881272,
+      "metadata_unchanged": true,
+      "assets_unchanged": true,
+      "asset_count": 6
+    },
+    {
+      "tag": "v0.1.0-rc.1",
+      "id": 397700515,
+      "metadata_unchanged": true,
+      "assets_unchanged": true,
+      "asset_count": 6
+    }
+  ]
+}

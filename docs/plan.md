@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.32**；工作树更新日期：2026-10-19（Asia/Shanghai）。
-> `v0.1.6` 正在按用户授权准备发布：更新 OpenAI 官方主清单至 31 项，精确补入 `frontend-apps-multi-region.workos.com`；新增官方事实 `cdn.platform.openai.com` 复用 `openai.com` 后缀。`openai.org` 仅登记为未选中的发现候选，23 个 Voice IP 集合不变。详见[本轮联网审计](openai-domain-coverage-2026-10-19.md)。以下既有 `v0.1.5` 发布结果保留为历史基准，不代替本版验证。
-> 主仓库：`YouM1225-1/sing-box-ai`；当前已发布 `v0.1.5` 并设为 Latest，语义与已验收的 `v0.1.5-rc.1` 一致；按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。`dist/` 已更新为通过正式门槛的 `v0.1.5`；两次正式构建各 2,636 项原生检查、64 项回归、固定及 Latest 各 6 个资产下载和 152 项空缓存断言全部通过，见[发布记录](evidence/release-v0.1.5/README.md)。
+> 文档修订：**1.33**；工作树更新日期：2026-10-19（Asia/Shanghai）。
+> `v0.1.6` 已按用户授权发布并设为 Latest，`dist/` 已更新：精确补入 `frontend-apps-multi-region.workos.com`，2026-10-19 核对的 OpenAI 官方主清单覆盖 31/31；`cdn.platform.openai.com` 复用 `openai.com` 后缀。`openai.org` 仅登记为未选候选，23 个 Voice IP 及 Anthropic 两份 SRS 不变。两次正式构建各 2,650 项原生检查、65 项回归、固定及 Latest 各 6 个资产下载、165 项空缓存请求检查均通过，7 个历史发行保持不变，见[发布报告与完整清单](evidence/release-v0.1.6/README.md)。
+> 主仓库：`YouM1225-1/sing-box-ai`。历史 `v0.1.5` 已按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，语义与当时验收的 `v0.1.5-rc.1` 一致，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。该版两次正式构建各 2,636 项原生检查、64 项回归、固定及 Latest 各 6 个资产下载和 152 项空缓存断言全部通过，见[历史发布记录](evidence/release-v0.1.5/README.md)；这些历史结果不代替 v0.1.6 验证。
 > 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作本版验证。
 
 适用任务：维护 OpenAI 与 Claude 的 sing-box 产品规则，在 **SagerNet/sing-geosite 完整产品 SRS 基线**上增加有依据的缺失域名和地址。本文是正式设计及当前执行计划，供规则维护、配置派生和验收使用，不是 N100 部署授权或可直接执行的安装脚本。
@@ -61,7 +61,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.5`，对应完整批次在 `artifacts/v0.1.5/`，发布与下载结果见[本轮发布证据](evidence/release-v0.1.5/README.md)。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
+`dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.6`，对应完整批次在 `artifacts/v0.1.6/`，发布与下载结果见[本轮发布证据](evidence/release-v0.1.6/README.md)。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品使用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；`v0.1.5-rc.1` 对明确用户指令新增 `domain_keyword`。来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
@@ -95,11 +95,11 @@ alpha.9 存在新旧两条 DNS 路径。`defaultRuleDisablesLegacyDNSMode` 把 `
 <a id="supplements"></a>
 ## 3. 完整补充清单
 
-本节列出的都是相对 §2 固定基线的缺口，不是相对旧仓库或 rc.1 的新增差异。已有范围不会重复维护一套人工基础列表。`0.1.1` 与 `0.1.2` 的 `enabled_optional` 只包含两个字体主机；`0.1.3-rc.1` 增加两个 Datadog 及五个客服主机，合计选中 9 个 optional exact。原有五个 optional 的源身份保留，另有五个客服 optional 源项；Gerrit regex 仍未选。该开关不删基线已有项，17 条 pending 仍全部未选。
+本节列出的都是相对 §2 固定基线的缺口，不是相对旧仓库或 rc.1 的新增差异。已有范围不会重复维护一套人工基础列表。`0.1.1` 与 `0.1.2` 的 `enabled_optional` 只包含两个字体主机；`0.1.3-rc.1` 增加两个 Datadog 及五个客服主机，合计选中 9 个 optional exact。原有五个 optional 的源身份保留，另有五个客服 optional 源项；Gerrit regex 仍未选。该开关不删基线已有项；v0.1.6 新增 `openai.org` 发现候选后，18 条 pending 仍全部未选。
 
 ### 3.1 OpenAI
 
-下述 3 个点后缀和 11 个网络依赖 exact 来自已归档的 OpenAI 官方网络页，按产品网络依赖纳入；共享主机/后缀须在维护数据标记 `shared_dependency: true`，其匹配不局限于 ChatGPT 发起的请求。
+下述 3 个点后缀和 12 个网络依赖 exact 来自已归档的 OpenAI 官方网络页，按产品网络依赖纳入；共享主机/后缀须在维护数据标记 `shared_dependency: true`，其匹配不局限于 ChatGPT 发起的请求。
 
 **3 个仅子域后缀**：
 
@@ -385,7 +385,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 | `api.github.com`、`release-assets.githubusercontent.com` | 从通用GitHub覆盖进入OpenAI | 可能从通用AAAA/IPv6行为转为产品AAAA空响应和IPv6拒绝；所有该主机请求均受影响 |
 | `fonts.googleapis.com`、`fonts.gstatic.com` | 原序仍先命中Google；移除Google覆盖后可由Anthropic独立承接 | 当前首次命中不必变；单集验收必须排除Google及其他兜底 |
 | `humb.apple.com`、Apple平台候选 | 保持先于产品的Apple规则 | “产品集合包含某域”不等于全部产品域都禁IPv6或走同一出站 |
-| 17条pending及3条未选optional | 不因当前final为proxy而批准 | 以后修改通用集合/final仍可能影响，必须复审相应功能 |
+| 18条pending及3条未选optional | 不因当前final为proxy而批准 | 以后修改通用集合/final仍可能影响，必须复审相应功能 |
 
 域名SRS不能识别调用它的软件或HTTPS路径，精确共享主机也会影响其他应用。先命中的direct/reject、Direct/Global模式或内核GeoIP-CN旁路仍可能越过产品规则。单集测试仅证明排除代承接后所选范围的规则责任；前置截获应作为可检测反例，不能宣称入SRS后不受任意顺序改动影响。客户端到VPS用IPv4也不证明VPS到服务用IPv4。
 
@@ -413,7 +413,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。既有本地正式批次为 `0.1.5`，其受验收候选为 `0.1.5-rc.1`；本轮 `0.1.6` 按下述流程单独构建、验证与发布，远端 Latest 身份以新发布证据为准；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前本地正式批次为 `0.1.6`，其受验收候选为 `0.1.6-rc.1`；本轮已按下述流程完成两次正式构建、验证与发布，远端 Latest 为 v0.1.6，见[发布证据](evidence/release-v0.1.6/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -449,7 +449,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-每个历史版本的发布授权与静态语义审阅仅批准该版的三个指定摘要，不能沿用于新版本。本轮 `release-review.json` 须绑定 `0.1.6` 的用户授权、三个新批次摘要和新语义审阅；旧批准及各候选 `publication_approval=null` 保留历史身份。本次官方网络主清单已按 2026-10-19 取得的英文正文核对，未完成登录业务或产品全量依赖验收，`openai.org` 的用途疑问另列为未选中候选。
+每个历史版本的发布授权与静态语义审阅仅批准该版的三个指定摘要，不能沿用于新版本。本轮 `release-review.json` 已绑定 `0.1.6` 的用户授权、三个新批次摘要和新语义审阅；旧批准及各候选 `publication_approval=null` 保留历史身份。本次官方网络主清单已按 2026-10-19 取得的英文正文核对，未完成登录业务或产品全量依赖验收，`openai.org` 的用途疑问另列为未选中候选。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 
@@ -457,6 +457,14 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
+
+### v0.1.6 当前发布结果
+
+用户在联网审计后明确要求“补充更新 并重新发布”。已完成来源更新、WorkOS 精确补充、候选和独立审阅、输入提交、两次正式构建、静态发布门槛、GitHub 发布及 Latest 切换。正式输入提交 `d586a7a559ca1ea70186f04218b1ad8e703fd5ef`，标签提交 `39abd161bd5c05b769dbddf5fef916d4d7662ec4`，发布时间 `2026-10-19T05:57:26Z`。
+
+两次构建各 2,650 项原生检查、65 项完整回归、42 项官方覆盖与边界见证、固定及 Latest 各 6 个资产下载、165 项空缓存请求检查全部通过。三份远程 SRS 已实际下载并进入缓存，进程退出 0、两监听关闭；7 个历史 Release 与其资产保持不变。完整清单、下载入口及摘要见[最终发布报告](evidence/release-v0.1.6/README.md)，机器可读结果见[发布汇总](evidence/release-v0.1.6/publication-results.json)。
+
+最终回执单独提交至 main，版本标签及 ZIP 保留固定时点状态；没有修改目标设备配置或执行重启，不声明生产客户端已刷新。下列 v0.1.2 及更早段落保留历史验收身份。
 
 ### 7.1 `0.1.2` 正式发布执行计划
 

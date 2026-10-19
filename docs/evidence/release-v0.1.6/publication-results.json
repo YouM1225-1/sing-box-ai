@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "timestamp_utc": "2026-10-19T05:58:00.435484+00:00",
+  "version": "0.1.6",
+  "status": "published-and-latest",
+  "release_id": 416949195,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.6",
+  "published_at": "2026-10-19T05:57:26Z",
+  "publisher": "YouM1225-1",
+  "body": "empty per repository publication contract",
+  "source_commit": "d586a7a559ca1ea70186f04218b1ad8e703fd5ef",
+  "tag_commit": "39abd161bd5c05b769dbddf5fef916d4d7662ec4",
+  "release_asset_count": 6,
+  "fixed_downloads_passed": 6,
+  "latest_downloads_passed": 6,
+  "native_cases_each_formal_build": 2650,
+  "formal_builds": 2,
+  "byte_reproducible": true,
+  "regression_tests": {
+    "passed": 65,
+    "failed": 0,
+    "skipped": 0
+  },
+  "official_coverage": {
+    "main_entries": 31,
+    "main_matched": 31,
+    "websocket_entries": 2,
+    "websocket_matched": 2,
+    "native_witnesses": 42,
+    "voice_ipv4_32_count": 23,
+    "voice_set_unchanged": true
+  },
+  "semantic_change": {
+    "added_exact_domains": [
+      "frontend-apps-multi-region.workos.com"
+    ],
+    "removed": [],
+    "already_covered_official_entry": "cdn.platform.openai.com",
+    "pending_unselected": [
+      "openai.org"
+    ],
+    "anthropic_binaries_unchanged": true
+  },
+  "cold_cache": {
+    "passed": true,
+    "primary_requests": 159,
+    "source_direction_requests": 6,
+    "process_exit": 0,
+    "listeners_closed": true
+  },
+  "historical_releases_preserved": 7,
+  "validated_consumers": [],
+  "integration_evidence": [],
+  "deployment_status": "pending",
+  "note": "Static release and isolated native download/routing probes only; no production device update or logged-in business test claimed. Final receipts are committed on main without moving the version tag.",
+  "evidence": {
+    "builds": "build-results.json",
+    "regression": "unit-tests.log",
+    "official_coverage": "source-coverage.json",
+    "fixed_downloads": "fixed-downloads.json",
+    "latest_downloads": "latest-downloads.json",
+    "native_cold_cache": "remote/results.json",
+    "historical_releases": "historical-releases-verification.json",
+    "api_latest": "release-final-status.json"
+  }
+}
