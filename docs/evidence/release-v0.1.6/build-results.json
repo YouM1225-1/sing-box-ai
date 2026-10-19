@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "version": "0.1.6",
+  "builds": [
+    {
+      "name": "release",
+      "output": "artifacts/v0.1.6",
+      "mode": "release",
+      "cases": 2650,
+      "failures": 0,
+      "release_gate": true,
+      "source_commit": "d586a7a559ca1ea70186f04218b1ad8e703fd5ef"
+    },
+    {
+      "name": "release-rebuild",
+      "output": "build/release-v0.1.6-rebuild",
+      "mode": "release",
+      "cases": 2650,
+      "failures": 0,
+      "release_gate": true,
+      "source_commit": "d586a7a559ca1ea70186f04218b1ad8e703fd5ef"
+    },
+    {
+      "name": "candidate-fixture",
+      "output": "build/release-v0.1.6-test-candidate",
+      "mode": "candidate",
+      "cases": 2650,
+      "failures": 0,
+      "release_gate": false,
+      "source_commit": "d586a7a559ca1ea70186f04218b1ad8e703fd5ef"
+    }
+  ],
+  "release_rebuild_six_files_and_manifest_identical": true,
+  "candidate_six_files_identical": true,
+  "validated_rc1_six_files_identical": true
+}

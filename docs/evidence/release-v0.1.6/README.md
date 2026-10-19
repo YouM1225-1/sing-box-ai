@@ -4,8 +4,10 @@
 
 本版新增精确域名 `frontend-apps-multi-region.workos.com`，官方网络主清单覆盖由 30/31 提升至 31/31。`cdn.platform.openai.com` 已由 `openai.com` 后缀覆盖，仅刷新来源事实；`openai.org` 记录为待核候选，未进入发布规则。Anthropic 两份 SRS 与 v0.1.5 保持字节一致，Voice 23 个 IP 未变。
 
-候选原生验证 2,650 项通过，另有官方清单、WebSocket 与精确范围的 42 个见证全部符合预期。后续正式构建、下载与远端空缓存结果以生成的证据记录为准；当前不声称已发布或生产设备已刷新。
+候选原生验证 2,650 项通过，另有官方清单、WebSocket 与精确范围的 42 个见证全部符合预期。两次正式构建各 2,650 项检查通过、0 失败，三个 SRS、三个 JSON 和 manifest 字节一致；同一已提交输入的 candidate fixture 完整 65 项回归通过、无跳过。当前等待公开下载与原生空缓存核验，不声称已发布或生产设备已刷新。
 
+- [正式构建与复现](build-results.json) · [正式回归](unit-tests.log)
+- [独立复核](independent-review.json) · [正式 manifest](../../../artifacts/v0.1.6/manifest.json)
 - [语义差异](semantic-diff.json)
 - [官方覆盖与Voice核对](source-coverage.json)
 - [候选原生验证](candidate-validate.log)
