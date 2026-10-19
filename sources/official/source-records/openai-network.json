@@ -3,15 +3,15 @@
   "id": "openai-network-source",
   "kind": "official-source-record",
   "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
-  "retrieved_at": "2026-09-27T18:20:21+00:00",
+  "retrieved_at": "2026-10-19T05:48:41.729639+00:00",
   "extraction_method": "Full retrieved response reviewed; only functional endpoint facts and locators are redistributed. Full response remains in local review cache.",
   "original_response": {
-    "sha256": "8c0e7c8f5a777e3432cd524f09e5ece95c044bc5564e1dff1a74f5b3de7ebd48",
+    "sha256": "ddefebe5e3bed0d9caf064c1327ce491a7d835f190bfc5d66856593696fe168d",
     "content_format": "web-tool-extracted-text",
     "is_original_html": false,
-    "bytes": 9951
+    "bytes": 9867
   },
-  "page_updated_literal": "last month",
+  "page_updated_literal": "3 days ago",
   "page_updated_absolute": null,
   "full_page_redistributed": false,
   "facts": [
@@ -76,113 +76,123 @@
       "scope": "main-network-allowlist"
     },
     {
-      "value": "cdn.workos.com",
-      "locator": "L42",
+      "value": "cdn.platform.openai.com",
+      "locator": "L41",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "challenges.cloudflare.com",
+      "value": "cdn.workos.com",
       "locator": "L43",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "chat.openai.com",
+      "value": "challenges.cloudflare.com",
       "locator": "L45",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "desktop.chat.openai.com",
+      "value": "chat.openai.com",
       "locator": "L47",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "forwarder.workos.com",
+      "value": "desktop.chat.openai.com",
       "locator": "L49",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "humb.apple.com",
+      "value": "forwarder.workos.com",
       "locator": "L51",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "images.workoscdn.com",
+      "value": "frontend-apps-multi-region.workos.com",
       "locator": "L53",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "ios.chat.openai.com",
+      "value": "humb.apple.com",
       "locator": "L55",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "js.intercomcdn.com",
+      "value": "images.workoscdn.com",
       "locator": "L57",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "js.stripe.com",
+      "value": "ios.chat.openai.com",
       "locator": "L59",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "o207216.ingest.sentry.io",
+      "value": "js.intercomcdn.com",
       "locator": "L61",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "o33249.ingest.sentry.io",
+      "value": "js.stripe.com",
       "locator": "L63",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "rum.browser-intake-datadoghq.com",
+      "value": "o207216.ingest.sentry.io",
       "locator": "L65",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "setup.auth.openai.com",
+      "value": "o33249.ingest.sentry.io",
       "locator": "L67",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "setup.workos.com",
+      "value": "rum.browser-intake-datadoghq.com",
       "locator": "L69",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "tcr9i.chat.openai.com",
+      "value": "setup.auth.openai.com",
       "locator": "L71",
       "scope": "main-network-allowlist"
     },
     {
-      "value": "workos.imgix.net",
+      "value": "setup.workos.com",
       "locator": "L73",
       "scope": "main-network-allowlist"
     },
     {
+      "value": "tcr9i.chat.openai.com",
+      "locator": "L75",
+      "scope": "main-network-allowlist"
+    },
+    {
+      "value": "workos.imgix.net",
+      "locator": "L77",
+      "scope": "main-network-allowlist"
+    },
+    {
       "value": "wss://ws.chatgpt.com",
-      "locator": "L80",
+      "locator": "L84",
       "scope": "chatgpt-websocket",
       "destination_port": 443,
       "network": "tcp"
     },
     {
       "value": "wss://chatgpt.com/",
-      "locator": "L81-L82",
+      "locator": "L85-L86",
       "scope": "codex-websocket",
       "destination_port": 443,
       "network": "tcp"
     },
     {
       "value": "register.appattest.apple.com",
-      "locator": "L135-L136",
+      "locator": "L139-L140",
       "scope": "ios-diagnostic-url",
       "routing_requirement_proven": false
     },
     {
       "value": "https://openai.com/chatgpt-voice.json",
-      "locator": "L118-L119",
+      "locator": "L122-L123",
       "scope": "voice-destination-ip-feed",
       "preferred_network": "udp",
       "preferred_port": 3478,

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dlc-openai-org-discovery-20261019",
+  "kind": "community-discovery",
+  "observed_on": "2026-10-19",
+  "retrieved_at": "2026-10-19T05:49:20.669583+00:00",
+  "rule": {
+    "artifact": "openai",
+    "type": "domain_suffix",
+    "value": "openai.org"
+  },
+  "review_status": "pending",
+  "approved_for_release": false,
+  "upstream": {
+    "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/5b1678867da0afc35854f481c1749a39048952df/data/openai",
+    "commit": "5b1678867da0afc35854f481c1749a39048952df",
+    "locator": "data/openai:L10",
+    "merged_at": "2026-10-17T12:58:53Z",
+    "pull_request": "https://github.com/v2fly/domain-list-community/pull/4149"
+  },
+  "observations": [
+    {
+      "url": "https://github.com/v2fly/domain-list-community/pull/4149",
+      "conclusion": "The community list added openai.org as a suffix rule on 2026-10-17."
+    },
+    {
+      "url": "https://github.com/v2fly/domain-list-community/pull/4149#issuecomment-6235466647",
+      "conclusion": "A post-merge comment requests ownership evidence and says OpenAI ownership could not be confirmed."
+    },
+    {
+      "url": "https://github.com/v2fly/domain-list-community/pull/4149#issuecomment-6243080219",
+      "conclusion": "The reply points to WHOIS and certificate searches and suggests internal use; this does not establish a current ChatGPT or Codex runtime requirement."
+    }
+  ],
+  "responses": [
+    {
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/5b1678867da0afc35854f481c1749a39048952df/data/openai",
+      "retrieved_at": "2026-10-19T05:49:20.572931+00:00",
+      "sha256": "5276ab68c1a2d44db2cd745a9146d1645ef3dd3c388fdd1079b6b49267d60ddc",
+      "bytes": 690,
+      "content_format": "text/plain",
+      "full_response_redistributed": false
+    },
+    {
+      "url": "https://api.github.com/repos/v2fly/domain-list-community/pulls/4149",
+      "retrieved_at": "2026-10-19T05:49:20.669583+00:00",
+      "sha256": "21ebff99cf08b7e172b453388e57bbfa3bf462add940f0b02ab1af6bf4f950c6",
+      "bytes": 18699,
+      "content_format": "application/json",
+      "full_response_redistributed": false
+    },
+    {
+      "url": "https://api.github.com/repos/v2fly/domain-list-community/issues/4149/comments",
+      "retrieved_at": "2026-10-19T05:49:20.611207+00:00",
+      "sha256": "9d60ac79a02332677ff9a0a17141ec0eac9f27338f5dfb17ff01cf2f30115901",
+      "bytes": 3636,
+      "content_format": "application/json",
+      "full_response_redistributed": false
+    }
+  ],
+  "conclusion": "Discovery only. Ownership and product-purpose evidence remain insufficient; the candidate is excluded from release selection and the pinned production baseline is unchanged."
+}

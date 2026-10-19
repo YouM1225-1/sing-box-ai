@@ -40,7 +40,7 @@ class PublicationTests(unittest.TestCase):
         run(["git", "add", "VERSION", "tools.lock.json", "requirements.txt", "sources", "scripts", "tests"], cwd=self.root)
         run(["git", "-c", "core.hooksPath=/dev/null", "-c", "user.name=Unit fixture", "-c", "user.email=fixture@example.invalid", "-c", "commit.gpgsign=false", "commit", "--no-verify", "-qm", "Synthetic test inputs"], cwd=self.root)
         self.manifest = {"build_mode": "release", "project_version": self.version, "artifacts": candidate["artifacts"], "source_commit": run(["git", "rev-parse", "HEAD"], cwd=self.root).stdout.strip(), "inputs": input_files(self.root), "validated_consumers": [], "integration_evidence": [], "deployment_status": "pending", "enabled_optional": [], "review_as_of": "2026-10-15"}
-        self.clock = patch("validate.today", return_value=dt.date(2026, 10, 15))
+        self.clock = patch("validate.today", return_value=dt.date(2026, 10, 19))
         self.clock.start()
         self.addCleanup(self.clock.stop)
 
@@ -68,14 +68,14 @@ class PublicationTests(unittest.TestCase):
                     release_gate(self.root, self.manifest)
 
     def test_operator_instruction_cannot_authorize_other_bytes_or_runtime(self):
-        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"project_version": "different"}, {"artifacts": {}}, {"authorized_on": "2026-10-16"}, {"instruction": " "}, {"deployment_authorized": True}, {"deployment_authorized": 0}, {"limitations": []}):
+        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"project_version": "different"}, {"artifacts": {}}, {"authorized_on": "2026-10-20"}, {"instruction": " "}, {"deployment_authorized": True}, {"deployment_authorized": 0}, {"limitations": []}):
             with self.subTest(changes=changes):
                 self.record("operator_authorization", {**self.authorization, **changes})
                 with self.assertRaisesRegex(Invalid, "authorization"):
                     release_gate(self.root, self.manifest)
 
     def test_semantic_record_is_a_batch_review_not_just_a_hashed_file(self):
-        for changes in ({"kind": "operator-authorization"}, {"scope": "consumer-integration"}, {"status": "pending"}, {"project_version": "different"}, {"artifacts": {}}, {"reviewed_on": "2026-10-16"}, {"unresolved_conflicts": ["unresolved"]}, {"conclusion": " "}, {"evidence": []}):
+        for changes in ({"kind": "operator-authorization"}, {"scope": "consumer-integration"}, {"status": "pending"}, {"project_version": "different"}, {"artifacts": {}}, {"reviewed_on": "2026-10-20"}, {"unresolved_conflicts": ["unresolved"]}, {"conclusion": " "}, {"evidence": []}):
             with self.subTest(changes=changes):
                 self.record("semantic_diff_review", {**self.semantic, **changes})
                 with self.assertRaisesRegex(Invalid, "[Ss]emantic"):
@@ -104,7 +104,7 @@ class PublicationTests(unittest.TestCase):
         proof = {"result": "passed", "artifacts": self.artifacts, "coverage": coverage, "platform": "synthetic fixture", "version": "fixture", "environment": "synthetic fixture", "method": "unit fixture, not actual runtime", "address_families": ["IPv4"], "actual_egress": "synthetic", "consumer_config_sha256": "0" * 64, "verified_on": "2026-10-15"}
         path = self.root / "runtime-unit-fixture.json"
         review = {"scope": "consumer-integration", "status": "approved", "artifacts": self.artifacts}
-        for changes in ({"coverage": [c for c in coverage if c != "restart"]}, {"actual_egress": None}, {"consumer_config_sha256": "invalid"}, {"artifacts": {}}, {"verified_on": "2026-10-16"}, {}):
+        for changes in ({"coverage": [c for c in coverage if c != "restart"]}, {"actual_egress": None}, {"consumer_config_sha256": "invalid"}, {"artifacts": {}}, {"verified_on": "2026-10-20"}, {}):
             with self.subTest(changes=changes):
                 write_json(path, {**proof, **changes})
                 review["integration_evidence"] = [{"path": path.name, "sha256": sha(path)}]

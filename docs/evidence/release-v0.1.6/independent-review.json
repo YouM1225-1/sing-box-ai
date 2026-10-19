@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "kind": "independent-release-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.6",
+  "reviewed_on": "2026-10-19",
+  "reviewed_at_utc": "2026-10-19T05:55:01.872611+00:00",
+  "reviewer": "Codex independent repo_coverage agent",
+  "candidate": "artifacts/v0.1.6-rc.1",
+  "artifacts": {
+    "openai.srs": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+    "anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "unresolved_conflicts": [],
+  "findings": [],
+  "conclusion": "Approve exactly these candidate SRS bytes for promotion through the v0.1.6 static release process. The only product semantic addition is the officially listed exact hostname frontend-apps-multi-region.workos.com; cdn.platform.openai.com is already covered by the retained openai.com suffix. Existing baseline, Voice IPs, both Anthropic binaries and source-IP direction are preserved. openai.org remains an unselected pending discovery candidate. Formal release still requires committed-input binding, two release-mode builds and release gates, public fixed downloads and empty-cache verification before Latest promotion.",
+  "checks": {
+    "candidate_recorded_input_files_unchanged": true,
+    "new_release_metadata_after_candidate": [
+      "sources/evidence/release-v0.1.6-authorization.json"
+    ],
+    "candidate_complete_committed_input_binding_claimed": false,
+    "canonical_release_eligible_as_of": "2026-10-19",
+    "source_json_equals_canonical": true,
+    "only_semantic_addition": {
+      "artifact": "openai",
+      "type": "domain",
+      "value": "frontend-apps-multi-region.workos.com"
+    },
+    "previous_coverage_preserved": true,
+    "anthropic_binaries_unchanged": true,
+    "official_main_count": 31,
+    "official_main_matched": 31,
+    "websocket_count": 2,
+    "websocket_matched": 2,
+    "independently_repeated_native_witnesses": 42,
+    "candidate_native_cases_reviewed": 2650,
+    "candidate_native_failures": 0,
+    "unit_tests_reviewed": 65,
+    "unit_tests_failed": 0,
+    "unit_tests_skipped": 0,
+    "openai_org_excluded": true,
+    "selected_pending": [],
+    "voice_ipv4_32_count": 23,
+    "voice_set_unchanged": true,
+    "remote_probe_prepared_primary_cases": 159,
+    "remote_probe_prepared_source_direction_cases": 6,
+    "remote_probe_executed": false,
+    "independent_native_failures": 0
+  },
+  "evidence": [
+    {
+      "path": "artifacts/v0.1.6-rc.1/manifest.json",
+      "sha256": "0589b23c7f2f9204ba6a69c1e39e3210f24101450bf5f81466cd057f408ade39"
+    },
+    {
+      "path": "artifacts/v0.1.6-rc.1/cases.json",
+      "sha256": "ab0f471cad55c170d6cc214410577ed0240554de4bb475b624aa9dc634309b2c"
+    },
+    {
+      "path": "artifacts/v0.1.6-rc.1/matches.jsonl",
+      "sha256": "2147bb410715c069be0f7cba2119152416574da19264c011d9ec3336b82eb023"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/candidate-validate.log",
+      "sha256": "b0d87ecec23fb58e0ec404312a9b31f5a96ec8ae90ecf7ab1e3e16367179521e"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/candidate-unit-tests.log",
+      "sha256": "b8a04d567cf94d3c581d4994ad0910b7da7a1ecd3086b3db846db142cd67a8b7"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/semantic-diff.json",
+      "sha256": "39334f0b12dfb79e45eab9751efa5360197818252c50670f85970d45a73c64d0"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/source-coverage.json",
+      "sha256": "4dfcf17f10f117ed03fc597aaf76c6e8c0cf1ed4fafc67f1593d84618d9d2fe7"
+    },
+    {
+      "path": "sources/official/openai-network.json",
+      "sha256": "0ca1924c711184b40ecf6f1786c9f61be6590ea231441ae1899737ad72290ed1"
+    },
+    {
+      "path": "sources/official/source-records/openai-network.json",
+      "sha256": "2bbac7b0333c9719c91367c7b16c7efdb7a9cda12f132e167b7e6843757c0a91"
+    },
+    {
+      "path": "sources/discovery/openai-org-2026-10-19.json",
+      "sha256": "072b5caf652431ad35059830574cdc045eb58dfe6a40be8b4a983b48a076a1e7"
+    },
+    {
+      "path": "sources/openai.yaml",
+      "sha256": "0a01f31dec49cfbd9cf20210e4ac6a3637f453d74db101ff7d1dce4f3535576b"
+    },
+    {
+      "path": "sources/upstreams.yaml",
+      "sha256": "bf7045223df6a592d92237b448be010f3d959aa1e90fd0a97a06d54ca35c4b43"
+    },
+    {
+      "path": "sources/policy.yaml",
+      "sha256": "1ad2d82d023b61e413115f3ab2da407650a9af5c56a8562e70ff5e95e005953d"
+    },
+    {
+      "path": "sources/discovery/pending.yaml",
+      "sha256": "701ed346d969f83275e71edb9472c1f726827b91c4227a11975a74a5ff2e54f5"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "5832445437066cea7fac7e2b4354f93101b8b750da213e7ca7b6e3e5eca2dddb"
+    },
+    {
+      "path": "tests/test_publication.py",
+      "sha256": "65e51e4c0544a2aedd0092c1227131346c5b8fe5b2caf0953b751639a1c02047"
+    },
+    {
+      "path": "tests/test_requested_coverage.py",
+      "sha256": "e97fe811761ea248f4e3b03e4ab01237381a859807d0defe433c17e72b1f37fc"
+    },
+    {
+      "path": "tests/test_network_review.py",
+      "sha256": "fc5df7ea33ddff0691bdeee0361bc6e7d7b631ab544f50e3183227b17d1252fd"
+    }
+  ],
+  "limitations": [
+    "Review is of static candidate bytes and isolated matching evidence; candidate publication_approval remains null.",
+    "The candidate records pre-authorization inputs. Existing recorded files are unchanged, but the new release authorization was added afterward; formal batches must be regenerated after committing authorization, semantic review and all bound inputs.",
+    "Public release download and empty-cache results are not yet available and are not claimed here.",
+    "No authenticated ChatGPT/Codex usage, production configuration update, target-device restart or runtime consumer approval is asserted."
+  ],
+  "validated_consumers": [],
+  "integration_evidence": [],
+  "deployment_status": "pending"
+}

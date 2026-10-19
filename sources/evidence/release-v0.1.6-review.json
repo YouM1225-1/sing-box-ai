@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.6",
+  "reviewed_on": "2026-10-19",
+  "reviewer": "Codex primary review plus independent repo_coverage agent",
+  "artifacts": {
+    "openai.srs": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+    "anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "comparison": {
+    "openai": {
+      "domain": {
+        "added": [
+          "frontend-apps-multi-region.workos.com"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic": {},
+    "anthropic-ip": {}
+  },
+  "conclusion": "Approve exactly the validated candidate SRS bytes for v0.1.6: one official WorkOS exact domain is added; all previous coverage remains, the other OpenAI fields and both Anthropic binaries are unchanged. The current official main allowlist is covered (31/31). openai.org remains an unselected discovery candidate. Formal publication requires committed inputs, reproducible release-mode verification and public download checks.",
+  "unresolved_conflicts": [],
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.6/semantic-diff.json",
+      "sha256": "39334f0b12dfb79e45eab9751efa5360197818252c50670f85970d45a73c64d0"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/independent-review.json",
+      "sha256": "2481ba8bca151ca22e8457a309edf8f7f3f461655dda60701426760162c54b94"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/source-coverage.json",
+      "sha256": "4dfcf17f10f117ed03fc597aaf76c6e8c0cf1ed4fafc67f1593d84618d9d2fe7"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/candidate-validate.log",
+      "sha256": "b0d87ecec23fb58e0ec404312a9b31f5a96ec8ae90ecf7ab1e3e16367179521e"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.6/candidate-unit-tests.log",
+      "sha256": "b8a04d567cf94d3c581d4994ad0910b7da7a1ecd3086b3db846db142cd67a8b7"
+    },
+    {
+      "path": "artifacts/v0.1.6-rc.1/manifest.json",
+      "sha256": "0589b23c7f2f9204ba6a69c1e39e3210f24101450bf5f81466cd057f408ade39"
+    },
+    {
+      "path": "sources/discovery/openai-org-2026-10-19.json",
+      "sha256": "072b5caf652431ad35059830574cdc045eb58dfe6a40be8b4a983b48a076a1e7"
+    }
+  ],
+  "limitations": [
+    "Only static artifact publication is approved; no authenticated product or production consumer acceptance is claimed.",
+    "The current official list is a documented scope, not an exhaustive future endpoint guarantee.",
+    "Fixed/latest downloads and empty-cache checks are performed and recorded after the fixed release is uploaded."
+  ]
+}

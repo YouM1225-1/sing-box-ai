@@ -71,6 +71,16 @@
   - kind: official
     reference: openai-network
   reason: Official network requirement not covered by the pinned Sager SRS baseline
+- value: frontend-apps-multi-region.workos.com
+  type: domain
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: openai-network
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
 - value: humb.apple.com
   type: domain
   product: *id001

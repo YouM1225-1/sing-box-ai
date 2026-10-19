@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "previous": "v0.1.5",
+  "candidate": "v0.1.6-rc.1",
+  "comparison": {
+    "openai": {
+      "domain": {
+        "added": [
+          "frontend-apps-multi-region.workos.com"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic": {},
+    "anthropic-ip": {}
+  },
+  "previous_coverage_preserved": true,
+  "anthropic_binaries_unchanged": true
+}

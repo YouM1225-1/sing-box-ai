@@ -42,7 +42,7 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(rows, allow_unicode=True, sort_keys=False))
 
     def test_baseline_and_user_confirmation(self):
-        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 10, 15))
+        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 10, 19))
         challenge = next(r for r in selected["anthropic"] if r["value"] == "challenges.cloudflare.com")
         self.assertEqual(challenge["review_status"], "approved")
         self.assertEqual(len([r for r in selected["openai"] if r["type"] == "ip_cidr"]), 23)
@@ -96,7 +96,7 @@ class PolicyTests(unittest.TestCase):
     def test_selected_feature_delta_from_published_010(self):
         selected, policy, _ = canonical(self.root)
         additions = {
-            "openai": {"github.com", "api.github.com", "release-assets.githubusercontent.com", "registry.npmjs.org"},
+            "openai": {"github.com", "api.github.com", "release-assets.githubusercontent.com", "registry.npmjs.org", "frontend-apps-multi-region.workos.com"},
             "anthropic": CLAUDE_OPTIONAL_HOSTS,
             "anthropic-ip": set(),
         }
@@ -109,6 +109,25 @@ class PolicyTests(unittest.TestCase):
                 expected["rules"][0]["ip_cidr"] = sorted(set(expected["rules"][0]["ip_cidr"]) | {"2607:6bc0:11::/48"})
             prior_rows = [r for r in selected[artifact] if r.get("status") != "user-requested"]
             self.assertEqual(semantic_key(source_document(prior_rows)), semantic_key(expected), artifact)
+        self.assertEqual(policy["selected_pending"], [])
+
+    def test_openai_network_refresh_keeps_exact_scope_and_pending_exclusion(self):
+        selected, policy, _ = canonical(self.root)
+        rows = selected["openai"]
+        host = "frontend-apps-multi-region.workos.com"
+        row = next(r for r in rows if r["value"] == host)
+        self.assertEqual(row["type"], "domain")
+        self.assertTrue(row["shared_dependency"])
+        self.assertIn({"kind": "official", "reference": "openai-network"}, row["sources"])
+        facts = load(self.root / "sources/official/openai-network.json")["facts"]
+        for value in (host, "cdn.platform.openai.com"):
+            self.assertTrue(any(f["type"] == "domain" and f["value"] == value for f in facts))
+            self.assertTrue(covered({"type": "domain", "value": value}, rows))
+        self.assertFalse(any(r["value"] == "cdn.platform.openai.com" for r in rows))
+        for other in ("workos.com", "unrelated.workos.com", "sub." + host, host + ".evil.test", "openai.org", "api.openai.org"):
+            self.assertFalse(covered({"type": "domain", "value": other}, rows), other)
+        pending = next(r for r in discovery_entries(self.root) if r["value"] == "openai.org")
+        self.assertEqual(pending["review_status"], "pending")
         self.assertEqual(policy["selected_pending"], [])
 
     def test_announced_ipv6_is_destination_only_and_keeps_exact_scope(self):
@@ -183,13 +202,13 @@ class PolicyTests(unittest.TestCase):
         pending = discovery_entries(self.root)
         self.assertTrue(pending)
         candidate = next(r for r in pending if r["value"] == "cdn.growthbook.io")
-        selected, _, _ = canonical(self.root, "release", dt.date(2026, 10, 15))
+        selected, _, _ = canonical(self.root, "release", dt.date(2026, 10, 19))
         self.assertFalse(covered(candidate, selected[candidate["artifact"]]))
         self.change_policy(selected_pending=[candidate["id"]])
-        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 10, 15))
+        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 10, 19))
         self.assertTrue(covered(candidate, selected[candidate["artifact"]]))
         with self.assertRaisesRegex(Invalid, "Selected pending candidates"):
-            canonical(self.root, "release", dt.date(2026, 10, 15))
+            canonical(self.root, "release", dt.date(2026, 10, 19))
         self.change_policy(selected_pending=["anthropic:domain:unregistered.example.org"])
         with self.assertRaisesRegex(Invalid, "Invalid pending selection"):
             canonical(self.root)
@@ -203,7 +222,7 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(pending, allow_unicode=True, sort_keys=False))
         self.change_policy(selected_pending=[row["id"]])
         with self.assertRaisesRegex(Invalid, "Selected pending candidates"):
-            canonical(self.root, "release", dt.date(2026, 10, 15))
+            canonical(self.root, "release", dt.date(2026, 10, 19))
 
     def test_redating_original_user_confirmation_cannot_renew_it(self):
         row = next(r for r in load(self.root / "sources/anthropic.yaml") if r["value"] == "challenges.cloudflare.com")
@@ -367,7 +386,7 @@ class PolicyTests(unittest.TestCase):
 
     def test_legacy_runtime_review_does_not_authorize_publication(self):
         write_json(self.root / "sources/release-review.json", {"schema": 1, "status": "approved", "integration_evidence": [{"result": "passed"}]})
-        with patch("validate.today", return_value=dt.date(2026, 10, 15)):
+        with patch("validate.today", return_value=dt.date(2026, 10, 19)):
             with self.assertRaisesRegex(Invalid, "wrong scope"):
                 release_gate(self.root, {"build_mode": "release"})
 

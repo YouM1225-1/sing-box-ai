@@ -4,10 +4,10 @@ archives:
   kind: official
   path: sources/official/openai-network.json
   url: https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps
-  sha256: eccfd234bd95e482a90186d3caf1d865e39e974c74883012da3ffec107574bac
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+  sha256: 0ca1924c711184b40ecf6f1786c9f61be6590ea231441ae1899737ad72290ed1
+  retrieved_at: '2026-10-19T05:48:41.729639+00:00'
   method: reviewed-structured-facts
-  last_reviewed_at: '2026-09-27T18:20:21+00:00'
+  last_reviewed_at: '2026-10-19T05:50:04.956059+00:00'
   raw_reference: openai-network-source
 - id: openai-login
   kind: official
@@ -144,12 +144,12 @@ archives:
   kind: official-source-record
   path: sources/official/source-records/openai-network.json
   url: https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps
-  sha256: 7fa4e4db95fee6f7f2fdd92ce4e525f742402fa5a830aa107e85784bd5f3d5ec
-  retrieved_at: '2026-09-27T18:20:21+00:00'
+  sha256: 2bbac7b0333c9719c91367c7b16c7efdb7a9cda12f132e167b7e6843757c0a91
+  retrieved_at: '2026-10-19T05:48:41.729639+00:00'
   method: Full retrieved response reviewed; only functional endpoint facts and locators are redistributed.
     Full response remains in local review cache.
   format: functional-endpoint-facts-json
-  original_response_sha256: 8c0e7c8f5a777e3432cd524f09e5ece95c044bc5564e1dff1a74f5b3de7ebd48
+  original_response_sha256: ddefebe5e3bed0d9caf064c1327ce491a7d835f190bfc5d66856593696fe168d
 - id: openai-login-source
   kind: official-source-record
   path: sources/official/source-records/openai-login.json
@@ -376,3 +376,12 @@ archives:
   observed_on: '2026-10-15'
   method: current RIS observation; all observed prefixes contained in requested /21
     and /32; not a future ASN guarantee
+- id: dlc-openai-org-discovery-20261019
+  kind: community-discovery
+  path: sources/discovery/openai-org-2026-10-19.json
+  url: https://raw.githubusercontent.com/v2fly/domain-list-community/5b1678867da0afc35854f481c1749a39048952df/data/openai
+  sha256: 072b5caf652431ad35059830574cdc045eb58dfe6a40be8b4a983b48a076a1e7
+  retrieved_at: '2026-10-19T05:49:20.669583+00:00'
+  observed_on: '2026-10-19'
+  method: reviewed-community-discovery; endpoint and discussion facts only, not runtime approval
+  commit: 5b1678867da0afc35854f481c1749a39048952df

@@ -1,6 +1,7 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.31**；工作树更新日期：2026-10-15（Asia/Shanghai）。
+> 文档修订：**1.32**；工作树更新日期：2026-10-19（Asia/Shanghai）。
+> `v0.1.6` 正在按用户授权准备发布：更新 OpenAI 官方主清单至 31 项，精确补入 `frontend-apps-multi-region.workos.com`；新增官方事实 `cdn.platform.openai.com` 复用 `openai.com` 后缀。`openai.org` 仅登记为未选中的发现候选，23 个 Voice IP 集合不变。详见[本轮联网审计](openai-domain-coverage-2026-10-19.md)。以下既有 `v0.1.5` 发布结果保留为历史基准，不代替本版验证。
 > 主仓库：`YouM1225-1/sing-box-ai`；当前已发布 `v0.1.5` 并设为 Latest，语义与已验收的 `v0.1.5-rc.1` 一致；按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。`dist/` 已更新为通过正式门槛的 `v0.1.5`；两次正式构建各 2,636 项原生检查、64 项回归、固定及 Latest 各 6 个资产下载和 152 项空缓存断言全部通过，见[发布记录](evidence/release-v0.1.5/README.md)。
 > 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作本版验证。
 
@@ -108,13 +109,14 @@ alpha.9 存在新旧两条 DNS 路径。`defaultRuleDisablesLegacyDNSMode` 把 `
 .intercomcdn.com
 ```
 
-**11 个精确主机**：
+**12 个精确主机**（`v0.1.6` 新增 WorkOS 前端主机）：
 
 ```text
 cdn.openaimerge.com
 cdn.workos.com
 challenges.cloudflare.com
 forwarder.workos.com
+frontend-apps-multi-region.workos.com
 humb.apple.com
 images.workoscdn.com
 js.stripe.com
@@ -167,9 +169,9 @@ registry.npmjs.org
 
 官方 Voice 首选 UDP 3478，受限时回落 TCP 443；本规则的 `ip_cidr` 本身不限端口，属于目的分流，不是端口防火墙。每次来源同步及候选构建前检查 Voice 字节、`creationTime` 和地址集合变化，变化必须进入 semantic diff。读取失败或解析得到空表时停止更新，不能以旧内容冒充新抓取结果；固定历史输入仍可离线重建。`Validate rules` workflow 已在 main 提交 `ed69b36617f7afa0c1244e724c4a4d54f303587c` 删除，当前无该定时或推送校验流程；本轮保留此删除，由本机手动构建与验证。
 
-固定官方事实清单为 **29 项：9 个通配域、20 个 exact**；2026-09-28 后续正文请求曾 HTTP 403，不能称本候选重新取得最新动态清单。上述 3+11 补充与完整基线联合覆盖它们；`js.intercomcdn.com` 已由补充 `.intercomcdn.com` 覆盖。`auth.openai.com`、`chatgpt.com`、`openai.com`、`ws.chatgpt.com` 也在基线内。官方注明 ChatGPT WebSocket 为 `wss://ws.chatgpt.com`、Codex 为 `wss://chatgpt.com/`，消费者还需允许 TCP443 升级及持续连接；匹配成功不证明长连接成功。
+2026-10-19 重新取得并审阅的英文官方主清单为 **31 项：9 个通配域、22 个 exact**。相对 2026-09-27 的 29 项快照新增 `frontend-apps-multi-region.workos.com` 与 `cdn.platform.openai.com`，没有删除项；前者以精确补充纳入，后者由 `openai.com` 后缀覆盖。上述 3+12 补充与完整基线联合覆盖主清单；`js.intercomcdn.com` 已由补充 `.intercomcdn.com` 覆盖。`auth.openai.com`、`chatgpt.com`、`openai.com`、`ws.chatgpt.com` 也在基线内。官方注明 ChatGPT WebSocket 为 `wss://ws.chatgpt.com`、Codex 为 `wss://chatgpt.com/`，消费者还需允许 TCP443 升级及持续连接；匹配成功不证明长连接成功。
 
-已归档原文未列公共 Statsig 家族，仍列 `*.oaistatsig.com`。旧仓库同时有维护者观察记录，不仅是旧网页/社区来源；这些证据可登记待验证候选，不自动变为当前官方必需项。这仅说明固定页面内容，不能写成永久停用；Statsig 供应商当前文档和 SDK 已确认相关候选现行，但不能代替 ChatGPT 使用证据。App Attest 出现在 iOS 排障段，并非主清单强制项，处置见 §4。
+本次审阅的官方主清单未列公共 Statsig 家族，仍列 `*.oaistatsig.com`。旧仓库同时有维护者观察记录，不仅是旧网页/社区来源；这些证据可登记待验证候选，不自动变为当前官方必需项。这仅说明固定页面内容，不能写成永久停用；Statsig 供应商当前文档和 SDK 已确认相关候选现行，但不能代替 ChatGPT 使用证据。App Attest 出现在 iOS 排障段，并非主清单强制项，处置见 §4。
 
 ### 3.2 Claude / Anthropic 目的补充
 
@@ -292,7 +294,8 @@ OpenAI Voice 是用途明确的客户端目的地址数据；OpenAI 爬虫/代�
 | 项目 | 当前依据和默认处置 | 进入补充层所需依据 |
 |---|---|---|
 | `register.appattest.apple.com` | Apple 平台验证及网站 Touch ID/Face ID 依赖；不额外纳入产品集合 | 对应产品的真实请求与分流必要性；现有 Apple 前置规则不因加入 AI 被覆盖 |
-| `api.statsig.com`、`statsigapi.net`、`events.statsigapi.net`、`featuregates.org`、`prodregistryv2.org`、`featureassets.org` 及旧 `.statsig.com` | 当前 OpenAI 主清单未列；部分主机另有旧仓库维护者观察记录。`events.statsigapi.net`、`statsigapi.net`、`featureassets.org`、`prodregistryv2.org` 已登记 pending；其余三项仅为待审阅发现线索，不在当前17条 registry 中 | 当前官方明确列出，或对应产品自然会话的请求与功能证据；供应商域名文档本身不证明 ChatGPT 使用 |
+| `api.statsig.com`、`statsigapi.net`、`events.statsigapi.net`、`featuregates.org`、`prodregistryv2.org`、`featureassets.org` 及旧 `.statsig.com` | 当前 OpenAI 主清单未列；部分主机另有旧仓库维护者观察记录。`events.statsigapi.net`、`statsigapi.net`、`featureassets.org`、`prodregistryv2.org` 已登记 pending；其余三项仅为待审阅发现线索，不在原有17条 registry 中 | 当前官方明确列出，或对应产品自然会话的请求与功能证据；供应商域名文档本身不证明 ChatGPT 使用 |
+| `openai.org`（后缀） | 2026-10-17 被 v2fly 社区收录，MetaCubeX/Loyalsoldier 继承；当前官方网络清单未列，产品用途未确认；本轮登记 pending 并保持未选中，固定基线不变 | 官方用途说明或对应产品的实际依赖证据；社区合并与证书/WHOIS 记录不足以单独认定功能必需 |
 | `client-api.arkoselabs.com`、`openai-api.arkoselabs.com` | 旧仓库有；rc.1 和新审阅集合均未含，不能称 rc.1→新批次退出 | 当前认证链路的精确主机及功能证据；不扩整个 Arkose |
 | `cdn.growthbook.io` | 供应商 SDK 现行端点，当前 Claude 使用仍待证实；已覆盖 `api.anthropic.com` 不证明所有 GrowthBook 用途均不存在 | 对应产品当前使用此外部 CDN 的证据；不能把 GrowthBook 一概视为无用遥测 |
 | `cdn.usefathom.com` | 供应商当前统计脚本主机，当前 Claude 使用待证实 | 明确产品用途及保留必要性；仅观察到请求不足以证明功能必需 |
@@ -410,13 +413,13 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前本地正式批次为 `0.1.5`，其受验收候选为 `0.1.5-rc.1`；远端 Latest 身份以发布证据为准；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。既有本地正式批次为 `0.1.5`，其受验收候选为 `0.1.5-rc.1`；本轮 `0.1.6` 按下述流程单独构建、验证与发布，远端 Latest 身份以新发布证据为准；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
 官方快照保留可审阅的网络事实或机器数据及 `url/retrieved_at/method/page_updated/sha256`，并让结构化事实逐项定位原文；原文响应摘要与事实记录文件自身摘要分别登记。正常 HTTP、官方检索正文、维护者保存均可；验证页、空文档、抽取失败必须停止更新。工具抽取文本明确不是原始 HTML。页面只有相对 Updated 时原样记录，绝对日期为 null；不能推算一个精确日期。同一导出时间不自动证明伪造，但不得冒充逐页抓取时间。
 
-`0.1.0` 来源归档批次曾取得 OpenAI 网络页工具正文及 Claude 网络/桌面/IP 页面；后续 Voice JSON 成功取得且字节一致。后续 OpenAI 帮助主页面请求返回403，不把固定归档写成候选期间重新成功取得的动态正文。OpenAI 原文显示 `Updated: last month`；公共 Statsig 未列的描述只对应已归档正文。对外受版本控制输入保存完整网络事实、逐项原文定位、取得时间/方式及原文摘要；完整解释性页面仅留本地审阅，不将未获再分发许可的整篇网页公开复制。Voice 机器数据及上游基线原件归档，公开事实记录不冒称原始 HTML。
+历史 `0.1.0` 来源归档批次曾取得 OpenAI 网络页工具正文及 Claude 网络/桌面/IP 页面；当时 OpenAI 原文显示 `Updated: last month`，后续普通 HTTP 请求曾返回 403。2026-10-19 本轮通过联网检索工具成功读取完整英文网络页，普通 HTTP 客户端仍返回 403；来源方式明确为工具提取正文，页面显示 `Updated: 3 days ago`，不推算条目上线日期。本次 Voice JSON 直接下载成功且字节与历史输入一致。对外受版本控制输入保存完整网络事实、逐项原文定位、取得时间/方式及取得正文摘要；完整解释性页面仅留本地审阅，不将未获再分发许可的整篇网页公开复制。Voice 机器数据及上游基线原件归档，公开事实记录不冒称原始 HTML。
 
 manifest 记录 schema、项目版本、source_commit、全部构建输入哈希、基线 repo/ref/path/hash、补充输入及证据、编译器平台与 SHA、固定 Go/sing-box/sing 依赖、features、enabled_optional、review_as_of、build_mode、三个源/二进制摘要与大小、binary_version=2、单 default 结构、验证结果和重建证据。正式批次 `source_commit` 必须指向已提交输入。未提交本地候选的该字段仅为工作树基础提交，实际输入身份由 `inputs` 哈希给出；不得宣称完整提交绑定或发布资格，提交后须重新构建。
 
@@ -446,7 +449,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-`v0.1.2` 的历史[发布授权](../sources/evidence/release-v0.1.2-authorization.json)与[静态语义审阅](../sources/evidence/release-v0.1.2-review.json)只批准 `0.1.2` 的三个指定摘要。当前 `release-review.json` 改为绑定 `0.1.3` 的新授权与新审阅；两个版本的独立批准均保留。旧 `0.1.0`、`0.1.1` 批准及各候选 `publication_approval=null` 保留历史身份。OpenAI 网络及登录页面本轮 HTTP 403 的未核实范围列入审阅局限，不称官方域名清单已全面更新核对。
+每个历史版本的发布授权与静态语义审阅仅批准该版的三个指定摘要，不能沿用于新版本。本轮 `release-review.json` 须绑定 `0.1.6` 的用户授权、三个新批次摘要和新语义审阅；旧批准及各候选 `publication_approval=null` 保留历史身份。本次官方网络主清单已按 2026-10-19 取得的英文正文核对，未完成登录业务或产品全量依赖验收，`openai.org` 的用途疑问另列为未选中候选。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 

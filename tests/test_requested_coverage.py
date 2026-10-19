@@ -38,7 +38,7 @@ class RequestedCoverageTests(unittest.TestCase):
         (self.root / path).write_text(yaml.safe_dump(document, allow_unicode=True, sort_keys=False))
 
     def validate(self):
-        return canonical(self.root, "release", dt.date(2026, 10, 15))[0]
+        return canonical(self.root, "release", dt.date(2026, 10, 19))[0]
 
     def test_complete_website_union_and_previous_release_are_preserved(self):
         selected = self.validate()
@@ -58,6 +58,8 @@ class RequestedCoverageTests(unittest.TestCase):
                 for value in values:
                     self.assertTrue(covered({"type": typ, "value": value}, rows), (artifact, typ, value))
             if artifact != "anthropic":
+                if artifact == "openai":
+                    previous["rules"][0]["domain"] = sorted(set(previous["rules"][0]["domain"]) | {"frontend-apps-multi-region.workos.com"})
                 self.assertEqual(semantic_key(source_document(rows)), semantic_key(previous))
         rule = source_document(selected["anthropic"])["rules"][0]
         self.assertEqual(set(rule["ip_cidr"]), {"160.79.104.0/21", "2607:6bc0::/32"})
@@ -85,7 +87,7 @@ class RequestedCoverageTests(unittest.TestCase):
 
     def test_rehashed_instruction_still_binds_scope_and_exclusions(self):
         original = load(self.root / self.reference)
-        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"artifact": "openai"}, {"direction": "source"}, {"products": ["claude-code"]}, {"excluded": []}, {"service_usage_verified": True}, {"consumer_validation": True}, {"approved_on": "2026-10-16"}, {"rules": []}, {"website_url": "https://example.invalid/"}):
+        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"artifact": "openai"}, {"direction": "source"}, {"products": ["claude-code"]}, {"excluded": []}, {"service_usage_verified": True}, {"consumer_validation": True}, {"approved_on": "2026-10-20"}, {"rules": []}, {"website_url": "https://example.invalid/"}):
             with self.subTest(changes=changes):
                 path = self.root / self.reference
                 write_json(path, {**original, **changes})

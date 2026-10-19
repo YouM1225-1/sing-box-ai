@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 292, in <module>
+    main()
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 287, in main
+    manifest = validate(a.directory, a.go, a.for_release)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/validate.py", line 207, in validate
+    need(manifest.get("inputs") == input_files(root), "Inputs changed since generation; rebuild the batch")
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/common.py", line 31, in need
+    raise Invalid(message)
+common.Invalid: Inputs changed since generation; rebuild the batch
