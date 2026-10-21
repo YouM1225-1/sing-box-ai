@@ -1,8 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.35**；工作树更新日期：2026-10-21（Asia/Shanghai）。
-> 用户已明确要求“发布”，当前准备 `v0.1.7`：为 Anthropic 添加 5 个共享服务后缀，身份为 `user-requested`，不冒称官方依赖。正式制品须与已验收 `v0.1.7-rc.1` 字节一致；发布进度和完整清单见[本版发布记录](evidence/release-v0.1.7/README.md)。
-> `v0.1.6` 已按用户授权发布并设为 Latest，`dist/` 已更新：精确补入 `frontend-apps-multi-region.workos.com`，2026-10-19 核对的 OpenAI 官方主清单覆盖 31/31；`cdn.platform.openai.com` 复用 `openai.com` 后缀。`openai.org` 仅登记为未选候选，23 个 Voice IP 及 Anthropic 两份 SRS 不变。两次正式构建各 2,650 项原生检查、65 项回归、固定及 Latest 各 6 个资产下载、165 项空缓存请求检查均通过，7 个历史发行保持不变，见[发布报告与完整清单](evidence/release-v0.1.6/README.md)。
+> 文档修订：**1.36**；工作树更新日期：2026-10-21（Asia/Shanghai）。
+> `v0.1.7` 已按用户授权发布并设为 Latest，`dist/` 已更新：为 Anthropic 添加 5 个共享服务后缀，身份为 `user-requested`。三份 SRS 与已验收 `v0.1.7-rc.1` 字节一致；两次正式构建各 2,720 项原生检查、66 项回归、固定及 Latest 各 6 个资产下载和各 190 项空缓存请求检查均通过。8 个历史 Release 和 11 个历史标签引用保持不变，完整清单与回执见[本版发布记录](evidence/release-v0.1.7/README.md)。
+> 历史 `v0.1.6` 曾按用户授权发布并设为 Latest：精确补入 `frontend-apps-multi-region.workos.com`，2026-10-19 核对的 OpenAI 官方主清单覆盖 31/31；`cdn.platform.openai.com` 复用 `openai.com` 后缀。`openai.org` 仅登记为未选候选，23 个 Voice IP 及 Anthropic 两份 SRS 不变。两次正式构建各 2,650 项原生检查、65 项回归、固定及 Latest 各 6 个资产下载、165 项空缓存请求检查均通过，7 个历史发行保持不变，见[历史发布报告与完整清单](evidence/release-v0.1.6/README.md)。
 > 主仓库：`YouM1225-1/sing-box-ai`。历史 `v0.1.5` 已按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，语义与当时验收的 `v0.1.5-rc.1` 一致，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。该版两次正式构建各 2,636 项原生检查、64 项回归、固定及 Latest 各 6 个资产下载和 152 项空缓存断言全部通过，见[历史发布记录](evidence/release-v0.1.5/README.md)；这些历史结果不代替 v0.1.6 验证。
 > 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作本版验证。
 
@@ -418,7 +418,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前本地正式批次为 `0.1.7`，其受验收候选为 `0.1.7-rc.1`；两次正式构建、验证和同输入候选回归已通过，远端发布状态以[本版发布记录](evidence/release-v0.1.7/README.md)为准；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.7`，已发布并设为 Latest，其受验收候选为 `0.1.7-rc.1`；两次正式构建、验证和同输入候选回归已通过，远端下载与空缓存加载结果见[本版发布记录](evidence/release-v0.1.7/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -463,7 +463,15 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.6 当前发布结果
+### v0.1.7 当前发布结果
+
+用户在五个后缀补充及用途说明后明确要求“发布”。`v0.1.7` 已于北京时间 `2026-10-21 14:37:32` 发布并设为 Latest。正式输入提交为 `b7b7c53ed4124bfa2abea9e79c771c8dfda728da`，标签提交为 `a15a40e3a97d42a17f101a5af5a41ab2c6663a5b`。唯一规则增量为 Anthropic 的 `growthbook.io`、`hcaptcha.com`、`stripe.network`、`stripecdn.com`、`segment.io` 五个根域及子域后缀，均为用户指定覆盖；OpenAI 和 Anthropic 来源 IP 两份 SRS 与 v0.1.6 字节一致。
+
+两次正式构建各 2,720 项原生检查、66 项完整回归、固定及 Latest 各 6 个资产下载均通过。两个入口各通过 190 项空缓存请求检查，合计 380 项；两次进程退出 0，4 个回环监听全部关闭。8 个历史 Release 与其资产、11 个历史标签引用保持不变。完整清单、摘要与下载入口见[最终发布报告](evidence/release-v0.1.7/README.md)，机器结果见[发布汇总](evidence/release-v0.1.7/publication-results.json)。
+
+最终回执另行提交至 main，版本标签及源码 ZIP 保留固定时点状态。现有 Latest 订阅地址继续可用；未访问或修改用户设备，未确认实际设备已刷新，不将静态发布和隔离检查记为真实业务验收。
+
+### v0.1.6 历史发布结果
 
 用户在联网审计后明确要求“补充更新 并重新发布”。已完成来源更新、WorkOS 精确补充、候选和独立审阅、输入提交、两次正式构建、静态发布门槛、GitHub 发布及 Latest 切换。正式输入提交 `d586a7a559ca1ea70186f04218b1ad8e703fd5ef`，标签提交 `39abd161bd5c05b769dbddf5fef916d4d7662ec4`，发布时间 `2026-10-19T05:57:26Z`。
 

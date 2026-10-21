@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "project_version": "0.1.7",
+  "release_id": 419231418,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.7",
+  "latest": true,
+  "published_at": "2026-10-21T06:37:32Z",
+  "published_at_beijing": "2026-10-21T14:37:32+08:00",
+  "source_commit": "b7b7c53ed4124bfa2abea9e79c771c8dfda728da",
+  "tag_commit": "a15a40e3a97d42a17f101a5af5a41ab2c6663a5b",
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "bytes": 409,
+      "sha256": "3a96a5fc2731823416444f2300989e97a3995fb50f19b999db47b5df28cbf9b6"
+    },
+    {
+      "name": "anthropic-ip.srs",
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+    },
+    {
+      "name": "anthropic.srs",
+      "bytes": 529,
+      "sha256": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 106476,
+      "sha256": "24bfb0459a52ada3a85b453647a72b15c2271cd5205356d8051cb781542e1d07"
+    },
+    {
+      "name": "openai.srs",
+      "bytes": 800,
+      "sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c"
+    },
+    {
+      "name": "sing-box-ai-v0.1.7.zip",
+      "bytes": 2079563,
+      "sha256": "9f8b13f45b210ffd36356e7fda71b2c9cb85f40cfccecbec76f7b54df3ddfc2e"
+    }
+  ],
+  "builds": {
+    "independent_release_builds": 2,
+    "native_cases_each": 2720,
+    "release_gates_passed": true,
+    "candidate_fixture_native_cases": 2720,
+    "unit_tests": 66,
+    "unit_tests_passed": true,
+    "product_bytes_equal_to_reviewed_candidate": true,
+    "two_release_manifests_equal": true
+  },
+  "downloads": {
+    "fixed": {
+      "assets": 6,
+      "http_200": true,
+      "all_byte_equal": true,
+      "evidence": "fixed-downloads.json"
+    },
+    "latest": {
+      "assets": 6,
+      "http_200": true,
+      "all_byte_equal": true,
+      "evidence": "latest-downloads.json"
+    }
+  },
+  "empty_cache_native_probes": {
+    "fixed": {
+      "passed": true,
+      "requests": 190,
+      "main_requests": 184,
+      "source_direction_requests": 6,
+      "process_exit": 0,
+      "listeners_closed": true,
+      "evidence": "remote-fixed/results.json"
+    },
+    "latest": {
+      "passed": true,
+      "requests": 190,
+      "main_requests": 184,
+      "source_direction_requests": 6,
+      "process_exit": 0,
+      "listeners_closed": true,
+      "evidence": "remote-latest/results.json"
+    }
+  },
+  "historical_releases_unchanged": 8,
+  "historical_tag_refs_unchanged": 11,
+  "deployment_status": "pending",
+  "validated_consumers": [],
+  "limitations": [
+    "GitHub static publication and local isolated checks only.",
+    "Existing Latest consumers can refresh to v0.1.7; actual production refresh or authenticated product behavior was not observed.",
+    "Source archive is pinned to the version tag; final publication receipts are committed separately to main."
+  ]
+}
