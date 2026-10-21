@@ -42,7 +42,7 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(rows, allow_unicode=True, sort_keys=False))
 
     def test_baseline_and_user_confirmation(self):
-        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 10, 19))
+        selected, policy, _ = canonical(self.root, "release", dt.date(2026, 10, 21))
         challenge = next(r for r in selected["anthropic"] if r["value"] == "challenges.cloudflare.com")
         self.assertEqual(challenge["review_status"], "approved")
         self.assertEqual(len([r for r in selected["openai"] if r["type"] == "ip_cidr"]), 23)
@@ -201,14 +201,14 @@ class PolicyTests(unittest.TestCase):
     def test_unselected_pending_does_not_block_release_but_selected_does(self):
         pending = discovery_entries(self.root)
         self.assertTrue(pending)
-        candidate = next(r for r in pending if r["value"] == "cdn.growthbook.io")
-        selected, _, _ = canonical(self.root, "release", dt.date(2026, 10, 19))
+        candidate = next(r for r in pending if r["value"] == "modelcontextprotocol.io")
+        selected, _, _ = canonical(self.root, "release", dt.date(2026, 10, 21))
         self.assertFalse(covered(candidate, selected[candidate["artifact"]]))
         self.change_policy(selected_pending=[candidate["id"]])
-        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 10, 19))
+        selected, _, _ = canonical(self.root, "candidate", dt.date(2026, 10, 21))
         self.assertTrue(covered(candidate, selected[candidate["artifact"]]))
         with self.assertRaisesRegex(Invalid, "Selected pending candidates"):
-            canonical(self.root, "release", dt.date(2026, 10, 19))
+            canonical(self.root, "release", dt.date(2026, 10, 21))
         self.change_policy(selected_pending=["anthropic:domain:unregistered.example.org"])
         with self.assertRaisesRegex(Invalid, "Invalid pending selection"):
             canonical(self.root)
@@ -222,7 +222,7 @@ class PolicyTests(unittest.TestCase):
         path.write_text(yaml.safe_dump(pending, allow_unicode=True, sort_keys=False))
         self.change_policy(selected_pending=[row["id"]])
         with self.assertRaisesRegex(Invalid, "Selected pending candidates"):
-            canonical(self.root, "release", dt.date(2026, 10, 19))
+            canonical(self.root, "release", dt.date(2026, 10, 21))
 
     def test_redating_original_user_confirmation_cannot_renew_it(self):
         row = next(r for r in load(self.root / "sources/anthropic.yaml") if r["value"] == "challenges.cloudflare.com")
@@ -386,7 +386,7 @@ class PolicyTests(unittest.TestCase):
 
     def test_legacy_runtime_review_does_not_authorize_publication(self):
         write_json(self.root / "sources/release-review.json", {"schema": 1, "status": "approved", "integration_evidence": [{"result": "passed"}]})
-        with patch("validate.today", return_value=dt.date(2026, 10, 19)):
+        with patch("validate.today", return_value=dt.date(2026, 10, 21)):
             with self.assertRaisesRegex(Invalid, "wrong scope"):
                 release_gate(self.root, {"build_mode": "release"})
 
@@ -454,7 +454,7 @@ class FormatTests(unittest.TestCase):
     def test_discovery_retains_historical_dependencies(self):
         result = report()
         found = {r["value"]: r["classification"] for r in result["discovery"] if r["upstream"] == "legacy-anthropic"}
-        self.assertEqual(found["cdn.growthbook.io"], "ADD_CANDIDATE")
+        self.assertEqual(found["cdn.growthbook.io"], "ALREADY_COVERED")
         self.assertEqual(found["cdn.usefathom.com"], "ALREADY_COVERED")
         self.assertEqual(found["challenges.cloudflare.com"], "ALREADY_COVERED")
 

@@ -38,7 +38,7 @@ class RequestedCoverageTests(unittest.TestCase):
         (self.root / path).write_text(yaml.safe_dump(document, allow_unicode=True, sort_keys=False))
 
     def validate(self):
-        return canonical(self.root, "release", dt.date(2026, 10, 19))[0]
+        return canonical(self.root, "release", dt.date(2026, 10, 21))[0]
 
     def test_complete_website_union_and_previous_release_are_preserved(self):
         selected = self.validate()
@@ -65,6 +65,26 @@ class RequestedCoverageTests(unittest.TestCase):
         self.assertEqual(set(rule["ip_cidr"]), {"160.79.104.0/21", "2607:6bc0::/32"})
         self.assertEqual(set(rule["domain_keyword"]), {"datadog", "sentry", "sift"})
 
+    def test_one_exit_adds_only_five_suffixes_to_published_016(self):
+        suffixes = {"growthbook.io", "hcaptcha.com", "stripe.network", "stripecdn.com", "segment.io"}
+        selected = self.validate()
+        for artifact, rows in selected.items():
+            previous = load(ROOT / "artifacts/v0.1.6" / (artifact + ".json"))
+            for typ, values in previous["rules"][0].items():
+                for value in values:
+                    self.assertTrue(covered({"type": typ, "value": value}, rows), (artifact, typ, value))
+            expected = copy.deepcopy(previous)
+            if artifact == "anthropic":
+                expected["rules"][0]["domain_suffix"] = sorted(set(expected["rules"][0]["domain_suffix"]) | suffixes)
+            self.assertEqual(semantic_key(source_document(rows)), semantic_key(expected), artifact)
+        for suffix in sorted(suffixes):
+            for host in (suffix, "probe." + suffix, "nested.probe." + suffix):
+                with self.subTest(host=host):
+                    self.assertTrue(reference_match(selected["anthropic"], domain=host))
+            for host in ("not" + suffix, suffix + ".invalid"):
+                with self.subTest(host=host):
+                    self.assertFalse(reference_match(selected["anthropic"], domain=host))
+
     def test_fixed_native_witnesses_cover_boundaries_directions_keywords_and_ntp(self):
         selected = self.validate()
         cases = [case for case in cases_for(selected) if case["Name"].startswith(("anthropic:website-", "anthropic:excluded-ntp:"))]
@@ -87,7 +107,7 @@ class RequestedCoverageTests(unittest.TestCase):
 
     def test_rehashed_instruction_still_binds_scope_and_exclusions(self):
         original = load(self.root / self.reference)
-        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"artifact": "openai"}, {"direction": "source"}, {"products": ["claude-code"]}, {"excluded": []}, {"service_usage_verified": True}, {"consumer_validation": True}, {"approved_on": "2026-10-20"}, {"rules": []}, {"website_url": "https://example.invalid/"}):
+        for changes in ({"kind": "runtime-validation"}, {"scope": "consumer-integration"}, {"artifact": "openai"}, {"direction": "source"}, {"products": ["claude-code"]}, {"excluded": []}, {"service_usage_verified": True}, {"consumer_validation": True}, {"approved_on": "2026-10-22"}, {"rules": []}, {"website_url": "https://example.invalid/"}):
             with self.subTest(changes=changes):
                 path = self.root / self.reference
                 write_json(path, {**original, **changes})

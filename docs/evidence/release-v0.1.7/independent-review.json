@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "kind": "independent-static-artifact-review",
+  "scope": "artifact-publication",
+  "status": "passed",
+  "reviewed_on": "2026-10-21",
+  "reviewed_at_utc": "2026-10-21T06:32:03.394629+00:00",
+  "target_project_version": "0.1.7",
+  "baseline_project_version": "0.1.6",
+  "reviewed_candidate_project_version": "0.1.7-rc.1",
+  "conclusion": "The reviewed candidate source JSON adds exactly five requested Anthropic domain_suffix scopes and removes no existing rules. OpenAI and Anthropic source-IP JSON/SRS remain byte-identical to v0.1.6. Actual candidate SRS hashes, sizes and headers match the manifest that binds the recorded 2720 passing native checks. The five source entries remain user-requested shared-service coverage, and the candidate makes no publication or consumer-validation claim. This evidence supports formal artifact publication review only when the formal release produces these exact SRS hashes; it does not replace the release gate.",
+  "unresolved_conflicts": [],
+  "artifacts": {
+    "openai.srs": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+    "anthropic.srs": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "comparisons": {
+    "openai": {
+      "baseline": {
+        "json_path": "artifacts/v0.1.6/openai.json",
+        "json_sha256": "88191331af4cf6fe2aec8d8d11900384ca47fe03b0dd2c110ca5450551535403",
+        "srs_path": "artifacts/v0.1.6/openai.srs",
+        "srs_sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+        "srs_bytes": 800
+      },
+      "candidate": {
+        "json_path": "artifacts/v0.1.7-rc.1/openai.json",
+        "json_sha256": "88191331af4cf6fe2aec8d8d11900384ca47fe03b0dd2c110ca5450551535403",
+        "srs_path": "artifacts/v0.1.7-rc.1/openai.srs",
+        "srs_sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+        "srs_bytes": 800
+      },
+      "json_byte_equal": true,
+      "srs_byte_equal": true,
+      "manifest_hash_size_header_binding_passed": true,
+      "semantic_changes": {
+        "domain": {
+          "added": [],
+          "removed": []
+        },
+        "domain_regex": {
+          "added": [],
+          "removed": []
+        },
+        "domain_suffix": {
+          "added": [],
+          "removed": []
+        },
+        "ip_cidr": {
+          "added": [],
+          "removed": []
+        }
+      }
+    },
+    "anthropic": {
+      "baseline": {
+        "json_path": "artifacts/v0.1.6/anthropic.json",
+        "json_sha256": "121a1b9774ccd3af32f1c3a78a8a103af9e253a613de2436850be7b575f4340b",
+        "srs_path": "artifacts/v0.1.6/anthropic.srs",
+        "srs_sha256": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+        "srs_bytes": 488
+      },
+      "candidate": {
+        "json_path": "artifacts/v0.1.7-rc.1/anthropic.json",
+        "json_sha256": "8f4feeb1b04f8b0714ff7bba9b0c3590cf13e3be4608e77fe8fe1fc8ef9247ae",
+        "srs_path": "artifacts/v0.1.7-rc.1/anthropic.srs",
+        "srs_sha256": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+        "srs_bytes": 529
+      },
+      "json_byte_equal": false,
+      "srs_byte_equal": false,
+      "manifest_hash_size_header_binding_passed": true,
+      "semantic_changes": {
+        "domain": {
+          "added": [],
+          "removed": []
+        },
+        "domain_keyword": {
+          "added": [],
+          "removed": []
+        },
+        "domain_suffix": {
+          "added": [
+            "growthbook.io",
+            "hcaptcha.com",
+            "segment.io",
+            "stripe.network",
+            "stripecdn.com"
+          ],
+          "removed": []
+        },
+        "ip_cidr": {
+          "added": [],
+          "removed": []
+        }
+      }
+    },
+    "anthropic-ip": {
+      "baseline": {
+        "json_path": "artifacts/v0.1.6/anthropic-ip.json",
+        "json_sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5",
+        "srs_path": "artifacts/v0.1.6/anthropic-ip.srs",
+        "srs_sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+        "srs_bytes": 36
+      },
+      "candidate": {
+        "json_path": "artifacts/v0.1.7-rc.1/anthropic-ip.json",
+        "json_sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5",
+        "srs_path": "artifacts/v0.1.7-rc.1/anthropic-ip.srs",
+        "srs_sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+        "srs_bytes": 36
+      },
+      "json_byte_equal": true,
+      "srs_byte_equal": true,
+      "manifest_hash_size_header_binding_passed": true,
+      "semantic_changes": {
+        "source_ip_cidr": {
+          "added": [],
+          "removed": []
+        }
+      }
+    }
+  },
+  "source_review": {
+    "instruction_path": "sources/evidence/one-exit-coverage-request-2026-10-21.json",
+    "instruction_sha256": "6ba93f8cf5ec1455fdf270c13f474cbcdb445342e35ecec38197129e41a18d9e",
+    "registry_reference": "one-exit-coverage-request",
+    "registry_hash_matches": true,
+    "exact_requested_suffixes": [
+      "growthbook.io",
+      "hcaptcha.com",
+      "segment.io",
+      "stripe.network",
+      "stripecdn.com"
+    ],
+    "current_source_rows_match_candidate_provenance": true,
+    "status": "user-requested",
+    "shared_dependency": true,
+    "direction": "destination",
+    "official_dependency_claim": false,
+    "runtime_requirement_claim": false,
+    "service_usage_verified": false,
+    "consumer_validation": false
+  },
+  "candidate_identity": {
+    "manifest_path": "artifacts/v0.1.7-rc.1/manifest.json",
+    "manifest_sha256": "466664fde7ad3662d37506f489542b16dfe50543368b65ad2394b62c703478f9",
+    "build_mode": "candidate",
+    "project_version": "0.1.7-rc.1",
+    "review_as_of": "2026-10-21",
+    "source_commit": "ad7c86f9e36c4be232a1523b030e6de46efba191",
+    "source_commit_boundary": "Candidate was built from an uncommitted working tree; source_commit identifies its base commit, while manifest inputs preserve actual candidate input hashes. Formal release must rebuild from committed inputs.",
+    "publication_approval": null,
+    "selected_pending": [],
+    "deployment_status": "pending",
+    "validated_consumers": [],
+    "integration_evidence": []
+  },
+  "verification_performed_in_this_review": [
+    "Read source JSON and calculated exact per-field set differences for all three artifacts.",
+    "Calculated SHA-256 from actual candidate and baseline JSON/SRS files; verified candidate hashes, sizes and SRS v2 headers against its manifest.",
+    "Checked the five user-requested source rows, candidate provenance, instruction evidence and registry hash binding.",
+    "Read and verified hash, count and pass status of the saved 2720 native-match results; did not rerun the complete validation suite."
+  ],
+  "saved_native_validation": {
+    "cases": 2720,
+    "all_passed": true,
+    "matches_path": "artifacts/v0.1.7-rc.1/matches.jsonl",
+    "matches_sha256": "85312c1a852a50e5cdfc8dbc1377f15a9f28cf609a5051b35f2e3342e88b204a",
+    "reexecuted_in_this_review": false
+  },
+  "additional_read_only_decompile_attempt": {
+    "successful": false,
+    "target": "openai.srs",
+    "output_target": "/dev/stdout",
+    "exit_code": 1,
+    "reason": "open /dev/stdout: permission denied",
+    "interpretation": "Output-stream permission failure, not a binary validation failure. No decompiled file was written and no independent successful decompilation is claimed; existing hash-bound native validation results were reviewed instead."
+  },
+  "limitations": [
+    "Static artifact and provenance review only.",
+    "No user-device, N100, production configuration, actual egress, authenticated login, DNS-routing or application functionality validation was performed.",
+    "No new official mandatory dependency claim is made for the five shared-service suffixes.",
+    "The candidate remains a candidate; formal release version/committed-input binding, publication gate, remote asset download and Latest verification remain the publishing task responsibility.",
+    "An identical candidate SRS hash does not establish runtime consumer acceptance or deployment success."
+  ],
+  "consumer_validation_performed": false,
+  "graft": {
+    "calls_this_review": 0,
+    "reported_tokens_saved_this_review": 0
+  }
+}

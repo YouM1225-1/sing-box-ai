@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "checked_at": "2026-10-21T05:45:29.438818+00:00",
+  "version": "0.1.7-rc.1",
+  "build_mode": "candidate",
+  "input_hashes_current": true,
+  "baseline": "v0.1.6",
+  "rule_diff": {
+    "openai": {},
+    "anthropic": {
+      "domain_suffix": {
+        "added": [
+          "growthbook.io",
+          "hcaptcha.com",
+          "segment.io",
+          "stripe.network",
+          "stripecdn.com"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {}
+  },
+  "artifacts": {
+    "openai": {
+      "path": "artifacts/v0.1.7-rc.1/openai.srs",
+      "sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+      "bytes": 800,
+      "same_bytes_as_v0_1_6": true,
+      "dist_still_v0_1_6": true
+    },
+    "anthropic": {
+      "path": "artifacts/v0.1.7-rc.1/anthropic.srs",
+      "sha256": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+      "bytes": 529,
+      "same_bytes_as_v0_1_6": false,
+      "dist_still_v0_1_6": true
+    },
+    "anthropic-ip": {
+      "path": "artifacts/v0.1.7-rc.1/anthropic-ip.srs",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "bytes": 36,
+      "same_bytes_as_v0_1_6": true,
+      "dist_still_v0_1_6": true
+    }
+  },
+  "native_validation": {
+    "baseline_complete": true,
+    "cases": 2720,
+    "clean_rebuild_equal": true,
+    "failures": 0,
+    "level": "local-source-binary-and-isolated-check",
+    "native_result_sha256": "85312c1a852a50e5cdfc8dbc1377f15a9f28cf609a5051b35f2e3342e88b204a",
+    "test_harness": {
+      "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+      "go_version": "go1.27.1",
+      "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+      "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+      "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+    },
+    "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+  },
+  "unit_tests": {
+    "command": "SINGBOX_TEST_BATCH=artifacts/v0.1.7-rc.1 python3 -m unittest discover -s tests -v",
+    "tests": 66,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "elapsed_seconds": 53.53,
+    "evidence_kind": "summary of command output observed in this task"
+  },
+  "publication_approval": null,
+  "published_in_this_task": false,
+  "limitations": [
+    "Source commit identifies the unchanged base commit; uncommitted candidate input identities are bound by manifest hashes.",
+    "Static rule matching does not prove service dependencies or consumer egress."
+  ]
+}

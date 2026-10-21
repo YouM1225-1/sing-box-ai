@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.7",
+  "reviewed_on": "2026-10-21",
+  "reviewer": "Codex primary review and independent repo_coverage agent",
+  "artifacts": {
+    "openai.srs": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+    "anthropic.srs": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "comparison": {
+    "openai": {},
+    "anthropic": {
+      "domain_suffix": {
+        "added": [
+          "growthbook.io",
+          "hcaptcha.com",
+          "segment.io",
+          "stripe.network",
+          "stripecdn.com"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {}
+  },
+  "conclusion": "Approve exactly the validated v0.1.7-rc.1 SRS bytes for v0.1.7 static publication: five user-requested Anthropic shared-service suffixes are added, all previous coverage remains, and the OpenAI and source-IP binaries are unchanged. Formal publication requires committed-input binding, reproducible release-mode checks and verified public downloads.",
+  "unresolved_conflicts": [],
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.7/semantic-diff.json",
+      "sha256": "3e2a4f31d0b92abd41e843146e32a6df346784e7588028915ef30ea21c8d9f0f"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.7/independent-review.json",
+      "sha256": "dca0260e81cdd3b5bdc465106b5da765aa6e16f92c5f5fd0b221ec543ccaa190"
+    },
+    {
+      "path": "docs/evidence/one-exit-supplement-2026-10-21/validation-summary.json",
+      "sha256": "cb9362a95fb391714ca0a2341fbe4fe663624b35fd328f76b1e9bf45820c3f67"
+    },
+    {
+      "path": "artifacts/v0.1.7-rc.1/manifest.json",
+      "sha256": "466664fde7ad3662d37506f489542b16dfe50543368b65ad2394b62c703478f9"
+    },
+    {
+      "path": "sources/evidence/one-exit-coverage-request-2026-10-21.json",
+      "sha256": "6ba93f8cf5ec1455fdf270c13f474cbcdb445342e35ecec38197129e41a18d9e"
+    }
+  ],
+  "limitations": [
+    "User-requested suffix coverage is not an official Claude dependency or runtime validation statement.",
+    "Only static artifacts are approved; consumer integration, real egress and authenticated business validation remain outside this publication.",
+    "The existing candidate identity and historical releases remain unchanged."
+  ]
+}

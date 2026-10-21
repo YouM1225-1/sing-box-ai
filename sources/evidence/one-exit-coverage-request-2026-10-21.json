@@ -1,0 +1,42 @@
+{
+  "approved_on": "2026-10-21",
+  "artifact": "anthropic",
+  "confirmed_by": "maintainer",
+  "consumer_validation": false,
+  "direction": "destination",
+  "excluded": [
+    "ntp"
+  ],
+  "interpretation": "The user replied 补充 to the comparison identifying these five unmatched suffixes. Add only these root-plus-subdomain scopes to Anthropic user-requested website coverage. Retain the existing NTP exclusion and all other domain, keyword and IP scope. This instruction does not claim official dependency status, verified service usage, publication approval or consumer validation.",
+  "kind": "user-instruction",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "rules": [
+    {
+      "type": "domain_suffix",
+      "value": "growthbook.io"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "hcaptcha.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "stripe.network"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "stripecdn.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "segment.io"
+    }
+  ],
+  "schema": 1,
+  "scope": "website-coverage",
+  "service_usage_verified": false,
+  "statement": "补充",
+  "website_url": "https://github.com/wquguru/one-exit/commit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032"
+}

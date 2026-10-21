@@ -359,6 +359,14 @@ archives:
   kind: routing-observation
   method: https-raw-json; network ownership/announcement only, not service-purpose
     certification
+- id: one-exit-coverage-request
+  kind: user-instruction
+  path: sources/evidence/one-exit-coverage-request-2026-10-21.json
+  url: https://github.com/wquguru/one-exit/commit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032
+  sha256: 6ba93f8cf5ec1455fdf270c13f474cbcdb445342e35ecec38197129e41a18d9e
+  observed_on: '2026-10-21'
+  method: direct-user-followup; five shared-service suffixes from the comparison,
+    not an official dependency or service-validation claim
 - id: net-coffee-coverage-request
   kind: user-instruction
   path: sources/evidence/net-coffee-coverage-request-2026-10-15.json

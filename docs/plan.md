@@ -1,6 +1,7 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.33**；工作树更新日期：2026-10-19（Asia/Shanghai）。
+> 文档修订：**1.35**；工作树更新日期：2026-10-21（Asia/Shanghai）。
+> 用户已明确要求“发布”，当前准备 `v0.1.7`：为 Anthropic 添加 5 个共享服务后缀，身份为 `user-requested`，不冒称官方依赖。正式制品须与已验收 `v0.1.7-rc.1` 字节一致；发布进度和完整清单见[本版发布记录](evidence/release-v0.1.7/README.md)。
 > `v0.1.6` 已按用户授权发布并设为 Latest，`dist/` 已更新：精确补入 `frontend-apps-multi-region.workos.com`，2026-10-19 核对的 OpenAI 官方主清单覆盖 31/31；`cdn.platform.openai.com` 复用 `openai.com` 后缀。`openai.org` 仅登记为未选候选，23 个 Voice IP 及 Anthropic 两份 SRS 不变。两次正式构建各 2,650 项原生检查、65 项回归、固定及 Latest 各 6 个资产下载、165 项空缓存请求检查均通过，7 个历史发行保持不变，见[发布报告与完整清单](evidence/release-v0.1.6/README.md)。
 > 主仓库：`YouM1225-1/sing-box-ai`。历史 `v0.1.5` 已按用户要求覆盖 Net.Coffee 网页除 NTP 外的域名、关键词和目的 IP 范围，语义与当时验收的 `v0.1.5-rc.1` 一致，见[补齐报告](net-coffee-claude-supplement-2026-10-15.md)。该版两次正式构建各 2,636 项原生检查、64 项回归、固定及 Latest 各 6 个资产下载和 152 项空缓存断言全部通过，见[历史发布记录](evidence/release-v0.1.5/README.md)；这些历史结果不代替 v0.1.6 验证。
 > 既有 `v0.1.4` 发布记录：两次正式构建各 2,252 项原生检查、56 项回归、固定及 Latest 各 6 个下载资产、39 项本机空缓存断言通过，详见[发布证据](evidence/release-v0.1.4/README.md)。这些历史结果不充作本版验证。
@@ -62,6 +63,8 @@
 ### 2.2 匹配与输出结构
 
 `dist/` 仅存通过静态制品发布门槛的三个发行 SRS；当前本地正式批次为 `v0.1.6`，对应完整批次在 `artifacts/v0.1.6/`，发布与下载结果见[本轮发布证据](evidence/release-v0.1.6/README.md)。各旧正式批次及 `artifacts/v0.1.3-rc.1/`、 `artifacts/v0.1.2-rc.1/`、`artifacts/v0.1.1-rc.1/`、`artifacts/v0.1.0-rc.2/` 候选保持原始身份。
+
+2026-10-21 新增隔离候选 `artifacts/v0.1.7-rc.1/`，Anthropic 后缀为 21 项；其 OpenAI、Anthropic 来源 IP 制品与 v0.1.6 字节一致。用户随后授权发布 `v0.1.7`，旧候选和旧正式归档保留；正式构建与下载结果单独记录。
 
 三个输出分别固定为 **source JSON version 2、恰好一条非 invert 的 default rule、binary v2**。目的制品使用 `domain`、`domain_suffix`、`domain_regex`、`ip_cidr`；`v0.1.5-rc.1` 对明确用户指令新增 `domain_keyword`。来源制品只用 `source_ip_cidr`。禁止空规则、未知字段和未经审阅的 logical 结构。
 
@@ -297,7 +300,7 @@ OpenAI Voice 是用途明确的客户端目的地址数据；OpenAI 爬虫/代�
 | `api.statsig.com`、`statsigapi.net`、`events.statsigapi.net`、`featuregates.org`、`prodregistryv2.org`、`featureassets.org` 及旧 `.statsig.com` | 当前 OpenAI 主清单未列；部分主机另有旧仓库维护者观察记录。`events.statsigapi.net`、`statsigapi.net`、`featureassets.org`、`prodregistryv2.org` 已登记 pending；其余三项仅为待审阅发现线索，不在原有17条 registry 中 | 当前官方明确列出，或对应产品自然会话的请求与功能证据；供应商域名文档本身不证明 ChatGPT 使用 |
 | `openai.org`（后缀） | 2026-10-17 被 v2fly 社区收录，MetaCubeX/Loyalsoldier 继承；当前官方网络清单未列，产品用途未确认；本轮登记 pending 并保持未选中，固定基线不变 | 官方用途说明或对应产品的实际依赖证据；社区合并与证书/WHOIS 记录不足以单独认定功能必需 |
 | `client-api.arkoselabs.com`、`openai-api.arkoselabs.com` | 旧仓库有；rc.1 和新审阅集合均未含，不能称 rc.1→新批次退出 | 当前认证链路的精确主机及功能证据；不扩整个 Arkose |
-| `cdn.growthbook.io` | 供应商 SDK 现行端点，当前 Claude 使用仍待证实；已覆盖 `api.anthropic.com` 不证明所有 GrowthBook 用途均不存在 | 对应产品当前使用此外部 CDN 的证据；不能把 GrowthBook 一概视为无用遥测 |
+| `cdn.growthbook.io` | 历史 pending 保留且未选；v0.1.7-rc.1 按用户要求以 `growthbook.io` 后缀另行覆盖。当前 Claude 使用仍待证实 | 若要认定官方/运行必需，仍需对应产品使用证据；用户指定覆盖不改变历史证据身份 |
 | `cdn.usefathom.com` | 供应商当前统计脚本主机，当前 Claude 使用待证实 | 明确产品用途及保留必要性；仅观察到请求不足以证明功能必需 |
 | `o33249.ingest.us.sentry.io` | 旧 OpenAI 候选；不是 `o1158394.ingest.us.sentry.io` | 当前 OpenAI 官方列出或适用的产品证据 |
 | `openai-prod.azureedge.net`、`openaicom-api.azureedge.net` | 2026-09-28 两路 DNS 观测均 NXDOMAIN，标记历史候选而非永久退役 | 当前产品用途、恢复解析及受控范围证据 |
@@ -327,6 +330,8 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 指令原文及准确规则清单保存在[覆盖指令](../sources/evidence/net-coffee-coverage-request-2026-10-15.json)，由 upstream registry 固定 SHA-256。校验限制为 Anthropic 目的集合、`claude-website-coverage` 产品及已列 type/value，拒绝跨产品套用、来源方向转换、虚构运行验证、未授权关键词和默认路由。这是持久配置选择，不借用或续期旧的兼容验证证据；旧官方和精确网络验证继续运行。
 
 本轮查询的 AS399358 公告前缀均包含于这两个较大目的范围，记录在[观测元数据](../sources/network/as399358-announced-prefixes-2026-10-15.metadata.json)。静态 SRS 不声称提供动态 ASN 数据库或覆盖未来公告变化。生成器可去掉被后缀、关键词或较大网段完整包含的重复项；原来源与用途记录保留在 manifest。
+
+2026-10-21，用户在 one-exit 固定提交对比后要求“补充”。据上一轮明确列出的五项差异，新增 `growthbook.io`、`hcaptcha.com`、`stripe.network`、`stripecdn.com`、`segment.io` 五个根域及全部子域后缀，独立绑定[本次覆盖指令](../sources/evidence/one-exit-coverage-request-2026-10-21.json)。仍使用 `user-requested`、`claude-website-coverage`，共享依赖标记为 true，服务验证与消费者验证均为 false。其他部分覆盖的关键词/后缀、Google/Persona/Webshare、IP 和 IPv6 消费端动作不随这五项扩大。
 
 <a id="consumer"></a>
 ## 5. N100 接入与实际分流
@@ -449,7 +454,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-每个历史版本的发布授权与静态语义审阅仅批准该版的三个指定摘要，不能沿用于新版本。本轮 `release-review.json` 已绑定 `0.1.6` 的用户授权、三个新批次摘要和新语义审阅；旧批准及各候选 `publication_approval=null` 保留历史身份。本次官方网络主清单已按 2026-10-19 取得的英文正文核对，未完成登录业务或产品全量依赖验收，`openai.org` 的用途疑问另列为未选中候选。
+每个历史版本的发布授权与静态语义审阅仅批准该版的三个指定摘要，不能沿用于新版本。本轮 `release-review.json` 绑定 `0.1.7` 的新用户授权、三份已验收候选摘要和新语义审阅；旧批准及各候选 `publication_approval=null` 保留历史身份。OpenAI 官方网络清单的最近来源审阅仍是 2026-10-19；本次只补五个用户指定 Anthropic 后缀，不冒称新增官方网络证据、登录业务或产品全量依赖验收。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 

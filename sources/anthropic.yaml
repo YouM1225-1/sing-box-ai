@@ -512,3 +512,63 @@
     reference: net-coffee-coverage-request
   reason: Explicit maintainer request to cover the referenced website, excluding NTP;
     not an official service requirement
+- type: domain_suffix
+  value: growthbook.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: hcaptcha.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: stripe.network
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: stripecdn.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: segment.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
