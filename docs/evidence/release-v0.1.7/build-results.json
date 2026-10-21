@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "source_commit": "b7b7c53ed4124bfa2abea9e79c771c8dfda728da",
+  "builds": [
+    {
+      "label": "release",
+      "directory": "artifacts/v0.1.7",
+      "mode": "release",
+      "release_gate_checked": true,
+      "validation": {
+        "baseline_complete": true,
+        "cases": 2720,
+        "clean_rebuild_equal": true,
+        "failures": 0,
+        "level": "local-source-binary-and-isolated-check",
+        "native_result_sha256": "85312c1a852a50e5cdfc8dbc1377f15a9f28cf609a5051b35f2e3342e88b204a",
+        "test_harness": {
+          "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+          "go_version": "go1.27.1",
+          "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+          "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+          "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+        },
+        "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+      }
+    },
+    {
+      "label": "release-rebuild",
+      "directory": "build/release-v0.1.7-rebuild",
+      "mode": "release",
+      "release_gate_checked": true,
+      "validation": {
+        "baseline_complete": true,
+        "cases": 2720,
+        "clean_rebuild_equal": true,
+        "failures": 0,
+        "level": "local-source-binary-and-isolated-check",
+        "native_result_sha256": "85312c1a852a50e5cdfc8dbc1377f15a9f28cf609a5051b35f2e3342e88b204a",
+        "test_harness": {
+          "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+          "go_version": "go1.27.1",
+          "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+          "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+          "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+        },
+        "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+      }
+    },
+    {
+      "label": "candidate-fixture",
+      "directory": "build/release-v0.1.7-candidate-fixture",
+      "mode": "candidate",
+      "release_gate_checked": false,
+      "validation": {
+        "baseline_complete": true,
+        "cases": 2720,
+        "clean_rebuild_equal": true,
+        "failures": 0,
+        "level": "local-source-binary-and-isolated-check",
+        "native_result_sha256": "85312c1a852a50e5cdfc8dbc1377f15a9f28cf609a5051b35f2e3342e88b204a",
+        "test_harness": {
+          "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+          "go_version": "go1.27.1",
+          "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+          "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+          "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+        },
+        "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+      }
+    }
+  ],
+  "three_product_pairs_equal_to_reviewed_candidate": true,
+  "two_release_manifests_equal": true,
+  "unit_tests": {
+    "tests": 66,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "log": "unit-tests.log"
+  },
+  "artifacts": [
+    {
+      "binary_version": 2,
+      "bytes": 800,
+      "direction": "destination",
+      "path": "openai.srs",
+      "sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+      "source_path": "openai.json",
+      "source_sha256": "88191331af4cf6fe2aec8d8d11900384ca47fe03b0dd2c110ca5450551535403"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 529,
+      "direction": "destination",
+      "path": "anthropic.srs",
+      "sha256": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+      "source_path": "anthropic.json",
+      "source_sha256": "8f4feeb1b04f8b0714ff7bba9b0c3590cf13e3be4608e77fe8fe1fc8ef9247ae"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 36,
+      "direction": "source",
+      "path": "anthropic-ip.srs",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "source_path": "anthropic-ip.json",
+      "source_sha256": "a87022d3e27ab28f9b4617eb633479b7f17bbf121fa3aa1542a96f4ad0b2d9a5"
+    }
+  ]
+}
