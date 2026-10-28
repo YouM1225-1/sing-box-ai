@@ -1,0 +1,61 @@
+{
+  "version": "0.1.8",
+  "published": true,
+  "latest": true,
+  "release_id": 426270523,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.8",
+  "published_at": "2026-10-28T04:45:09Z",
+  "source_commit": "b041dc5ad626967c5e115710bf8aee6fb96cd272",
+  "tag_commit": "e8b43a0397f8e6a5df835ab7068693822cfd7c65",
+  "assets": [
+    {
+      "name": "sing-box-ai-v0.1.8.zip",
+      "bytes": 2271663,
+      "sha256": "64467dccea4562d0a4c0910d79fc09afff1785e33f60ebe42dadff79b996ec43"
+    },
+    {
+      "name": "openai.srs",
+      "bytes": 802,
+      "sha256": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55"
+    },
+    {
+      "name": "anthropic-ip.srs",
+      "bytes": 36,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 108298,
+      "sha256": "9c5c2720e16523fc93dcead335e084442e9eaafa293a97c251c30ccafa3fbb44"
+    },
+    {
+      "name": "anthropic.srs",
+      "bytes": 529,
+      "sha256": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 409,
+      "sha256": "f09dce414534b355b3e007ea8f8ff09d522765b441a3c7dac3e8e908c8752d94"
+    }
+  ],
+  "native_cases_per_build": 2734,
+  "release_builds": 2,
+  "unit_tests": 73,
+  "fixed_downloads_verified": 6,
+  "latest_downloads_verified": 6,
+  "remote_request_checks": 392,
+  "history": {
+    "passed": true,
+    "preserved_releases": 9,
+    "preserved_tag_refs": 12
+  },
+  "unchanged_artifact_exception": {
+    "path": "sources/evidence/release-v0.1.8-unchanged-exception.json",
+    "sha256": "d5fff7f007afe363cc7b7bb6456cba167de8c834d61e47341c8b929967c331dd"
+  },
+  "old_claude_dates_preserved": true,
+  "runtime_review_renewed": false,
+  "device_refresh_verified": false,
+  "deployment_status": "pending"
+}
