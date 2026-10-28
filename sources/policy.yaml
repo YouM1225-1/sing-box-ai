@@ -23,7 +23,7 @@ enabled_optional:
 - js.intercomcdn.com
 - downloads.intercomcdn.com
 - static.intercomassets.com
-review_as_of: '2026-10-21'
+review_as_of: '2026-10-28'
 approved_regex:
   ^[^.]+-review\.googlesource\.com$:
     reason: 'Optional Gerrit host: one label ending in -review; does not match other googlesource hosts.'
@@ -46,3 +46,7 @@ initial_confirmations:
 - reference: sources/evidence/anthropic-network-coverage-2026-10-09.json
   sha256: 703ffedfa0b9d3128c26da15d254e54a2beaf10595a7da41e5b2d5ff2cb13b4d
   approved_on: '2026-10-09'
+
+unchanged_release_exception:
+  path: sources/evidence/release-v0.1.8-unchanged-exception.json
+  sha256: d5fff7f007afe363cc7b7bb6456cba167de8c834d61e47341c8b929967c331dd

@@ -23,6 +23,9 @@ class PublicationTests(unittest.TestCase):
             shutil.copytree(ROOT / folder, self.root / folder, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
         for name in ("VERSION", "tools.lock.json", "requirements.txt"):
             shutil.copyfile(ROOT / name, self.root / name)
+        # Synthetic publication clocks below refer to the v0.1.7 input period.
+        prior = load(ROOT / "artifacts/v0.1.7/manifest.json")["provenance"]["openai"]
+        write_json(self.root / "sources/openai.yaml", [{k: v for k, v in r.items() if k != "origin"} for r in prior if r["origin"] == "supplement"])
         (self.root / ".tools").mkdir()
         (self.root / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
         self.version = (self.root / "VERSION").read_text().strip()

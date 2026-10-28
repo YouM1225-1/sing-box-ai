@@ -1,0 +1,20 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55"
+  },
+  "authorized_on": "2026-10-28",
+  "deployment_authorized": false,
+  "instruction": "发布；批准本次例外，保留旧日期和证据",
+  "instruction_context": "Publish the poteto.com OpenAI addition as v0.1.8 and update Latest. User explicitly approved carrying forward byte-identical Anthropic artifacts with the existing review dates/evidence.",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Only add poteto.com apex and subdomains to OpenAI; preserve historical releases and tags.",
+    "Keep both Anthropic SRS byte-identical to v0.1.7 and retain original compatibility dates and evidence; the version-bound exception is not new runtime validation.",
+    "Verify reproducible committed-input builds, fixed downloads and isolated cold-cache loading before Latest; do not modify user devices or claim consumer deployment."
+  ],
+  "project_version": "0.1.8",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

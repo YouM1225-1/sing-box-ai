@@ -9,7 +9,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from common import Invalid, sha, write_json
+from common import Invalid, canonical, sha, write_json
 from validate import validate
 
 
@@ -65,7 +65,8 @@ class ArtifactAdversaries(unittest.TestCase):
         manifest = json.loads(path.read_text())
         manifest.update(build_mode="release", publication_approval={"scope": "artifact-publication", "level": "forged"})
         write_json(path, manifest)
-        with patch("validate.release_gate", return_value={"scope": "artifact-publication", "level": "artifact-only"}) as gate:
+        # Isolate publication-claim comparison from time-sensitive release prerequisites.
+        with patch("validate.canonical", side_effect=lambda root, mode, as_of: canonical(root, "candidate", as_of)), patch("validate.release_gate", return_value={"scope": "artifact-publication", "level": "artifact-only"}) as gate:
             with self.assertRaisesRegex(Invalid, "Manifest publication approval mismatch"):
                 validate(self.batch)
         gate.assert_called_once()

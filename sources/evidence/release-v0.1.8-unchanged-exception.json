@@ -1,0 +1,66 @@
+{
+  "approved_on": "2026-10-28",
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4"
+  },
+  "confirmed_by": "maintainer",
+  "deployment_authorized": false,
+  "entries": [
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+        },
+        {
+          "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/evidence/claude-challenge-confirmation.json"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "last_verified": "2026-09-27",
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+      "review_after": "2026-10-27",
+      "review_status": "approved",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-anthropic"
+        }
+      ],
+      "status": "compatibility-critical",
+      "type": "domain",
+      "value": "challenges.cloudflare.com"
+    }
+  ],
+  "instruction": "批准本次例外，保留旧日期和证据",
+  "instruction_context": "User explicitly approved carrying the unchanged v0.1.7 Anthropic binaries into v0.1.8 while adding only poteto.com to OpenAI, despite the expired Claude Challenge review. Preserve all original review dates and evidence.",
+  "kind": "operator-exception",
+  "project_version": "0.1.8",
+  "runtime_validation": false,
+  "schema": 1,
+  "scope": "unchanged-artifact-publication",
+  "source_hashes": {
+    "sources/anthropic-ip.yaml": "caedd8a815eb861cddc52b18dbbb8fcdf65bd51f03f5ef82a1f863bb4c05f486",
+    "sources/anthropic.yaml": "bc3e96e65f6a62ce2f0c0335bdbd7a919f1e9f1dc1afc916e789afdfa57ecf59"
+  }
+}

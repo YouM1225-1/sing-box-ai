@@ -393,3 +393,11 @@ archives:
   observed_on: '2026-10-19'
   method: reviewed-community-discovery; endpoint and discussion facts only, not runtime approval
   commit: 5b1678867da0afc35854f481c1749a39048952df
+
+- id: poteto-coverage-request
+  kind: user-instruction
+  path: sources/evidence/poteto-coverage-request-2026-10-28.json
+  url: https://poteto.com/
+  sha256: 7dd7e0d19eb85ac9ace42cbff3f26a3f931ecade66bed44399407021303ce35a
+  observed_on: '2026-10-28'
+  method: direct-user-instruction-with-screenshot; requested OpenAI rule classification

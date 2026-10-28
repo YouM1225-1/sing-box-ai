@@ -323,7 +323,11 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 
 30 天是项目维护窗口；到期 UTC 当日 00:00 阻断新发布，不能只顺延日期。条目删除/替换须绑定审阅理由及受影响测试；关键兼容项还需替代覆盖或移除后的核心流程证据。不能通过删除、降级或跨产品套用批准消除门槛；旧运行批次不因日历变化自动删除。
 
+2026-10-28 用户明确批准 v0.1.8 的一次例外：“批准本次例外，保留旧日期和证据”。[例外记录](../sources/evidence/release-v0.1.8-unchanged-exception.json)由 policy 固定摘要，只允许在授权日为 v0.1.8 沿用与 v0.1.7 字节一致的两份 Anthropic 制品；绑定原始条目、来源文件摘要及制品摘要。旧 `last_verified`、`review_after` 与证据保持不变，不标记为新的运行验证。其他版本、日期、条目、来源变化或制品变化仍由原门禁拒绝。
+
 ### 4.1 明确用户要求的网站覆盖
+
+2026-10-28 用户要求将截图中的 `poteto.com` 加入 OpenAI。增加根域及全部子域，身份为 `user-requested`、产品为 `openai-website-coverage`，通过[本次指令记录](../sources/evidence/poteto-coverage-request-2026-10-28.json)固定范围。相同来源校验现同时支持 OpenAI 与 Anthropic，并保持各自产品和制品绑定。
 
 2026-10-15 用户要求“除了ntp外 添加其他域名和ip 保证覆盖完整”。本次新增 14 条 `user-requested` 补充，覆盖网页各格式的并集，包括纯列表的后缀含义、`datadog`／`sentry`／`sift` 关键词，以及目的 `160.79.104.0/21`、`2607:6bc0::/32`。已有核心后缀完整继承，不加 NTP。
 

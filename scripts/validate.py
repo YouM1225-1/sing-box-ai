@@ -11,7 +11,7 @@ import shutil
 import subprocess
 import tempfile
 
-from common import ARTIFACTS, OLD_IPS, ROOT, archives, canonical, compiler, date, input_files, load, local_path, need, run, semantic_key, sha, source_document, today, write_json
+from common import ARTIFACTS, OLD_IPS, ROOT, archives, canonical, compiler, date, input_files, load, local_path, need, run, semantic_key, sha, source_document, today, unchanged_release_exception, write_json
 
 
 def reference_match(rows, domain="", source="", destination=""):
@@ -139,6 +139,9 @@ def release_gate(root, manifest):
     artifact_hashes = {a["path"]: a["sha256"] for a in manifest["artifacts"]}
     need(len(manifest["artifacts"]) == 3 and set(artifact_hashes) == {name + ".srs" for name in ARTIFACTS}, "Publication requires all three artifacts")
     need(review.get("artifacts") == artifact_hashes, "Review is for a different artifact batch")
+    exception = unchanged_release_exception(root, today())
+    if exception:
+        need(all(artifact_hashes.get(name) == digest for name, digest in exception["proof"]["artifacts"].items()), "Release exception requires unchanged artifact bytes")
     records = {}
     bindings = dict(manifest["inputs"])
     for field in ("operator_authorization", "semantic_diff_review"):
@@ -169,7 +172,10 @@ def release_gate(root, manifest):
     for relative, expected_hash in bindings.items():
         committed = subprocess.run(["git", "show", f"{manifest['source_commit']}:{relative}"], cwd=root, capture_output=True)
         need(committed.returncode == 0 and hashlib.sha256(committed.stdout).hexdigest() == expected_hash, f"Input is not bound to the recorded source commit: {relative}")
-    return {"scope": "artifact-publication", "level": "artifact-only", "project_version": version, "artifacts": artifact_hashes, "authorized_on": authorization["authorized_on"], "operator_authorization": review["operator_authorization"], "semantic_diff_review": review["semantic_diff_review"], "deployment_status": "pending"}
+    approval = {"scope": "artifact-publication", "level": "artifact-only", "project_version": version, "artifacts": artifact_hashes, "authorized_on": authorization["authorized_on"], "operator_authorization": review["operator_authorization"], "semantic_diff_review": review["semantic_diff_review"], "deployment_status": "pending"}
+    if exception:
+        approval["unchanged_artifact_exception"] = exception["reference"]
+    return approval
 
 
 def consumer_integration_gate(root, manifest, review):

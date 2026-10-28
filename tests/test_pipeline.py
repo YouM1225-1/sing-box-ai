@@ -31,6 +31,9 @@ class PolicyTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         shutil.copytree(ROOT / "sources", self.root / "sources")
+        # Keep the OpenAI inputs aligned with the historical release dates below.
+        prior = load(ROOT / "artifacts/v0.1.7/manifest.json")["provenance"]["openai"]
+        write_json(self.root / "sources/openai.yaml", [{k: v for k, v in r.items() if k != "origin"} for r in prior if r["origin"] == "supplement"])
         shutil.copyfile(ROOT / "tools.lock.json", self.root / "tools.lock.json")
         (self.root / ".tools").mkdir()
         (self.root / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")

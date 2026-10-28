@@ -1,0 +1,46 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55"
+  },
+  "comparison": {
+    "anthropic": {},
+    "anthropic-ip": {},
+    "openai": {
+      "domain_suffix": {
+        "added": [
+          "poteto.com"
+        ],
+        "removed": []
+      }
+    }
+  },
+  "conclusion": "Approve exactly the reviewed poteto.com OpenAI addition. Both Anthropic SRS remain byte-identical to v0.1.7. The explicitly authorized exception preserves the expired Challenge dates and evidence and makes no new service-validation claim. Publication remains subject to committed inputs, native checks and reproducible builds.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.8/semantic-diff.json",
+      "sha256": "de6f3acf3ef1c2e26c680ae706e714fbe9ed3fcaf60ed015e0a22c9625ffb243"
+    },
+    {
+      "path": "artifacts/v0.1.8-rc.1/manifest.json",
+      "sha256": "19bc5847af7a5f0ac17fabc3a0716e797e2fcc25d30dfdda2be90a5cbbad9bdf"
+    },
+    {
+      "path": "sources/evidence/poteto-coverage-request-2026-10-28.json",
+      "sha256": "7dd7e0d19eb85ac9ace42cbff3f26a3f931ecade66bed44399407021303ce35a"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.8-unchanged-exception.json",
+      "sha256": "d5fff7f007afe363cc7b7bb6456cba167de8c834d61e47341c8b929967c331dd"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.8",
+  "reviewed_on": "2026-10-28",
+  "reviewer": "Codex primary review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

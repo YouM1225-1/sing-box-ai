@@ -29,6 +29,9 @@ class RequestedCoverageTests(unittest.TestCase):
         self.addCleanup(scratch.cleanup)
         self.root = Path(scratch.name)
         shutil.copytree(ROOT / "sources", self.root / "sources")
+        # These historical release checks predate the new OpenAI instruction.
+        prior = load(ROOT / "artifacts/v0.1.7/manifest.json")["provenance"]["openai"]
+        self.save("sources/openai.yaml", [{k: v for k, v in r.items() if k != "origin"} for r in prior if r["origin"] == "supplement"])
         shutil.copyfile(ROOT / "tools.lock.json", self.root / "tools.lock.json")
         (self.root / ".tools").mkdir()
         (self.root / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
@@ -39,6 +42,28 @@ class RequestedCoverageTests(unittest.TestCase):
 
     def validate(self):
         return canonical(self.root, "release", dt.date(2026, 10, 21))[0]
+
+    def test_poteto_adds_only_requested_openai_suffix(self):
+        shutil.copyfile(ROOT / "sources/openai.yaml", self.root / "sources/openai.yaml")
+        selected = canonical(self.root, "candidate", dt.date(2026, 10, 28))[0]
+        for artifact, rows in selected.items():
+            expected = load(ROOT / "artifacts/v0.1.7" / (artifact + ".json"))
+            if artifact == "openai":
+                expected["rules"][0]["domain_suffix"].append("poteto.com")
+            self.assertEqual(semantic_key(source_document(rows)), semantic_key(expected), artifact)
+        for host, want in (("poteto.com", True), ("www.poteto.com", True), ("a.b.poteto.com", True), ("notpoteto.com", False), ("poteto.com.invalid", False)):
+            self.assertEqual(reference_match(selected["openai"], domain=host), want, host)
+            self.assertFalse(reference_match(selected["anthropic"], domain=host), host)
+
+    def test_openai_instruction_cannot_authorize_another_scope(self):
+        original = load(ROOT / "sources/openai.yaml")
+        for changes in ({"value": "example.com"}, {"product": ["claude-website-coverage"]}, {"direction": "source"}):
+            with self.subTest(changes=changes):
+                rows = copy.deepcopy(original)
+                next(r for r in rows if r["value"] == "poteto.com").update(changes)
+                self.save("sources/openai.yaml", rows)
+                with self.assertRaises(Invalid):
+                    canonical(self.root, "candidate", dt.date(2026, 10, 28))
 
     def test_complete_website_union_and_previous_release_are_preserved(self):
         selected = self.validate()

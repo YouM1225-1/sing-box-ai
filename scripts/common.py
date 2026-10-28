@@ -246,6 +246,27 @@ def baseline_inputs(root, registry):
     return rows, metadata
 
 
+def unchanged_release_exception(root, as_of):
+    """One dated, version-bound permission to carry unchanged artifacts forward."""
+    reference = load(root / "sources/policy.yaml").get("unchanged_release_exception")
+    if reference is None or not (root / "VERSION").is_file():
+        return None
+    path = local_path(root, reference["path"])
+    need(sha(path) == reference.get("sha256"), "Release exception hash mismatch")
+    proof = load(path)
+    if proof.get("project_version") != (root / "VERSION").read_text().strip() or proof.get("approved_on") != str(as_of):
+        return None
+    need(proof.get("schema") == 1 and proof.get("kind") == "operator-exception" and proof.get("scope") == "unchanged-artifact-publication", "Invalid release exception scope")
+    need(proof.get("confirmed_by") == "maintainer" and proof.get("instruction"), "Release exception lacks user instruction")
+    need(proof.get("runtime_validation") is False and proof.get("deployment_authorized") is False, "Release exception cannot claim runtime validation")
+    need(set(proof.get("source_hashes", {})) == {"sources/anthropic.yaml", "sources/anthropic-ip.yaml"}, "Release exception source scope mismatch")
+    for relative, digest in proof["source_hashes"].items():
+        need(sha(local_path(root, relative)) == digest, "Release exception requires unchanged sources")
+    need(set(proof.get("artifacts", {})) == {"anthropic.srs", "anthropic-ip.srs"} and all(re.fullmatch(r"[0-9a-f]{64}", h) for h in proof["artifacts"].values()), "Release exception artifact scope mismatch")
+    need(isinstance(proof.get("entries"), list) and len(proof["entries"]) == 1, "Release exception entry scope mismatch")
+    return {"reference": reference, "proof": proof}
+
+
 def review_entry(entry, mode, as_of, root):
     need(REVIEW_FIELDS <= entry.keys(), "Missing compatibility review fields")
     state = entry["review_status"]
@@ -287,7 +308,11 @@ def review_entry(entry, mode, as_of, root):
     if state == "approved":
         need(set(entry["product"]) <= verified_products.get(last, set()), "History alone cannot approve compatibility; need product-specific validation/confirmation at last_verified")
     if mode == "release":
-        need(state == "approved" and last is not None and as_of < after, f"Unapproved/expired compatibility: {entry['value']}")
+        valid = state == "approved" and last is not None and as_of < after
+        if not valid and state == "approved" and last is not None:
+            exception = unchanged_release_exception(root, as_of)
+            valid = exception is not None and entry in exception["proof"]["entries"]
+        need(valid, f"Unapproved/expired compatibility: {entry['value']}")
 
 
 def reviewed_network(entry, artifact, registry, root):
@@ -326,7 +351,8 @@ def reviewed_network(entry, artifact, registry, root):
 
 def requested_coverage(entry, artifact, registry, root, as_of):
     """Honor an explicit scope expansion without claiming service validation."""
-    need(artifact == "anthropic" and entry["direction"] == "destination" and entry["product"] == ["claude-website-coverage"], "Requested coverage scope mismatch")
+    products = {"openai": ["openai-website-coverage"], "anthropic": ["claude-website-coverage"]}
+    need(artifact in products and entry["direction"] == "destination" and entry["product"] == products[artifact], "Requested coverage scope mismatch")
     need(not (set(entry) & REVIEW_FIELDS) and not entry.get("features"), "Requested coverage is not a compatibility/runtime review")
     need(len(entry["sources"]) == 1 and entry["sources"][0]["kind"] == "user-instruction", "Requested coverage needs one pinned user instruction")
     item = registry[entry["sources"][0]["reference"]]

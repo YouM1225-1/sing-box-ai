@@ -1,0 +1,12 @@
+{
+  "openai": {
+    "domain_suffix": {
+      "added": [
+        "poteto.com"
+      ],
+      "removed": []
+    }
+  },
+  "anthropic": {},
+  "anthropic-ip": {}
+}

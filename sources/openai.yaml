@@ -1,3 +1,15 @@
+- value: poteto.com
+  type: domain_suffix
+  product:
+  - openai-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: poteto-coverage-request
+  reason: Maintainer-requested root and subdomain coverage from the supplied screenshot;
+    not an official dependency or verified runtime requirement
 - value: .ct.sendgrid.net
   type: domain_suffix
   product: &id001

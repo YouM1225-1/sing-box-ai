@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "kind": "user-instruction",
+  "scope": "website-coverage",
+  "confirmed_by": "maintainer",
+  "approved_on": "2026-10-28",
+  "statement": "把这个域名加入openai中",
+  "website_url": "https://poteto.com/",
+  "artifact": "openai",
+  "direction": "destination",
+  "products": ["openai-website-coverage"],
+  "excluded": ["ntp"],
+  "rules": [{"type": "domain_suffix", "value": "poteto.com"}],
+  "interpretation": "The supplied screenshot reads poteto.com. Add its apex and subdomains to the OpenAI rule set using the existing website-coverage convention. This records the user's requested classification, not verified OpenAI ownership, an official service requirement, publication approval or consumer validation.",
+  "service_usage_verified": false,
+  "consumer_validation": false
+}

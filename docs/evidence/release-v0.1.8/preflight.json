@@ -1,0 +1,28 @@
+{
+  "status": "blocked",
+  "check": "current-date release canonical validation",
+  "error": "Unapproved/expired compatibility: challenges.cloudflare.com",
+  "expired_rule": "challenges.cloudflare.com",
+  "approved_on": "2026-09-27",
+  "review_after": "2026-10-27",
+  "new_runtime_validation": false,
+  "candidate_validation": {
+    "baseline_complete": true,
+    "cases": 2734,
+    "clean_rebuild_equal": true,
+    "failures": 0,
+    "level": "local-source-binary-and-isolated-check",
+    "native_result_sha256": "db6d15a6246f40ac94c3e4aa3ae3ebeeb1660e11f31e30bf4902f8f548473194",
+    "test_harness": {
+      "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+      "go_version": "go1.27.1",
+      "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+      "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+      "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+    },
+    "upstream_crosscheck": "Native SRS baseline and DLC provenance equivalent"
+  },
+  "publication_authorized": true,
+  "unchanged_artifact_exception": "awaiting-user-response",
+  "remote_modified": false
+}
