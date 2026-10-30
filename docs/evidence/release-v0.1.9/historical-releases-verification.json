@@ -1,0 +1,9 @@
+{
+  "historical_releases_checked": 10,
+  "historical_release_ids_tags_targets_assets_unchanged": true,
+  "historical_tag_refs_checked": 10,
+  "historical_tag_refs_unchanged": true,
+  "new_tag": "v0.1.9",
+  "new_tag_commit": "c9da2d3e6081deb811f647387c0e8100e2cc3ad0",
+  "new_release_count": 11
+}

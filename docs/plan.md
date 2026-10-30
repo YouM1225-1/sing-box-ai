@@ -1,7 +1,7 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.37**；工作树更新日期：2026-10-30（Asia/Shanghai）。
-> `v0.1.9` 正式批次已准备：仅给 Anthropic 新增 Persona 身份验证依赖 `withpersona.com` 根域及全部子域。两次正式构建各 2,748 项检查通过；旧 Challenge 复核日期及证据保持原样，按本版限定例外发布。详见[本版发布记录](evidence/release-v0.1.9/README.md)。
+> `v0.1.9` 已发布并设为 Latest：仅给 Anthropic 新增 Persona 身份验证依赖 `withpersona.com` 根域及全部子域。两次正式构建各 2,748 项检查、79 项回归、固定/Latest 各 6 个下载资产及共 428 项空缓存请求检查通过；旧 Challenge 复核日期及证据保持原样，按本版限定例外发布。详见[本版发布记录](evidence/release-v0.1.9/README.md)。
 
 > 历史 `v0.1.8` 已发布并曾设为 Latest：仅给 OpenAI 新增 `poteto.com` 根域及全部子域。两次正式构建各 2,734 项检查、73 项回归、固定/Latest 各 6 个下载资产及共 392 项空缓存请求检查通过。用户明确批准沿用未变的 Claude 制品，保留旧复核日期及证据；详见[本版发布记录](evidence/release-v0.1.8/README.md)。
 
@@ -471,9 +471,9 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.9 当前发布进度
+### v0.1.9 当前发布结果
 
-唯一增量为 Anthropic 的 `withpersona.com` 后缀，用于 Claude 的 Persona 身份验证。正式构建通过，发布验收结果见[本版记录](evidence/release-v0.1.9/README.md)。
+唯一增量为 Anthropic 的 `withpersona.com` 后缀，用于 Claude 的 Persona 身份验证。已发布并设为 Latest：两次正式构建各 2,748 项检查、79 项完整回归、固定及 Latest 各 6 个下载资产、各 214 项空缓存请求检查全部通过。10 个历史版本的已记录信息及 10 个旧标签引用保持一致；真实 Challenge 复验与设备验收仍待完成。完整清单、摘要和回执见[本版记录](evidence/release-v0.1.9/README.md)。
 
 ### v0.1.8 历史发布结果
 

@@ -1,0 +1,62 @@
+{
+  "project_version": "0.1.9",
+  "publication_status": "published-latest",
+  "verified_at": "2026-10-30T06:00:16.477414+00:00",
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.9",
+  "release_id": 428698657,
+  "published_at": "2026-10-30T05:57:52Z",
+  "source_commit": "92822cf877ba3c011d65fb7397d43169d8d868dc",
+  "tag_commit": "c9da2d3e6081deb811f647387c0e8100e2cc3ad0",
+  "release_body_empty": true,
+  "assets": {
+    "SHA256SUMS": {
+      "sha256": "b39133b8b9ff906e4e9bdf04804b0db780e25a392aebe68a42203326bd4d3aaf",
+      "bytes": 409
+    },
+    "anthropic-ip.srs": {
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "bytes": 36
+    },
+    "anthropic.srs": {
+      "sha256": "13112b79d21073c4478f0e6a902acc7ba6dd7df9efe2c6749d9844afe97256c1",
+      "bytes": 535
+    },
+    "manifest.json": {
+      "sha256": "4c6a7a14789eadab9d6e2741e3e46ea757084c32b83818a31d7f9aaf4aa9bea2",
+      "bytes": 111139
+    },
+    "openai.srs": {
+      "sha256": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+      "bytes": 802
+    },
+    "sing-box-ai-v0.1.9.zip": {
+      "sha256": "5adc92e42ea7bd617669b7393ae1b78032631a1c32134ad0158dafb6a5ea3a01",
+      "bytes": 2476187
+    }
+  },
+  "fixed_downloads_verified": 6,
+  "latest_downloads_verified": 6,
+  "fixed_remote_requests": 214,
+  "latest_remote_requests": 214,
+  "cold_cache_verified": true,
+  "probe_processes_exited_zero": true,
+  "probe_listeners_closed": 4,
+  "historical_verification": {
+    "historical_releases_checked": 10,
+    "historical_release_ids_tags_targets_assets_unchanged": true,
+    "historical_tag_refs_checked": 10,
+    "historical_tag_refs_unchanged": true,
+    "new_tag": "v0.1.9",
+    "new_tag_commit": "c9da2d3e6081deb811f647387c0e8100e2cc3ad0",
+    "new_release_count": 11
+  },
+  "source_zip_matches_tag_and_manifest_inputs": true,
+  "unit_tests": 79,
+  "build_cases_each": 2748,
+  "formal_rebuild_files_identical": 9,
+  "runtime_validation": false,
+  "validated_consumers": [],
+  "integration_evidence": [],
+  "deployment_status": "pending",
+  "challenge_revalidation": "deferred; original dates and evidence preserved"
+}

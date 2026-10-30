@@ -24,7 +24,7 @@
     "anthropic.srs": "13112b79d21073c4478f0e6a902acc7ba6dd7df9efe2c6749d9844afe97256c1",
     "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
   },
-  "publication_status": "prepared",
+  "publication_status": "published-latest",
   "runtime_validation": false,
   "unit_tests": 79,
   "unit_tests_same_committed_inputs": true
