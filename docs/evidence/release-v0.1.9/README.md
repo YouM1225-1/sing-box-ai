@@ -29,6 +29,12 @@
 - 21 项专门检查通过：包括官方 11 个 Persona 域名、API/文件主机、多级子域、原有 Anthropic/Sift 对照及 3 个相似域名反例。[原始输出](persona-matches.json)
 - 最终 79 项完整回归全部通过，无跳过，见[测试日志](unit-tests-final.log)。新增 5 项检查验证旧条目保留例外的日期、版本、输入与制品边界；最终候选另通过 2,748 项原生检查，见[日志](final-candidate-validation.log)。历史 v0.1.7/v0.1.8 差异与例外测试使用固定的 v0.1.8 Anthropic 源输入，避免把新功能误当成旧版本差异；新增单独测试核对当前版本只增加 Persona 及域名边界。原有发布校验断言未放宽。
 
+## 正式构建
+
+输入提交为 `92822cf877ba3c011d65fb7397d43169d8d868dc`。两次独立 release 构建分别通过 2,748 项原生检查与 `--for-release` 发布门槛，全部 9 个批次文件逐字节一致。同一提交生成的 candidate 再通过 2,748 项检查和 79 项完整回归；三份 SRS、三份 JSON 与正式批次一致。首次校验的 Go 相对路径调用失败已改用绝对路径重跑通过，没有修改校验逻辑。
+
+[正式校验](release-validate.log) · [独立重建](release-rebuild-validate.log) · [同提交回归](unit-tests-release-fixture.log) · [构建汇总](build-results.json) · [完整正式批次](../../../artifacts/v0.1.9/manifest.json) · [批次校验和](../../../artifacts/v0.1.9/SHA256SUMS)。
+
 ## Challenge 记录与本次发布授权
 
 发布预检实际返回：`Unapproved/expired compatibility: challenges.cloudflare.com`。[预检结果](release-preflight.json)
@@ -39,4 +45,4 @@
 
 本次新增的[限定例外](../../../sources/evidence/release-v0.1.9-preserved-entry-exception.json)只允许 2026-10-30 的 v0.1.9 发布，绑定 v0.1.8 源输入、原 Challenge 条目完整内容、唯一 Persona 增量及本批全部制品摘要；其他版本、日期、源变更或制品变化不能借用它。旧例外与旧运行证据保持原样。[本次发布授权](../../../sources/evidence/release-v0.1.9-authorization.json) · [语义审阅](../../../sources/evidence/release-v0.1.9-review.json)。
 
-正式发布仍需完成：本批授权与语义审阅绑定、输入提交、两次正式构建及发布检查、草稿资产核对、非 Latest 公开后的固定下载与空缓存验证，随后切换 Latest 并复核。静态发布与真实设备上的验证成功分开记录。
+本批授权与语义审阅绑定、输入提交、两次正式构建及发布检查已完成。接下来完成草稿资产核对、非 Latest 公开后的固定下载与空缓存验证，随后切换 Latest 并复核。静态发布与真实设备上的验证成功分开记录。

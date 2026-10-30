@@ -1,21 +1,31 @@
 {
-  "candidate_cases": 2748,
+  "project_version": "0.1.9",
+  "source_commit": "92822cf877ba3c011d65fb7397d43169d8d868dc",
+  "build_mode": "release",
+  "release_gate_checked": true,
+  "build_cases": 2748,
   "rebuild_cases": 2748,
-  "unit_tests": 74,
-  "persona_checks": 21,
   "rebuild_files_identical": [
-    "manifest.json",
-    "openai.srs",
-    "openai.json",
-    "anthropic.srs",
-    "anthropic.json",
+    "anthropic-ip.json",
     "anthropic-ip.srs",
-    "anthropic-ip.json"
+    "anthropic.json",
+    "anthropic.srs",
+    "cases.json",
+    "manifest.json",
+    "matches.jsonl",
+    "openai.json",
+    "openai.srs"
   ],
+  "same_commit_candidate_cases": 2748,
+  "candidate_srs_and_json_equal_release": true,
+  "persona_checks": 21,
   "artifacts": {
     "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
     "anthropic.srs": "13112b79d21073c4478f0e6a902acc7ba6dd7df9efe2c6749d9844afe97256c1",
     "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
   },
-  "publication_status": "waiting-for-expired-challenge-decision"
+  "publication_status": "prepared",
+  "runtime_validation": false,
+  "unit_tests": 79,
+  "unit_tests_same_committed_inputs": true
 }

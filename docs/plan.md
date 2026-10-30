@@ -1,7 +1,9 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.36**；工作树更新日期：2026-10-21（Asia/Shanghai）。
-> `v0.1.8` 已发布并设为 Latest：仅给 OpenAI 新增 `poteto.com` 根域及全部子域。两次正式构建各 2,734 项检查、73 项回归、固定/Latest 各 6 个下载资产及共 392 项空缓存请求检查通过。用户明确批准沿用未变的 Claude 制品，保留旧复核日期及证据；详见[本版发布记录](evidence/release-v0.1.8/README.md)。
+> 文档修订：**1.37**；工作树更新日期：2026-10-30（Asia/Shanghai）。
+> `v0.1.9` 正式批次已准备：仅给 Anthropic 新增 Persona 身份验证依赖 `withpersona.com` 根域及全部子域。两次正式构建各 2,748 项检查通过；旧 Challenge 复核日期及证据保持原样，按本版限定例外发布。详见[本版发布记录](evidence/release-v0.1.9/README.md)。
+
+> 历史 `v0.1.8` 已发布并曾设为 Latest：仅给 OpenAI 新增 `poteto.com` 根域及全部子域。两次正式构建各 2,734 项检查、73 项回归、固定/Latest 各 6 个下载资产及共 392 项空缓存请求检查通过。用户明确批准沿用未变的 Claude 制品，保留旧复核日期及证据；详见[本版发布记录](evidence/release-v0.1.8/README.md)。
 
 > 历史 `v0.1.7` 已按用户授权发布并设为 Latest，`dist/` 已更新：为 Anthropic 添加 5 个共享服务后缀，身份为 `user-requested`。三份 SRS 与已验收 `v0.1.7-rc.1` 字节一致；两次正式构建各 2,720 项原生检查、66 项回归、固定及 Latest 各 6 个资产下载和各 190 项空缓存请求检查均通过。8 个历史 Release 和 11 个历史标签引用保持不变，完整清单与回执见[本版发布记录](evidence/release-v0.1.7/README.md)。
 > 历史 `v0.1.6` 曾按用户授权发布并设为 Latest：精确补入 `frontend-apps-multi-region.workos.com`，2026-10-19 核对的 OpenAI 官方主清单覆盖 31/31；`cdn.platform.openai.com` 复用 `openai.com` 后缀。`openai.org` 仅登记为未选候选，23 个 Voice IP 及 Anthropic 两份 SRS 不变。两次正式构建各 2,650 项原生检查、65 项回归、固定及 Latest 各 6 个资产下载、165 项空缓存请求检查均通过，7 个历史发行保持不变，见[历史发布报告与完整清单](evidence/release-v0.1.6/README.md)。
@@ -27,7 +29,7 @@
 
 产品 YAML 只维护补充层。不得抄写或筛选上游列表再声称完整继承。SRS 是实际构建输入，DLC 文本保留属性与行级来源并作等价旁证；不一致即停止批次，不改用文本替代 SRS。上游已有的 apex、后缀、正则、共享依赖和遥测分类均继承；社区归类不改标为官方逐项认可。若新基线含不支持结构或不可接受范围，停止采用整批新基线，保留上一受审版本，不静默裁剪。
 
-默认设计范围包含 ChatGPT 网页/客户端、Codex 运行及选定 `codex-install` 安装路径、Voice，以及 Claude Web/API/Code/Desktop、Artifacts（含所选 Google Fonts）和官方所列安装/插件依赖。`0.1.3-rc.1` 另选择 Claude Code 的两个可选遥测主机，以及 `claude-support` 帮助中心/客服的五个可选精确主机。此范围是规则设计目标，不是所有平台都已验收的声明。第三方登录、支付跳转、用户 MCP、任意插件和外部网页不能由有限产品集合穷举；Realtime SIP 电话接入不属于本次默认范围；另选 Bedrock、Vertex 等 provider 时，须建立对应环境的独立需求，不加入整个云厂商后缀。
+默认设计范围包含 ChatGPT 网页/客户端、Codex 运行及选定 `codex-install` 安装路径、Voice，以及 Claude Web/API/Code/Desktop、Artifacts（含所选 Google Fonts）和官方所列安装/插件依赖。`0.1.3-rc.1` 另选择 Claude Code 的两个可选遥测主机，以及 `claude-support` 帮助中心/客服的五个可选精确主机。此范围是规则设计目标，不是所有平台都已验收的声明。`v0.1.9` 另选 `claude-identity-verification`，新增 Persona 的 `withpersona.com` 根域及子域，身份为功能所需共享依赖。第三方登录、支付跳转、用户 MCP、任意插件和外部网页不能由有限产品集合穷举；Realtime SIP 电话接入不属于本次默认范围；另选 Bedrock、Vertex 等 provider 时，须建立对应环境的独立需求，不加入整个云厂商后缀。
 
 `anthropic-ip.srs` 不接入 N100 当前客户端路由或 Hysteria2 入站白名单，也不代替应用鉴权。两个目的集合及该来源集合都不得通过 `rule_set_ip_cidr_match_source` 改写用途。
 
@@ -64,7 +66,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 当前正式批次为 `v0.1.8`，完整批次在 `artifacts/v0.1.8/`；发布、下载及例外记录见[发布报告](evidence/release-v0.1.8/README.md)。`v0.1.7` 及更早正式归档与各候选保持原始身份。
+`dist/` 当前正式批次为 `v0.1.9`，完整批次在 `artifacts/v0.1.9/`；发布、下载及例外记录见[发布报告](evidence/release-v0.1.9/README.md)。`v0.1.7` 及更早正式归档与各候选保持原始身份。
 
 2026-10-21 新增隔离候选 `artifacts/v0.1.7-rc.1/`，Anthropic 后缀为 21 项；其 OpenAI、Anthropic 来源 IP 制品与 v0.1.6 字节一致。用户随后授权发布 `v0.1.7`，旧候选和旧正式归档保留；正式构建与下载结果单独记录。
 
@@ -424,7 +426,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.8`，已发布并设为 Latest，其受验收候选为 `0.1.8-rc.1`；两次正式构建、验证和同输入候选回归已通过，远端下载与空缓存加载结果见[本版发布记录](evidence/release-v0.1.8/README.md)；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.9`，其受验收候选为 `0.1.9-rc.1`；两次正式构建与验证已通过，同提交候选及远端下载与空缓存加载结果见[本版发布记录](evidence/release-v0.1.9/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -460,7 +462,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。当前 `release-review.json` 绑定 `0.1.8` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增用户指定 OpenAI 后缀 `poteto.com`，并按明确例外沿用未变的 Anthropic 制品，不冒称新增官方网络证据或运行验证。
+每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。当前 `release-review.json` 绑定 `0.1.9` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增官方文档支持的 Persona 后缀 `withpersona.com`。限定例外绑定旧 Challenge 条目、唯一增量及三个制品摘要，保留旧日期与证据，不冒称真实 Challenge 已重新验证。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 
@@ -469,7 +471,11 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.8 当前发布结果
+### v0.1.9 当前发布进度
+
+唯一增量为 Anthropic 的 `withpersona.com` 后缀，用于 Claude 的 Persona 身份验证。正式构建通过，发布验收结果见[本版记录](evidence/release-v0.1.9/README.md)。
+
+### v0.1.8 历史发布结果
 
 唯一增量为 OpenAI 的 `poteto.com` 后缀。正式发行和 Latest 均已验证，具体批准、例外、摘要和回执见[发布记录](evidence/release-v0.1.8/README.md)。
 
