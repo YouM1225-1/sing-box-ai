@@ -1,0 +1,128 @@
+[
+  {
+    "host": "portal.anthropic.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "api.anthropic.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "claude.ai",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "api3.siftscience.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "app.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "cdn.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "docs.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "inquiry.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "miniapp.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "sdk.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "status.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "t.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "webrtc-consumer.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "webrtc-stun.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "api.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "files.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "a.b.withpersona.com",
+    "matched": true,
+    "stdout": "",
+    "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+  },
+  {
+    "host": "notwithpersona.com",
+    "matched": false,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "host": "withpersona.com.invalid",
+    "matched": false,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "host": "with-persona.com",
+    "matched": false,
+    "stdout": "",
+    "stderr": ""
+  }
+]

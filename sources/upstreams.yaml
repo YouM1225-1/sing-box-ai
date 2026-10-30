@@ -401,3 +401,20 @@ archives:
   sha256: 7dd7e0d19eb85ac9ace42cbff3f26a3f931ecade66bed44399407021303ce35a
   observed_on: '2026-10-28'
   method: direct-user-instruction-with-screenshot; requested OpenAI rule classification
+- id: claude-identity
+  kind: official
+  path: sources/official/claude-identity.json
+  url: https://support.claude.com/en/articles/14328960-identity-verification-on-claude
+  sha256: a035b606dfc9146db7e78b6ae32bf4fae200bfba77b36b5b88acb7f836471e1c
+  retrieved_at: '2026-10-30T04:05:20.637386+00:00'
+  method: reviewed-structured-facts
+  last_reviewed_at: '2026-10-30T04:05:20.902298+00:00'
+  raw_reference: claude-identity-source
+- id: claude-identity-source
+  kind: official-source-record
+  path: sources/official/source-records/claude-identity.json
+  url: https://support.claude.com/en/articles/14328960-identity-verification-on-claude
+  sha256: 59709347655f391859159905a1a1132ef32a35e516a073262b833646ba4ce6b6
+  retrieved_at: '2026-10-30T04:05:20.637386+00:00'
+  method: official-html-response-fact-record
+  original_response_sha256: 40581aad75b80fcadf45e30374bf67ab90b5ee3665ad702388c5c87c2aac5d62

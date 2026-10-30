@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "claude-identity",
+  "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+  "retrieved_at": "2026-10-30T04:05:20.637386+00:00",
+  "last_reviewed_at": "2026-10-30T04:05:20.902298+00:00",
+  "method": "Reviewed Claude provider statement together with Persona apex and wildcard network allowlist requirements.",
+  "page_updated": "August 11, 2026",
+  "page_updated_absolute": "2026-08-11",
+  "facts": [
+    {
+      "artifact": "anthropic",
+      "value": "withpersona.com",
+      "type": "domain_suffix",
+      "product": [
+        "claude-identity-verification"
+      ],
+      "direction": "destination",
+      "status": "feature-required",
+      "shared_dependency": true,
+      "features": [
+        "claude-identity-verification"
+      ]
+    }
+  ],
+  "raw_reference": "claude-identity-source",
+  "raw_sha256": "59709347655f391859159905a1a1132ef32a35e516a073262b833646ba4ce6b6",
+  "original_response_sha256": "40581aad75b80fcadf45e30374bf67ab90b5ee3665ad702388c5c87c2aac5d62",
+  "locators": [
+    "Claude: How are we verifying?; Persona Security: Standard domains for allowlisting (apex); Persona WebView: External Network Requests (wildcard)"
+  ]
+}

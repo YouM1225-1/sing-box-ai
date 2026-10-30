@@ -572,3 +572,17 @@
     reference: one-exit-coverage-request
   reason: Maintainer-requested shared-service suffix from the one-exit comparison;
     not an official dependency or verified runtime requirement
+- value: withpersona.com
+  type: domain_suffix
+  product:
+  - claude-identity-verification
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  features:
+  - claude-identity-verification
+  sources:
+  - kind: official
+    reference: claude-identity
+  reason: Persona apex and subdomains are documented network dependencies of the Claude
+    identity-verification feature; shared with other Persona customers.

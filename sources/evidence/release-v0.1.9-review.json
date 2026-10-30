@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.9",
+  "reviewed_on": "2026-10-30",
+  "reviewer": "Codex primary review",
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic.srs": "13112b79d21073c4478f0e6a902acc7ba6dd7df9efe2c6749d9844afe97256c1",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "comparison": {
+    "openai": {},
+    "anthropic": {
+      "domain_suffix": {
+        "added": [
+          "withpersona.com"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {}
+  },
+  "unresolved_conflicts": [],
+  "conclusion": "Exactly one destination suffix is added for Persona. Official Claude and Persona documentation establish the conditional identity-verification dependency. OpenAI and source-IP SRS remain byte-identical. The dated entry-preservation exception binds the prior source and exact new addition/artifacts; it is not renewed Challenge validation.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.9/semantic-diff.json",
+      "sha256": "0a3459bfc488851c4c85795d31f6cf7ce15e5d134a2adc08b333fb96d1aa7172"
+    },
+    {
+      "path": "docs/evidence/release-v0.1.9/official-fetches.json",
+      "sha256": "26e418c358d9d9115240fce89e63b89ed077a4cd8484e4350153a1d7c238c365"
+    },
+    {
+      "path": "sources/official/claude-identity.json",
+      "sha256": "a035b606dfc9146db7e78b6ae32bf4fae200bfba77b36b5b88acb7f836471e1c"
+    },
+    {
+      "path": "sources/official/source-records/claude-identity.json",
+      "sha256": "59709347655f391859159905a1a1132ef32a35e516a073262b833646ba4ce6b6"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.9-preserved-entry-exception.json",
+      "sha256": "334bbe22b38bf78b587b5baa0fd249fbd552c8eddf33026f5f978a6856fc53c2"
+    }
+  ]
+}

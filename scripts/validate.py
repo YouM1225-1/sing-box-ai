@@ -11,7 +11,7 @@ import shutil
 import subprocess
 import tempfile
 
-from common import ARTIFACTS, OLD_IPS, ROOT, archives, canonical, compiler, date, input_files, load, local_path, need, run, semantic_key, sha, source_document, today, unchanged_release_exception, write_json
+from common import ARTIFACTS, OLD_IPS, ROOT, archives, canonical, compiler, date, input_files, load, local_path, need, preserved_entry_release_exception, run, semantic_key, sha, source_document, today, unchanged_release_exception, write_json
 
 
 def reference_match(rows, domain="", source="", destination=""):
@@ -144,6 +144,12 @@ def release_gate(root, manifest):
         need(all(artifact_hashes.get(name) == digest for name, digest in exception["proof"]["artifacts"].items()), "Release exception requires unchanged artifact bytes")
     records = {}
     bindings = dict(manifest["inputs"])
+    preserved = preserved_entry_release_exception(root, today())
+    if preserved:
+        need(artifact_hashes == preserved["proof"]["artifacts"], "Preserved-entry exception requires the exact artifact batch")
+        for field in ("baseline_manifest", "baseline_source"):
+            reference = preserved["proof"][field]
+            bindings[reference["path"]] = reference["sha256"]
     for field in ("operator_authorization", "semantic_diff_review"):
         reference = review.get(field)
         need(isinstance(reference, dict) and reference.get("path") and reference.get("sha256"), f"Missing {field}")
@@ -175,6 +181,8 @@ def release_gate(root, manifest):
     approval = {"scope": "artifact-publication", "level": "artifact-only", "project_version": version, "artifacts": artifact_hashes, "authorized_on": authorization["authorized_on"], "operator_authorization": review["operator_authorization"], "semantic_diff_review": review["semantic_diff_review"], "deployment_status": "pending"}
     if exception:
         approval["unchanged_artifact_exception"] = exception["reference"]
+    if preserved:
+        approval["preserved_entry_exception"] = preserved["reference"]
     return approval
 
 

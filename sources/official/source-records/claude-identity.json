@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "claude-identity-source",
+  "kind": "official-source-record",
+  "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+  "retrieved_at": "2026-10-30T04:05:20.637386+00:00",
+  "extraction_method": "Reviewed first-party HTML: Claude identifies Persona as its verification provider; Persona Security names the apex and WebView External Network Requests specifies all subdomains. Record endpoint facts and locators; full HTML is retained only in ignored local research cache.",
+  "original_response": {
+    "sha256": "40581aad75b80fcadf45e30374bf67ab90b5ee3665ad702388c5c87c2aac5d62",
+    "content_format": "https-html",
+    "is_original_html": true,
+    "bytes": 213611,
+    "http_status": 200,
+    "final_url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude"
+  },
+  "supporting_responses": [
+    {
+      "url": "https://docs.withpersona.com/security",
+      "final_url": "https://docs.withpersona.com/security",
+      "http_status": 200,
+      "retrieved_at": "2026-10-30T04:05:20.902298+00:00",
+      "sha256": "30b7c65bd96acfe018c9b71438072bfcb76803259a6f78d4ef1e27207baa0f5f",
+      "bytes": 223732,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://docs.withpersona.com/hosted-flow-webview-considerations",
+      "final_url": "https://docs.withpersona.com/hosted-flow-webview-considerations",
+      "http_status": 200,
+      "retrieved_at": "2026-10-30T04:05:20.850698+00:00",
+      "sha256": "59d8eb757027989bd3075783d37e16dd3287716c9f8027bfa8ae01529d6f7758",
+      "bytes": 214145,
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "facts": [
+    {
+      "value": "withpersona.com",
+      "locator": "Claude: How are we verifying?; Persona Security: Standard domains for allowlisting (apex); Persona WebView: External Network Requests (wildcard)",
+      "source_urls": [
+        "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+        "https://docs.withpersona.com/security",
+        "https://docs.withpersona.com/hosted-flow-webview-considerations"
+      ],
+      "scope": "Conditional Claude identity-verification feature; Persona is shared across unrelated services. Root suffix combines separately documented apex and wildcard requirements.",
+      "evidence_kind": "official-documentation"
+    }
+  ],
+  "boundary": "Documentation confirms provider and network scope, not a captured failure or successful user verification.",
+  "full_page_redistributed": false
+}

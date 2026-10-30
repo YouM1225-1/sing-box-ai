@@ -13,6 +13,7 @@ features:
 - claude-install
 - claude-plugins
 - claude-support
+- claude-identity-verification
 enabled_optional:
 - fonts.googleapis.com
 - fonts.gstatic.com
@@ -23,7 +24,7 @@ enabled_optional:
 - js.intercomcdn.com
 - downloads.intercomcdn.com
 - static.intercomassets.com
-review_as_of: '2026-10-28'
+review_as_of: '2026-10-30'
 approved_regex:
   ^[^.]+-review\.googlesource\.com$:
     reason: 'Optional Gerrit host: one label ending in -review; does not match other googlesource hosts.'
@@ -50,3 +51,7 @@ initial_confirmations:
 unchanged_release_exception:
   path: sources/evidence/release-v0.1.8-unchanged-exception.json
   sha256: d5fff7f007afe363cc7b7bb6456cba167de8c834d61e47341c8b929967c331dd
+
+preserved_entry_release_exception:
+  path: sources/evidence/release-v0.1.9-preserved-entry-exception.json
+  sha256: 334bbe22b38bf78b587b5baa0fd249fbd552c8eddf33026f5f978a6856fc53c2

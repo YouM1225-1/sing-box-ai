@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "operator-authorization",
+  "scope": "artifact-publication",
+  "project_version": "0.1.9",
+  "authorized_on": "2026-10-30",
+  "instruction": "联网搜索相关信息 添加并发布；先继续添加 发布；继续 完成发布",
+  "instruction_context": "User explicitly resumed publication after deferring unavailable browser Challenge revalidation; preserve the old Challenge metadata and evidence, with the single Persona addition bound by the dated exception.",
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic.srs": "13112b79d21073c4478f0e6a902acc7ba6dd7df9efe2c6749d9844afe97256c1",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "deployment_authorized": false,
+  "limitations": [
+    "Only add the withpersona.com root suffix to Anthropic; retain all previous rules and historical releases/tags.",
+    "Challenge revalidation remains incomplete; retain original dates and evidence without claiming runtime success.",
+    "Verify committed-input reproducible builds, fixed downloads and isolated cold-cache loading before Latest; no device configuration or service changes."
+  ]
+}

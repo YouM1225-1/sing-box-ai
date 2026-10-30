@@ -8,6 +8,7 @@ import tempfile
 import unittest
 
 import yaml
+from fixtures import restore_anthropic_v018
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, Invalid, canonical, covered, load, normalize, semantic_key, sha, source_document, write_json
@@ -29,6 +30,7 @@ class RequestedCoverageTests(unittest.TestCase):
         self.addCleanup(scratch.cleanup)
         self.root = Path(scratch.name)
         shutil.copytree(ROOT / "sources", self.root / "sources")
+        restore_anthropic_v018(self.root)
         # These historical release checks predate the new OpenAI instruction.
         prior = load(ROOT / "artifacts/v0.1.7/manifest.json")["provenance"]["openai"]
         self.save("sources/openai.yaml", [{k: v for k, v in r.items() if k != "origin"} for r in prior if r["origin"] == "supplement"])

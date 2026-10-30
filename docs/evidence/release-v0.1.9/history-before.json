@@ -1,0 +1,432 @@
+[
+  {
+    "id": 426270523,
+    "tag_name": "v0.1.8",
+    "target_commitish": "e8b43a0397f8e6a5df835ab7068693822cfd7c65",
+    "assets": [
+      {
+        "id": 683847153,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 683847242,
+        "name": "anthropic.srs",
+        "size": 529,
+        "digest": "sha256:38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4"
+      },
+      {
+        "id": 683847201,
+        "name": "manifest.json",
+        "size": 108298,
+        "digest": "sha256:9c5c2720e16523fc93dcead335e084442e9eaafa293a97c251c30ccafa3fbb44"
+      },
+      {
+        "id": 683847109,
+        "name": "openai.srs",
+        "size": 802,
+        "digest": "sha256:5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55"
+      },
+      {
+        "id": 683847263,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:f09dce414534b355b3e007ea8f8ff09d522765b441a3c7dac3e8e908c8752d94"
+      },
+      {
+        "id": 683847052,
+        "name": "sing-box-ai-v0.1.8.zip",
+        "size": 2271663,
+        "digest": "sha256:64467dccea4562d0a4c0910d79fc09afff1785e33f60ebe42dadff79b996ec43"
+      }
+    ]
+  },
+  {
+    "id": 419231418,
+    "tag_name": "v0.1.7",
+    "target_commitish": "a15a40e3a97d42a17f101a5af5a41ab2c6663a5b",
+    "assets": [
+      {
+        "id": 661599275,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 661599335,
+        "name": "anthropic.srs",
+        "size": 529,
+        "digest": "sha256:38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4"
+      },
+      {
+        "id": 661599395,
+        "name": "manifest.json",
+        "size": 106476,
+        "digest": "sha256:24bfb0459a52ada3a85b453647a72b15c2271cd5205356d8051cb781542e1d07"
+      },
+      {
+        "id": 661599441,
+        "name": "openai.srs",
+        "size": 800,
+        "digest": "sha256:196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c"
+      },
+      {
+        "id": 661599220,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:3a96a5fc2731823416444f2300989e97a3995fb50f19b999db47b5df28cbf9b6"
+      },
+      {
+        "id": 661599513,
+        "name": "sing-box-ai-v0.1.7.zip",
+        "size": 2079563,
+        "digest": "sha256:9f8b13f45b210ffd36356e7fda71b2c9cb85f40cfccecbec76f7b54df3ddfc2e"
+      }
+    ]
+  },
+  {
+    "id": 416949195,
+    "tag_name": "v0.1.6",
+    "target_commitish": "39abd161bd5c05b769dbddf5fef916d4d7662ec4",
+    "assets": [
+      {
+        "id": 655382579,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 655382523,
+        "name": "anthropic.srs",
+        "size": 488,
+        "digest": "sha256:0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1"
+      },
+      {
+        "id": 655382638,
+        "name": "manifest.json",
+        "size": 102612,
+        "digest": "sha256:6c1a4d1a2c79ad966cb5481290932b243462453f57f35a3fc33d2e7eeb1865d7"
+      },
+      {
+        "id": 655382546,
+        "name": "openai.srs",
+        "size": 800,
+        "digest": "sha256:196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c"
+      },
+      {
+        "id": 655382698,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:4a35e08d57211c579f603984ae58975399049a5527b794069fc6412c4fa263c5"
+      },
+      {
+        "id": 655382661,
+        "name": "sing-box-ai-v0.1.6.zip",
+        "size": 1907832,
+        "digest": "sha256:a97547769effd8abeb9f1c6d123bd1f441d97e86dffee1bdb4497b29419f7876"
+      }
+    ]
+  },
+  {
+    "id": 413782827,
+    "tag_name": "v0.1.5",
+    "target_commitish": "cd48e23e39ac01371bf7e376a791e687fcf418ec",
+    "assets": [
+      {
+        "id": 643796844,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 643796717,
+        "name": "anthropic.srs",
+        "size": 488,
+        "digest": "sha256:0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1"
+      },
+      {
+        "id": 643796908,
+        "name": "manifest.json",
+        "size": 101037,
+        "digest": "sha256:d03ccc723d67384212c65d76e47478e0a8384faef43c9b5ec49972a7c99e39fc"
+      },
+      {
+        "id": 643796790,
+        "name": "openai.srs",
+        "size": 775,
+        "digest": "sha256:a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+      },
+      {
+        "id": 643797040,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:492ae544337a1c24f63d1cc9b266a4443c4fbaff80a779bfad7e1911ff8308d5"
+      },
+      {
+        "id": 643796962,
+        "name": "sing-box-ai-v0.1.5.zip",
+        "size": 1732128,
+        "digest": "sha256:3ec7c9f7fe5ab22906f9081f4f688003259ee796d8934aa6e8fcae4593ed14e9"
+      }
+    ]
+  },
+  {
+    "id": 407627047,
+    "tag_name": "v0.1.4",
+    "target_commitish": "e3e32c2fae4cb8edd5b14962c0c55a85afac3b71",
+    "assets": [
+      {
+        "id": 624195640,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 624195691,
+        "name": "anthropic.srs",
+        "size": 473,
+        "digest": "sha256:a1952bbfe2cafb39cc89c8b3db0f1930f6a2ac029ebe7493463d6b5742488035"
+      },
+      {
+        "id": 624195737,
+        "name": "manifest.json",
+        "size": 91041,
+        "digest": "sha256:9fc20006459be3a26a4fd77933014bce83436655b458c4c9d3e14efadf36e298"
+      },
+      {
+        "id": 624195787,
+        "name": "openai.srs",
+        "size": 775,
+        "digest": "sha256:a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+      },
+      {
+        "id": 624195605,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:12e2ab6893345720f8197f78f51b61e7a36b5eb411e8520feb4b5706bd858cb1"
+      },
+      {
+        "id": 624195842,
+        "name": "sing-box-ai-v0.1.4.zip",
+        "size": 1561932,
+        "digest": "sha256:e1bff50eb45b65af71f0c11c924295c011cce8a8bcd7cd5e5226611cd7a27ae7"
+      }
+    ]
+  },
+  {
+    "id": 407579868,
+    "tag_name": "v0.1.3",
+    "target_commitish": "181b9e0c298488f3c1655fda18f6a6eae6fc84d1",
+    "assets": [
+      {
+        "id": 624078866,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 624078898,
+        "name": "anthropic.srs",
+        "size": 462,
+        "digest": "sha256:a34483911551a44160e394555d2a62a199e423d16e7ae544da7a0ef1dc57946e"
+      },
+      {
+        "id": 624078935,
+        "name": "manifest.json",
+        "size": 86698,
+        "digest": "sha256:0144dfff385663f75115b3d545b6da566d39bb22c6a050702fbcf28c101ee24e"
+      },
+      {
+        "id": 624078960,
+        "name": "openai.srs",
+        "size": 775,
+        "digest": "sha256:a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+      },
+      {
+        "id": 624078846,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:a5edba4f16b079849d542ca4ceb5727f52dd2683717e9dfeb2c96eaed6236131"
+      },
+      {
+        "id": 624078991,
+        "name": "sing-box-ai-v0.1.3.zip",
+        "size": 1466266,
+        "digest": "sha256:31d5a1b6d4c9b962d6be6fccff0630ebe54daefc5b0250ee28f15460f6da7a3f"
+      }
+    ]
+  },
+  {
+    "id": 402537457,
+    "tag_name": "v0.1.2",
+    "target_commitish": "79bc9a084cc095f4a5879843e27d6f9d9cd8f37f",
+    "assets": [
+      {
+        "id": 607911802,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 607911776,
+        "name": "anthropic.srs",
+        "size": 361,
+        "digest": "sha256:c6a885e65031be291cf2b3c09170bbdb1ef5aa1eb1bc18003cf1dc07bb196a80"
+      },
+      {
+        "id": 607911834,
+        "name": "manifest.json",
+        "size": 81116,
+        "digest": "sha256:0c001b3e1d0fdca3c2313c31614ce7f6fda71337c062251feefe078e027901cf"
+      },
+      {
+        "id": 607911748,
+        "name": "openai.srs",
+        "size": 775,
+        "digest": "sha256:a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+      },
+      {
+        "id": 607911866,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:bfa92fefa4952f77f9f6f1758c71fa4f1c77919a83fe09d16378c0f4f296c0b9"
+      },
+      {
+        "id": 607911891,
+        "name": "sing-box-ai-v0.1.2.zip",
+        "size": 1312639,
+        "digest": "sha256:fc86130a9ef19b12dd566014a5743d95c56d0ad49eb3adc7568f0e2b858e2d46"
+      }
+    ]
+  },
+  {
+    "id": 398259220,
+    "tag_name": "v0.1.1",
+    "target_commitish": "5e367fb4a02fd9d5a383f2723f7ffd8fa882026d",
+    "assets": [
+      {
+        "id": 595436221,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 595436257,
+        "name": "anthropic.srs",
+        "size": 353,
+        "digest": "sha256:864149211a66da97603b62367f19209e5de2e1b52905faee503501fc37a4c08b"
+      },
+      {
+        "id": 595436300,
+        "name": "manifest.json",
+        "size": 80357,
+        "digest": "sha256:2d5e0164c5f53fc0581145f5bcd75cbfe032506148236c61e85edd3cc653ba6a"
+      },
+      {
+        "id": 595436342,
+        "name": "openai.srs",
+        "size": 775,
+        "digest": "sha256:a910767e3f07dfe89e2f72639960612872361d9ae1c8553ddd4a59c8f154778f"
+      },
+      {
+        "id": 595436173,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:4796e1043d89255cde9b61133be704f943b07a256ee0c1d5acc8e8718ee026fe"
+      },
+      {
+        "id": 595436394,
+        "name": "sing-box-ai-v0.1.1.zip",
+        "size": 1050065,
+        "digest": "sha256:cee39bde43876e2dfeffe47a69eeda07f737b4e08fac819cba754d85e9d78042"
+      }
+    ]
+  },
+  {
+    "id": 397881272,
+    "tag_name": "v0.1.0",
+    "target_commitish": "c48c415d88aede03907c231b122b65b860b386b0",
+    "assets": [
+      {
+        "id": 594137404,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 594137521,
+        "name": "anthropic.srs",
+        "size": 332,
+        "digest": "sha256:1a221b5e256ffb90aa8857bb58bb2069832ad29cc03518c6bd9c20c4ac15e4c2"
+      },
+      {
+        "id": 594137552,
+        "name": "manifest.json",
+        "size": 72110,
+        "digest": "sha256:abf6404606d8b490f637b63a7ce4931e7beca77333bf998c0c264622b595fccd"
+      },
+      {
+        "id": 594137577,
+        "name": "openai.srs",
+        "size": 730,
+        "digest": "sha256:7ea0caebc0268d603eabf998787a9fbe63fcf508119977e4dadb111128710e07"
+      },
+      {
+        "id": 594137341,
+        "name": "SHA256SUMS",
+        "size": 409,
+        "digest": "sha256:12f24ec81cc07d3daf8f3d83e5fb8eeca59779bd19310202ebc989b9022e594d"
+      },
+      {
+        "id": 594137612,
+        "name": "sing-box-ai-v0.1.0.zip",
+        "size": 219210,
+        "digest": "sha256:6c1be455b11f37cab59d1231043241a429e51b6080a873d15850923c5bc3cfbe"
+      }
+    ]
+  },
+  {
+    "id": 397700515,
+    "tag_name": "v0.1.0-rc.1",
+    "target_commitish": "5b803837ffd93e01a789492c52d5b130eb6970bd",
+    "assets": [
+      {
+        "id": 593187267,
+        "name": "anthropic-ip.srs",
+        "size": 36,
+        "digest": "sha256:9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+      },
+      {
+        "id": 593187241,
+        "name": "anthropic.srs",
+        "size": 329,
+        "digest": "sha256:f30a9a0fa9fc5c7a1d847ba78905e3dcc8eaaf211e5c2fa201aec652da0167e2"
+      },
+      {
+        "id": 593211062,
+        "name": "manifest.json",
+        "size": 12399,
+        "digest": "sha256:4e24decce9cc46657d1be36f0e1c4d7cb2685a4cc66f99c9f6a69cf03a74ab78"
+      },
+      {
+        "id": 593187205,
+        "name": "openai.srs",
+        "size": 508,
+        "digest": "sha256:ced92f74245803326d4ae85033929b75c0a67279b8284271ae44f39f0e70bd54"
+      },
+      {
+        "id": 593211162,
+        "name": "SHA256SUMS",
+        "size": 414,
+        "digest": "sha256:57e33bba9a80e35a4218ad72b0354a0df0d8419ea120887f09928abbf60a7b1a"
+      },
+      {
+        "id": 593211104,
+        "name": "sing-box-ai-v0.1.0-rc.1.zip",
+        "size": 31173,
+        "digest": "sha256:3d8cbb4f15b04b09cac2b7e7fc2f7b165e20b39f44017d7b53455964b397e442"
+      }
+    ]
+  }
+]

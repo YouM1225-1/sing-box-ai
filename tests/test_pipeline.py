@@ -10,6 +10,7 @@ import unittest
 from unittest.mock import patch
 
 import yaml
+from fixtures import restore_anthropic_v018
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, Invalid, archives, canonical, covered, date, discovery_entries, load, normalize, public_suffix, review_entry, run, semantic_key, sha, source_document, write_json
@@ -31,6 +32,7 @@ class PolicyTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         shutil.copytree(ROOT / "sources", self.root / "sources")
+        restore_anthropic_v018(self.root)
         # Keep the OpenAI inputs aligned with the historical release dates below.
         prior = load(ROOT / "artifacts/v0.1.7/manifest.json")["provenance"]["openai"]
         write_json(self.root / "sources/openai.yaml", [{k: v for k, v in r.items() if k != "origin"} for r in prior if r["origin"] == "supplement"])

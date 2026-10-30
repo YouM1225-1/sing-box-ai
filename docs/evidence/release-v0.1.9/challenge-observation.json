@@ -1,0 +1,16 @@
+{
+  "observed_on": "2026-10-30",
+  "scope": "preliminary-observation-only",
+  "kind": "observation",
+  "result": "incomplete",
+  "desktop_client_version": "4.4212.0",
+  "desktop_observation": "Native Claude app opened claude.ai/new under an existing signed-in session; no visible challenge was presented. User returned to Code mode; no messages were sent.",
+  "web_observation": "Browser inventory reported local browser use disabled in Work settings. No web Challenge was performed.",
+  "runtime_validation": false,
+  "review_dates_changed": false,
+  "user_direction": [
+    "先重新验证 Challenge，暂不发布",
+    "先保留检查结果，稍后再验证",
+    "先继续添加 发布"
+  ]
+}

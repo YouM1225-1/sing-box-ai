@@ -1,0 +1,21 @@
+{
+  "candidate_cases": 2748,
+  "rebuild_cases": 2748,
+  "unit_tests": 74,
+  "persona_checks": 21,
+  "rebuild_files_identical": [
+    "manifest.json",
+    "openai.srs",
+    "openai.json",
+    "anthropic.srs",
+    "anthropic.json",
+    "anthropic-ip.srs",
+    "anthropic-ip.json"
+  ],
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic.srs": "13112b79d21073c4478f0e6a902acc7ba6dd7df9efe2c6749d9844afe97256c1",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "publication_status": "waiting-for-expired-challenge-decision"
+}

@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "error": "Unapproved/expired compatibility: challenges.cloudflare.com",
+  "version": "0.1.9",
+  "reason": "Existing Challenge review expired; v0.1.8 exception does not apply to changed Anthropic artifact."
+}

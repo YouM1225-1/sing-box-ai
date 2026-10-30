@@ -1,0 +1,574 @@
+- value: claude.app
+  type: domain_suffix
+  product: &id001
+  - claude-web
+  - claude-api
+  - claude-code
+  - claude-desktop
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: Official network requirement not covered by the pinned Sager SRS baseline
+- value: github.com
+  type: domain
+  product:
+  - claude-code
+  - claude-desktop
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Official install/plugin/release-note dependency
+  features:
+  - claude-plugins
+- value: raw.githubusercontent.com
+  type: domain
+  product:
+  - claude-code
+  - claude-desktop
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Official install/plugin/release-note dependency
+  features:
+  - claude-plugins
+- value: registry.npmjs.org
+  type: domain
+  product:
+  - claude-code
+  - claude-desktop
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Official install/plugin/release-note dependency
+  features:
+  - claude-plugins
+- value: storage.googleapis.com
+  type: domain
+  product:
+  - claude-code
+  - claude-desktop
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Official install/plugin/release-note dependency
+  features:
+  - claude-plugins
+- value: formulae.brew.sh
+  type: domain
+  product:
+  - claude-code
+  - claude-desktop
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Official install/plugin/release-note dependency
+  features:
+  - claude-install
+- value: cdnjs.cloudflare.com
+  type: domain
+  product:
+  - claude-desktop
+  - claude-artifacts
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: Artifact library has no fallback when blocked
+  features:
+  - claude-artifacts
+- value: cdn.jsdelivr.net
+  type: domain
+  product:
+  - claude-desktop
+  - claude-artifacts
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: Artifact library has no fallback when blocked
+  features:
+  - claude-artifacts
+- value: cdn.tailwindcss.com
+  type: domain
+  product:
+  - claude-desktop
+  - claude-artifacts
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: Artifact library has no fallback when blocked
+  features:
+  - claude-artifacts
+- value: code.jquery.com
+  type: domain
+  product:
+  - claude-desktop
+  - claude-artifacts
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: Artifact library has no fallback when blocked
+  features:
+  - claude-artifacts
+- value: unpkg.com
+  type: domain
+  product:
+  - claude-desktop
+  - claude-artifacts
+  direction: destination
+  status: feature-required
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: Artifact library has no fallback when blocked
+  features:
+  - claude-artifacts
+- value: http-intake.logs.us5.datadoghq.com
+  type: domain
+  product:
+  - claude-code
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Optional operational telemetry/error reporting
+- value: browser-intake-us5-datadoghq.com
+  type: domain
+  product:
+  - claude-code
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Optional operational telemetry/error reporting
+- value: api-iam.intercom.io
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center messenger API configured by the official support page
+- value: widget.intercom.io
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center messenger loader linked by the official support page
+- value: js.intercomcdn.com
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional messenger scripts loaded by the official help-center widget dependency
+- value: downloads.intercomcdn.com
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center logo and category images observed in official HTML
+- value: static.intercomassets.com
+  type: domain
+  product:
+  - claude-support
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-support
+  reason: Optional Claude help-center JavaScript and CSS observed in official HTML
+- value: fonts.googleapis.com
+  type: domain
+  product:
+  - claude-desktop
+  - claude-artifacts
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: 'Optional fonts: fallback typefaces available'
+- value: fonts.gstatic.com
+  type: domain
+  product:
+  - claude-desktop
+  - claude-artifacts
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-desktop
+  reason: 'Optional fonts: fallback typefaces available'
+- value: ^[^.]+-review\.googlesource\.com$
+  type: domain_regex
+  product:
+  - claude-code
+  direction: destination
+  status: optional
+  shared_dependency: true
+  sources:
+  - kind: official
+    reference: claude-code
+  reason: Optional Gerrit discovery; single-label wildcard
+- value: 160.79.104.0/23
+  type: ip_cidr
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: anthropic-ip
+  reason: Official Anthropic inbound destination
+- value: 2607:6bc0::/48
+  type: ip_cidr
+  product: *id001
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: anthropic-ip
+  reason: Official Anthropic inbound destination
+- value: challenges.cloudflare.com
+  type: domain
+  product:
+  - claude-web
+  - claude-desktop
+  direction: destination
+  status: compatibility-critical
+  shared_dependency: true
+  sources:
+  - kind: repository-history
+    reference: legacy-anthropic
+  reason: Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived
+  review_status: approved
+  evidence:
+  - kind: repository-history
+    reference: sources/upstream/legacy-anthropic-domains.yaml
+    observed_on: '2026-09-27'
+    product:
+    - claude-web
+    - claude-desktop
+    conclusion: Historical inclusion only; current Claude session need remains unverified
+  - kind: user-confirmation
+    reference: sources/evidence/claude-challenge-confirmation.json
+    observed_on: '2026-09-27'
+    product:
+    - claude-web
+    - claude-desktop
+    conclusion: Maintainer confirms prior validation on the old repository update date; exact client/environment
+      unspecified.
+  first_seen: '2026-09-27'
+  last_verified: '2026-09-27'
+  review_after: '2026-10-27'
+- value: 2607:6bc0:11::/48
+  type: ip_cidr
+  product:
+  - claude-network-coverage
+  direction: destination
+  status: compatibility
+  shared_dependency: false
+  sources:
+  - kind: network-registry
+    reference: as399358-rdap
+  - kind: network-registry
+    reference: anthropic-ipv6-rdap
+  - kind: routing-observation
+    reference: as399358-announced-prefixes
+  reason: Maintainer-requested exact AS399358 announced IPv6 network coverage; ARIN
+    ownership and RIS route verified, not an official Claude endpoint requirement.
+  review_status: approved
+  evidence:
+  - kind: user-confirmation
+    reference: sources/evidence/anthropic-network-coverage-2026-10-09.json
+    observed_on: '2026-10-09'
+    conclusion: Explicit approval to include this exact announced /48 for network
+      coverage, without claiming verified service usage.
+    product:
+    - claude-network-coverage
+  first_seen: '2026-10-09'
+  last_verified: '2026-10-09'
+  review_after: '2026-11-08'
+- type: domain_suffix
+  value: anthropic.com.cdn.cloudflare.net
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: anthropic.auth0.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: anthropic-com.ghost.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: servd-anthropic-website.b-cdn.net
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: sentry.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: statsigapi.net
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: intercom.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: intercomcdn.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain
+  value: cdn.usefathom.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_keyword
+  value: datadog
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_keyword
+  value: sentry
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_keyword
+  value: sift
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: ip_cidr
+  value: 160.79.104.0/21
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: false
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: ip_cidr
+  value: 2607:6bc0::/32
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: false
+  sources:
+  - kind: user-instruction
+    reference: net-coffee-coverage-request
+  reason: Explicit maintainer request to cover the referenced website, excluding NTP;
+    not an official service requirement
+- type: domain_suffix
+  value: growthbook.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: hcaptcha.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: stripe.network
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: stripecdn.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement
+- type: domain_suffix
+  value: segment.io
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: one-exit-coverage-request
+  reason: Maintainer-requested shared-service suffix from the one-exit comparison;
+    not an official dependency or verified runtime requirement

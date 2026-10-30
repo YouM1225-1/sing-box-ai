@@ -1,0 +1,29 @@
+{
+  "claude-identity": {
+    "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+    "final_url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+    "http_status": 200,
+    "retrieved_at": "2026-10-30T04:05:20.637386+00:00",
+    "sha256": "40581aad75b80fcadf45e30374bf67ab90b5ee3665ad702388c5c87c2aac5d62",
+    "bytes": 213611,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "persona-security": {
+    "url": "https://docs.withpersona.com/security",
+    "final_url": "https://docs.withpersona.com/security",
+    "http_status": 200,
+    "retrieved_at": "2026-10-30T04:05:20.902298+00:00",
+    "sha256": "30b7c65bd96acfe018c9b71438072bfcb76803259a6f78d4ef1e27207baa0f5f",
+    "bytes": 223732,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "persona-webview": {
+    "url": "https://docs.withpersona.com/hosted-flow-webview-considerations",
+    "final_url": "https://docs.withpersona.com/hosted-flow-webview-considerations",
+    "http_status": 200,
+    "retrieved_at": "2026-10-30T04:05:20.850698+00:00",
+    "sha256": "59d8eb757027989bd3075783d37e16dd3287716c9f8027bfa8ae01529d6f7758",
+    "bytes": 214145,
+    "content_type": "text/html; charset=utf-8"
+  }
+}

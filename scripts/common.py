@@ -267,6 +267,37 @@ def unchanged_release_exception(root, as_of):
     return {"reference": reference, "proof": proof}
 
 
+def preserved_entry_release_exception(root, as_of):
+    """A dated publication permission preserving one expired entry and a bound delta."""
+    reference = load(root / "sources/policy.yaml").get("preserved_entry_release_exception")
+    if reference is None or not (root / "VERSION").is_file():
+        return None
+    path = local_path(root, reference["path"])
+    need(sha(path) == reference.get("sha256"), "Preserved-entry exception hash mismatch")
+    proof = load(path)
+    if proof.get("project_version") != (root / "VERSION").read_text().strip() or proof.get("approved_on") != str(as_of):
+        return None
+    need(proof.get("schema") == 1 and proof.get("kind") == "operator-exception" and proof.get("scope") == "preserved-entry-publication", "Invalid preserved-entry exception scope")
+    need(proof.get("confirmed_by") == "maintainer" and proof.get("instruction"), "Preserved-entry exception lacks instruction")
+    need(proof.get("runtime_validation") is False and proof.get("deployment_authorized") is False, "Preserved-entry exception cannot claim runtime validation")
+    for key in ("baseline_manifest", "baseline_source"):
+        item = proof[key]
+        need(sha(local_path(root, item["path"])) == item.get("sha256"), "Preserved-entry baseline hash mismatch")
+    baseline = load(local_path(root, proof["baseline_manifest"]["path"]))
+    need(baseline["inputs"]["sources/anthropic.yaml"] == proof["baseline_source"]["sha256"], "Preserved-entry source is not the published baseline")
+    before = load(local_path(root, proof["baseline_source"]["path"]))
+    after = load(root / "sources/anthropic.yaml")
+    additions = proof.get("additions", [])
+    entries = proof.get("entries", [])
+    need(len(additions) == 1 and after == before + additions, "Preserved-entry exception allows only the bound addition")
+    need(len(entries) == 1 and entries[0] in before and entries[0] in after, "Preserved-entry exception requires unchanged review metadata")
+    need(set(proof.get("source_hashes", {})) == {f"sources/{a}.yaml" for a in ARTIFACTS}, "Preserved-entry source scope mismatch")
+    for relative, digest in proof["source_hashes"].items():
+        need(sha(local_path(root, relative)) == digest, "Preserved-entry source hash mismatch")
+    need(set(proof.get("artifacts", {})) == {a + ".srs" for a in ARTIFACTS} and all(re.fullmatch(r"[0-9a-f]{64}", h) for h in proof["artifacts"].values()), "Preserved-entry artifact scope mismatch")
+    return {"reference": reference, "proof": proof}
+
+
 def review_entry(entry, mode, as_of, root):
     need(REVIEW_FIELDS <= entry.keys(), "Missing compatibility review fields")
     state = entry["review_status"]
@@ -311,6 +342,9 @@ def review_entry(entry, mode, as_of, root):
         valid = state == "approved" and last is not None and as_of < after
         if not valid and state == "approved" and last is not None:
             exception = unchanged_release_exception(root, as_of)
+            valid = exception is not None and entry in exception["proof"]["entries"]
+        if not valid and state == "approved" and last is not None:
+            exception = preserved_entry_release_exception(root, as_of)
             valid = exception is not None and entry in exception["proof"]["entries"]
         need(valid, f"Unapproved/expired compatibility: {entry['value']}")
 

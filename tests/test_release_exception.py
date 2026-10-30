@@ -7,6 +7,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+from fixtures import restore_anthropic_v018
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, Invalid, canonical, load, review_entry, sha, write_json
@@ -19,6 +20,9 @@ class UnchangedReleaseExceptionTests(unittest.TestCase):
         self.addCleanup(scratch.cleanup)
         self.root = Path(scratch.name)
         shutil.copytree(ROOT / "sources", self.root / "sources")
+        restore_anthropic_v018(self.root)
+        approval = load(ROOT / "artifacts/v0.1.8/manifest.json")["publication_approval"]
+        write_json(self.root / "sources/release-review.json", {**approval, "schema": 2, "status": "approved", "integration_evidence": []})
         shutil.copyfile(ROOT / "tools.lock.json", self.root / "tools.lock.json")
         (self.root / "VERSION").write_text("0.1.8\n")
         (self.root / ".tools").mkdir()
