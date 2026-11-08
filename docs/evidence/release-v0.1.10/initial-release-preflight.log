@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/generate.py", line 65, in <module>
+    main()
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/generate.py", line 60, in main
+    build(output, a.mode, date(a.review_as_of) if a.review_as_of else None)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/generate.py", line 16, in build
+    selected, policy, normalization = canonical(root, mode, review_as_of)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/common.py", line 490, in canonical
+    review_entry(entry, mode if include else "candidate", as_of, root)
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/common.py", line 349, in review_entry
+    need(valid, f"Unapproved/expired compatibility: {entry['value']}")
+  File "/Users/yeminjie/Developer/sing-box-ai/scripts/common.py", line 31, in need
+    raise Invalid(message)
+common.Invalid: Unapproved/expired compatibility: 2607:6bc0:11::/48

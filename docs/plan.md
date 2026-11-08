@@ -1,7 +1,9 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.37**；工作树更新日期：2026-10-30（Asia/Shanghai）。
-> `v0.1.9` 已发布并设为 Latest：仅给 Anthropic 新增 Persona 身份验证依赖 `withpersona.com` 根域及全部子域。两次正式构建各 2,748 项检查、79 项回归、固定/Latest 各 6 个下载资产及共 428 项空缓存请求检查通过；旧 Challenge 复核日期及证据保持原样，按本版限定例外发布。详见[本版发布记录](evidence/release-v0.1.9/README.md)。
+> 文档修订：**1.38**；工作树更新日期：2026-11-08（Asia/Shanghai）。
+> `v0.1.10` 已补齐截图中的两个精确域名与目的网段；两次正式构建各 2,784 项原生检查及 84 项回归通过，发布进行中。详见[本版记录](evidence/release-v0.1.10/README.md)。
+
+> 历史 `v0.1.9` 已发布并曾设为 Latest：仅给 Anthropic 新增 Persona 身份验证依赖 `withpersona.com` 根域及全部子域。两次正式构建各 2,748 项检查、79 项回归、固定/Latest 各 6 个下载资产及共 428 项空缓存请求检查通过；旧 Challenge 复核日期及证据保持原样，按本版限定例外发布。详见[本版发布记录](evidence/release-v0.1.9/README.md)。
 
 > 历史 `v0.1.8` 已发布并曾设为 Latest：仅给 OpenAI 新增 `poteto.com` 根域及全部子域。两次正式构建各 2,734 项检查、73 项回归、固定/Latest 各 6 个下载资产及共 392 项空缓存请求检查通过。用户明确批准沿用未变的 Claude 制品，保留旧复核日期及证据；详见[本版发布记录](evidence/release-v0.1.8/README.md)。
 
@@ -462,7 +464,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。当前 `release-review.json` 绑定 `0.1.9` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增官方文档支持的 Persona 后缀 `withpersona.com`。限定例外绑定旧 Challenge 条目、唯一增量及三个制品摘要，保留旧日期与证据，不冒称真实 Challenge 已重新验证。
+每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。当前 `release-review.json` 绑定 `0.1.10` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增用户指定的 `r.stripe.com`、`fcmtoken.googleapis.com` 两个精确域名和目的网段 `34.8.0.0/16`。限定例外绑定旧 Challenge 与 IPv6 `/48` 条目、三个增量及三个制品摘要，保留旧日期与证据，不冒称已重新完成运行验证。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 
@@ -471,7 +473,11 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.9 当前发布结果
+### v0.1.10 当前发布进度
+
+已完成三项补充、两次正式构建和 84 项完整回归；正在执行 GitHub 固定地址及 Latest 发布流程。见[本版记录](evidence/release-v0.1.10/README.md)。
+
+### v0.1.9 历史发布结果
 
 唯一增量为 Anthropic 的 `withpersona.com` 后缀，用于 Claude 的 Persona 身份验证。已发布并设为 Latest：两次正式构建各 2,748 项检查、79 项完整回归、固定及 Latest 各 6 个下载资产、各 214 项空缓存请求检查全部通过。10 个历史版本的已记录信息及 10 个旧标签引用保持一致；真实 Challenge 复验与设备验收仍待完成。完整清单、摘要和回执见[本版记录](evidence/release-v0.1.9/README.md)。
 

@@ -1,0 +1,509 @@
+{
+  "version": "0.1.10",
+  "method": "Native locked sing-box CLI binary rule-set matching; no business target connections",
+  "artifacts": {
+    "anthropic": "e12a2a365d9ccd7092e5ed08e529402585091c0c4aad20a17e91281971f551f0",
+    "openai": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic-ip": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "cases": 62,
+  "failures": 0,
+  "results": [
+    {
+      "rule_set": "anthropic",
+      "target": "claude.ai",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "anthropic.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "claude.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "claudeusercontent.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "claude.app",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "claudemcpcontent.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "clau.de",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "api-iam.intercom.io",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "nexus-websocket-a.intercom.io",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "us5.datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "r.stripe.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "us.sentry.io",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "siftscience.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "fcmtoken.googleapis.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "r.stripe.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "fcmtoken.googleapis.com",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "34.8.0.0",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "34.8.0.1",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "34.8.128.1",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "34.8.255.255",
+      "expected": true,
+      "matched": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "a.r.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "notr.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "r.stripe.com.invalid",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "a.fcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "notfcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "fcmtoken.googleapis.com.invalid",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "34.7.255.255",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic",
+      "target": "34.9.0.0",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "r.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "fcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "34.8.0.0",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "34.8.0.1",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "34.8.128.1",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "34.8.255.255",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "a.r.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "notr.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "r.stripe.com.invalid",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "a.fcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "notfcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "fcmtoken.googleapis.com.invalid",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "34.7.255.255",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "openai",
+      "target": "34.9.0.0",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "r.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "fcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "34.8.0.0",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "34.8.0.1",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "34.8.128.1",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "34.8.255.255",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "a.r.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "notr.stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "r.stripe.com.invalid",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "stripe.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "a.fcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "notfcmtoken.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "fcmtoken.googleapis.com.invalid",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "googleapis.com",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "34.7.255.255",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "target": "34.9.0.0",
+      "expected": false,
+      "matched": false,
+      "exit": 0,
+      "passed": true
+    }
+  ]
+}

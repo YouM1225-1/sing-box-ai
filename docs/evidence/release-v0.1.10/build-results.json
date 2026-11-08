@@ -1,0 +1,45 @@
+{
+  "version": "0.1.10",
+  "source_commit": "c084a053bae204c2ddbb93ea8927bced269fc384",
+  "release_builds": [
+    {
+      "directory": "release-1",
+      "cases": 2784,
+      "failures": 0,
+      "release_gate_checked": true
+    },
+    {
+      "directory": "release-2",
+      "cases": 2784,
+      "failures": 0,
+      "release_gate_checked": true
+    }
+  ],
+  "independent_builds_equal": [
+    "anthropic-ip.json",
+    "anthropic-ip.srs",
+    "anthropic.json",
+    "anthropic.srs",
+    "cases.json",
+    "manifest.json",
+    "matches.jsonl",
+    "openai.json",
+    "openai.srs"
+  ],
+  "candidate_same_json_and_srs": true,
+  "unit_tests": {
+    "tests": 84,
+    "failures": 0,
+    "skipped": 0,
+    "resumed_after_interruption": true
+  },
+  "screenshot_native_checks": {
+    "cases": 62,
+    "failures": 0
+  },
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+    "anthropic.srs": "e12a2a365d9ccd7092e5ed08e529402585091c0c4aad20a17e91281971f551f0"
+  }
+}
