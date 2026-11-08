@@ -268,7 +268,7 @@ def unchanged_release_exception(root, as_of):
 
 
 def preserved_entry_release_exception(root, as_of):
-    """A dated publication permission preserving one expired entry and a bound delta."""
+    """A dated publication permission preserving expired entries and a bound delta."""
     reference = load(root / "sources/policy.yaml").get("preserved_entry_release_exception")
     if reference is None or not (root / "VERSION").is_file():
         return None
@@ -290,7 +290,7 @@ def preserved_entry_release_exception(root, as_of):
     additions = proof.get("additions", [])
     entries = proof.get("entries", [])
     need(isinstance(additions, list) and additions and after == before + additions, "Preserved-entry exception allows only the bound additions")
-    need(len(entries) == 1 and entries[0] in before and entries[0] in after, "Preserved-entry exception requires unchanged review metadata")
+    need(isinstance(entries, list) and entries and all(entry in before and entry in after for entry in entries), "Preserved-entry exception requires unchanged review metadata")
     need(set(proof.get("source_hashes", {})) == {f"sources/{a}.yaml" for a in ARTIFACTS}, "Preserved-entry source scope mismatch")
     for relative, digest in proof["source_hashes"].items():
         need(sha(local_path(root, relative)) == digest, "Preserved-entry source hash mismatch")

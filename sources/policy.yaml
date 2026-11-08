@@ -54,4 +54,4 @@ unchanged_release_exception:
 
 preserved_entry_release_exception:
   path: sources/evidence/release-v0.1.10-preserved-entry-exception.json
-  sha256: 622faf292fe1b7ac6cd6fd633e7ff3d8282d697b7db9f58000e46e35ffa25e8c
+  sha256: 90fd2d0663c1ee760a1576f8a0f466b4377fba5b089c17076abf7d8e9b29ba49

@@ -31,7 +31,7 @@
     "anthropic-ip": {}
   },
   "unresolved_conflicts": [],
-  "conclusion": "Exactly the two requested destination hosts and IPv4 /16 are added. No parent-domain widening or source-IP addition. OpenAI and Anthropic source-IP SRS remain byte-identical. These are user-requested scopes, not claims of official dependency or exclusive Claude ownership. The version/date/hash-bound preservation exception retains the old Challenge evidence without renewal.",
+  "conclusion": "Exactly the two requested destination hosts and IPv4 /16 are added. No parent-domain widening or source-IP addition. OpenAI and Anthropic source-IP SRS remain byte-identical. These are user-requested scopes, not claims of official dependency or exclusive Claude ownership. The version/date/hash-bound preservation exception retains the old Challenge and IPv6 /48 evidence without renewal.",
   "evidence": [
     {
       "path": "docs/evidence/release-v0.1.10/semantic-diff.json",
@@ -43,7 +43,7 @@
     },
     {
       "path": "sources/evidence/release-v0.1.10-preserved-entry-exception.json",
-      "sha256": "622faf292fe1b7ac6cd6fd633e7ff3d8282d697b7db9f58000e46e35ffa25e8c"
+      "sha256": "90fd2d0663c1ee760a1576f8a0f466b4377fba5b089c17076abf7d8e9b29ba49"
     }
   ]
 }

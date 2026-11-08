@@ -4,7 +4,7 @@
   "scope": "artifact-publication",
   "project_version": "0.1.10",
   "authorized_on": "2026-11-08",
-  "instruction": "补充并发布",
+  "instruction": "补充并发布；继续；继续",
   "instruction_context": "In response to the coverage report listing r.stripe.com, fcmtoken.googleapis.com, and 34.8.0.0/16 as missing.",
   "artifacts": {
     "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
@@ -15,6 +15,6 @@
   "limitations": [
     "Add only the two exact hosts and destination IPv4 /16 to Anthropic; preserve all prior rules.",
     "Publish GitHub artifacts and update Latest after fixed-URL validation; no device configuration or service changes.",
-    "Retain prior Challenge review dates and evidence; do not claim renewed Challenge or authenticated consumer validation."
+    "Retain prior Challenge and IPv6 /48 review dates and evidence; do not claim renewed runtime or authenticated consumer validation."
   ]
 }

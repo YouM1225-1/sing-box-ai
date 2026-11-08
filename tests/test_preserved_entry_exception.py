@@ -39,7 +39,19 @@ class PreservedEntryExceptionTests(unittest.TestCase):
         review_entry(self.row, "release", self.day, self.root)
         self.assertEqual(self.row["last_verified"], "2026-09-27")
         self.assertEqual(self.row["review_after"], "2026-10-27")
+        network = next(r for r in self.proof["entries"] if r["value"] == "2607:6bc0:11::/48")
+        review_entry(network, "release", self.day, self.root)
+        self.assertEqual(network["last_verified"], "2026-10-09")
+        self.assertEqual(network["review_after"], "2026-11-08")
         self.assertEqual([r["value"] for r in self.proof["additions"]], ["r.stripe.com", "fcmtoken.googleapis.com", "34.8.0.0/16"])
+
+    def test_permission_does_not_cover_an_omitted_expired_entry(self):
+        proof = copy.deepcopy(self.proof)
+        network = next(r for r in proof["entries"] if r["value"] == "2607:6bc0:11::/48")
+        proof["entries"].remove(network)
+        self.update_proof(proof)
+        with self.assertRaisesRegex(Invalid, "expired"):
+            review_entry(network, "release", self.day, self.root)
 
     def test_cannot_renew_another_date_or_version(self):
         with self.assertRaisesRegex(Invalid, "expired"):
