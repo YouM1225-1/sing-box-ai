@@ -1,8 +1,11 @@
-"""Current Persona coverage preserves the previous release and domain boundaries."""
+"""Pinned v0.1.9 Persona coverage preserves the previous release and domain boundaries."""
 import copy
 from pathlib import Path
 import sys
+import shutil
+import tempfile
 import unittest
+from fixtures import restore_anthropic_v019
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, canonical, load, semantic_key, source_document
@@ -11,7 +14,14 @@ from validate import reference_match
 
 class PersonaCoverageTests(unittest.TestCase):
     def test_only_persona_suffix_is_added_and_scope_is_documented(self):
-        selected, policy, _ = canonical(ROOT, "candidate")
+        with tempfile.TemporaryDirectory() as scratch:
+            root = Path(scratch)
+            shutil.copytree(ROOT / "sources", root / "sources")
+            restore_anthropic_v019(root)
+            shutil.copyfile(ROOT / "tools.lock.json", root / "tools.lock.json")
+            (root / ".tools").mkdir()
+            (root / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
+            selected, policy, _ = canonical(root, "candidate")
         for artifact, rows in selected.items():
             expected = copy.deepcopy(load(ROOT / "artifacts/v0.1.8" / (artifact + ".json")))
             if artifact == "anthropic":

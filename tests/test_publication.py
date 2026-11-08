@@ -8,6 +8,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+from fixtures import restore_anthropic_v019
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, Invalid, input_files, load, run, sha, write_json
@@ -21,6 +22,7 @@ class PublicationTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         for folder in ("sources", "scripts", "tests"):
             shutil.copytree(ROOT / folder, self.root / folder, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+        restore_anthropic_v019(self.root)
         for name in ("VERSION", "tools.lock.json", "requirements.txt"):
             shutil.copyfile(ROOT / name, self.root / name)
         # Synthetic publication clocks below refer to the v0.1.7 input period.

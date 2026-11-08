@@ -7,6 +7,7 @@ import tempfile
 import unittest
 
 import yaml
+from fixtures import restore_anthropic_v019
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, Invalid, canonical, load, review_entry, sha, write_json
@@ -18,6 +19,7 @@ class NetworkReviewTests(unittest.TestCase):
         self.addCleanup(scratch.cleanup)
         self.root = Path(scratch.name)
         shutil.copytree(ROOT / "sources", self.root / "sources")
+        restore_anthropic_v019(self.root)
         # Keep the OpenAI inputs aligned with the historical release dates below.
         prior = load(ROOT / "artifacts/v0.1.7/manifest.json")["provenance"]["openai"]
         write_json(self.root / "sources/openai.yaml", [{k: v for k, v in r.items() if k != "origin"} for r in prior if r["origin"] == "supplement"])

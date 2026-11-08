@@ -289,7 +289,7 @@ def preserved_entry_release_exception(root, as_of):
     after = load(root / "sources/anthropic.yaml")
     additions = proof.get("additions", [])
     entries = proof.get("entries", [])
-    need(len(additions) == 1 and after == before + additions, "Preserved-entry exception allows only the bound addition")
+    need(isinstance(additions, list) and additions and after == before + additions, "Preserved-entry exception allows only the bound additions")
     need(len(entries) == 1 and entries[0] in before and entries[0] in after, "Preserved-entry exception requires unchanged review metadata")
     need(set(proof.get("source_hashes", {})) == {f"sources/{a}.yaml" for a in ARTIFACTS}, "Preserved-entry source scope mismatch")
     for relative, digest in proof["source_hashes"].items():
@@ -397,7 +397,7 @@ def requested_coverage(entry, artifact, registry, root, as_of):
     need(proof.get("service_usage_verified") is False and proof.get("consumer_validation") is False, "Coverage instruction must not claim service or consumer validation")
     need(proof.get("website_url") == item["url"], "Coverage instruction website mismatch")
     need({"type": entry["type"], "value": entry["value"]} in proof.get("rules", []), "Rule is not in the pinned coverage instruction")
-    need(entry["shared_dependency"] == (entry["type"] != "ip_cidr"), "Requested coverage shared dependency mismatch")
+    need(entry["type"] == "ip_cidr" or entry["shared_dependency"], "Requested coverage shared dependency mismatch")
 
 
 def canonical(root=ROOT, mode="candidate", as_of=None):

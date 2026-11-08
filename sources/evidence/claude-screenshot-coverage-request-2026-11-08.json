@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "kind": "user-instruction",
+  "scope": "website-coverage",
+  "confirmed_by": "maintainer",
+  "approved_on": "2026-11-08",
+  "statement": "补充并发布",
+  "artifact": "anthropic",
+  "direction": "destination",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "excluded": [
+    "ntp"
+  ],
+  "website_url": "https://github.com/YouM1225-1/sing-box-ai",
+  "url_role": "Target repository; the user-provided screenshot has no original post URL.",
+  "interpretation": "The user approved the two missing exact domains and destination IPv4 /16 identified in the screenshot audit. This records requested coverage, not an official Claude dependency or exclusive network ownership.",
+  "service_usage_verified": false,
+  "consumer_validation": false,
+  "rules": [
+    {
+      "type": "domain",
+      "value": "r.stripe.com"
+    },
+    {
+      "type": "domain",
+      "value": "fcmtoken.googleapis.com"
+    },
+    {
+      "type": "ip_cidr",
+      "value": "34.8.0.0/16"
+    }
+  ],
+  "screenshot_sha256": "0a71d16f8cbd734b8cdaa92b9b10a1bd4c16bc10932dadfa65d792fa2e6e3428"
+}

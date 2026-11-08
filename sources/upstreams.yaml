@@ -418,3 +418,11 @@ archives:
   retrieved_at: '2026-10-30T04:05:20.637386+00:00'
   method: official-html-response-fact-record
   original_response_sha256: 40581aad75b80fcadf45e30374bf67ab90b5ee3665ad702388c5c87c2aac5d62
+- id: claude-screenshot-coverage-request
+  kind: user-instruction
+  path: sources/evidence/claude-screenshot-coverage-request-2026-11-08.json
+  url: https://github.com/YouM1225-1/sing-box-ai
+  sha256: 1d06ce68b480469114ecee43b34aa3cde37d32a38d19f060fa164bc175981084
+  observed_on: '2026-11-08'
+  method: direct-user-screenshot-and-publication-instruction; repository URL is not
+    the original screenshot source

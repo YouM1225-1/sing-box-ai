@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.10",
+  "reviewed_on": "2026-11-08",
+  "reviewer": "Codex primary review",
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic.srs": "e12a2a365d9ccd7092e5ed08e529402585091c0c4aad20a17e91281971f551f0",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "comparison": {
+    "openai": {},
+    "anthropic": {
+      "domain": {
+        "added": [
+          "fcmtoken.googleapis.com",
+          "r.stripe.com"
+        ],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [
+          "34.8.0.0/16"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {}
+  },
+  "unresolved_conflicts": [],
+  "conclusion": "Exactly the two requested destination hosts and IPv4 /16 are added. No parent-domain widening or source-IP addition. OpenAI and Anthropic source-IP SRS remain byte-identical. These are user-requested scopes, not claims of official dependency or exclusive Claude ownership. The version/date/hash-bound preservation exception retains the old Challenge evidence without renewal.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.10/semantic-diff.json",
+      "sha256": "2329515acb51aecf509ebcfd45ad2b9d0341467d89a5300bcea042287161db5e"
+    },
+    {
+      "path": "sources/evidence/claude-screenshot-coverage-request-2026-11-08.json",
+      "sha256": "1d06ce68b480469114ecee43b34aa3cde37d32a38d19f060fa164bc175981084"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.10-preserved-entry-exception.json",
+      "sha256": "622faf292fe1b7ac6cd6fd633e7ff3d8282d697b7db9f58000e46e35ffa25e8c"
+    }
+  ]
+}

@@ -10,3 +10,7 @@ def restore_anthropic_v018(root):
     registry = yaml.safe_load(path.read_text())
     registry["archives"] = [r for r in registry["archives"] if r["id"] not in {"claude-identity", "claude-identity-source"}]
     path.write_text(yaml.safe_dump(registry, sort_keys=False))
+
+
+def restore_anthropic_v019(root):
+    shutil.copyfile(Path(__file__).with_name("anthropic-v0.1.9.yaml"), root / "sources/anthropic.yaml")

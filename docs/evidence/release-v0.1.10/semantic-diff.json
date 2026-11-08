@@ -1,0 +1,28 @@
+{
+  "baseline": "0.1.9",
+  "version": "0.1.10",
+  "comparison": {
+    "openai": {},
+    "anthropic": {
+      "domain": {
+        "added": [
+          "fcmtoken.googleapis.com",
+          "r.stripe.com"
+        ],
+        "removed": []
+      },
+      "ip_cidr": {
+        "added": [
+          "34.8.0.0/16"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {}
+  },
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic.srs": "e12a2a365d9ccd7092e5ed08e529402585091c0c4aad20a17e91281971f551f0",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  }
+}

@@ -586,3 +586,39 @@
     reference: claude-identity
   reason: Persona apex and subdomains are documented network dependencies of the Claude
     identity-verification feature; shared with other Persona customers.
+- type: domain
+  value: r.stripe.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-screenshot-coverage-request
+  reason: Explicit maintainer request from the screenshot coverage audit; exact destination
+    scope, not an official dependency or exclusive Claude ownership claim.
+- type: domain
+  value: fcmtoken.googleapis.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-screenshot-coverage-request
+  reason: Explicit maintainer request from the screenshot coverage audit; exact destination
+    scope, not an official dependency or exclusive Claude ownership claim.
+- type: ip_cidr
+  value: 34.8.0.0/16
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-screenshot-coverage-request
+  reason: Explicit maintainer request from the screenshot coverage audit; exact destination
+    scope, not an official dependency or exclusive Claude ownership claim.
