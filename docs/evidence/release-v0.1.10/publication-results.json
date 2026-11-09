@@ -1,0 +1,64 @@
+{
+  "version": "0.1.10",
+  "published": true,
+  "latest": true,
+  "release_id": 438340281,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.10",
+  "published_at_utc": "2026-11-08T15:40:43Z",
+  "final_checked_at_utc": "2026-11-09T00:13:33.526413+00:00",
+  "source_commit": "c084a053bae204c2ddbb93ea8927bced269fc384",
+  "tag_commit": "d43bdac649a3b6f9b5aa017cd59c016d25291833",
+  "source_zip_input_binding_verified": true,
+  "assets": {
+    "SHA256SUMS": {
+      "sha256": "80c25dda4ea7d097e9c7ecdecaed8752d3d44619814a5a1e02edf9df175828f7",
+      "bytes": 410
+    },
+    "anthropic-ip.srs": {
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "bytes": 36
+    },
+    "anthropic.srs": {
+      "sha256": "e12a2a365d9ccd7092e5ed08e529402585091c0c4aad20a17e91281971f551f0",
+      "bytes": 561
+    },
+    "manifest.json": {
+      "sha256": "819b907dd6a0d67c297afe81fe17673bbf8a8efe782ce31fbbbc4cba5ef25324",
+      "bytes": 114229
+    },
+    "openai.srs": {
+      "sha256": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+      "bytes": 802
+    },
+    "sing-box-ai-v0.1.10.zip": {
+      "sha256": "b40ff855d22a55cbd14870e7552d89f7ed8ae71b93bc2cdacefffe0764f4df13",
+      "bytes": 2616284
+    }
+  },
+  "checks": {
+    "fixed": {
+      "downloaded_assets": 6,
+      "downloads_passed": true,
+      "cold_cache_passed": true,
+      "primary_requests": 230,
+      "source_direction_requests": 10,
+      "process_exit": 0,
+      "listeners_closed": true
+    },
+    "latest": {
+      "downloaded_assets": 6,
+      "downloads_passed": true,
+      "cold_cache_passed": true,
+      "primary_requests": 230,
+      "source_direction_requests": 10,
+      "process_exit": 0,
+      "listeners_closed": true
+    }
+  },
+  "native_build_cases": 2784,
+  "unit_tests": 84,
+  "native_screenshot_cases": 62,
+  "historical_releases_preserved": 11,
+  "historical_tag_refs_preserved": 14,
+  "consumer_deployment_status": "pending"
+}
