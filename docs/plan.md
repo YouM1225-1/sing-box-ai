@@ -1,6 +1,8 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.39**；工作树更新日期：2026-11-09（Asia/Shanghai）。
+> 文档修订：**1.40**；工作树更新日期：2026-11-10（Asia/Shanghai）。
+> `v0.1.11` 已完成构建及发布门槛，GitHub 发布待完成：仅补入 6 个用户指定的 Stripe 与 RevenueCat 精确目的域名，详见[本版记录](evidence/release-v0.1.11/README.md)。
+
 > `v0.1.10` 已发布并设为 Latest：补齐截图中的两个精确域名与目的网段；两次正式构建各 2,784 项原生检查、84 项回归、固定及 Latest 各 6 个下载附件与各 240 项空缓存请求检查全部通过。详见[本版记录](evidence/release-v0.1.10/README.md)。
 
 > 历史 `v0.1.9` 已发布并曾设为 Latest：仅给 Anthropic 新增 Persona 身份验证依赖 `withpersona.com` 根域及全部子域。两次正式构建各 2,748 项检查、79 项回归、固定/Latest 各 6 个下载资产及共 428 项空缓存请求检查通过；旧 Challenge 复核日期及证据保持原样，按本版限定例外发布。详见[本版发布记录](evidence/release-v0.1.9/README.md)。
@@ -428,7 +430,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.9`，其受验收候选为 `0.1.9-rc.1`；两次正式构建与验证已通过，同提交候选及远端下载与空缓存加载结果见[本版发布记录](evidence/release-v0.1.9/README.md)；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前待发布批次为 `0.1.11`；两次正式构建与同提交候选验证已通过，发布状态及后续远端验收见[本版发布记录](evidence/release-v0.1.11/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -464,7 +466,9 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 - **静态制品发布**：`release-review.json` 使用 schema 2、`scope: artifact-publication`；绑定本次明确上传授权、目标版本、三个 SRS 摘要，以及有结论和固定依据的 semantic diff 审阅。必须为 release 模式，当前 UTC 日期有效，所有构建输入均匹配已提交 `source_commit`，基线/来源/结构/方向/原生匹配和独立重建通过；pending 未选，无未解决官方冲突。获准后可发布同批制品。
 - **消费者运行验收**：独立保留 consumer-integration 门槛。记录平台、版本、环境、方法、地址族、配置摘要、实际出口和结果，并绑定本批次 SRS；声明支持的登录、Challenge、DNS、Voice、Artifacts、插件、启动、重启和消费者组合须有适用证据。未完成时 `validated_consumers: []`、`integration_evidence: []`、`deployment_status: pending`，不能因发布成功改为通过。
 
-每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。当前 `release-review.json` 绑定 `0.1.10` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增用户指定的 `r.stripe.com`、`fcmtoken.googleapis.com` 两个精确域名和目的网段 `34.8.0.0/16`。限定例外绑定旧 Challenge 与 IPv6 `/48` 条目、三个增量及三个制品摘要，保留旧日期与证据，不冒称已重新完成运行验证。
+每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。历史 `v0.1.10` 的发布审阅绑定 `0.1.10` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增用户指定的 `r.stripe.com`、`fcmtoken.googleapis.com` 两个精确域名和目的网段 `34.8.0.0/16`。限定例外绑定旧 Challenge 与 IPv6 `/48` 条目、三个增量及三个制品摘要，保留旧日期与证据，不冒称已重新完成运行验证。
+
+当前 `release-review.json` 绑定 `0.1.11` 的明确发布授权、6 个精确目的域名增量及三个制品摘要。OpenAI 与来源 IP 制品保持不变，原兼容条目的日期和证据由本版限定记录保留。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 
