@@ -1,0 +1,1112 @@
++0800 2026-11-10 15:00:18 [37mDEBUG[0m router: updating rule-set openai from URL: https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.11/openai.srs
++0800 2026-11-10 15:00:18 [37mDEBUG[0m router: updating rule-set anthropic-ip from URL: https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.11/anthropic-ip.srs
++0800 2026-11-10 15:00:18 [37mDEBUG[0m router: updating rule-set anthropic from URL: https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.11/anthropic.srs
++0800 2026-11-10 15:00:18 [37mDEBUG[0m dns: lookup domain github.com
++0800 2026-11-10 15:00:18 [37mDEBUG[0m dns: exchanged github.com NOERROR 1
++0800 2026-11-10 15:00:18 [37mDEBUG[0m dns: exchanged github.com NOERROR 0
++0800 2026-11-10 15:00:18 [37mDEBUG[0m dns: exchanged A github.com. 1 IN A 172.182.252.133
++0800 2026-11-10 15:00:18 [37mDEBUG[0m dns: lookup succeed for github.com: 172.182.252.133
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: lookup domain release-assets.githubusercontent.com
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: exchanged release-assets.githubusercontent.com NOERROR 790
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 790 IN A 185.199.110.133
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 790 IN A 185.199.111.133
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 790 IN A 185.199.108.133
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: exchanged A release-assets.githubusercontent.com. 790 IN A 185.199.109.133
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: exchanged release-assets.githubusercontent.com NOERROR 0
++0800 2026-11-10 15:00:19 [37mDEBUG[0m dns: lookup succeed for release-assets.githubusercontent.com: 185.199.110.133 185.199.111.133 185.199.108.133 185.199.109.133
++0800 2026-11-10 15:00:19 [36mINFO[0m router: updated rule-set openai
++0800 2026-11-10 15:00:19 [36mINFO[0m router: updated rule-set anthropic
++0800 2026-11-10 15:00:19 [36mINFO[0m router: updated rule-set anthropic-ip
++0800 2026-11-10 15:00:19 [36mINFO[0m inbound/socks[audit-socks]: tcp server started at 127.0.0.1:50765
++0800 2026-11-10 15:00:19 [36mINFO[0m inbound/socks[source-audit-socks]: tcp server started at 127.0.0.1:50766
++0800 2026-11-10 15:00:19 [36mINFO[0m network: updated default interface en1, index 15
++0800 2026-11-10 15:00:19 [36mINFO[0m network: updated network environment: gateway 192.168.3.2, gateway_mac 34:0a:68:24:50:7d
++0800 2026-11-10 15:00:19 [36mINFO[0m sing-box started (0.80s)
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;230m3810956248[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50770
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;230m3810956248[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic-com.ghost.io:443
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;230m3810956248[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;230m3810956248[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;229m1313262850[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50772
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;229m1313262850[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.anthropic-com.ghost.io:443
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;229m1313262850[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;229m1313262850[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;193m1336574461[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50773
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;193m1336574461[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.anthropic-com.ghost.io:443
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;193m1336574461[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;193m1336574461[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;131m3008275059[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50774
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;131m3008275059[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic.auth0.com:443
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;131m3008275059[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;131m3008275059[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;178m1900104610[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50775
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;178m1900104610[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.anthropic.auth0.com:443
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;178m1900104610[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;178m1900104610[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;213m831679941[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50776
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;213m831679941[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.anthropic.auth0.com:443
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;213m831679941[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;213m831679941[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;117m2341359973[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50777
++0800 2026-11-10 15:00:19 [36mINFO[0m [[38;5;117m2341359973[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic.com:443
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;117m2341359973[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:19 [37mDEBUG[0m [[38;5;117m2341359973[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;150m1909764486[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50778
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;150m1909764486[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.anthropic.com:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;150m1909764486[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;150m1909764486[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;135m1482306935[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50779
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;135m1482306935[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.anthropic.com:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;135m1482306935[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;135m1482306935[0m 1ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;227m565715931[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50780
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;227m565715931[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic.com.cdn.cloudflare.net:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;227m565715931[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;227m565715931[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;223m2311067656[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50781
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;223m2311067656[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.anthropic.com.cdn.cloudflare.net:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;223m2311067656[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;223m2311067656[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;110m2592698718[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50782
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;110m2592698718[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.anthropic.com.cdn.cloudflare.net:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;110m2592698718[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;110m2592698718[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;50m1115628025[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50784
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;50m1115628025[0m 0ms] inbound/socks[audit-socks]: inbound connection to clau.de:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;50m1115628025[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;50m1115628025[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;47m3802034166[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50785
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;47m3802034166[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.clau.de:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;47m3802034166[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;47m3802034166[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;166m2014357654[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50786
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;166m2014357654[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.clau.de:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;166m2014357654[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;166m2014357654[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;135m2230422135[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50787
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;135m2230422135[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.ai:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;135m2230422135[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;135m2230422135[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;136m220741240[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50788
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;136m220741240[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.ai:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;136m220741240[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;136m220741240[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;121m2549033582[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50789
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;121m2549033582[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claude.ai:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;121m2549033582[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;121m2549033582[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;159m1020633231[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50790
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;159m1020633231[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.app:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;159m1020633231[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;159m1020633231[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;172m3622457500[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50791
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;172m3622457500[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.app:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;172m3622457500[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;172m3622457500[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;115m1984194147[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50792
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;115m1984194147[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claude.app:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;115m1984194147[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;115m1984194147[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;99m3827449427[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50793
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;99m3827449427[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.com:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;99m3827449427[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;99m3827449427[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;32m3598750695[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50794
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;32m3598750695[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.com:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;32m3598750695[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;32m3598750695[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;142m1636679806[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50795
++0800 2026-11-10 15:00:20 [36mINFO[0m [[38;5;142m1636679806[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claude.com:443
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;142m1636679806[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:20 [37mDEBUG[0m [[38;5;142m1636679806[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;50m2879556386[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50796
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;50m2879556386[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.dev:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;50m2879556386[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;50m2879556386[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;149m2386463621[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50797
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;149m2386463621[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claude.dev:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;149m2386463621[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;149m2386463621[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;205m3559468221[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50798
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;205m3559468221[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claude.dev:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;205m3559468221[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;205m3559468221[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;86m433161286[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50799
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;86m433161286[0m 0ms] inbound/socks[audit-socks]: inbound connection to claudemcpclient.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;86m433161286[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;86m433161286[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;180m3583688356[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50800
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;180m3583688356[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claudemcpclient.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;180m3583688356[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;180m3583688356[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;33m2569327121[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50801
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;33m2569327121[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claudemcpclient.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;33m2569327121[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;33m2569327121[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;120m834612072[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50802
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;120m834612072[0m 0ms] inbound/socks[audit-socks]: inbound connection to claudemcpcontent.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;120m834612072[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;120m834612072[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;86m3328017553[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50803
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;86m3328017553[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claudemcpcontent.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;86m3328017553[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;86m3328017553[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;47m2017157663[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50804
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;47m2017157663[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claudemcpcontent.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;47m2017157663[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;47m2017157663[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;180m2332500388[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50805
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;180m2332500388[0m 0ms] inbound/socks[audit-socks]: inbound connection to claudeusercontent.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;180m2332500388[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;180m2332500388[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;174m3607835806[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50806
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;174m3607835806[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.claudeusercontent.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;174m3607835806[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;174m3607835806[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;187m2022279724[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50807
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;187m2022279724[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.claudeusercontent.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;187m2022279724[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;187m2022279724[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;133m1445619061[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50808
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;133m1445619061[0m 0ms] inbound/socks[audit-socks]: inbound connection to intercom.io:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;133m1445619061[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;133m1445619061[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;192m1158731815[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50809
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;192m1158731815[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.intercom.io:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;192m1158731815[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;192m1158731815[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;195m1213059108[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50810
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;195m1213059108[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.intercom.io:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;195m1213059108[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;195m1213059108[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;217m3742000329[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50811
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;217m3742000329[0m 0ms] inbound/socks[audit-socks]: inbound connection to intercomcdn.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;217m3742000329[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;217m3742000329[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;230m1240805848[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50812
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;230m1240805848[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.intercomcdn.com:443
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;230m1240805848[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:21 [37mDEBUG[0m [[38;5;230m1240805848[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;190m406129582[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50813
++0800 2026-11-10 15:00:21 [36mINFO[0m [[38;5;190m406129582[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.intercomcdn.com:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;190m406129582[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;190m406129582[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;84m2034230852[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50814
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;84m2034230852[0m 0ms] inbound/socks[audit-socks]: inbound connection to servd-anthropic-website.b-cdn.net:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;84m2034230852[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;84m2034230852[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;37m1042016533[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50815
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;37m1042016533[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.servd-anthropic-website.b-cdn.net:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;37m1042016533[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;37m1042016533[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;191m144739247[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50816
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;191m144739247[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.servd-anthropic-website.b-cdn.net:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;191m144739247[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;191m144739247[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;158m645974670[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50817
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;158m645974670[0m 0ms] inbound/socks[audit-socks]: inbound connection to statsigapi.net:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;158m645974670[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;158m645974670[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;228m2025873667[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50818
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;228m2025873667[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.statsigapi.net:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;228m2025873667[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;228m2025873667[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;117m3069944421[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50819
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;117m3069944421[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.statsigapi.net:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;117m3069944421[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;117m3069944421[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;158m4130976910[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50820
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;158m4130976910[0m 0ms] inbound/socks[audit-socks]: inbound connection to growthbook.io:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;158m4130976910[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;158m4130976910[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;182m911384230[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50821
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;182m911384230[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.growthbook.io:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;182m911384230[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;182m911384230[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;41m3320168729[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50822
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;41m3320168729[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.growthbook.io:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;41m3320168729[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;41m3320168729[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;32m2579943655[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50823
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;32m2579943655[0m 0ms] inbound/socks[audit-socks]: inbound connection to hcaptcha.com:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;32m2579943655[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;32m2579943655[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;209m2506999489[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50824
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;209m2506999489[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.hcaptcha.com:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;209m2506999489[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;209m2506999489[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;222m2956883936[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50825
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;222m2956883936[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.hcaptcha.com:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;222m2956883936[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;222m2956883936[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;188m1550787627[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50826
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;188m1550787627[0m 0ms] inbound/socks[audit-socks]: inbound connection to stripe.network:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;188m1550787627[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;188m1550787627[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;154m1949979530[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50827
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;154m1949979530[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.stripe.network:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;154m1949979530[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;154m1949979530[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;41m533879833[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50828
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;41m533879833[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.stripe.network:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;41m533879833[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;41m533879833[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;189m136062506[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50829
++0800 2026-11-10 15:00:22 [36mINFO[0m [[38;5;189m136062506[0m 0ms] inbound/socks[audit-socks]: inbound connection to stripecdn.com:443
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;189m136062506[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:22 [37mDEBUG[0m [[38;5;189m136062506[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;142m1380680574[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50830
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;142m1380680574[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.stripecdn.com:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;142m1380680574[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;142m1380680574[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;165m1533128341[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50831
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;165m1533128341[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.stripecdn.com:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;165m1533128341[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;165m1533128341[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;184m851304360[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50832
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;184m851304360[0m 0ms] inbound/socks[audit-socks]: inbound connection to segment.io:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;184m851304360[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;184m851304360[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;72m695461432[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50833
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;72m695461432[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.segment.io:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;72m695461432[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;72m695461432[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;213m2920329669[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50834
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;213m2920329669[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.segment.io:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;213m2920329669[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;213m2920329669[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;188m4095459756[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50835
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;188m4095459756[0m 0ms] inbound/socks[audit-socks]: inbound connection to withpersona.com:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;188m4095459756[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;188m4095459756[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;28m4144993292[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50836
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;28m4144993292[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.withpersona.com:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;28m4144993292[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;28m4144993292[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;201m2685717177[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50837
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;201m2685717177[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.withpersona.com:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;201m2685717177[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;201m2685717177[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;34m2209455122[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50838
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;34m2209455122[0m 0ms] inbound/socks[audit-socks]: inbound connection to notanthropic-com.ghost.io:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;34m2209455122[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;34m2209455122[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;177m2874105505[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50839
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;177m2874105505[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic-com.ghost.io.invalid:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;177m2874105505[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;177m2874105505[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;122m1761706093[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50840
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;122m1761706093[0m 0ms] inbound/socks[audit-socks]: inbound connection to notanthropic.auth0.com:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;122m1761706093[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;122m1761706093[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;44m3750621980[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50841
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;44m3750621980[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic.auth0.com.invalid:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;44m3750621980[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;44m3750621980[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;185m3112977065[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50842
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;185m3112977065[0m 0ms] inbound/socks[audit-socks]: inbound connection to notanthropic.com:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;185m3112977065[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;185m3112977065[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;229m3469319893[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50843
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;229m3469319893[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic.com.invalid:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;229m3469319893[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;229m3469319893[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;224m278031367[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50844
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;224m278031367[0m 0ms] inbound/socks[audit-socks]: inbound connection to notanthropic.com.cdn.cloudflare.net:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;224m278031367[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;224m278031367[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;152m4036989320[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50845
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;152m4036989320[0m 0ms] inbound/socks[audit-socks]: inbound connection to anthropic.com.cdn.cloudflare.net.invalid:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;152m4036989320[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;152m4036989320[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;174m1369846686[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50846
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;174m1369846686[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclau.de:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;174m1369846686[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;174m1369846686[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;38m152774934[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50847
++0800 2026-11-10 15:00:23 [36mINFO[0m [[38;5;38m152774934[0m 0ms] inbound/socks[audit-socks]: inbound connection to clau.de.invalid:443
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;38m152774934[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:23 [37mDEBUG[0m [[38;5;38m152774934[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;168m1464629400[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50848
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;168m1464629400[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaude.ai:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;168m1464629400[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;168m1464629400[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;179m1726804899[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50849
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;179m1726804899[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.ai.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;179m1726804899[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;179m1726804899[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;153m3920692046[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50850
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;153m3920692046[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaude.app:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;153m3920692046[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;153m3920692046[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;199m1669832119[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50851
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;199m1669832119[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.app.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;199m1669832119[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;199m1669832119[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;32m2491281639[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50852
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;32m2491281639[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaude.com:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;32m2491281639[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;32m2491281639[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;32m1270074087[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50853
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;32m1270074087[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.com.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;32m1270074087[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;32m1270074087[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;148m462534020[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50854
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;148m462534020[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaude.dev:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;148m462534020[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;148m462534020[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;121m2215275886[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50855
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;121m2215275886[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude.dev.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;121m2215275886[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;121m2215275886[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;29m3283510244[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50856
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;29m3283510244[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaudemcpclient.com:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;29m3283510244[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;29m3283510244[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;226m404501765[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50857
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;226m404501765[0m 0ms] inbound/socks[audit-socks]: inbound connection to claudemcpclient.com.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;226m404501765[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;226m404501765[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;42m2291334641[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50858
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;42m2291334641[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaudemcpcontent.com:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;42m2291334641[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;42m2291334641[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;194m1038503717[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50859
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;194m1038503717[0m 0ms] inbound/socks[audit-socks]: inbound connection to claudemcpcontent.com.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;194m1038503717[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;194m1038503717[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;123m2197580140[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50860
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;123m2197580140[0m 0ms] inbound/socks[audit-socks]: inbound connection to notclaudeusercontent.com:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;123m2197580140[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;123m2197580140[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;71m1612732727[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50861
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;71m1612732727[0m 0ms] inbound/socks[audit-socks]: inbound connection to claudeusercontent.com.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;71m1612732727[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;71m1612732727[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;176m1560424864[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50862
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;176m1560424864[0m 0ms] inbound/socks[audit-socks]: inbound connection to notintercom.io:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;176m1560424864[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;176m1560424864[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;176m117021344[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50863
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;176m117021344[0m 0ms] inbound/socks[audit-socks]: inbound connection to intercom.io.invalid:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;176m117021344[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;176m117021344[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;188m2862984491[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50864
++0800 2026-11-10 15:00:24 [36mINFO[0m [[38;5;188m2862984491[0m 0ms] inbound/socks[audit-socks]: inbound connection to notintercomcdn.com:443
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;188m2862984491[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:24 [37mDEBUG[0m [[38;5;188m2862984491[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;118m2729845606[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50865
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;118m2729845606[0m 0ms] inbound/socks[audit-socks]: inbound connection to intercomcdn.com.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;118m2729845606[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;118m2729845606[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;194m2223477170[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50866
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;194m2223477170[0m 0ms] inbound/socks[audit-socks]: inbound connection to notservd-anthropic-website.b-cdn.net:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;194m2223477170[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;194m2223477170[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;82m68022850[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50867
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;82m68022850[0m 0ms] inbound/socks[audit-socks]: inbound connection to servd-anthropic-website.b-cdn.net.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;82m68022850[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;82m68022850[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;192m1520157694[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50868
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;192m1520157694[0m 0ms] inbound/socks[audit-socks]: inbound connection to notstatsigapi.net:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;192m1520157694[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;192m1520157694[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;195m4283752699[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50869
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;195m4283752699[0m 0ms] inbound/socks[audit-socks]: inbound connection to statsigapi.net.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;195m4283752699[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;195m4283752699[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;107m4273264475[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50870
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;107m4273264475[0m 0ms] inbound/socks[audit-socks]: inbound connection to notgrowthbook.io:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;107m4273264475[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;107m4273264475[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;166m178728086[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50871
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;166m178728086[0m 0ms] inbound/socks[audit-socks]: inbound connection to growthbook.io.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;166m178728086[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;166m178728086[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;35m292948499[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50872
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;35m292948499[0m 0ms] inbound/socks[audit-socks]: inbound connection to nothcaptcha.com:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;35m292948499[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;35m292948499[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;176m2495871392[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50873
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;176m2495871392[0m 0ms] inbound/socks[audit-socks]: inbound connection to hcaptcha.com.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;176m2495871392[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;176m2495871392[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;63m2109676079[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50874
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;63m2109676079[0m 0ms] inbound/socks[audit-socks]: inbound connection to notstripe.network:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;63m2109676079[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;63m2109676079[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;142m4278253950[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50875
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;142m4278253950[0m 0ms] inbound/socks[audit-socks]: inbound connection to stripe.network.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;142m4278253950[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;142m4278253950[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;193m3104583718[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50876
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;193m3104583718[0m 0ms] inbound/socks[audit-socks]: inbound connection to notstripecdn.com:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;193m3104583718[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;193m3104583718[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;36m2408196331[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50877
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;36m2408196331[0m 0ms] inbound/socks[audit-socks]: inbound connection to stripecdn.com.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;36m2408196331[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;36m2408196331[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;150m391538310[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50878
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;150m391538310[0m 0ms] inbound/socks[audit-socks]: inbound connection to notsegment.io:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;150m391538310[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;150m391538310[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;117m4029031013[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50879
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;117m4029031013[0m 0ms] inbound/socks[audit-socks]: inbound connection to segment.io.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;117m4029031013[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;117m4029031013[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;173m640630429[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50880
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;173m640630429[0m 0ms] inbound/socks[audit-socks]: inbound connection to notwithpersona.com:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;173m640630429[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;173m640630429[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;191m169994280[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50881
++0800 2026-11-10 15:00:25 [36mINFO[0m [[38;5;191m169994280[0m 0ms] inbound/socks[audit-socks]: inbound connection to withpersona.com.invalid:443
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;191m169994280[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:25 [37mDEBUG[0m [[38;5;191m169994280[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;116m953978980[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50882
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;116m953978980[0m 0ms] inbound/socks[audit-socks]: inbound connection to datadog-probe.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;116m953978980[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;116m953978980[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;226m370364380[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50883
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;226m370364380[0m 0ms] inbound/socks[audit-socks]: inbound connection to probe-datadog-probe.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;226m370364380[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;226m370364380[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;155m3681997963[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50884
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;155m3681997963[0m 0ms] inbound/socks[audit-socks]: inbound connection to probe-datadog.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;155m3681997963[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;155m3681997963[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;166m1438366870[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50885
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;166m1438366870[0m 0ms] inbound/socks[audit-socks]: inbound connection to sentry-probe.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;166m1438366870[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;166m1438366870[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;230m2695218904[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50886
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;230m2695218904[0m 0ms] inbound/socks[audit-socks]: inbound connection to probe-sentry-probe.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;230m2695218904[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;230m2695218904[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;40m479261935[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50887
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;40m479261935[0m 0ms] inbound/socks[audit-socks]: inbound connection to probe-sentry.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;40m479261935[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;40m479261935[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;95m2874369359[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50888
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;95m2874369359[0m 0ms] inbound/socks[audit-socks]: inbound connection to sift-probe.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;95m2874369359[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;95m2874369359[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;194m3614554290[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50889
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;194m3614554290[0m 0ms] inbound/socks[audit-socks]: inbound connection to probe-sift-probe.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;194m3614554290[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;194m3614554290[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;28m4006219235[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50890
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;28m4006219235[0m 0ms] inbound/socks[audit-socks]: inbound connection to probe-sift.invalid:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;28m4006219235[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;28m4006219235[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;65m3028312369[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50891
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;65m3028312369[0m 0ms] inbound/socks[audit-socks]: inbound connection to http-intake.logs.us5.datadoghq.com:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;65m3028312369[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;65m3028312369[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;177m1459121057[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50892
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;177m1459121057[0m 0ms] inbound/socks[audit-socks]: inbound connection to browser-intake-us5-datadoghq.com:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;177m1459121057[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;177m1459121057[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;155m2062436235[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50893
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;155m2062436235[0m 0ms] inbound/socks[audit-socks]: inbound connection to api-iam.intercom.io:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;155m2062436235[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;155m2062436235[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;50m2089377570[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50894
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;50m2089377570[0m 0ms] inbound/socks[audit-socks]: inbound connection to widget.intercom.io:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;50m2089377570[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;50m2089377570[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;47m698619382[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50895
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;47m698619382[0m 0ms] inbound/socks[audit-socks]: inbound connection to js.intercomcdn.com:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;47m698619382[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;47m698619382[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;130m2754586994[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50896
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;130m2754586994[0m 0ms] inbound/socks[audit-socks]: inbound connection to downloads.intercomcdn.com:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;130m2754586994[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;130m2754586994[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;118m2464350566[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50897
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;118m2464350566[0m 0ms] inbound/socks[audit-socks]: inbound connection to static.intercomassets.com:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;118m2464350566[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;118m2464350566[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;80m162680640[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50898
++0800 2026-11-10 15:00:26 [36mINFO[0m [[38;5;80m162680640[0m 0ms] inbound/socks[audit-socks]: inbound connection to cdn.usefathom.com:443
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;80m162680640[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:26 [37mDEBUG[0m [[38;5;80m162680640[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;215m855214279[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50899
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;215m855214279[0m 0ms] inbound/socks[audit-socks]: inbound connection to fonts.googleapis.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;215m855214279[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;215m855214279[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;174m2891631518[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50900
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;174m2891631518[0m 0ms] inbound/socks[audit-socks]: inbound connection to fonts.gstatic.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;174m2891631518[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;174m2891631518[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;39m4230582254[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50901
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;39m4230582254[0m 0ms] inbound/socks[audit-socks]: inbound connection to sentry.io:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;39m4230582254[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;39m4230582254[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;116m4134990948[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50902
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;116m4134990948[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.sentry.io:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;116m4134990948[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;116m4134990948[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;171m3630472603[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50903
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;171m3630472603[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.sentry.io:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;171m3630472603[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;171m3630472603[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;218m476924874[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50904
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;218m476924874[0m 0ms] inbound/socks[audit-socks]: inbound connection to unrelated.datadoghq.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;218m476924874[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;218m476924874[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;150m1616905606[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50905
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;150m1616905606[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.browser-intake-us5-datadoghq.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;150m1616905606[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;150m1616905606[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;229m2845441749[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50906
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;229m2845441749[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.http-intake.logs.us5.datadoghq.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;229m2845441749[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;229m2845441749[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;100m3013482068[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50907
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;100m3013482068[0m 0ms] inbound/socks[audit-socks]: inbound connection to cdn.anthropic.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;100m3013482068[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;100m3013482068[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;122m692079725[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50908
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;122m692079725[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.anthropic.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;122m692079725[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;122m692079725[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;132m785311348[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50909
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;132m785311348[0m 0ms] inbound/socks[audit-socks]: inbound connection to mcp.anthropic.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;132m785311348[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;132m785311348[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;98m1873071186[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50910
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;98m1873071186[0m 0ms] inbound/socks[audit-socks]: inbound connection to console.anthropic.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;98m1873071186[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;98m1873071186[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;180m2793308836[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50911
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;180m2793308836[0m 0ms] inbound/socks[audit-socks]: inbound connection to workbench.anthropic.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;180m2793308836[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;180m2793308836[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;72m2075474744[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50912
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;72m2075474744[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.github.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;72m2075474744[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;72m2075474744[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;208m1162060992[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50913
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;208m1162060992[0m 0ms] inbound/socks[audit-socks]: inbound connection to chatgpt.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;208m1162060992[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;208m1162060992[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;210m2338577346[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50914
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;210m2338577346[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.openai.com:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;210m2338577346[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;210m2338577346[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;135m2646752887[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50915
++0800 2026-11-10 15:00:27 [36mINFO[0m [[38;5;135m2646752887[0m 0ms] inbound/socks[audit-socks]: inbound connection to unmatched.audit-review.invalid:443
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;135m2646752887[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:27 [37mDEBUG[0m [[38;5;135m2646752887[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;51m2644515508[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50916
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;51m2644515508[0m 0ms] inbound/socks[audit-socks]: inbound connection to claude-dev.invalid:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;51m2644515508[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;51m2644515508[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;189m3579670826[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50917
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;189m3579670826[0m 0ms] inbound/socks[audit-socks]: inbound connection to unrelated.intercomassets.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;189m3579670826[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;189m3579670826[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;38m2908334102[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50918
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;38m2908334102[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.static.intercomassets.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;38m2908334102[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;38m2908334102[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;115m4187172451[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50919
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;115m4187172451[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.cdn.usefathom.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;115m4187172451[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;115m4187172451[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;173m1221700253[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50920
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;173m1221700253[0m 0ms] inbound/socks[audit-socks]: inbound connection to notcdn.usefathom.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;173m1221700253[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;173m1221700253[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;176m1917398688[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50921
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;176m1917398688[0m 0ms] inbound/socks[audit-socks]: inbound connection to cdn.usefathom.com.invalid:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;176m1917398688[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;176m1917398688[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;28m1099856867[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50922
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;28m1099856867[0m 0ms] inbound/socks[audit-socks]: inbound connection to data-dog.audit-review.invalid:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;28m1099856867[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;28m1099856867[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;189m265471405[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50923
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;189m265471405[0m 0ms] inbound/socks[audit-socks]: inbound connection to sen-try.audit-review.invalid:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;189m265471405[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;189m265471405[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;37m1044370156[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50924
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;37m1044370156[0m 0ms] inbound/socks[audit-socks]: inbound connection to si-ft.audit-review.invalid:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;37m1044370156[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;37m1044370156[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;191m992850472[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50925
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;191m992850472[0m 0ms] inbound/socks[audit-socks]: inbound connection to time.apple.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;191m992850472[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;191m992850472[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;34m1812271849[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50926
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;34m1812271849[0m 0ms] inbound/socks[audit-socks]: inbound connection to time.windows.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;34m1812271849[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;34m1812271849[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;193m1290743805[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50927
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;193m1290743805[0m 0ms] inbound/socks[audit-socks]: inbound connection to pool.ntp.org:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;193m1290743805[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;193m1290743805[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;152m4056121224[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50928
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;152m4056121224[0m 0ms] inbound/socks[audit-socks]: inbound connection to 0.pool.ntp.org:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;152m4056121224[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;152m4056121224[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;223m3589643743[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50929
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;223m3589643743[0m 0ms] inbound/socks[audit-socks]: inbound connection to time.google.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;223m3589643743[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;223m3589643743[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;51m2629785594[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50930
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;51m2629785594[0m 0ms] inbound/socks[audit-socks]: inbound connection to time.cloudflare.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;51m2629785594[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;51m2629785594[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;159m692661647[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50931
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;159m692661647[0m 0ms] inbound/socks[audit-socks]: inbound connection to ntp.aliyun.com:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;159m692661647[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;159m692661647[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;155m773880715[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50932
++0800 2026-11-10 15:00:28 [36mINFO[0m [[38;5;155m773880715[0m 0ms] inbound/socks[audit-socks]: inbound connection to ntp.org:443
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;155m773880715[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:28 [37mDEBUG[0m [[38;5;155m773880715[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;51m3850344954[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50933
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;51m3850344954[0m 0ms] inbound/socks[audit-socks]: inbound connection to 160.79.104.0:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;51m3850344954[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;51m3850344954[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;138m2442046842[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50934
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;138m2442046842[0m 0ms] inbound/socks[audit-socks]: inbound connection to 160.79.105.255:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;138m2442046842[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;138m2442046842[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;218m1554546122[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50935
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;218m1554546122[0m 0ms] inbound/socks[audit-socks]: inbound connection to 160.79.106.0:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;218m1554546122[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;218m1554546122[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;218m2441177802[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50936
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;218m2441177802[0m 0ms] inbound/socks[audit-socks]: inbound connection to 160.79.111.255:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;218m2441177802[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;218m2441177802[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;194m287989170[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50937
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;194m287989170[0m 0ms] inbound/socks[audit-socks]: inbound connection to 160.79.103.255:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;194m287989170[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;194m287989170[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;190m343142953[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50938
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;190m343142953[0m 0ms] inbound/socks[audit-socks]: inbound connection to 160.79.112.0:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;190m343142953[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;190m343142953[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;39m3279259927[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50939
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;39m3279259927[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc0::]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;39m3279259927[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;39m3279259927[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;219m598463691[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50940
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;219m598463691[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc0:0:ffff:ffff:ffff:ffff:ffff]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;219m598463691[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;219m598463691[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;193m4222027558[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50941
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;193m4222027558[0m 2ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc0:1::]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;193m4222027558[0m 2ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;193m4222027558[0m 2ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;41m2652383472[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50942
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;41m2652383472[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc0:11::]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;41m2652383472[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;41m2652383472[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;136m3856437624[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50943
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;136m3856437624[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc0:11:ffff:ffff:ffff:ffff:ffff]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;136m3856437624[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;136m3856437624[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;155m2234527627[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50944
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;155m2234527627[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc0:12::]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;155m2234527627[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;155m2234527627[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;73m463577657[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50945
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;73m463577657[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;73m463577657[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;73m463577657[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;212m3057020612[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50946
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;212m3057020612[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;212m3057020612[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;212m3057020612[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;226m2287179740[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50947
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;226m2287179740[0m 0ms] inbound/socks[audit-socks]: inbound connection to [2607:6bc1::]:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;226m2287179740[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;226m2287179740[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;225m1411415558[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50948
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;225m1411415558[0m 0ms] inbound/socks[audit-socks]: inbound connection to frontend-apps-multi-region.workos.com:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;225m1411415558[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;225m1411415558[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;117m1427045221[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50949
++0800 2026-11-10 15:00:29 [36mINFO[0m [[38;5;117m1427045221[0m 0ms] inbound/socks[audit-socks]: inbound connection to cdn.platform.openai.com:443
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;117m1427045221[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:29 [37mDEBUG[0m [[38;5;117m1427045221[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;139m1485357691[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50950
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;139m1485357691[0m 0ms] inbound/socks[audit-socks]: inbound connection to workos.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;139m1485357691[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;139m1485357691[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;191m773731880[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50951
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;191m773731880[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.frontend-apps-multi-region.workos.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;191m773731880[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;191m773731880[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;223m2888265679[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50952
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;223m2888265679[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.frontend-apps-multi-region.workos.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;223m2888265679[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;223m2888265679[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;215m261800903[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50953
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;215m261800903[0m 0ms] inbound/socks[audit-socks]: inbound connection to notfrontend-apps-multi-region.workos.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;215m261800903[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;215m261800903[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;145m1361956225[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50954
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;145m1361956225[0m 0ms] inbound/socks[audit-socks]: inbound connection to frontend-apps-multi-region.workos.com.invalid:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;145m1361956225[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;145m1361956225[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;43m2642256626[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50955
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;43m2642256626[0m 0ms] inbound/socks[audit-socks]: inbound connection to frontend-apps-multi-region-workos.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;43m2642256626[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;43m2642256626[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;195m4233621499[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50956
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;195m4233621499[0m 0ms] inbound/socks[audit-socks]: inbound connection to openai.org:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;195m4233621499[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;195m4233621499[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;44m3321424412[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50957
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;44m3321424412[0m 0ms] inbound/socks[audit-socks]: inbound connection to www.openai.org:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;44m3321424412[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;44m3321424412[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;43m2588687346[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50958
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;43m2588687346[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.openai.org:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;43m2588687346[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;43m2588687346[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;110m434444382[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50959
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;110m434444382[0m 0ms] inbound/socks[audit-socks]: inbound connection to notopenai.org:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;110m434444382[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;110m434444382[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;211m3483955651[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50960
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;211m3483955651[0m 0ms] inbound/socks[audit-socks]: inbound connection to openai.org.invalid:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;211m3483955651[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;211m3483955651[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;44m3665655283[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50961
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;44m3665655283[0m 0ms] inbound/socks[audit-socks]: inbound connection to poteto.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;44m3665655283[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;44m3665655283[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;158m3068611401[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50962
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;158m3068611401[0m 0ms] inbound/socks[audit-socks]: inbound connection to www.poteto.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;158m3068611401[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;158m3068611401[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;153m1227334537[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50963
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;153m1227334537[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.b.poteto.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;153m1227334537[0m 0ms] router: match[1] inbound=audit-socks rule_set=openai => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;153m1227334537[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;72m3567076664[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50964
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;72m3567076664[0m 0ms] inbound/socks[audit-socks]: inbound connection to notpoteto.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;72m3567076664[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;72m3567076664[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;227m1469617115[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50965
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;227m1469617115[0m 0ms] inbound/socks[audit-socks]: inbound connection to poteto.com.invalid:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;227m1469617115[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;227m1469617115[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;39m2921886999[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50966
++0800 2026-11-10 15:00:30 [36mINFO[0m [[38;5;39m2921886999[0m 0ms] inbound/socks[audit-socks]: inbound connection to challenges.cloudflare.com:443
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;39m2921886999[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:30 [37mDEBUG[0m [[38;5;39m2921886999[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;218m3627107018[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50967
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;218m3627107018[0m 0ms] inbound/socks[audit-socks]: inbound connection to app.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;218m3627107018[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;218m3627107018[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;138m2589416314[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50968
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;138m2589416314[0m 0ms] inbound/socks[audit-socks]: inbound connection to cdn.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;138m2589416314[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;138m2589416314[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;208m993069760[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50969
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;208m993069760[0m 0ms] inbound/socks[audit-socks]: inbound connection to docs.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;208m993069760[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;208m993069760[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;207m87188159[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50970
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;207m87188159[0m 0ms] inbound/socks[audit-socks]: inbound connection to inquiry.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;207m87188159[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;207m87188159[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;194m2111922610[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50971
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;194m2111922610[0m 0ms] inbound/socks[audit-socks]: inbound connection to miniapp.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;194m2111922610[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;194m2111922610[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;148m1853816964[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50972
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;148m1853816964[0m 0ms] inbound/socks[audit-socks]: inbound connection to sdk.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;148m1853816964[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;148m1853816964[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;222m3140895497[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50973
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;222m3140895497[0m 0ms] inbound/socks[audit-socks]: inbound connection to status.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;222m3140895497[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;222m3140895497[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;62m1917231150[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50974
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;62m1917231150[0m 0ms] inbound/socks[audit-socks]: inbound connection to t.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;62m1917231150[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;62m1917231150[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;51m416565027[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50975
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;51m416565027[0m 0ms] inbound/socks[audit-socks]: inbound connection to webrtc-consumer.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;51m416565027[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;51m416565027[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;47m2277207839[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50976
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;47m2277207839[0m 0ms] inbound/socks[audit-socks]: inbound connection to webrtc-stun.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;47m2277207839[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;47m2277207839[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;224m3417407184[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50977
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;224m3417407184[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;224m3417407184[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;224m3417407184[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;65m1045044017[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50978
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;65m1045044017[0m 0ms] inbound/socks[audit-socks]: inbound connection to files.withpersona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;65m1045044017[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;65m1045044017[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;110m548184926[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50979
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;110m548184926[0m 0ms] inbound/socks[audit-socks]: inbound connection to with-persona.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;110m548184926[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;110m548184926[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;221m1930007777[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50980
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;221m1930007777[0m 0ms] inbound/socks[audit-socks]: inbound connection to r.stripe.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;221m1930007777[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;221m1930007777[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;141m2423055485[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50981
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;141m2423055485[0m 0ms] inbound/socks[audit-socks]: inbound connection to fcmtoken.googleapis.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;141m2423055485[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;141m2423055485[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;181m2740365989[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50982
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;181m2740365989[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.r.stripe.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;181m2740365989[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;181m2740365989[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;171m2681247131[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50983
++0800 2026-11-10 15:00:31 [36mINFO[0m [[38;5;171m2681247131[0m 0ms] inbound/socks[audit-socks]: inbound connection to notr.stripe.com:443
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;171m2681247131[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:31 [37mDEBUG[0m [[38;5;171m2681247131[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;96m102260304[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50984
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;96m102260304[0m 0ms] inbound/socks[audit-socks]: inbound connection to r.stripe.com.invalid:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;96m102260304[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;96m102260304[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;118m1314932582[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50985
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;118m1314932582[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.fcmtoken.googleapis.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;118m1314932582[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;118m1314932582[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;66m3156722738[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50986
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;66m3156722738[0m 0ms] inbound/socks[audit-socks]: inbound connection to notfcmtoken.googleapis.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;66m3156722738[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;66m3156722738[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;36m1099376363[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50987
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;36m1099376363[0m 0ms] inbound/socks[audit-socks]: inbound connection to fcmtoken.googleapis.com.invalid:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;36m1099376363[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;36m1099376363[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;182m2897750182[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50988
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;182m2897750182[0m 0ms] inbound/socks[audit-socks]: inbound connection to stripe.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;182m2897750182[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;182m2897750182[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;216m1584822216[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50989
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;216m1584822216[0m 0ms] inbound/socks[audit-socks]: inbound connection to googleapis.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;216m1584822216[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;216m1584822216[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;42m1243053338[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50990
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;42m1243053338[0m 0ms] inbound/socks[audit-socks]: inbound connection to other.stripe.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;42m1243053338[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;42m1243053338[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;79m1787313727[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50991
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;79m1787313727[0m 0ms] inbound/socks[audit-socks]: inbound connection to other.googleapis.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;79m1787313727[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;79m1787313727[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;193m1020831409[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50992
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;193m1020831409[0m 0ms] inbound/socks[audit-socks]: inbound connection to nexus-websocket-a.intercom.io:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;193m1020831409[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;193m1020831409[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;47m3728326134[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50993
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;47m3728326134[0m 0ms] inbound/socks[audit-socks]: inbound connection to us5.datadoghq.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;47m3728326134[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;47m3728326134[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;191m2241318696[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50994
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;191m2241318696[0m 0ms] inbound/socks[audit-socks]: inbound connection to us.sentry.io:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;191m2241318696[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;191m2241318696[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;83m2636909123[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50995
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;83m2636909123[0m 0ms] inbound/socks[audit-socks]: inbound connection to siftscience.com:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;83m2636909123[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;83m2636909123[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;169m3803738009[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50996
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;169m3803738009[0m 0ms] inbound/socks[audit-socks]: inbound connection to 34.8.0.0:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;169m3803738009[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;169m3803738009[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;191m4050785455[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50997
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;191m4050785455[0m 0ms] inbound/socks[audit-socks]: inbound connection to 34.8.0.1:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;191m4050785455[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;191m4050785455[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;220m2258426594[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50998
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;220m2258426594[0m 0ms] inbound/socks[audit-socks]: inbound connection to 34.8.128.1:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;220m2258426594[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;220m2258426594[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;192m109041840[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:50999
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;192m109041840[0m 0ms] inbound/socks[audit-socks]: inbound connection to 34.8.255.255:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;192m109041840[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;192m109041840[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;193m1157221670[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51000
++0800 2026-11-10 15:00:32 [36mINFO[0m [[38;5;193m1157221670[0m 0ms] inbound/socks[audit-socks]: inbound connection to 34.7.255.255:443
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;193m1157221670[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:32 [37mDEBUG[0m [[38;5;193m1157221670[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;216m2910266824[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51001
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;216m2910266824[0m 0ms] inbound/socks[audit-socks]: inbound connection to 34.9.0.0:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;216m2910266824[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;216m2910266824[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;215m954910151[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51002
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;215m954910151[0m 0ms] inbound/socks[audit-socks]: inbound connection to js.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;215m954910151[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;215m954910151[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;200m2232666808[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51003
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;200m2232666808[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;200m2232666808[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;200m2232666808[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;178m1236015266[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51004
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;178m1236015266[0m 0ms] inbound/socks[audit-socks]: inbound connection to checkout.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;178m1236015266[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;178m1236015266[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;157m2474838346[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51005
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;157m2474838346[0m 0ms] inbound/socks[audit-socks]: inbound connection to billing.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;157m2474838346[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;157m2474838346[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;86m3397288849[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51006
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;86m3397288849[0m 0ms] inbound/socks[audit-socks]: inbound connection to m.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;86m3397288849[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;86m3397288849[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;230m1885516504[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51007
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;230m1885516504[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.revenuecat.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;230m1885516504[0m 0ms] router: match[0] inbound=audit-socks rule_set=anthropic => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;230m1885516504[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;102m1984002646[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51008
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;102m1984002646[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.js.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;102m1984002646[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;102m1984002646[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;107m3848042075[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51009
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;107m3848042075[0m 0ms] inbound/socks[audit-socks]: inbound connection to b.a.js.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;107m3848042075[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;107m3848042075[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;156m491292812[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51010
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;156m491292812[0m 0ms] inbound/socks[audit-socks]: inbound connection to notjs.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;156m491292812[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;156m491292812[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;97m2787443281[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51011
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;97m2787443281[0m 0ms] inbound/socks[audit-socks]: inbound connection to js.stripe.com.invalid:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;97m2787443281[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;97m2787443281[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;189m2222621482[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51012
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;189m2222621482[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.api.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;189m2222621482[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;189m2222621482[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;112m2937227360[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51013
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;112m2937227360[0m 0ms] inbound/socks[audit-socks]: inbound connection to b.a.api.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;112m2937227360[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;112m2937227360[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;139m2083909499[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51014
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;139m2083909499[0m 0ms] inbound/socks[audit-socks]: inbound connection to notapi.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;139m2083909499[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;139m2083909499[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;154m582596490[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51015
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;154m582596490[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.stripe.com.invalid:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;154m582596490[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;154m582596490[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;213m4212345797[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51016
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;213m4212345797[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.checkout.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;213m4212345797[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;213m4212345797[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;175m2799118751[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51017
++0800 2026-11-10 15:00:33 [36mINFO[0m [[38;5;175m2799118751[0m 0ms] inbound/socks[audit-socks]: inbound connection to b.a.checkout.stripe.com:443
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;175m2799118751[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:33 [37mDEBUG[0m [[38;5;175m2799118751[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;216m861439432[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51018
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;216m861439432[0m 0ms] inbound/socks[audit-socks]: inbound connection to notcheckout.stripe.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;216m861439432[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;216m861439432[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;188m4012897708[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51019
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;188m4012897708[0m 0ms] inbound/socks[audit-socks]: inbound connection to checkout.stripe.com.invalid:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;188m4012897708[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;188m4012897708[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;138m2992918394[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51020
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;138m2992918394[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.billing.stripe.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;138m2992918394[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;138m2992918394[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;114m2790301538[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51021
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;114m2790301538[0m 0ms] inbound/socks[audit-socks]: inbound connection to b.a.billing.stripe.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;114m2790301538[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;114m2790301538[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;152m3533275016[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51022
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;152m3533275016[0m 0ms] inbound/socks[audit-socks]: inbound connection to notbilling.stripe.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;152m3533275016[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;152m3533275016[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;138m3950003578[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51023
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;138m3950003578[0m 0ms] inbound/socks[audit-socks]: inbound connection to billing.stripe.com.invalid:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;138m3950003578[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;138m3950003578[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;48m3307442208[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51024
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;48m3307442208[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.m.stripe.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;48m3307442208[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;48m3307442208[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;29m100420580[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51025
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;29m100420580[0m 0ms] inbound/socks[audit-socks]: inbound connection to b.a.m.stripe.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;29m100420580[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;29m100420580[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;28m1694562019[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51026
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;28m1694562019[0m 0ms] inbound/socks[audit-socks]: inbound connection to notm.stripe.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;28m1694562019[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;28m1694562019[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;51m2184246563[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51027
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;51m2184246563[0m 0ms] inbound/socks[audit-socks]: inbound connection to m.stripe.com.invalid:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;51m2184246563[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;51m2184246563[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;189m424690861[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51028
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;189m424690861[0m 0ms] inbound/socks[audit-socks]: inbound connection to a.api.revenuecat.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;189m424690861[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;189m424690861[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;217m1420969161[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51029
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;217m1420969161[0m 0ms] inbound/socks[audit-socks]: inbound connection to b.a.api.revenuecat.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;217m1420969161[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;217m1420969161[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;100m930911060[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51030
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;100m930911060[0m 0ms] inbound/socks[audit-socks]: inbound connection to notapi.revenuecat.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;100m930911060[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;100m930911060[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;116m1344492644[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51031
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;116m1344492644[0m 0ms] inbound/socks[audit-socks]: inbound connection to api.revenuecat.com.invalid:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;116m1344492644[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;116m1344492644[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;209m3307308993[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51032
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;209m3307308993[0m 0ms] inbound/socks[audit-socks]: inbound connection to revenuecat.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;209m3307308993[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;209m3307308993[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;230m3520492502[0m 0ms] inbound/socks[audit-socks]: inbound connection from 127.0.0.1:51033
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;230m3520492502[0m 0ms] inbound/socks[audit-socks]: inbound connection to other.revenuecat.com:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;230m3520492502[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;230m3520492502[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;83m102844995[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51034
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;83m102844995[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 160.79.104.0:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;83m102844995[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;83m102844995[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;179m4218581411[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51035
++0800 2026-11-10 15:00:34 [36mINFO[0m [[38;5;179m4218581411[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 160.79.111.255:443
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;179m4218581411[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:34 [37mDEBUG[0m [[38;5;179m4218581411[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;168m2993257368[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51036
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;168m2993257368[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 160.79.103.255:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;168m2993257368[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;168m2993257368[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;185m2015544745[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51037
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;185m2015544745[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 160.79.112.0:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;185m2015544745[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;185m2015544745[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;132m1680308852[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51038
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;132m1680308852[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to [2607:6bc0::]:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;132m1680308852[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;132m1680308852[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;166m4022333846[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51039
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;166m4022333846[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to [2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff]:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;166m4022333846[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;166m4022333846[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;150m497634694[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51040
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;150m497634694[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 34.8.0.0:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;150m497634694[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;150m497634694[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;116m1136377956[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51041
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;116m1136377956[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 34.8.0.1:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;116m1136377956[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;116m1136377956[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;135m3194253431[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51042
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;135m3194253431[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 34.8.128.1:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;135m3194253431[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;135m3194253431[0m 0ms] router: connection closed: rejected
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;79m2319809855[0m 0ms] inbound/socks[source-audit-socks]: inbound connection from 127.0.0.1:51043
++0800 2026-11-10 15:00:35 [36mINFO[0m [[38;5;79m2319809855[0m 0ms] inbound/socks[source-audit-socks]: inbound connection to 34.8.255.255:443
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;79m2319809855[0m 0ms] router: match[3] => reject
++0800 2026-11-10 15:00:35 [37mDEBUG[0m [[38;5;79m2319809855[0m 0ms] router: connection closed: rejected

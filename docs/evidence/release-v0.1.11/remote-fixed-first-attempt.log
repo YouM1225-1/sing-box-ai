@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/yeminjie/Developer/sing-box-ai/docs/evidence/release-v0.1.11/remote-probe.py", line 293, in <module>
+    main()
+  File "/Users/yeminjie/Developer/sing-box-ai/docs/evidence/release-v0.1.11/remote-probe.py", line 244, in main
+    assert result["primary_request_count"] == len(CASES) == 230
+AssertionError

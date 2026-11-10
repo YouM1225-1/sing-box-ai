@@ -89,7 +89,7 @@ CASES += [(host, 0) for host in (
     "webrtc-stun.withpersona.com", "api.withpersona.com", "files.withpersona.com",
 )]
 CASES += [("with-persona.com", 3)]
-# v0.1.11: exact screenshot hosts, shared destination /16, and negative boundaries.
+# v0.1.10: exact screenshot hosts, shared destination /16, and negative boundaries.
 CASES += [(host, 0) for host in ("r.stripe.com", "fcmtoken.googleapis.com")]
 CASES += [(near, 3) for host in ("r.stripe.com", "fcmtoken.googleapis.com")
           for near in ("a." + host, "not" + host, host + ".invalid")]
@@ -241,9 +241,9 @@ def main():
                     assert matches == [{"index": index, "description": expected_description}], row
             result["primary_request_count"] = len(result["requests"])
             result["source_direction_request_count"] = len(result["source_direction_requests"])
-            assert result["primary_request_count"] == len(CASES) == 230
+            assert result["primary_request_count"] == len(CASES) == 262
             assert result["source_direction_request_count"] == len(SOURCE_DIRECTION_CASES) == 10
-            assert sum(row["socks_atyp"] == 3 for row in result["requests"]) == 209
+            assert sum(row["socks_atyp"] == 3 for row in result["requests"]) == 241
             assert sum(row["socks_atyp"] == 4 for row in result["requests"]) == 9
             assert sum(row["socks_atyp"] == 1 for row in result["requests"]) == 12
             assert child.poll() is None, "探测期间原生进程提前退出"
