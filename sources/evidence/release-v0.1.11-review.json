@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "kind": "semantic-diff-review",
+  "scope": "artifact-publication",
+  "status": "approved",
+  "project_version": "0.1.11",
+  "reviewed_on": "2026-11-10",
+  "reviewer": "Codex primary review",
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic.srs": "53793df8d575abf1892ca3e700b4d54ea4bbea67bfdad0e5bc87f3b9bc6e10ae",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "comparison": {
+    "openai": {},
+    "anthropic": {
+      "domain": {
+        "added": [
+          "api.revenuecat.com",
+          "api.stripe.com",
+          "billing.stripe.com",
+          "checkout.stripe.com",
+          "js.stripe.com",
+          "m.stripe.com"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {}
+  },
+  "unresolved_conflicts": [],
+  "conclusion": "Only six user-requested exact destination domains are added to Anthropic. There is no suffix, keyword, IP, or source-direction expansion. OpenAI and Anthropic source-IP SRS remain byte-identical. Shared payment and optional integration coverage is not recorded as official or verified runtime dependency. Prior compatibility entries and dates are preserved under the version-bound publication authorization.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.11/semantic-diff.json",
+      "sha256": "1690b9bd6ec962bc2403201ff2c3bf8c4e80db632f02dca982c56443d3707507"
+    },
+    {
+      "path": "sources/evidence/claude-loc-sens-coverage-request-2026-11-10.json",
+      "sha256": "f8fa14f74e5bb108c46c8e89dfcfad611d5959ae40ba92be4f99264dd718d3b1"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.11-preserved-entry-exception.json",
+      "sha256": "f26ad97d70aa5c06161ca3db8e645ee54042c83dcc6f7c4abb4b655d8eb368f6"
+    }
+  ]
+}

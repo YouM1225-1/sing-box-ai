@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "operator-authorization",
+  "scope": "artifact-publication",
+  "project_version": "0.1.11",
+  "authorized_on": "2026-11-10",
+  "instruction": "添加以上未覆盖的规则 并发布",
+  "instruction_context": "The preceding answer named five exact Stripe hosts and api.revenuecat.com as absent from the Anthropic set. The user authorized adding those rules and publishing.",
+  "artifacts": {
+    "openai.srs": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+    "anthropic.srs": "53793df8d575abf1892ca3e700b4d54ea4bbea67bfdad0e5bc87f3b9bc6e10ae",
+    "anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  },
+  "deployment_authorized": false,
+  "limitations": [
+    "Add only six exact destination domains to Anthropic; preserve all previous rules and OpenAI/source-IP artifacts.",
+    "Publish GitHub release assets and update Latest after fixed-URL checks; no device changes.",
+    "Retain existing Challenge and IPv6 compatibility evidence and original dates; no renewed authenticated runtime verification is claimed."
+  ]
+}

@@ -622,3 +622,81 @@
     reference: claude-screenshot-coverage-request
   reason: Explicit maintainer request from the screenshot coverage audit; exact destination
     scope, not an official dependency or exclusive Claude ownership claim.
+- type: domain
+  value: js.stripe.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-loc-sens-coverage-request
+  reason: Maintainer-requested exact host from the loc-sens Claude gap review; shared
+    Stripe payment or optional RevenueCat integration scope, not a verified runtime
+    dependency.
+- type: domain
+  value: api.stripe.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-loc-sens-coverage-request
+  reason: Maintainer-requested exact host from the loc-sens Claude gap review; shared
+    Stripe payment or optional RevenueCat integration scope, not a verified runtime
+    dependency.
+- type: domain
+  value: checkout.stripe.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-loc-sens-coverage-request
+  reason: Maintainer-requested exact host from the loc-sens Claude gap review; shared
+    Stripe payment or optional RevenueCat integration scope, not a verified runtime
+    dependency.
+- type: domain
+  value: billing.stripe.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-loc-sens-coverage-request
+  reason: Maintainer-requested exact host from the loc-sens Claude gap review; shared
+    Stripe payment or optional RevenueCat integration scope, not a verified runtime
+    dependency.
+- type: domain
+  value: m.stripe.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-loc-sens-coverage-request
+  reason: Maintainer-requested exact host from the loc-sens Claude gap review; shared
+    Stripe payment or optional RevenueCat integration scope, not a verified runtime
+    dependency.
+- type: domain
+  value: api.revenuecat.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-loc-sens-coverage-request
+  reason: Maintainer-requested exact host from the loc-sens Claude gap review; shared
+    Stripe payment or optional RevenueCat integration scope, not a verified runtime
+    dependency.

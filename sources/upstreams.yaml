@@ -426,3 +426,10 @@ archives:
   observed_on: '2026-11-08'
   method: direct-user-screenshot-and-publication-instruction; repository URL is not
     the original screenshot source
+- id: claude-loc-sens-coverage-request
+  kind: user-instruction
+  path: sources/evidence/claude-loc-sens-coverage-request-2026-11-10.json
+  url: https://gist.githubusercontent.com/janlay/bec3cade3361678d975a8394d54515c6/raw/loc-sens-clash.txt
+  sha256: f8fa14f74e5bb108c46c8e89dfcfad611d5959ae40ba92be4f99264dd718d3b1
+  observed_on: '2026-11-10'
+  method: direct-user-instruction-after-six-exact-domain-gap-review

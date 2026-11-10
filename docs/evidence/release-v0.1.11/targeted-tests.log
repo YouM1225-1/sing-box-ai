@@ -1,0 +1,17 @@
+test_exact_hosts_without_parent_subdomain_or_keyword_expansion (test_loc_sens_coverage.LocSensCoverageTests) ... ok
+test_only_six_requested_hosts_are_added_to_previous_release (test_loc_sens_coverage.LocSensCoverageTests) ... ok
+test_domain_matches_are_exact (test_screenshot_coverage.ScreenshotCoverageTests) ... ok
+test_network_boundaries_and_source_direction (test_screenshot_coverage.ScreenshotCoverageTests) ... ok
+test_only_three_requested_destination_scopes_are_added (test_screenshot_coverage.ScreenshotCoverageTests) ... ok
+test_cannot_renew_another_date_or_version (test_preserved_entry_exception.PreservedEntryExceptionTests) ... ok
+test_empty_delta_cannot_use_preserved_entry_permission (test_preserved_entry_exception.PreservedEntryExceptionTests) ... ok
+test_exact_approved_delta_preserves_old_dates (test_preserved_entry_exception.PreservedEntryExceptionTests) ... ok
+test_extra_rule_or_changed_old_entry_is_rejected (test_preserved_entry_exception.PreservedEntryExceptionTests) ... ok
+test_permission_does_not_cover_an_omitted_expired_entry (test_preserved_entry_exception.PreservedEntryExceptionTests) ... ok
+test_publication_rejects_a_different_artifact_batch (test_preserved_entry_exception.PreservedEntryExceptionTests) ... ok
+test_rehashed_proof_cannot_claim_runtime_or_change_baseline (test_preserved_entry_exception.PreservedEntryExceptionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 2.859s
+
+OK

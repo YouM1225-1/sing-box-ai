@@ -1,7 +1,9 @@
 """The screenshot supplement adds only the two hosts and destination /16."""
 import copy
 from pathlib import Path
+import shutil
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -12,7 +14,15 @@ from validate import reference_match
 class ScreenshotCoverageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.selected = canonical(ROOT, "candidate")[0]
+        # Keep the historical v0.1.10 delta independent of later supplements.
+        with tempfile.TemporaryDirectory() as scratch:
+            root = Path(scratch)
+            shutil.copytree(ROOT / "sources", root / "sources")
+            shutil.copyfile(ROOT / "tests/fixtures/anthropic-v0.1.10.yaml", root / "sources/anthropic.yaml")
+            shutil.copyfile(ROOT / "tools.lock.json", root / "tools.lock.json")
+            (root / ".tools").mkdir()
+            (root / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
+            cls.selected = canonical(root, "candidate")[0]
 
     def test_only_three_requested_destination_scopes_are_added(self):
         for artifact, rows in self.selected.items():

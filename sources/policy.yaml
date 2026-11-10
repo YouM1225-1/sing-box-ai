@@ -24,7 +24,7 @@ enabled_optional:
 - js.intercomcdn.com
 - downloads.intercomcdn.com
 - static.intercomassets.com
-review_as_of: '2026-11-08'
+review_as_of: '2026-11-10'
 approved_regex:
   ^[^.]+-review\.googlesource\.com$:
     reason: 'Optional Gerrit host: one label ending in -review; does not match other googlesource hosts.'
@@ -53,5 +53,5 @@ unchanged_release_exception:
   sha256: d5fff7f007afe363cc7b7bb6456cba167de8c834d61e47341c8b929967c331dd
 
 preserved_entry_release_exception:
-  path: sources/evidence/release-v0.1.10-preserved-entry-exception.json
-  sha256: 90fd2d0663c1ee760a1576f8a0f466b4377fba5b089c17076abf7d8e9b29ba49
+  path: sources/evidence/release-v0.1.11-preserved-entry-exception.json
+  sha256: f26ad97d70aa5c06161ca3db8e645ee54042c83dcc6f7c4abb4b655d8eb368f6

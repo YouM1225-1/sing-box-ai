@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "kind": "user-instruction",
+  "scope": "website-coverage",
+  "confirmed_by": "maintainer",
+  "approved_on": "2026-11-10",
+  "statement": "添加以上未覆盖的规则 并发布",
+  "artifact": "anthropic",
+  "direction": "destination",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "excluded": [
+    "ntp"
+  ],
+  "website_url": "https://gist.githubusercontent.com/janlay/bec3cade3361678d975a8394d54515c6/raw/loc-sens-clash.txt",
+  "interpretation": "Add the five exact Stripe hosts and api.revenuecat.com named in the preceding answer to the Anthropic destination set; preserve existing rules. No parent or wildcard expansion. RevenueCat is requested optional-integration coverage, not a claim of a default Claude dependency. No NTP addition.",
+  "service_usage_verified": false,
+  "consumer_validation": false,
+  "rules": [
+    {
+      "type": "domain",
+      "value": "js.stripe.com"
+    },
+    {
+      "type": "domain",
+      "value": "api.stripe.com"
+    },
+    {
+      "type": "domain",
+      "value": "checkout.stripe.com"
+    },
+    {
+      "type": "domain",
+      "value": "billing.stripe.com"
+    },
+    {
+      "type": "domain",
+      "value": "m.stripe.com"
+    },
+    {
+      "type": "domain",
+      "value": "api.revenuecat.com"
+    }
+  ]
+}
