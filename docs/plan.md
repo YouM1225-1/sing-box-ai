@@ -1,7 +1,7 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.40**；工作树更新日期：2026-11-10（Asia/Shanghai）。
-> `v0.1.11` 已完成构建及发布门槛，GitHub 发布待完成：仅补入 6 个用户指定的 Stripe 与 RevenueCat 精确目的域名，详见[本版记录](evidence/release-v0.1.11/README.md)。
+> `v0.1.11` 已发布并设为 Latest：仅补入 6 个用户指定的 Stripe 与 RevenueCat 精确目的域名，两次正式构建各 2,868 项原生检查、86 项回归及固定/Latest 各 272 项空缓存请求检查全部通过，详见[本版记录](evidence/release-v0.1.11/README.md)。
 
 > `v0.1.10` 已发布并设为 Latest：补齐截图中的两个精确域名与目的网段；两次正式构建各 2,784 项原生检查、84 项回归、固定及 Latest 各 6 个下载附件与各 240 项空缓存请求检查全部通过。详见[本版记录](evidence/release-v0.1.10/README.md)。
 
@@ -430,7 +430,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前待发布批次为 `0.1.11`；两次正式构建与同提交候选验证已通过，发布状态及后续远端验收见[本版发布记录](evidence/release-v0.1.11/README.md)；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.11`；两次正式构建与同提交候选验证已通过，发布状态及远端验收见[本版发布记录](evidence/release-v0.1.11/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 

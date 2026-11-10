@@ -2,7 +2,7 @@
 
 日期：2026-11-10。用户指令：添加以上未覆盖的规则 并发布。
 
-当前状态：构建与发布门槛已通过，GitHub 发布及远端下载验收待完成。
+**v0.1.11 已发布并设为 Latest，固定版本和 Latest 的下载及空缓存验证均通过。** [GitHub 发布页面](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.11)。现有 Latest 订阅地址无需修改，客户端刷新规则即可取得新版。
 
 ## 本次新增
 
@@ -26,6 +26,22 @@
 原 Challenge 及 IPv6 `/48` 兼容条目的日期与证据保持原样。本版授权仅绑定现有基线、6 个新增域名和当前制品摘要，不记为重新完成运行验证。设备刷新及真实登录、支付或 MCP 使用不在本次静态发布验收中。
 
 [构建汇总](build-results.json) · [回归结果](unit-test-results.json) · [语义差异](semantic-diff.json) · [正式 manifest](../../../artifacts/v0.1.11/manifest.json) · [发布授权](../../../sources/evidence/release-v0.1.11-authorization.json) · [保留条目记录](../../../sources/evidence/release-v0.1.11-preserved-entry-exception.json)
+
+## 发布与下载验收
+
+发布时间：2026-11-10 14:58:58（Asia/Shanghai）。固定版本和 Latest 各 6 个附件均返回 HTTP 200，大小及 SHA-256 与本地发布包一致。两个入口各完成 262 项主请求及 10 项来源方向检查，合计 544 项；三份远程 SRS 均由原生 sing-box 实际加载且完整写入新缓存。两个隔离进程正常退出，监听均已关闭。
+
+12 个历史 Release 及其附件身份、摘要等记录保持不变，15 个历史标签引用保持不变。未访问或修改客户端设备，不将静态发布及本机隔离验证记为设备已刷新或真实业务已成功。
+
+正式输入提交：`23a5994e96cee3b5ba4c21bcea13b7f3db33743f`；版本标签及源码 ZIP 固定于 `c9c513eef033311453f33499eb15af0bba15ca65`。ZIP 中全部 manifest 输入与正式 dist 已逐项校验。
+
+首次固定版本验收已完成全部请求，但脚本末尾仍保留上版总数断言，因而失败；将主请求和域名请求计数修正为 262 和 241 后，使用全新缓存重新完成固定及 Latest 验收。初次结果保留于 [首次验收记录](remote-fixed-first-attempt/results.json) 和 [错误日志](remote-fixed-first-attempt.log)。修正后的验收脚本及最终回执提交至 main；已发布的 SRS、manifest、ZIP 和标签均未替换。
+
+[发布汇总与全部附件校验值](publication-results.json) · [上传回执](release-asset-upload-receipts.json) · [固定下载](fixed-downloads.json) · [Latest 下载](latest-downloads.json) · [固定空缓存](remote-fixed/results.json) · [Latest 空缓存](remote-latest/results.json) · [历史保持核验](historical-releases-verification.json)。
+
+[Latest Anthropic](https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs) · [Latest OpenAI](https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs) · [Latest Anthropic 来源 IP](https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic-ip.srs)。
+
+Anthropic SRS 为 598 字节，SHA-256 为 `53793df8d575abf1892ca3e700b4d54ea4bbea67bfdad0e5bc87f3b9bc6e10ae`。
 
 ## 完整发布规则
 
