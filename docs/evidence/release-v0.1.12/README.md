@@ -1,6 +1,6 @@
 # v0.1.12 官方 IP 清单更新与发布记录
 
-日期：2026-11-11（Asia/Shanghai）。当前状态：候选验证已通过，正在执行正式构建与发布。
+日期：2026-11-11（Asia/Shanghai）。当前状态：两次正式构建及发布门槛均已通过，正在执行 GitHub 发布。
 
 ## 核对结果
 
@@ -16,7 +16,9 @@
 
 ## 验证与发布
 
-候选批次 6,084 项原生 JSON/SRS 匹配、解编、重建及配置检查通过。完整回归 88 项全部通过，无失败、无跳过；正式构建与下载结果将在发布完成后更新于本节。
+候选批次 6,084 项原生 JSON/SRS 匹配、解编、重建及配置检查通过。完整回归 88 项全部通过，无失败、无跳过。两次正式构建各 6,084 项检查与发布门槛通过，9 个批次文件逐字节一致；同提交候选 JSON/SRS 与正式批次一致。另有 1,764 项独立原生见证检查覆盖 423 个语音地址、Anthropic 新网段首末地址及相邻边界、源/目的方向，全部通过。
+
+[构建汇总](build-results.json) · [回归结果](unit-test-results.json) · [独立原生 IP 检查](official-ip-results.json)
 
 [官方核对与 400 项新增清单](official-refresh.json) · [语义差异](semantic-diff.json) · [正式 manifest](../../../artifacts/v0.1.12/manifest.json) · [发布授权](../../../sources/evidence/release-v0.1.12-authorization.json)
 

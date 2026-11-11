@@ -1,0 +1,12 @@
+{
+  "cases": 1764,
+  "failures": 0,
+  "harness": {
+    "go_sum_sha256": "cb18c7d3995fe575b86cb7d82e9b2e46447d2be6daecc7f23cf15276f678be1b",
+    "go_version": "go1.27.1",
+    "sing_box_commit": "132b38e9caaba1a1959354d518e54d2d08419afe",
+    "sing_module": "v0.9.6-0.20260922013359-4ca3bebe0b8e",
+    "source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7"
+  },
+  "passed": true
+}

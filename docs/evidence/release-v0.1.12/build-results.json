@@ -1,0 +1,52 @@
+{
+  "version": "0.1.12",
+  "source_commit": "9556397767dfc9a7b35922cae296163279f32240",
+  "release_builds": 2,
+  "cases_per_build": 6084,
+  "independent_builds_equal": [
+    "anthropic-ip.json",
+    "anthropic-ip.srs",
+    "anthropic.json",
+    "anthropic.srs",
+    "cases.json",
+    "manifest.json",
+    "matches.jsonl",
+    "openai.json",
+    "openai.srs"
+  ],
+  "candidate_json_srs_equal": true,
+  "regression_tests": 88,
+  "failures": 0,
+  "skipped": 0,
+  "official_native_witnesses": 1764,
+  "publication_gate_passed": true,
+  "artifacts": [
+    {
+      "binary_version": 2,
+      "bytes": 2195,
+      "direction": "destination",
+      "path": "openai.srs",
+      "sha256": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e",
+      "source_path": "openai.json",
+      "source_sha256": "84f76adbbc3cd2786d921d3d410b28fe05ddebe63a3dc2c9302d093a436ce4b2"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 613,
+      "direction": "destination",
+      "path": "anthropic.srs",
+      "sha256": "19ba1228b9b664d1cff15b510e4b6c56e710e37c05aba6231c27c9efe6ac807b",
+      "source_path": "anthropic.json",
+      "source_sha256": "d21184d22e2c4ccf8f5ed1f7c9e8c16ea45e376920a9160a2a2fb2f16e910f34"
+    },
+    {
+      "binary_version": 2,
+      "bytes": 47,
+      "direction": "source",
+      "path": "anthropic-ip.srs",
+      "sha256": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+      "source_path": "anthropic-ip.json",
+      "source_sha256": "b8fbd4fbb91cfcfc7b2394dc9bbe56c8ec56ecaf9e3194d15d6c196f6c82e853"
+    }
+  ]
+}
