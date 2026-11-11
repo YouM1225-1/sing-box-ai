@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "historical_releases": 13,
+  "historical_tag_refs": 16,
+  "release_fields_compared": [
+    "id",
+    "tag_name",
+    "name",
+    "draft",
+    "prerelease",
+    "body",
+    "created_at",
+    "published_at",
+    "target_commitish"
+  ],
+  "asset_fields_compared": [
+    "id",
+    "name",
+    "size",
+    "digest",
+    "state",
+    "created_at",
+    "updated_at",
+    "browser_download_url"
+  ],
+  "download_counters_excluded": true,
+  "all_previous_tag_refs_unchanged": true
+}

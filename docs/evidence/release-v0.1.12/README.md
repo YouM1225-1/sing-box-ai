@@ -1,6 +1,6 @@
 # v0.1.12 官方 IP 清单更新与发布记录
 
-日期：2026-11-11（Asia/Shanghai）。当前状态：两次正式构建及发布门槛均已通过，正在执行 GitHub 发布。
+日期：2026-11-11（Asia/Shanghai）。**v0.1.12 已发布并设为 Latest，固定版本与 Latest 下载及空缓存加载全部通过。** [GitHub 发布页面](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.12)。现有 Latest 订阅地址无需修改，客户端刷新后即可取得新版。
 
 ## 核对结果
 
@@ -21,6 +21,24 @@
 [构建汇总](build-results.json) · [回归结果](unit-test-results.json) · [独立原生 IP 检查](official-ip-results.json)
 
 [官方核对与 400 项新增清单](official-refresh.json) · [语义差异](semantic-diff.json) · [正式 manifest](../../../artifacts/v0.1.12/manifest.json) · [发布授权](../../../sources/evidence/release-v0.1.12-authorization.json)
+
+## 发布与下载验收
+
+发布时间：2026-11-11 17:44:00（Asia/Shanghai）。固定版本和 Latest 各 6 个附件均返回 HTTP 200，字节数和 SHA-256 与本地发布包一致。两个入口各执行 691 项主请求和 16 项来源方向检查，合计 1,414 项；三份远程 SRS 均由原生 sing-box 实际下载并完整写入新缓存。两个进程正常退出，监听均关闭。
+
+13 个历史 Release 及全部附件的身份、摘要和发布时间保持不变，16 个历史标签引用保持不变。
+
+正式输入提交：`9556397767dfc9a7b35922cae296163279f32240`；版本标签和源码 ZIP 固定于 `931c97656a0c1861b443e56bed054867c5c0b48b`。ZIP 中全部 manifest 输入与 dist 均已逐项核验；标签与 ZIP 保留构建时点内容，最终发布回执和本文随 main 更新。
+
+[发布汇总与附件摘要](publication-results.json) · [上传回执](release-draft-uploaded.json) · [固定下载](fixed-downloads.json) · [Latest 下载](latest-downloads.json) · [固定空缓存](remote-fixed/results.json) · [Latest 空缓存](remote-latest/results.json) · [历史保持核验](historical-releases-verification.json)
+
+| 制品 | 字节 | SHA-256 |
+|---|---:|---|
+| `openai.srs` | 2195 | `926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e` |
+| `anthropic.srs` | 613 | `19ba1228b9b664d1cff15b510e4b6c56e710e37c05aba6231c27c9efe6ac807b` |
+| `anthropic-ip.srs` | 47 | `819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a` |
+
+[Latest OpenAI](https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/openai.srs) · [Latest Anthropic](https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic.srs) · [Latest Anthropic 源 IP](https://github.com/YouM1225-1/sing-box-ai/releases/latest/download/anthropic-ip.srs)
 
 ## 完整发布清单
 

@@ -1,7 +1,7 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.41**；工作树更新日期：2026-11-11（Asia/Shanghai）。
-> `v0.1.12` 已完成官方 IP 清单核对，正在验证和发布：Voice 从 23 扩为 423 个 /32，新增 Anthropic 目的 `153.61.224.0/22` 和独立源地址 `153.61.208.0/20`。完整清单与发布状态见[本版记录](evidence/release-v0.1.12/README.md)。
+> `v0.1.12` 已发布并设为 Latest，固定和 Latest 下载及各 707 项空缓存请求检查全部通过：Voice 从 23 扩为 423 个 /32，新增 Anthropic 目的 `153.61.224.0/22` 和独立源地址 `153.61.208.0/20`。完整清单与发布状态见[本版记录](evidence/release-v0.1.12/README.md)。
 
 > 历史 `v0.1.11` 已发布并曾设为 Latest：仅补入 6 个用户指定的 Stripe 与 RevenueCat 精确目的域名，两次正式构建各 2,868 项原生检查、86 项回归及固定/Latest 各 272 项空缓存请求检查全部通过，详见[本版记录](evidence/release-v0.1.11/README.md)。
 
@@ -61,7 +61,7 @@
 |---|---|
 | `geosite-openai.srs` | 451 / `aae1fede5b274089b027668ee5d073221332f283ef29f943e8aeaf12261067d1` |
 | `geosite-anthropic.srs` | 182 / `4c58ec54eed852bddc07d434d42b1b97c4c22ebc52aa3b393221b607c3d56f6f` |
-| OpenAI Voice JSON | `8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a` |
+| OpenAI Voice JSON | `976aafdf60891ddf24379d447dc98832c42ea88d46561024f42b0b8294b94da7` |
 | alpha.9 Darwin arm64 编译器 | `fcb47f341e6660a35385ceeffc0cebb2daca3fed4d35c729b7d45f7b66555f9a` |
 
 两份原始 SRS 均为 binary v1，alpha.9 原生反编译成功：OpenAI 为 9 exact、13 root suffix、1 regex；Anthropic 为 1 exact、8 root suffix；均无 IP。反编译结果与固定 DLC 文本逐字段等价核对。v1 不是损坏或必须换源的理由。`domain:x` 与 `domain_suffix:.x` 可等价表示为 `domain_suffix:x`；这种形态变化不代表丢失规则。
@@ -833,13 +833,13 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前准备批次为 `0.1.12`；构建、发布状态及远端验收见[本版发布记录](evidence/release-v0.1.12/README.md)；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.12`；两次正式构建、88 项回归与远端验收均已通过，详情见[本版发布记录](evidence/release-v0.1.12/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
 官方快照保留可审阅的网络事实或机器数据及 `url/retrieved_at/method/page_updated/sha256`，并让结构化事实逐项定位原文；原文响应摘要与事实记录文件自身摘要分别登记。正常 HTTP、官方检索正文、维护者保存均可；验证页、空文档、抽取失败必须停止更新。工具抽取文本明确不是原始 HTML。页面只有相对 Updated 时原样记录，绝对日期为 null；不能推算一个精确日期。同一导出时间不自动证明伪造，但不得冒充逐页抓取时间。
 
-历史 `0.1.0` 来源归档批次曾取得 OpenAI 网络页工具正文及 Claude 网络/桌面/IP 页面；当时 OpenAI 原文显示 `Updated: last month`，后续普通 HTTP 请求曾返回 403。2026-10-19 本轮通过联网检索工具成功读取完整英文网络页，普通 HTTP 客户端仍返回 403；来源方式明确为工具提取正文，页面显示 `Updated: 3 days ago`，不推算条目上线日期。本次 Voice JSON 直接下载成功且字节与历史输入一致。对外受版本控制输入保存完整网络事实、逐项原文定位、取得时间/方式及取得正文摘要；完整解释性页面仅留本地审阅，不将未获再分发许可的整篇网页公开复制。Voice 机器数据及上游基线原件归档，公开事实记录不冒称原始 HTML。
+历史 `0.1.0` 来源归档批次曾取得 OpenAI 网络页工具正文及 Claude 网络/桌面/IP 页面；当时 OpenAI 原文显示 `Updated: last month`，后续普通 HTTP 请求曾返回 403。2026-10-19 本轮通过联网检索工具成功读取完整英文网络页，普通 HTTP 客户端仍返回 403；来源方式明确为工具提取正文，页面显示 `Updated: 3 days ago`，不推算条目上线日期。2026-09-27 的 Voice JSON 下载与当时历史输入一致；2026-11-11 已重新下载，当前 423 项及新摘要另行归档，见[本版记录](evidence/release-v0.1.12/README.md)。对外受版本控制输入保存完整网络事实、逐项原文定位、取得时间/方式及取得正文摘要；完整解释性页面仅留本地审阅，不将未获再分发许可的整篇网页公开复制。Voice 机器数据及上游基线原件归档，公开事实记录不冒称原始 HTML。
 
 manifest 记录 schema、项目版本、source_commit、全部构建输入哈希、基线 repo/ref/path/hash、补充输入及证据、编译器平台与 SHA、固定 Go/sing-box/sing 依赖、features、enabled_optional、review_as_of、build_mode、三个源/二进制摘要与大小、binary_version=2、单 default 结构、验证结果和重建证据。正式批次 `source_commit` 必须指向已提交输入。未提交本地候选的该字段仅为工作树基础提交，实际输入身份由 `inputs` 哈希给出；不得宣称完整提交绑定或发布资格，提交后须重新构建。
 
