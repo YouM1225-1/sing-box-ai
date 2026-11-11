@@ -22,11 +22,11 @@ archives:
   kind: official
   path: sources/official/openai-voice.json
   url: https://openai.com/chatgpt-voice.json
-  sha256: 2b082776a385e61646530b39d681535e0a9d380b42b6ee411e447c087967e606
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+  sha256: 3f67f9fb982324646055278e6d1b15dfb9412c61f45594203bcb56de92f511ca
+  retrieved_at: '2026-11-11T09:37:16.788850+00:00'
   method: reviewed-structured-facts
   raw_reference: voice-raw
-  last_reviewed_at: '2026-09-27T18:16:24.753892+00:00'
+  last_reviewed_at: '2026-11-11T09:37:16.788850+00:00'
 - id: claude-desktop
   kind: official
   path: sources/official/claude-desktop.json
@@ -49,10 +49,10 @@ archives:
   kind: official
   path: sources/official/anthropic-ip.json
   url: https://platform.claude.com/docs/en/api/ip-addresses
-  sha256: 7c1b50c6abc374f60cd60e5178eb9f1dbeedfe4889aebdf0ac6260f0a455ba7b
-  retrieved_at: '2026-09-27T14:42:15.034785+00:00'
+  sha256: 81b98e13f72ccad6deaa850776b33cf66439fa1a497910d84b10b09ca588b520
+  retrieved_at: '2026-11-11T09:37:16.788850+00:00'
   method: reviewed-structured-facts
-  last_reviewed_at: '2026-09-27T18:16:24.731288+00:00'
+  last_reviewed_at: '2026-11-11T09:37:16.788850+00:00'
   raw_reference: anthropic-ip-source
 - id: dlc-openai
   kind: dlc
@@ -132,14 +132,14 @@ archives:
   kind: voice-json
   path: sources/official/chatgpt-voice.json
   url: https://openai.com/chatgpt-voice.json
-  sha256: 8f03f3c594165eeff009915c7e2beb4bdfb9d429fb1955c205e3b33ec781899a
-  retrieved_at: '2026-09-27T15:05:18.030895+00:00'
-  observed_on: '2026-09-27'
-  archived_at: '2026-09-27T14:42:15.034785+00:00'
-  method: https; unchanged bytes reverified against audit archive
-  last_verified_at: '2026-09-27T18:16:24.753892+00:00'
+  sha256: 976aafdf60891ddf24379d447dc98832c42ea88d46561024f42b0b8294b94da7
+  retrieved_at: '2026-11-11T09:37:16.788850+00:00'
+  observed_on: '2026-11-11'
+  archived_at: '2026-11-11T09:37:16.788850+00:00'
+  method: HTTPS original response; 423 unique IPv4 /32 prefixes verified
+  last_verified_at: '2026-11-11T09:37:16.788850+00:00'
   metadata_path: sources/official/chatgpt-voice.json.metadata.json
-  metadata_sha256: 8b2ec6de42e96c99c9263ed763c0fd02694c90a97331f6687ce6be6070cba2cf
+  metadata_sha256: 454335c170ff19f381fa9dcc1279c94debb951f9141461f789ea4a831769cea2
 - id: openai-network-source
   kind: official-source-record
   path: sources/official/source-records/openai-network.json
@@ -184,12 +184,11 @@ archives:
   kind: official-source-record
   path: sources/official/source-records/anthropic-ip.json
   url: https://platform.claude.com/docs/en/api/ip-addresses.md
-  sha256: 0dbdc4d19cfd517a572477d31b195bc15050555e2602c6da394f6fa92c89d5de
-  retrieved_at: '2026-09-27T18:16:24.731288+00:00'
-  method: Full retrieved response reviewed; only functional endpoint facts and locators are redistributed.
-    Full response remains in local review cache.
+  sha256: 8479fd790cf675e4d479b660d5b88b1726d54375f3ef10954008b6d6c6464ce4
+  retrieved_at: '2026-11-11T09:37:16.788850+00:00'
+  method: Full retrieved response reviewed; only functional endpoint facts and locators are redistributed. Full response remains in local review cache.
   format: functional-endpoint-facts-json
-  original_response_sha256: c3c62f43f063a10547c0102fc74a5398b7e396c65a3669cce2973a2a8c73f472
+  original_response_sha256: 5e1e98b115594be6dda2b8070d8dfff0d5f47fdf47ffbfb299d91a018d72f98a
 - id: geosite-license
   kind: license
   path: sources/upstream/geosite-LICENSE

@@ -3,13 +3,13 @@
   "id": "anthropic-ip-source",
   "kind": "official-source-record",
   "url": "https://platform.claude.com/docs/en/api/ip-addresses.md",
-  "retrieved_at": "2026-09-27T18:16:24.731288+00:00",
+  "retrieved_at": "2026-11-11T09:37:16.788850+00:00",
   "extraction_method": "Full retrieved response reviewed; only functional endpoint facts and locators are redistributed. Full response remains in local review cache.",
   "original_response": {
-    "sha256": "c3c62f43f063a10547c0102fc74a5398b7e396c65a3669cce2973a2a8c73f472",
+    "sha256": "5e1e98b115594be6dda2b8070d8dfff0d5f47fdf47ffbfb299d91a018d72f98a",
     "content_format": "https-raw-markdown",
     "is_original_html": false,
-    "bytes": 1462
+    "bytes": 1496
   },
   "page_updated_literal": null,
   "page_updated_absolute": null,
@@ -21,38 +21,48 @@
       "scope": "Inbound IP addresses"
     },
     {
+      "value": "153.61.224.0/22",
+      "locator": "line 19: Inbound IP addresses",
+      "scope": "Inbound IP addresses"
+    },
+    {
       "value": "2607:6bc0::/48",
-      "locator": "line 21: Inbound IP addresses",
+      "locator": "line 23: Inbound IP addresses",
       "scope": "Inbound IP addresses"
     },
     {
       "value": "160.79.104.0/21",
-      "locator": "line 29: Outbound IP addresses",
+      "locator": "line 31: Outbound IP addresses",
+      "scope": "Outbound IP addresses"
+    },
+    {
+      "value": "153.61.208.0/20",
+      "locator": "line 33: Outbound IP addresses",
       "scope": "Outbound IP addresses"
     },
     {
       "value": "34.162.46.92/32",
-      "locator": "line 36: Phased out IP addresses",
+      "locator": "line 40: Phased out IP addresses",
       "scope": "Phased out IP addresses"
     },
     {
       "value": "34.162.102.82/32",
-      "locator": "line 37: Phased out IP addresses",
+      "locator": "line 41: Phased out IP addresses",
       "scope": "Phased out IP addresses"
     },
     {
       "value": "34.162.136.91/32",
-      "locator": "line 38: Phased out IP addresses",
+      "locator": "line 42: Phased out IP addresses",
       "scope": "Phased out IP addresses"
     },
     {
       "value": "34.162.142.92/32",
-      "locator": "line 39: Phased out IP addresses",
+      "locator": "line 43: Phased out IP addresses",
       "scope": "Phased out IP addresses"
     },
     {
       "value": "34.162.183.95/32",
-      "locator": "line 40: Phased out IP addresses",
+      "locator": "line 44: Phased out IP addresses",
       "scope": "Phased out IP addresses"
     }
   ],

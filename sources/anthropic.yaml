@@ -700,3 +700,17 @@
   reason: Maintainer-requested exact host from the loc-sens Claude gap review; shared
     Stripe payment or optional RevenueCat integration scope, not a verified runtime
     dependency.
+- value: 153.61.224.0/22
+  type: ip_cidr
+  product:
+  - claude-web
+  - claude-api
+  - claude-code
+  - claude-desktop
+  direction: destination
+  status: required
+  shared_dependency: false
+  sources:
+  - kind: official
+    reference: anthropic-ip
+  reason: Official Anthropic inbound destination

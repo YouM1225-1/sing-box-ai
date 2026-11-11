@@ -5,6 +5,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from fixtures import restore_official_ips_v011
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, canonical, load, semantic_key, source_document
@@ -18,6 +19,7 @@ class ScreenshotCoverageTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as scratch:
             root = Path(scratch)
             shutil.copytree(ROOT / "sources", root / "sources")
+            restore_official_ips_v011(root)
             shutil.copyfile(ROOT / "tests/fixtures/anthropic-v0.1.10.yaml", root / "sources/anthropic.yaml")
             shutil.copyfile(ROOT / "tools.lock.json", root / "tools.lock.json")
             (root / ".tools").mkdir()

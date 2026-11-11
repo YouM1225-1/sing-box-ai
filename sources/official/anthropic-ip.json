@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "anthropic-ip",
   "url": "https://platform.claude.com/docs/en/api/ip-addresses",
-  "retrieved_at": "2026-09-27T14:42:15.034785+00:00",
+  "retrieved_at": "2026-11-11T09:37:16.788850+00:00",
   "method": "Reviewed structured facts from official web page",
   "page_updated": null,
   "facts": [
@@ -44,15 +44,40 @@
       "direction": "source",
       "status": "required",
       "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic",
+      "value": "153.61.224.0/22",
+      "type": "ip_cidr",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false
+    },
+    {
+      "artifact": "anthropic-ip",
+      "value": "153.61.208.0/20",
+      "type": "source_ip_cidr",
+      "product": [
+        "anthropic-service-egress"
+      ],
+      "direction": "source",
+      "status": "required",
+      "shared_dependency": false
     }
   ],
   "raw_reference": "anthropic-ip-source",
-  "raw_sha256": "0dbdc4d19cfd517a572477d31b195bc15050555e2602c6da394f6fa92c89d5de",
+  "raw_sha256": "8479fd790cf675e4d479b660d5b88b1726d54375f3ef10954008b6d6c6464ce4",
   "locators": [
-    "Inbound IP addresses: destination IPv4 /23 and IPv6 /48",
-    "Outbound IP addresses: source IPv4 /21; not destination /21"
+    "Inbound IP addresses: destination IPv4 160.79.104.0/23 and 153.61.224.0/22; IPv6 2607:6bc0::/48",
+    "Outbound IP addresses: source IPv4 160.79.104.0/21 and 153.61.208.0/20; not client destination ranges"
   ],
-  "last_reviewed_at": "2026-09-27T18:16:24.731288+00:00",
+  "last_reviewed_at": "2026-11-11T09:37:16.788850+00:00",
   "page_updated_absolute": null,
-  "original_response_sha256": "c3c62f43f063a10547c0102fc74a5398b7e396c65a3669cce2973a2a8c73f472"
+  "original_response_sha256": "5e1e98b115594be6dda2b8070d8dfff0d5f47fdf47ffbfb299d91a018d72f98a"
 }

@@ -46,7 +46,8 @@ class RequestedCoverageTests(unittest.TestCase):
         return canonical(self.root, "release", dt.date(2026, 10, 21))[0]
 
     def test_poteto_adds_only_requested_openai_suffix(self):
-        shutil.copyfile(ROOT / "sources/openai.yaml", self.root / "sources/openai.yaml")
+        prior = load(ROOT / "artifacts/v0.1.8/manifest.json")["provenance"]["openai"]
+        self.save("sources/openai.yaml", [{k: v for k, v in r.items() if k != "origin"} for r in prior if r["origin"] == "supplement"])
         selected = canonical(self.root, "candidate", dt.date(2026, 10, 28))[0]
         for artifact, rows in selected.items():
             expected = load(ROOT / "artifacts/v0.1.7" / (artifact + ".json"))

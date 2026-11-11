@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "operator-authorization",
+  "scope": "artifact-publication",
+  "project_version": "0.1.12",
+  "authorized_on": "2026-11-11",
+  "instruction": "联网搜索 确认并补充清单 完成后提交 push 发布",
+  "instruction_context": "User supplied official OpenAI Voice and Anthropic IP links and requested a verified list update and publication.",
+  "artifacts": {
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e",
+    "anthropic.srs": "19ba1228b9b664d1cff15b510e4b6c56e710e37c05aba6231c27c9efe6ac807b",
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+  },
+  "deployment_authorized": false,
+  "limitations": [
+    "Publish updated official lists as v0.1.12 and switch Latest after fixed-URL verification.",
+    "Keep existing domain and compatibility rules unchanged; Anthropic outbound IPs remain source-only.",
+    "No device configuration changes or deployment/runtime verification claims."
+  ]
+}

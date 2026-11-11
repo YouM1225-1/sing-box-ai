@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "kind": "operator-exception",
+  "scope": "preserved-entry-publication",
+  "project_version": "0.1.12",
+  "approved_on": "2026-11-11",
+  "confirmed_by": "maintainer",
+  "instruction": "联网搜索 确认并补充清单 完成后提交 push 发布",
+  "instruction_context": "The user explicitly authorized verifying official lists, supplementing missing entries, committing, pushing and publishing. Preserve existing compatibility entries unchanged while adding the newly verified official IP ranges. No renewal of historical runtime verification is claimed.",
+  "runtime_validation": false,
+  "deployment_authorized": false,
+  "baseline_manifest": {
+    "path": "artifacts/v0.1.11/manifest.json",
+    "sha256": "19c521f30a856342b31d919f13d2e4e9dfa1bca71d60cd8a7c8aecb7dba420bf"
+  },
+  "baseline_source": {
+    "path": "tests/fixtures/anthropic-v0.1.11.yaml",
+    "sha256": "dc25f0ef09a42cf3287306920c718f0c832f75685bad48593cdb349dc2969c5a"
+  },
+  "source_hashes": {
+    "sources/openai.yaml": "bdaeab5d82c5d3bb05e19f074df6a17b2f3b5385c8077e2454b9ba88a5581286",
+    "sources/anthropic.yaml": "45ae038a5f9255079dbdde3b7b41fc5fb78549ed2cb58cc88ce4c3889c16f794",
+    "sources/anthropic-ip.yaml": "38cf824bc36d72e5af10f8d51111d991ff380b34d1f10584368b82bc5cd0a7a5"
+  },
+  "artifacts": {
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e",
+    "anthropic.srs": "19ba1228b9b664d1cff15b510e4b6c56e710e37c05aba6231c27c9efe6ac807b",
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+  },
+  "entries": [
+    {
+      "value": "challenges.cloudflare.com",
+      "type": "domain",
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "compatibility-critical",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-anthropic"
+        }
+      ],
+      "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+      "review_status": "approved",
+      "evidence": [
+        {
+          "kind": "repository-history",
+          "reference": "sources/upstream/legacy-anthropic-domains.yaml",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "conclusion": "Historical inclusion only; current Claude session need remains unverified"
+        },
+        {
+          "kind": "user-confirmation",
+          "reference": "sources/evidence/claude-challenge-confirmation.json",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified."
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "last_verified": "2026-09-27",
+      "review_after": "2026-10-27"
+    },
+    {
+      "value": "2607:6bc0:11::/48",
+      "type": "ip_cidr",
+      "product": [
+        "claude-network-coverage"
+      ],
+      "direction": "destination",
+      "status": "compatibility",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "network-registry",
+          "reference": "as399358-rdap"
+        },
+        {
+          "kind": "network-registry",
+          "reference": "anthropic-ipv6-rdap"
+        },
+        {
+          "kind": "routing-observation",
+          "reference": "as399358-announced-prefixes"
+        }
+      ],
+      "reason": "Maintainer-requested exact AS399358 announced IPv6 network coverage; ARIN ownership and RIS route verified, not an official Claude endpoint requirement.",
+      "review_status": "approved",
+      "evidence": [
+        {
+          "kind": "user-confirmation",
+          "reference": "sources/evidence/anthropic-network-coverage-2026-10-09.json",
+          "observed_on": "2026-10-09",
+          "conclusion": "Explicit approval to include this exact announced /48 for network coverage, without claiming verified service usage.",
+          "product": [
+            "claude-network-coverage"
+          ]
+        }
+      ],
+      "first_seen": "2026-10-09",
+      "last_verified": "2026-10-09",
+      "review_after": "2026-11-08"
+    }
+  ],
+  "additions": [
+    {
+      "value": "153.61.224.0/22",
+      "type": "ip_cidr",
+      "product": [
+        "claude-web",
+        "claude-api",
+        "claude-code",
+        "claude-desktop"
+      ],
+      "direction": "destination",
+      "status": "required",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "official",
+          "reference": "anthropic-ip"
+        }
+      ],
+      "reason": "Official Anthropic inbound destination"
+    }
+  ]
+}

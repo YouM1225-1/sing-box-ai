@@ -2,7 +2,10 @@
 import copy
 from pathlib import Path
 import sys
+import shutil
+import tempfile
 import unittest
+from fixtures import restore_official_ips_v011
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from common import ROOT, canonical, load, semantic_key, source_document
@@ -16,7 +19,15 @@ HOSTS = ("js.stripe.com", "api.stripe.com", "checkout.stripe.com",
 class LocSensCoverageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.selected = canonical(ROOT, "candidate")[0]
+        with tempfile.TemporaryDirectory() as scratch:
+            root = Path(scratch)
+            shutil.copytree(ROOT / "sources", root / "sources")
+            restore_official_ips_v011(root)
+            shutil.copyfile(ROOT / "tests/fixtures/anthropic-v0.1.11.yaml", root / "sources/anthropic.yaml")
+            shutil.copyfile(ROOT / "tools.lock.json", root / "tools.lock.json")
+            (root / ".tools").mkdir()
+            (root / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
+            cls.selected = canonical(root, "candidate")[0]
 
     def test_only_six_requested_hosts_are_added_to_previous_release(self):
         for artifact, rows in self.selected.items():
