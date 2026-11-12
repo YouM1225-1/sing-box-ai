@@ -1,0 +1,46 @@
+{
+  "approved_on": "2026-11-12",
+  "artifact": "anthropic",
+  "confirmed_by": "maintainer",
+  "consumer_validation": false,
+  "direction": "destination",
+  "excluded": [
+    "ntp"
+  ],
+  "interpretation": "The user requested complete coverage and commit/push/publication after reviewing six partial expressions. Add all three keywords and all three root suffixes, not only the narrower Stripe suggestions. Preserve previous scopes and evidence. The legacy excluded=ntp field means no dedicated NTP entry is added; it is not an exclusion from keyword matching. This is explicit shared-scope expansion, not official dependency or runtime validation.",
+  "kind": "user-instruction",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "rules": [
+    {
+      "type": "domain_keyword",
+      "value": "anthropic"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "claude"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "browser-intake"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "stripe.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "usefathom.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "challenges.cloudflare.com"
+    }
+  ],
+  "schema": 1,
+  "scope": "website-coverage",
+  "service_usage_verified": false,
+  "statement": "完整补全 提交 push 发布",
+  "website_url": "https://github.com/wquguru/one-exit/commit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032"
+}

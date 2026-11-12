@@ -2,7 +2,9 @@
 import copy
 import ipaddress
 from pathlib import Path
+import shutil
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -13,7 +15,15 @@ from validate import reference_match
 class OfficialIPRefreshTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.selected = canonical(ROOT, "candidate")[0]
+        # This test describes v0.1.12's IP-only delta, not later domain additions.
+        with tempfile.TemporaryDirectory() as scratch:
+            root = Path(scratch)
+            shutil.copytree(ROOT / "sources", root / "sources")
+            shutil.copyfile(ROOT / "tests/fixtures/anthropic-v0.1.12.yaml", root / "sources/anthropic.yaml")
+            shutil.copyfile(ROOT / "tools.lock.json", root / "tools.lock.json")
+            (root / ".tools").mkdir()
+            (root / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
+            cls.selected = canonical(root, "candidate")[0]
 
     def test_all_423_official_voice_hosts_and_only_the_official_delta(self):
         raw = load(ROOT / "sources/official/chatgpt-voice.json")

@@ -1,0 +1,51 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "090329f326922e3d4c1a88f219d71666401c0abc33c098e9c9b233edbc1281c1",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "field_counts": {
+    "anthropic": {
+      "domain": 15,
+      "domain_keyword": 6,
+      "domain_suffix": 13,
+      "ip_cidr": 4
+    },
+    "anthropic-ip": {
+      "source_ip_cidr": 2
+    },
+    "openai": {
+      "domain": 25,
+      "domain_regex": 1,
+      "domain_suffix": 17,
+      "ip_cidr": 423
+    }
+  },
+  "raw_additions": [
+    {
+      "type": "domain_keyword",
+      "value": "anthropic"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "claude"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "browser-intake"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "stripe.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "usefathom.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "challenges.cloudflare.com"
+    }
+  ],
+  "version": "0.1.13"
+}

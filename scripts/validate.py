@@ -79,14 +79,16 @@ def cases_for(selected):
             add("challenge-required", domain="challenges.cloudflare.com", expected=True)
         if artifact == "anthropic":
             add("artifact-library", domain="cdnjs.cloudflare.com", expected=True)
-            # Fixed website witnesses are independent of the selected rows/oracle.
-            # Include suffix scope from the page's plain-domain variant as well.
+            # Keep fixed historical boundaries, except for explicitly selected
+            # keyword/root-suffix expansions introduced after that scope.
+            brand_keywords = {r["value"] for r in rows if r["type"] == "domain_keyword"} & {"anthropic", "claude"}
+            fathom_suffix = any(r["type"] == "domain_suffix" and r["value"] == "usefathom.com" for r in rows)
             for suffix in ("anthropic.com", "claude.ai", "claude.com", "clau.de", "claudemcpclient.com", "claudemcpcontent.com", "claudeusercontent.com", "servd-anthropic-website.b-cdn.net", "anthropic.com.cdn.cloudflare.net", "anthropic.auth0.com", "anthropic-com.ghost.io", "sentry.io", "statsigapi.net", "intercom.io", "intercomcdn.com"):
                 for host in (suffix, "probe." + suffix):
                     add("website-suffix:" + host, domain=host, expected=True)
                 if suffix != "sentry.io":
                     for host in ("not" + suffix, suffix + ".invalid"):
-                        add("website-boundary:" + host, domain=host, expected=False)
+                        add("website-boundary:" + host, domain=host, expected=any(word in host for word in brand_keywords))
             for host in ("browser-intake-us5-datadoghq.com", "cdn.usefathom.com", "cdn.anthropic.com", "mcp.anthropic.com", "console.anthropic.com", "workbench.anthropic.com", "api.anthropic.com"):
                 add("website-exact:" + host, domain=host, expected=True)
             for word in ("datadog", "sentry", "sift"):
@@ -95,7 +97,7 @@ def cases_for(selected):
                 add("website-keyword-upper:" + word, domain=word.upper() + ".EXAMPLE.ORG", expected=True)
                 add("website-keyword-fqdn:" + word, fqdn="before" + word + "after.example.org", expected=True)
             for host in ("datado.example.org", "sen-try.example.org", "si-ft.example.org", "probe.cdn.usefathom.com", "cdn.usefathom.com.invalid"):
-                add("website-negative:" + host, domain=host, expected=False)
+                add("website-negative:" + host, domain=host, expected=fathom_suffix and host == "probe.cdn.usefathom.com")
             for ip in ("160.79.104.0", "160.79.106.1", "160.79.111.255", "2607:6bc0::", "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff"):
                 add("website-network:dst:" + ip, destination=ip, expected=True)
                 add("website-network:src:" + ip, source=ip, expected=False)

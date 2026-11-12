@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/yeminjie/.codex/worktrees/claude-six-rules-v013/sing-box-ai/scripts/validate.py", line 306, in <module>
+    main()
+  File "/Users/yeminjie/.codex/worktrees/claude-six-rules-v013/sing-box-ai/scripts/validate.py", line 301, in main
+    manifest = validate(a.directory, a.go, a.for_release)
+  File "/Users/yeminjie/.codex/worktrees/claude-six-rules-v013/sing-box-ai/scripts/validate.py", line 277, in validate
+    result = run([native, temp / "cases.json"])
+  File "/Users/yeminjie/.codex/worktrees/claude-six-rules-v013/sing-box-ai/scripts/common.py", line 573, in run
+    need(completed.returncode == 0, f"Command failed: {args[0]}\n{completed.stderr[-4000:]}")
+  File "/Users/yeminjie/.codex/worktrees/claude-six-rules-v013/sing-box-ai/scripts/common.py", line 31, in need
+    raise Invalid(message)
+common.Invalid: Command failed: /var/folders/pl/bpv2s_ks1mz24cd8ks4gblbr0000gn/T/sing-box-ai-validate-0hjlui0d/match-harness
+cases=6156 failures=42
+

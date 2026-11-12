@@ -1,7 +1,9 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.41**；工作树更新日期：2026-11-11（Asia/Shanghai）。
-> `v0.1.12` 已发布并设为 Latest，固定和 Latest 下载及各 707 项空缓存请求检查全部通过：Voice 从 23 扩为 423 个 /32，新增 Anthropic 目的 `153.61.224.0/22` 和独立源地址 `153.61.208.0/20`。完整清单与发布状态见[本版记录](evidence/release-v0.1.12/README.md)。
+> 文档修订：**1.45**；工作树更新日期：2026-11-12（Asia/Shanghai）。
+> `v0.1.13` 本批完整补齐用户指定的六条 Claude 范围：三个关键词 `anthropic`、`claude`、`browser-intake`，三个后缀 `stripe.com`、`usefathom.com`、`challenges.cloudflare.com`。只扩大 Anthropic 目的规则；OpenAI、来源 IP 及原有证据保留。构建与发布进度见[完整清单和验收记录](evidence/release-v0.1.13/README.md)。
+
+> 历史 `v0.1.12` 已发布并曾设为 Latest，固定和 Latest 下载及各 707 项空缓存请求检查全部通过：Voice 从 23 扩为 423 个 /32，新增 Anthropic 目的 `153.61.224.0/22` 和独立源地址 `153.61.208.0/20`。完整清单与发布状态见[本版记录](evidence/release-v0.1.12/README.md)。
 
 > 历史 `v0.1.11` 已发布并曾设为 Latest：仅补入 6 个用户指定的 Stripe 与 RevenueCat 精确目的域名，两次正式构建各 2,868 项原生检查、86 项回归及固定/Latest 各 272 项空缓存请求检查全部通过，详见[本版记录](evidence/release-v0.1.11/README.md)。
 
@@ -871,7 +873,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。历史 `v0.1.10` 的发布审阅绑定 `0.1.10` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增用户指定的 `r.stripe.com`、`fcmtoken.googleapis.com` 两个精确域名和目的网段 `34.8.0.0/16`。限定例外绑定旧 Challenge 与 IPv6 `/48` 条目、三个增量及三个制品摘要，保留旧日期与证据，不冒称已重新完成运行验证。
 
-当前 `release-review.json` 绑定 `0.1.12` 的明确发布授权、400 个 Voice /32、Anthropic 目的 /22、源地址 /20 增量及三个制品摘要。既有域名和 IP 保留，原兼容条目的日期和证据由本版限定记录保留。
+当前 `release-review.json` 绑定 `0.1.13` 的“完整补全 提交 push 发布”授权、三个关键词与三个根后缀，以及三个制品摘要。源 YAML 只追加六项，原兼容条目的日期和证据不变；最终 JSON 消除被新范围包含的旧表达式，覆盖不减少。历史 v0.1.12 的 IP 更新与批准保留。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 

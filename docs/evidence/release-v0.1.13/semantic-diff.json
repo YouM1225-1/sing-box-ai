@@ -1,0 +1,79 @@
+{
+  "authorized_additions": [
+    {
+      "type": "domain_keyword",
+      "value": "anthropic"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "claude"
+    },
+    {
+      "type": "domain_keyword",
+      "value": "browser-intake"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "stripe.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "usefathom.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "challenges.cloudflare.com"
+    }
+  ],
+  "from": "0.1.12",
+  "normalized_fields": {
+    "anthropic": {
+      "domain": {
+        "added": [],
+        "removed": [
+          "api.stripe.com",
+          "billing.stripe.com",
+          "cdn.usefathom.com",
+          "challenges.cloudflare.com",
+          "checkout.stripe.com",
+          "js.stripe.com",
+          "m.stripe.com",
+          "r.stripe.com"
+        ]
+      },
+      "domain_keyword": {
+        "added": [
+          "anthropic",
+          "browser-intake",
+          "claude"
+        ],
+        "removed": []
+      },
+      "domain_suffix": {
+        "added": [
+          "challenges.cloudflare.com",
+          "stripe.com",
+          "usefathom.com"
+        ],
+        "removed": [
+          "anthropic-com.ghost.io",
+          "anthropic.auth0.com",
+          "anthropic.com",
+          "anthropic.com.cdn.cloudflare.net",
+          "claude.ai",
+          "claude.app",
+          "claude.com",
+          "claude.dev",
+          "claudemcpclient.com",
+          "claudemcpcontent.com",
+          "claudeusercontent.com",
+          "servd-anthropic-website.b-cdn.net"
+        ]
+      }
+    },
+    "anthropic-ip": {},
+    "openai": {}
+  },
+  "note": "Removed exact/suffix entries in the normalized output are absorbed by the newly authorized broader expressions. Original input rows and provenance remain unchanged.",
+  "to": "0.1.13"
+}

@@ -1,0 +1,220 @@
+{
+  "additions": [
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit complete-coverage request for the six partial one-exit expressions; shared scope, not an official or runtime dependency claim.",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-six-scopes-coverage-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_keyword",
+      "value": "anthropic"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit complete-coverage request for the six partial one-exit expressions; shared scope, not an official or runtime dependency claim.",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-six-scopes-coverage-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_keyword",
+      "value": "claude"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit complete-coverage request for the six partial one-exit expressions; shared scope, not an official or runtime dependency claim.",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-six-scopes-coverage-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_keyword",
+      "value": "browser-intake"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit complete-coverage request for the six partial one-exit expressions; shared scope, not an official or runtime dependency claim.",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-six-scopes-coverage-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "stripe.com"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit complete-coverage request for the six partial one-exit expressions; shared scope, not an official or runtime dependency claim.",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-six-scopes-coverage-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "usefathom.com"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit complete-coverage request for the six partial one-exit expressions; shared scope, not an official or runtime dependency claim.",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-six-scopes-coverage-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "challenges.cloudflare.com"
+    }
+  ],
+  "approved_on": "2026-11-12",
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "090329f326922e3d4c1a88f219d71666401c0abc33c098e9c9b233edbc1281c1",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "baseline_manifest": {
+    "path": "artifacts/v0.1.12/manifest.json",
+    "sha256": "4e9795e1c53602112cd54e484db134d4c23543334d91e4f9a6b9e765657aeaba"
+  },
+  "baseline_source": {
+    "path": "tests/fixtures/anthropic-v0.1.12.yaml",
+    "sha256": "45ae038a5f9255079dbdde3b7b41fc5fb78549ed2cb58cc88ce4c3889c16f794"
+  },
+  "confirmed_by": "maintainer",
+  "deployment_authorized": false,
+  "entries": [
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+        },
+        {
+          "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/evidence/claude-challenge-confirmation.json"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "last_verified": "2026-09-27",
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+      "review_after": "2026-10-27",
+      "review_status": "approved",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-anthropic"
+        }
+      ],
+      "status": "compatibility-critical",
+      "type": "domain",
+      "value": "challenges.cloudflare.com"
+    },
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Explicit approval to include this exact announced /48 for network coverage, without claiming verified service usage.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-10-09",
+          "product": [
+            "claude-network-coverage"
+          ],
+          "reference": "sources/evidence/anthropic-network-coverage-2026-10-09.json"
+        }
+      ],
+      "first_seen": "2026-10-09",
+      "last_verified": "2026-10-09",
+      "product": [
+        "claude-network-coverage"
+      ],
+      "reason": "Maintainer-requested exact AS399358 announced IPv6 network coverage; ARIN ownership and RIS route verified, not an official Claude endpoint requirement.",
+      "review_after": "2026-11-08",
+      "review_status": "approved",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "network-registry",
+          "reference": "as399358-rdap"
+        },
+        {
+          "kind": "network-registry",
+          "reference": "anthropic-ipv6-rdap"
+        },
+        {
+          "kind": "routing-observation",
+          "reference": "as399358-announced-prefixes"
+        }
+      ],
+      "status": "compatibility",
+      "type": "ip_cidr",
+      "value": "2607:6bc0:11::/48"
+    }
+  ],
+  "instruction": "完整补全 提交 push 发布",
+  "instruction_context": "Complete the six discussed expression scopes and publish. Carry forward v0.1.12 input rows and original compatibility dates unchanged, plus exactly the six authorized additions. Wider Challenge coverage is separately user-requested, not renewed runtime evidence.",
+  "kind": "operator-exception",
+  "project_version": "0.1.13",
+  "runtime_validation": false,
+  "schema": 1,
+  "scope": "preserved-entry-publication",
+  "source_hashes": {
+    "sources/anthropic-ip.yaml": "38cf824bc36d72e5af10f8d51111d991ff380b34d1f10584368b82bc5cd0a7a5",
+    "sources/anthropic.yaml": "dbc32616423c2cbb08f019081e369a5e353e1884306d3989f7bc19dc441eef0e",
+    "sources/openai.yaml": "bdaeab5d82c5d3bb05e19f074df6a17b2f3b5385c8077e2454b9ba88a5581286"
+  }
+}

@@ -714,3 +714,75 @@
   - kind: official
     reference: anthropic-ip
   reason: Official Anthropic inbound destination
+- type: domain_keyword
+  value: anthropic
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-six-scopes-coverage-request
+  reason: Explicit complete-coverage request for the six partial one-exit expressions;
+    shared scope, not an official or runtime dependency claim.
+- type: domain_keyword
+  value: claude
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-six-scopes-coverage-request
+  reason: Explicit complete-coverage request for the six partial one-exit expressions;
+    shared scope, not an official or runtime dependency claim.
+- type: domain_keyword
+  value: browser-intake
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-six-scopes-coverage-request
+  reason: Explicit complete-coverage request for the six partial one-exit expressions;
+    shared scope, not an official or runtime dependency claim.
+- type: domain_suffix
+  value: stripe.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-six-scopes-coverage-request
+  reason: Explicit complete-coverage request for the six partial one-exit expressions;
+    shared scope, not an official or runtime dependency claim.
+- type: domain_suffix
+  value: usefathom.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-six-scopes-coverage-request
+  reason: Explicit complete-coverage request for the six partial one-exit expressions;
+    shared scope, not an official or runtime dependency claim.
+- type: domain_suffix
+  value: challenges.cloudflare.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-six-scopes-coverage-request
+  reason: Explicit complete-coverage request for the six partial one-exit expressions;
+    shared scope, not an official or runtime dependency claim.

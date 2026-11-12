@@ -1,0 +1,109 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "090329f326922e3d4c1a88f219d71666401c0abc33c098e9c9b233edbc1281c1",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "comparison": {
+    "authorized_additions": [
+      {
+        "type": "domain_keyword",
+        "value": "anthropic"
+      },
+      {
+        "type": "domain_keyword",
+        "value": "claude"
+      },
+      {
+        "type": "domain_keyword",
+        "value": "browser-intake"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "stripe.com"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "usefathom.com"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "challenges.cloudflare.com"
+      }
+    ],
+    "from": "0.1.12",
+    "normalized_fields": {
+      "anthropic": {
+        "domain": {
+          "added": [],
+          "removed": [
+            "api.stripe.com",
+            "billing.stripe.com",
+            "cdn.usefathom.com",
+            "challenges.cloudflare.com",
+            "checkout.stripe.com",
+            "js.stripe.com",
+            "m.stripe.com",
+            "r.stripe.com"
+          ]
+        },
+        "domain_keyword": {
+          "added": [
+            "anthropic",
+            "browser-intake",
+            "claude"
+          ],
+          "removed": []
+        },
+        "domain_suffix": {
+          "added": [
+            "challenges.cloudflare.com",
+            "stripe.com",
+            "usefathom.com"
+          ],
+          "removed": [
+            "anthropic-com.ghost.io",
+            "anthropic.auth0.com",
+            "anthropic.com",
+            "anthropic.com.cdn.cloudflare.net",
+            "claude.ai",
+            "claude.app",
+            "claude.com",
+            "claude.dev",
+            "claudemcpclient.com",
+            "claudemcpcontent.com",
+            "claudeusercontent.com",
+            "servd-anthropic-website.b-cdn.net"
+          ]
+        }
+      },
+      "anthropic-ip": {},
+      "openai": {}
+    },
+    "note": "Removed exact/suffix entries in the normalized output are absorbed by the newly authorized broader expressions. Original input rows and provenance remain unchanged.",
+    "to": "0.1.13"
+  },
+  "conclusion": "The six expressly requested one-exit expression scopes are added as three literal domain keywords and three root suffixes. All prior input rows and evidence remain byte-preserved in the baseline snapshot and semantically preserved after normalization. Only Anthropic destination SRS changes; OpenAI and source-only SRS remain byte-identical. Broader shared/keyword matching is intentional, and neither official dependency nor runtime/deployment acceptance is claimed.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.13/semantic-diff.json",
+      "sha256": "54831b6fabf0ece2f850db764577de82c0c560e4198613530a97347902594839"
+    },
+    {
+      "path": "sources/evidence/claude-six-scopes-coverage-request-2026-11-12.json",
+      "sha256": "ea6b8fb78b25cb87d90e163aa4d615f30410276eb62f3e726914eb4210ad4836"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.13-preserved-entry-exception.json",
+      "sha256": "58aa83e0b2448ca9e4df2499f11250e6fd4da1dc2b2e52d99a042b2b08356010"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.13",
+  "reviewed_on": "2026-11-12",
+  "reviewer": "Codex primary review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

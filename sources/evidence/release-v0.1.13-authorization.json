@@ -1,0 +1,20 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "090329f326922e3d4c1a88f219d71666401c0abc33c098e9c9b233edbc1281c1",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "authorized_on": "2026-11-12",
+  "deployment_authorized": false,
+  "instruction": "完整补全 提交 push 发布",
+  "instruction_context": "The user requested complete coverage and commit/push/publication after reviewing six partial expressions. Add all three keywords and all three root suffixes, not only the narrower Stripe suggestions. Preserve previous scopes and evidence. The legacy excluded=ntp field means no dedicated NTP entry is added; it is not an exclusion from keyword matching. This is explicit shared-scope expansion, not official dependency or runtime validation.",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Commit and push the six-scope Claude expansion, publish v0.1.13, and update Latest after fixed download/cold-cache checks.",
+    "Preserve existing metadata and all IP directions; no IPv6 REJECT or client configuration changes.",
+    "Do not publish unrelated local UniFi work or claim device/runtime acceptance."
+  ],
+  "project_version": "0.1.13",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "tests": 92,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "fixture": "candidate-3",
+  "log_sha256": "f2735364710db52136157ee477c404a7ac5dc2cbf85567dd5da28cbb34c3dda5",
+  "note": "Validated candidate fixture from final source content; committed builds checked separately."
+}
