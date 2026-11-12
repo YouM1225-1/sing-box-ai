@@ -1,0 +1,99 @@
+{
+  "version": "v0.1.13",
+  "checked_at_utc": "2026-11-12T10:43:29.732885+00:00",
+  "passed": true,
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.13",
+  "release_id": 442803385,
+  "published_at": "2026-11-12T10:40:49Z",
+  "latest": true,
+  "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+  "tag_commit": "09f79c47b91630b2e54539b5584fcf710b91d0b3",
+  "unit_tests": {
+    "complete": true,
+    "tests": 92,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "fixture": "candidate-3",
+    "log_sha256": "f2735364710db52136157ee477c404a7ac5dc2cbf85567dd5da28cbb34c3dda5",
+    "note": "Validated candidate fixture from final source content; committed builds checked separately."
+  },
+  "builds": {
+    "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+    "batches": [
+      {
+        "batch": "release-1",
+        "mode": "release",
+        "cases": 6156,
+        "failures": 0,
+        "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+        "publication_approved": true
+      },
+      {
+        "batch": "release-2",
+        "mode": "release",
+        "cases": 6156,
+        "failures": 0,
+        "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+        "publication_approved": true
+      },
+      {
+        "batch": "committed-candidate",
+        "mode": "candidate",
+        "cases": 6156,
+        "failures": 0,
+        "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+        "publication_approved": false
+      }
+    ],
+    "two_release_builds_equal": [
+      "anthropic-ip.json",
+      "anthropic-ip.srs",
+      "anthropic.json",
+      "anthropic.srs",
+      "cases.json",
+      "manifest.json",
+      "matches.jsonl",
+      "openai.json",
+      "openai.srs"
+    ],
+    "candidate_json_srs_equal": true,
+    "regression_fixture_inputs_equal_committed_inputs": true,
+    "state": "passed"
+  },
+  "fixed_downloads": "fixed-downloads.json",
+  "latest_downloads": "latest-downloads.json",
+  "fixed_remote_probe": "remote-fixed/results.json",
+  "latest_remote_probe": "remote-latest/results.json",
+  "historical_releases_unchanged": 14,
+  "historical_tag_refs_unchanged": 17,
+  "assets": {
+    "SHA256SUMS": {
+      "bytes": 410,
+      "sha256": "652be3a42fc059073ae050f6c93b94dbe6fc09daf51b9d928a10e09665a6ca23"
+    },
+    "anthropic-ip.srs": {
+      "bytes": 47,
+      "sha256": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+    },
+    "anthropic.srs": {
+      "bytes": 459,
+      "sha256": "090329f326922e3d4c1a88f219d71666401c0abc33c098e9c9b233edbc1281c1"
+    },
+    "manifest.json": {
+      "bytes": 347066,
+      "sha256": "d464dfb9ff833f91dafb04a504d28a39eace085a72a93c61ab0bc36543df7c1d"
+    },
+    "openai.srs": {
+      "bytes": 2195,
+      "sha256": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+    },
+    "sing-box-ai-v0.1.13.zip": {
+      "bytes": 3257059,
+      "sha256": "62b8007444a0142615bdf9d54f414aa50f8de0117af4a8781a0365ea224a6ae2"
+    }
+  },
+  "deployment_status": "pending",
+  "validated_consumers": [],
+  "integration_evidence": []
+}

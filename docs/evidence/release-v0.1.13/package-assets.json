@@ -1,0 +1,32 @@
+{
+  "version": "0.1.13",
+  "tag_commit": "09f79c47b91630b2e54539b5584fcf710b91d0b3",
+  "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+  "zip_inputs_verified": true,
+  "assets": {
+    "SHA256SUMS": {
+      "bytes": 410,
+      "sha256": "652be3a42fc059073ae050f6c93b94dbe6fc09daf51b9d928a10e09665a6ca23"
+    },
+    "anthropic-ip.srs": {
+      "bytes": 47,
+      "sha256": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+    },
+    "anthropic.srs": {
+      "bytes": 459,
+      "sha256": "090329f326922e3d4c1a88f219d71666401c0abc33c098e9c9b233edbc1281c1"
+    },
+    "manifest.json": {
+      "bytes": 347066,
+      "sha256": "d464dfb9ff833f91dafb04a504d28a39eace085a72a93c61ab0bc36543df7c1d"
+    },
+    "openai.srs": {
+      "bytes": 2195,
+      "sha256": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+    },
+    "sing-box-ai-v0.1.13.zip": {
+      "bytes": 3257059,
+      "sha256": "62b8007444a0142615bdf9d54f414aa50f8de0117af4a8781a0365ea224a6ae2"
+    }
+  }
+}

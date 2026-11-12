@@ -1,7 +1,7 @@
 # sing-box-ai 正式方案
 
 > 文档修订：**1.45**；工作树更新日期：2026-11-12（Asia/Shanghai）。
-> `v0.1.13` 本批完整补齐用户指定的六条 Claude 范围：三个关键词 `anthropic`、`claude`、`browser-intake`，三个后缀 `stripe.com`、`usefathom.com`、`challenges.cloudflare.com`。只扩大 Anthropic 目的规则；OpenAI、来源 IP 及原有证据保留。构建与发布进度见[完整清单和验收记录](evidence/release-v0.1.13/README.md)。
+> `v0.1.13` 本批完整补齐用户指定的六条 Claude 范围：三个关键词 `anthropic`、`claude`、`browser-intake`，三个后缀 `stripe.com`、`usefathom.com`、`challenges.cloudflare.com`。只扩大 Anthropic 目的规则；OpenAI、来源 IP 及原有证据保留。已推送 main、正式发布并设为 Latest。两次正式构建各 6,156 项检查、92 项回归及固定/Latest 各 732 项空缓存请求检查通过，见[完整清单和验收记录](evidence/release-v0.1.13/README.md)。
 
 > 历史 `v0.1.12` 已发布并曾设为 Latest，固定和 Latest 下载及各 707 项空缓存请求检查全部通过：Voice 从 23 扩为 423 个 /32，新增 Anthropic 目的 `153.61.224.0/22` 和独立源地址 `153.61.208.0/20`。完整清单与发布状态见[本版记录](evidence/release-v0.1.12/README.md)。
 
@@ -835,7 +835,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.13`；两次正式构建各 6,156 项检查和 92 项回归已通过，远端发布待验收，详情见[本版发布记录](evidence/release-v0.1.13/README.md)；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.13`；两次正式构建各 6,156 项检查、92 项回归及固定/Latest 远端验收全部通过，详情见[本版发布记录](evidence/release-v0.1.13/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -882,9 +882,9 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.13 当前发布进度
+### v0.1.13 当前发布结果
 
-已补齐用户指定的三个关键词与三个根后缀，OpenAI 和来源 IP 制品保持原字节。92 项完整回归及两次正式构建各 6,156 项原生检查通过，全部 9 个构建输出一致；固定下载与 Latest 验收待发布后执行。见[完整清单与发布记录](evidence/release-v0.1.13/README.md)。
+已补齐用户指定的三个关键词与三个根后缀，OpenAI 和来源 IP 制品保持原字节。92 项完整回归及两次正式构建各 6,156 项原生检查通过，全部 9 个构建输出一致。已推送 main、正式发布并设为 Latest；固定与 Latest 各 6 个附件下载和各 732 项空缓存请求检查通过，14 个旧 Release 与 17 个旧标签引用不变。见[完整清单与发布记录](evidence/release-v0.1.13/README.md)。
 
 ### v0.1.10 历史发布结果
 

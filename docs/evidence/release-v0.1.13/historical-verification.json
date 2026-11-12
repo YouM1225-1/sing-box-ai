@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "historical_releases_unchanged": 14,
+  "historical_tag_refs_unchanged": 17,
+  "comparison": "Full release records and asset metadata, excluding only mutable download_count; tag names and commit IDs.",
+  "new_tag_commit": "09f79c47b91630b2e54539b5584fcf710b91d0b3"
+}
