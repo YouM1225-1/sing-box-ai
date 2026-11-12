@@ -1,0 +1,43 @@
+{
+  "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+  "batches": [
+    {
+      "batch": "release-1",
+      "mode": "release",
+      "cases": 6156,
+      "failures": 0,
+      "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+      "publication_approved": true
+    },
+    {
+      "batch": "release-2",
+      "mode": "release",
+      "cases": 6156,
+      "failures": 0,
+      "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+      "publication_approved": true
+    },
+    {
+      "batch": "committed-candidate",
+      "mode": "candidate",
+      "cases": 6156,
+      "failures": 0,
+      "source_commit": "4efabd1d38635c32bc433e201b912f77240326ce",
+      "publication_approved": false
+    }
+  ],
+  "two_release_builds_equal": [
+    "anthropic-ip.json",
+    "anthropic-ip.srs",
+    "anthropic.json",
+    "anthropic.srs",
+    "cases.json",
+    "manifest.json",
+    "matches.jsonl",
+    "openai.json",
+    "openai.srs"
+  ],
+  "candidate_json_srs_equal": true,
+  "regression_fixture_inputs_equal_committed_inputs": true,
+  "state": "passed"
+}

@@ -1,6 +1,6 @@
 # v0.1.13 Claude 六条范围补全与发布记录
 
-日期：2026-11-12（Asia/Shanghai）。本批按用户“完整补全 提交 push 发布”的指令，将上一轮讨论的 6 条部分覆盖表达式全部补齐。发布状态将在远端验收完成后更新。
+日期：2026-11-12（Asia/Shanghai）。本批按用户“完整补全 提交 push 发布”的指令，将上一轮讨论的 6 条部分覆盖表达式全部补齐。本地正式构建与回归已通过，GitHub 发布和远端验收待完成。
 
 ## 完整补全范围
 
@@ -93,7 +93,17 @@ sift
 
 ## 验证与发布范围
 
-正式发布前须完成候选原生匹配、全部回归、两次正式构建、提交绑定和发布门槛。随后按草稿上传、非 Latest 发布、固定下载及本机空缓存加载、切换 Latest、Latest 下载及空缓存加载的顺序验收。
+源码提交：`4efabd1d38635c32bc433e201b912f77240326ce`。
+
+| 检查 | 结果 |
+| --- | --- |
+| 完整回归 | 92 项通过，零失败、零跳过 |
+| 两次正式构建 | 各 6,156 项原生检查通过，9 个输出文件逐字节一致 |
+| 已提交源码的候选复建 | 6,156 项通过；JSON/SRS 与正式批次及回归 fixture 相同 |
+| 提交、授权、摘要及日期门槛 | 通过；候选保留未批准身份 |
+| 固定版本 / Latest 远端下载及空缓存加载 | 待发布后验收 |
+
+随后按草稿上传、非 Latest 发布、固定下载及本机空缓存加载、切换 Latest、Latest 下载及空缓存加载的顺序验收。
 
 首轮候选检查发现历史测试将已获准扩大范围的 42 个 JSON/SRS 样例固定判为不命中。修正了对应预期并新增新旧范围对照；没有取消边界检查或修改 SRS 匹配引擎。另将 v0.1.12 的历史 IP 增量测试固定到该版 Anthropic 快照，避免后续域名扩展改变历史测试对象。
 
@@ -108,5 +118,8 @@ sift
 - [保留条目限定记录](../../../sources/evidence/release-v0.1.13-preserved-entry-exception.json)
 - [完整用户范围记录](../../../sources/evidence/claude-six-scopes-coverage-request-2026-11-12.json)
 - [预编译摘要](preflight-summary.json)
+- [92 项回归结果](unit-test-results.json)与[完整日志](unit-tests.log)
+- [正式构建与复现结果](build-results.json)
+- [正式批次 manifest](../../../artifacts/v0.1.13/manifest.json)
 
 GitHub 目标：[v0.1.13](https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.13)。最终发布状态与可用性以完成后的验收回执为准。

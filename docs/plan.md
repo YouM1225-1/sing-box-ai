@@ -74,7 +74,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 当前正式批次为 `v0.1.9`，完整批次在 `artifacts/v0.1.9/`；发布、下载及例外记录见[发布报告](evidence/release-v0.1.9/README.md)。`v0.1.7` 及更早正式归档与各候选保持原始身份。
+`dist/` 当前正式批次为 `v0.1.13`，完整批次在 `artifacts/v0.1.13/`；构建、发布、下载及限定记录见[发布报告](evidence/release-v0.1.13/README.md)。所有历史正式归档与各候选保持原始身份。
 
 2026-10-21 新增隔离候选 `artifacts/v0.1.7-rc.1/`，Anthropic 后缀为 21 项；其 OpenAI、Anthropic 来源 IP 制品与 v0.1.6 字节一致。用户随后授权发布 `v0.1.7`，旧候选和旧正式归档保留；正式构建与下载结果单独记录。
 
@@ -835,7 +835,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.12`；两次正式构建、88 项回归与远端验收均已通过，详情见[本版发布记录](evidence/release-v0.1.12/README.md)；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.13`；两次正式构建各 6,156 项检查和 92 项回归已通过，远端发布待验收，详情见[本版发布记录](evidence/release-v0.1.13/README.md)；设计修订号不冒充 sing-box 软件升级。
 
 ### 6.2 快照与可复现要求
 
@@ -882,7 +882,11 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.10 当前发布结果
+### v0.1.13 当前发布进度
+
+已补齐用户指定的三个关键词与三个根后缀，OpenAI 和来源 IP 制品保持原字节。92 项完整回归及两次正式构建各 6,156 项原生检查通过，全部 9 个构建输出一致；固定下载与 Latest 验收待发布后执行。见[完整清单与发布记录](evidence/release-v0.1.13/README.md)。
+
+### v0.1.10 历史发布结果
 
 已完成三项补充并发布为 Latest。两次正式构建各 2,784 项原生检查、84 项回归、62 项截图及边界检查、固定/Latest 各 6 个下载附件和各 240 项空缓存请求检查通过。11 个历史 Release、14 个历史 tag 引用保持不变。见[本版记录](evidence/release-v0.1.10/README.md)。
 
