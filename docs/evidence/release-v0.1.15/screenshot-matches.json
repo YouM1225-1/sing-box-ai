@@ -1,0 +1,52 @@
+[
+  {
+    "domain": "datadoghq.com",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "http-intake.logs.us5.datadoghq.com",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "sentry.io",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "o1158394.ingest.us.sentry.io",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "browser-intake-us5-datadoghq.com",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "browser-intake-us3-datadoghq.com",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "browser-intake-ap1-datadoghq.com",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "browser-intake-ap2-datadoghq.com",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "browser-intake-datadoghq.eu",
+    "v0.1.14": true,
+    "v0.1.15": true
+  },
+  {
+    "domain": "browser-intake-ddog-gov.com",
+    "v0.1.14": true,
+    "v0.1.15": true
+  }
+]

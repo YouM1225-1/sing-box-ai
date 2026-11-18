@@ -1,0 +1,9 @@
+{
+  "source_commit": "686d7a170396ad5fde8df8512aba9c2e78ded487",
+  "cases_per_release_build": 6268,
+  "release_build_files_identical": 9,
+  "candidate_json_srs_equal": true,
+  "v014_srs_identical": true,
+  "unit_tests_passed": true,
+  "unit_tests": 92
+}
