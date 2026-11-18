@@ -1,0 +1,56 @@
+{
+  "version": "v0.1.15",
+  "release_url": "https://github.com/YouM1225-1/sing-box-ai/releases/tag/v0.1.15",
+  "published_at": "2026-11-18T07:07:49Z",
+  "latest": true,
+  "source_commit": "686d7a170396ad5fde8df8512aba9c2e78ded487",
+  "tag_commit": "ddf6408bb14e4573eca2caaef05c7ef36ed17fbb",
+  "package": {
+    "SHA256SUMS": {
+      "bytes": 410,
+      "sha256": "b8a177f231d414dabc60e2d613d32b3f615a20e1e4a077e9834bf0e9d3ae7bef"
+    },
+    "anthropic-ip.srs": {
+      "bytes": 47,
+      "sha256": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+    },
+    "anthropic.srs": {
+      "bytes": 470,
+      "sha256": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396"
+    },
+    "manifest.json": {
+      "bytes": 354331,
+      "sha256": "c4a52243caf97b796659cacb954e574ac9d630f4db760d71e36ad84d1826dcd0"
+    },
+    "openai.srs": {
+      "bytes": 2195,
+      "sha256": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+    },
+    "sing-box-ai-v0.1.15.zip": {
+      "bytes": 3590623,
+      "sha256": "c5f6b73cffaef5054b1651f0dd0cf527774a605988bb265a08e2f225863cff68"
+    }
+  },
+  "verification": {
+    "fixed": {
+      "download_count": 6,
+      "destination_request_count": 781,
+      "source_direction_request_count": 16,
+      "screenshot_and_boundary_matches": 10,
+      "cold_cache_verified": true,
+      "process_and_listeners_closed": true,
+      "script_sha256": "88374adda5a76ac2dcdc4d83d933887929d32e8f6ddc253b34a44568c05fcc86"
+    },
+    "latest": {
+      "download_count": 6,
+      "destination_request_count": 781,
+      "source_direction_request_count": 16,
+      "screenshot_and_boundary_matches": 10,
+      "cold_cache_verified": true,
+      "process_and_listeners_closed": true,
+      "script_sha256": "88374adda5a76ac2dcdc4d83d933887929d32e8f6ddc253b34a44568c05fcc86"
+    }
+  },
+  "historical_releases_preserved": 16,
+  "historical_tag_refs_preserved": 19
+}
