@@ -1,0 +1,8 @@
+{
+  "source_commit": "f0844c5c923f1547cbc005dc87d3dec29984583b",
+  "cases_per_release_build": 6184,
+  "release_build_files_identical": 9,
+  "candidate_json_srs_equal": true,
+  "unit_tests_passed": true,
+  "unit_tests": 92
+}

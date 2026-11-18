@@ -1,0 +1,287 @@
+[
+  {
+    "domain": "claude.ai",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claude.ai",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claude.ai",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "ant.dev",
+    "v0.1.13": false,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.ant.dev",
+    "v0.1.13": false,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.ant.dev",
+    "v0.1.13": false,
+    "v0.1.14": true
+  },
+  {
+    "domain": "anthropic.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.anthropic.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.anthropic.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "anthropic.team",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.anthropic.team",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.anthropic.team",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "antspace.dev",
+    "v0.1.13": false,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.antspace.dev",
+    "v0.1.13": false,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.antspace.dev",
+    "v0.1.13": false,
+    "v0.1.14": true
+  },
+  {
+    "domain": "chatbotclaude.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.chatbotclaude.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.chatbotclaude.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "clau.de",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.clau.de",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.clau.de",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claude.app",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claude.app",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claude.app",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claude.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claude.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claude.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claude.dev",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claude.dev",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claude.dev",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claude.new",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claude.new",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claude.new",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claude.site",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claude.site",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claude.site",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claudeacademy.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claudeacademy.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claudeacademy.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claudemcpclient.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claudemcpclient.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claudemcpclient.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claudemcpcontent.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claudemcpcontent.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claudemcpcontent.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claudepages.dev",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claudepages.dev",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claudepages.dev",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "claudestudio.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "www.claudestudio.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "audit.deep.claudestudio.com",
+    "v0.1.13": true,
+    "v0.1.14": true
+  },
+  {
+    "domain": "notant.dev",
+    "v0.1.13": false,
+    "v0.1.14": false
+  },
+  {
+    "domain": "ant.dev.invalid",
+    "v0.1.13": false,
+    "v0.1.14": false
+  },
+  {
+    "domain": "ant-dev.invalid",
+    "v0.1.13": false,
+    "v0.1.14": false
+  },
+  {
+    "domain": "notantspace.dev",
+    "v0.1.13": false,
+    "v0.1.14": false
+  },
+  {
+    "domain": "antspace.dev.invalid",
+    "v0.1.13": false,
+    "v0.1.14": false
+  },
+  {
+    "domain": "antspace-dev.invalid",
+    "v0.1.13": false,
+    "v0.1.14": false
+  }
+]
