@@ -1,7 +1,9 @@
 # sing-box-ai 正式方案
 
-> 文档修订：**1.45**；工作树更新日期：2026-11-12（Asia/Shanghai）。
-> `v0.1.13` 本批完整补齐用户指定的六条 Claude 范围：三个关键词 `anthropic`、`claude`、`browser-intake`，三个后缀 `stripe.com`、`usefathom.com`、`challenges.cloudflare.com`。只扩大 Anthropic 目的规则；OpenAI、来源 IP 及原有证据保留。已推送 main、正式发布并设为 Latest。两次正式构建各 6,156 项检查、92 项回归及固定/Latest 各 732 项空缓存请求检查通过，见[完整清单和验收记录](evidence/release-v0.1.13/README.md)。
+> 文档修订：**1.46**，工作树更新于 2026-11-18（Asia/Shanghai）。
+> `v0.1.14` 已发布并设为 Latest。Anthropic 目的规则补入 `ant.dev` 和 `antspace.dev` 两条后缀，截图 17 个域名均已覆盖。两次正式构建各 6,184 项原生检查、92 项回归、固定版与 Latest 各 791 项空缓存请求检查通过。 [本版发布记录](evidence/release-v0.1.14/README.md)
+
+> 历史 `v0.1.13` 已完整补齐用户指定的六条 Claude 范围：三个关键词 `anthropic`、`claude`、`browser-intake`，三个后缀 `stripe.com`、`usefathom.com`、`challenges.cloudflare.com`。只扩大 Anthropic 目的规则；OpenAI、来源 IP 及原有证据保留。已推送 main、正式发布并曾设为 Latest。两次正式构建各 6,156 项检查、92 项回归及固定/Latest 各 732 项空缓存请求检查通过，见[完整清单和验收记录](evidence/release-v0.1.13/README.md)。
 
 > 历史 `v0.1.12` 已发布并曾设为 Latest，固定和 Latest 下载及各 707 项空缓存请求检查全部通过：Voice 从 23 扩为 423 个 /32，新增 Anthropic 目的 `153.61.224.0/22` 和独立源地址 `153.61.208.0/20`。完整清单与发布状态见[本版记录](evidence/release-v0.1.12/README.md)。
 
@@ -74,7 +76,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 当前正式批次为 `v0.1.13`，完整批次在 `artifacts/v0.1.13/`；构建、发布、下载及限定记录见[发布报告](evidence/release-v0.1.13/README.md)。所有历史正式归档与各候选保持原始身份。
+`dist/` 当前正式批次为 `v0.1.14`，完整批次保存在 `artifacts/v0.1.14/`。 [发布报告](evidence/release-v0.1.14/README.md)所有历史正式归档与各候选保持原始身份。
 
 2026-10-21 新增隔离候选 `artifacts/v0.1.7-rc.1/`，Anthropic 后缀为 21 项；其 OpenAI、Anthropic 来源 IP 制品与 v0.1.6 字节一致。用户随后授权发布 `v0.1.7`，旧候选和旧正式归档保留；正式构建与下载结果单独记录。
 
@@ -835,7 +837,7 @@ first_seen <= last_verified <= review_as_of < review_after <= last_verified + 30
 5. 写隔离批次目录，不直接覆盖 dist。候选 `build_mode: candidate` 可包含明确选定的 pending 项用于验收，但格式、范围、来源和日期合法性仍必须通过；不得作为正式部署品。
 6. 获批后以 `build_mode: release` 重建并复核实际 UTC 日期。如果只有证据元数据改变且最终 SRS 与已验收候选逐字节一致，可关联原验收；任何制品变化重验受影响范围。
 
-上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.13`；两次正式构建各 6,156 项检查、92 项回归及固定/Latest 远端验收全部通过，详情见[本版发布记录](evidence/release-v0.1.13/README.md)；设计修订号不冒充 sing-box 软件升级。
+上述流程已实现于 `scripts/common.py`、`sync.py`、`generate.py`、`validate.py`。manifest schema 为 2；记录原始基线与解码语义摘要、完整 provenance、选项、补充证据及工具链。当前正式批次为 `0.1.14`。发布批次版本独立于 sing-box 软件版本。 [本版发布记录](evidence/release-v0.1.14/README.md)
 
 ### 6.2 快照与可复现要求
 
@@ -873,7 +875,7 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 
 每个历史版本的发布授权和静态语义审阅只适用于该批指定摘要。历史 `v0.1.10` 的发布审阅绑定 `0.1.10` 的本次用户授权、制品摘要和语义审阅；旧批准及候选身份保留。本次仅新增用户指定的 `r.stripe.com`、`fcmtoken.googleapis.com` 两个精确域名和目的网段 `34.8.0.0/16`。限定例外绑定旧 Challenge 与 IPv6 `/48` 条目、三个增量及三个制品摘要，保留旧日期与证据，不冒称已重新完成运行验证。
 
-当前 `release-review.json` 绑定 `0.1.13` 的“完整补全 提交 push 发布”授权、三个关键词与三个根后缀，以及三个制品摘要。源 YAML 只追加六项，原兼容条目的日期和证据不变；最终 JSON 消除被新范围包含的旧表达式，覆盖不减少。历史 v0.1.12 的 IP 更新与批准保留。
+当前 `release-review.json` 绑定 `0.1.14` 的“增补 并发布”授权、`ant.dev` 与 `antspace.dev` 两条后缀及三个制品摘要。旧兼容条目沿用原日期和证据。
 
 源提交准备、两次干净构建、隔离回归与静态门槛通过后，归档同批 manifest、校验和与制品。将三个正式 SRS 放入 `dist/`，可复验同批源 JSON、SRS、manifest、cases 与 matches 放入对应版本 `artifacts/<version>/`；构建临时目录不入库。手动建立正文为空的正式 Release，上传三个同名 SRS、manifest、SHA256SUMS 与含来源/许可证的压缩包；先以 draft 上传、核验，再以非 Latest 正式 Release 公开；固定 URL 下载及本机空缓存加载通过后设为 Latest，保持旧 Release 不变。Latest 两条下载入口必须实际返回200并与该批摘要一致。当前构建、验证与发布均由本机手动执行，不依赖已删除的 workflow。
 
@@ -882,7 +884,11 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.13 当前发布结果
+### v0.1.14 当前发布结果
+
+`v0.1.14` 已发布并设为 Latest。Anthropic 目的规则补入 `ant.dev` 和 `antspace.dev` 两条后缀，截图 17 个域名均已覆盖。两次正式构建各 6,184 项原生检查、92 项回归、固定版与 Latest 各 791 项空缓存请求检查通过。 [本版发布记录](evidence/release-v0.1.14/README.md)
+
+### v0.1.13 历史发布结果
 
 已补齐用户指定的三个关键词与三个根后缀，OpenAI 和来源 IP 制品保持原字节。92 项完整回归及两次正式构建各 6,156 项原生检查通过，全部 9 个构建输出一致。已推送 main、正式发布并设为 Latest；固定与 Latest 各 6 个附件下载和各 732 项空缓存请求检查通过，14 个旧 Release 与 17 个旧标签引用不变。见[完整清单与发布记录](evidence/release-v0.1.13/README.md)。
 
