@@ -1,21 +1,21 @@
 {
   "artifacts": {
     "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
-    "anthropic.srs": "090329f326922e3d4c1a88f219d71666401c0abc33c098e9c9b233edbc1281c1",
+    "anthropic.srs": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396",
     "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
   },
   "deployment_status": "pending",
   "integration_evidence": [],
   "operator_authorization": {
-    "path": "sources/evidence/release-v0.1.13-authorization.json",
-    "sha256": "c72208ad0496d3d61da52fa45ff74fa05068d5546417ab13e592139b1ded28bf"
+    "path": "sources/evidence/release-v0.1.14-authorization.json",
+    "sha256": "36bcd51305c2a9aad5abab34560bfab31fdf03ecc2f756b83c46a302258d03fe"
   },
-  "project_version": "0.1.13",
+  "project_version": "0.1.14",
   "schema": 2,
   "scope": "artifact-publication",
   "semantic_diff_review": {
-    "path": "sources/evidence/release-v0.1.13-review.json",
-    "sha256": "37c40129363051114ad8491441701c2d0f85b1e596126fff0dda8ea054aacaa1"
+    "path": "sources/evidence/release-v0.1.14-review.json",
+    "sha256": "1ff10a1a5edfe4155b6f22873b2ad8b6efc8aa8b31225388f565eeb23bdca547"
   },
   "status": "approved"
 }

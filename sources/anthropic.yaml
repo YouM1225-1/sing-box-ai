@@ -786,3 +786,27 @@
     reference: claude-six-scopes-coverage-request
   reason: Explicit complete-coverage request for the six partial one-exit expressions;
     shared scope, not an official or runtime dependency claim.
+- type: domain_suffix
+  value: ant.dev
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-two-domains-coverage-request
+  reason: Explicit request to cover the domain and its subdomains after screenshot
+    review.
+- type: domain_suffix
+  value: antspace.dev
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-two-domains-coverage-request
+  reason: Explicit request to cover the domain and its subdomains after screenshot
+    review.

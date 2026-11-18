@@ -439,3 +439,10 @@ archives:
   sha256: ea6b8fb78b25cb87d90e163aa4d615f30410276eb62f3e726914eb4210ad4836
   observed_on: '2026-11-12'
   method: direct-user-instruction-after-six-partial-expression-review
+- id: claude-two-domains-coverage-request
+  kind: user-instruction
+  path: sources/evidence/claude-two-domains-coverage-request-2026-11-18.json
+  sha256: c13fb19cfc5a39929b4333e1916709447c1d39af72ce8a28b0a26a7d074f84e9
+  url: https://github.com/YouM1225-1/sing-box-ai/blob/v0.1.13/artifacts/v0.1.13/anthropic.json
+  observed_on: '2026-11-18'
+  method: direct-user-instruction-after-screenshot-coverage-review

@@ -1,0 +1,57 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "comparison": {
+    "authorized_additions": [
+      {
+        "type": "domain_suffix",
+        "value": "ant.dev"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "antspace.dev"
+      }
+    ],
+    "from": "0.1.13",
+    "normalized_fields": {
+      "anthropic": {
+        "domain_suffix": {
+          "added": [
+            "ant.dev",
+            "antspace.dev"
+          ],
+          "removed": []
+        }
+      },
+      "anthropic-ip": {},
+      "openai": {}
+    },
+    "to": "0.1.14"
+  },
+  "conclusion": "The Anthropic destination rules gain exactly ant.dev and antspace.dev as domain suffixes. Both other artifact pairs are byte-identical to v0.1.13.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.14/semantic-diff.json",
+      "sha256": "a806de5b095da425f3b846e3b3ea9ff9df9bb21779839eb8746aa4eaf6d9c355"
+    },
+    {
+      "path": "sources/evidence/claude-two-domains-coverage-request-2026-11-18.json",
+      "sha256": "c13fb19cfc5a39929b4333e1916709447c1d39af72ce8a28b0a26a7d074f84e9"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.14-preserved-entry-exception.json",
+      "sha256": "429876a04a9a8bc3ca81cac922c3c82c0e23d29eb5873bf0ef1b7670e7dca2f3"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.14",
+  "reviewed_on": "2026-11-18",
+  "reviewer": "Codex primary review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

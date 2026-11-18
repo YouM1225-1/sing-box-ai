@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "authorized_on": "2026-11-18",
+  "deployment_authorized": false,
+  "instruction": "增补 并发布",
+  "instruction_context": "The maintainer requested publication after confirming the two screenshot gaps in v0.1.13: ant.dev and antspace.dev as destination domain suffixes. The linked URL is the published comparison baseline.",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Publish the static batch containing the two requested suffixes. Consumer deployment and runtime acceptance remain pending."
+  ],
+  "project_version": "0.1.14",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

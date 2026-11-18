@@ -1,0 +1,30 @@
+{
+  "approved_on": "2026-11-18",
+  "artifact": "anthropic",
+  "confirmed_by": "maintainer",
+  "consumer_validation": false,
+  "direction": "destination",
+  "excluded": [
+    "ntp"
+  ],
+  "interpretation": "The maintainer requested publication after confirming the two screenshot gaps in v0.1.13: ant.dev and antspace.dev as destination domain suffixes. The linked URL is the published comparison baseline.",
+  "kind": "user-instruction",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "rules": [
+    {
+      "type": "domain_suffix",
+      "value": "ant.dev"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "antspace.dev"
+    }
+  ],
+  "schema": 1,
+  "scope": "website-coverage",
+  "service_usage_verified": false,
+  "statement": "增补 并发布",
+  "website_url": "https://github.com/YouM1225-1/sing-box-ai/blob/v0.1.13/artifacts/v0.1.13/anthropic.json"
+}

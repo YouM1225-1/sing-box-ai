@@ -18,7 +18,7 @@ class SixScopeCoverageTests(unittest.TestCase):
 
     def test_only_six_authorized_additions_preserve_original_evidence(self):
         before = load(ROOT / "tests/fixtures/anthropic-v0.1.12.yaml")
-        after = load(ROOT / "sources/anthropic.yaml")
+        after = load(ROOT / "tests/fixtures/anthropic-v0.1.13.yaml")
         self.assertEqual(after[:len(before)], before)
         additions = after[len(before):]
         self.assertEqual(len(additions), 6)

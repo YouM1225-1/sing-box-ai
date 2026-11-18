@@ -1,0 +1,27 @@
+{
+  "authorized_additions": [
+    {
+      "type": "domain_suffix",
+      "value": "ant.dev"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "antspace.dev"
+    }
+  ],
+  "from": "0.1.13",
+  "normalized_fields": {
+    "anthropic": {
+      "domain_suffix": {
+        "added": [
+          "ant.dev",
+          "antspace.dev"
+        ],
+        "removed": []
+      }
+    },
+    "anthropic-ip": {},
+    "openai": {}
+  },
+  "to": "0.1.14"
+}
