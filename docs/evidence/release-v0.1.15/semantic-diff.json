@@ -1,0 +1,36 @@
+{
+  "explicit_source_additions": [
+    {
+      "type": "domain_suffix",
+      "value": "datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-us3-datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-ap1-datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-ap2-datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-datadoghq.eu"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-ddog-gov.com"
+    }
+  ],
+  "from": "0.1.14",
+  "normalized_fields": {
+    "anthropic": {},
+    "anthropic-ip": {},
+    "openai": {}
+  },
+  "srs_identical": true,
+  "to": "0.1.15"
+}

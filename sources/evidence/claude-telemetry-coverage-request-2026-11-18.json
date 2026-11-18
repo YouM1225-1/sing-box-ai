@@ -1,0 +1,50 @@
+{
+  "approved_on": "2026-11-18",
+  "artifact": "anthropic",
+  "confirmed_by": "maintainer",
+  "consumer_validation": false,
+  "direction": "destination",
+  "excluded": [
+    "ntp"
+  ],
+  "interpretation": "The maintainer requested seven domain entries to cover the eight remaining screenshot hosts. The sentry.io suffix covers the reported project host. These are requested shared scopes; the linked Claude Code documentation corroborates the US5 intake host.",
+  "kind": "user-instruction",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "rules": [
+    {
+      "type": "domain_suffix",
+      "value": "sentry.io"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-us5-datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-us3-datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-ap1-datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-ap2-datadoghq.com"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-datadoghq.eu"
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-ddog-gov.com"
+    }
+  ],
+  "schema": 1,
+  "scope": "website-coverage",
+  "service_usage_verified": false,
+  "statement": "增加。完成后提交 push 发布",
+  "website_url": "https://code.claude.com/docs/en/network-config"
+}

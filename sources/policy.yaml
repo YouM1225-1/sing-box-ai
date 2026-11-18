@@ -52,5 +52,5 @@ unchanged_release_exception:
   path: sources/evidence/release-v0.1.8-unchanged-exception.json
   sha256: d5fff7f007afe363cc7b7bb6456cba167de8c834d61e47341c8b929967c331dd
 preserved_entry_release_exception:
-  path: sources/evidence/release-v0.1.14-preserved-entry-exception.json
-  sha256: 429876a04a9a8bc3ca81cac922c3c82c0e23d29eb5873bf0ef1b7670e7dca2f3
+  path: sources/evidence/release-v0.1.15-preserved-entry-exception.json
+  sha256: c91c1457fdb4afc85dcd28896eac2984453023a1133cf9f165efecd4b1ec2e2d

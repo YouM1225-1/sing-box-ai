@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "user-instruction",
+  "scope": "website-coverage",
+  "confirmed_by": "maintainer",
+  "approved_on": "2026-11-18",
+  "statement": "在规则中增加这两个域名并同步到unifi中",
+  "artifact": "anthropic",
+  "direction": "destination",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "website_url": "https://code.claude.com/docs/en/network-config",
+  "excluded": [
+    "ntp"
+  ],
+  "rules": [
+    {
+      "type": "domain",
+      "value": "http-intake.logs.us5.datadoghq.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "datadoghq.com"
+    }
+  ],
+  "interpretation": "The attached screenshot names a Claude Code telemetry host and the Datadog parent domain. Preserve the existing optional host and explicitly record the requested parent suffix. The linked documentation corroborates the telemetry host. The parent suffix is a maintainer-requested shared scope.",
+  "service_usage_verified": false,
+  "consumer_validation": false
+}

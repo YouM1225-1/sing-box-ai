@@ -446,3 +446,17 @@ archives:
   url: https://github.com/YouM1225-1/sing-box-ai/blob/v0.1.13/artifacts/v0.1.13/anthropic.json
   observed_on: '2026-11-18'
   method: direct-user-instruction-after-screenshot-coverage-review
+- id: claude-datadog-coverage-request
+  kind: user-instruction
+  path: sources/evidence/claude-datadog-coverage-request-2026-11-18.json
+  sha256: 35d5b632b16c87145455d4f17581f0b3144259ffd00d635a229622dcbfda0933
+  url: https://code.claude.com/docs/en/network-config
+  observed_on: '2026-11-18'
+  method: direct-user-screenshot-coverage-instruction
+- id: claude-telemetry-coverage-request
+  kind: user-instruction
+  path: sources/evidence/claude-telemetry-coverage-request-2026-11-18.json
+  sha256: 37efd480c4855566602d953e96dc6f00fdac1f5ecb5e1ba1f10f857a296f51f4
+  url: https://code.claude.com/docs/en/network-config
+  observed_on: '2026-11-18'
+  method: direct-user-screenshot-coverage-instruction

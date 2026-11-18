@@ -810,3 +810,75 @@
     reference: claude-two-domains-coverage-request
   reason: Explicit request to cover the domain and its subdomains after screenshot
     review.
+- type: domain_suffix
+  value: datadoghq.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-datadog-coverage-request
+  reason: Explicit maintainer request to record the screenshot destination scope and
+    synchronize UniFi.
+- type: domain
+  value: browser-intake-us3-datadoghq.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-coverage-request
+  reason: Explicit maintainer request to record the screenshot destination scope and
+    synchronize UniFi.
+- type: domain
+  value: browser-intake-ap1-datadoghq.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-coverage-request
+  reason: Explicit maintainer request to record the screenshot destination scope and
+    synchronize UniFi.
+- type: domain
+  value: browser-intake-ap2-datadoghq.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-coverage-request
+  reason: Explicit maintainer request to record the screenshot destination scope and
+    synchronize UniFi.
+- type: domain
+  value: browser-intake-datadoghq.eu
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-coverage-request
+  reason: Explicit maintainer request to record the screenshot destination scope and
+    synchronize UniFi.
+- type: domain
+  value: browser-intake-ddog-gov.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-coverage-request
+  reason: Explicit maintainer request to record the screenshot destination scope and
+    synchronize UniFi.

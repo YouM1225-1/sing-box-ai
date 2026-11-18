@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "authorized_on": "2026-11-18",
+  "deployment_authorized": false,
+  "instruction": "完成后提交 push 发布",
+  "instruction_context": "The maintainer requested seven domain entries to cover the eight remaining screenshot hosts. The sentry.io suffix covers the reported project host. These are requested shared scopes; the linked Claude Code documentation corroborates the US5 intake host.",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Publish this batch of static SRS artifacts with explicit telemetry provenance."
+  ],
+  "project_version": "0.1.15",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

@@ -1,0 +1,70 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "comparison": {
+    "explicit_source_additions": [
+      {
+        "type": "domain_suffix",
+        "value": "datadoghq.com"
+      },
+      {
+        "type": "domain",
+        "value": "browser-intake-us3-datadoghq.com"
+      },
+      {
+        "type": "domain",
+        "value": "browser-intake-ap1-datadoghq.com"
+      },
+      {
+        "type": "domain",
+        "value": "browser-intake-ap2-datadoghq.com"
+      },
+      {
+        "type": "domain",
+        "value": "browser-intake-datadoghq.eu"
+      },
+      {
+        "type": "domain",
+        "value": "browser-intake-ddog-gov.com"
+      }
+    ],
+    "from": "0.1.14",
+    "normalized_fields": {
+      "anthropic": {},
+      "anthropic-ip": {},
+      "openai": {}
+    },
+    "srs_identical": true,
+    "to": "0.1.15"
+  },
+  "conclusion": "All three SRS and three normalized JSON artifacts are byte-identical to v0.1.14. The explicit Anthropic source rows are covered by existing keywords.",
+  "evidence": [
+    {
+      "path": "docs/evidence/release-v0.1.15/semantic-diff.json",
+      "sha256": "b6ce558a3e07906bfef7a38dde1f18f2aed846da42b14bac37f18c50daf2d218"
+    },
+    {
+      "path": "sources/evidence/claude-datadog-coverage-request-2026-11-18.json",
+      "sha256": "35d5b632b16c87145455d4f17581f0b3144259ffd00d635a229622dcbfda0933"
+    },
+    {
+      "path": "sources/evidence/claude-telemetry-coverage-request-2026-11-18.json",
+      "sha256": "37efd480c4855566602d953e96dc6f00fdac1f5ecb5e1ba1f10f857a296f51f4"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.15-preserved-entry-exception.json",
+      "sha256": "c91c1457fdb4afc85dcd28896eac2984453023a1133cf9f165efecd4b1ec2e2d"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.15",
+  "reviewed_on": "2026-11-18",
+  "reviewer": "Codex primary review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}
