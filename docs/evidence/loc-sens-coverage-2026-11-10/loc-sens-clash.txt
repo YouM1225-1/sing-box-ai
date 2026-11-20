@@ -1,0 +1,57 @@
+# Location-sensitive services
+# Place these rules above the Google ruleset
+
+payload:
+- DOMAIN, ai.google.dev
+- DOMAIN, aistudio.google.com
+- DOMAIN, alkalicore-pa.clients6.google.com
+- DOMAIN, api.segment.io
+- DOMAIN, bard.google.com
+- DOMAIN, fcmtoken.googleapis.com
+- DOMAIN, gemini.google.com
+- DOMAIN, generativelanguage.googleapis.com
+- DOMAIN, proactivebackend-pa.googleapis.com
+- DOMAIN, phonedeviceverification-pa.googleapis.com
+- DOMAIN, api.revenuecat.com
+
+- DOMAIN-SUFFIX, notebooklm.google
+- DOMAIN-SUFFIX, datadog.pool.ntp.org
+- DOMAIN-SUFFIX, deepmind.google
+- DOMAIN-SUFFIX, geller-pa.googleapis.com
+- DOMAIN-SUFFIX, generativeai.google
+- DOMAIN-SUFFIX, makersuite.google.com
+- DOMAIN-SUFFIX, notebooklm.google.com
+- DOMAIN-SUFFIX, stripe.com
+- DOMAIN-SUFFIX, hcaptcha.com
+
+- DOMAIN, www2.deepl.com
+- DOMAIN, cdn.oaiusercontent.com
+- DOMAIN, probe.icloud.com
+- DOMAIN, mask-api.icloud.com
+- DOMAIN, apple-relay.apple.com
+- DOMAIN, configuration.ls.apple.com
+- DOMAIN, starling.zijieapi.com
+- DOMAIN, prodregistryv2.org
+- DOMAIN, integrate.api.nvidia.com
+- DOMAIN, browser-intake-us5-datadoghq.com
+
+- DOMAIN-SUFFIX, ai.com
+- DOMAIN-SUFFIX, anthropic.com
+- DOMAIN-SUFFIX, bing.com
+- DOMAIN-SUFFIX, chat.com
+- DOMAIN-SUFFIX, chatgpt.com
+- DOMAIN-SUFFIX, claude.ai
+- DOMAIN-SUFFIX, cursor.sh
+- DOMAIN-SUFFIX, ingest.us.sentry.io
+- DOMAIN-SUFFIX, intercom.io
+- DOMAIN-SUFFIX, oaistatic.com
+- DOMAIN-SUFFIX, siftscience.com
+- DOMAIN-SUFFIX, stripe.com
+- DOMAIN-SUFFIX, stripe.network
+
+- DOMAIN-KEYWORD, openai
+- DOMAIN-KEYWORD, siri
+
+- PROCESS-NAME, Claude
+- PROCESS-NAME, ChatGPT
+- PROCESS-NAME, Antigravity

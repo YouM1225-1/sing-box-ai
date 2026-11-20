@@ -1,0 +1,568 @@
+{
+  "verified_at_utc": "2026-10-20T15:45:09.541484+00:00",
+  "method": "sing-box 1.15.0-alpha.9 native rule-set match on downloaded v0.1.6 artifact; source_ip_cidr separately verified by unchanged SRS and decoded CIDR containment, not this destination-only CLI.",
+  "checks": [
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*-review.googlesource.com",
+      "witness": "audit-review.googlesource.com",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.frame.claudeusercontent.com",
+      "witness": "audit.frame.claudeusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "api.anthropic.com",
+      "witness": "api.anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "bridge.claudeusercontent.com",
+      "witness": "bridge.claudeusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "browser-intake-us5-datadoghq.com",
+      "witness": "browser-intake-us5-datadoghq.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "claude.ai",
+      "witness": "claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "claude.com",
+      "witness": "claude.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "code.claude.com",
+      "witness": "code.claude.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "downloads.claude.ai",
+      "witness": "downloads.claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "formulae.brew.sh",
+      "witness": "formulae.brew.sh",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "github.com",
+      "witness": "github.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "http-intake.logs.us5.datadoghq.com",
+      "witness": "http-intake.logs.us5.datadoghq.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "mcp-proxy.anthropic.com",
+      "witness": "mcp-proxy.anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "platform.claude.com",
+      "witness": "platform.claude.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "raw.githubusercontent.com",
+      "witness": "raw.githubusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "registry.npmjs.org",
+      "witness": "registry.npmjs.org",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "storage.googleapis.com",
+      "witness": "storage.googleapis.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.anthropic.com",
+      "witness": "audit.anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.claude.ai",
+      "witness": "audit.claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.claude.app",
+      "witness": "audit.claude.app",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.claude.com",
+      "witness": "audit.claude.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.claudemcpcontent.com",
+      "witness": "audit.claudemcpcontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.claudeusercontent.com",
+      "witness": "audit.claudeusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.livepreview.claude.ai",
+      "witness": "audit.livepreview.claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "*.livepreview.claude.app",
+      "witness": "audit.livepreview.claude.app",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "a-api.anthropic.com",
+      "witness": "a-api.anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "a-cdn.anthropic.com",
+      "witness": "a-cdn.anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "a.claude.ai",
+      "witness": "a.claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "anthropic.com",
+      "witness": "anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "assets-proxy.anthropic.com",
+      "witness": "assets-proxy.anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "assets.claude.ai",
+      "witness": "assets.claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "claude.app",
+      "witness": "claude.app",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "s-cdn.anthropic.com",
+      "witness": "s-cdn.anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "cdnjs.cloudflare.com",
+      "witness": "cdnjs.cloudflare.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "cdn.jsdelivr.net",
+      "witness": "cdn.jsdelivr.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "cdn.tailwindcss.com",
+      "witness": "cdn.tailwindcss.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "code.jquery.com",
+      "witness": "code.jquery.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "unpkg.com",
+      "witness": "unpkg.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "fonts.googleapis.com",
+      "witness": "fonts.googleapis.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "fonts.gstatic.com",
+      "witness": "fonts.gstatic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "api-iam.intercom.io",
+      "witness": "api-iam.intercom.io",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "downloads.intercomcdn.com",
+      "witness": "downloads.intercomcdn.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "static.intercomassets.com",
+      "witness": "static.intercomassets.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "claude-official-domain",
+      "entry": "widget.intercom.io",
+      "witness": "widget.intercom.io",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "removed-from-desktop-list-retained-suffix",
+      "entry": "a-cdn.claude.ai",
+      "witness": "a-cdn.claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "announced-prefix-boundary",
+      "entry": "160.79.104.0/23",
+      "witness": "160.79.104.0",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "announced-prefix-boundary",
+      "entry": "160.79.104.0/23",
+      "witness": "160.79.105.255",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "announced-prefix-boundary",
+      "entry": "2607:6bc0:11::/48",
+      "witness": "2607:6bc0:11::",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "announced-prefix-boundary",
+      "entry": "2607:6bc0:11::/48",
+      "witness": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "announced-prefix-boundary",
+      "entry": "2607:6bc0::/48",
+      "witness": "2607:6bc0::",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "announced-prefix-boundary",
+      "entry": "2607:6bc0::/48",
+      "witness": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "phased-out-ip",
+      "entry": "34.162.46.92/32",
+      "witness": "34.162.46.92",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "phased-out-ip",
+      "entry": "34.162.102.82/32",
+      "witness": "34.162.102.82",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "phased-out-ip",
+      "entry": "34.162.136.91/32",
+      "witness": "34.162.136.91",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "phased-out-ip",
+      "entry": "34.162.142.92/32",
+      "witness": "34.162.142.92",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "phased-out-ip",
+      "entry": "34.162.183.95/32",
+      "witness": "34.162.183.95",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    }
+  ],
+  "count": 56,
+  "passed": true
+}

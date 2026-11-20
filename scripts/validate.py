@@ -259,6 +259,9 @@ def validate(directory, go="go", for_release=False, root=ROOT):
             write_json(recreate, expected)
             run([binary, "rule-set", "compile", "--output", rebuilt, recreate])
             need(rebuilt.read_bytes() == target.read_bytes(), "Clean rebuild differs")
+        from export_unifi import check_exports
+        check_exports(directory, manifest, directory / "unifi")
+        need(manifest.get("unifi_export_sha256") == sha(directory / "unifi/manifest.json"), "UniFi manifest digest mismatch")
         cases = cases_for(selected)
         baseline_rows = {"baseline-" + name: [r for r in selected[name] if r["origin"] == "baseline"] for name in ("openai", "anthropic")}
         for name, rows in baseline_rows.items():

@@ -1,0 +1,724 @@
+{
+  "schema": 1,
+  "compared_artifacts": [
+    "artifacts/v0.1.6/anthropic.json",
+    "artifacts/v0.1.6/anthropic-ip.json"
+  ],
+  "unique_domain_facts": [
+    {
+      "document_value": "*-review.googlesource.com",
+      "type": "domain_regex",
+      "value": "^[^.]+-review\\.googlesource\\.com$",
+      "scope": "optional",
+      "covered": false,
+      "covering_rules": []
+    },
+    {
+      "document_value": "*.frame.claudeusercontent.com",
+      "type": "domain_suffix",
+      "value": ".frame.claudeusercontent.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "api.anthropic.com",
+      "type": "domain",
+      "value": "api.anthropic.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "bridge.claudeusercontent.com",
+      "type": "domain",
+      "value": "bridge.claudeusercontent.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "browser-intake-us5-datadoghq.com",
+      "type": "domain",
+      "value": "browser-intake-us5-datadoghq.com",
+      "scope": "optional",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "claude.ai",
+      "type": "domain",
+      "value": "claude.ai",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "claude.com",
+      "type": "domain",
+      "value": "claude.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "code.claude.com",
+      "type": "domain",
+      "value": "code.claude.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "downloads.claude.ai",
+      "type": "domain",
+      "value": "downloads.claude.ai",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "formulae.brew.sh",
+      "type": "domain",
+      "value": "formulae.brew.sh",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "formulae.brew.sh",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "github.com",
+      "type": "domain",
+      "value": "github.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "github.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "http-intake.logs.us5.datadoghq.com",
+      "type": "domain",
+      "value": "http-intake.logs.us5.datadoghq.com",
+      "scope": "optional",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "mcp-proxy.anthropic.com",
+      "type": "domain",
+      "value": "mcp-proxy.anthropic.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "platform.claude.com",
+      "type": "domain",
+      "value": "platform.claude.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "raw.githubusercontent.com",
+      "type": "domain",
+      "value": "raw.githubusercontent.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "raw.githubusercontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "registry.npmjs.org",
+      "type": "domain",
+      "value": "registry.npmjs.org",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "registry.npmjs.org",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "storage.googleapis.com",
+      "type": "domain",
+      "value": "storage.googleapis.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "storage.googleapis.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.anthropic.com",
+      "type": "domain_suffix",
+      "value": ".anthropic.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.claude.ai",
+      "type": "domain_suffix",
+      "value": ".claude.ai",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.claude.app",
+      "type": "domain_suffix",
+      "value": ".claude.app",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.app",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.claude.com",
+      "type": "domain_suffix",
+      "value": ".claude.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.claudemcpcontent.com",
+      "type": "domain_suffix",
+      "value": ".claudemcpcontent.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.claudeusercontent.com",
+      "type": "domain_suffix",
+      "value": ".claudeusercontent.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.livepreview.claude.ai",
+      "type": "domain_suffix",
+      "value": ".livepreview.claude.ai",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "*.livepreview.claude.app",
+      "type": "domain_suffix",
+      "value": ".livepreview.claude.app",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.app",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "a-api.anthropic.com",
+      "type": "domain",
+      "value": "a-api.anthropic.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "a-cdn.anthropic.com",
+      "type": "domain",
+      "value": "a-cdn.anthropic.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "a.claude.ai",
+      "type": "domain",
+      "value": "a.claude.ai",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "anthropic.com",
+      "type": "domain",
+      "value": "anthropic.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "assets-proxy.anthropic.com",
+      "type": "domain",
+      "value": "assets-proxy.anthropic.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "assets.claude.ai",
+      "type": "domain",
+      "value": "assets.claude.ai",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "claude.app",
+      "type": "domain",
+      "value": "claude.app",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.app",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "s-cdn.anthropic.com",
+      "type": "domain",
+      "value": "s-cdn.anthropic.com",
+      "scope": "desktop-network-host",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "cdnjs.cloudflare.com",
+      "type": "domain",
+      "value": "cdnjs.cloudflare.com",
+      "scope": "artifact-library",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "cdnjs.cloudflare.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "cdn.jsdelivr.net",
+      "type": "domain",
+      "value": "cdn.jsdelivr.net",
+      "scope": "artifact-library",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "cdn.jsdelivr.net",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "cdn.tailwindcss.com",
+      "type": "domain",
+      "value": "cdn.tailwindcss.com",
+      "scope": "artifact-library",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "cdn.tailwindcss.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "code.jquery.com",
+      "type": "domain",
+      "value": "code.jquery.com",
+      "scope": "artifact-library",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "code.jquery.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "unpkg.com",
+      "type": "domain",
+      "value": "unpkg.com",
+      "scope": "artifact-library",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "unpkg.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "fonts.googleapis.com",
+      "type": "domain",
+      "value": "fonts.googleapis.com",
+      "scope": "optional-font",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "fonts.googleapis.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "fonts.gstatic.com",
+      "type": "domain",
+      "value": "fonts.gstatic.com",
+      "scope": "optional-font",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "fonts.gstatic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "api-iam.intercom.io",
+      "type": "domain",
+      "value": "api-iam.intercom.io",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "downloads.intercomcdn.com",
+      "type": "domain",
+      "value": "downloads.intercomcdn.com",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercomcdn.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "static.intercomassets.com",
+      "type": "domain",
+      "value": "static.intercomassets.com",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "static.intercomassets.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "widget.intercom.io",
+      "type": "domain",
+      "value": "widget.intercom.io",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io",
+          "artifact": "anthropic"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "unique_domain_facts": 44,
+    "covered": 43,
+    "uncovered": 1
+  },
+  "differences": {
+    "network-config": {
+      "added": [],
+      "removed": []
+    },
+    "desktop": {
+      "added": [],
+      "removed": [
+        "a-cdn.claude.ai"
+      ]
+    }
+  },
+  "ip_coverage": [
+    {
+      "value": "160.79.104.0/23",
+      "type": "ip_cidr",
+      "direction": "destination",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "160.79.104.0/21",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "value": "2607:6bc0::/48",
+      "type": "ip_cidr",
+      "direction": "destination",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "value": "160.79.104.0/21",
+      "type": "source_ip_cidr",
+      "direction": "source",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "source_ip_cidr",
+          "value": "160.79.104.0/21",
+          "artifact": "anthropic-ip"
+        }
+      ]
+    }
+  ],
+  "announced_prefix_coverage": [
+    {
+      "type": "ip_cidr",
+      "value": "160.79.104.0/23",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "160.79.104.0/21",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "type": "ip_cidr",
+      "value": "2607:6bc0:11::/48",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "type": "ip_cidr",
+      "value": "2607:6bc0::/48",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32",
+          "artifact": "anthropic"
+        }
+      ]
+    }
+  ],
+  "graft": {
+    "calls": 1,
+    "reported_tokens_saved": 29391
+  },
+  "static_method": "scripts.common.covered; exact/suffix/literal-keyword and CIDR containment; native SRS probes will be performed by parent audit",
+  "artifact_sha256": {
+    "artifacts/v0.1.6/anthropic.srs": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+    "artifacts/v0.1.6/anthropic-ip.srs": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+  }
+}

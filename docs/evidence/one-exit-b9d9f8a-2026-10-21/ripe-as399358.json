@@ -1,0 +1,83 @@
+{
+  "url": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358",
+  "retrieved_at_utc": "2026-10-21T05:22:48.158016+00:00",
+  "status": 200,
+  "response_sha256": "175d27e482f40bb0f9d9b3ae1e13666818b1b4e82e8e524d201fe9abbc2990f0",
+  "body": {
+    "messages": [
+      [
+        "info",
+        "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+      ]
+    ],
+    "see_also": [],
+    "version": "1.2",
+    "data_call_name": "announced-prefixes",
+    "data_call_status": "supported",
+    "cached": true,
+    "query_id": "20261021052247-8e9805ab-383c-4121-98f2-6be07c51d7a4",
+    "process_time": 4,
+    "server_id": "app169",
+    "build_version": "v0.12.0-2026.10.20",
+    "pipeline": "1473439",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-10-21T05:22:47.966613",
+    "data": {
+      "prefixes": [
+        {
+          "prefix": "2607:6bc0::/48",
+          "timelines": [
+            {
+              "starttime": "2026-10-07T00:00:00",
+              "endtime": "2026-10-21T00:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "160.79.104.0/23",
+          "timelines": [
+            {
+              "starttime": "2026-10-07T00:00:00",
+              "endtime": "2026-10-21T00:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "2607:6bc0:11::/48",
+          "timelines": [
+            {
+              "starttime": "2026-10-07T00:00:00",
+              "endtime": "2026-10-21T00:00:00"
+            }
+          ]
+        }
+      ],
+      "query_starttime": "2026-10-07T00:00:00",
+      "query_endtime": "2026-10-21T00:00:00",
+      "resource": "399358",
+      "latest_time": "2026-10-21T00:00:00",
+      "earliest_time": "2000-08-01T00:00:00"
+    }
+  },
+  "coverage": [
+    {
+      "prefix": "2607:6bc0::/48",
+      "covered_by": [
+        "2607:6bc0::/32"
+      ]
+    },
+    {
+      "prefix": "160.79.104.0/23",
+      "covered_by": [
+        "160.79.104.0/21"
+      ]
+    },
+    {
+      "prefix": "2607:6bc0:11::/48",
+      "covered_by": [
+        "2607:6bc0::/32"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "url": "https://code.claude.com/docs/en/network-config.md",
+  "final_url": "https://code.claude.com/docs/en/network-config.md",
+  "status": 200,
+  "retrieved_at": "2026-10-20T15:41:50.663548+00:00",
+  "sha256": "be0f9c442ceb9db6354483b8aba18180427fa910899449368989ec15e6f350e0",
+  "bytes": 31795,
+  "content_type": "text/markdown; charset=utf-8",
+  "facts": [
+    {
+      "document_value": "*-review.googlesource.com",
+      "type": "domain_regex",
+      "value": "^[^.]+-review\\.googlesource\\.com$",
+      "scope": "optional",
+      "covered": false,
+      "covering_rules": []
+    },
+    {
+      "document_value": "*.frame.claudeusercontent.com",
+      "type": "domain_suffix",
+      "value": ".frame.claudeusercontent.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "api.anthropic.com",
+      "type": "domain",
+      "value": "api.anthropic.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "bridge.claudeusercontent.com",
+      "type": "domain",
+      "value": "bridge.claudeusercontent.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "browser-intake-us5-datadoghq.com",
+      "type": "domain",
+      "value": "browser-intake-us5-datadoghq.com",
+      "scope": "optional",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "claude.ai",
+      "type": "domain",
+      "value": "claude.ai",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "claude.com",
+      "type": "domain",
+      "value": "claude.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "code.claude.com",
+      "type": "domain",
+      "value": "code.claude.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "downloads.claude.ai",
+      "type": "domain",
+      "value": "downloads.claude.ai",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "formulae.brew.sh",
+      "type": "domain",
+      "value": "formulae.brew.sh",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "formulae.brew.sh",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "github.com",
+      "type": "domain",
+      "value": "github.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "github.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "http-intake.logs.us5.datadoghq.com",
+      "type": "domain",
+      "value": "http-intake.logs.us5.datadoghq.com",
+      "scope": "optional",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "mcp-proxy.anthropic.com",
+      "type": "domain",
+      "value": "mcp-proxy.anthropic.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "platform.claude.com",
+      "type": "domain",
+      "value": "platform.claude.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "raw.githubusercontent.com",
+      "type": "domain",
+      "value": "raw.githubusercontent.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "raw.githubusercontent.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "registry.npmjs.org",
+      "type": "domain",
+      "value": "registry.npmjs.org",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "registry.npmjs.org",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "storage.googleapis.com",
+      "type": "domain",
+      "value": "storage.googleapis.com",
+      "scope": "feature-dependent",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "storage.googleapis.com",
+          "artifact": "anthropic"
+        }
+      ]
+    }
+  ],
+  "locator": "Network access requirements",
+  "full_page_redistributed": false,
+  "previous_record": "../../../../sources/official/source-records/claude-code.json",
+  "domain_set_difference_from_2026_09_27": {
+    "added": [],
+    "removed": []
+  }
+}

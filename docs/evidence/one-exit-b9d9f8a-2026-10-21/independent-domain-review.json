@@ -1,0 +1,672 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-10-21T05:24:51.966233+00:00",
+  "commit": "b9d9f8ab6687401f7588dfa7d7023cd58ffb4032",
+  "comparison": "v0.1.6 local archived JSON; parent verified local archived SRS by native decompilation and matching, with dist byte equality; no GitHub Release download in this task",
+  "domain_additions_per_file": {
+    "clash-party/override.yaml": 17,
+    "flclash/claude-google.js": 15,
+    "shadowrocket/one-exit.module": 17
+  },
+  "union_of_added_domain_statements": 17,
+  "globally_new_vs_all_prior_templates": 15,
+  "addition_count_note": "anthropic/claude keywords were already in flclash; no interpretation of supplied patch yields 16 unique new domain statements. modelcontextprotocol not added.",
+  "classification_definition": {
+    "full": "entire supplied rule scope contained in existing selected rule scope; exact is not suffix; dotted suffix excludes apex",
+    "partial": "at least a directly relevant configured scope or documented service-host witness covered, but explicit negative witness disproves full coverage",
+    "none": "no directly relevant same-service scope/known hosts selected; NOT a proof of empty mathematical intersection for every possible synthetically named host"
+  },
+  "incidental_keyword_collision_note": "Anthropic datadog/sentry/sift keywords can incidentally match e.g. sentry.growthbook.io, sentry.hcaptcha.com or sentry.stripe.com. OpenAI openai.com suffix can match anthropic.openai.com, claude.openai.com or modelcontextprotocol.openai.com. Such invented hosts do not demonstrate functional service coverage.",
+  "counts": {
+    "anthropic": {
+      "partial": 5,
+      "full": 6,
+      "none": 6
+    },
+    "openai": {
+      "none": 11,
+      "partial": 6
+    },
+    "union": {
+      "partial": 6,
+      "full": 6,
+      "none": 5
+    }
+  },
+  "new_rules": [
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "anthropic",
+      "service_scope_coverage": {
+        "anthropic": "partial",
+        "openai": "none",
+        "union": "partial"
+      },
+      "basis": "Anthropic first-party suffixes cover documented hosts; no keyword anthropic rule.",
+      "evidence_status": "Keyword is broader than official named domains; already present in flclash before this commit.",
+      "static_witnesses": [
+        {
+          "hostname": "api.anthropic.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "unrelated-anthropic.example.net",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "browser-intake",
+      "service_scope_coverage": {
+        "anthropic": "partial",
+        "openai": "partial",
+        "union": "partial"
+      },
+      "basis": "Anthropic datadog keyword covers documented Datadog intake names; OpenAI has two exact intake names; neither implements generic browser-intake substring.",
+      "evidence_status": "Official Claude has optional browser-intake-us5-datadoghq.com; official OpenAI has exact rum.browser-intake-datadoghq.com.",
+      "static_witnesses": [
+        {
+          "hostname": "browser-intake-us5-datadoghq.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "browser-intake-datadoghq.com",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        },
+        {
+          "hostname": "rum.browser-intake-datadoghq.com",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        },
+        {
+          "hostname": "browser-intake.example.net",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "claude",
+      "service_scope_coverage": {
+        "anthropic": "partial",
+        "openai": "none",
+        "union": "partial"
+      },
+      "basis": "Selected claude.ai/.app/.com/.dev and content suffixes do not cover all hostnames containing claude.",
+      "evidence_status": "Keyword is broader than official named domains; already present in flclash.",
+      "static_witnesses": [
+        {
+          "hostname": "claude.ai",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "unrelated-claude.example.net",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "challenges.cloudflare.com",
+      "service_scope_coverage": {
+        "anthropic": "partial",
+        "openai": "partial",
+        "union": "partial"
+      },
+      "basis": "Both artifacts have this exact host; neither has suffix challenges.cloudflare.com.",
+      "evidence_status": "Exact OpenAI official requirement; exact Claude compatibility-critical entry backed by maintainer confirmation, not official all-subdomain requirement.",
+      "static_witnesses": [
+        {
+          "hostname": "challenges.cloudflare.com",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        },
+        {
+          "hostname": "audit.challenges.cloudflare.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claudemcpcontent.com",
+      "service_scope_coverage": {
+        "anthropic": "full",
+        "openai": "none",
+        "union": "full"
+      },
+      "basis": "Anthropic root suffix covers apex and every subdomain.",
+      "evidence_status": "Official Desktop wildcard already recorded; root inclusion is existing selected scope.",
+      "static_witnesses": [
+        {
+          "hostname": "claudemcpcontent.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "audit.claudemcpcontent.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "datadoghq.com",
+      "service_scope_coverage": {
+        "anthropic": "full",
+        "openai": "none",
+        "union": "full"
+      },
+      "basis": "Anthropic datadog keyword includes entire suffix; OpenAI browser-intake-datadoghq.com and rum child are not under datadoghq.com.",
+      "evidence_status": "Official Claude optional host http-intake.logs.us5.datadoghq.com; all-domain breadth came from user-requested keyword.",
+      "static_witnesses": [
+        {
+          "hostname": "datadoghq.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "http-intake.logs.us5.datadoghq.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "browser-intake-datadoghq.com",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "growthbook.io",
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "none",
+        "union": "none"
+      },
+      "basis": "No direct suffix or exact GrowthBook rule in either artifact.",
+      "evidence_status": "cdn.growthbook.io is an existing pending historical candidate since 2026-09-27, not established current mandatory dependency.",
+      "static_witnesses": [
+        {
+          "hostname": "growthbook.io",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "cdn.growthbook.io",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "hcaptcha.com",
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "none",
+        "union": "none"
+      },
+      "basis": "No same-domain selected coverage.",
+      "evidence_status": "No matching official/pending fact found in checked local sources; one-exit author routing choice alone does not establish Claude required dependency.",
+      "static_witnesses": [
+        {
+          "hostname": "hcaptcha.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "js.hcaptcha.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercom.io",
+      "service_scope_coverage": {
+        "anthropic": "full",
+        "openai": "partial",
+        "union": "full"
+      },
+      "basis": "Anthropic root suffix includes apex and children; OpenAI dotted .intercom.io includes children only.",
+      "evidence_status": "Official OpenAI wildcard plus optional Claude support exact hosts; root breadth Anthropic user-requested.",
+      "static_witnesses": [
+        {
+          "hostname": "intercom.io",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "widget.intercom.io",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercomcdn.com",
+      "service_scope_coverage": {
+        "anthropic": "full",
+        "openai": "partial",
+        "union": "full"
+      },
+      "basis": "Anthropic root suffix includes apex and children; OpenAI dotted .intercomcdn.com includes children only.",
+      "evidence_status": "Official OpenAI wildcard plus optional Claude support exact hosts; root breadth Anthropic user-requested.",
+      "static_witnesses": [
+        {
+          "hostname": "intercomcdn.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "js.intercomcdn.com",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "segment.io",
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "none",
+        "union": "none"
+      },
+      "basis": "No same-domain selected coverage.",
+      "evidence_status": "No matching official/pending fact found locally; one-exit routing intent is not official mandatory evidence.",
+      "static_witnesses": [
+        {
+          "hostname": "segment.io",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "api.segment.io",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "sentry.io",
+      "service_scope_coverage": {
+        "anthropic": "full",
+        "openai": "partial",
+        "union": "full"
+      },
+      "basis": "Anthropic sentry keyword contains entire suffix scope; OpenAI only exact o207216 and o33249 ingest hosts.",
+      "evidence_status": "Full Anthropic keyword was user-requested, not an official all-Sentry requirement.",
+      "static_witnesses": [
+        {
+          "hostname": "sentry.io",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "audit.sentry.io",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "o207216.ingest.sentry.io",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        },
+        {
+          "hostname": "o33249.ingest.sentry.io",
+          "anthropic": true,
+          "openai": true,
+          "union": true
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "siftscience.com",
+      "service_scope_coverage": {
+        "anthropic": "full",
+        "openai": "none",
+        "union": "full"
+      },
+      "basis": "Anthropic sift keyword covers apex and every subdomain; OpenAI has no same-domain selected rule.",
+      "evidence_status": "Existing user-requested keyword; no evidence that the entire Sift service is official Claude required.",
+      "static_witnesses": [
+        {
+          "hostname": "siftscience.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "api.siftscience.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.com",
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "partial",
+        "union": "partial"
+      },
+      "basis": "OpenAI has exact js.stripe.com only; Anthropic has no same-domain selected rule.",
+      "evidence_status": "Official OpenAI fact supports exact js.stripe.com, not all stripe.com or Claude dependency.",
+      "static_witnesses": [
+        {
+          "hostname": "js.stripe.com",
+          "anthropic": false,
+          "openai": true,
+          "union": true
+        },
+        {
+          "hostname": "stripe.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "api.stripe.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "audit.js.stripe.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.network",
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "none",
+        "union": "none"
+      },
+      "basis": "No same-domain selected coverage.",
+      "evidence_status": "No matching official/pending fact found locally; requires use-case evidence before claiming required.",
+      "static_witnesses": [
+        {
+          "hostname": "stripe.network",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "m.stripe.network",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripecdn.com",
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "none",
+        "union": "none"
+      },
+      "basis": "No same-domain selected coverage.",
+      "evidence_status": "No matching official/pending fact found locally; requires use-case evidence before claiming required.",
+      "static_witnesses": [
+        {
+          "hostname": "stripecdn.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "audit.stripecdn.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "usefathom.com",
+      "service_scope_coverage": {
+        "anthropic": "partial",
+        "openai": "none",
+        "union": "partial"
+      },
+      "basis": "Anthropic contains only exact cdn.usefathom.com; apex and other subdomains are outside that rule.",
+      "evidence_status": "Historical pending candidate persists; exact cdn host separately selected as user-requested website coverage, not official mandatory status.",
+      "static_witnesses": [
+        {
+          "hostname": "cdn.usefathom.com",
+          "anthropic": true,
+          "openai": false,
+          "union": true
+        },
+        {
+          "hostname": "usefathom.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "audit.usefathom.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "audit.cdn.usefathom.com",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ],
+      "added_in_files": [
+        "clash-party/override.yaml",
+        "flclash/claude-google.js",
+        "shadowrocket/one-exit.module"
+      ]
+    }
+  ],
+  "preexisting_mcp_rules": [
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "modelcontextprotocol.io",
+      "files": [
+        "clash-party/override.yaml",
+        "shadowrocket/one-exit.module"
+      ],
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "none",
+        "union": "none"
+      },
+      "status": "Existing pending documentation-domain scope; unchanged by this commit; not mandatory client runtime endpoint evidence.",
+      "static_witnesses": [
+        {
+          "hostname": "modelcontextprotocol.io",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "www.modelcontextprotocol.io",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "modelcontextprotocol",
+      "files": [
+        "flclash/claude-google.js"
+      ],
+      "service_scope_coverage": {
+        "anthropic": "none",
+        "openai": "none",
+        "union": "none"
+      },
+      "status": "Pre-existing broader keyword; not newly added by commit.",
+      "static_witnesses": [
+        {
+          "hostname": "modelcontextprotocol.io",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        },
+        {
+          "hostname": "modelcontextprotocol.example.net",
+          "anthropic": false,
+          "openai": false,
+          "union": false
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "../../../artifacts/v0.1.6/anthropic.json",
+    "../../../artifacts/v0.1.6/openai.json",
+    "../../../sources/discovery/pending.yaml",
+    "../../../sources/official/openai-network.json",
+    "../../../sources/official/claude-code.json",
+    "../../../sources/official/claude-desktop.json",
+    "../../../sources/official/claude-support.json",
+    "../../../sources/anthropic.yaml",
+    "commit.json"
+  ],
+  "graft": {
+    "calls": 1,
+    "reported_tokens_saved": 26577
+  }
+}

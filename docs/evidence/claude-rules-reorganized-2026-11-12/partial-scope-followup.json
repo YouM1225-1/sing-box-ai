@@ -1,0 +1,52 @@
+{
+  "release": "v0.1.12",
+  "checked_on": "2026-11-12",
+  "scope": "domain-only matching, no live payment or DNS/route test",
+  "cases": [
+    {
+      "domain": "hooks.stripe.com",
+      "matched": false,
+      "native_output": ""
+    },
+    {
+      "domain": "js.stripe.com",
+      "matched": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "domain": "audit.js.stripe.com",
+      "matched": false,
+      "native_output": ""
+    },
+    {
+      "domain": "challenges.cloudflare.com",
+      "matched": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "domain": "audit.challenges.cloudflare.com",
+      "matched": false,
+      "native_output": ""
+    },
+    {
+      "domain": "cdn.usefathom.com",
+      "matched": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "domain": "usefathom.com",
+      "matched": false,
+      "native_output": ""
+    },
+    {
+      "domain": "browser-intake-us5-datadoghq.com",
+      "matched": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "domain": "audit-browser-intake.example.org",
+      "matched": false,
+      "native_output": ""
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "schema": 1,
+  "audit_date": "2026-10-20",
+  "checked_at": "2026-10-20T15:44:31.930306+00:00",
+  "comparison_release": "v0.1.6",
+  "artifact_json_sha256": "88191331af4cf6fe2aec8d8d11900384ca47fe03b0dd2c110ca5450551535403",
+  "artifact_srs_sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+  "dist_srs_byte_equal": true,
+  "network_page": {
+    "url": "https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps",
+    "page_updated_literal": "23 hours ago",
+    "absolute_update_time_inferred": false,
+    "full_page_redistributed": false,
+    "response_sha256": "61686a807bc4e842e21da2f8ee468f374346834807ba15621d52dd44ce35b8f4",
+    "response_bytes": 9869,
+    "main_allowlist": [
+      {
+        "value": "*.auth.openai.com",
+        "locator": "L18",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.chatgpt.com",
+        "locator": "L20",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.ct.sendgrid.net",
+        "locator": "L22",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.intercom.io",
+        "locator": "L24",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.intercomcdn.com",
+        "locator": "L26",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.oaistatic.com",
+        "locator": "L28",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.oaiusercontent.com",
+        "locator": "L30",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.openai.com",
+        "locator": "L32",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "*.oaistatsig.com",
+        "locator": "L34",
+        "type": "domain_suffix",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "android.chat.openai.com",
+        "locator": "L36",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "auth0.openai.com",
+        "locator": "L38",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "cdn.openaimerge.com",
+        "locator": "L40",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "cdn.platform.openai.com",
+        "locator": "L41",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "cdn.workos.com",
+        "locator": "L43",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "challenges.cloudflare.com",
+        "locator": "L45",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "chat.openai.com",
+        "locator": "L47",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "desktop.chat.openai.com",
+        "locator": "L49",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "forwarder.workos.com",
+        "locator": "L51",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "frontend-apps-multi-region.workos.com",
+        "locator": "L53",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "humb.apple.com",
+        "locator": "L55",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "images.workoscdn.com",
+        "locator": "L57",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "ios.chat.openai.com",
+        "locator": "L59",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "js.intercomcdn.com",
+        "locator": "L61",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "js.stripe.com",
+        "locator": "L63",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "o207216.ingest.sentry.io",
+        "locator": "L65",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "o33249.ingest.sentry.io",
+        "locator": "L67",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "rum.browser-intake-datadoghq.com",
+        "locator": "L69",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "setup.auth.openai.com",
+        "locator": "L71",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "setup.workos.com",
+        "locator": "L73",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "tcr9i.chat.openai.com",
+        "locator": "L75",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "value": "workos.imgix.net",
+        "locator": "L77",
+        "type": "domain",
+        "covered_by_v0_1_6": true
+      }
+    ],
+    "count": 31,
+    "added_vs_v0_1_6_source_record": [],
+    "removed_vs_v0_1_6_source_record": [],
+    "uncovered": [],
+    "websockets": [
+      {
+        "host": "ws.chatgpt.com",
+        "url": "wss://ws.chatgpt.com",
+        "locator": "L84",
+        "network": "tcp",
+        "port": 443,
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "chatgpt.com",
+        "url": "wss://chatgpt.com/",
+        "locator": "L85-L86",
+        "network": "tcp",
+        "port": 443,
+        "covered_by_v0_1_6": true
+      }
+    ],
+    "ios_diagnostic_host": {
+      "host": "register.appattest.apple.com",
+      "locator": "L139-L140",
+      "main_allowlist_member": false,
+      "current_runtime_routing_requirement_established": false
+    }
+  },
+  "chatgpt_voice": {
+    "url": "https://openai.com/chatgpt-voice.json",
+    "creationTime": "2026-03-26T20:12:45.451356+00:00",
+    "count": 23,
+    "ipv4_count": 23,
+    "ipv6_count": 0,
+    "prefixes": [
+      "102.37.57.54/32",
+      "13.71.25.29/32",
+      "135.220.40.201/32",
+      "172.203.39.49/32",
+      "172.207.173.200/32",
+      "172.214.226.198/32",
+      "191.233.251.27/32",
+      "20.162.96.163/32",
+      "20.168.48.117/32",
+      "20.184.36.134/32",
+      "20.203.144.245/32",
+      "20.74.221.21/32",
+      "4.151.200.38/32",
+      "4.155.146.196/32",
+      "4.197.172.116/32",
+      "4.217.235.100/32",
+      "4.245.198.13/32",
+      "40.118.236.137/32",
+      "51.4.112.173/32",
+      "52.143.181.161/32",
+      "68.155.152.41/32",
+      "72.146.20.246/32",
+      "74.248.148.7/32"
+    ],
+    "added_vs_tracked_feed": [],
+    "removed_vs_tracked_feed": [],
+    "byte_identical_to_tracked_feed": true,
+    "uncovered_by_v0_1_6": [],
+    "purpose": "ChatGPT Voice destination addresses",
+    "preferred_network": "udp",
+    "preferred_port": 3478,
+    "fallback_network": "tcp",
+    "fallback_port": 443
+  },
+  "codex": {
+    "github_release_tag": "rust-v0.163.0",
+    "github_release_published_at": "2026-10-15T21:30:38Z",
+    "npm_version": "0.163.0",
+    "official_channel_tag": "rust-v0.163.0",
+    "public_installer_sha256": "150e3cf675682efeaac115aa3747add3f27887896d04ce6d0b56478d8b428bf6",
+    "public_installer_byte_hash_unchanged_since_recorded_source": true,
+    "destination_hosts": [
+      {
+        "host": "chatgpt.com",
+        "purpose": "Codex public installer entrypoint and model WebSocket",
+        "source_url": "https://learn.chatgpt.com/docs/codex/cli",
+        "locator": "Markdown L37,L54",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "releases.openai.com",
+        "purpose": "Observed public installer redirect and official release channel",
+        "source_url": "https://chatgpt.com/codex/install.sh",
+        "locator": "HTTP redirect; installer L10,L388-L410",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "api.github.com",
+        "purpose": "Installer GitHub fallback metadata",
+        "source_url": "https://chatgpt.com/codex/install.sh",
+        "locator": "installer L335,L364",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "github.com",
+        "purpose": "Installer GitHub fallback asset URL",
+        "source_url": "https://chatgpt.com/codex/install.sh",
+        "locator": "installer L322",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "release-assets.githubusercontent.com",
+        "purpose": "Observed GitHub release asset redirect host",
+        "source_url": "https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-aarch64-apple-darwin.tar.gz",
+        "locator": "HEAD redirect only",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "registry.npmjs.org",
+        "purpose": "Official npm package tarball host",
+        "source_url": "https://registry.npmjs.org/@openai%2Fcodex/latest",
+        "locator": "dist.tarball",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "api.openai.com",
+        "purpose": "Self-hosted executor environment registration",
+        "source_url": "https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted",
+        "locator": "Markdown L52",
+        "covered_by_v0_1_6": true
+      },
+      {
+        "host": "codex-cloud-environments.chatgpt.com",
+        "purpose": "Self-hosted executor commands/results WebSocket",
+        "source_url": "https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted",
+        "locator": "Markdown L53",
+        "covered_by_v0_1_6": true
+      }
+    ],
+    "new_domain_requirement_found": false,
+    "scope": "Public installer, npm, GitHub release distribution and self-hosted executor official docs. Not a complete inventory of arbitrary user plugins, repositories, package registries or cloud task internet access."
+  },
+  "other_source_address_feeds": [
+    {
+      "feed": "https://openai.com/chatgpt-connectors.json",
+      "file": "connectors.json",
+      "creationTime": "2026-10-06T23:18:01.923622",
+      "count": 283,
+      "unique_prefixes": 283,
+      "ipv4_count": 283,
+      "ipv6_count": 0,
+      "purpose": "ChatGPT integrations: plugins, connectors, GPT Actions and agentic commerce",
+      "direction": "OpenAI service outbound source addresses observed by user-controlled services",
+      "tracked_historical_baseline": false,
+      "delta": null,
+      "include_in_current_client_destination_rules": false
+    },
+    {
+      "feed": "https://openai.com/chatgpt-agents.json",
+      "file": "agents.json",
+      "creationTime": "2026-10-16T17:33:26.060036",
+      "count": 1758,
+      "unique_prefixes": 1758,
+      "ipv4_count": 1758,
+      "ipv6_count": 0,
+      "purpose": "Codex cloud connections to external services such as GitHub",
+      "direction": "OpenAI service outbound source addresses observed by user-controlled services",
+      "tracked_historical_baseline": false,
+      "delta": null,
+      "include_in_current_client_destination_rules": false
+    }
+  ],
+  "realtime_sip": {
+    "url": "https://developers.openai.com/api/docs/guides/voice-sip?voice-api=realtime",
+    "legacy_url": "https://developers.openai.com/api/docs/guides/realtime-sip",
+    "media_prefixes": [
+      "13.79.45.80/28",
+      "23.98.140.64/28",
+      "40.67.149.176/28",
+      "40.83.204.240/28"
+    ],
+    "added_vs_previously_identified_four": [],
+    "removed_vs_previously_identified_four": [],
+    "media_protocol": "Bidirectional SRTP over UDP; media address/port negotiated in SDP",
+    "locator": "Markdown L390-L396",
+    "signaling_hosts": [
+      "sip.api.openai.com",
+      "sip-eu.api.openai.com"
+    ],
+    "signaling_protocol": "outbound TCP/TLS to DNS resolved addresses on port 5061",
+    "signaling_locator": "Markdown L385-L386",
+    "signaling_hosts_covered_by_v0_1_6": true,
+    "media_uncovered_by_v0_1_6": [
+      "13.79.45.80/28",
+      "23.98.140.64/28",
+      "40.67.149.176/28",
+      "40.83.204.240/28"
+    ],
+    "selected_feature": false,
+    "purpose": "Realtime API SIP, separate from ChatGPT Voice; no current requested-rule expansion"
+  },
+  "changes_made_to_sources_or_artifacts": false,
+  "validation_scope": "JSON rule semantics and source/feed comparisons. Native matching is recorded separately by the main audit against freshly downloaded release SRS. No login, live voice, routing or client deployment performed."
+}

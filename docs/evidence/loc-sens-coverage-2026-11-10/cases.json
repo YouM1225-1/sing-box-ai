@@ -1,0 +1,2612 @@
+[
+  {
+    "Name": "DOMAIN:ai.google.dev:ai.google.dev:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "ai.google.dev",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:ai.google.dev:ai.google.dev:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "ai.google.dev",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:ai.google.dev:ai.google.dev:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "ai.google.dev",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:aistudio.google.com:aistudio.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "aistudio.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:aistudio.google.com:aistudio.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "aistudio.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:aistudio.google.com:aistudio.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "aistudio.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:alkalicore-pa.clients6.google.com:alkalicore-pa.clients6.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "alkalicore-pa.clients6.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:alkalicore-pa.clients6.google.com:alkalicore-pa.clients6.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "alkalicore-pa.clients6.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:alkalicore-pa.clients6.google.com:alkalicore-pa.clients6.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "alkalicore-pa.clients6.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:api.segment.io:api.segment.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "api.segment.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN:api.segment.io:api.segment.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "api.segment.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:api.segment.io:api.segment.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "api.segment.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:bard.google.com:bard.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "bard.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:bard.google.com:bard.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "bard.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:bard.google.com:bard.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "bard.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:fcmtoken.googleapis.com:fcmtoken.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "fcmtoken.googleapis.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN:fcmtoken.googleapis.com:fcmtoken.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "fcmtoken.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:fcmtoken.googleapis.com:fcmtoken.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "fcmtoken.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:gemini.google.com:gemini.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "gemini.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:gemini.google.com:gemini.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "gemini.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:gemini.google.com:gemini.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "gemini.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:generativelanguage.googleapis.com:generativelanguage.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "generativelanguage.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:generativelanguage.googleapis.com:generativelanguage.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "generativelanguage.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:generativelanguage.googleapis.com:generativelanguage.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "generativelanguage.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:proactivebackend-pa.googleapis.com:proactivebackend-pa.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "proactivebackend-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:proactivebackend-pa.googleapis.com:proactivebackend-pa.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "proactivebackend-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:proactivebackend-pa.googleapis.com:proactivebackend-pa.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "proactivebackend-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:phonedeviceverification-pa.googleapis.com:phonedeviceverification-pa.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "phonedeviceverification-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:phonedeviceverification-pa.googleapis.com:phonedeviceverification-pa.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "phonedeviceverification-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:phonedeviceverification-pa.googleapis.com:phonedeviceverification-pa.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "phonedeviceverification-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:api.revenuecat.com:api.revenuecat.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "api.revenuecat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:api.revenuecat.com:api.revenuecat.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "api.revenuecat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:api.revenuecat.com:api.revenuecat.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "api.revenuecat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notebooklm.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:probe.notebooklm.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:b.a.notebooklm.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notnotebooklm.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notnotebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notebooklm.google.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notebooklm.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notebooklm.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:probe.notebooklm.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:b.a.notebooklm.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notnotebooklm.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notnotebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notebooklm.google.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notebooklm.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notebooklm.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:probe.notebooklm.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:b.a.notebooklm.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.notebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notnotebooklm.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notnotebooklm.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google:notebooklm.google.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notebooklm.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:datadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:probe.datadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:b.a.datadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:notdatadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notdatadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:datadog.pool.ntp.org.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "datadog.pool.ntp.org.invalid",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:datadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:probe.datadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:b.a.datadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:notdatadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notdatadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:datadog.pool.ntp.org.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "datadog.pool.ntp.org.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:datadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:probe.datadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:b.a.datadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:notdatadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notdatadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:datadog.pool.ntp.org:datadog.pool.ntp.org.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "datadog.pool.ntp.org.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:deepmind.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:probe.deepmind.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:b.a.deepmind.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:notdeepmind.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notdeepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:deepmind.google.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "deepmind.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:deepmind.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:probe.deepmind.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:b.a.deepmind.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:notdeepmind.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notdeepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:deepmind.google.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "deepmind.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:deepmind.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:probe.deepmind.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:b.a.deepmind.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.deepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:notdeepmind.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notdeepmind.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:deepmind.google:deepmind.google.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "deepmind.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:geller-pa.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:probe.geller-pa.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:b.a.geller-pa.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:notgeller-pa.googleapis.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notgeller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:geller-pa.googleapis.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "geller-pa.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:geller-pa.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:probe.geller-pa.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:b.a.geller-pa.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:notgeller-pa.googleapis.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notgeller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:geller-pa.googleapis.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "geller-pa.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:geller-pa.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:probe.geller-pa.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:b.a.geller-pa.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.geller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:notgeller-pa.googleapis.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notgeller-pa.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:geller-pa.googleapis.com:geller-pa.googleapis.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "geller-pa.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:generativeai.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:probe.generativeai.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:b.a.generativeai.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:notgenerativeai.google:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notgenerativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:generativeai.google.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "generativeai.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:generativeai.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:probe.generativeai.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:b.a.generativeai.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:notgenerativeai.google:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notgenerativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:generativeai.google.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "generativeai.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:generativeai.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:probe.generativeai.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:b.a.generativeai.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.generativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:notgenerativeai.google:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notgenerativeai.google",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:generativeai.google:generativeai.google.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "generativeai.google.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:makersuite.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:probe.makersuite.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:b.a.makersuite.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:notmakersuite.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notmakersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:makersuite.google.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "makersuite.google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:makersuite.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:probe.makersuite.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:b.a.makersuite.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:notmakersuite.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notmakersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:makersuite.google.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "makersuite.google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:makersuite.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:probe.makersuite.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:b.a.makersuite.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.makersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:notmakersuite.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notmakersuite.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:makersuite.google.com:makersuite.google.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "makersuite.google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notebooklm.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:probe.notebooklm.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:b.a.notebooklm.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notnotebooklm.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notnotebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notebooklm.google.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notebooklm.google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notebooklm.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:probe.notebooklm.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:b.a.notebooklm.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notnotebooklm.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notnotebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notebooklm.google.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notebooklm.google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notebooklm.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:probe.notebooklm.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:b.a.notebooklm.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.notebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notnotebooklm.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notnotebooklm.google.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:notebooklm.google.com:notebooklm.google.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notebooklm.google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:stripe.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:probe.stripe.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:b.a.stripe.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:notstripe.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notstripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:stripe.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:r.stripe.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "r.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:stripe.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:probe.stripe.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:b.a.stripe.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:notstripe.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notstripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:stripe.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:js.stripe.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "js.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:stripe.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:probe.stripe.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:b.a.stripe.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:notstripe.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notstripe.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.com:stripe.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:hcaptcha.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:probe.hcaptcha.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:b.a.hcaptcha.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:nothcaptcha.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "nothcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:hcaptcha.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "hcaptcha.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:hcaptcha.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "hcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:probe.hcaptcha.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.hcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:b.a.hcaptcha.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.hcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:nothcaptcha.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "nothcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:hcaptcha.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "hcaptcha.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:hcaptcha.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "hcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:probe.hcaptcha.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.hcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:b.a.hcaptcha.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.hcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:nothcaptcha.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "nothcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:hcaptcha.com:hcaptcha.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "hcaptcha.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:www2.deepl.com:www2.deepl.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "www2.deepl.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:www2.deepl.com:www2.deepl.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "www2.deepl.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:www2.deepl.com:www2.deepl.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "www2.deepl.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:cdn.oaiusercontent.com:cdn.oaiusercontent.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "cdn.oaiusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:cdn.oaiusercontent.com:cdn.oaiusercontent.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "cdn.oaiusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN:cdn.oaiusercontent.com:cdn.oaiusercontent.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "cdn.oaiusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:probe.icloud.com:probe.icloud.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.icloud.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:probe.icloud.com:probe.icloud.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.icloud.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:probe.icloud.com:probe.icloud.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.icloud.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:mask-api.icloud.com:mask-api.icloud.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "mask-api.icloud.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:mask-api.icloud.com:mask-api.icloud.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "mask-api.icloud.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:mask-api.icloud.com:mask-api.icloud.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "mask-api.icloud.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:apple-relay.apple.com:apple-relay.apple.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "apple-relay.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:apple-relay.apple.com:apple-relay.apple.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "apple-relay.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:apple-relay.apple.com:apple-relay.apple.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "apple-relay.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:configuration.ls.apple.com:configuration.ls.apple.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "configuration.ls.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:configuration.ls.apple.com:configuration.ls.apple.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "configuration.ls.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:configuration.ls.apple.com:configuration.ls.apple.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "configuration.ls.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:starling.zijieapi.com:starling.zijieapi.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "starling.zijieapi.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:starling.zijieapi.com:starling.zijieapi.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "starling.zijieapi.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:starling.zijieapi.com:starling.zijieapi.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "starling.zijieapi.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:prodregistryv2.org:prodregistryv2.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "prodregistryv2.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:prodregistryv2.org:prodregistryv2.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "prodregistryv2.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:prodregistryv2.org:prodregistryv2.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "prodregistryv2.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:integrate.api.nvidia.com:integrate.api.nvidia.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "integrate.api.nvidia.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:integrate.api.nvidia.com:integrate.api.nvidia.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "integrate.api.nvidia.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:integrate.api.nvidia.com:integrate.api.nvidia.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "integrate.api.nvidia.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:browser-intake-us5-datadoghq.com:browser-intake-us5-datadoghq.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "browser-intake-us5-datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN:browser-intake-us5-datadoghq.com:browser-intake-us5-datadoghq.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "browser-intake-us5-datadoghq.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN:browser-intake-us5-datadoghq.com:browser-intake-us5-datadoghq.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "browser-intake-us5-datadoghq.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:ai.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:probe.ai.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:b.a.ai.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:notai.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:ai.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "ai.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:ai.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:probe.ai.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:b.a.ai.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:notai.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:ai.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "ai.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:ai.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:probe.ai.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:b.a.ai.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.ai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:notai.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notai.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ai.com:ai.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "ai.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:anthropic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:probe.anthropic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:b.a.anthropic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:notanthropic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notanthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:anthropic.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "anthropic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:anthropic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "anthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:probe.anthropic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.anthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:b.a.anthropic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.anthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:notanthropic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notanthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:anthropic.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "anthropic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:anthropic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "anthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:probe.anthropic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.anthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:b.a.anthropic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.anthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:notanthropic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notanthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:anthropic.com:anthropic.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "anthropic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:bing.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:probe.bing.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:b.a.bing.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:notbing.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notbing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:bing.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "bing.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:bing.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:probe.bing.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:b.a.bing.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:notbing.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notbing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:bing.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "bing.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:bing.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:probe.bing.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:b.a.bing.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.bing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:notbing.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notbing.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:bing.com:bing.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "bing.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:chat.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "chat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:probe.chat.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.chat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:b.a.chat.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.chat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:notchat.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notchat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:chat.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "chat.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:chat.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "chat.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:probe.chat.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.chat.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:b.a.chat.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.chat.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:notchat.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notchat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:chat.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "chat.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:chat.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "chat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:probe.chat.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.chat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:b.a.chat.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.chat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:notchat.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notchat.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chat.com:chat.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "chat.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:chatgpt.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "chatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:probe.chatgpt.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.chatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:b.a.chatgpt.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.chatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:notchatgpt.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notchatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:chatgpt.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "chatgpt.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:chatgpt.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "chatgpt.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:probe.chatgpt.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.chatgpt.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:b.a.chatgpt.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.chatgpt.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:notchatgpt.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notchatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:chatgpt.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "chatgpt.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:chatgpt.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "chatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:probe.chatgpt.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.chatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:b.a.chatgpt.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.chatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:notchatgpt.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notchatgpt.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:chatgpt.com:chatgpt.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "chatgpt.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:claude.ai:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:probe.claude.ai:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:b.a.claude.ai:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:notclaude.ai:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notclaude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:claude.ai.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "claude.ai.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:claude.ai:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "claude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:probe.claude.ai:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.claude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:b.a.claude.ai:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.claude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:notclaude.ai:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notclaude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:claude.ai.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "claude.ai.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:claude.ai:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "claude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:probe.claude.ai:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.claude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:b.a.claude.ai:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.claude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:notclaude.ai:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notclaude.ai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:claude.ai:claude.ai.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "claude.ai.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:cursor.sh:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:probe.cursor.sh:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:b.a.cursor.sh:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:notcursor.sh:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notcursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:cursor.sh.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "cursor.sh.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:cursor.sh:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:probe.cursor.sh:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:b.a.cursor.sh:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:notcursor.sh:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notcursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:cursor.sh.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "cursor.sh.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:cursor.sh:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:probe.cursor.sh:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:b.a.cursor.sh:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.cursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:notcursor.sh:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notcursor.sh",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:cursor.sh:cursor.sh.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "cursor.sh.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:ingest.us.sentry.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "ingest.us.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:probe.ingest.us.sentry.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.ingest.us.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:b.a.ingest.us.sentry.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.ingest.us.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:notingest.us.sentry.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notingest.us.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:ingest.us.sentry.io.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "ingest.us.sentry.io.invalid",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:ingest.us.sentry.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "ingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:probe.ingest.us.sentry.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.ingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:b.a.ingest.us.sentry.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.ingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:notingest.us.sentry.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:ingest.us.sentry.io.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "ingest.us.sentry.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:ingest.us.sentry.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "ingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:probe.ingest.us.sentry.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.ingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:b.a.ingest.us.sentry.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.ingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:notingest.us.sentry.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notingest.us.sentry.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:ingest.us.sentry.io:ingest.us.sentry.io.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "ingest.us.sentry.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:intercom.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:probe.intercom.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:b.a.intercom.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:notintercom.io:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notintercom.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:intercom.io.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "intercom.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:intercom.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "intercom.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:probe.intercom.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:b.a.intercom.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:notintercom.io:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notintercom.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:intercom.io.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "intercom.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:intercom.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "intercom.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:probe.intercom.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.intercom.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:b.a.intercom.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.intercom.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:notintercom.io:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notintercom.io",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:intercom.io:intercom.io.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "intercom.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:oaistatic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "oaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:probe.oaistatic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.oaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:b.a.oaistatic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.oaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:notoaistatic.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notoaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:oaistatic.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "oaistatic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:oaistatic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "oaistatic.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:probe.oaistatic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.oaistatic.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:b.a.oaistatic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.oaistatic.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:notoaistatic.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notoaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:oaistatic.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "oaistatic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:oaistatic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "oaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:probe.oaistatic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.oaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:b.a.oaistatic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.oaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:notoaistatic.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notoaistatic.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:oaistatic.com:oaistatic.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "oaistatic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:siftscience.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:probe.siftscience.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:b.a.siftscience.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:notsiftscience.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notsiftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:siftscience.com.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "siftscience.com.invalid",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:siftscience.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "siftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:probe.siftscience.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.siftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:b.a.siftscience.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.siftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:notsiftscience.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notsiftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:siftscience.com.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "siftscience.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:siftscience.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "siftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:probe.siftscience.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.siftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:b.a.siftscience.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.siftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:notsiftscience.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notsiftscience.com",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:siftscience.com:siftscience.com.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "siftscience.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:stripe.network:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:probe.stripe.network:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "probe.stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:b.a.stripe.network:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "b.a.stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:notstripe.network:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "notstripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:stripe.network.invalid:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "stripe.network.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:stripe.network:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "stripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:probe.stripe.network:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "probe.stripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:b.a.stripe.network:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "b.a.stripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:notstripe.network:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "notstripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:stripe.network.invalid:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "stripe.network.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:stripe.network:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "stripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:probe.stripe.network:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "probe.stripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:b.a.stripe.network:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "b.a.stripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:notstripe.network:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "notstripe.network",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-SUFFIX:stripe.network:stripe.network.invalid:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "stripe.network.invalid",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openai.example.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "openai.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:beforeopenaiafter.example.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "beforeopenaiafter.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:example.org.openai:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "example.org.openai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openai.example.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openai.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:beforeopenaiafter.example.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "beforeopenaiafter.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:example.org.openai:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "example.org.openai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:cdn.openaimerge.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "cdn.openaimerge.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openai.qualtrics.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openai.qualtrics.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openaiapi-site.azureedge.net:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openaiapi-site.azureedge.net",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openaiassets.blob.core.windows.net:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openaiassets.blob.core.windows.net",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openaicom.imgix.net:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openaicom.imgix.net",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openaicomproductionae4b.blob.core.windows.net:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openaicomproductionae4b.blob.core.windows.net",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:production-openaicom-storage.azureedge.net:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "production-openaicom-storage.azureedge.net",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openai.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openai.com",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openai.com.cdn.cloudflare.net:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "openai.com.cdn.cloudflare.net",
+    "Want": true
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:openai.example.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "openai.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:beforeopenaiafter.example.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "beforeopenaiafter.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:openai:example.org.openai:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "example.org.openai",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:siri.example.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "siri.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:beforesiriafter.example.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "beforesiriafter.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:example.org.siri:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "example.org.siri",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:siri.example.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "siri.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:beforesiriafter.example.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "beforesiriafter.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:example.org.siri:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "example.org.siri",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:siri.example.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "siri.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:beforesiriafter.example.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "beforesiriafter.example.org",
+    "Want": false
+  },
+  {
+    "Name": "DOMAIN-KEYWORD:siri:example.org.siri:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "example.org.siri",
+    "Want": false
+  },
+  {
+    "Name": "NTP:datadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "NTP:datadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:datadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:0.datadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "0.datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "NTP:0.datadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "0.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:0.datadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "0.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:1.datadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "1.datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "NTP:1.datadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "1.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:1.datadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "1.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:a.b.datadog.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "a.b.datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "NTP:a.b.datadog.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "a.b.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:a.b.datadog.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "a.b.datadog.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:0.pool.ntp.org:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "0.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:0.pool.ntp.org:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "0.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:0.pool.ntp.org:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "0.pool.ntp.org",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.google.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "time.google.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.google.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "time.google.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.google.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "time.google.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.apple.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "time.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.apple.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "time.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.apple.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "time.apple.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.cloudflare.com:anthropic",
+    "File": "../../../dist/anthropic.srs",
+    "Domain": "time.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.cloudflare.com:openai",
+    "File": "../../../dist/openai.srs",
+    "Domain": "time.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "NTP:time.cloudflare.com:anthropic-ip",
+    "File": "../../../dist/anthropic-ip.srs",
+    "Domain": "time.cloudflare.com",
+    "Want": false
+  }
+]

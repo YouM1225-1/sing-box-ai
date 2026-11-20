@@ -1,0 +1,114 @@
+[
+  {
+    "name": "sager-openai",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/a3795b85be650b16ffa9770a836d90afc391baaf/geosite-openai.srs",
+    "retrieved_at": "2026-10-20T15:40:28.642335+00:00",
+    "path": "sager-openai.srs",
+    "bytes": 458,
+    "sha256": "a9863f7706a4341062d5c193f21a37e7a34e70803b1be72d7f3b717e11fb2d0d",
+    "headers": {
+      "ETag": "\"801892c1e5e3047fcac4318ab6a5810f9ce92661363412d4dc1bf8678ec6440b\"",
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT"
+    }
+  },
+  {
+    "name": "sager-anthropic",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/a3795b85be650b16ffa9770a836d90afc391baaf/geosite-anthropic.srs",
+    "retrieved_at": "2026-10-20T15:40:28.642700+00:00",
+    "path": "sager-anthropic.srs",
+    "bytes": 182,
+    "sha256": "4c58ec54eed852bddc07d434d42b1b97c4c22ebc52aa3b393221b607c3d56f6f",
+    "headers": {
+      "ETag": "\"8f99dac18618872b275a6b59cd020f2402e5220ad9b195fc2b2c7d644e79164a\"",
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT"
+    }
+  },
+  {
+    "name": "meta-openai",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/cce4c2ff6a45b76149e9740ece0942a8df9723f7/geo/geosite/openai.json",
+    "retrieved_at": "2026-10-20T15:40:28.642834+00:00",
+    "path": "meta-openai.json",
+    "bytes": 956,
+    "sha256": "b6fdc258c9af63d68ab3f4d6b3a1d8309851b1dc8d04edba95e0fc7b90261e4d",
+    "headers": {
+      "ETag": "\"962c71b0d71fb186003b1c49652d9129bfe8130ad92860cd5ab2a7adfa7da41c\"",
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT"
+    }
+  },
+  {
+    "name": "meta-anthropic",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/cce4c2ff6a45b76149e9740ece0942a8df9723f7/geo/geosite/anthropic.json",
+    "retrieved_at": "2026-10-20T15:40:28.642942+00:00",
+    "path": "meta-anthropic.json",
+    "bytes": 339,
+    "sha256": "810913b1a1866613c928a559aea550c98623147a668d0dc1d5df9cf5865446c5",
+    "headers": {
+      "ETag": "\"5629a30f0a52d293df5e6f89aaebc12e66cf62775f70b640120c784e790712ce\"",
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT"
+    }
+  },
+  {
+    "name": "v2fly-pr4057",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/pulls/4057",
+    "retrieved_at": "2026-10-20T15:40:28.643046+00:00",
+    "path": "v2fly-pr4057.json",
+    "bytes": 17001,
+    "sha256": "5247acd8ede1b389fc408970ca2ded4badd1241a008b4bc3339c3cec4cc37d1b",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT",
+      "ETag": "\"5247acd8ede1b389fc408970ca2ded4badd1241a008b4bc3339c3cec4cc37d1b\"",
+      "Last-Modified": "Mon, 19 Oct 2026 04:04:29 GMT"
+    }
+  },
+  {
+    "name": "v2fly-pr4057-files",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/pulls/4057/files",
+    "retrieved_at": "2026-10-20T15:40:28.643143+00:00",
+    "path": "v2fly-pr4057-files.json",
+    "bytes": 799,
+    "sha256": "f618fd143e0e3f59e03d5ab11df531a37177aab676b15b00e09ef743c426f402",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT",
+      "ETag": "W/\"f618fd143e0e3f59e03d5ab11df531a37177aab676b15b00e09ef743c426f402\"",
+      "Last-Modified": "Mon, 19 Oct 2026 04:04:29 GMT"
+    }
+  },
+  {
+    "name": "v2fly-pr4057-comments",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/issues/4057/comments",
+    "retrieved_at": "2026-10-20T15:40:28.643275+00:00",
+    "path": "v2fly-pr4057-comments.json",
+    "bytes": 1675,
+    "sha256": "07929dca4c3d66ba80b51f0a1614fd3edb2c8b2ae0fee005568ab23bbe49a428",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT",
+      "ETag": "W/\"07929dca4c3d66ba80b51f0a1614fd3edb2c8b2ae0fee005568ab23bbe49a428\""
+    }
+  },
+  {
+    "name": "loyalsoldier-geosite.dat",
+    "url": "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202610192206/geosite.dat",
+    "retrieved_at": "2026-10-20T15:40:28.643370+00:00",
+    "path": "loyalsoldier-geosite.dat",
+    "bytes": 11291180,
+    "sha256": "bf40e80d6a91f7759a6810d792639facd89faf27895dea5264f14bc15ec3639d",
+    "headers": {
+      "Last-Modified": "Mon, 19 Oct 2026 22:07:50 GMT",
+      "ETag": "\"0x8DF2E2D6A91C6E7\"",
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT"
+    }
+  },
+  {
+    "name": "loyalsoldier-geosite.dat.sha256sum",
+    "url": "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202610192206/geosite.dat.sha256sum",
+    "retrieved_at": "2026-10-20T15:40:28.643469+00:00",
+    "path": "loyalsoldier-geosite.dat.sha256sum",
+    "bytes": 78,
+    "sha256": "54d9898fa1c4c799680e8a5813f6a72bde544b13a3d6a783df4e3aa908235be8",
+    "headers": {
+      "Last-Modified": "Mon, 19 Oct 2026 22:07:48 GMT",
+      "ETag": "\"0x8DF2E2D6987A4CD\"",
+      "Date": "Tue, 20 Oct 2026 15:40:29 GMT"
+    }
+  }
+]

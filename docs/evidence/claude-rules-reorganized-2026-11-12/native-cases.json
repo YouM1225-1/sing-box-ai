@@ -1,0 +1,4378 @@
+[
+  {
+    "Name": "domain:a.b.anthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.anthropic-com.ghost.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.anthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.anthropic-com.ghost.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.anthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.anthropic.auth0.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.anthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.anthropic.auth0.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.anthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.anthropic.com.cdn.cloudflare.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.anthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.anthropic.com.cdn.cloudflare.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.challenges.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.challenges.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.clau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.clau.de",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.clau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.clau.de",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.claude.app",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.claude.app",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.claude.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.claude.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.claude.dev",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.claude.dev",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.claudemcpclient.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.claudemcpclient.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.claudemcpcontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.claudemcpcontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.claudeusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.claudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.claudeusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.gmail.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.gmail.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.gmail.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.gmail.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.google.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.google.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.google.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.google.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.googleusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.googleusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.googleusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.googleusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.growthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.growthbook.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.growthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.growthbook.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.hcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.hcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.modelcontextprotocol.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.modelcontextprotocol.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.modelcontextprotocol.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.modelcontextprotocol.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.recaptcha.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.recaptcha.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.recaptcha.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.recaptcha.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.segment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.segment.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.segment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.segment.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.sentry.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.sentry.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.servd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.servd-anthropic-website.b-cdn.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.servd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.servd-anthropic-website.b-cdn.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.siftscience.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.siftscience.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.statsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.statsigapi.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.statsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.statsigapi.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.stripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.stripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.stripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.stripecdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.stripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.stripecdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.webshare.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.webshare.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.webshare.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.webshare.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.b.withpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.b.withpersona.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.b.withpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.b.withpersona.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:a.challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "a.challenges.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:a.challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "a.challenges.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic-com.ghost.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic-com.ghost.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic-com.ghost.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic-com.ghost.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic-com.ghost.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic-com.ghost.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic.auth0.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic.auth0.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic.auth0.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic.auth0.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.auth0.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic.auth0.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic.com.cdn.cloudflare.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic.com.cdn.cloudflare.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:anthropic.com.cdn.cloudflare.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic.com.cdn.cloudflare.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.com.cdn.cloudflare.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic.com.cdn.cloudflare.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "anthropic.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:anthropic.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "anthropic.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:api-iam.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api-iam.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:api-iam.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api-iam.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:api.anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:api.anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:api.revenuecat.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api.revenuecat.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:api.revenuecat.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api.revenuecat.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:api.revenuecat.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api.revenuecat.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:api.revenuecat.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api.revenuecat.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:api.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:api.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:api.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:api.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-anthropic-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit-anthropic-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-anthropic-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit-anthropic-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-browser-intake-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit-browser-intake-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-browser-intake-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit-browser-intake-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-claude-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit-claude-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-claude-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit-claude-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-modelcontextprotocol-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit-modelcontextprotocol-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit-modelcontextprotocol-audit.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit-modelcontextprotocol-audit.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.anthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.anthropic-com.ghost.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.anthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.anthropic-com.ghost.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.anthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.anthropic.auth0.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.anthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.anthropic.auth0.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.anthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.anthropic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.anthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.anthropic.com.cdn.cloudflare.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.anthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.anthropic.com.cdn.cloudflare.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.api.revenuecat.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.api.revenuecat.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.api.revenuecat.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.api.revenuecat.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.api.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.api.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.api.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.api.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.billing.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.billing.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.billing.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.billing.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdn.jsdelivr.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.cdn.jsdelivr.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdn.jsdelivr.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.cdn.jsdelivr.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdn.tailwindcss.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.cdn.tailwindcss.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdn.tailwindcss.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.cdn.tailwindcss.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdn.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.cdn.usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdn.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.cdn.usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdnjs.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.cdnjs.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.cdnjs.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.cdnjs.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.challenges.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.challenges.cloudflare.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.checkout.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.checkout.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.checkout.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.checkout.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.clau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.clau.de",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.clau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.clau.de",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.claude.app",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.claude.app",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.claude.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.claude.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.claude.dev",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.claude.dev",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.claudemcpclient.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.claudemcpclient.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.claudemcpcontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.claudemcpcontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.claudeusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.claudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.claudeusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.code.jquery.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.code.jquery.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.code.jquery.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.code.jquery.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.datadog.pool.ntp.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.datadog.pool.ntp.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.datadog.pool.ntp.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.fcmtoken.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.fcmtoken.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.fcmtoken.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.fcmtoken.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.fonts.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.fonts.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.fonts.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.fonts.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.fonts.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.fonts.gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.fonts.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.fonts.gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.formulae.brew.sh",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.formulae.brew.sh",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.formulae.brew.sh",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.formulae.brew.sh",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.github.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.github.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.github.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.github.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.gmail.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.gmail.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.gmail.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.gmail.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.google.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.google.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.google.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.google.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.googleusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.googleusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.googleusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.googleusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.growthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.growthbook.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.growthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.growthbook.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.hcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.hcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.js.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.js.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.js.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.js.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.m.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.m.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.m.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.m.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.modelcontextprotocol.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.modelcontextprotocol.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.modelcontextprotocol.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.modelcontextprotocol.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.r.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.r.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.r.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.r.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.raw.githubusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.raw.githubusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.raw.githubusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.raw.githubusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.recaptcha.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.recaptcha.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.recaptcha.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.recaptcha.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.registry.npmjs.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.registry.npmjs.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.registry.npmjs.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.registry.npmjs.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.segment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.segment.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.segment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.segment.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.sentry.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.sentry.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.servd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.servd-anthropic-website.b-cdn.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.servd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.servd-anthropic-website.b-cdn.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.siftscience.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.siftscience.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.static.intercomassets.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.static.intercomassets.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.static.intercomassets.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.static.intercomassets.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.statsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.statsigapi.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.statsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.statsigapi.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.storage.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.storage.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.storage.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.storage.googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.stripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.stripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.stripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.stripecdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.stripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.stripecdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.unpkg.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.unpkg.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.unpkg.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.unpkg.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.webshare.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.webshare.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.webshare.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.webshare.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:audit.withpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "audit.withpersona.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:audit.withpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "audit.withpersona.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:billing.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "billing.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:billing.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "billing.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:billing.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "billing.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:billing.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "billing.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:browser-intake-us5-datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "browser-intake-us5-datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:browser-intake-us5-datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "browser-intake-us5-datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:browser-intake.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "browser-intake.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:browser-intake.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "browser-intake.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdn.jsdelivr.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdn.jsdelivr.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdn.jsdelivr.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdn.jsdelivr.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdn.jsdelivr.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdn.jsdelivr.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdn.jsdelivr.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdn.jsdelivr.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdn.tailwindcss.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdn.tailwindcss.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdn.tailwindcss.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdn.tailwindcss.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdn.tailwindcss.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdn.tailwindcss.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdn.tailwindcss.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdn.tailwindcss.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdn.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdn.usefathom.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdn.usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdn.usefathom.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdn.usefathom.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdn.usefathom.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdn.usefathom.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdn.usefathom.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdnjs.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdnjs.cloudflare.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdnjs.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdnjs.cloudflare.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:cdnjs.cloudflare.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "cdnjs.cloudflare.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:cdnjs.cloudflare.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "cdnjs.cloudflare.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "challenges.cloudflare.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:challenges.cloudflare.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "challenges.cloudflare.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:challenges.cloudflare.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "challenges.cloudflare.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:challenges.cloudflare.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "challenges.cloudflare.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:checkout.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "checkout.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:checkout.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "checkout.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:checkout.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "checkout.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:checkout.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "checkout.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:clau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "clau.de",
+    "Want": true
+  },
+  {
+    "Name": "domain:clau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "clau.de",
+    "Want": true
+  },
+  {
+    "Name": "domain:clau.de.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "clau.de.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:clau.de.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "clau.de.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.ai",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.ai.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.ai.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.ai.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.ai.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.app",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.app",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.app.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.app.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.app.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.app.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.dev",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.dev",
+    "Want": true
+  },
+  {
+    "Name": "domain:claude.dev.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.dev.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.dev.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.dev.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claude.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:claude.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claude.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:claudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claudemcpclient.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claudemcpclient.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claudemcpclient.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claudemcpclient.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claudemcpclient.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claudemcpclient.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claudemcpcontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claudemcpcontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claudemcpcontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claudemcpcontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claudemcpcontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claudemcpcontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claudeusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claudeusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:claudeusercontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "claudeusercontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:claudeusercontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "claudeusercontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:code.jquery.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "code.jquery.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:code.jquery.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "code.jquery.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:code.jquery.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "code.jquery.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:code.jquery.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "code.jquery.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:datadog.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "datadog.example.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:datadog.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "datadog.example.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:datadoghq.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "datadoghq.com.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:datadoghq.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "datadoghq.com.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:downloads.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "downloads.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:downloads.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "downloads.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:fcmtoken.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "fcmtoken.googleapis.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:fcmtoken.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "fcmtoken.googleapis.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:fcmtoken.googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "fcmtoken.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:fcmtoken.googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "fcmtoken.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:fonts.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "fonts.googleapis.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:fonts.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "fonts.googleapis.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:fonts.googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "fonts.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:fonts.googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "fonts.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:fonts.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "fonts.gstatic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:fonts.gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "fonts.gstatic.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:fonts.gstatic.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "fonts.gstatic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:fonts.gstatic.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "fonts.gstatic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:formulae.brew.sh",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "formulae.brew.sh",
+    "Want": true
+  },
+  {
+    "Name": "domain:formulae.brew.sh",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "formulae.brew.sh",
+    "Want": true
+  },
+  {
+    "Name": "domain:formulae.brew.sh.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "formulae.brew.sh.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:formulae.brew.sh.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "formulae.brew.sh.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:github.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "github.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:github.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "github.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:github.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "github.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:github.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "github.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:gmail.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "gmail.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:gmail.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "gmail.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:gmail.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "gmail.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:gmail.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "gmail.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:google.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "google.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:google.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "google.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:google.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:google.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "google.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "googleapis.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "googleusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "googleusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleusercontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "googleusercontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:googleusercontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "googleusercontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:growthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "growthbook.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:growthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "growthbook.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:growthbook.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "growthbook.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:growthbook.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "growthbook.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:gstatic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "gstatic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:gstatic.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "gstatic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:gstatic.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "gstatic.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:hcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:hcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "hcaptcha.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:hcaptcha.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "hcaptcha.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:hcaptcha.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "hcaptcha.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:http-intake.logs.us5.datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "http-intake.logs.us5.datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:http-intake.logs.us5.datadoghq.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "http-intake.logs.us5.datadoghq.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:intercom.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "intercom.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:intercom.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "intercom.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:intercomcdn.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "intercomcdn.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:intercomcdn.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "intercomcdn.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:js.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "js.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:js.intercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "js.intercomcdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:js.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "js.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:js.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "js.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:js.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "js.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:js.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "js.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:m.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "m.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:m.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "m.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:m.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "m.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:m.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "m.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:modelcontextprotocol.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "modelcontextprotocol.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:modelcontextprotocol.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "modelcontextprotocol.example.org",
+    "Want": false
+  },
+  {
+    "Name": "domain:modelcontextprotocol.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "modelcontextprotocol.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:modelcontextprotocol.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "modelcontextprotocol.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:modelcontextprotocol.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "modelcontextprotocol.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:modelcontextprotocol.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "modelcontextprotocol.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notanthropic-com.ghost.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic-com.ghost.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notanthropic-com.ghost.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notanthropic.auth0.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic.auth0.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notanthropic.auth0.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notanthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notanthropic.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notanthropic.com.cdn.cloudflare.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:notanthropic.com.cdn.cloudflare.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notanthropic.com.cdn.cloudflare.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclau.de",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclau.de",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclau.de",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclaude.ai",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.ai",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclaude.ai",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclaude.app",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.app",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclaude.app",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclaude.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclaude.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclaude.dev",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaude.dev",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclaude.dev",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclaudemcpclient.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaudemcpclient.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclaudemcpclient.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclaudemcpcontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaudemcpcontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclaudemcpcontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notclaudeusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notclaudeusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notclaudeusercontent.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notgrowthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notgrowthbook.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:notgrowthbook.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notgrowthbook.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:nothcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "nothcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:nothcaptcha.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "nothcaptcha.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notintercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notintercom.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:notintercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notintercom.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:notintercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notintercomcdn.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notintercomcdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notintercomcdn.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notsegment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notsegment.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:notsegment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notsegment.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:notservd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notservd-anthropic-website.b-cdn.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:notservd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notservd-anthropic-website.b-cdn.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:notstatsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notstatsigapi.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:notstatsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notstatsigapi.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:notstripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notstripe.network",
+    "Want": false
+  },
+  {
+    "Name": "domain:notstripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notstripe.network",
+    "Want": false
+  },
+  {
+    "Name": "domain:notstripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notstripecdn.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notstripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notstripecdn.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notwithpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "notwithpersona.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:notwithpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "notwithpersona.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:r.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "r.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:r.stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "r.stripe.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:r.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "r.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:r.stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "r.stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:raw.githubusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "raw.githubusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:raw.githubusercontent.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "raw.githubusercontent.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:raw.githubusercontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "raw.githubusercontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:raw.githubusercontent.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "raw.githubusercontent.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:recaptcha.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "recaptcha.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:recaptcha.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "recaptcha.net",
+    "Want": false
+  },
+  {
+    "Name": "domain:recaptcha.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "recaptcha.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:recaptcha.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "recaptcha.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:registry.npmjs.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "registry.npmjs.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:registry.npmjs.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "registry.npmjs.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:registry.npmjs.org.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "registry.npmjs.org.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:registry.npmjs.org.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "registry.npmjs.org.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:segment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "segment.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:segment.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "segment.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:segment.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "segment.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:segment.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "segment.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:sentry.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "sentry.example.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:sentry.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "sentry.example.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:sentry.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:sentry.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "sentry.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:sentry.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "sentry.io.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:sentry.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "sentry.io.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:servd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "servd-anthropic-website.b-cdn.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:servd-anthropic-website.b-cdn.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "servd-anthropic-website.b-cdn.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:servd-anthropic-website.b-cdn.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "servd-anthropic-website.b-cdn.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:servd-anthropic-website.b-cdn.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "servd-anthropic-website.b-cdn.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:sift.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "sift.example.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:sift.example.org",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "sift.example.org",
+    "Want": true
+  },
+  {
+    "Name": "domain:siftscience.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:siftscience.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "siftscience.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:siftscience.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "siftscience.com.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:siftscience.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "siftscience.com.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:static.intercomassets.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "static.intercomassets.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:static.intercomassets.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "static.intercomassets.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:static.intercomassets.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "static.intercomassets.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:static.intercomassets.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "static.intercomassets.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:statsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "statsigapi.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:statsigapi.net",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "statsigapi.net",
+    "Want": true
+  },
+  {
+    "Name": "domain:statsigapi.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "statsigapi.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:statsigapi.net.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "statsigapi.net.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:storage.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "storage.googleapis.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:storage.googleapis.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "storage.googleapis.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:storage.googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "storage.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:storage.googleapis.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "storage.googleapis.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripe.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "stripe.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripe.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "stripe.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "domain:stripe.network",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "stripe.network",
+    "Want": true
+  },
+  {
+    "Name": "domain:stripe.network.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "stripe.network.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripe.network.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "stripe.network.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "stripecdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:stripecdn.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "stripecdn.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:stripecdn.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "stripecdn.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:stripecdn.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "stripecdn.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:unpkg.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "unpkg.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:unpkg.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "unpkg.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:unpkg.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "unpkg.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:unpkg.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "unpkg.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:unrelated-datadog.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "unrelated-datadog.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:unrelated-datadog.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "unrelated-datadog.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:unrelated-sentry.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "unrelated-sentry.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:unrelated-sentry.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "unrelated-sentry.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:unrelated-sift.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "unrelated-sift.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:unrelated-sift.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "unrelated-sift.invalid",
+    "Want": true
+  },
+  {
+    "Name": "domain:usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:usefathom.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "usefathom.com",
+    "Want": false
+  },
+  {
+    "Name": "domain:usefathom.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "usefathom.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:usefathom.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "usefathom.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:webshare.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "webshare.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:webshare.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "webshare.io",
+    "Want": false
+  },
+  {
+    "Name": "domain:webshare.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "webshare.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:webshare.io.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "webshare.io.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:widget.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "widget.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:widget.intercom.io",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "widget.intercom.io",
+    "Want": true
+  },
+  {
+    "Name": "domain:withpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "withpersona.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:withpersona.com",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "withpersona.com",
+    "Want": true
+  },
+  {
+    "Name": "domain:withpersona.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "withpersona.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "domain:withpersona.com.invalid",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "withpersona.com.invalid",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.207.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "153.61.207.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "153.61.208.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "153.61.208.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "153.61.208.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "153.61.208.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "153.61.208.0",
+    "Want": true
+  },
+  {
+    "Name": "Source:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "153.61.208.0",
+    "Want": true
+  },
+  {
+    "Name": "Destination:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "153.61.208.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.208.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "153.61.208.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "153.61.223.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "153.61.223.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "153.61.223.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "153.61.223.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "153.61.223.255",
+    "Want": true
+  },
+  {
+    "Name": "Source:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "153.61.223.255",
+    "Want": true
+  },
+  {
+    "Name": "Destination:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "153.61.223.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.223.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "153.61.223.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "153.61.224.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "153.61.224.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "153.61.224.0",
+    "Want": true
+  },
+  {
+    "Name": "Destination:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "153.61.224.0",
+    "Want": true
+  },
+  {
+    "Name": "Source:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "153.61.224.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "153.61.224.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "153.61.224.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.224.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "153.61.224.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "153.61.227.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "153.61.227.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "153.61.227.255",
+    "Want": true
+  },
+  {
+    "Name": "Destination:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "153.61.227.255",
+    "Want": true
+  },
+  {
+    "Name": "Source:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "153.61.227.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "153.61.227.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "153.61.227.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.227.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "153.61.227.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:153.61.228.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "153.61.228.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.103.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "160.79.103.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "160.79.104.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "160.79.104.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "160.79.104.0",
+    "Want": true
+  },
+  {
+    "Name": "Destination:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "160.79.104.0",
+    "Want": true
+  },
+  {
+    "Name": "Source:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "160.79.104.0",
+    "Want": true
+  },
+  {
+    "Name": "Source:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "160.79.104.0",
+    "Want": true
+  },
+  {
+    "Name": "Destination:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "160.79.104.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.104.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "160.79.104.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "160.79.111.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "160.79.111.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "160.79.111.255",
+    "Want": true
+  },
+  {
+    "Name": "Destination:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "160.79.111.255",
+    "Want": true
+  },
+  {
+    "Name": "Source:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "160.79.111.255",
+    "Want": true
+  },
+  {
+    "Name": "Source:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "160.79.111.255",
+    "Want": true
+  },
+  {
+    "Name": "Destination:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "160.79.111.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.111.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "160.79.111.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:160.79.112.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "160.79.112.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Source:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Source:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Source:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:192.0.2.1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "Source:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Source:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Source:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Source:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2001:db8::1",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2001:db8::1",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bbf:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0:10:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0:11::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0:11::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0:11::",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0:11::",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0:11::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0:11::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0:11::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:11::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0:11::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0:12::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0:12::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0:12::",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0:12::",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0:12::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0:12::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0:12::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:12::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0:12::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0:1::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0:1::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0:1::",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0:1::",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0:1::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0:1::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0:1::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0:1::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0::",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0::",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Destination:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": true
+  },
+  {
+    "Name": "Source:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Source:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Destination:2607:6bc1::",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "2607:6bc1::",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.7.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "34.7.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "34.8.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "34.8.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "34.8.0.0",
+    "Want": true
+  },
+  {
+    "Name": "Destination:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "34.8.0.0",
+    "Want": true
+  },
+  {
+    "Name": "Source:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "34.8.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "34.8.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "34.8.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.8.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "34.8.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "34.8.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "34.8.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "34.8.255.255",
+    "Want": true
+  },
+  {
+    "Name": "Destination:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "34.8.255.255",
+    "Want": true
+  },
+  {
+    "Name": "Source:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "34.8.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "34.8.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "34.8.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.8.255.255",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "34.8.255.255",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Source": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Source": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Destination": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Destination": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Source": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Source:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Source": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.json",
+    "Destination": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "Destination:34.9.0.0",
+    "File": "../../../artifacts/v0.1.12/anthropic-ip.srs",
+    "Destination": "34.9.0.0",
+    "Want": false
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api.anthropic.com",
+    "Destination": "160.79.104.1",
+    "Want": true
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api.anthropic.com",
+    "Destination": "160.79.104.1",
+    "Want": true
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "api.anthropic.com",
+    "Destination": "192.0.2.1",
+    "Want": true
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "api.anthropic.com",
+    "Destination": "192.0.2.1",
+    "Want": true
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "example.org",
+    "Destination": "160.79.104.1",
+    "Want": true
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "example.org",
+    "Destination": "160.79.104.1",
+    "Want": true
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.json",
+    "Domain": "example.org",
+    "Destination": "192.0.2.1",
+    "Want": false
+  },
+  {
+    "Name": "domain-IP-OR",
+    "File": "../../../artifacts/v0.1.12/anthropic.srs",
+    "Domain": "example.org",
+    "Destination": "192.0.2.1",
+    "Want": false
+  }
+]

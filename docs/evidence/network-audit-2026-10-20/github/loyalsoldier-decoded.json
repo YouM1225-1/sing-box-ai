@@ -1,0 +1,186 @@
+{
+  "openai": [
+    {
+      "type": "domain",
+      "value": "openaiapi-site.azureedge.net",
+      "attributes": []
+    },
+    {
+      "type": "domain",
+      "value": "openaiassets.blob.core.windows.net",
+      "attributes": []
+    },
+    {
+      "type": "domain",
+      "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+      "attributes": []
+    },
+    {
+      "type": "domain",
+      "value": "openaicom.imgix.net",
+      "attributes": []
+    },
+    {
+      "type": "domain",
+      "value": "openaicomproductionae4b.blob.core.windows.net",
+      "attributes": []
+    },
+    {
+      "type": "domain",
+      "value": "production-openaicom-storage.azureedge.net",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "oaiusercontent.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "openai.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "chatgpt.site",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "crixet.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "oaistatic.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "oaistatsig.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "openai.org",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "chat.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "chatgpt.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "sora.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "host.livekit.cloud",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "chatgpt.livekit.cloud",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "turn.livekit.cloud",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "openai.com.cdn.cloudflare.net",
+      "attributes": []
+    },
+    {
+      "type": "domain_regex",
+      "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$",
+      "attributes": []
+    },
+    {
+      "type": "domain",
+      "value": "browser-intake-datadoghq.com",
+      "attributes": [
+        {
+          "1": "ads",
+          "2": 1
+        }
+      ]
+    },
+    {
+      "type": "domain",
+      "value": "o33249.ingest.sentry.io",
+      "attributes": [
+        {
+          "1": "ads",
+          "2": 1
+        }
+      ]
+    },
+    {
+      "type": "domain",
+      "value": "openai.qualtrics.com",
+      "attributes": [
+        {
+          "1": "ads",
+          "2": 1
+        }
+      ]
+    }
+  ],
+  "anthropic": [
+    {
+      "type": "domain",
+      "value": "servd-anthropic-website.b-cdn.net",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "anthropic.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "clau.de",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "claude.ai",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "claude.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "claude.dev",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "claudemcpclient.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "claudemcpcontent.com",
+      "attributes": []
+    },
+    {
+      "type": "domain_suffix",
+      "value": "claudeusercontent.com",
+      "attributes": []
+    }
+  ]
+}

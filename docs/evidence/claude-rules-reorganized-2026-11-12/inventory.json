@@ -1,0 +1,1446 @@
+{
+  "release": "v0.1.12",
+  "kind": "documentation-catalog-not-loadable-rule-set",
+  "destination": [
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "anthropic.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 1,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "anthropic.com"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "clau.de",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 2,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "clau.de"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "clau.de"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "claude.ai",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 3,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "claude.ai"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "claude.app",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-web",
+            "claude-api",
+            "claude-code",
+            "claude-desktop"
+          ],
+          "reason": "Official network requirement not covered by the pinned Sager SRS baseline",
+          "shared_dependency": false,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "required",
+          "type": "domain_suffix",
+          "value": "claude.app"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "claude.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 4,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "claude.com"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "claude.com"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "claude.dev",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 5,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "claude.dev"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "claude.dev"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "claudemcpclient.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 6,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "claudemcpclient.com"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "claudemcpclient.com"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "claudemcpcontent.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 7,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "claudemcpcontent.com"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com"
+        }
+      ]
+    },
+    {
+      "group": "产品主域与内容",
+      "type": "domain_suffix",
+      "value": "claudeusercontent.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "dlc_provenance": [
+            {
+              "attributes": [],
+              "line": 8,
+              "reference": "dlc-anthropic",
+              "type": "domain_suffix",
+              "value": "claudeusercontent.com"
+            }
+          ],
+          "origin": "baseline",
+          "sources": [
+            {
+              "kind": "srs-baseline",
+              "reference": "geosite-anthropic"
+            }
+          ],
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com"
+        }
+      ]
+    },
+    {
+      "group": "官网和身份服务扩展",
+      "type": "domain_suffix",
+      "value": "anthropic-com.ghost.io",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "anthropic-com.ghost.io"
+        }
+      ]
+    },
+    {
+      "group": "官网和身份服务扩展",
+      "type": "domain_suffix",
+      "value": "anthropic.auth0.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "anthropic.auth0.com"
+        }
+      ]
+    },
+    {
+      "group": "官网和身份服务扩展",
+      "type": "domain_suffix",
+      "value": "anthropic.com.cdn.cloudflare.net",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "anthropic.com.cdn.cloudflare.net"
+        }
+      ]
+    },
+    {
+      "group": "官网和身份服务扩展",
+      "type": "domain_suffix",
+      "value": "servd-anthropic-website.b-cdn.net",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "servd-anthropic-website.b-cdn.net"
+        }
+      ]
+    },
+    {
+      "group": "身份验证与验证码",
+      "type": "domain_suffix",
+      "value": "withpersona.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-identity-verification"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-identity-verification"
+          ],
+          "reason": "Persona apex and subdomains are documented network dependencies of the Claude identity-verification feature; shared with other Persona customers.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-identity"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain_suffix",
+          "value": "withpersona.com"
+        }
+      ]
+    },
+    {
+      "group": "身份验证与验证码",
+      "type": "domain_suffix",
+      "value": "hcaptcha.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested shared-service suffix from the one-exit comparison; not an official dependency or verified runtime requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "one-exit-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "hcaptcha.com"
+        }
+      ]
+    },
+    {
+      "group": "身份验证与验证码",
+      "type": "domain",
+      "value": "challenges.cloudflare.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "evidence": [
+            {
+              "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+              "kind": "repository-history",
+              "observed_on": "2026-09-27",
+              "product": [
+                "claude-web",
+                "claude-desktop"
+              ],
+              "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+            },
+            {
+              "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+              "kind": "user-confirmation",
+              "observed_on": "2026-09-27",
+              "product": [
+                "claude-web",
+                "claude-desktop"
+              ],
+              "reference": "sources/evidence/claude-challenge-confirmation.json"
+            }
+          ],
+          "first_seen": "2026-09-27",
+          "last_verified": "2026-09-27",
+          "origin": "supplement",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+          "review_after": "2026-10-27",
+          "review_status": "approved",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "repository-history",
+              "reference": "legacy-anthropic"
+            }
+          ],
+          "status": "compatibility-critical",
+          "type": "domain",
+          "value": "challenges.cloudflare.com"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain",
+      "value": "api.stripe.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested exact host from the loc-sens Claude gap review; shared Stripe payment or optional RevenueCat integration scope, not a verified runtime dependency.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-loc-sens-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "api.stripe.com"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain",
+      "value": "billing.stripe.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested exact host from the loc-sens Claude gap review; shared Stripe payment or optional RevenueCat integration scope, not a verified runtime dependency.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-loc-sens-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "billing.stripe.com"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain",
+      "value": "checkout.stripe.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested exact host from the loc-sens Claude gap review; shared Stripe payment or optional RevenueCat integration scope, not a verified runtime dependency.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-loc-sens-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "checkout.stripe.com"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain",
+      "value": "js.stripe.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested exact host from the loc-sens Claude gap review; shared Stripe payment or optional RevenueCat integration scope, not a verified runtime dependency.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-loc-sens-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "js.stripe.com"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain",
+      "value": "m.stripe.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested exact host from the loc-sens Claude gap review; shared Stripe payment or optional RevenueCat integration scope, not a verified runtime dependency.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-loc-sens-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "m.stripe.com"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain",
+      "value": "r.stripe.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request from the screenshot coverage audit; exact destination scope, not an official dependency or exclusive Claude ownership claim.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-screenshot-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "r.stripe.com"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain_suffix",
+      "value": "stripe.network",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested shared-service suffix from the one-exit comparison; not an official dependency or verified runtime requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "one-exit-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "stripe.network"
+        }
+      ]
+    },
+    {
+      "group": "支付与结账",
+      "type": "domain_suffix",
+      "value": "stripecdn.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested shared-service suffix from the one-exit comparison; not an official dependency or verified runtime requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "one-exit-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "stripecdn.com"
+        }
+      ]
+    },
+    {
+      "group": "客服",
+      "type": "domain_suffix",
+      "value": "intercom.io",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "intercom.io"
+        }
+      ]
+    },
+    {
+      "group": "客服",
+      "type": "domain_suffix",
+      "value": "intercomcdn.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "intercomcdn.com"
+        }
+      ]
+    },
+    {
+      "group": "客服",
+      "type": "domain",
+      "value": "static.intercomassets.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-support"
+          ],
+          "reason": "Optional Claude help-center JavaScript and CSS observed in official HTML",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-support"
+            }
+          ],
+          "status": "optional",
+          "type": "domain",
+          "value": "static.intercomassets.com"
+        }
+      ]
+    },
+    {
+      "group": "遥测实验与风控共享服务",
+      "type": "domain_suffix",
+      "value": "growthbook.io",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested shared-service suffix from the one-exit comparison; not an official dependency or verified runtime requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "one-exit-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "growthbook.io"
+        }
+      ]
+    },
+    {
+      "group": "遥测实验与风控共享服务",
+      "type": "domain_suffix",
+      "value": "segment.io",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested shared-service suffix from the one-exit comparison; not an official dependency or verified runtime requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "one-exit-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "segment.io"
+        }
+      ]
+    },
+    {
+      "group": "遥测实验与风控共享服务",
+      "type": "domain_suffix",
+      "value": "statsigapi.net",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_suffix",
+          "value": "statsigapi.net"
+        }
+      ]
+    },
+    {
+      "group": "遥测实验与风控共享服务",
+      "type": "domain",
+      "value": "cdn.usefathom.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "cdn.usefathom.com"
+        }
+      ]
+    },
+    {
+      "group": "遥测实验与风控共享服务",
+      "type": "domain_keyword",
+      "value": "datadog",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ]
+    },
+    {
+      "group": "遥测实验与风控共享服务",
+      "type": "domain_keyword",
+      "value": "sentry",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ]
+    },
+    {
+      "group": "遥测实验与风控共享服务",
+      "type": "domain_keyword",
+      "value": "sift",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain_keyword",
+          "value": "sift"
+        }
+      ]
+    },
+    {
+      "group": "Artifacts 库与字体",
+      "type": "domain",
+      "value": "cdn.jsdelivr.net",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-artifacts"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-desktop",
+            "claude-artifacts"
+          ],
+          "reason": "Artifact library has no fallback when blocked",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "cdn.jsdelivr.net"
+        }
+      ]
+    },
+    {
+      "group": "Artifacts 库与字体",
+      "type": "domain",
+      "value": "cdn.tailwindcss.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-artifacts"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-desktop",
+            "claude-artifacts"
+          ],
+          "reason": "Artifact library has no fallback when blocked",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "cdn.tailwindcss.com"
+        }
+      ]
+    },
+    {
+      "group": "Artifacts 库与字体",
+      "type": "domain",
+      "value": "cdnjs.cloudflare.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-artifacts"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-desktop",
+            "claude-artifacts"
+          ],
+          "reason": "Artifact library has no fallback when blocked",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "cdnjs.cloudflare.com"
+        }
+      ]
+    },
+    {
+      "group": "Artifacts 库与字体",
+      "type": "domain",
+      "value": "code.jquery.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-artifacts"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-desktop",
+            "claude-artifacts"
+          ],
+          "reason": "Artifact library has no fallback when blocked",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "code.jquery.com"
+        }
+      ]
+    },
+    {
+      "group": "Artifacts 库与字体",
+      "type": "domain",
+      "value": "unpkg.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-artifacts"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-desktop",
+            "claude-artifacts"
+          ],
+          "reason": "Artifact library has no fallback when blocked",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "unpkg.com"
+        }
+      ]
+    },
+    {
+      "group": "Artifacts 库与字体",
+      "type": "domain",
+      "value": "fonts.googleapis.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-desktop",
+            "claude-artifacts"
+          ],
+          "reason": "Optional fonts: fallback typefaces available",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "optional",
+          "type": "domain",
+          "value": "fonts.googleapis.com"
+        }
+      ]
+    },
+    {
+      "group": "Artifacts 库与字体",
+      "type": "domain",
+      "value": "fonts.gstatic.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-desktop",
+            "claude-artifacts"
+          ],
+          "reason": "Optional fonts: fallback typefaces available",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-desktop"
+            }
+          ],
+          "status": "optional",
+          "type": "domain",
+          "value": "fonts.gstatic.com"
+        }
+      ]
+    },
+    {
+      "group": "安装与插件",
+      "type": "domain",
+      "value": "formulae.brew.sh",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-install"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-code",
+            "claude-desktop"
+          ],
+          "reason": "Official install/plugin/release-note dependency",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-code"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "formulae.brew.sh"
+        }
+      ]
+    },
+    {
+      "group": "安装与插件",
+      "type": "domain",
+      "value": "github.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-plugins"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-code",
+            "claude-desktop"
+          ],
+          "reason": "Official install/plugin/release-note dependency",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-code"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "github.com"
+        }
+      ]
+    },
+    {
+      "group": "安装与插件",
+      "type": "domain",
+      "value": "raw.githubusercontent.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-plugins"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-code",
+            "claude-desktop"
+          ],
+          "reason": "Official install/plugin/release-note dependency",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-code"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "raw.githubusercontent.com"
+        }
+      ]
+    },
+    {
+      "group": "安装与插件",
+      "type": "domain",
+      "value": "registry.npmjs.org",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-plugins"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-code",
+            "claude-desktop"
+          ],
+          "reason": "Official install/plugin/release-note dependency",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-code"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "registry.npmjs.org"
+        }
+      ]
+    },
+    {
+      "group": "安装与插件",
+      "type": "domain",
+      "value": "storage.googleapis.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "features": [
+            "claude-plugins"
+          ],
+          "origin": "supplement",
+          "product": [
+            "claude-code",
+            "claude-desktop"
+          ],
+          "reason": "Official install/plugin/release-note dependency",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "claude-code"
+            }
+          ],
+          "status": "feature-required",
+          "type": "domain",
+          "value": "storage.googleapis.com"
+        }
+      ]
+    },
+    {
+      "group": "推送候选保留",
+      "type": "domain",
+      "value": "fcmtoken.googleapis.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request from the screenshot coverage audit; exact destination scope, not an official dependency or exclusive Claude ownership claim.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-screenshot-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "fcmtoken.googleapis.com"
+        }
+      ]
+    },
+    {
+      "group": "可选外部集成",
+      "type": "domain",
+      "value": "api.revenuecat.com",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Maintainer-requested exact host from the loc-sens Claude gap review; shared Stripe payment or optional RevenueCat integration scope, not a verified runtime dependency.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-loc-sens-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "domain",
+          "value": "api.revenuecat.com"
+        }
+      ]
+    },
+    {
+      "group": "目的地址",
+      "type": "ip_cidr",
+      "value": "153.61.224.0/22",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-web",
+            "claude-api",
+            "claude-code",
+            "claude-desktop"
+          ],
+          "reason": "Official Anthropic inbound destination",
+          "shared_dependency": false,
+          "sources": [
+            {
+              "kind": "official",
+              "reference": "anthropic-ip"
+            }
+          ],
+          "status": "required",
+          "type": "ip_cidr",
+          "value": "153.61.224.0/22"
+        }
+      ]
+    },
+    {
+      "group": "目的地址",
+      "type": "ip_cidr",
+      "value": "160.79.104.0/21",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": false,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "ip_cidr",
+          "value": "160.79.104.0/21"
+        }
+      ]
+    },
+    {
+      "group": "目的地址",
+      "type": "ip_cidr",
+      "value": "2607:6bc0::/32",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request to cover the referenced website, excluding NTP; not an official service requirement",
+          "shared_dependency": false,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "net-coffee-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32"
+        }
+      ]
+    },
+    {
+      "group": "目的地址",
+      "type": "ip_cidr",
+      "value": "34.8.0.0/16",
+      "provenance": [
+        {
+          "direction": "destination",
+          "origin": "supplement",
+          "product": [
+            "claude-website-coverage"
+          ],
+          "reason": "Explicit maintainer request from the screenshot coverage audit; exact destination scope, not an official dependency or exclusive Claude ownership claim.",
+          "shared_dependency": true,
+          "sources": [
+            {
+              "kind": "user-instruction",
+              "reference": "claude-screenshot-coverage-request"
+            }
+          ],
+          "status": "user-requested",
+          "type": "ip_cidr",
+          "value": "34.8.0.0/16"
+        }
+      ]
+    }
+  ],
+  "source": [
+    {
+      "direction": "source",
+      "origin": "supplement",
+      "product": [
+        "anthropic-service-egress"
+      ],
+      "reason": "Official Anthropic outbound source range; not a client destination",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "official",
+          "reference": "anthropic-ip"
+        }
+      ],
+      "status": "required",
+      "type": "source_ip_cidr",
+      "value": "160.79.104.0/21"
+    },
+    {
+      "direction": "source",
+      "origin": "supplement",
+      "product": [
+        "anthropic-service-egress"
+      ],
+      "reason": "Official Anthropic outbound source range; not a client destination",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "official",
+          "reference": "anthropic-ip"
+        }
+      ],
+      "status": "required",
+      "type": "source_ip_cidr",
+      "value": "153.61.208.0/20"
+    }
+  ]
+}

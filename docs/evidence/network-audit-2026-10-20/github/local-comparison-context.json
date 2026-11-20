@@ -1,0 +1,87 @@
+{
+  "openai": {
+    "path": "artifacts/v0.1.6/openai.json",
+    "sha256": "88191331af4cf6fe2aec8d8d11900384ca47fe03b0dd2c110ca5450551535403"
+  },
+  "anthropic": {
+    "path": "artifacts/v0.1.6/anthropic.json",
+    "sha256": "121a1b9774ccd3af32f1c3a78a8a103af9e253a613de2436850be7b575f4340b"
+  },
+  "pending": [
+    {
+      "id": "openai:domain:o33249.ingest.us.sentry.io",
+      "artifact": "openai",
+      "value": "o33249.ingest.us.sentry.io",
+      "type": "domain",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients"
+      ],
+      "direction": "destination",
+      "status": "compatibility",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-current-openai-srs"
+        }
+      ],
+      "reason": "Neither fixed community baseline nor the current official main allowlist includes this exact endpoint; lack of listing does not prove retirement.",
+      "review_status": "pending",
+      "evidence": [
+        {
+          "kind": "repository-history",
+          "reference": "sources/upstream/legacy-openai-1f6e61c.srs",
+          "observed_on": "2026-09-27",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients"
+          ],
+          "conclusion": "Actual pinned legacy SRS includes this scope. Historical inclusion alone is not runtime approval."
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "last_verified": null,
+      "review_after": null
+    },
+    {
+      "id": "openai:domain_suffix:openai.org",
+      "artifact": "openai",
+      "value": "openai.org",
+      "type": "domain_suffix",
+      "product": [
+        "chatgpt-web",
+        "chatgpt-clients",
+        "codex"
+      ],
+      "direction": "destination",
+      "status": "compatibility",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "community-discovery",
+          "reference": "dlc-openai-org-discovery-20261019"
+        }
+      ],
+      "reason": "Community PR 4149 added this suffix, but ownership and current product-purpose evidence remain unresolved. Discovery only; excluded from release selection.",
+      "review_status": "pending",
+      "evidence": [
+        {
+          "kind": "community-discovery",
+          "reference": "sources/discovery/openai-org-2026-10-19.json",
+          "observed_on": "2026-10-19",
+          "product": [
+            "chatgpt-web",
+            "chatgpt-clients",
+            "codex"
+          ],
+          "conclusion": "Pinned upstream inclusion and post-merge discussion were reviewed; neither establishes a current runtime requirement or release approval."
+        }
+      ],
+      "first_seen": "2026-10-19",
+      "last_verified": null,
+      "review_after": null
+    }
+  ],
+  "selected_pending": []
+}

@@ -1,0 +1,678 @@
+{
+  "verified_at_utc": "2026-10-20T15:42:58.847994+00:00",
+  "method": "sing-box 1.15.0-alpha.9 rule-set match, actual downloaded v0.1.6 SRS; static matching only",
+  "checks": [
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.auth.openai.com",
+      "witness": "audit.auth.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.chatgpt.com",
+      "witness": "audit.chatgpt.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.ct.sendgrid.net",
+      "witness": "audit.ct.sendgrid.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.intercom.io",
+      "witness": "audit.intercom.io",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.intercomcdn.com",
+      "witness": "audit.intercomcdn.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.oaistatic.com",
+      "witness": "audit.oaistatic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.oaiusercontent.com",
+      "witness": "audit.oaiusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.openai.com",
+      "witness": "audit.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "*.oaistatsig.com",
+      "witness": "audit.oaistatsig.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "android.chat.openai.com",
+      "witness": "android.chat.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "auth0.openai.com",
+      "witness": "auth0.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "cdn.openaimerge.com",
+      "witness": "cdn.openaimerge.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "cdn.platform.openai.com",
+      "witness": "cdn.platform.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "cdn.workos.com",
+      "witness": "cdn.workos.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "challenges.cloudflare.com",
+      "witness": "challenges.cloudflare.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "chat.openai.com",
+      "witness": "chat.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "desktop.chat.openai.com",
+      "witness": "desktop.chat.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "forwarder.workos.com",
+      "witness": "forwarder.workos.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "frontend-apps-multi-region.workos.com",
+      "witness": "frontend-apps-multi-region.workos.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "humb.apple.com",
+      "witness": "humb.apple.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "images.workoscdn.com",
+      "witness": "images.workoscdn.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "ios.chat.openai.com",
+      "witness": "ios.chat.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "js.intercomcdn.com",
+      "witness": "js.intercomcdn.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "js.stripe.com",
+      "witness": "js.stripe.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "o207216.ingest.sentry.io",
+      "witness": "o207216.ingest.sentry.io",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "o33249.ingest.sentry.io",
+      "witness": "o33249.ingest.sentry.io",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "rum.browser-intake-datadoghq.com",
+      "witness": "rum.browser-intake-datadoghq.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "setup.auth.openai.com",
+      "witness": "setup.auth.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "setup.workos.com",
+      "witness": "setup.workos.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "tcr9i.chat.openai.com",
+      "witness": "tcr9i.chat.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "official-main",
+      "entry": "workos.imgix.net",
+      "witness": "workos.imgix.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "websocket",
+      "entry": "ws.chatgpt.com",
+      "witness": "ws.chatgpt.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "websocket",
+      "entry": "chatgpt.com",
+      "witness": "chatgpt.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "workos.com",
+      "witness": "workos.com",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "unrelated.workos.com",
+      "witness": "unrelated.workos.com",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "a.frontend-apps-multi-region.workos.com",
+      "witness": "a.frontend-apps-multi-region.workos.com",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "a.b.frontend-apps-multi-region.workos.com",
+      "witness": "a.b.frontend-apps-multi-region.workos.com",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "notfrontend-apps-multi-region.workos.com",
+      "witness": "notfrontend-apps-multi-region.workos.com",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "frontend-apps-multi-region.workos.com.invalid",
+      "witness": "frontend-apps-multi-region.workos.com.invalid",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "openai.org",
+      "witness": "openai.org",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "www.openai.org",
+      "witness": "www.openai.org",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "exact-boundary",
+      "entry": "a.b.openai.org",
+      "witness": "a.b.openai.org",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "102.37.57.54/32",
+      "witness": "102.37.57.54",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "13.71.25.29/32",
+      "witness": "13.71.25.29",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "135.220.40.201/32",
+      "witness": "135.220.40.201",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "172.203.39.49/32",
+      "witness": "172.203.39.49",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "172.207.173.200/32",
+      "witness": "172.207.173.200",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "172.214.226.198/32",
+      "witness": "172.214.226.198",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "191.233.251.27/32",
+      "witness": "191.233.251.27",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "20.162.96.163/32",
+      "witness": "20.162.96.163",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "20.168.48.117/32",
+      "witness": "20.168.48.117",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "20.184.36.134/32",
+      "witness": "20.184.36.134",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "20.203.144.245/32",
+      "witness": "20.203.144.245",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "20.74.221.21/32",
+      "witness": "20.74.221.21",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "4.151.200.38/32",
+      "witness": "4.151.200.38",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "4.155.146.196/32",
+      "witness": "4.155.146.196",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "4.197.172.116/32",
+      "witness": "4.197.172.116",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "4.217.235.100/32",
+      "witness": "4.217.235.100",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "4.245.198.13/32",
+      "witness": "4.245.198.13",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "40.118.236.137/32",
+      "witness": "40.118.236.137",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "51.4.112.173/32",
+      "witness": "51.4.112.173",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "52.143.181.161/32",
+      "witness": "52.143.181.161",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "68.155.152.41/32",
+      "witness": "68.155.152.41",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "72.146.20.246/32",
+      "witness": "72.146.20.246",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "voice-address",
+      "entry": "74.248.148.7/32",
+      "witness": "74.248.148.7",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "pending-telemetry",
+      "entry": "o33249.ingest.us.sentry.io",
+      "witness": "o33249.ingest.us.sentry.io",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "pending-telemetry",
+      "entry": "a.o33249.ingest.us.sentry.io",
+      "witness": "a.o33249.ingest.us.sentry.io",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    }
+  ],
+  "count": 67,
+  "passed": true
+}

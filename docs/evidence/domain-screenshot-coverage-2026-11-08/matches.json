@@ -1,0 +1,180 @@
+{
+  "version": "0.1.9",
+  "artifact_checks": [
+    {
+      "rule_set": "anthropic",
+      "decompiled_rules_equivalent_to_release": true,
+      "sha256": "13112b79d21073c4478f0e6a902acc7ba6dd7df9efe2c6749d9844afe97256c1"
+    },
+    {
+      "rule_set": "anthropic-ip",
+      "decompiled_rules_equivalent_to_release": true,
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c"
+    },
+    {
+      "rule_set": "openai",
+      "decompiled_rules_equivalent_to_release": true,
+      "sha256": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55"
+    }
+  ],
+  "domain_results": [
+    {
+      "domain": "claude.ai",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "claude.ai"
+        }
+      ]
+    },
+    {
+      "domain": "anthropic.com",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "anthropic.com"
+        }
+      ]
+    },
+    {
+      "domain": "claude.com",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "claude.com"
+        }
+      ]
+    },
+    {
+      "domain": "claudeusercontent.com",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com"
+        }
+      ]
+    },
+    {
+      "domain": "claude.app",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "claude.app"
+        }
+      ]
+    },
+    {
+      "domain": "claudemcpcontent.com",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com"
+        }
+      ]
+    },
+    {
+      "domain": "clau.de",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "clau.de"
+        }
+      ]
+    },
+    {
+      "domain": "api-iam.intercom.io",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "intercom.io"
+        },
+        {
+          "rule_set": "openai",
+          "type": "domain_suffix",
+          "value": ".intercom.io"
+        }
+      ]
+    },
+    {
+      "domain": "nexus-websocket-a.intercom.io",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_suffix",
+          "value": "intercom.io"
+        },
+        {
+          "rule_set": "openai",
+          "type": "domain_suffix",
+          "value": ".intercom.io"
+        }
+      ]
+    },
+    {
+      "domain": "us5.datadoghq.com",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ]
+    },
+    {
+      "domain": "r.stripe.com",
+      "covered_by_anthropic": false,
+      "matches": []
+    },
+    {
+      "domain": "us.sentry.io",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ]
+    },
+    {
+      "domain": "siftscience.com",
+      "covered_by_anthropic": true,
+      "matches": [
+        {
+          "rule_set": "anthropic",
+          "type": "domain_keyword",
+          "value": "sift"
+        }
+      ]
+    },
+    {
+      "domain": "fcmtoken.googleapis.com",
+      "covered_by_anthropic": false,
+      "matches": []
+    }
+  ],
+  "covered_count": 12,
+  "domain_total": 14,
+  "network": {
+    "target": "34.8.0.0/16",
+    "overlaps": []
+  }
+}

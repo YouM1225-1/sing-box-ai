@@ -1,0 +1,128 @@
+[
+  {
+    "name": "v2fly-openai",
+    "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/openai",
+    "retrieved_at": "2026-10-20T15:39:56.286679+00:00",
+    "path": "v2fly-openai.txt",
+    "bytes": 690,
+    "sha256": "5276ab68c1a2d44db2cd745a9146d1645ef3dd3c388fdd1079b6b49267d60ddc",
+    "headers": {
+      "ETag": "\"3ebe9d7c94842c7dd7586a93b2663ed40c2584f4d57a777e251d7724ef089c7f\"",
+      "Date": "Tue, 20 Oct 2026 15:39:56 GMT"
+    }
+  },
+  {
+    "name": "v2fly-anthropic",
+    "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic",
+    "retrieved_at": "2026-10-20T15:39:56.287033+00:00",
+    "path": "v2fly-anthropic.txt",
+    "bytes": 163,
+    "sha256": "bf48dc1b342bbfd06f2a93ee8ce180fc424d9c041dafd2d182ffb3f4186698b4",
+    "headers": {
+      "ETag": "\"a86c5d36d902b77a4db704976ca8bba13c846dad09c7eac1fc1773fb2b14b9b6\"",
+      "Date": "Tue, 20 Oct 2026 15:39:57 GMT"
+    }
+  },
+  {
+    "name": "v2fly-openai-commits",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/commits?path=data/openai&per_page=5",
+    "retrieved_at": "2026-10-20T15:39:56.287153+00:00",
+    "path": "v2fly-openai-commits.json",
+    "bytes": 22440,
+    "sha256": "77e0636675ee4634659cf1f901ad1ce3dae3beb254a92c46a1f084b0abc45922",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:57 GMT",
+      "ETag": "W/\"c07bc8f257edca07d9891c8cd976d97239c3b86b0290dd3868b7f340a35d102c\"",
+      "Last-Modified": "Sat, 17 Oct 2026 12:58:53 GMT"
+    }
+  },
+  {
+    "name": "v2fly-anthropic-commits",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/commits?path=data/anthropic&per_page=5",
+    "retrieved_at": "2026-10-20T15:39:56.287252+00:00",
+    "path": "v2fly-anthropic-commits.json",
+    "bytes": 22216,
+    "sha256": "ba9ff69d052b28a1f913b254560ad7b07f22cd618be3b3892e4a2d44779957f6",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:57 GMT",
+      "ETag": "W/\"ad4861e474cebbde99bfcaae78460500e5598bf5fd4de4a9dd0e04b5604d69d2\"",
+      "Last-Modified": "Fri, 02 Oct 2026 05:00:05 GMT"
+    }
+  },
+  {
+    "name": "v2fly-recent-pulls",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/pulls?state=all&sort=updated&direction=desc&per_page=50",
+    "retrieved_at": "2026-10-20T15:39:56.287381+00:00",
+    "path": "v2fly-recent-pulls.json",
+    "bytes": 844999,
+    "sha256": "d22113e092b5ea08fde7ef625821fccdd8977e1d0806c5c98de84836c13f752e",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:57 GMT",
+      "ETag": "W/\"34a47c55619c955e4218c90e164f606680021e947a609f352d3b29e4abdaf85e\""
+    }
+  },
+  {
+    "name": "v2fly-pr4149",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/pulls/4149",
+    "retrieved_at": "2026-10-20T15:39:56.287495+00:00",
+    "path": "v2fly-pr4149.json",
+    "bytes": 18699,
+    "sha256": "b4e960616c4c8ba4b76844387f8d3bbbd0c12fb4de37a46363deec33c586e7c9",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:57 GMT",
+      "ETag": "\"8d307b1a2f4397a3fe8360ddfcddaf6bca50d861c12a1de9cc633a479712b34c\"",
+      "Last-Modified": "Mon, 19 Oct 2026 16:09:40 GMT"
+    }
+  },
+  {
+    "name": "v2fly-pr4149-comments",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/issues/4149/comments",
+    "retrieved_at": "2026-10-20T15:39:56.287589+00:00",
+    "path": "v2fly-pr4149-comments.json",
+    "bytes": 5602,
+    "sha256": "d684c0ebb1dee58d26cfe60847cbe57cad787d162e66d14f8cacd6f6f0cd6ae2",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:56 GMT",
+      "ETag": "W/\"e85c5f320ca2c3801890b469688002e7a27f212e04ff718526dcd9103f79cf82\""
+    }
+  },
+  {
+    "name": "sager-ruleset-commit",
+    "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits?sha=rule-set&per_page=1",
+    "retrieved_at": "2026-10-20T15:39:56.287687+00:00",
+    "path": "sager-ruleset-commit.json",
+    "bytes": 3203,
+    "sha256": "3741b685acc2e3389bd6887e91c6426505b19763f50e05a51854a331fd9f8479",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:56 GMT",
+      "ETag": "W/\"496a409b82d4605e0c424ff59e393b1a11bbfe242f7ab96ffccaa13163cc56de\"",
+      "Last-Modified": "Tue, 20 Oct 2026 04:10:04 GMT"
+    }
+  },
+  {
+    "name": "meta-sing-commit",
+    "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/commits?sha=sing&per_page=1",
+    "retrieved_at": "2026-10-20T15:39:56.287803+00:00",
+    "path": "meta-sing-commit.json",
+    "bytes": 3451,
+    "sha256": "c06189798a68d5fef7546345a594571272d94292e0ca1c386727939eaf2aa40c",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:56 GMT",
+      "ETag": "W/\"5294c6ba2321bf55ad0123551f19de67e151ee22c5f438b18199747bf18af65a\"",
+      "Last-Modified": "Tue, 20 Oct 2026 01:10:47 GMT"
+    }
+  },
+  {
+    "name": "loyalsoldier-release",
+    "url": "https://api.github.com/repos/Loyalsoldier/v2ray-rules-dat/releases/latest",
+    "retrieved_at": "2026-10-20T15:39:56.287932+00:00",
+    "path": "loyalsoldier-release.json",
+    "bytes": 33424,
+    "sha256": "80fd9d34306fed2cd46e970fa5ea75be6a0808924cb8c1902c225340e0c9e4c0",
+    "headers": {
+      "Date": "Tue, 20 Oct 2026 15:39:56 GMT",
+      "ETag": "W/\"f96d984890a8a94bfc24fbc90b54ed095d3faae126b56165f312187dac656b6f\"",
+      "Last-Modified": "Mon, 19 Oct 2026 22:07:56 GMT"
+    }
+  }
+]

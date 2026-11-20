@@ -1,0 +1,508 @@
+{
+  "domain_mappings": [
+    {
+      "artifact": "openai",
+      "output": "api.github.com",
+      "type": "domain",
+      "value": "api.github.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "browser-intake-datadoghq.com",
+      "type": "domain",
+      "value": "browser-intake-datadoghq.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "cdn.openaimerge.com",
+      "type": "domain",
+      "value": "cdn.openaimerge.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "cdn.workos.com",
+      "type": "domain",
+      "value": "cdn.workos.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "challenges.cloudflare.com",
+      "type": "domain",
+      "value": "challenges.cloudflare.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "forwarder.workos.com",
+      "type": "domain",
+      "value": "forwarder.workos.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "frontend-apps-multi-region.workos.com",
+      "type": "domain",
+      "value": "frontend-apps-multi-region.workos.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "github.com",
+      "type": "domain",
+      "value": "github.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "humb.apple.com",
+      "type": "domain",
+      "value": "humb.apple.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "images.workoscdn.com",
+      "type": "domain",
+      "value": "images.workoscdn.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "js.stripe.com",
+      "type": "domain",
+      "value": "js.stripe.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "o207216.ingest.sentry.io",
+      "type": "domain",
+      "value": "o207216.ingest.sentry.io"
+    },
+    {
+      "artifact": "openai",
+      "output": "o33249.ingest.sentry.io",
+      "type": "domain",
+      "value": "o33249.ingest.sentry.io"
+    },
+    {
+      "artifact": "openai",
+      "output": "openai.qualtrics.com",
+      "type": "domain",
+      "value": "openai.qualtrics.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "openaiapi-site.azureedge.net",
+      "type": "domain",
+      "value": "openaiapi-site.azureedge.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "openaiassets.blob.core.windows.net",
+      "type": "domain",
+      "value": "openaiassets.blob.core.windows.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+      "type": "domain",
+      "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "openaicom.imgix.net",
+      "type": "domain",
+      "value": "openaicom.imgix.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "openaicomproductionae4b.blob.core.windows.net",
+      "type": "domain",
+      "value": "openaicomproductionae4b.blob.core.windows.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "production-openaicom-storage.azureedge.net",
+      "type": "domain",
+      "value": "production-openaicom-storage.azureedge.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "registry.npmjs.org",
+      "type": "domain",
+      "value": "registry.npmjs.org"
+    },
+    {
+      "artifact": "openai",
+      "output": "release-assets.githubusercontent.com",
+      "type": "domain",
+      "value": "release-assets.githubusercontent.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "rum.browser-intake-datadoghq.com",
+      "type": "domain",
+      "value": "rum.browser-intake-datadoghq.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "setup.workos.com",
+      "type": "domain",
+      "value": "setup.workos.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "workos.imgix.net",
+      "type": "domain",
+      "value": "workos.imgix.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "ct.sendgrid.net",
+      "type": "domain_suffix",
+      "value": ".ct.sendgrid.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "intercom.io",
+      "type": "domain_suffix",
+      "value": ".intercom.io"
+    },
+    {
+      "artifact": "openai",
+      "output": "intercomcdn.com",
+      "type": "domain_suffix",
+      "value": ".intercomcdn.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "chat.com",
+      "type": "domain_suffix",
+      "value": "chat.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "chatgpt.com",
+      "type": "domain_suffix",
+      "value": "chatgpt.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "chatgpt.livekit.cloud",
+      "type": "domain_suffix",
+      "value": "chatgpt.livekit.cloud"
+    },
+    {
+      "artifact": "openai",
+      "output": "chatgpt.site",
+      "type": "domain_suffix",
+      "value": "chatgpt.site"
+    },
+    {
+      "artifact": "openai",
+      "output": "crixet.com",
+      "type": "domain_suffix",
+      "value": "crixet.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "host.livekit.cloud",
+      "type": "domain_suffix",
+      "value": "host.livekit.cloud"
+    },
+    {
+      "artifact": "openai",
+      "output": "oaistatic.com",
+      "type": "domain_suffix",
+      "value": "oaistatic.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "oaistatsig.com",
+      "type": "domain_suffix",
+      "value": "oaistatsig.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "oaiusercontent.com",
+      "type": "domain_suffix",
+      "value": "oaiusercontent.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "openai.com",
+      "type": "domain_suffix",
+      "value": "openai.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "openai.com.cdn.cloudflare.net",
+      "type": "domain_suffix",
+      "value": "openai.com.cdn.cloudflare.net"
+    },
+    {
+      "artifact": "openai",
+      "output": "poteto.com",
+      "type": "domain_suffix",
+      "value": "poteto.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "sora.com",
+      "type": "domain_suffix",
+      "value": "sora.com"
+    },
+    {
+      "artifact": "openai",
+      "output": "turn.livekit.cloud",
+      "type": "domain_suffix",
+      "value": "turn.livekit.cloud"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "api.revenuecat.com",
+      "type": "domain",
+      "value": "api.revenuecat.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "cdn.jsdelivr.net",
+      "type": "domain",
+      "value": "cdn.jsdelivr.net"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "cdn.tailwindcss.com",
+      "type": "domain",
+      "value": "cdn.tailwindcss.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "cdnjs.cloudflare.com",
+      "type": "domain",
+      "value": "cdnjs.cloudflare.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "code.jquery.com",
+      "type": "domain",
+      "value": "code.jquery.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "fcmtoken.googleapis.com",
+      "type": "domain",
+      "value": "fcmtoken.googleapis.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "fonts.googleapis.com",
+      "type": "domain",
+      "value": "fonts.googleapis.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "fonts.gstatic.com",
+      "type": "domain",
+      "value": "fonts.gstatic.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "formulae.brew.sh",
+      "type": "domain",
+      "value": "formulae.brew.sh"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "github.com",
+      "type": "domain",
+      "value": "github.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "raw.githubusercontent.com",
+      "type": "domain",
+      "value": "raw.githubusercontent.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "registry.npmjs.org",
+      "type": "domain",
+      "value": "registry.npmjs.org"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "static.intercomassets.com",
+      "type": "domain",
+      "value": "static.intercomassets.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "storage.googleapis.com",
+      "type": "domain",
+      "value": "storage.googleapis.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "unpkg.com",
+      "type": "domain",
+      "value": "unpkg.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "ant.dev",
+      "type": "domain_suffix",
+      "value": "ant.dev"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "antspace.dev",
+      "type": "domain_suffix",
+      "value": "antspace.dev"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "challenges.cloudflare.com",
+      "type": "domain_suffix",
+      "value": "challenges.cloudflare.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "clau.de",
+      "type": "domain_suffix",
+      "value": "clau.de"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "growthbook.io",
+      "type": "domain_suffix",
+      "value": "growthbook.io"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "hcaptcha.com",
+      "type": "domain_suffix",
+      "value": "hcaptcha.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "intercom.io",
+      "type": "domain_suffix",
+      "value": "intercom.io"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "intercomcdn.com",
+      "type": "domain_suffix",
+      "value": "intercomcdn.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "segment.io",
+      "type": "domain_suffix",
+      "value": "segment.io"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "statsigapi.net",
+      "type": "domain_suffix",
+      "value": "statsigapi.net"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "stripe.com",
+      "type": "domain_suffix",
+      "value": "stripe.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "stripe.network",
+      "type": "domain_suffix",
+      "value": "stripe.network"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "stripecdn.com",
+      "type": "domain_suffix",
+      "value": "stripecdn.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "usefathom.com",
+      "type": "domain_suffix",
+      "value": "usefathom.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "withpersona.com",
+      "type": "domain_suffix",
+      "value": "withpersona.com"
+    }
+  ],
+  "excluded_source_artifact": "anthropic-ip.srs",
+  "export_version": 1,
+  "files": {
+    "domains.txt": {
+      "bytes": 1306,
+      "entries": 67,
+      "sha256": "dcda5e4a37989e228519a63d7c715921ab59b089257c54c5a24c5944d7f1f7b3"
+    },
+    "ipv4.txt": {
+      "bytes": 5960,
+      "entries": 426,
+      "sha256": "2b7e744535891351abf178e4802280542472844f5d8f7fedd7c908d79b912b3d"
+    },
+    "ipv6.txt": {
+      "bytes": 15,
+      "entries": 1,
+      "sha256": "30fb24797195deba2ef30c0c4b4b93792947c9323570926a796f2e9a06e1dc1e"
+    }
+  },
+  "limitations": [
+    "域名文本不能保留 exact、suffix、regex、keyword 的完整匹配语义。",
+    "suffix 前导点去除；可能扩大 apex 范围；regex/keyword 明列为未导出。",
+    "保留目的规则的共享依赖与宽网段；不是纯官方最窄 IP 集合。",
+    "静态导入需要手动同步；外部列表是否自动更新须在目标环境验证。",
+    "生成、发布或控制器接受不代表实际阻断、DNS、IPv6、防绕过或重启验收。"
+  ],
+  "omitted": [
+    {
+      "artifact": "openai",
+      "type": "domain_regex",
+      "value": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+    },
+    {
+      "artifact": "anthropic",
+      "type": "domain_keyword",
+      "value": "anthropic"
+    },
+    {
+      "artifact": "anthropic",
+      "type": "domain_keyword",
+      "value": "browser-intake"
+    },
+    {
+      "artifact": "anthropic",
+      "type": "domain_keyword",
+      "value": "claude"
+    },
+    {
+      "artifact": "anthropic",
+      "type": "domain_keyword",
+      "value": "datadog"
+    },
+    {
+      "artifact": "anthropic",
+      "type": "domain_keyword",
+      "value": "sentry"
+    },
+    {
+      "artifact": "anthropic",
+      "type": "domain_keyword",
+      "value": "sift"
+    }
+  ],
+  "schema": 1,
+  "source_artifacts": {
+    "anthropic.json": "9937bd1bf83eabc1a4df0bfb9841302a03854210c816e5cc077c05c64bd5112d",
+    "anthropic.srs": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396",
+    "openai.json": "84f76adbbc3cd2786d921d3d410b28fe05ddebe63a3dc2c9302d093a436ce4b2",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "source_build_mode": "release",
+  "source_project_version": "0.1.15"
+}

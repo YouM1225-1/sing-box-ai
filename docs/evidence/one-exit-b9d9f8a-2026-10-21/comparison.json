@@ -1,0 +1,4755 @@
+{
+  "schema": 1,
+  "time_utc": "2026-10-21T05:24:27.449236+00:00",
+  "comparison_release": "v0.1.6",
+  "external_commit": "b9d9f8ab6687401f7588dfa7d7023cd58ffb4032",
+  "domain_rows": [
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claude.ai",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 39,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 8,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claude.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 40,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 9,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.com"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "clau.de",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 41,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 10,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 49,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "clau.de"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "anthropic.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 42,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 11,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claudeusercontent.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 43,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 12,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claudeusercontent.com"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claudemcpcontent.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 44,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 13,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 50,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claudemcpcontent.com"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "modelcontextprotocol.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 45,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 14,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "anthropic",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 46,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 15,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 51,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic-com.ghost.io"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.auth0.com"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com.cdn.cloudflare.net"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "servd-anthropic-website.b-cdn.net"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "datadog"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sentry"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sift"
+            }
+          ]
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "claude",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 47,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 16,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 52,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "claude.app"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "claude.com"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "claude.dev"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "claudemcpclient.com"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "claudemcpcontent.com"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "claudeusercontent.com"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "datadog"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sentry"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sift"
+            }
+          ]
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "sentry.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 50,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 19,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 57,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_keyword",
+              "value": "sentry"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "o207216.ingest.sentry.io"
+            },
+            {
+              "type": "domain",
+              "value": "o33249.ingest.sentry.io"
+            }
+          ]
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "browser-intake",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 51,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 20,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 54,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "keyword-language-intersection",
+              "value": "datadog"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sentry"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sift"
+            }
+          ]
+        },
+        "openai": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "browser-intake-datadoghq.com"
+            },
+            {
+              "type": "domain",
+              "value": "rum.browser-intake-datadoghq.com"
+            }
+          ]
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "datadoghq.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 52,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 21,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 58,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "growthbook.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 53,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 22,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 59,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "usefathom.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 54,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 23,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 60,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "cdn.usefathom.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "hcaptcha.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 55,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 24,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 61,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 56,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 25,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 62,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "js.stripe.com"
+            }
+          ]
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.network",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 57,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 26,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 63,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripecdn.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 58,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 27,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 64,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercom.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 59,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 28,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 65,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "intercom.io"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercom.io"
+            }
+          ]
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercomcdn.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 60,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 29,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 66,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_suffix",
+              "value": "intercomcdn.com"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercomcdn.com"
+            }
+          ]
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "challenges.cloudflare.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 61,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 30,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 67,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "challenges.cloudflare.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "challenges.cloudflare.com"
+            }
+          ]
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "siftscience.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 62,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 31,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 68,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "full",
+          "full_by": [
+            {
+              "type": "domain_keyword",
+              "value": "sift"
+            }
+          ],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "segment.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 63,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 32,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 69,
+          "added_in_this_template": true
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "google.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 65,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 34,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 73,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "googleapis.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 66,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 35,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 74,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "fonts.googleapis.com"
+            },
+            {
+              "type": "domain",
+              "value": "storage.googleapis.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "gstatic.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 67,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 36,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 75,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "domain",
+              "value": "fonts.gstatic.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "gmail.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 68,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 37,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 77,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "googleusercontent.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 69,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 38,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 76,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "recaptcha.net",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 70,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 39,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 78,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "withpersona.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 72,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 41,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 79,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "webshare.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 74,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 43,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 71,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "modelcontextprotocol",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "flclash/claude-google.js",
+          "line": 53,
+          "added_in_this_template": false
+        }
+      ],
+      "coverage": {
+        "anthropic": {
+          "status": "partial",
+          "full_by": [],
+          "partial_by": [
+            {
+              "type": "keyword-language-intersection",
+              "value": "datadog"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sentry"
+            },
+            {
+              "type": "keyword-language-intersection",
+              "value": "sift"
+            }
+          ]
+        },
+        "openai": {
+          "status": "no_dedicated_rule",
+          "full_by": [],
+          "partial_by": []
+        }
+      },
+      "combined_status": "partial",
+      "new_in_any_template": false
+    }
+  ],
+  "native_checks": [
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.anthropic.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.challenges.cloudflare.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.clau.de",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "clau.de"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.claude.ai",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.claude.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.claudemcpcontent.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.claudeusercontent.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.gmail.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.google.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.googleusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.gstatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.intercom.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.intercomcdn.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercomcdn.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.modelcontextprotocol.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.recaptcha.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.sentry.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.siftscience.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sift"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.webshare.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.b.withpersona.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.cdn.usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.challenges.cloudflare.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "a.js.stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "anthropic.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "anthropic.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "anthropic.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "api.hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "api.openai.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "api.segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "api.statsigapi.net",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "statsigapi.net"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit-anthropic-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit-browser-intake-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit-claude-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit-modelcontextprotocol-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.anthropic.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "anthropic.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.challenges.cloudflare.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.clau.de",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "clau.de"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.claude.ai",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.claude.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.claudemcpcontent.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.claudeusercontent.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.gmail.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.google.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.googleusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.gstatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.intercom.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.intercomcdn.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercomcdn.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.modelcontextprotocol.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.recaptcha.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.sentry.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.siftscience.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sift"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.webshare.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "audit.withpersona.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "browser-intake-datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "browser-intake-us5-datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "browser-intake.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "cdn.growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "cdn.jsdelivr.net",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "cdn.jsdelivr.net"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "cdn.oaistatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "cdn.usefathom.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "cdn.usefathom.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "challenges.cloudflare.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "challenges.cloudflare.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "challenges.cloudflare.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "clau.de",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "clau.de"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "clau.de.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claude.ai",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.ai"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claude.ai.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claude.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claude.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claude.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claude.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claudemcpcontent.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudemcpcontent.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claudemcpcontent.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claudeusercontent.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "claudeusercontent.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "claudeusercontent.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "datadoghq.com.invalid",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "fonts.googleapis.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "fonts.googleapis.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "fonts.gstatic.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "fonts.gstatic.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "gmail.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "gmail.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "google.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "google.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "googleapis.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "googleusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "googleusercontent.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "growthbook.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "gstatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "gstatic.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "hcaptcha.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "intercom.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "intercom.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "intercomcdn.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercomcdn.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "intercomcdn.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "js.stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "js.stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "m.stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "modelcontextprotocol.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "modelcontextprotocol.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "modelcontextprotocol.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "new-browser-intake.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "o207216.ingest.sentry.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "o33249.ingest.sentry.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "recaptcha.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "recaptcha.net.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "rum.browser-intake-datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "segment.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "sentry.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "sentry.io.invalid",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sentry"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "servd-anthropic-website.b-cdn.net",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "servd-anthropic-website.b-cdn.net"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "siftscience.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sift"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "siftscience.com.invalid",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_keyword",
+          "value": "sift"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "static.intercomassets.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "static.intercomassets.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "storage.googleapis.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "storage.googleapis.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "stripe.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "stripe.network.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "stripecdn.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "usefathom.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "webshare.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "webshare.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "withpersona.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "domain",
+      "value": "withpersona.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.anthropic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.challenges.cloudflare.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.clau.de",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.claude.ai",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.claude.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.claudemcpcontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.claudeusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.datadoghq.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.gmail.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.google.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.googleusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.gstatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.intercom.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": ".intercom.io"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.intercomcdn.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": ".intercomcdn.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.modelcontextprotocol.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.recaptcha.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.sentry.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.siftscience.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.webshare.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.b.withpersona.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.cdn.usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.challenges.cloudflare.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "a.js.stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "anthropic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "anthropic.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "anthropic.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "api.hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "api.openai.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "openai.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "api.segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "api.statsigapi.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit-anthropic-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit-browser-intake-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit-claude-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit-modelcontextprotocol-audit.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.anthropic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.challenges.cloudflare.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.clau.de",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.claude.ai",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.claude.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.claudemcpcontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.claudeusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.datadoghq.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.gmail.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.google.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.googleusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.gstatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.intercom.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": ".intercom.io"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.intercomcdn.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": ".intercomcdn.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.modelcontextprotocol.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.recaptcha.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.sentry.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.siftscience.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.webshare.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "audit.withpersona.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "browser-intake-datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "browser-intake-datadoghq.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "browser-intake-us5-datadoghq.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "browser-intake.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "cdn.growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "cdn.jsdelivr.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "cdn.oaistatic.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "oaistatic.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "cdn.usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "challenges.cloudflare.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "challenges.cloudflare.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "challenges.cloudflare.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "clau.de",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "clau.de.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claude.ai",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claude.ai.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claude.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claude.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claude.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claudemcpcontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claudemcpcontent.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claudeusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "claudeusercontent.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "datadoghq.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "datadoghq.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "fonts.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "fonts.gstatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "gmail.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "gmail.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "google.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "google.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "googleapis.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "googleusercontent.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "googleusercontent.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "growthbook.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "growthbook.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "gstatic.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "gstatic.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "hcaptcha.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "hcaptcha.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "intercom.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "intercom.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "intercomcdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "intercomcdn.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "js.stripe.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "js.stripe.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "js.stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "m.stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "modelcontextprotocol.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "modelcontextprotocol.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "modelcontextprotocol.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "new-browser-intake.example.org",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "o207216.ingest.sentry.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "o207216.ingest.sentry.io"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "o33249.ingest.sentry.io",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "o33249.ingest.sentry.io"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "recaptcha.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "recaptcha.net.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "rum.browser-intake-datadoghq.com",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "matching_rules": [
+        {
+          "type": "domain",
+          "value": "rum.browser-intake-datadoghq.com"
+        }
+      ],
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "segment.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "segment.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "sentry.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "sentry.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "servd-anthropic-website.b-cdn.net",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "siftscience.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "siftscience.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "static.intercomassets.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "storage.googleapis.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "stripe.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "stripe.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "stripe.network",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "stripe.network.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "stripecdn.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "stripecdn.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "usefathom.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "usefathom.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "webshare.io",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "webshare.io.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "withpersona.com",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "domain",
+      "value": "withpersona.com.invalid",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "matching_rules": [],
+      "native_output": ""
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "160.79.104.0/21",
+      "value": "160.79.104.0",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "160.79.104.0/21",
+      "value": "160.79.111.255",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/48",
+      "value": "2607:6bc0::",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/48",
+      "value": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0:11::/48",
+      "value": "2607:6bc0:11::",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0:11::/48",
+      "value": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/32",
+      "value": "2607:6bc0::",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/32",
+      "value": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+      "expected": true,
+      "matched": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "160.79.104.0/21",
+      "value": "160.79.104.0",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "160.79.104.0/21",
+      "value": "160.79.111.255",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/48",
+      "value": "2607:6bc0::",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/48",
+      "value": "2607:6bc0:0:ffff:ffff:ffff:ffff:ffff",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0:11::/48",
+      "value": "2607:6bc0:11::",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0:11::/48",
+      "value": "2607:6bc0:11:ffff:ffff:ffff:ffff:ffff",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/32",
+      "value": "2607:6bc0::",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai",
+      "kind": "destination-ip",
+      "parent_cidr": "2607:6bc0::/32",
+      "value": "2607:6bc0:ffff:ffff:ffff:ffff:ffff:ffff",
+      "expected": false,
+      "matched": false,
+      "passed": true,
+      "native_output": ""
+    }
+  ],
+  "native_count": 306,
+  "native_passed": true,
+  "limitations": [
+    "Full coverage derives from whole-rule containment, not from one apex witness.",
+    "no_dedicated_rule means no corresponding service rule; arbitrary host labels may coincidentally hit existing keywords.",
+    "Explicit template rules only; inherited subscription rules, process detection, actual routing order and remote DNS are not simulated.",
+    "SRS matching does not encode one-exit proxy or REJECT actions.",
+    "Only these known regular-expression patterns are probed; no general regex language inclusion is claimed."
+  ]
+}

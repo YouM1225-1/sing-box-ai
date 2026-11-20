@@ -1,0 +1,81 @@
+{
+  "v2fly": {
+    "openai": {
+      "rule_count": 24,
+      "covered_count": 23,
+      "not_covered": [
+        {
+          "type": "domain_suffix",
+          "value": "openai.org",
+          "attributes": [],
+          "line": 10
+        }
+      ],
+      "contains_ip_rules": false
+    },
+    "anthropic": {
+      "rule_count": 9,
+      "covered_count": 9,
+      "not_covered": [],
+      "contains_ip_rules": false
+    }
+  },
+  "sager": {
+    "openai": {
+      "rule_count": 24,
+      "covered_count": 23,
+      "not_covered": [
+        {
+          "type": "domain_suffix",
+          "value": "openai.org"
+        }
+      ],
+      "contains_ip_rules": false
+    },
+    "anthropic": {
+      "rule_count": 9,
+      "covered_count": 9,
+      "not_covered": [],
+      "contains_ip_rules": false
+    }
+  },
+  "meta": {
+    "openai": {
+      "rule_count": 24,
+      "covered_count": 23,
+      "not_covered": [
+        {
+          "type": "domain_suffix",
+          "value": "openai.org"
+        }
+      ],
+      "contains_ip_rules": false
+    },
+    "anthropic": {
+      "rule_count": 9,
+      "covered_count": 9,
+      "not_covered": [],
+      "contains_ip_rules": false
+    }
+  },
+  "loyalsoldier": {
+    "openai": {
+      "rule_count": 24,
+      "covered_count": 23,
+      "not_covered": [
+        {
+          "type": "domain_suffix",
+          "value": "openai.org",
+          "attributes": []
+        }
+      ],
+      "contains_ip_rules": false
+    },
+    "anthropic": {
+      "rule_count": 9,
+      "covered_count": 9,
+      "not_covered": [],
+      "contains_ip_rules": false
+    }
+  }
+}

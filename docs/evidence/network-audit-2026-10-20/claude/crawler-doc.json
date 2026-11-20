@@ -1,0 +1,17 @@
+{
+  "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+  "final_url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+  "status": 200,
+  "retrieved_at": "2026-10-20T15:42:53.696433+00:00",
+  "sha256": "c1aecaf0eddffb4dd4014e526eb5ce9b02a8bc1e7923ad63de5c57ad769cc0ea",
+  "bytes": 204543,
+  "content_type": "text/html; charset=utf-8",
+  "json_links": [
+    "https://claude.com/crawling/bots.json"
+  ],
+  "bot_names": [
+    "ClaudeBot",
+    "Claude-User",
+    "Claude-SearchBot"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_head": "ad7c86f9e36c4be232a1523b030e6de46efba191",
+  "version": "0.1.6",
+  "artifacts": [
+    {
+      "name": "openai",
+      "sha256": "196619631ab33a362794ef826b9bd5b8779d08c315f46a335443f3321d4dd48c",
+      "bytes": 800,
+      "dist_byte_equal": true,
+      "native_decoded_semantics_equal": true
+    },
+    {
+      "name": "anthropic",
+      "sha256": "0d8e26718c663ffdb03d0d32a2cf42bf61be540787c46fa7684bf1a70a23c5f1",
+      "bytes": 488,
+      "dist_byte_equal": true,
+      "native_decoded_semantics_equal": true
+    },
+    {
+      "name": "anthropic-ip",
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "bytes": 36,
+      "dist_byte_equal": true,
+      "native_decoded_semantics_equal": true
+    }
+  ]
+}

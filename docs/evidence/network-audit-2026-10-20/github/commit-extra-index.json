@@ -1,0 +1,41 @@
+[
+  {
+    "name": "sager-openai-commits",
+    "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits?sha=rule-set&path=geosite-openai.srs&per_page=2",
+    "retrieved_at": "2026-10-20T15:42:55.125172+00:00",
+    "path": "sager-openai-commits.json",
+    "sha256": "3741b685acc2e3389bd6887e91c6426505b19763f50e05a51854a331fd9f8479",
+    "commits": [
+      {
+        "sha": "a3795b85be650b16ffa9770a836d90afc391baaf",
+        "date": "2026-10-20T04:10:04Z",
+        "message": "Update rule-set"
+      }
+    ]
+  },
+  {
+    "name": "sager-anthropic-commits",
+    "url": "https://api.github.com/repos/SagerNet/sing-geosite/commits?sha=rule-set&path=geosite-anthropic.srs&per_page=2",
+    "retrieved_at": "2026-10-20T15:42:55.125502+00:00",
+    "path": "sager-anthropic-commits.json",
+    "sha256": "3741b685acc2e3389bd6887e91c6426505b19763f50e05a51854a331fd9f8479",
+    "commits": [
+      {
+        "sha": "a3795b85be650b16ffa9770a836d90afc391baaf",
+        "date": "2026-10-20T04:10:04Z",
+        "message": "Update rule-set"
+      }
+    ]
+  },
+  {
+    "name": "loyalsoldier-pr530-files",
+    "url": "https://api.github.com/repos/Loyalsoldier/v2ray-rules-dat/pulls/530/files",
+    "retrieved_at": "2026-10-20T15:42:55.125639+00:00",
+    "path": "loyalsoldier-pr530-files.json",
+    "sha256": "e95ebb4212c9d83000c7c75ac58ebb59e75ba1f329468f0a381d632fd73ae08d",
+    "files": [
+      ".github/workflows/run.yml",
+      "README.md"
+    ]
+  }
+]

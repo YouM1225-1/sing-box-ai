@@ -1,0 +1,52 @@
+[
+  {
+    "name": "downstream-pr-search-openai",
+    "url": "https://api.github.com/search/issues?q=repo%3ASagerNet%2Fsing-geosite+repo%3AMetaCubeX%2Fmeta-rules-dat+repo%3ALoyalsoldier%2Fv2ray-rules-dat+is%3Apr+openai+updated%3A%3E%3D2026-10-19&per_page=30&sort=updated&order=desc",
+    "retrieved_at": "2026-10-20T15:42:27.084038+00:00",
+    "path": "downstream-pr-search-openai.json",
+    "sha256": "c9938edecb99d754b2d039ac9eec320a94c769b6a6417921e2dcbef9e2fe01a0",
+    "count": 0,
+    "incomplete_results": false,
+    "items": []
+  },
+  {
+    "name": "downstream-pr-search-anthropic",
+    "url": "https://api.github.com/search/issues?q=repo%3ASagerNet%2Fsing-geosite+repo%3AMetaCubeX%2Fmeta-rules-dat+repo%3ALoyalsoldier%2Fv2ray-rules-dat+is%3Apr+anthropic+updated%3A%3E%3D2026-10-19&per_page=30&sort=updated&order=desc",
+    "retrieved_at": "2026-10-20T15:42:27.084367+00:00",
+    "path": "downstream-pr-search-anthropic.json",
+    "sha256": "c9938edecb99d754b2d039ac9eec320a94c769b6a6417921e2dcbef9e2fe01a0",
+    "count": 0,
+    "incomplete_results": false,
+    "items": []
+  },
+  {
+    "name": "downstream-pr-search-claude",
+    "url": "https://api.github.com/search/issues?q=repo%3ASagerNet%2Fsing-geosite+repo%3AMetaCubeX%2Fmeta-rules-dat+repo%3ALoyalsoldier%2Fv2ray-rules-dat+is%3Apr+claude+updated%3A%3E%3D2026-10-19&per_page=30&sort=updated&order=desc",
+    "retrieved_at": "2026-10-20T15:42:27.084489+00:00",
+    "path": "downstream-pr-search-claude.json",
+    "sha256": "b31b7b9905b0b7df71def29b91e6388e023662feb0b40a347754a03e229809a7",
+    "count": 1,
+    "incomplete_results": false,
+    "items": [
+      {
+        "number": 530,
+        "title": "Refine: workflow fails on download errors, runs on PRs, fix domain filtering; fix README punctuation",
+        "state": "closed",
+        "updated_at": "2026-10-19T02:03:30Z",
+        "html_url": "https://github.com/Loyalsoldier/v2ray-rules-dat/pull/530"
+      }
+    ]
+  },
+  {
+    "name": "v2fly-pr4168-files",
+    "url": "https://api.github.com/repos/v2fly/domain-list-community/pulls/4168/files",
+    "retrieved_at": "2026-10-20T15:42:27.084592+00:00",
+    "path": "v2fly-pr4168-files.json",
+    "sha256": "d0033ebeca38f1265f2db40f59db1ec8bd429edb52e98f19dcaebb6ca7f5107a",
+    "files": [
+      "data/chinabroadnet",
+      "data/chinamobile",
+      "data/chinatelecom"
+    ]
+  }
+]

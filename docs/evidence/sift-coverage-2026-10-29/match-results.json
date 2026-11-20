@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-28T16:22:51.448615+00:00",
+  "version": "v0.1.8",
+  "download_url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.8/anthropic.srs",
+  "sha256": "38aeb4b09903bb238df6f33b476a247830719d7246950edc024660dd6e112ab4",
+  "local_archive_identical": true,
+  "tests": [
+    {
+      "domain": "api3.siftscience.com",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+    },
+    {
+      "domain": "api.sift.com",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+    },
+    {
+      "domain": "cdn.sift.com",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+    },
+    {
+      "domain": "beforeSIFTAFTER.example.org",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>\n"
+    },
+    {
+      "domain": "si-ft.example.org",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

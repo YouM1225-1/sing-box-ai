@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032/README.md",
+    "revision": "b9d9f8ab6687401f7588dfa7d7023cd58ffb4032",
+    "file": "README.md",
+    "local_path": "after/README.md",
+    "retrieved_at_utc": "2026-10-21T05:21:54.681904+00:00",
+    "status": 200,
+    "bytes": 4221,
+    "sha256": "38b5a073aaf7947211715387aec783b2214cab74f4fb65be30a6a4b41bdacc56"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032/clash-party/override.yaml",
+    "revision": "b9d9f8ab6687401f7588dfa7d7023cd58ffb4032",
+    "file": "clash-party/override.yaml",
+    "local_path": "after/clash-party/override.yaml",
+    "retrieved_at_utc": "2026-10-21T05:21:54.681564+00:00",
+    "status": 200,
+    "bytes": 3482,
+    "sha256": "c83c06d43dbc59c2d535bc3238b58bfa26aa83bc4420e3e6e56d1664327c44d6"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032/flclash/claude-google.js",
+    "revision": "b9d9f8ab6687401f7588dfa7d7023cd58ffb4032",
+    "file": "flclash/claude-google.js",
+    "local_path": "after/flclash/claude-google.js",
+    "retrieved_at_utc": "2026-10-21T05:21:54.742033+00:00",
+    "status": 200,
+    "bytes": 3922,
+    "sha256": "bcf236a8fe75895d5336f9bb80981598df3af9765154345c6e2d4a8820d749a7"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032/scripts/check_templates.py",
+    "revision": "b9d9f8ab6687401f7588dfa7d7023cd58ffb4032",
+    "file": "scripts/check_templates.py",
+    "local_path": "after/scripts/check_templates.py",
+    "retrieved_at_utc": "2026-10-21T05:21:54.561256+00:00",
+    "status": 200,
+    "bytes": 4369,
+    "sha256": "bf34a3070edaf5d6fc31cfd5bd776e23d5e9734ac17e6abfcf7a63607360b4de"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/b9d9f8ab6687401f7588dfa7d7023cd58ffb4032/shadowrocket/one-exit.module",
+    "revision": "b9d9f8ab6687401f7588dfa7d7023cd58ffb4032",
+    "file": "shadowrocket/one-exit.module",
+    "local_path": "after/shadowrocket/one-exit.module",
+    "retrieved_at_utc": "2026-10-21T05:21:54.574797+00:00",
+    "status": 200,
+    "bytes": 1738,
+    "sha256": "900fd8ec84faec1fd605514f29ff15f52101f39bc225db50cecd74c45f26a8ec"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9/README.md",
+    "revision": "1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9",
+    "file": "README.md",
+    "local_path": "before/README.md",
+    "retrieved_at_utc": "2026-10-21T05:21:54.769530+00:00",
+    "status": 200,
+    "bytes": 4071,
+    "sha256": "42916d08ffa67a5af1dc41e07bcbb2191aed66918b5ff41715b0e5fde10ee1d5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9/clash-party/override.yaml",
+    "revision": "1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9",
+    "file": "clash-party/override.yaml",
+    "local_path": "before/clash-party/override.yaml",
+    "retrieved_at_utc": "2026-10-21T05:21:55.203739+00:00",
+    "status": 200,
+    "bytes": 2521,
+    "sha256": "16c0f581c3ebab91dc8abfeac016690c39c89137e580cc30325b517a2c408324"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9/flclash/claude-google.js",
+    "revision": "1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9",
+    "file": "flclash/claude-google.js",
+    "local_path": "before/flclash/claude-google.js",
+    "retrieved_at_utc": "2026-10-21T05:21:55.268321+00:00",
+    "status": 200,
+    "bytes": 3065,
+    "sha256": "1808a53645f06365a07a2f733009a18cc6e5d5201a117ddc132e7f3b5569c14a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9/scripts/check_templates.py",
+    "revision": "1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9",
+    "file": "scripts/check_templates.py",
+    "local_path": "before/scripts/check_templates.py",
+    "retrieved_at_utc": "2026-10-21T05:21:55.464200+00:00",
+    "status": 200,
+    "bytes": 4227,
+    "sha256": "5590f2297a8a1b2c7e5de6ed5613a301f9501fd3c106dc6194d86e15738d410b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wquguru/one-exit/1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9/shadowrocket/one-exit.module",
+    "revision": "1ae4bfbec26ecbf1f310c8ca9cedf8aba5ca18c9",
+    "file": "shadowrocket/one-exit.module",
+    "local_path": "before/shadowrocket/one-exit.module",
+    "retrieved_at_utc": "2026-10-21T05:21:55.281646+00:00",
+    "status": 200,
+    "bytes": 811,
+    "sha256": "ea974220a233e83fd8aecfdf734a6e708812926a126c4d01a6eaec8c753591af"
+  }
+]

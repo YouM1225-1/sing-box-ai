@@ -1,0 +1,1937 @@
+{
+  "before": {
+    "clash-party/override.yaml": [
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.ai",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 36
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 37
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "clau.de",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 38
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "anthropic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 39
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claudeusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 40
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "modelcontextprotocol.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 41
+      },
+      {
+        "type": "IP-CIDR",
+        "value": "160.79.104.0/21",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 42
+      },
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0::/48",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 43
+      },
+      {
+        "type": "IP-ASN",
+        "value": "399358",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 44
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "google.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 46
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleapis.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 47
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gstatic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 48
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gmail.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 49
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 50
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "recaptcha.net",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 51
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "withpersona.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 53
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "webshare.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 55
+      }
+    ],
+    "shadowrocket/one-exit.module": [
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.ai",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 5
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 6
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "clau.de",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 7
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "anthropic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 8
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claudeusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 9
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "modelcontextprotocol.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 10
+      },
+      {
+        "type": "IP-CIDR",
+        "value": "160.79.104.0/21",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 11
+      },
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0::/48",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 12
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "google.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 14
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleapis.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 15
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gstatic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 16
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gmail.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 17
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 18
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "recaptcha.net",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 19
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "withpersona.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 21
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "webshare.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 23
+      }
+    ],
+    "flclash/claude-google.js": [
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "clau.de",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 46
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "anthropic",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 47
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "claude",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 48
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "modelcontextprotocol",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 49
+      },
+      {
+        "type": "IP-CIDR",
+        "value": "160.79.104.0/21",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 50
+      },
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0::/48",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 51
+      },
+      {
+        "type": "IP-ASN",
+        "value": "399358",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 52
+      },
+      {
+        "type": "PROCESS-NAME",
+        "value": "com.anthropic.claude",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 53
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "webshare.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 54
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "google.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 56
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleapis.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 57
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gstatic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 58
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 59
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gmail.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 60
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "recaptcha.net",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 61
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "withpersona.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 62
+      },
+      {
+        "type": "PROCESS-NAME",
+        "value": "com.android.vending",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 63
+      },
+      {
+        "type": "PROCESS-NAME",
+        "value": "com.google.android.apps.walletnfcrel",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 64
+      }
+    ]
+  },
+  "after": {
+    "clash-party/override.yaml": [
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0::/48",
+        "action": "REJECT",
+        "no_resolve": true,
+        "line": 37
+      },
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0:11::/48",
+        "action": "REJECT",
+        "no_resolve": true,
+        "line": 38
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.ai",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 39
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 40
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "clau.de",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 41
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "anthropic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 42
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claudeusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 43
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claudemcpcontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 44
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "modelcontextprotocol.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 45
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "anthropic",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 46
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "claude",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 47
+      },
+      {
+        "type": "IP-CIDR",
+        "value": "160.79.104.0/21",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 48
+      },
+      {
+        "type": "IP-ASN",
+        "value": "399358",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 49
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "sentry.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 50
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "browser-intake",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 51
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "datadoghq.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 52
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "growthbook.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 53
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "usefathom.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 54
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "hcaptcha.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 55
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripe.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 56
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripe.network",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 57
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripecdn.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 58
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "intercom.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 59
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "intercomcdn.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 60
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "challenges.cloudflare.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 61
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "siftscience.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 62
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "segment.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 63
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "google.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 65
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleapis.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 66
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gstatic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 67
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gmail.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 68
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 69
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "recaptcha.net",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 70
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "withpersona.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 72
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "webshare.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 74
+      }
+    ],
+    "shadowrocket/one-exit.module": [
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0::/48",
+        "action": "REJECT",
+        "no_resolve": true,
+        "line": 6
+      },
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0:11::/48",
+        "action": "REJECT",
+        "no_resolve": true,
+        "line": 7
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.ai",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 8
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claude.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 9
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "clau.de",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 10
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "anthropic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 11
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claudeusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 12
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claudemcpcontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 13
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "modelcontextprotocol.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 14
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "anthropic",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 15
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "claude",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 16
+      },
+      {
+        "type": "IP-CIDR",
+        "value": "160.79.104.0/21",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 17
+      },
+      {
+        "type": "IP-ASN",
+        "value": "399358",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 18
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "sentry.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 19
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "browser-intake",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 20
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "datadoghq.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 21
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "growthbook.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 22
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "usefathom.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 23
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "hcaptcha.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 24
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripe.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 25
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripe.network",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 26
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripecdn.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 27
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "intercom.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 28
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "intercomcdn.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 29
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "challenges.cloudflare.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 30
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "siftscience.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 31
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "segment.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 32
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "google.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 34
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleapis.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 35
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gstatic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 36
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gmail.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 37
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 38
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "recaptcha.net",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 39
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "withpersona.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 41
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "webshare.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 43
+      }
+    ],
+    "flclash/claude-google.js": [
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0::/48",
+        "action": "REJECT",
+        "no_resolve": true,
+        "line": 47
+      },
+      {
+        "type": "IP-CIDR6",
+        "value": "2607:6bc0:11::/48",
+        "action": "REJECT",
+        "no_resolve": true,
+        "line": 48
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "clau.de",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 49
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "claudemcpcontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 50
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "anthropic",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 51
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "claude",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 52
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "modelcontextprotocol",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 53
+      },
+      {
+        "type": "DOMAIN-KEYWORD",
+        "value": "browser-intake",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 54
+      },
+      {
+        "type": "IP-CIDR",
+        "value": "160.79.104.0/21",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 55
+      },
+      {
+        "type": "IP-ASN",
+        "value": "399358",
+        "action": "SG_Residential",
+        "no_resolve": true,
+        "line": 56
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "sentry.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 57
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "datadoghq.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 58
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "growthbook.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 59
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "usefathom.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 60
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "hcaptcha.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 61
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripe.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 62
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripe.network",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 63
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "stripecdn.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 64
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "intercom.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 65
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "intercomcdn.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 66
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "challenges.cloudflare.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 67
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "siftscience.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 68
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "segment.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 69
+      },
+      {
+        "type": "PROCESS-NAME",
+        "value": "com.anthropic.claude",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 70
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "webshare.io",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 71
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "google.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 73
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleapis.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 74
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gstatic.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 75
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "googleusercontent.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 76
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "gmail.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 77
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "recaptcha.net",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 78
+      },
+      {
+        "type": "DOMAIN-SUFFIX",
+        "value": "withpersona.com",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 79
+      },
+      {
+        "type": "PROCESS-NAME",
+        "value": "com.android.vending",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 80
+      },
+      {
+        "type": "PROCESS-NAME",
+        "value": "com.google.android.apps.walletnfcrel",
+        "action": "SG_Residential",
+        "no_resolve": false,
+        "line": 81
+      }
+    ]
+  },
+  "union": [
+    {
+      "type": "IP-CIDR6",
+      "value": "2607:6bc0::/48",
+      "action": "REJECT",
+      "no_resolve": true,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 37,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 6,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 47,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "IP-CIDR6",
+      "value": "2607:6bc0:11::/48",
+      "action": "REJECT",
+      "no_resolve": true,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 38,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 7,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 48,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claude.ai",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 39,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 8,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claude.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 40,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 9,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "clau.de",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 41,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 10,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 49,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "anthropic.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 42,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 11,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claudeusercontent.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 43,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 12,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claudemcpcontent.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 44,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 13,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 50,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "modelcontextprotocol.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 45,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 14,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "anthropic",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 46,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 15,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 51,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "claude",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 47,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 16,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 52,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "IP-CIDR",
+      "value": "160.79.104.0/21",
+      "action": "SG_Residential",
+      "no_resolve": true,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 48,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 17,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 55,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "IP-ASN",
+      "value": "399358",
+      "action": "SG_Residential",
+      "no_resolve": true,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 49,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 18,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 56,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "sentry.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 50,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 19,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 57,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "browser-intake",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 51,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 20,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 54,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "datadoghq.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 52,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 21,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 58,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "growthbook.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 53,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 22,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 59,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "usefathom.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 54,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 23,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 60,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "hcaptcha.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 55,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 24,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 61,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 56,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 25,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 62,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.network",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 57,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 26,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 63,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripecdn.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 58,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 27,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 64,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercom.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 59,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 28,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 65,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercomcdn.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 60,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 29,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 66,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "challenges.cloudflare.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 61,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 30,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 67,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "siftscience.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 62,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 31,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 68,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "segment.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 63,
+          "added_in_this_template": true
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 32,
+          "added_in_this_template": true
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 69,
+          "added_in_this_template": true
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "google.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 65,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 34,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 73,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "googleapis.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 66,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 35,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 74,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "gstatic.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 67,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 36,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 75,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "gmail.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 68,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 37,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 77,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "googleusercontent.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 69,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 38,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 76,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "recaptcha.net",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 70,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 39,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 78,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "withpersona.com",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 72,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 41,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 79,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "webshare.io",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "clash-party/override.yaml",
+          "line": 74,
+          "added_in_this_template": false
+        },
+        {
+          "file": "shadowrocket/one-exit.module",
+          "line": 43,
+          "added_in_this_template": false
+        },
+        {
+          "file": "flclash/claude-google.js",
+          "line": 71,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "modelcontextprotocol",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "flclash/claude-google.js",
+          "line": 53,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "PROCESS-NAME",
+      "value": "com.anthropic.claude",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "flclash/claude-google.js",
+          "line": 70,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "PROCESS-NAME",
+      "value": "com.android.vending",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "flclash/claude-google.js",
+          "line": 80,
+          "added_in_this_template": false
+        }
+      ]
+    },
+    {
+      "type": "PROCESS-NAME",
+      "value": "com.google.android.apps.walletnfcrel",
+      "action": "SG_Residential",
+      "no_resolve": false,
+      "templates": [
+        {
+          "file": "flclash/claude-google.js",
+          "line": 81,
+          "added_in_this_template": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "url": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358",
+  "final_url": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS399358",
+  "status": 200,
+  "retrieved_at": "2026-10-20T15:41:50.664146+00:00",
+  "sha256": "755ed215cbaff8fda4f24a391bf1767d509abde2f2a298d76a05b0683b443e43",
+  "bytes": 986,
+  "content_type": "application/json; charset=utf-8",
+  "body": {
+    "messages": [
+      [
+        "info",
+        "Results exclude routes with very low visibility (less than 10 RIS full-feed peers seeing)."
+      ]
+    ],
+    "see_also": [],
+    "version": "1.2",
+    "data_call_name": "announced-prefixes",
+    "data_call_status": "supported",
+    "cached": true,
+    "query_id": "20261020154151-3d1f7031-a80c-4a08-8534-6b571854528a",
+    "process_time": 6,
+    "server_id": "app174",
+    "build_version": "v0.12.0-2026.10.20",
+    "pipeline": "1473439",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-10-20T15:41:51.714236",
+    "data": {
+      "prefixes": [
+        {
+          "prefix": "160.79.104.0/23",
+          "timelines": [
+            {
+              "starttime": "2026-10-06T08:00:00",
+              "endtime": "2026-10-20T08:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "2607:6bc0:11::/48",
+          "timelines": [
+            {
+              "starttime": "2026-10-06T08:00:00",
+              "endtime": "2026-10-20T08:00:00"
+            }
+          ]
+        },
+        {
+          "prefix": "2607:6bc0::/48",
+          "timelines": [
+            {
+              "starttime": "2026-10-06T08:00:00",
+              "endtime": "2026-10-20T08:00:00"
+            }
+          ]
+        }
+      ],
+      "query_starttime": "2026-10-06T08:00:00",
+      "query_endtime": "2026-10-20T08:00:00",
+      "resource": "399358",
+      "latest_time": "2026-10-20T08:00:00",
+      "earliest_time": "2000-08-01T00:00:00"
+    }
+  },
+  "coverage": [
+    {
+      "type": "ip_cidr",
+      "value": "160.79.104.0/23",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "160.79.104.0/21",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "type": "ip_cidr",
+      "value": "2607:6bc0:11::/48",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "type": "ip_cidr",
+      "value": "2607:6bc0::/48",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32",
+          "artifact": "anthropic"
+        }
+      ]
+    }
+  ]
+}

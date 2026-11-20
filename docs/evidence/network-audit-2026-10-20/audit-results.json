@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "audit_date": "2026-10-20",
+  "completed_at_utc": "2026-10-20T15:48:25.033998+00:00",
+  "repository_head": "ad7c86f9e36c4be232a1523b030e6de46efba191",
+  "comparison_release": "v0.1.6",
+  "remote_latest": "v0.1.6",
+  "conclusion": "No new confirmed domains or IPs requiring addition for the currently selected client features in the checked sources.",
+  "openai": {
+    "main_count": 31,
+    "main_covered": 31,
+    "main_added": [],
+    "main_removed": [],
+    "websocket_covered": 2,
+    "voice_count": 23,
+    "voice_added": [],
+    "voice_removed": [],
+    "voice_bytes_unchanged": true,
+    "codex_hosts_checked": 8,
+    "codex_hosts_covered": 8
+  },
+  "claude": {
+    "domain_facts": 44,
+    "covered": 43,
+    "optional_not_selected": [
+      "*-review.googlesource.com"
+    ],
+    "network_config_added": [],
+    "network_config_removed": [],
+    "desktop_added": [],
+    "desktop_removed": [
+      "a-cdn.claude.ai"
+    ],
+    "api_ip_document_bytes_unchanged": true,
+    "announced_prefixes_count": 3,
+    "announced_prefixes_all_covered": true
+  },
+  "github": {
+    "sources": 4,
+    "openai_entries_each": 24,
+    "openai_covered": 23,
+    "anthropic_entries_each": 9,
+    "anthropic_covered": 9,
+    "known_unselected_difference": [
+      "openai.org"
+    ],
+    "new_merged_domains_since_previous_audit": [],
+    "ownership_evidence_update_url": "https://github.com/v2fly/domain-list-community/pull/4149#issuecomment-6271665917",
+    "existing_unmerged_telemetry_candidate": "o33249.ingest.us.sentry.io"
+  },
+  "validation": {
+    "released_srs_downloads": 3,
+    "all_match_local_and_github_digest": true,
+    "decompiled_semantics_match": true,
+    "native_witnesses": 164,
+    "native_witnesses_all_expected": true,
+    "runtime_logged_in_testing": false
+  },
+  "mutations": {
+    "rule_sources": false,
+    "artifacts": false,
+    "dist": false,
+    "publication": false,
+    "only_new_audit_documents": true
+  },
+  "graft": {
+    "calls": 4,
+    "reported_tokens_saved": 88435
+  },
+  "evidence": {
+    "baseline": "baseline.json",
+    "release_verification": "released-assets-verification.json",
+    "openai": "openai/official-facts.json",
+    "claude": "claude/coverage.json",
+    "github": "github/comparison-v0.1.6.json",
+    "native": [
+      "openai-native-matches.json",
+      "codex-native-matches.json",
+      "claude-native-matches.json",
+      "github-native-matches.json"
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "checked_on": "2026-11-12",
+  "local_release": "v0.1.12",
+  "field_counts": {
+    "domain": 23,
+    "domain_keyword": 3,
+    "domain_suffix": 22,
+    "ip_cidr": 4
+  },
+  "destination_inventory_entries": 52,
+  "source_entries": 2,
+  "all_domain_scope_counts": {
+    "full": 17,
+    "no_dedicated_rule": 7,
+    "partial": 8
+  },
+  "new_domain_scope_counts": {
+    "full": 11,
+    "partial": 6
+  },
+  "domain_rows": [
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claude.ai",
+      "status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claude.com",
+      "status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "clau.de",
+      "status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "anthropic.com",
+      "status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claudeusercontent.com",
+      "status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claudemcpcontent.com",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "modelcontextprotocol.io",
+      "status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "anthropic",
+      "status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "claude",
+      "status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "sentry.io",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "browser-intake",
+      "status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "datadoghq.com",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "growthbook.io",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "usefathom.com",
+      "status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "hcaptcha.com",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.com",
+      "status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.network",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripecdn.com",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercom.io",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercomcdn.com",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "challenges.cloudflare.com",
+      "status": "partial",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "siftscience.com",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "segment.io",
+      "status": "full",
+      "new_in_any_template": true
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "google.com",
+      "status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "googleapis.com",
+      "status": "partial",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "gstatic.com",
+      "status": "partial",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "gmail.com",
+      "status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "googleusercontent.com",
+      "status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "recaptcha.net",
+      "status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "withpersona.com",
+      "status": "full",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "webshare.io",
+      "status": "no_dedicated_rule",
+      "new_in_any_template": false
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "modelcontextprotocol",
+      "status": "no_dedicated_rule",
+      "new_in_any_template": false
+    }
+  ],
+  "template_checks": [
+    {
+      "file": "clash-party/override.yaml",
+      "sha256": "c83c06d43dbc59c2d535bc3238b58bfa26aa83bc4420e3e6e56d1664327c44d6",
+      "archive_equal": true
+    },
+    {
+      "file": "flclash/claude-google.js",
+      "sha256": "bcf236a8fe75895d5336f9bb80981598df3af9765154345c6e2d4a8820d749a7",
+      "archive_equal": true
+    },
+    {
+      "file": "shadowrocket/one-exit.module",
+      "sha256": "900fd8ec84faec1fd605514f29ff15f52101f39bc225db50cecd74c45f26a8ec",
+      "archive_equal": true
+    }
+  ],
+  "domain_witnesses": 256,
+  "ip_witnesses": 26,
+  "native_cases": 728,
+  "native_failures": 0,
+  "protected_files_unchanged": 114,
+  "srs_hashes": {
+    "anthropic": "19ba1228b9b664d1cff15b510e4b6c56e710e37c05aba6231c27c9efe6ac807b",
+    "anthropic-ip": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+  },
+  "harness_source_sha256": "0844ba1e18360d6834319da35582ca107f3c653402a7bed0919d69129a929af7",
+  "go_version": "go version go1.27.1 darwin/arm64",
+  "limitations": [
+    "Local release verified against manifest and dist; no remote release download.",
+    "Native headless matching only, not consumer DNS, route priority, exit IP, payment, identity verification or IPv4 fallback.",
+    "Scope containment excludes incidental cross-keyword overlap and is not an enumeration of all domains.",
+    "No upstream script was executed. No product rules were changed."
+  ]
+}

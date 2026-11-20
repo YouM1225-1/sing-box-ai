@@ -1,0 +1,73 @@
+{
+  "url": "https://support.claude.com/en/",
+  "final_url": "https://support.claude.com/en/",
+  "status": 200,
+  "retrieved_at": "2026-10-20T15:41:50.664244+00:00",
+  "sha256": "d00bbc7897f0f88486133293fbfbbd362bc6fc694ec65a076a5e252d9c567567",
+  "bytes": 201373,
+  "content_type": "text/html; charset=utf-8",
+  "observed_intercom_hosts": [
+    "api-iam.intercom.io",
+    "downloads.intercomcdn.com",
+    "static.intercomassets.com",
+    "widget.intercom.io"
+  ],
+  "facts": [
+    {
+      "document_value": "api-iam.intercom.io",
+      "type": "domain",
+      "value": "api-iam.intercom.io",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "downloads.intercomcdn.com",
+      "type": "domain",
+      "value": "downloads.intercomcdn.com",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercomcdn.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "static.intercomassets.com",
+      "type": "domain",
+      "value": "static.intercomassets.com",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain",
+          "value": "static.intercomassets.com",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "document_value": "widget.intercom.io",
+      "type": "domain",
+      "value": "widget.intercom.io",
+      "scope": "observed-optional-support-widget",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "domain_suffix",
+          "value": "intercom.io",
+          "artifact": "anthropic"
+        }
+      ]
+    }
+  ]
+}

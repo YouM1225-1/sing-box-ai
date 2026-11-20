@@ -1,0 +1,87 @@
+{
+  "verified_at_utc": "2026-10-20T15:46:14.029489+00:00",
+  "checks": [
+    {
+      "artifact": "openai.srs",
+      "entry": "chatgpt.com",
+      "witness": "chatgpt.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://learn.chatgpt.com/docs/codex/cli",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "entry": "releases.openai.com",
+      "witness": "releases.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://chatgpt.com/codex/install.sh",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "entry": "api.github.com",
+      "witness": "api.github.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://chatgpt.com/codex/install.sh",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "entry": "github.com",
+      "witness": "github.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://chatgpt.com/codex/install.sh",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "entry": "release-assets.githubusercontent.com",
+      "witness": "release-assets.githubusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-aarch64-apple-darwin.tar.gz",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "entry": "registry.npmjs.org",
+      "witness": "registry.npmjs.org",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://registry.npmjs.org/@openai%2Fcodex/latest",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "entry": "api.openai.com",
+      "witness": "api.openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "entry": "codex-cloud-environments.chatgpt.com",
+      "witness": "codex-cloud-environments.chatgpt.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "source_url": "https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted",
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    }
+  ],
+  "count": 8,
+  "passed": true
+}

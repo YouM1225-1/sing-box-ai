@@ -7,6 +7,7 @@ import subprocess
 import tempfile
 
 from common import ARTIFACTS, ROOT, archives, canonical, compiler, date, input_files, load, need, run, sha, source_document, write_json
+from export_unifi import write_exports
 
 
 def build(output, mode="release", review_as_of=None, root=ROOT):
@@ -42,6 +43,8 @@ def build(output, mode="release", review_as_of=None, root=ROOT):
             "validation": None, "publication_approval": None, "deployment_status": "pending",
             "validated_consumers": [], "integration_evidence": [],
         }
+        write_exports(stage, manifest, stage / "unifi")
+        manifest["unifi_export_sha256"] = sha(stage / "unifi/manifest.json")
         write_json(stage / "manifest.json", manifest)
         os.rename(stage, output)
     finally:

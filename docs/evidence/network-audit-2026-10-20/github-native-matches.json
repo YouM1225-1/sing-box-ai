@@ -1,0 +1,337 @@
+{
+  "verified_at_utc": "2026-10-20T15:45:10.279977+00:00",
+  "checks": [
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "browser-intake-datadoghq.com",
+      "witness": "browser-intake-datadoghq.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "o33249.ingest.sentry.io",
+      "witness": "o33249.ingest.sentry.io",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openai.qualtrics.com",
+      "witness": "openai.qualtrics.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openaiapi-site.azureedge.net",
+      "witness": "openaiapi-site.azureedge.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openaiassets.blob.core.windows.net",
+      "witness": "openaiassets.blob.core.windows.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+      "witness": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openaicom.imgix.net",
+      "witness": "openaicom.imgix.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openaicomproductionae4b.blob.core.windows.net",
+      "witness": "openaicomproductionae4b.blob.core.windows.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "production-openaicom-storage.azureedge.net",
+      "witness": "production-openaicom-storage.azureedge.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "chat.com",
+      "witness": "chat.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "chatgpt.com",
+      "witness": "chatgpt.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "chatgpt.livekit.cloud",
+      "witness": "chatgpt.livekit.cloud",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "chatgpt.site",
+      "witness": "chatgpt.site",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "crixet.com",
+      "witness": "crixet.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "host.livekit.cloud",
+      "witness": "host.livekit.cloud",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "oaistatic.com",
+      "witness": "oaistatic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "oaistatsig.com",
+      "witness": "oaistatsig.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "oaiusercontent.com",
+      "witness": "oaiusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openai.com",
+      "witness": "openai.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openai.com.cdn.cloudflare.net",
+      "witness": "openai.com.cdn.cloudflare.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "openai.org",
+      "witness": "openai.org",
+      "matched": false,
+      "expected": false,
+      "passed": true,
+      "native_output": ""
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "sora.com",
+      "witness": "sora.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "turn.livekit.cloud",
+      "witness": "turn.livekit.cloud",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "openai.srs",
+      "category": "github-upstream-rule",
+      "entry": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$",
+      "witness": "chatgpt-async-webps-prod-a-1.webpubsub.azure.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_regex=^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$ ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "servd-anthropic-website.b-cdn.net",
+      "witness": "servd-anthropic-website.b-cdn.net",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "anthropic.com",
+      "witness": "anthropic.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "clau.de",
+      "witness": "clau.de",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "claude.ai",
+      "witness": "claude.ai",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "claude.com",
+      "witness": "claude.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "claude.dev",
+      "witness": "claude.dev",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "claudemcpclient.com",
+      "witness": "claudemcpclient.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "claudemcpcontent.com",
+      "witness": "claudemcpcontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    },
+    {
+      "artifact": "anthropic.srs",
+      "category": "github-upstream-rule",
+      "entry": "claudeusercontent.com",
+      "witness": "claudeusercontent.com",
+      "matched": true,
+      "expected": true,
+      "passed": true,
+      "native_output": "match rules.[0]: domain/domain_suffix=<binary> domain_keyword=[datadog sentry sift] ip_cidr=<binary>"
+    }
+  ],
+  "count": 33,
+  "passed": true
+}

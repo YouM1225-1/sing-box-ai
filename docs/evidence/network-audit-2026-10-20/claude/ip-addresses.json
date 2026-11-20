@@ -1,0 +1,81 @@
+{
+  "url": "https://platform.claude.com/docs/en/api/ip-addresses.md",
+  "final_url": "https://platform.claude.com/docs/en/api/ip-addresses.md",
+  "status": 200,
+  "retrieved_at": "2026-10-20T15:41:50.664039+00:00",
+  "sha256": "c3c62f43f063a10547c0102fc74a5398b7e396c65a3669cce2973a2a8c73f472",
+  "bytes": 1462,
+  "content_type": "text/markdown; charset=utf-8",
+  "facts": [
+    {
+      "value": "160.79.104.0/23",
+      "type": "ip_cidr",
+      "direction": "destination",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "160.79.104.0/21",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "value": "2607:6bc0::/48",
+      "type": "ip_cidr",
+      "direction": "destination",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "ip_cidr",
+          "value": "2607:6bc0::/32",
+          "artifact": "anthropic"
+        }
+      ]
+    },
+    {
+      "value": "160.79.104.0/21",
+      "type": "source_ip_cidr",
+      "direction": "source",
+      "covered": true,
+      "covering_rules": [
+        {
+          "type": "source_ip_cidr",
+          "value": "160.79.104.0/21",
+          "artifact": "anthropic-ip"
+        }
+      ]
+    }
+  ],
+  "phased_out": [
+    {
+      "value": "34.162.46.92/32",
+      "present_as_destination": false,
+      "present_as_source": false
+    },
+    {
+      "value": "34.162.102.82/32",
+      "present_as_destination": false,
+      "present_as_source": false
+    },
+    {
+      "value": "34.162.136.91/32",
+      "present_as_destination": false,
+      "present_as_source": false
+    },
+    {
+      "value": "34.162.142.92/32",
+      "present_as_destination": false,
+      "present_as_source": false
+    },
+    {
+      "value": "34.162.183.95/32",
+      "present_as_destination": false,
+      "present_as_source": false
+    }
+  ],
+  "aws_endpoint_pattern": "aws-external-anthropic.{region}.api.aws",
+  "aws_endpoint_scope": "separate cloud-provider deployment; AWS destination IP ranges are not Anthropic API ranges",
+  "full_page_redistributed": false,
+  "same_original_response_as_2026_09_27": true
+}

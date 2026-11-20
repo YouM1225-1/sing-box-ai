@@ -1,0 +1,2242 @@
+{
+  "checked_at": "2026-11-10T06:12:59.892276+00:00",
+  "source_url": "https://gist.githubusercontent.com/janlay/bec3cade3361678d975a8394d54515c6/raw/loc-sens-clash.txt",
+  "source_sha256": "1041eadb8cbe529337c70343b7f791e6247e1fdd5bc0361f1ce6ad2a715ae797",
+  "version": "0.1.10",
+  "raw_count": 48,
+  "unique_count": 47,
+  "summary": {
+    "none": 30,
+    "full": 15,
+    "partial": 2
+  },
+  "artifact_checks": {
+    "anthropic": {
+      "sha256": "e12a2a365d9ccd7092e5ed08e529402585091c0c4aad20a17e91281971f551f0",
+      "same_release_srs": true,
+      "same_release_rules": true
+    },
+    "openai": {
+      "sha256": "5068d4d1a9c4550b803a887f03e7e91e647299007d02840fa8a4c38f5aa39c55",
+      "same_release_srs": true,
+      "same_release_rules": true
+    },
+    "anthropic-ip": {
+      "sha256": "9f3f914eb510bd19892581295400cc42f07199e6045a8718e81d0c8a0b7f684c",
+      "same_release_srs": true,
+      "same_release_rules": true
+    }
+  },
+  "rows": [
+    {
+      "type": "DOMAIN",
+      "value": "ai.google.dev",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "ai.google.dev": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "aistudio.google.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "aistudio.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "alkalicore-pa.clients6.google.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "alkalicore-pa.clients6.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "api.segment.io",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "segment.io"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "api.segment.io": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "segment.io"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "bard.google.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "bard.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "fcmtoken.googleapis.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain",
+              "value": "fcmtoken.googleapis.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "fcmtoken.googleapis.com": {
+          "anthropic": [
+            {
+              "type": "domain",
+              "value": "fcmtoken.googleapis.com"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "gemini.google.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "gemini.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "generativelanguage.googleapis.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "generativelanguage.googleapis.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "proactivebackend-pa.googleapis.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "proactivebackend-pa.googleapis.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "phonedeviceverification-pa.googleapis.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "phonedeviceverification-pa.googleapis.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "api.revenuecat.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "api.revenuecat.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "notebooklm.google",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "notebooklm.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.notebooklm.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.notebooklm.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notnotebooklm.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notebooklm.google.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "datadog.pool.ntp.org",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "datadog.pool.ntp.org": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.datadog.pool.ntp.org": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.datadog.pool.ntp.org": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notdatadog.pool.ntp.org": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "datadog.pool.ntp.org.invalid": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "deepmind.google",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "deepmind.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.deepmind.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.deepmind.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notdeepmind.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "deepmind.google.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "geller-pa.googleapis.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "geller-pa.googleapis.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.geller-pa.googleapis.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.geller-pa.googleapis.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notgeller-pa.googleapis.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "geller-pa.googleapis.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "generativeai.google",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "generativeai.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.generativeai.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.generativeai.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notgenerativeai.google": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "generativeai.google.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "makersuite.google.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "makersuite.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.makersuite.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.makersuite.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notmakersuite.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "makersuite.google.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "notebooklm.google.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "notebooklm.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.notebooklm.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.notebooklm.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notnotebooklm.google.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notebooklm.google.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.com",
+      "occurrences": 2,
+      "status": "partial",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "partial",
+          "rules": [
+            {
+              "type": "domain",
+              "value": "r.stripe.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "partial",
+          "rules": [
+            {
+              "type": "domain",
+              "value": "js.stripe.com"
+            }
+          ]
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "stripe.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.stripe.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.stripe.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notstripe.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "stripe.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "r.stripe.com": {
+          "anthropic": [
+            {
+              "type": "domain",
+              "value": "r.stripe.com"
+            }
+          ]
+        },
+        "js.stripe.com": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "js.stripe.com"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "hcaptcha.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "hcaptcha.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "hcaptcha.com": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "hcaptcha.com"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.hcaptcha.com": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "hcaptcha.com"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.hcaptcha.com": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "hcaptcha.com"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "nothcaptcha.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "hcaptcha.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "www2.deepl.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "www2.deepl.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "cdn.oaiusercontent.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "oaiusercontent.com"
+            }
+          ]
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "cdn.oaiusercontent.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "oaiusercontent.com"
+            }
+          ],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "probe.icloud.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "probe.icloud.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "mask-api.icloud.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "mask-api.icloud.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "apple-relay.apple.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "apple-relay.apple.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "configuration.ls.apple.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "configuration.ls.apple.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "starling.zijieapi.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "starling.zijieapi.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "prodregistryv2.org",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "prodregistryv2.org": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "integrate.api.nvidia.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "integrate.api.nvidia.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN",
+      "value": "browser-intake-us5-datadoghq.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "browser-intake-us5-datadoghq.com": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "datadog"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "ai.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "ai.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.ai.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.ai.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notai.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "ai.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "anthropic.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "anthropic.com": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.anthropic.com": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.anthropic.com": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "anthropic.com"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notanthropic.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "anthropic.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "bing.com",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "bing.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.bing.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.bing.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notbing.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "bing.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "chat.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "chat.com"
+            }
+          ]
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "chat.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "chat.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "probe.chat.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "chat.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "b.a.chat.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "chat.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "notchat.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "chat.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "chatgpt.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "chatgpt.com"
+            }
+          ]
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "chatgpt.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "chatgpt.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "probe.chatgpt.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "chatgpt.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "b.a.chatgpt.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "chatgpt.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "notchatgpt.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "chatgpt.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "claude.ai",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "claude.ai": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.claude.ai": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.claude.ai": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "claude.ai"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notclaude.ai": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "claude.ai.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "cursor.sh",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "cursor.sh": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.cursor.sh": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.cursor.sh": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notcursor.sh": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "cursor.sh.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "ingest.us.sentry.io",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_keyword",
+              "value": "sentry"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "ingest.us.sentry.io": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sentry"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.ingest.us.sentry.io": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sentry"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.ingest.us.sentry.io": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sentry"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notingest.us.sentry.io": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sentry"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "ingest.us.sentry.io.invalid": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sentry"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "intercom.io",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "intercom.io"
+            }
+          ]
+        },
+        "openai": {
+          "status": "partial",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercom.io"
+            }
+          ]
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "intercom.io": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "intercom.io"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.intercom.io": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "intercom.io"
+            }
+          ],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercom.io"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "b.a.intercom.io": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "intercom.io"
+            }
+          ],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": ".intercom.io"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "notintercom.io": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "intercom.io.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "oaistatic.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "oaistatic.com"
+            }
+          ]
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "oaistatic.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "oaistatic.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "probe.oaistatic.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "oaistatic.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "b.a.oaistatic.com": {
+          "anthropic": [],
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "oaistatic.com"
+            }
+          ],
+          "anthropic-ip": []
+        },
+        "notoaistatic.com": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "oaistatic.com.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "siftscience.com",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_keyword",
+              "value": "sift"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "siftscience.com": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sift"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.siftscience.com": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sift"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.siftscience.com": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sift"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notsiftscience.com": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sift"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "siftscience.com.invalid": {
+          "anthropic": [
+            {
+              "type": "domain_keyword",
+              "value": "sift"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-SUFFIX",
+      "value": "stripe.network",
+      "occurrences": 1,
+      "status": "full",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "full",
+          "rules": [
+            {
+              "type": "domain_suffix",
+              "value": "stripe.network"
+            }
+          ]
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "stripe.network": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "stripe.network"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "probe.stripe.network": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "stripe.network"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "b.a.stripe.network": {
+          "anthropic": [
+            {
+              "type": "domain_suffix",
+              "value": "stripe.network"
+            }
+          ],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "notstripe.network": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "stripe.network.invalid": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "openai",
+      "occurrences": 1,
+      "status": "partial",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "partial",
+          "rules": [
+            {
+              "type": "domain",
+              "value": "cdn.openaimerge.com"
+            },
+            {
+              "type": "domain",
+              "value": "openai.qualtrics.com"
+            },
+            {
+              "type": "domain",
+              "value": "openaiapi-site.azureedge.net"
+            },
+            {
+              "type": "domain",
+              "value": "openaiassets.blob.core.windows.net"
+            },
+            {
+              "type": "domain",
+              "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+            },
+            {
+              "type": "domain",
+              "value": "openaicom.imgix.net"
+            },
+            {
+              "type": "domain",
+              "value": "openaicomproductionae4b.blob.core.windows.net"
+            },
+            {
+              "type": "domain",
+              "value": "production-openaicom-storage.azureedge.net"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            },
+            {
+              "type": "domain_suffix",
+              "value": "openai.com.cdn.cloudflare.net"
+            }
+          ]
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "openai.example.org": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "beforeopenaiafter.example.org": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "example.org.openai": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "cdn.openaimerge.com": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "cdn.openaimerge.com"
+            }
+          ]
+        },
+        "openai.qualtrics.com": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "openai.qualtrics.com"
+            }
+          ]
+        },
+        "openaiapi-site.azureedge.net": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "openaiapi-site.azureedge.net"
+            }
+          ]
+        },
+        "openaiassets.blob.core.windows.net": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "openaiassets.blob.core.windows.net"
+            }
+          ]
+        },
+        "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+            }
+          ]
+        },
+        "openaicom.imgix.net": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "openaicom.imgix.net"
+            }
+          ]
+        },
+        "openaicomproductionae4b.blob.core.windows.net": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "openaicomproductionae4b.blob.core.windows.net"
+            }
+          ]
+        },
+        "production-openaicom-storage.azureedge.net": {
+          "openai": [
+            {
+              "type": "domain",
+              "value": "production-openaicom-storage.azureedge.net"
+            }
+          ]
+        },
+        "openai.com": {
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com"
+            }
+          ]
+        },
+        "openai.com.cdn.cloudflare.net": {
+          "openai": [
+            {
+              "type": "domain_suffix",
+              "value": "openai.com.cdn.cloudflare.net"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "DOMAIN-KEYWORD",
+      "value": "siri",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {
+        "siri.example.org": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "beforesiriafter.example.org": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        },
+        "example.org.siri": {
+          "anthropic": [],
+          "openai": [],
+          "anthropic-ip": []
+        }
+      }
+    },
+    {
+      "type": "PROCESS-NAME",
+      "value": "Claude",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {}
+    },
+    {
+      "type": "PROCESS-NAME",
+      "value": "ChatGPT",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {}
+    },
+    {
+      "type": "PROCESS-NAME",
+      "value": "Antigravity",
+      "occurrences": 1,
+      "status": "none",
+      "per_ruleset": {
+        "anthropic": {
+          "status": "none",
+          "rules": []
+        },
+        "openai": {
+          "status": "none",
+          "rules": []
+        },
+        "anthropic-ip": {
+          "status": "none",
+          "rules": []
+        }
+      },
+      "witnesses": {}
+    }
+  ],
+  "ntp": {
+    "datadog.pool.ntp.org": {
+      "anthropic": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "0.datadog.pool.ntp.org": {
+      "anthropic": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "1.datadog.pool.ntp.org": {
+      "anthropic": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "a.b.datadog.pool.ntp.org": {
+      "anthropic": [
+        {
+          "type": "domain_keyword",
+          "value": "datadog"
+        }
+      ],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "pool.ntp.org": {
+      "anthropic": [],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "0.pool.ntp.org": {
+      "anthropic": [],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "time.google.com": {
+      "anthropic": [],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "time.apple.com": {
+      "anthropic": [],
+      "openai": [],
+      "anthropic-ip": []
+    },
+    "time.cloudflare.com": {
+      "anthropic": [],
+      "openai": [],
+      "anthropic-ip": []
+    }
+  }
+}

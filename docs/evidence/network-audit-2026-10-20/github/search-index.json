@@ -1,0 +1,55 @@
+[
+  {
+    "name": "openai",
+    "url": "https://api.github.com/search/issues?q=repo%3Av2fly%2Fdomain-list-community+is%3Apr+openai+updated%3A%3E%3D2026-10-19&per_page=30&sort=updated&order=desc",
+    "retrieved_at": "2026-10-20T15:41:47.971345+00:00",
+    "path": "search-openai.json",
+    "sha256": "f3d0844edf6fce4c34b81c132ccf92c3a80842e47018791e0e343634180056b3",
+    "count": 2,
+    "incomplete_results": false,
+    "items": [
+      {
+        "number": 4149,
+        "title": "Add openai.org to OpenAI domain list",
+        "state": "closed",
+        "updated_at": "2026-10-19T16:09:40Z",
+        "html_url": "https://github.com/v2fly/domain-list-community/pull/4149"
+      },
+      {
+        "number": 4057,
+        "title": "update openai",
+        "state": "open",
+        "updated_at": "2026-10-19T04:04:29Z",
+        "html_url": "https://github.com/v2fly/domain-list-community/pull/4057"
+      }
+    ]
+  },
+  {
+    "name": "anthropic",
+    "url": "https://api.github.com/search/issues?q=repo%3Av2fly%2Fdomain-list-community+is%3Apr+anthropic+updated%3A%3E%3D2026-10-19&per_page=30&sort=updated&order=desc",
+    "retrieved_at": "2026-10-20T15:41:47.971707+00:00",
+    "path": "search-anthropic.json",
+    "sha256": "c9938edecb99d754b2d039ac9eec320a94c769b6a6417921e2dcbef9e2fe01a0",
+    "count": 0,
+    "incomplete_results": false,
+    "items": []
+  },
+  {
+    "name": "claude",
+    "url": "https://api.github.com/search/issues?q=repo%3Av2fly%2Fdomain-list-community+is%3Apr+claude+updated%3A%3E%3D2026-10-19&per_page=30&sort=updated&order=desc",
+    "retrieved_at": "2026-10-20T15:41:47.971829+00:00",
+    "path": "search-claude.json",
+    "sha256": "479dfbf57f1f068fe1e34de94547604c2152a865d0341f941dc30eb80774e785",
+    "count": 1,
+    "incomplete_results": false,
+    "items": [
+      {
+        "number": 4168,
+        "title": "chinamobile, chinatelecom, chinabroadnet: add 3GPP public domains",
+        "state": "open",
+        "updated_at": "2026-10-20T07:00:54Z",
+        "html_url": "https://github.com/v2fly/domain-list-community/pull/4168"
+      }
+    ]
+  }
+]
