@@ -254,6 +254,12 @@
     },
     {
       "artifact": "anthropic",
+      "output": "api.ipify.org",
+      "type": "domain",
+      "value": "api.ipify.org"
+    },
+    {
+      "artifact": "anthropic",
       "output": "api.revenuecat.com",
       "type": "domain",
       "value": "api.revenuecat.com"
@@ -314,6 +320,12 @@
     },
     {
       "artifact": "anthropic",
+      "output": "ipify.org",
+      "type": "domain",
+      "value": "ipify.org"
+    },
+    {
+      "artifact": "anthropic",
       "output": "raw.githubusercontent.com",
       "type": "domain",
       "value": "raw.githubusercontent.com"
@@ -368,6 +380,12 @@
     },
     {
       "artifact": "anthropic",
+      "output": "featuregates.org",
+      "type": "domain_suffix",
+      "value": "featuregates.org"
+    },
+    {
+      "artifact": "anthropic",
       "output": "growthbook.io",
       "type": "domain_suffix",
       "value": "growthbook.io"
@@ -389,6 +407,12 @@
       "output": "intercomcdn.com",
       "type": "domain_suffix",
       "value": "intercomcdn.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "ip.sb",
+      "type": "domain_suffix",
+      "value": "ip.sb"
     },
     {
       "artifact": "anthropic",
@@ -437,14 +461,14 @@
   "export_version": 1,
   "files": {
     "domains.txt": {
-      "bytes": 1306,
-      "entries": 67,
-      "sha256": "dcda5e4a37989e228519a63d7c715921ab59b089257c54c5a24c5944d7f1f7b3"
+      "bytes": 1353,
+      "entries": 71,
+      "sha256": "4d921c1c430d4bb99257d95604374b699a67cd286da7e539bc464ff366e03f55"
     },
     "ipv4.txt": {
-      "bytes": 5960,
-      "entries": 426,
-      "sha256": "2b7e744535891351abf178e4802280542472844f5d8f7fedd7c908d79b912b3d"
+      "bytes": 5976,
+      "entries": 427,
+      "sha256": "01d89a7a8ffd96375ed7175819164f938c852af11fc98695d2a9aec9721493c0"
     },
     "ipv6.txt": {
       "bytes": 15,
@@ -498,11 +522,11 @@
   ],
   "schema": 1,
   "source_artifacts": {
-    "anthropic.json": "9937bd1bf83eabc1a4df0bfb9841302a03854210c816e5cc077c05c64bd5112d",
-    "anthropic.srs": "8482de1a08ceb770344380d94d47ba2e1f6df1ec159f0f771c98c7594f231396",
+    "anthropic.json": "857ca5cfc6e30b6bbd91bf9853ffcb45b4717675f4b01c74883194ac2d16bdc4",
+    "anthropic.srs": "d62a03c44427400c4533f87aa76bbc0b3fcc18e034890e9f2ae724316323e2cc",
     "openai.json": "84f76adbbc3cd2786d921d3d410b28fe05ddebe63a3dc2c9302d093a436ce4b2",
     "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
   },
   "source_build_mode": "release",
-  "source_project_version": "0.1.15"
+  "source_project_version": "0.1.16"
 }

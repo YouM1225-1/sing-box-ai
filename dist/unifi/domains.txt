@@ -1,6 +1,7 @@
 ant.dev
 antspace.dev
 api.github.com
+api.ipify.org
 api.revenuecat.com
 browser-intake-datadoghq.com
 cdn.jsdelivr.net
@@ -18,6 +19,7 @@ code.jquery.com
 crixet.com
 ct.sendgrid.net
 fcmtoken.googleapis.com
+featuregates.org
 fonts.googleapis.com
 fonts.gstatic.com
 formulae.brew.sh
@@ -31,6 +33,8 @@ humb.apple.com
 images.workoscdn.com
 intercom.io
 intercomcdn.com
+ip.sb
+ipify.org
 js.stripe.com
 o207216.ingest.sentry.io
 o33249.ingest.sentry.io
