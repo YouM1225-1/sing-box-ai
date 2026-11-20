@@ -882,3 +882,64 @@
     reference: claude-telemetry-coverage-request
   reason: Explicit maintainer request to record the screenshot destination scope and
     synchronize UniFi.
+
+- value: api.ipify.org
+  type: domain
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-complete-coverage-request
+  reason: Explicit maintainer request to complete the supplied Claude destination
+    rule coverage.
+- value: ipify.org
+  type: domain
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-complete-coverage-request
+  reason: Explicit maintainer request to complete the supplied Claude destination
+    rule coverage.
+- value: featuregates.org
+  type: domain_suffix
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-complete-coverage-request
+  reason: Explicit maintainer request to complete the supplied Claude destination
+    rule coverage.
+- value: ip.sb
+  type: domain_suffix
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-complete-coverage-request
+  reason: Explicit maintainer request to complete the supplied Claude destination
+    rule coverage.
+- value: 153.61.208.0/20
+  type: ip_cidr
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-complete-coverage-request
+  reason: Explicit maintainer request to complete the supplied Claude destination
+    rule coverage.

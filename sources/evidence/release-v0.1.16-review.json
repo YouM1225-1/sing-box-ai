@@ -1,0 +1,78 @@
+{
+  "artifacts": {
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e",
+    "anthropic.srs": "d62a03c44427400c4533f87aa76bbc0b3fcc18e034890e9f2ae724316323e2cc",
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+  },
+  "comparison": {
+    "explicit_source_additions": [
+      {
+        "type": "domain",
+        "value": "api.ipify.org"
+      },
+      {
+        "type": "domain",
+        "value": "ipify.org"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "featuregates.org"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "ip.sb"
+      },
+      {
+        "type": "ip_cidr",
+        "value": "153.61.208.0/20"
+      }
+    ],
+    "from": "0.1.15",
+    "to": "0.1.16",
+    "normalized_fields": {
+      "anthropic": {
+        "domain": [
+          "api.ipify.org",
+          "ipify.org"
+        ],
+        "domain_suffix": [
+          "featuregates.org",
+          "ip.sb"
+        ],
+        "ip_cidr": [
+          "153.61.208.0/20"
+        ]
+      },
+      "anthropic-ip": {},
+      "openai": {}
+    },
+    "srs_identical": false
+  },
+  "conclusion": "The v0.1.16 Anthropic destination artifact adds all five previously uncovered user-requested entries. OpenAI and source-IP artifacts remain byte-identical to v0.1.15. Historical compatibility entries are preserved under the version-bound exception.",
+  "evidence": [
+    {
+      "path": "sources/evidence/claude-complete-coverage-request-2026-11-20.json",
+      "sha256": "1ec7fb6354205999b454bd1a8ff969e4a572e54f0b3affd731a8116577e9b3c9"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.16-preserved-entry-exception.json",
+      "sha256": "8d2e5d5a6cae61a2a86d007f1f21ecd7448938dcd8fecb69c525386583b71c7c"
+    },
+    {
+      "path": "artifacts/v0.1.15/manifest.json",
+      "sha256": "c4a52243caf97b796659cacb954e574ac9d630f4db760d71e36ad84d1826dcd0"
+    },
+    {
+      "path": "tests/fixtures/anthropic-v0.1.15.yaml",
+      "sha256": "902a1d2943e09f92c6230af99788b08d570c1fc620751056be2a2220ba9c285e"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.16",
+  "reviewed_on": "2026-11-20",
+  "reviewer": "Codex primary review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

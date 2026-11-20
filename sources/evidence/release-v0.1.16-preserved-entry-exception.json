@@ -1,0 +1,203 @@
+{
+  "additions": [
+    {
+      "value": "api.ipify.org",
+      "type": "domain",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "direction": "destination",
+      "status": "user-requested",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-complete-coverage-request"
+        }
+      ],
+      "reason": "Explicit maintainer request to complete the supplied Claude destination rule coverage."
+    },
+    {
+      "value": "ipify.org",
+      "type": "domain",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "direction": "destination",
+      "status": "user-requested",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-complete-coverage-request"
+        }
+      ],
+      "reason": "Explicit maintainer request to complete the supplied Claude destination rule coverage."
+    },
+    {
+      "value": "featuregates.org",
+      "type": "domain_suffix",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "direction": "destination",
+      "status": "user-requested",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-complete-coverage-request"
+        }
+      ],
+      "reason": "Explicit maintainer request to complete the supplied Claude destination rule coverage."
+    },
+    {
+      "value": "ip.sb",
+      "type": "domain_suffix",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "direction": "destination",
+      "status": "user-requested",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-complete-coverage-request"
+        }
+      ],
+      "reason": "Explicit maintainer request to complete the supplied Claude destination rule coverage."
+    },
+    {
+      "value": "153.61.208.0/20",
+      "type": "ip_cidr",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "direction": "destination",
+      "status": "user-requested",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-complete-coverage-request"
+        }
+      ],
+      "reason": "Explicit maintainer request to complete the supplied Claude destination rule coverage."
+    }
+  ],
+  "approved_on": "2026-11-20",
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "d62a03c44427400c4533f87aa76bbc0b3fcc18e034890e9f2ae724316323e2cc",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "baseline_manifest": {
+    "path": "artifacts/v0.1.15/manifest.json",
+    "sha256": "c4a52243caf97b796659cacb954e574ac9d630f4db760d71e36ad84d1826dcd0"
+  },
+  "baseline_source": {
+    "path": "tests/fixtures/anthropic-v0.1.15.yaml",
+    "sha256": "902a1d2943e09f92c6230af99788b08d570c1fc620751056be2a2220ba9c285e"
+  },
+  "confirmed_by": "maintainer",
+  "deployment_authorized": false,
+  "entries": [
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+        },
+        {
+          "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/evidence/claude-challenge-confirmation.json"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "last_verified": "2026-09-27",
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+      "review_after": "2026-10-27",
+      "review_status": "approved",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-anthropic"
+        }
+      ],
+      "status": "compatibility-critical",
+      "type": "domain",
+      "value": "challenges.cloudflare.com"
+    },
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Explicit approval to include this exact announced /48 for network coverage, without claiming verified service usage.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-10-09",
+          "product": [
+            "claude-network-coverage"
+          ],
+          "reference": "sources/evidence/anthropic-network-coverage-2026-10-09.json"
+        }
+      ],
+      "first_seen": "2026-10-09",
+      "last_verified": "2026-10-09",
+      "product": [
+        "claude-network-coverage"
+      ],
+      "reason": "Maintainer-requested exact AS399358 announced IPv6 network coverage; ARIN ownership and RIS route verified, not an official Claude endpoint requirement.",
+      "review_after": "2026-11-08",
+      "review_status": "approved",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "network-registry",
+          "reference": "as399358-rdap"
+        },
+        {
+          "kind": "network-registry",
+          "reference": "anthropic-ipv6-rdap"
+        },
+        {
+          "kind": "routing-observation",
+          "reference": "as399358-announced-prefixes"
+        }
+      ],
+      "status": "compatibility",
+      "type": "ip_cidr",
+      "value": "2607:6bc0:11::/48"
+    }
+  ],
+  "instruction": "增加完整覆盖，提交到 main 并重新发布，删除仓库其余分支。",
+  "instruction_context": "Publish the complete user-requested Anthropic destination rule coverage while preserving the historical compatibility entries required by the release gate.",
+  "kind": "operator-exception",
+  "project_version": "0.1.16",
+  "runtime_validation": false,
+  "schema": 1,
+  "scope": "preserved-entry-publication",
+  "source_hashes": {
+    "sources/openai.yaml": "bdaeab5d82c5d3bb05e19f074df6a17b2f3b5385c8077e2454b9ba88a5581286",
+    "sources/anthropic.yaml": "bd5a0a9e0b2276f44c0c62cc0027f858c9d3742615b1a72534f6dfd9a3cc49cd",
+    "sources/anthropic-ip.yaml": "38cf824bc36d72e5af10f8d51111d991ff380b34d1f10584368b82bc5cd0a7a5"
+  }
+}

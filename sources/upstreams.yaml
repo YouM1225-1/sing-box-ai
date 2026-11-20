@@ -460,3 +460,10 @@ archives:
   url: https://code.claude.com/docs/en/network-config
   observed_on: '2026-11-18'
   method: direct-user-screenshot-coverage-instruction
+- id: claude-complete-coverage-request
+  kind: user-instruction
+  path: sources/evidence/claude-complete-coverage-request-2026-11-20.json
+  url: https://github.com/YouM1225-1/sing-box-ai
+  sha256: 1ec7fb6354205999b454bd1a8ff969e4a572e54f0b3affd731a8116577e9b3c9
+  observed_on: '2026-11-20'
+  method: direct-user-instruction-for-complete-coverage-and-republication

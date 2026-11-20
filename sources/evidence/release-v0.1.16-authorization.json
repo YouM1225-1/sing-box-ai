@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e",
+    "anthropic.srs": "d62a03c44427400c4533f87aa76bbc0b3fcc18e034890e9f2ae724316323e2cc",
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a"
+  },
+  "authorized_on": "2026-11-20",
+  "deployment_authorized": false,
+  "instruction": "增加完整覆盖，提交到 main 并重新发布，删除仓库其余分支。",
+  "instruction_context": "The maintainer authorized the five missing entries from the supplied Anthropic route rule to be added, committed to main, and republished as the latest release.",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Publish the validated static SRS artifacts with the five explicitly requested coverage additions.",
+    "Do not claim consumer runtime integration or deployment acceptance."
+  ],
+  "project_version": "0.1.16",
+  "schema": 1,
+  "scope": "artifact-publication"
+}
