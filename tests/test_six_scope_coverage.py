@@ -37,7 +37,8 @@ class SixScopeCoverageTests(unittest.TestCase):
                 self.assertTrue(covered({"type": kind, "value": value}, current), (kind, value))
         for name in ("openai", "anthropic-ip"):
             self.assertEqual(source_document(self.selected[name]), load(ROOT / f"artifacts/v0.1.12/{name}.json"))
-        self.assertEqual(source_document(current)["rules"][0]["ip_cidr"], old["ip_cidr"])
+        for value in old["ip_cidr"]:
+            self.assertIn(value, source_document(current)["rules"][0]["ip_cidr"])
 
     def test_keyword_width_suffix_boundaries_and_unrelated_scopes(self):
         positive = ["anthropic-probe.invalid", "notclaude.ai", "claude-fan.example.org", "browser-intake.other.invalid",

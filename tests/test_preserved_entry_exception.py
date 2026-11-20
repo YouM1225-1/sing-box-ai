@@ -44,12 +44,11 @@ class PreservedEntryExceptionTests(unittest.TestCase):
         self.assertEqual(network["last_verified"], "2026-10-09")
         self.assertEqual(network["review_after"], "2026-11-08")
         self.assertEqual([(r["type"], r["value"]) for r in self.proof["additions"]], [
-            ("domain_suffix", "datadoghq.com"),
-            ("domain", "browser-intake-us3-datadoghq.com"),
-            ("domain", "browser-intake-ap1-datadoghq.com"),
-            ("domain", "browser-intake-ap2-datadoghq.com"),
-            ("domain", "browser-intake-datadoghq.eu"),
-            ("domain", "browser-intake-ddog-gov.com"),
+            ("domain", "api.ipify.org"),
+            ("domain", "ipify.org"),
+            ("domain_suffix", "featuregates.org"),
+            ("domain_suffix", "ip.sb"),
+            ("ip_cidr", "153.61.208.0/20"),
         ])
 
     def test_permission_does_not_cover_an_omitted_expired_entry(self):

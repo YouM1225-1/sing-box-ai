@@ -31,10 +31,10 @@ class UniFiExports(unittest.TestCase):
     def test_current_exports_follow_source_release(self):
         check_current()
 
-    def test_source_only_ranges_excluded_and_broad_destinations_preserved(self):
+    def test_destination_ranges_and_broad_destinations_preserved(self):
         data = render(self.batch, self.manifest)
         v4 = data["ipv4.txt"].decode().splitlines()
-        self.assertNotIn("153.61.208.0/20", v4)
+        self.assertIn("153.61.208.0/20", v4)
         self.assertIn("153.61.224.0/22", v4)
         self.assertIn("160.79.104.0/21", v4)
         self.assertIn("34.8.0.0/16", v4)
