@@ -1,0 +1,61 @@
+{
+  "timestamp_utc": "2026-11-21T03:27:13.692773+00:00",
+  "mode": "fixed",
+  "assets": [
+    {
+      "name": "anthropic.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.17/anthropic.srs",
+      "status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 525,
+      "sha256": "12ecdd3dfa38a841be8d0f76d0d74b84446ef5ec124ebced5b29ef88a82ef9e4",
+      "matches_local_bytes": true
+    },
+    {
+      "name": "openai.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.17/openai.srs",
+      "status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 2195,
+      "sha256": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e",
+      "matches_local_bytes": true
+    },
+    {
+      "name": "anthropic-ip.srs",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.17/anthropic-ip.srs",
+      "status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 47,
+      "sha256": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+      "matches_local_bytes": true
+    },
+    {
+      "name": "manifest.json",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.17/manifest.json",
+      "status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 361943,
+      "sha256": "242855443f3cf1336a140eb6efda0f76815d9251b1349ced1146a6176844a6cd",
+      "matches_local_bytes": true
+    },
+    {
+      "name": "sing-box-ai-v0.1.17.zip",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.17/sing-box-ai-v0.1.17.zip",
+      "status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 7897345,
+      "sha256": "5981d1e29b8cdcb627f2aa2e0b48e7ddca8738714adc7357c1f0b55e66f91f41",
+      "matches_local_bytes": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/YouM1225-1/sing-box-ai/releases/download/v0.1.17/SHA256SUMS",
+      "status": 200,
+      "final_hostname": "release-assets.githubusercontent.com",
+      "bytes": 410,
+      "sha256": "d7b2d03e49c20ce86b3400e44d905ceef920bb4cd8f8a1034415445d1ceb4e97",
+      "matches_local_bytes": true
+    }
+  ],
+  "passed": true
+}
