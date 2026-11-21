@@ -81,9 +81,11 @@ def cases_for(selected):
             add("artifact-library", domain="cdnjs.cloudflare.com", expected=True)
             # Keep fixed historical boundaries, except for explicitly selected
             # keyword/root-suffix expansions introduced after that scope.
-            brand_keywords = {r["value"] for r in rows if r["type"] == "domain_keyword"} & {"anthropic", "claude"}
+            brand_keywords = {r["value"] for r in rows if r["type"] == "domain_keyword"} & {"anthropic", "claude", "sift"}
             fathom_suffix = any(r["type"] == "domain_suffix" and r["value"] == "usefathom.com" for r in rows)
-            for suffix in ("anthropic.com", "claude.ai", "claude.com", "clau.de", "claudemcpclient.com", "claudemcpcontent.com", "claudeusercontent.com", "servd-anthropic-website.b-cdn.net", "anthropic.com.cdn.cloudflare.net", "anthropic.auth0.com", "anthropic-com.ghost.io", "sentry.io", "statsigapi.net", "intercom.io", "intercomcdn.com"):
+            for suffix in ("anthropic.com", "claude.ai", "claude.com", "clau.de", "claudemcpclient.com", "claudemcpcontent.com", "claudeusercontent.com", "servd-anthropic-website.b-cdn.net", "anthropic.com.cdn.cloudflare.net", "anthropic.auth0.com", "anthropic-com.ghost.io", "sentry.io", "statsigapi.net", "sift.com", "siftscience.com", "statsig.com", "prodregistryv2.org", "intercom.io", "intercomcdn.com"):
+                if not any(r["type"] == "domain_suffix" and r["value"] == suffix for r in rows):
+                    continue
                 for host in (suffix, "probe." + suffix):
                     add("website-suffix:" + host, domain=host, expected=True)
                 if suffix != "sentry.io":

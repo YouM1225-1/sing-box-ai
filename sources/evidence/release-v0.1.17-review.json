@@ -1,0 +1,69 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "12ecdd3dfa38a841be8d0f76d0d74b84446ef5ec124ebced5b29ef88a82ef9e4",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "comparison": {
+    "explicit_source_additions": [
+      {
+        "type": "domain_suffix",
+        "value": "sift.com"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "siftscience.com"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "statsig.com"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "prodregistryv2.org"
+      }
+    ],
+    "from": "0.1.16",
+    "normalized_fields": {
+      "anthropic": {
+        "domain_suffix": [
+          "prodregistryv2.org",
+          "sift.com",
+          "siftscience.com",
+          "statsig.com"
+        ]
+      },
+      "anthropic-ip": {},
+      "openai": {}
+    },
+    "srs_identical": false,
+    "to": "0.1.17"
+  },
+  "conclusion": "The v0.1.17 Anthropic destination artifact adds the four explicitly requested shared Sift and Statsig service roots. OpenAI and source-IP artifacts remain byte-identical to v0.1.16. Historical compatibility entries are preserved under the version-bound exception.",
+  "evidence": [
+    {
+      "path": "sources/evidence/claude-telemetry-supplement-request-2026-11-21.json",
+      "sha256": "33e84c23787b50b967c31d698f539042df8811e1cb1715c9da253510204fd6cf"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.17-preserved-entry-exception.json",
+      "sha256": "9260becba98d536e5a4722a1f1875ad90476084788fb9bba465e6b8aa542fd1c"
+    },
+    {
+      "path": "artifacts/v0.1.16/manifest.json",
+      "sha256": "d6544b9de9716b09400d8e5afd814b0c3f4bb9bb2fac5fc6623469314b62c859"
+    },
+    {
+      "path": "tests/fixtures/anthropic-v0.1.16.yaml",
+      "sha256": "bd5a0a9e0b2276f44c0c62cc0027f858c9d3742615b1a72534f6dfd9a3cc49cd"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.17",
+  "reviewed_on": "2026-11-21",
+  "reviewer": "Codex primary review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

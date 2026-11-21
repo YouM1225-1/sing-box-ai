@@ -943,3 +943,47 @@
     reference: claude-complete-coverage-request
   reason: Explicit maintainer request to complete the supplied Claude destination
     rule coverage.
+- type: domain_suffix
+  value: sift.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-supplement-request
+  reason: Explicit maintainer request to add the shared Sift service root; not an official service requirement or runtime-validation claim
+- type: domain_suffix
+  value: siftscience.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-supplement-request
+  reason: Explicit maintainer request to add the shared Sift service root; not an official service requirement or runtime-validation claim
+- type: domain_suffix
+  value: statsig.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-supplement-request
+  reason: Explicit maintainer request to add the shared Statsig service root; not an official service requirement or runtime-validation claim
+- type: domain_suffix
+  value: prodregistryv2.org
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-telemetry-supplement-request
+  reason: Explicit maintainer request to add the shared Statsig registry service root; not an official service requirement or runtime-validation claim

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "kind": "user-instruction",
+  "scope": "website-coverage",
+  "confirmed_by": "maintainer",
+  "approved_on": "2026-11-21",
+  "statement": "继续完成 sift、statsig 等的补充，以及剩余的实机验收和当前 README 链接收口，保留已有未提交改动，完成后重新跑全量检查并汇报。同步检查sing-box-ai中是否要补充，完成后发布，所有任务完成后两个仓库都提交和push",
+  "artifact": "anthropic",
+  "direction": "destination",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "website_url": "https://github.com/YouM1225-1/sing-box-ai",
+  "excluded": [
+    "ntp"
+  ],
+  "rules": [
+    {
+      "type": "domain_suffix",
+      "value": "sift.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "siftscience.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "statsig.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "prodregistryv2.org"
+    }
+  ],
+  "interpretation": "本次明确授权的共享服务补充，仅记录规则范围，不宣称官方 Claude 依赖或消费者运行验证。",
+  "service_usage_verified": false,
+  "consumer_validation": false
+}

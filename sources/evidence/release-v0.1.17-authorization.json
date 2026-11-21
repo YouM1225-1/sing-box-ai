@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "12ecdd3dfa38a841be8d0f76d0d74b84446ef5ec124ebced5b29ef88a82ef9e4",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "authorized_on": "2026-11-21",
+  "deployment_authorized": false,
+  "instruction": "补充 Sift 与 Statsig 共享服务规则，提交 main、发布 v0.1.17 并推送；完成基础系统同步与验收后分别提交和推送两个仓库。",
+  "instruction_context": "The maintainer explicitly authorized the shared Sift and Statsig coverage supplement, static publication, live acceptance work in the companion infrastructure repository, and commits/pushes for both repositories.",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Publish the validated static SRS artifacts with the four explicitly requested shared-service suffix additions.",
+    "Do not claim consumer runtime integration or deployment acceptance for the static release."
+  ],
+  "project_version": "0.1.17",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

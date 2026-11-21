@@ -23,6 +23,8 @@ WEBSITE_SUFFIXES = (
     "statsigapi.net", "intercom.io", "intercomcdn.com",
 )
 
+SUPPLEMENT_SUFFIXES = ("sift.com", "siftscience.com", "statsig.com", "prodregistryv2.org")
+
 
 class RequestedCoverageTests(unittest.TestCase):
     def setUp(self):
@@ -92,6 +94,19 @@ class RequestedCoverageTests(unittest.TestCase):
         rule = source_document(selected["anthropic"])["rules"][0]
         self.assertEqual(set(rule["ip_cidr"]), {"160.79.104.0/21", "2607:6bc0::/32"})
         self.assertEqual(set(rule["domain_keyword"]), {"datadog", "sentry", "sift"})
+
+    def test_telemetry_supplement_is_explicit(self):
+        current = self.root / "current"
+        shutil.copytree(ROOT / "sources", current / "sources")
+        shutil.copyfile(ROOT / "tools.lock.json", current / "tools.lock.json")
+        (current / ".tools").mkdir()
+        (current / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
+        selected = canonical(current, "candidate", dt.date(2026, 11, 21))[0]
+        for suffix in SUPPLEMENT_SUFFIXES:
+            with self.subTest(suffix=suffix):
+                self.assertTrue(covered({"type": "domain_suffix", "value": suffix}, selected["anthropic"]))
+                self.assertTrue(reference_match(selected["anthropic"], domain=suffix))
+                self.assertTrue(reference_match(selected["anthropic"], domain="probe." + suffix))
 
     def test_one_exit_adds_only_five_suffixes_to_published_016(self):
         suffixes = {"growthbook.io", "hcaptcha.com", "stripe.network", "stripecdn.com", "segment.io"}

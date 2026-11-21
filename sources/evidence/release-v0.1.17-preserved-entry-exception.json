@@ -1,0 +1,185 @@
+{
+  "additions": [
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit maintainer request to add the shared Sift service root; not an official service requirement or runtime-validation claim",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-telemetry-supplement-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "sift.com"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit maintainer request to add the shared Sift service root; not an official service requirement or runtime-validation claim",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-telemetry-supplement-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "siftscience.com"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit maintainer request to add the shared Statsig service root; not an official service requirement or runtime-validation claim",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-telemetry-supplement-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "statsig.com"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit maintainer request to add the shared Statsig registry service root; not an official service requirement or runtime-validation claim",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-telemetry-supplement-request"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "prodregistryv2.org"
+    }
+  ],
+  "approved_on": "2026-11-21",
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "12ecdd3dfa38a841be8d0f76d0d74b84446ef5ec124ebced5b29ef88a82ef9e4",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "baseline_manifest": {
+    "path": "artifacts/v0.1.16/manifest.json",
+    "sha256": "d6544b9de9716b09400d8e5afd814b0c3f4bb9bb2fac5fc6623469314b62c859"
+  },
+  "baseline_source": {
+    "path": "tests/fixtures/anthropic-v0.1.16.yaml",
+    "sha256": "bd5a0a9e0b2276f44c0c62cc0027f858c9d3742615b1a72534f6dfd9a3cc49cd"
+  },
+  "confirmed_by": "maintainer",
+  "deployment_authorized": false,
+  "entries": [
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+        },
+        {
+          "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/evidence/claude-challenge-confirmation.json"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "last_verified": "2026-09-27",
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+      "review_after": "2026-10-27",
+      "review_status": "approved",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-anthropic"
+        }
+      ],
+      "status": "compatibility-critical",
+      "type": "domain",
+      "value": "challenges.cloudflare.com"
+    },
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Explicit approval to include this exact announced /48 for network coverage, without claiming verified service usage.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-10-09",
+          "product": [
+            "claude-network-coverage"
+          ],
+          "reference": "sources/evidence/anthropic-network-coverage-2026-10-09.json"
+        }
+      ],
+      "first_seen": "2026-10-09",
+      "last_verified": "2026-10-09",
+      "product": [
+        "claude-network-coverage"
+      ],
+      "reason": "Maintainer-requested exact AS399358 announced IPv6 network coverage; ARIN ownership and RIS route verified, not an official Claude endpoint requirement.",
+      "review_after": "2026-11-08",
+      "review_status": "approved",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "network-registry",
+          "reference": "as399358-rdap"
+        },
+        {
+          "kind": "network-registry",
+          "reference": "anthropic-ipv6-rdap"
+        },
+        {
+          "kind": "routing-observation",
+          "reference": "as399358-announced-prefixes"
+        }
+      ],
+      "status": "compatibility",
+      "type": "ip_cidr",
+      "value": "2607:6bc0:11::/48"
+    }
+  ],
+  "instruction": "继续完成 sift、statsig 等共享服务补充，重新构建并发布静态规则制品；不把本次静态发布写成消费者运行验收。",
+  "kind": "operator-exception",
+  "project_version": "0.1.17",
+  "runtime_validation": false,
+  "schema": 1,
+  "scope": "preserved-entry-publication",
+  "source_hashes": {
+    "sources/anthropic-ip.yaml": "38cf824bc36d72e5af10f8d51111d991ff380b34d1f10584368b82bc5cd0a7a5",
+    "sources/anthropic.yaml": "20f3b8be559b8ee2379cba127edc8853e59eb4455c5defbe82e8fe56e208416b",
+    "sources/openai.yaml": "bdaeab5d82c5d3bb05e19f074df6a17b2f3b5385c8077e2454b9ba88a5581286"
+  }
+}

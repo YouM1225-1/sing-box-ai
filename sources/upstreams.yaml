@@ -467,3 +467,10 @@ archives:
   sha256: 1ec7fb6354205999b454bd1a8ff969e4a572e54f0b3affd731a8116577e9b3c9
   observed_on: '2026-11-20'
   method: direct-user-instruction-for-complete-coverage-and-republication
+- id: claude-telemetry-supplement-request
+  kind: user-instruction
+  path: sources/evidence/claude-telemetry-supplement-request-2026-11-21.json
+  url: https://github.com/YouM1225-1/sing-box-ai
+  sha256: 33e84c23787b50b967c31d698f539042df8811e1cb1715c9da253510204fd6cf
+  observed_on: '2026-11-21'
+  method: direct-user-instruction-for-shared-service-supplement-and-republication
