@@ -416,9 +416,21 @@
     },
     {
       "artifact": "anthropic",
+      "output": "prodregistryv2.org",
+      "type": "domain_suffix",
+      "value": "prodregistryv2.org"
+    },
+    {
+      "artifact": "anthropic",
       "output": "segment.io",
       "type": "domain_suffix",
       "value": "segment.io"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "statsig.com",
+      "type": "domain_suffix",
+      "value": "statsig.com"
     },
     {
       "artifact": "anthropic",
@@ -461,9 +473,9 @@
   "export_version": 1,
   "files": {
     "domains.txt": {
-      "bytes": 1353,
-      "entries": 71,
-      "sha256": "4d921c1c430d4bb99257d95604374b699a67cd286da7e539bc464ff366e03f55"
+      "bytes": 1384,
+      "entries": 73,
+      "sha256": "283e5bb6943816aad1595a3944a3123914adfdc60ac4540e2347349ed25b0185"
     },
     "ipv4.txt": {
       "bytes": 5976,
@@ -522,11 +534,11 @@
   ],
   "schema": 1,
   "source_artifacts": {
-    "anthropic.json": "857ca5cfc6e30b6bbd91bf9853ffcb45b4717675f4b01c74883194ac2d16bdc4",
-    "anthropic.srs": "d62a03c44427400c4533f87aa76bbc0b3fcc18e034890e9f2ae724316323e2cc",
+    "anthropic.json": "0bd0d30ea46c40ce15e587981d4531a852caa31686c7e4b495a6528c2957c430",
+    "anthropic.srs": "12ecdd3dfa38a841be8d0f76d0d74b84446ef5ec124ebced5b29ef88a82ef9e4",
     "openai.json": "84f76adbbc3cd2786d921d3d410b28fe05ddebe63a3dc2c9302d093a436ce4b2",
     "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
   },
   "source_build_mode": "release",
-  "source_project_version": "0.1.16"
+  "source_project_version": "0.1.17"
 }

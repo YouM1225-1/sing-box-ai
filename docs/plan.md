@@ -80,7 +80,7 @@
 
 ### 2.2 匹配与输出结构
 
-`dist/` 当前正式批次为 `v0.1.16`，完整批次保存在 `artifacts/v0.1.16/`。历史正式归档与候选保持原版本记录。 [发布报告](evidence/release-v0.1.16/README.md)
+`dist/` 当前正式批次为 `v0.1.17`，完整批次保存在 `artifacts/v0.1.17/`。历史正式归档与候选保持原版本记录。 [发布报告](evidence/release-v0.1.17/README.md)
 
 2026-10-21 新增隔离候选 `artifacts/v0.1.7-rc.1/`，Anthropic 后缀为 21 项；其 OpenAI、Anthropic 来源 IP 制品与 v0.1.6 字节一致。用户随后授权发布 `v0.1.7`，旧候选和旧正式归档保留；正式构建与下载结果单独记录。
 
@@ -888,7 +888,11 @@ manifest 记录 schema、项目版本、source_commit、全部构建输入哈希
 <a id="execution"></a>
 ## 7. 当前执行计划与验证层级
 
-### v0.1.16 当前发布结果
+### v0.1.17 当前发布结果
+
+`v0.1.17` 已补入用户明确要求的 `sift.com`、`siftscience.com`、`statsig.com` 和 `prodregistryv2.org` 四个共享服务根域。OpenAI 与 Anthropic 源地址制品保持上一版字节不变。正式构建通过 6,420 项原生检查，失败 0；完整 Python 回归结果见[本版发布记录](evidence/release-v0.1.17/README.md)。静态发布保持 `validated_consumers=[]`、`integration_evidence=[]` 和 `deployment_status=pending`。
+
+### v0.1.16 历史发布结果
 
 `v0.1.16` 已发布并设为 Latest。补入用户规则中此前缺失的 `api.ipify.org`、`ipify.org`、`featuregates.org`、`ip.sb` 和 `153.61.208.0/20`。正式构建通过 6,332 项原生检查，100 项回归通过（6 项按条件跳过）。 [本版发布记录](evidence/release-v0.1.16/README.md)
 
