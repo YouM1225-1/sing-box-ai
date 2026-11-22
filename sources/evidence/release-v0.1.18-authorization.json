@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "f49fda58dd9d5f240dc7d332bf093d9aa07966e15fbb881b08ffd760742ee345",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "authorized_on": "2026-11-22",
+  "deployment_authorized": false,
+  "instruction": "补充图片清单中的 intercomassets.com、intercom-messenger.com、yoti.com，intercomassets.com 完整覆盖，检查通过后提交 main、发布 v0.1.18 并 push。",
+  "instruction_context": "The maintainer explicitly authorized the three requested destination suffixes, static artifact publication, and commit/push after validation.",
+  "kind": "operator-authorization",
+  "limitations": [
+    "Publish the validated static SRS artifacts with the three explicitly requested destination suffix additions.",
+    "Do not claim consumer runtime integration or deployment acceptance for the static release."
+  ],
+  "project_version": "0.1.18",
+  "schema": 1,
+  "scope": "artifact-publication"
+}

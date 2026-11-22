@@ -987,3 +987,36 @@
   - kind: user-instruction
     reference: claude-telemetry-supplement-request
   reason: Explicit maintainer request to add the shared Statsig registry service root; not an official service requirement or runtime-validation claim
+- type: domain_suffix
+  value: intercomassets.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-screenshot-address-coverage-request-2026-11-22
+  reason: Explicit maintainer request to cover the complete Intercom Assets suffix from the supplied Claude routing list
+- type: domain_suffix
+  value: intercom-messenger.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-screenshot-address-coverage-request-2026-11-22
+  reason: Explicit maintainer request to cover the shared Intercom Messenger suffix from the supplied Claude routing list
+- type: domain_suffix
+  value: yoti.com
+  product:
+  - claude-website-coverage
+  direction: destination
+  status: user-requested
+  shared_dependency: true
+  sources:
+  - kind: user-instruction
+    reference: claude-screenshot-address-coverage-request-2026-11-22
+  reason: Explicit maintainer request to cover the shared Yoti identity-verification suffix from the supplied Claude routing list

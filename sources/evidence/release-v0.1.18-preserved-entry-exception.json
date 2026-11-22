@@ -1,0 +1,168 @@
+{
+  "additions": [
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit maintainer request to cover the complete Intercom Assets suffix from the supplied Claude routing list",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-screenshot-address-coverage-request-2026-11-22"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "intercomassets.com"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit maintainer request to cover the shared Intercom Messenger suffix from the supplied Claude routing list",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-screenshot-address-coverage-request-2026-11-22"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "intercom-messenger.com"
+    },
+    {
+      "direction": "destination",
+      "product": [
+        "claude-website-coverage"
+      ],
+      "reason": "Explicit maintainer request to cover the shared Yoti identity-verification suffix from the supplied Claude routing list",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "user-instruction",
+          "reference": "claude-screenshot-address-coverage-request-2026-11-22"
+        }
+      ],
+      "status": "user-requested",
+      "type": "domain_suffix",
+      "value": "yoti.com"
+    }
+  ],
+  "approved_on": "2026-11-22",
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "f49fda58dd9d5f240dc7d332bf093d9aa07966e15fbb881b08ffd760742ee345",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "baseline_manifest": {
+    "path": "artifacts/v0.1.17/manifest.json",
+    "sha256": "242855443f3cf1336a140eb6efda0f76815d9251b1349ced1146a6176844a6cd"
+  },
+  "baseline_source": {
+    "path": "tests/fixtures/anthropic-v0.1.17.yaml",
+    "sha256": "20f3b8be559b8ee2379cba127edc8853e59eb4455c5defbe82e8fe56e208416b"
+  },
+  "confirmed_by": "maintainer",
+  "deployment_authorized": false,
+  "entries": [
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Historical inclusion only; current Claude session need remains unverified",
+          "kind": "repository-history",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/upstream/legacy-anthropic-domains.yaml"
+        },
+        {
+          "conclusion": "Maintainer confirms prior validation on the old repository update date; exact client/environment unspecified.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-09-27",
+          "product": [
+            "claude-web",
+            "claude-desktop"
+          ],
+          "reference": "sources/evidence/claude-challenge-confirmation.json"
+        }
+      ],
+      "first_seen": "2026-09-27",
+      "last_verified": "2026-09-27",
+      "product": [
+        "claude-web",
+        "claude-desktop"
+      ],
+      "reason": "Exact Claude Challenge compatibility rule verified by maintainer; confirmation is archived",
+      "review_after": "2026-10-27",
+      "review_status": "approved",
+      "shared_dependency": true,
+      "sources": [
+        {
+          "kind": "repository-history",
+          "reference": "legacy-anthropic"
+        }
+      ],
+      "status": "compatibility-critical",
+      "type": "domain",
+      "value": "challenges.cloudflare.com"
+    },
+    {
+      "direction": "destination",
+      "evidence": [
+        {
+          "conclusion": "Explicit approval to include this exact announced /48 for network coverage, without claiming verified service usage.",
+          "kind": "user-confirmation",
+          "observed_on": "2026-10-09",
+          "product": [
+            "claude-network-coverage"
+          ],
+          "reference": "sources/evidence/anthropic-network-coverage-2026-10-09.json"
+        }
+      ],
+      "first_seen": "2026-10-09",
+      "last_verified": "2026-10-09",
+      "product": [
+        "claude-network-coverage"
+      ],
+      "reason": "Maintainer-requested exact AS399358 announced IPv6 network coverage; ARIN ownership and RIS route verified, not an official Claude endpoint requirement.",
+      "review_after": "2026-11-08",
+      "review_status": "approved",
+      "shared_dependency": false,
+      "sources": [
+        {
+          "kind": "network-registry",
+          "reference": "as399358-rdap"
+        },
+        {
+          "kind": "network-registry",
+          "reference": "anthropic-ipv6-rdap"
+        },
+        {
+          "kind": "routing-observation",
+          "reference": "as399358-announced-prefixes"
+        }
+      ],
+      "status": "compatibility",
+      "type": "ip_cidr",
+      "value": "2607:6bc0:11::/48"
+    }
+  ],
+  "instruction": "补充图片清单中的 intercomassets.com、intercom-messenger.com、yoti.com，完整检查后发布并提交 push；intercomassets.com 使用完整后缀覆盖。",
+  "kind": "operator-exception",
+  "project_version": "0.1.18",
+  "runtime_validation": false,
+  "schema": 1,
+  "scope": "preserved-entry-publication",
+  "source_hashes": {
+    "sources/anthropic-ip.yaml": "38cf824bc36d72e5af10f8d51111d991ff380b34d1f10584368b82bc5cd0a7a5",
+    "sources/anthropic.yaml": "37cf373d5f6577b90a94c515915b06edb96d5fca33352187cba06ab0f1ce195d",
+    "sources/openai.yaml": "bdaeab5d82c5d3bb05e19f074df6a17b2f3b5385c8077e2454b9ba88a5581286"
+  }
+}

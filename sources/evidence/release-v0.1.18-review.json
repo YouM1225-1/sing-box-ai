@@ -1,0 +1,64 @@
+{
+  "artifacts": {
+    "anthropic-ip.srs": "819dcba59e171957aff80c4ddf6c0dd9fd984620e2ee0a7f363deb879828261a",
+    "anthropic.srs": "f49fda58dd9d5f240dc7d332bf093d9aa07966e15fbb881b08ffd760742ee345",
+    "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
+  },
+  "comparison": {
+    "explicit_source_additions": [
+      {
+        "type": "domain_suffix",
+        "value": "intercomassets.com"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "intercom-messenger.com"
+      },
+      {
+        "type": "domain_suffix",
+        "value": "yoti.com"
+      }
+    ],
+    "from": "0.1.17",
+    "normalized_fields": {
+      "anthropic": {
+        "domain_suffix": [
+          "intercom-messenger.com",
+          "intercomassets.com",
+          "yoti.com"
+        ]
+      },
+      "anthropic-ip": {},
+      "openai": {}
+    },
+    "srs_identical": false,
+    "to": "0.1.18"
+  },
+  "conclusion": "The v0.1.18 Anthropic destination artifact adds the three explicitly requested complete suffix scopes. OpenAI and source-IP artifacts remain byte-identical to v0.1.17. Historical compatibility entries are preserved under the version-bound exception. The release makes no consumer runtime or deployment claim.",
+  "evidence": [
+    {
+      "path": "sources/evidence/claude-screenshot-address-coverage-request-2026-11-22.json",
+      "sha256": "fc727a481de3bf0a29f8b3b36fbaad3f91ce87c45c0c4949a095331d7c0725b2"
+    },
+    {
+      "path": "sources/evidence/release-v0.1.18-preserved-entry-exception.json",
+      "sha256": "33f9d8fbb1ad66f0c439ac91c72401a7ab1fac16e1efb79d86ded2ec071f15ef"
+    },
+    {
+      "path": "artifacts/v0.1.17/manifest.json",
+      "sha256": "242855443f3cf1336a140eb6efda0f76815d9251b1349ced1146a6176844a6cd"
+    },
+    {
+      "path": "tests/fixtures/anthropic-v0.1.17.yaml",
+      "sha256": "20f3b8be559b8ee2379cba127edc8853e59eb4455c5defbe82e8fe56e208416b"
+    }
+  ],
+  "kind": "semantic-diff-review",
+  "project_version": "0.1.18",
+  "reviewed_on": "2026-11-22",
+  "reviewer": "Codex primary review",
+  "schema": 1,
+  "scope": "artifact-publication",
+  "status": "approved",
+  "unresolved_conflicts": []
+}

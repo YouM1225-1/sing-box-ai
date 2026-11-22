@@ -101,7 +101,7 @@ class RequestedCoverageTests(unittest.TestCase):
         shutil.copyfile(ROOT / "tools.lock.json", current / "tools.lock.json")
         (current / ".tools").mkdir()
         (current / ".tools/sing-box").symlink_to(ROOT / ".tools/sing-box")
-        selected = canonical(current, "candidate", dt.date(2026, 11, 21))[0]
+        selected = canonical(current, "candidate", dt.date(2026, 11, 22))[0]
         for suffix in SUPPLEMENT_SUFFIXES:
             with self.subTest(suffix=suffix):
                 self.assertTrue(covered({"type": "domain_suffix", "value": suffix}, selected["anthropic"]))

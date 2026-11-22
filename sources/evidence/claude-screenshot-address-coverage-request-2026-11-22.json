@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "kind": "user-instruction",
+  "scope": "website-coverage",
+  "confirmed_by": "maintainer",
+  "approved_on": "2026-11-22",
+  "statement": "增加这些域名，检查没有问题后发布，提交和 push；intercomassets.com 后缀也要完全覆盖。",
+  "artifact": "anthropic",
+  "direction": "destination",
+  "products": [
+    "claude-website-coverage"
+  ],
+  "website_url": "https://github.com/YouM1225-1/sing-box-ai",
+  "excluded": [
+    "ntp"
+  ],
+  "interpretation": "The maintainer requested complete destination suffix coverage for the three domains missing from the supplied Claude routing list. This records shared coverage scope and does not claim official service ownership or consumer runtime validation.",
+  "service_usage_verified": false,
+  "consumer_validation": false,
+  "rules": [
+    {
+      "type": "domain_suffix",
+      "value": "intercomassets.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "intercom-messenger.com"
+    },
+    {
+      "type": "domain_suffix",
+      "value": "yoti.com"
+    }
+  ],
+  "attachment_sha256": {
+    "1-照片-1.jpg": "not-archived-in-repository",
+    "2-照片-2.jpg": "not-archived-in-repository"
+  }
+}

@@ -338,12 +338,6 @@
     },
     {
       "artifact": "anthropic",
-      "output": "static.intercomassets.com",
-      "type": "domain",
-      "value": "static.intercomassets.com"
-    },
-    {
-      "artifact": "anthropic",
       "output": "storage.googleapis.com",
       "type": "domain",
       "value": "storage.googleapis.com"
@@ -398,9 +392,21 @@
     },
     {
       "artifact": "anthropic",
+      "output": "intercom-messenger.com",
+      "type": "domain_suffix",
+      "value": "intercom-messenger.com"
+    },
+    {
+      "artifact": "anthropic",
       "output": "intercom.io",
       "type": "domain_suffix",
       "value": "intercom.io"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "intercomassets.com",
+      "type": "domain_suffix",
+      "value": "intercomassets.com"
     },
     {
       "artifact": "anthropic",
@@ -467,15 +473,21 @@
       "output": "withpersona.com",
       "type": "domain_suffix",
       "value": "withpersona.com"
+    },
+    {
+      "artifact": "anthropic",
+      "output": "yoti.com",
+      "type": "domain_suffix",
+      "value": "yoti.com"
     }
   ],
   "excluded_source_artifact": "anthropic-ip.srs",
   "export_version": 1,
   "files": {
     "domains.txt": {
-      "bytes": 1384,
-      "entries": 73,
-      "sha256": "283e5bb6943816aad1595a3944a3123914adfdc60ac4540e2347349ed25b0185"
+      "bytes": 1409,
+      "entries": 75,
+      "sha256": "f2a3c80b28f8ea7787f47039ed389f1e6a524bb4f4e7dce22421242236dd9b54"
     },
     "ipv4.txt": {
       "bytes": 5976,
@@ -534,11 +546,11 @@
   ],
   "schema": 1,
   "source_artifacts": {
-    "anthropic.json": "0bd0d30ea46c40ce15e587981d4531a852caa31686c7e4b495a6528c2957c430",
-    "anthropic.srs": "12ecdd3dfa38a841be8d0f76d0d74b84446ef5ec124ebced5b29ef88a82ef9e4",
+    "anthropic.json": "580c87a6dea582407ba8fc693f1d2cbd0bb460492cdd18d0457e11a2f6c3abd3",
+    "anthropic.srs": "f49fda58dd9d5f240dc7d332bf093d9aa07966e15fbb881b08ffd760742ee345",
     "openai.json": "84f76adbbc3cd2786d921d3d410b28fe05ddebe63a3dc2c9302d093a436ce4b2",
     "openai.srs": "926a8e1385b8007855f29413a2bba265e49aa796e5124e6cb3ea80aa964ecb5e"
   },
   "source_build_mode": "release",
-  "source_project_version": "0.1.17"
+  "source_project_version": "0.1.18"
 }
